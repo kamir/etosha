@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="conf"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-2.0.0-mr1-cdh4.2.1-ant.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-2.0.0-mr1-cdh4.2.1-core.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-2.0.0-mr1-cdh4.2.1-examples.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-2.0.0-mr1-cdh4.2.1-test.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-2.0.0-mr1-cdh4.2.1-tools.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-ant.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-ant-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-core.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-core-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-examples.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-examples-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-test.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-test-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-tools.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/hadoop-tools-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/ant-contrib-1.0b3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/asm-3.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/aspectjrt-1.6.5.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/aspectjtools-1.6.5.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/avro-1.7.3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/avro-compiler-1.7.3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-digester-1.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-el-1.0.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-math-2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/commons-net-3.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/guava-11.0.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/hadoop-fairscheduler-2.0.0-mr1-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/hsqldb-1.8.0.10.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jackson-core-asl-1.8.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jackson-jaxrs-1.8.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jackson-mapper-asl-1.8.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jackson-xc-1.8.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jasper-compiler-5.5.23.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jasper-runtime-5.5.23.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jaxb-api-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jaxb-impl-2.2.3-1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jersey-core-1.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jersey-json-1.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jersey-server-1.8.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jets3t-0.6.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jetty-6.1.26.cloudera.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jetty-util-6.1.26.cloudera.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jline-0.9.94.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jsch-0.1.42.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jsp-api-2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/kfs-0.2.2.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/kfs-0.3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/mockito-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/paranamer-2.3.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/protobuf-java-2.4.0a.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/snappy-java-1.0.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/xmlenc-0.52.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20-mapreduce/lib/zookeeper-3.4.5-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-hdfs/hadoop-hdfs.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-hdfs/hadoop-hdfs-2.0.0-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop-hdfs/hadoop-hdfs-2.0.0-cdh4.2.1-tests.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-annotations.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-annotations-2.0.0-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-auth.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-auth-2.0.0-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common-2.0.0-cdh4.2.1.jar"/>
+	<classpathentry kind="lib" path="/usr/lib/hadoop/hadoop-common-2.0.0-cdh4.2.1-tests.jar"/>
+	<classpathentry kind="lib" path="/home/training/bin/jsoup.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-examples-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-excelant-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/ooxml-lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/ooxml-lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/ooxml-lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="/home/training/lib/poi-3.10 final/poi-3.10-FINAL/lib/log4j-1.2.13.jar"/>
+
+
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+</classpath>
