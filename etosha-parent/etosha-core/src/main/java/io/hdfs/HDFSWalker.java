@@ -45,7 +45,7 @@ public class HDFSWalker {
 			
 			FileStatus stat = status[i];
 			
-			if( stat.isFile() ) {
+			if( !stat.isDir() ) {
 				
 				// uses the default config // which has your default FS
 			    FileContext myFContext = FileContext.getFileContext(); 

@@ -1,0 +1,434 @@
+2014-03-01 12:29:15,258 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2014-03-01 12:29:15,260 - *******************************************************************
+2014-03-01 12:29:15,260 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2014-03-01 12:29:15,261 - RuntimeInstance initializing.
+2014-03-01 12:29:15,261 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2014-03-01 12:29:15,261 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2014-03-01 12:29:15,261 - LogSystem has been deprecated. Please use a LogChute implementation.
+2014-03-01 12:29:15,275 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2014-03-01 12:29:15,286 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:29:15,300 - ClasspathResourceLoader : initialization complete.
+2014-03-01 12:30:30,105 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2014-03-01 12:30:30,107 - *******************************************************************
+2014-03-01 12:30:30,107 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2014-03-01 12:30:30,108 - RuntimeInstance initializing.
+2014-03-01 12:30:30,108 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2014-03-01 12:30:30,108 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2014-03-01 12:30:30,108 - LogSystem has been deprecated. Please use a LogChute implementation.
+2014-03-01 12:30:30,114 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2014-03-01 12:30:30,121 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:30:30,124 - ClasspathResourceLoader : initialization complete.
+2014-03-01 12:35:26,060 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2014-03-01 12:35:26,071 - *******************************************************************
+2014-03-01 12:35:26,072 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2014-03-01 12:35:26,072 - RuntimeInstance initializing.
+2014-03-01 12:35:26,074 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2014-03-01 12:35:26,075 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2014-03-01 12:35:26,075 - LogSystem has been deprecated. Please use a LogChute implementation.
+2014-03-01 12:35:26,079 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2014-03-01 12:35:26,101 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:26,104 - ClasspathResourceLoader : initialization complete.
+2014-03-01 12:35:26,150 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2014-03-01 12:35:26,150 - Default ResourceManager initialization complete.
+2014-03-01 12:35:26,152 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2014-03-01 12:35:26,156 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2014-03-01 12:35:26,160 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2014-03-01 12:35:26,162 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2014-03-01 12:35:26,165 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2014-03-01 12:35:26,226 - Created '20' parsers.
+2014-03-01 12:35:26,245 - Velocimacro : initialization starting.
+2014-03-01 12:35:26,245 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2014-03-01 12:35:26,247 - Velocimacro : Default library not found.
+2014-03-01 12:35:26,247 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2014-03-01 12:35:26,247 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2014-03-01 12:35:26,247 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2014-03-01 12:35:26,248 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2014-03-01 12:35:26,248 - Velocimacro : Velocimacro : initialization complete.
+2014-03-01 12:35:26,248 - RuntimeInstance successfully initialized.
+2014-03-01 12:35:26,269 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2014-03-01 12:35:26,270 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2014-03-01 12:35:26,271 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2014-03-01 12:35:26,277 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2014-03-01 12:35:26,278 - Velocimacro : added #debug(  text ) : source = class.vm
+2014-03-01 12:35:26,435 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:26,521 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,522 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,523 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,525 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,533 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,534 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,535 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,535 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,537 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,538 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,539 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,540 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,541 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,542 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,542 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,544 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,546 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,547 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,548 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,549 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,549 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,550 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,551 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,551 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,552 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,553 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,554 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:35:26,844 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:26,859 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:26,861 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:26,863 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:26,865 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:27,020 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,121 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,343 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,407 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,728 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,758 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:27,760 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:27,766 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:27,768 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:27,886 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:27,956 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,070 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,124 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,405 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,438 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:28,439 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:28,441 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:28,442 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:28,583 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,670 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,792 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:28,828 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,053 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,072 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:29,080 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:29,081 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:29,082 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:29,204 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,245 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,352 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,385 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,609 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,630 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:29,631 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:29,632 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:29,633 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:29,705 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,755 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,853 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:29,891 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,076 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,088 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:30,095 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:30,096 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:30,097 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:30,180 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,229 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,325 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,367 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,547 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,568 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:30,569 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:30,575 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:30,577 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:30,691 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,767 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,911 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:30,975 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,207 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,227 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:31,234 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:31,236 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:31,240 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:31,366 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,415 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,495 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,530 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,741 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,768 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:35:31,769 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:35:31,771 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:35:31,777 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:35:31,848 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,903 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:31,993 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:35:32,023 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:39,365 - SimpleLog4JLogSystem initialized using logfile 'velocity.log'
+2014-03-01 12:39:39,366 - *******************************************************************
+2014-03-01 12:39:39,367 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2014-03-01 12:39:39,367 - RuntimeInstance initializing.
+2014-03-01 12:39:39,367 - Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+2014-03-01 12:39:39,367 - Trying to use logger class org.apache.velocity.runtime.log.SimpleLog4JLogSystem
+2014-03-01 12:39:39,368 - LogSystem has been deprecated. Please use a LogChute implementation.
+2014-03-01 12:39:39,373 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2014-03-01 12:39:39,390 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:39,396 - ClasspathResourceLoader : initialization complete.
+2014-03-01 12:39:39,443 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2014-03-01 12:39:39,443 - Default ResourceManager initialization complete.
+2014-03-01 12:39:39,450 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2014-03-01 12:39:39,452 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2014-03-01 12:39:39,456 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2014-03-01 12:39:39,460 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2014-03-01 12:39:39,464 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2014-03-01 12:39:39,544 - Created '20' parsers.
+2014-03-01 12:39:39,575 - Velocimacro : initialization starting.
+2014-03-01 12:39:39,575 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2014-03-01 12:39:39,576 - Velocimacro : Default library not found.
+2014-03-01 12:39:39,577 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2014-03-01 12:39:39,577 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2014-03-01 12:39:39,577 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2014-03-01 12:39:39,577 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2014-03-01 12:39:39,577 - Velocimacro : Velocimacro : initialization complete.
+2014-03-01 12:39:39,577 - RuntimeInstance successfully initialized.
+2014-03-01 12:39:39,606 - Velocimacro : added #mixedcase(  name ) : source = class.vm
+2014-03-01 12:39:39,607 - Velocimacro : added #lowercase(  name ) : source = class.vm
+2014-03-01 12:39:39,608 - Velocimacro : added #uppercase(  name ) : source = class.vm
+2014-03-01 12:39:39,613 - Velocimacro : added #comment(  indent name ) : source = class.vm
+2014-03-01 12:39:39,614 - Velocimacro : added #debug(  text ) : source = class.vm
+2014-03-01 12:39:39,768 - ResourceManager : found class.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:39,899 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,901 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,902 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,903 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,904 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,905 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,906 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,907 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,909 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,910 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,911 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,912 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,913 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,914 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,915 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,916 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,918 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,918 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,920 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,921 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,922 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,923 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,924 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,925 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,926 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,928 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,929 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,930 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,931 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,932 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,933 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,934 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,935 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,936 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,937 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,938 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,940 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,940 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,942 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,943 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,943 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,944 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,945 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,946 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,948 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,949 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,950 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,951 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,952 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,953 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,954 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,955 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,956 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,957 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,958 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,959 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,960 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,961 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,963 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:39,964 - Left side ($name.getComment().length()) of '>' operation has null value. Operation not possible. class.vm [line 1, column 34]
+2014-03-01 12:39:40,226 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:40,235 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:40,245 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:40,254 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:40,256 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:40,440 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:40,527 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:40,754 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:40,813 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,145 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,163 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:41,165 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:41,172 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:41,173 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:41,268 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,339 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,506 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,570 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,923 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:41,949 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:41,960 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:41,962 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:41,964 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:42,093 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,144 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,282 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,332 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,631 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,645 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:42,653 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:42,654 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:42,656 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:42,743 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,888 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:42,984 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,040 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,262 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,291 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:43,292 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:43,294 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:43,303 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:43,390 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,455 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,536 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,576 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,788 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,816 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:43,817 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:43,818 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:43,826 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:43,930 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:43,986 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,088 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,132 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,324 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,338 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:44,352 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:44,353 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:44,354 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:44,518 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,560 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,656 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,686 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,885 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:44,899 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:44,903 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:44,910 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:44,914 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:44,991 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,044 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,127 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,162 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,343 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,363 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:45,368 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:45,370 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:45,374 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:45,470 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,512 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,574 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,606 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,778 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,793 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:45,800 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:45,801 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:45,805 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:45,859 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,892 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:45,977 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,013 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,176 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,199 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:46,200 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:46,202 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:46,202 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:46,288 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,346 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,424 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,454 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,610 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,632 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:46,634 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:46,640 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:46,642 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:46,735 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,779 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,860 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:46,891 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,196 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,222 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,227 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:47,232 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,234 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:47,321 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,386 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,462 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,498 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,656 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,661 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,666 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:47,667 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,675 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:47,730 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,763 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,829 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,850 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,976 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:47,988 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,995 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:47,996 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:47,997 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,046 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,078 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,134 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,163 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,285 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,300 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,301 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,302 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,303 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,350 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,375 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,426 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,453 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,561 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,580 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,581 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,583 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,584 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,634 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,665 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,726 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,752 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,935 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:48,942 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,942 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,945 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:48,946 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:48,997 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,032 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,060 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,076 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,142 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,149 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:49,150 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:49,151 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:49,152 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:49,171 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,185 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,208 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,223 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,329 - ResourceManager : found get.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,340 - Null reference [template 'get.vm', line 235, column 38] : $type cannot be resolved.
+2014-03-01 12:39:49,343 - Null reference [template 'get.vm', line 247, column 35] : $type cannot be resolved.
+2014-03-01 12:39:49,353 - Null reference [template 'get.vm', line 257, column 38] : $type cannot be resolved.
+2014-03-01 12:39:49,354 - Null reference [template 'get.vm', line 267, column 35] : $type cannot be resolved.
+2014-03-01 12:39:49,395 - ResourceManager : found add.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,413 - ResourceManager : found set.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,453 - ResourceManager : found remove.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2014-03-01 12:39:49,469 - ResourceManager : found removeall.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader

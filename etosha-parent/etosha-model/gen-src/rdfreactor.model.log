@@ -1,0 +1,38 @@
+
+JModel
+  JPackage etosha.oldtimer.wiki
+    JClass Thing1 -> http://www.w3.org/2000/01/rdf-schema#Class
+      extends: org.ontoware.rdfreactor.schema.rdfs.Class, 
+      comment: This class acts as a catch-all for all properties, for which no domain has specified.
+      Changedby (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AChanged_by, types: 'Thing1',. Inverse: Changedby.
+      CreationDate (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#creationDate, types: 'Thing1',. Inverse: CreationDate.
+      Foaf_knows (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AFoaf-3Aknows, types: 'Thing1',. Inverse: Foaf_knows.
+      Hasstudent (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AHas_student, types: 'Thing1',. Inverse: Hasstudent.
+      Imports (-1/-1)  -> http://www.w3.org/2002/07/owl#imports, types: 'Thing1',. Inverse: Imports.
+      Owner (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AOwner, types: 'Thing1',. Inverse: Owner.
+      Page (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#page, types: 'Thing1',. Inverse: Page.
+      Property_3ABornin (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3ABorn_in, types: 'Thing1',. Inverse: Property_3ABornin.
+      Property_3AHeight (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AHeight, types: 'Thing1',. Inverse: Property_3AHeight.
+      Property_3AModificationdate_23aux (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AModification_date-23aux, types: 'Thing1',. Inverse: Property_3AModificationdate_23aux.
+      Property_3AWorkson (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AWorks_on, types: 'Thing1',. Inverse: Property_3AWorkson.
+      Sfchart_wasCreatedBy (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3ASfchart-3AwasCreatedBy, types: 'Thing1',. Inverse: Sfchart_wasCreatedBy.
+      SpecialPropertyASK (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#specialProperty_ASK, types: 'Thing1',. Inverse: SpecialPropertyASK.
+      SpecialPropertyERRP (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#specialProperty_ERRP, types: 'Thing1',. Inverse: SpecialPropertyERRP.
+      TermcurrentProject (-1/-1)  -> http://xmlns.com/foaf/0.1/#term_currentProject, types: 'Thing1',. Inverse: TermcurrentProject.
+      Termname (-1/-1)  -> http://xmlns.com/foaf/0.1/#term_name, types: 'Thing1',. Inverse: Termname.
+      Type (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#type, types: 'Thing1',. Inverse: Type.
+      WikiNamespace (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiNamespace, types: 'Thing1',. Inverse: WikiNamespace.
+      WikiPageModificationDate (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate, types: 'Thing1',. Inverse: WikiPageModificationDate.
+      WikiPageSortKey (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey, types: 'Thing1',. Inverse: WikiPageSortKey.
+    JClass Category_3APerson -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3APerson
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3APerson, 
+      comment: 
+    JClass Subject -> http://semantic-mediawiki.org/swivt/1.0#Subject
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Subject, 
+      comment: 
+    JClass Category_3ADeveloper -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3ADeveloper
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3ADeveloper, 
+      comment: 
+    JClass Category_3AClusterUser -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3AClusterUser
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3AClusterUser, 
+      comment: 

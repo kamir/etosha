@@ -46,7 +46,7 @@ public class FSTree {
 			for (int i = 0; i < status.length; i++) {
 				FileStatus stat = status[i];
 				
-				if( stat.isFile() ) {
+				if( !stat.isDir() ) {
 					System.out.println(stat.getPath());
 
 					// uses the default config // which has your default FS

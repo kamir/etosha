@@ -64,8 +64,8 @@ public class ContextLoggerTool extends Configured implements Tool {
 			System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
 			System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
 
-			System.out.println(" inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
-			System.out.println("* inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
+			System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
+			System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
 			System.out.println("\n* inspectRC       : inspect an RC file and add meta-data to data set context");
 			System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
 
@@ -175,7 +175,16 @@ public class ContextLoggerTool extends Configured implements Tool {
 
                         Path p = new Path( args[1] );
 			System.out.println("\n\n>>>> inspect SEQ file ... " + p.toString() );
-                        FileInspector.inspectFile(cfg, p);
+                        SEQFileInspector.inspectFile(cfg, p);
+
+                        System.exit(0);
+		}
+                
+                if (cmd.equals("inspectAVRO")) {
+
+                        Path p = new Path( args[1] );
+			System.out.println("\n\n>>>> inspect AVRO file ... " + p.toString() );
+                        AVROFileInspector.inspectFile(cfg, p);
 
                         System.exit(0);
 		}

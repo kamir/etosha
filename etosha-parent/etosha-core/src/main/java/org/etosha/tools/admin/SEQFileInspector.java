@@ -29,7 +29,7 @@ import org.etosha.model.FileMetaData;
  *
  * @author training
  */
-public class FileInspector {
+public class SEQFileInspector {
     
     
     public static FileMetaData inspectFile( Configuration cfg, Path p) throws IOException {
@@ -41,7 +41,7 @@ public class FileInspector {
         System.out.println( "Key       : " + reader.getKeyClassName() );
         System.out.println( "Value     : " + reader.getValueClassName() );
         System.out.println( "Codec     : " + reader.getCompressionCodec() );
-        System.out.println( "Comp.type : " + reader.getCompressionType() );
+        System.out.println( "Comp.type : " + getType( reader.isBlockCompressed() ) );
 
         Metadata md = reader.getMetadata();
         TreeMap<Text,Text> map = md.getMetadata();
@@ -51,6 +51,19 @@ public class FileInspector {
         }
         
         return fmd;
+    }
+    
+    /**
+     * What type of compresseion 
+     * @param blockCompressed
+     * @return 
+     */
+
+    private static String getType( boolean blockCompressed ) {
+        if ( blockCompressed ) return "BLOCK";
+        else {
+            return "RECORD or NONE";
+        }
     }
     
 }

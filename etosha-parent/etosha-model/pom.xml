@@ -15,6 +15,33 @@
   <name>Etosha Object Model</name>
 
   <dependencies>
+      
+        <dependency>
+      <groupId>org.apache.velocity</groupId>
+      <artifactId>velocity</artifactId>
+      <version>1.5</version>
+    </dependency>
+    
+          <dependency>
+         <groupId>org.semweb4j</groupId>
+	<artifactId>rdf2go.impl.sesame</artifactId>
+	<version>4.8.3</version>
+        </dependency>
+        
+            <dependency>
+         <groupId>org.semweb4j</groupId>
+	<artifactId>rdf2go.impl.jena</artifactId>
+	<version>4.8.3</version>
+        </dependency>
+        
+        <dependency>
+    <groupId>org.apache.jena</groupId>
+    <artifactId>apache-jena-libs</artifactId>
+    <type>pom</type>
+    <version>2.11.1</version>
+  </dependency>
+   
+  
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-annotations</artifactId>
@@ -31,5 +58,24 @@
         </exclusion>
       </exclusions>
     </dependency>
+      <dependency>
+	<groupId>org.semweb4j</groupId>
+	<artifactId>rdfreactor.runtime</artifactId>
+	<version>4.8.3</version>
+</dependency>
+<dependency>
+	<groupId>org.semweb4j</groupId>
+	<artifactId>rdfreactor.generator</artifactId>
+	<version>4.8.3</version>
+</dependency>
   </dependencies>
+  
+
+<repositories>
+       <repository>
+         <id>semweb4j</id>
+         <name>semweb4j repo</name>
+         <url>http://mavenrepo.fzi.de/semweb4j.org/repo/</url>
+       </repository>
+</repositories>
 </project>
