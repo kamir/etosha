@@ -360,6 +360,10 @@ public class Wiki implements Serializable
      */
     public static final long PREVIOUS_REVISION = -3L;
 
+    public String getFullURL(String title) {
+        return "http://" + this.getDomain() + "/index.php?title=" + title;
+    }
+
     /**
      *  The list of options the user can specify for his/her gender.
      *  @since 0.24

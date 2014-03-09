@@ -1,0 +1,26 @@
+
+JModel
+  JPackage smw.api.etosha.oldtimer.wiki
+    JClass Thing1 -> http://www.w3.org/2000/01/rdf-schema#Class
+      extends: org.ontoware.rdfreactor.schema.rdfs.Class, 
+      comment: This class acts as a catch-all for all properties, for which no domain has specified.
+      CreationDate (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#creationDate, types: 'Thing1',. Inverse: CreationDate.
+      Imports (-1/-1)  -> http://www.w3.org/2002/07/owl#imports, types: 'Thing1',. Inverse: Imports.
+      Page (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#page, types: 'Thing1',. Inverse: Page.
+      Property_3AModificationdate_23aux (-1/-1)  -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Property-3AModification_date-23aux, types: 'Thing1',. Inverse: Property_3AModificationdate_23aux.
+      SpecialPropertySFDF (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#specialProperty_SF_DF, types: 'Thing1',. Inverse: SpecialPropertySFDF.
+      WikiNamespace (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiNamespace, types: 'Thing1',. Inverse: WikiNamespace.
+      WikiPageModificationDate (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate, types: 'Thing1',. Inverse: WikiPageModificationDate.
+      WikiPageSortKey (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey, types: 'Thing1',. Inverse: WikiPageSortKey.
+    JClass DataSet -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3ADataSet
+      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, DataSet, 
+      comment: 
+    JClass ExplicitDataSet -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3AExplicitDataSet
+      extends: DataSet, ExplicitDataSet, org.ontoware.rdfreactor.schema.rdfs.Resource, 
+      comment: 
+    JClass ImplicitDataSet -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3AImplicitDataSet
+      extends: DataSet, org.ontoware.rdfreactor.schema.rdfs.Resource, ImplicitDataSet, 
+      comment: 
+    JClass Subject -> http://semantic-mediawiki.org/swivt/1.0#Subject
+      extends: Subject, org.ontoware.rdfreactor.schema.rdfs.Resource, 
+      comment: 

@@ -7,6 +7,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.UnknownHostException;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.security.auth.login.LoginException;
 
@@ -16,16 +19,19 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.etosha.core.context.SemanticUserContext;
+import org.etosha.hdgs.hive.tools.HiveTableInspector;
 import org.etosha.smc.connector.SemanticContextBridge;
+import org.etosha.smc.connector.external.GMailLoader;
+import org.etosha.smc.connector.internal.ScreenSnappLoader;
 import org.etosha.tools.gui.NoteTool;
 import org.etosha.tools.statistics.DataSetInspector;
 
 public class ContextLoggerTool extends Configured implements Tool {
 
-	SemanticContextBridge scb = null;
+	public SemanticContextBridge scb = null;
 	String pn = null;
 
-	private void initConnector() throws UnknownHostException {
+	public void initConnector() throws UnknownHostException {
 
 		scb = new SemanticContextBridge(this.getConf());
 
@@ -50,24 +56,10 @@ public class ContextLoggerTool extends Configured implements Tool {
         		cmd = args[0];
         else cmd = " --- no input --- ";
         
-        System.out.println(">>> Etosha Context Logging (v 0.2) \n[" + cmd + "]");
+        System.out.println(">>> Etosha Context Logging (v 0.2.17) \n[" + cmd + "]");
 
 		if ( cmd.equals("list") || cmd.equals(" --- no input --- ")) {
-			System.out.println("  list  : show the help");
-			System.out.println("  new   : define a new context (role the .bash_history)");
-			System.out.println("  log   : store the current .bash_history");
-			System.out.println("  put   : embed a local file to the context");
-			System.out.println("  note  : add a note to the current context");
-			System.out.println("  notel : link a note to the current context");
-			System.out.println("  init  : create a new configuration file in $user/etc/smw-site.xml");
-			System.out.println("* mail  : load annotated mails from default mail box (see cfg)");
-			System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
-			System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
-
-			System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
-			System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
-			System.out.println("\n* inspectRC       : inspect an RC file and add meta-data to data set context");
-			System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
+			list();
 
 			System.exit(0);
 		}
@@ -122,9 +114,47 @@ public class ContextLoggerTool extends Configured implements Tool {
 			System.exit(0);
 			
 		}
+                
+                initConnector();
 
+                if (cmd.equals("inspectHiveMetastore")) {
+                    
+                        HiveTableInspector.cfg=cfg;
+                        HiveTableInspector.clt=this;
+                        
+                    try {                        
+                        
+                        HiveTableInspector.run(args);
+                    } 
+                    catch (SQLException ex) {
+                        Logger.getLogger(ContextLoggerTool.class.getName()).log(Level.SEVERE, null, ex);
+                    }
 
-		initConnector();
+                        System.exit(0);
+		}
+
+                if (cmd.equals("mail")) {
+                    
+                        GMailLoader.cfg=cfg;
+                        GMailLoader.clt=this;
+                        
+                        
+                        GMailLoader.run(args);
+
+                        System.exit(0);
+		}
+
+                if (cmd.equals("snap")) {
+                    
+                        ScreenSnappLoader.cfg=cfg;
+                        ScreenSnappLoader.clt=this;
+                        
+                        
+                        ScreenSnappLoader.run(args);
+
+                        System.exit(0);
+		}
+
 
 		if (cmd.equals("new")) {
 			System.out.println("> create new context ... ");
@@ -240,11 +270,14 @@ public class ContextLoggerTool extends Configured implements Tool {
 		return sb.toString();
 	}
 
-        static Configuration cfg = null;
+        Configuration cfg = null;
 	
+        static ContextLoggerTool clt = null;
+        
         public static void main(String[] args) throws Exception {
 
-		cfg = new Configuration();
+                ContextLoggerTool clt = new ContextLoggerTool();
+		clt.cfg = new Configuration();
 
 		File cfgFile = new File("/home/training/etc/smw-site.xml");
 		if (cfgFile.exists()) {
@@ -256,12 +289,37 @@ public class ContextLoggerTool extends Configured implements Tool {
 			 * 
 			 * we add the resource as a URI
 			 */
-			cfg.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
+			clt.cfg.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
 		}
-		int exitCode = ToolRunner.run(cfg, new ContextLoggerTool(), args);
+		int exitCode = ToolRunner.run(clt.cfg, clt, args);
 
 		System.exit(exitCode);
 		
 	}
+
+    public void list() {
+        System.out.println("  list  : show the help");
+        System.out.println("  snap  : take a screenshot ...");
+        System.out.println("  new   : define a new context (role the .bash_history)");
+        System.out.println("  log   : store the current .bash_history");
+        System.out.println("  put   : embed a local file to the context");
+        System.out.println("  note  : add a note to the current context");
+        System.out.println("  notel : link a note to the current context");
+        System.out.println("  init  : create a new configuration file in $user/etc/smw-site.xml");
+        System.out.println("  mail  : load annotated mails from default mail box (see cfg)");
+        System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
+        System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
+
+        System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
+        System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
+        System.out.println("\n* inspectRC       : inspect an RC file and add meta-data to data set context");
+        System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
+        
+        System.out.println("\n  inspectHiveMetastore      : inspect the Hive-Metastore and collect notes about the tables");
+
+    }
+    
+    
+    
 
 }

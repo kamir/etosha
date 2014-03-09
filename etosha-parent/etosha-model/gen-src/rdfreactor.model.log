@@ -24,15 +24,15 @@ JModel
       WikiNamespace (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiNamespace, types: 'Thing1',. Inverse: WikiNamespace.
       WikiPageModificationDate (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate, types: 'Thing1',. Inverse: WikiPageModificationDate.
       WikiPageSortKey (-1/-1)  -> http://semantic-mediawiki.org/swivt/1.0#wikiPageSortKey, types: 'Thing1',. Inverse: WikiPageSortKey.
-    JClass Category_3APerson -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3APerson
-      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3APerson, 
+    JClass Category_3AClusterUser -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3AClusterUser
+      extends: Category_3AClusterUser, org.ontoware.rdfreactor.schema.rdfs.Resource, 
       comment: 
     JClass Subject -> http://semantic-mediawiki.org/swivt/1.0#Subject
       extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Subject, 
       comment: 
+    JClass Category_3APerson -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3APerson
+      extends: Category_3APerson, org.ontoware.rdfreactor.schema.rdfs.Resource, 
+      comment: 
     JClass Category_3ADeveloper -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3ADeveloper
       extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3ADeveloper, 
-      comment: 
-    JClass Category_3AClusterUser -> http://127.0.0.1/oldtimer/wiki/index.php?title=Special:URIResolver/Category-3AClusterUser
-      extends: org.ontoware.rdfreactor.schema.rdfs.Resource, Category_3AClusterUser, 
       comment: 

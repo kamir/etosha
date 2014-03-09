@@ -1,0 +1,5 @@
+
+JModel
+  JPackage smw.api.etosha.oldtimer.wiki
+    JClass Thing1 -> http://www.w3.org/2000/01/rdf-schema#Class
+      extends: org.ontoware.rdfreactor.schema.rdfs.Class, 
