@@ -1,13 +1,11 @@
 package io.hdfs;
 
 import java.io.*;
-import java.util.*;
-import java.net.*;
-import org.apache.hadoop.fs.*;
 import org.apache.hadoop.conf.*;
-import org.apache.hadoop.io.*;
-import org.apache.hadoop.mapred.*;
-import org.apache.hadoop.util.*;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.FileChecksum;
+import org.apache.hadoop.fs.FileStatus;
+import org.apache.hadoop.fs.Path;
 
 /**
  * 
@@ -48,12 +46,8 @@ public class FSTree {
 				
 				if( !stat.isDir() ) {
 					System.out.println(stat.getPath());
-
+ 
 					// uses the default config // which has your default FS
-				    FileContext myFContext = FileContext.getFileContext(); 
-					FileChecksum csum = myFContext.getFileChecksum( stat.getPath() );
-					
-					System.out.println( "CS: " + csum );
 					
 //					BufferedReader br = new BufferedReader(
 //							new InputStreamReader(

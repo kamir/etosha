@@ -5,11 +5,10 @@ import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileChecksum;
-import org.apache.hadoop.fs.FileContext;
+
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.fs.UnsupportedFileSystemException;
 import org.apache.hadoop.security.AccessControlException;
 
 public class HDFSWalker {
@@ -48,11 +47,11 @@ public class HDFSWalker {
 			if( !stat.isDir() ) {
 				
 				// uses the default config // which has your default FS
-			    FileContext myFContext = FileContext.getFileContext(); 
-				FileChecksum csum = myFContext.getFileChecksum( stat.getPath() );
-				
-				System.out.println( "FILE [" + stat.getPath() + "] {CS: " + csum + "}" );
-				
+//			        FileContext myFContext = FileContext.getFileContext(); 
+//				FileChecksum csum = myFContext.getFileChecksum( stat.getPath() );
+//				
+//				System.out.println( "FILE [" + stat.getPath() + "] {CS: " + csum + "}" );
+//				
 //				BufferedReader br = new BufferedReader(
 //						new InputStreamReader(
 //								fs.open(status[i].getPath())
