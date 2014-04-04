@@ -1,0 +1,46 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    
+      google.load('visualization', '1');
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        var wrapper = new google.visualization.ChartWrapper({
+          chartType: 'BarChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheet/ccc?key=0AoeNVvEu28hxdEFrTFFLZHdETEdReGgxSTdJMnZfcXc#gid=0',
+          query: 'SELECT A,B,C,D,E',
+          options: {'title': 'Auspr&auml;gung der der Kategoriezugeh&ouml;rigkeit'},
+          containerId: 'vis_div'
+        });
+        wrapper.draw()
+        
+        var wrapper2 = new google.visualization.ChartWrapper({
+          chartType: 'BarChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheet/ccc?key=0AoeNVvEu28hxdEFrTFFLZHdETEdReGgxSTdJMnZfcXc#gid=0',
+          query: 'SELECT A,B,C,D,E',
+          options: {'title': 'Auspr&auml;gung der der Kategoriezugeh&ouml;rigkeit'},
+          containerId: 'vis_div2'
+        });
+        wrapper2.draw()
+      }
+      
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="vis_div" style="width: 600px; height: 400px;"></div>
+    
+    <div id="vis_div2" style="width: 320px; height: 240px;"></div>
+    <img src="https://chart.googleapis.com/chart?chxl=0:|0|60|120|270&chxr=0,0,360&chxt=x&chs=200x200&cht=rs&chco=FF0000,FF9900&chds=-5,100,0,98.333&chd=t:100,0,0,0|0,100,0,0|0,100,0|0,0,0,100&chg=25,25&chls=2,4,0|2,4,0&chm=B,FF000080,0,0,0|B,FF990080,1,0,0|B,FF990080,0,1,0|B,FF990080,0,0,1&chtt=RADAR" width="200" height="200" alt="RADAR" />
+    
+    
+    data: <a href="https://docs.google.com/spreadsheet/pub?key=0AoeNVvEu28hxdEFrTFFLZHdETEdReGgxSTdJMnZfcXc&output=html">Google-Docs Table</a>
+    </body>
+</html>
+

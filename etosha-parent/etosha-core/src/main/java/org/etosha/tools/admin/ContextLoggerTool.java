@@ -28,274 +28,274 @@ import org.etosha.tools.statistics.DataSetInspector;
 
 public class ContextLoggerTool extends Configured implements Tool {
 
-	public SemanticContextBridge scb = null;
-	String pn = null;
+    public SemanticContextBridge scb = null;
+    String pn = null;
 
-	public void initConnector() throws UnknownHostException {
+    public void initConnector() throws UnknownHostException {
 
-		scb = new SemanticContextBridge(this.getConf());
+        scb = new SemanticContextBridge(this.getConf());
 
-		scb.login();
+        scb.login();
 
-		System.out.println("***init() # done! ***\n");
+        System.out.println("***init() # done! ***\n");
 
-	}
+    }
 
-	/**
-	 * @param args
-	 * @throws IOException
-	 * @throws LoginException
-	 */
-	public int run(String[] args) throws IOException, LoginException {
+    /**
+     * @param args
+     * @throws IOException
+     * @throws LoginException
+     */
+    public int run(String[] args) throws IOException, LoginException {
 
-		int status = 0;
+        // String user = "training";
+        // File f = new File("/home/" + user + "/etc");
+        
+        String user = "kamir";
+        File f = new File("/Users/" + user + "/etc");
+
+        
+        int status = 0;
         String cmd = null;
-        
-        if ( args != null )
-        	if ( args.length > 0 )
-        		cmd = args[0];
-        else cmd = " --- no input --- ";
-        
-        System.out.println(">>> Etosha Context Logging (v 0.2.17) \n[" + cmd + "]");
 
-		if ( cmd.equals("list") || cmd.equals(" --- no input --- ")) {
-			list();
+        if (args != null) {
+            if (args.length > 0) {
+                cmd = args[1];
+            } 
+            else {
+                cmd = " --- no input --- ";
+            }
+        }
 
-			System.exit(0);
-		}
+        System.out.println(">>> Etosha Context Logging (v 0.2.20) \n[" + cmd + "]");
 
-		if (cmd.equals("init")) {
-			System.out.println(">>> new configuration will be created in ...");
-			String user = "training";
-			File f = new File("/home/" + user + "/etc");
-			if (!f.exists())
-				f.mkdirs();
-			f = new File("/home/" + user + "/etc/smw-site.xml");
-			FileWriter fw = new FileWriter(f);
-			fw.write(getContentDefaultCFG());
-			fw.close();
-			System.out.println(">>> new configuration is created in: "
-					+ f.getAbsolutePath());
-			System.exit(0);
-		}
-		
-		if (cmd.equals("cfg")) {
-			
-			System.out.println(">>> your current etosha-core configuration : ");
-			
-			String user = "training";
-			File f = new File("/home/" + user + "/etc");
-			
-			if (!f.exists()) {
-				f.mkdirs();
+        if (cmd.equals("list") || cmd.equals(" --- no input --- ")) {
+            list();
 
-				System.out.println(">>> new configuration will be created in ...");
-				String u = "training";
-				File f2 = new File("/home/" + user + "/etc");
-				if (!f2.exists())
-					f2.mkdirs();
-				f2 = new File("/home/" + user + "/etc/smw-site.xml");
-				FileWriter fw = new FileWriter(f2);
-				fw.write(getContentDefaultCFG());
-				fw.close();
-				System.out.println(">>> new configuration is created in: "
-						+ f.getAbsolutePath());
-				
-				System.out.println(getContentDefaultCFG());
+            System.exit(0);
+        }
 
-			}
-			else {
-				f = new File("/home/" + user + "/etc/smw-site.xml");
-			
-				System.out.println(">>> location : " + f.getAbsolutePath() );
-			
-				System.out.println(getLocalCFG( f ));
-			}	
-			System.exit(0);
-			
-		}
-                
-                initConnector();
+        if (cmd.equals("init")) {
+            System.out.println(">>> new configuration will be created in ...");
 
-                if (cmd.equals("inspectHiveMetastore")) {
-                    
-                        HiveTableInspector.cfg=cfg;
-                        HiveTableInspector.clt=this;
-                        
-                    try {                        
-                        
-                        HiveTableInspector.run(args);
-                    } 
-                    catch (SQLException ex) {
-                        Logger.getLogger(ContextLoggerTool.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+            if (!f.exists()) {
+                f.mkdirs();
+            }
+            
+            f = new File( f.getAbsolutePath() + "/smw-site.xml");
 
-                        System.exit(0);
-		}
+            FileWriter fw = new FileWriter(f);
+            fw.write(getContentDefaultCFG());
+            fw.close();
+            System.out.println(">>> new configuration is created in: "
+                    + f.getAbsolutePath());
+            System.exit(0);
+        }
 
-                if (cmd.equals("mail")) {
-                    
-                        GMailLoader.cfg=cfg;
-                        GMailLoader.clt=this;
-                        
-                        
-                        GMailLoader.run(args);
+        if (cmd.equals("cfg")) {
 
-                        System.exit(0);
-		}
+            System.out.println(">>> your current etosha-core configuration : ");
 
-                if (cmd.equals("snap")) {
-                    
-                        ScreenSnappLoader.cfg=cfg;
-                        ScreenSnappLoader.clt=this;
-                        
-                        
-                        ScreenSnappLoader.run(args);
+            f = new File( f.getAbsolutePath() + "/smw-site.xml");
 
-                        System.exit(0);
-		}
+            if (!f.exists()) {
+                f.mkdirs();
 
+                System.out.println(">>> new configuration will be created in ...");
+            
+                FileWriter fw = new FileWriter(f);
+                fw.write(getContentDefaultCFG());
+                fw.close();
+                System.out.println(">>> new configuration is created in: "
+                        + f.getAbsolutePath());
 
-		if (cmd.equals("new")) {
-			System.out.println("> create new context ... ");
-			System.exit(0);
-		}
+                System.out.println(getContentDefaultCFG());
 
-		if (cmd.equals("log")) {
-			System.out.println("> log current context ... ");
+            } 
+            else {
+                System.out.println(">>> location : " + f.getAbsolutePath());
+                System.out.println(getLocalCFG(f));
+            }
+            System.exit(0);
 
-			SemanticUserContext uc = new SemanticUserContext();
+        }
 
-			String text = uc.getUserContextBashHistory();
-			text = text.concat(uc.getUserContextCategories());
+        initConnector();
 
-			scb._logBashHistoryToPage(text);
+        if (cmd.equals("inspectHiveMetastore")) {
 
-			System.out.println("***userContextLogging() # done! ***\n");
-			System.exit(0);
-		}
-		
-		if (cmd.equals("note")) {
-			System.out.println("> add a note to the current context ... ");
+            HiveTableInspector.cfg = cfg;
+            HiveTableInspector.clt = this;
 
-			SemanticUserContext uc = new SemanticUserContext();
+            try {
 
-			String text = NoteTool.getNote();
-			
-			scb._logNoteToPage( text );
+                HiveTableInspector.run(args);
+            } catch (SQLException ex) {
+                Logger.getLogger(ContextLoggerTool.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
-			System.out.println("***userContextLogging() # done! ***\n");
-			System.exit(0);
-		}
-		
-		if (cmd.equals("notel")) {
-			System.out.println("> add a note to the current context ... ");
+            System.exit(0);
+        }
 
-			SemanticUserContext uc = new SemanticUserContext();
+        if (cmd.equals("mail")) {
 
-			String text = NoteTool.getNote();
-			
-			scb._logNoteLinkToPage( text );
+            GMailLoader.cfg = cfg;
+            GMailLoader.clt = this;
 
-			System.out.println("***userContextLogging() # done! ***\n");
-			System.exit(0);
-		}
+            GMailLoader.run(args);
 
-                if (cmd.equals("inspectSEQ")) {
+            System.exit(0);
+        }
 
-                        Path p = new Path( args[1] );
-			System.out.println("\n\n>>>> inspect SEQ file ... " + p.toString() );
-                        SEQFileInspector.inspectFile(cfg, p);
+        if (cmd.equals("snap")) {
 
-                        System.exit(0);
-		}
-                
-                if (cmd.equals("inspectAVRO")) {
+            ScreenSnappLoader.cfg = cfg;
+            ScreenSnappLoader.clt = this;
 
-                        Path p = new Path( args[1] );
-			System.out.println("\n\n>>>> inspect AVRO file ... " + p.toString() );
-                        AVROFileInspector.inspectFile(cfg, p);
+            ScreenSnappLoader.run(args);
 
-                        System.exit(0);
-		}
+            System.exit(0);
+        }
 
+        if (cmd.equals("new")) {
+            System.out.println("> create new context ... ");
+            System.exit(0);
+        }
 
-		if (cmd.equals("put")) {
-			System.out.println("> attache a file to current context ... ");
+        if (cmd.equals("log")) {
+            System.out.println("> log current context ... ");
 
-			SemanticUserContext uc = new SemanticUserContext();
+            SemanticUserContext uc = new SemanticUserContext();
 
-			String fn = args[1];
+            String text = uc.getUserContextBashHistory();
+            text = text.concat(uc.getUserContextCategories());
 
-			try {
-				scb.logFileToHistoryToPage(fn);
-				System.out.println("***userContextLogging() # done! ***\n");
-			} catch (Exception ex) {
-				ex.printStackTrace();
-				System.out.println("***userContextLogging() # failed! ***\n");
-			}
-			System.exit(0);
-		}
+            scb._logBashHistoryToPage(text);
 
-		return status;
+            System.out.println("***userContextLogging() # done! ***\n");
+            System.exit(0);
+        }
 
-	}
+        if (cmd.equals("note")) {
+            System.out.println("> add a note to the current context ... ");
 
-	private String getContentDefaultCFG() throws IOException {
+            SemanticUserContext uc = new SemanticUserContext();
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(
-				ContextLoggerTool.class.getResourceAsStream("smw-site.xml")));
-		
-		StringBuilder sb = new StringBuilder();
-		while (br.ready()) {
-			String line = br.readLine();
-			// System.out.println(line);
-			sb.append(line + "\n");
-		}
+            String text = NoteTool.getNote();
 
-		return sb.toString();
-	}
-	
-	private String getLocalCFG( File f ) throws IOException {
+            scb._logNoteToPage(text);
 
-		BufferedReader br = new BufferedReader(new FileReader( f ));
-		
-		StringBuilder sb = new StringBuilder();
-		while (br.ready()) {
-			String line = br.readLine();
-			// System.out.println(line);
-			sb.append(line + "\n");
-		}
+            System.out.println("***userContextLogging() # done! ***\n");
+            System.exit(0);
+        }
 
-		return sb.toString();
-	}
+        if (cmd.equals("notel")) {
+            System.out.println("> add a note to the current context ... ");
 
-        Configuration cfg = null;
-	
-        static ContextLoggerTool clt = null;
-        
-        public static void main(String[] args) throws Exception {
+            SemanticUserContext uc = new SemanticUserContext();
 
-                ContextLoggerTool clt = new ContextLoggerTool();
-		clt.cfg = new Configuration();
+            String text = NoteTool.getNote();
 
-		File cfgFile = new File("/home/training/etc/smw-site.xml");
-		if (cfgFile.exists()) {
-			/**
-			 * according to:
-			 * 
-			 * http://stackoverflow.com/questions/11478036/hadoop-configuration-
-			 * property-returns-null
-			 * 
-			 * we add the resource as a URI
-			 */
-			clt.cfg.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
-		}
-		int exitCode = ToolRunner.run(clt.cfg, clt, args);
+            scb._logNoteLinkToPage(text);
 
-		System.exit(exitCode);
-		
-	}
+            System.out.println("***userContextLogging() # done! ***\n");
+            System.exit(0);
+        }
+
+        if (cmd.equals("inspectSEQ")) {
+
+            Path p = new Path(args[1]);
+            System.out.println("\n\n>>>> inspect SEQ file ... " + p.toString());
+            SEQFileInspector.inspectFile(cfg, p);
+
+            System.exit(0);
+        }
+
+        if (cmd.equals("inspectAVRO")) {
+
+            Path p = new Path(args[1]);
+            System.out.println("\n\n>>>> inspect AVRO file ... " + p.toString());
+            AVROFileInspector.inspectFile(cfg, p);
+
+            System.exit(0);
+        }
+
+        if (cmd.equals("put")) {
+            System.out.println("> attache a file to current context ... ");
+
+            SemanticUserContext uc = new SemanticUserContext();
+
+            String fn = args[1];
+
+            try {
+                scb.logFileToHistoryToPage(fn);
+                System.out.println("***userContextLogging() # done! ***\n");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                System.out.println("***userContextLogging() # failed! ***\n");
+            }
+            System.exit(0);
+        }
+
+        return status;
+
+    }
+
+    private String getContentDefaultCFG() throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(
+                ContextLoggerTool.class.getResourceAsStream("smw-site.xml")));
+
+        StringBuilder sb = new StringBuilder();
+        while (br.ready()) {
+            String line = br.readLine();
+            // System.out.println(line);
+            sb.append(line + "\n");
+        }
+
+        return sb.toString();
+    }
+
+    private String getLocalCFG(File f) throws IOException {
+
+        BufferedReader br = new BufferedReader(new FileReader(f));
+
+        StringBuilder sb = new StringBuilder();
+        while (br.ready()) {
+            String line = br.readLine();
+            // System.out.println(line);
+            sb.append(line + "\n");
+        }
+
+        return sb.toString();
+    }
+
+    Configuration cfg = null;
+
+    static ContextLoggerTool clt = null;
+
+    public static void main(String[] args) throws Exception {
+
+        ContextLoggerTool clt = new ContextLoggerTool();
+        clt.cfg = new Configuration();
+
+        File cfgFile = new File("/home/training/etc/smw-site.xml");
+        if (cfgFile.exists()) {
+            /**
+             * according to:
+             *
+             * http://stackoverflow.com/questions/11478036/hadoop-configuration-
+             * property-returns-null
+             *
+             * we add the resource as a URI
+             */
+            clt.cfg.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
+        }
+        int exitCode = ToolRunner.run(clt.cfg, clt, args);
+
+        System.exit(exitCode);
+
+    }
 
     public void list() {
         System.out.println("  list  : show the help");
@@ -314,12 +314,9 @@ public class ContextLoggerTool extends Configured implements Tool {
         System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
         System.out.println("\n* inspectRC       : inspect an RC file and add meta-data to data set context");
         System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
-        
+
         System.out.println("\n  inspectHiveMetastore      : inspect the Hive-Metastore and collect notes about the tables");
 
     }
-    
-    
-    
 
 }

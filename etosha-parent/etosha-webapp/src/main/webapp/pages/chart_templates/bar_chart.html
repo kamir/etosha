@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Format',      'Abs URL',  'Abs PLD'],
+          ['RDFa',        795081604,	1306827],
+          ['OGP',         711747491,	1140880],
+          ['microdata',   226913004,	  93463],
+          ['microformat', 272470501,	1755733],
+          ['XFN',	   35344618,	1700377],
+          ['no data',	 2196204478,   30809476]
+        ]);
+
+        var options = {
+          title: 'Semantische Annotationen - Gesamtzahl',
+          vAxis: {title: 'Formats',  titleTextStyle: {color: 'black'}},
+          hAxis: {title: 'Counts',   titleTextStyle: {color: 'black'}}
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1');
+      google.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        var wrapper = new google.visualization.ChartWrapper({
+          chartType: 'PieChart',
+          dataSourceUrl: 'https://docs.google.com/spreadsheet/ccc?key=0Auk-FXlNIDy-dG1wOFNMbGFScGtUMnhmTU11Zk5YRnc#gid=0',
+          query: 'SELECT A,B',
+          options: {'title': 'RDFa - Triples'},
+          containerId: 'vis_div'
+        });
+        wrapper.draw()
+      }
+      
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="vis_div" style="width: 600px; height: 400px;"></div>
+  </body>
+</html>

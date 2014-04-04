@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          
+          ['Form of Annotation', 'Percentage '], // Column names
+          
+          ['RDFa',         795081604],          // Row values
+          ['OGP',          711747491],
+          ['Microformat',  272470501],
+          ['Microdata',    226913004]
+          
+        ]);
+
+        var options = {
+          title: 'Spread of Semantic Annotations in crawled sample [Mika 2012]',
+          titleTextStyle: {fontSize: 20},
+          colors: ['blue', 'green', 'black', 'red'],
+          legend: {position: 'right', alignment: 'center'}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1200px; height: 800px;"></div>
+  </body>
+</html>
