@@ -29,6 +29,7 @@ import org.etosha.tools.statistics.DataSetInspector;
 public class ContextLoggerTool extends Configured implements Tool {
 
     public SemanticContextBridge scb = null;
+    
     String pn = null;
 
     public void initConnector() throws UnknownHostException {
@@ -153,8 +154,9 @@ public class ContextLoggerTool extends Configured implements Tool {
             ScreenSnappLoader.clt = this;
 
             ScreenSnappLoader.run(args);
+            
+            exit( args );
 
-            System.exit(0);
         }
 
         if (cmd.equals("new")) {
@@ -270,9 +272,9 @@ public class ContextLoggerTool extends Configured implements Tool {
         return sb.toString();
     }
 
-    Configuration cfg = null;
+    public Configuration cfg = null;
 
-    static ContextLoggerTool clt = null;
+    static public ContextLoggerTool clt = null;
 
     public static void main(String[] args) throws Exception {
 
@@ -317,6 +319,18 @@ public class ContextLoggerTool extends Configured implements Tool {
 
         System.out.println("\n  inspectHiveMetastore      : inspect the Hive-Metastore and collect notes about the tables");
 
+    }
+
+            
+    /**
+     * only exit from JVM if on CMD-line mode ...
+     * 
+     * @param args 
+     */
+    private void exit(String[] args) {
+        if( args[0].equals( this.getClass().getName() ) ) {
+            System.exit( 0 );
+        }
     }
 
 }

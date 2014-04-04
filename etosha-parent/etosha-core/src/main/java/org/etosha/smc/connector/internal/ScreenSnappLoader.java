@@ -63,8 +63,7 @@ public class ScreenSnappLoader {
 
     public static void importScreenShot() throws LoginException, IOException, AWTException {
 
-        clt.list();
-
+        
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice[] screens = ge.getScreenDevices();
 
