@@ -85,7 +85,10 @@ public class ScreenSnappLoader {
         
         System.out.println( "snap@"+f.getAbsolutePath() );
         
-        clt.scb.logImageToPage( clt.scb._createTheNewUCPage( "training" ), f, f.getName() );
+        // we select a context
+        String uc = javax.swing.JOptionPane.showInputDialog("??? USERCONTEXT ???", "(training)");
+        
+        clt.scb.logImageToPage( clt.scb._createTheNewUCPage( uc  ), f, f.getName() );
         
         return;
     }

@@ -46,13 +46,16 @@ public class SemanticContextBridge {
 
         localUser = System.getProperty("user.name");
 
-        overWriteEnvForLocaltest = conf.getBoolean("smw.mode.local", true);
+        overWriteEnvForLocaltest = conf.getBoolean("smw.mode.local", false);
 
-        java.net.InetAddress localMachine = java.net.InetAddress.getLocalHost();
-        localHostName = localMachine.getHostName();
-        localHostAdress = localMachine.getHostName();
+//        java.net.InetAddress localMachine = java.net.InetAddress.getLocalHost();
+//        localHostName = localMachine.getHostName();
+//        localHostAdress = localMachine.getHostName();
+//        System.out.println("Hostname of local machine: " + localMachine.getHostName());
 
-        System.out.println("Hostname of local machine: " + localMachine.getHostName());
+        String hostName = "127.0.0.1";
+        
+        System.out.println("Hostname of local machine: " + hostName );
 
         System.out.println("***Semantic Context Bridge Logger init() ***");
 
