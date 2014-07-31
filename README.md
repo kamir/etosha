@@ -1,13 +1,14 @@
 
 Welcome to the Etosha-project!
 ===============
+
 Our public <a href="https://etosha.atlassian.net">JIRA</a> is available here.
 
 As a global "Dataset-Graph" is our goal, we create tools for metadata creation and integration. 
 
 Etosha aims on building a bridge between the Big-Data and Lined-Data domains.
 
-How Etosha Enables the Global Data Village?
+##How Etosha Enables the Global Data Village?
 Etosha is a distributed decentralized fault tolerant metadata service. Publishing and linking of information about datasets is its main purpose. Etosha allows real knowledge management while HCatalog and the Hive megastore are focused on low level-technical metadata.
 
 A “cluster internal” perspective offers analysts, developers, and administrators an easy and consistent set of procedures to aggregate existing information like dataset schema, table or column statistics (which can also be created by Hive-Stats or SARAH) within in a data-link-server. An external perspective offers features to connect multiple data-link servers, and to embed database metadata into non-technical contexts via semantic links. This embedding into the global linked data graph, using DOAx files, allows plausibility checks and supports interpretation and comparison of results while access control stays always in the users hands – data has not be moved to a public provider. Etosha operates as a Gateway between emerging datahubs.
