@@ -1,5 +1,5 @@
 
-Welcome to the Etosha-project!
+Welcome to Etosha!
 ===============
 
 Etosha aims on building a bridge between the Big-Data and Lined-Data domains.
