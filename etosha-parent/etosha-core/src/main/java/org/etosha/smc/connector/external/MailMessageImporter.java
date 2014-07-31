@@ -1,5 +1,6 @@
-package org.etosha.tools.admin;
+package org.etosha.smc.connector.external;
 
+import org.etosha.tools.admin.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -26,7 +27,7 @@ import org.etosha.smc.connector.internal.ScreenSnappLoader;
 import org.etosha.tools.gui.NoteTool;
 import org.etosha.tools.statistics.DataSetInspector;
 
-public class ContextLoggerTool extends Configured implements Tool {
+public class MailMessageImporter extends ContextLoggerTool implements Tool {
 
     public SemanticContextBridge scb = null;
     
@@ -68,7 +69,8 @@ public class ContextLoggerTool extends Configured implements Tool {
             }
         }
 
-        System.out.println(">>> Etosha Context Logging (v 0.2.20) \n[" + cmd + "]");
+        System.out.println(">>> Etosha Context Logging (v 0.2.30) \n[" + cmd + "]");
+        System.out.println(">   Mail Message Importer ");
 
         if (cmd.equals("list") || cmd.equals(" --- no input --- ")) {
             list();
@@ -123,20 +125,7 @@ public class ContextLoggerTool extends Configured implements Tool {
 
         initConnector();
 
-        if (cmd.equals("inspectHiveMetastore")) {
-
-            HiveTableInspector.cfg = cfg;
-            HiveTableInspector.clt = this;
-
-            try {
-
-                HiveTableInspector.run(args);
-            } catch (SQLException ex) {
-                Logger.getLogger(ContextLoggerTool.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-            System.exit(0);
-        }
+  
 
         if (cmd.equals("mail")) {
 
@@ -159,85 +148,9 @@ public class ContextLoggerTool extends Configured implements Tool {
 
         }
 
-        if (cmd.equals("new")) {
-            System.out.println("> create new context ... ");
-            System.exit(0);
-        }
-
-        if (cmd.equals("log")) {
-            System.out.println("> log current context ... ");
-
-            SemanticUserContext uc = new SemanticUserContext();
-
-            String text = uc.getUserContextBashHistory();
-            text = text.concat(uc.getUserContextCategories());
-
-            scb._logBashHistoryToPage(text);
-
-            System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
-        }
-
-        if (cmd.equals("note")) {
-            System.out.println("> add a note to the current context ... ");
-
-            SemanticUserContext uc = new SemanticUserContext();
-
-            String text = NoteTool.getNote();
-
-            scb._logNoteToPage(text);
-
-            System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
-        }
-
-        if (cmd.equals("notel")) {
-            System.out.println("> add a note to the current context ... ");
-
-            SemanticUserContext uc = new SemanticUserContext();
-
-            String text = NoteTool.getNote();
-
-            scb._logNoteLinkToPage(text);
-
-            System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
-        }
-
-        if (cmd.equals("inspectSEQ")) {
-
-            Path p = new Path(args[1]);
-            System.out.println("\n\n>>>> inspect SEQ file ... " + p.toString());
-            SEQFileInspector.inspectFile(cfg, p);
-
-            System.exit(0);
-        }
-
-        if (cmd.equals("inspectAVRO")) {
-
-            Path p = new Path(args[1]);
-            System.out.println("\n\n>>>> inspect AVRO file ... " + p.toString());
-            AVROFileInspector.inspectFile(cfg, p);
-
-            System.exit(0);
-        }
-
-        if (cmd.equals("put")) {
-            System.out.println("> attache a file to current context ... ");
-
-            SemanticUserContext uc = new SemanticUserContext();
-
-            String fn = args[1];
-
-            try {
-                scb.logFileToHistoryToPage(fn);
-                System.out.println("***userContextLogging() # done! ***\n");
-            } catch (Exception ex) {
-                ex.printStackTrace();
-                System.out.println("***userContextLogging() # failed! ***\n");
-            }
-            System.exit(0);
-        }
+         
+  
+  
 
         return status;
 
@@ -246,7 +159,7 @@ public class ContextLoggerTool extends Configured implements Tool {
     private String getContentDefaultCFG() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(
-                ContextLoggerTool.class.getResourceAsStream("smw-site.xml")));
+                MailMessageImporter.class.getResourceAsStream("smw-site.xml")));
 
         StringBuilder sb = new StringBuilder();
         while (br.ready()) {
@@ -274,11 +187,11 @@ public class ContextLoggerTool extends Configured implements Tool {
 
     public Configuration cfg = null;
 
-    static public ContextLoggerTool clt = null;
+    static public MailMessageImporter clt = null;
 
     public static void main(String[] args) throws Exception {
 
-        ContextLoggerTool clt = new ContextLoggerTool();
+        MailMessageImporter clt = new MailMessageImporter();
         clt.cfg = new Configuration();
 
         File cfgFile = new File("/home/training/etc/smw-site.xml");
@@ -300,24 +213,12 @@ public class ContextLoggerTool extends Configured implements Tool {
     }
 
     public void list() {
-        System.out.println("  list  : show the help");
         System.out.println("  snap  : take a screenshot ...");
-        System.out.println("  new   : define a new context (role the .bash_history)");
-        System.out.println("  log   : store the current .bash_history");
-        System.out.println("  put   : embed a local file to the context");
-        System.out.println("  note  : add a note to the current context");
-        System.out.println("  notel : link a note to the current context");
+        System.out.println("  list  : show the help");
         System.out.println("  init  : create a new configuration file in $user/etc/smw-site.xml");
         System.out.println("  mail  : load annotated mails from default mail box (see cfg)");
         System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
         System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
-
-        System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
-        System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
-        System.out.println("\n* inspectRC       : inspect an RC file and add meta-data to data set context");
-        System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
-
-        System.out.println("\n  inspectHiveMetastore      : inspect the Hive-Metastore and collect notes about the tables");
 
     }
 

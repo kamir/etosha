@@ -110,6 +110,16 @@ public class HiveTableInspector {
           schema.append( "  [col]" + res.getString(1) + " :: " + res.getString(2) + " :: " + res.getString(3) + "\n");
           schemaCore.append( "  [col]" + res.getString(1) + " :: " + res.getString(2) + "\n");
         }
+        
+        // describe table
+        sql = "describe extended " + tableName;
+        System.out.println("\n>>>> Execute : " + sql);
+        res = stmt.executeQuery(sql);
+        while (res.next()) {
+          System.out.println("***" + res.getString(1) + "\n");
+          //schema.append( "  [col]" + res.getString(1) + " :: " + res.getString(2) + " :: " + res.getString(3) + "\n");
+          //schemaCore.append( "  [col]" + res.getString(1) + " :: " + res.getString(2) + "\n");
+        }
 
         page.schema = schema.toString();
         page.schemaCore = schemaCore.toString();

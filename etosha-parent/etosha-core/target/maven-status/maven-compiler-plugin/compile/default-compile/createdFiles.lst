@@ -7,6 +7,7 @@ org/etosha/tools/corpusprofiler/mr/SumReducer.class
 mr/SimpleTableMapper.class
 io/wiki/WikiTableBuilder.class
 org/etosha/tools/statistics/jobstatistics/JobHistoryHelper$1.class
+org/etosha/smc/connector/external/MailMessageImporter.class
 data/io/SimpleTable.class
 org/etosha/tools/statistics/jobstatistics/ExtractJobTaskTimeline.class
 org/etosha/tools/statistics/jobstatistics/ExtractJobTaskTimeline$TimeRange.class
@@ -17,8 +18,8 @@ avro/AvroTester.class
 mr/MultiStatsReducer.class
 org/etosha/smc/connector/internal/ScreenSnappLoader.class
 org/etosha/hdgs/hive/tools/HiveTableInspector.class
-org/etosha/smc/connector/SemanticContextDataSet.class
 org/etosha/tools/statistics/jobstatistics/TaskMetrics$ExecTimeComparator.class
+org/etosha/smc/connector/SemanticContextDataSet.class
 org/etosha/tools/statistics/jobstatistics/TaskMetrics.class
 org/etosha/tools/statistics/jobstatistics/TaskMetrics$InputBytesComparator.class
 org/etosha/smc/connector/external/GMailLoader.class

@@ -81,21 +81,13 @@ public class GMailLoader {
         try {
             
             Session session = Session.getDefaultInstance(props, null);
-//            Store store1 = session.getStore("imaps");
-//            store1.connect("imap.gmail.com", "mirko.kaempf@gmail.com", "0409arkona");
-//            
-//            Folder[] f1 = store1.getDefaultFolder().list();
-//            for(Folder fd:f1)
-//                System.out.println("(1) >> "+fd.getName());
-//            
-//            Folder f = store1.getFolder("Sent Messages");
-//
-//            f.open(Folder.READ_ONLY);
-//            Message[] m1 = f.getMessages();
+
+            String name = javax.swing.JOptionPane.showInputDialog("Username:");
+            String pwd = javax.swing.JOptionPane.showInputDialog("Password:");
             
-            String account = "mirko.kaempf@cloudera.com";  
+            String account = name;  
             Store store2 = session.getStore("imaps");
-            store2.connect("imap.gmail.com", account, "0409arkona");
+            store2.connect("imap.gmail.com", account, pwd);
 
             Folder[] f2 = store2.getDefaultFolder().list();
             

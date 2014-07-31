@@ -82,4 +82,5 @@
       <version>1.8.0.7</version>
     </dependency>
   </dependencies>
+    <version>0.2.1-SNAPSHOT</version>
 </project>
