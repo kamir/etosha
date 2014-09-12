@@ -11,8 +11,8 @@ import org.etosha.tools.clusteranalytics.ResultGrabberHelper;
 
 /** 
  * 
- * The WikiTableLoader creates a String representation of the the
- * table data to publish this on a Wiki-page.
+ * The WikiTableBuilder creates a String representation of
+ * table data to publish this data on a Wiki-page.
  * 
  * @author training
  *

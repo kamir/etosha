@@ -118,7 +118,7 @@ public class GMailLoader {
           
           System.out.println( "**** " + f.getFullName() );
         
-          clt.scb.createCategoryIfNotExists( f.getName() );
+//          clt.scb.createCategoryIfNotExists( f.getName() );
           
           f.open(Folder.READ_ONLY);
           
@@ -129,7 +129,7 @@ public class GMailLoader {
               System.out.println( "[[Category:" + f.getFullName() + 
                       "]]  > " + m.getSubject() );
               
-              clt.scb.appendMailIfNotExists( m, f.getFullName() );
+//              clt.scb.appendMailIfNotExists( m, f.getFullName() );
               
           }
           
