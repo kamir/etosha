@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-Run POSDemo</actionName>
+            <displayName>Run POSDemo</displayName>
+            <goals>
+                <goal>exec:java</goal>
+            </goals>
+            <properties>
+                <exec.mainClass>"pos.POSDemo"</exec.mainClass>
+            </properties>
+        </action>
+    </actions>

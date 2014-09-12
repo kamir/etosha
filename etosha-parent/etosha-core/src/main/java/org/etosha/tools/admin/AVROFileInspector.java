@@ -30,7 +30,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.SequenceFile.Metadata;
 import org.apache.hadoop.io.Text;
-import org.etosha.model.FileMetaData;
+import org.etosha.model.FileMD;
 
 /**
  *
@@ -39,9 +39,9 @@ import org.etosha.model.FileMetaData;
 public class AVROFileInspector {
     
     
-    public static FileMetaData inspectFile( Configuration cfg, Path p) throws IOException {
+    public static FileMD inspectFile( Configuration cfg, Path p) throws IOException {
 
-        FileMetaData fmd = new FileMetaData();
+        FileMD fmd = new FileMD();
         
         
         // FileSystem fs = FileSystem.get(cfg);

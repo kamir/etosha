@@ -101,8 +101,8 @@ public class DataSetStatisticsJob extends DataSetInspector {
 			/*
 			 * Specify the mapper and reducer classes.
 			 */
-			job.setMapperClass(mr.SimpleTableMapper.class);
-			job.setReducerClass(mr.MultiStatsReducer.class);
+			job.setMapperClass(org.etosha.data.profiles.SimpleTableMapper.class);
+			job.setReducerClass(org.etosha.data.profiles.MultiStatsReducer.class);
 
 			/*
 			 * For the word count application, the input file and output files
