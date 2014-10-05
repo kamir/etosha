@@ -2,11 +2,11 @@
 Welcome to Etosha!
 ===============
 
-Etosha aims on building a bridge between the Big-Data and Lined-Data domains.
+Etosha aims on building a bridge between the Big-Data and Linked-Data domains.
 
-> As a global "Dataset-Graph" is our goal, we create tools for metadata creation and integration. 
+> A global "Dataset-Graph" is our goal. We create tools for contextualization, metadata extraction and integration. 
 
-Our public <a href="https://etosha.atlassian.net">JIRA</a> is available here.
+The project is managed on our public <a href="https://etosha.atlassian.net">JIRA</a>.
 
 ##How Etosha Enables the Global Data Village?
 Etosha is a distributed decentralized fault tolerant metadata service. Publishing and linking of information about datasets is its main purpose. Etosha allows real knowledge management while HCatalog and the Hive megastore are focused on low level-technical metadata.
