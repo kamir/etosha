@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.etosha.smc.connector.SemanticContextBridge;
+import org.etosha.core.sc.connector.SemanticContextBridge;
 
 public class SemanticUserContext {
 	
