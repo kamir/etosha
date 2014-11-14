@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+           <title>Ask</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="index.html">Ask bigger questions ...</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+        
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>My Question ...</h2>
+            <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="question" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="time asked" class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h2>My Context ...</h2>
+            <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="author" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="context" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="context description" class="form-control">
+                  
+            </div>
+            </form>
+
+        </div>
+        
+       
+        <div class="col-md-4">
+          <h2>Tools</h2>
+          <p><a class="btn btn-default" href="#" data-toggle="modal"
+   data-target="#modal_MAILS" role="button">Import labeled Emails ... &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" data-toggle="modal"
+   data-target="#modal_SKYPE" role="button">Import Skype-Log ... &raquo;</a></p>
+        </div>
+      </div>
+      
+            <div class="modal fade" style="width:1200px;" id="modal_MAILS" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog" style="width:1100px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h4 class="modal-title" id="myModalLabel">Email Import</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Google Mail Import</h2>
+                <p>Once a day we import the Email messages from our mailing list ...</p>
+                <!--iframe width="800" height="350" src="//docs.google.com/spreadsheets/d/1t5lXIzs5wHRovi9TrWS3Q0PUZ0NuLnetAz59i202ZNo/gviz/chartiframe?oid=1070188261" 
+                        seamless frameborder=0 scrolling=no></iframe-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              
+        </div>
+    </div>
+  </div>
+</div>
+      
+      <div class="modal fade" style="width:1200px;" id="modal_SKYPE" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog" style="width:1100px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h4 class="modal-title" id="myModalLabel">Chat Import</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Skype Log Import</h2>
+                <p>On a weekly base we import the Skype log data ...</p>
+                <!--iframe width="800" height="350" src="//docs.google.com/spreadsheets/d/1t5lXIzs5wHRovi9TrWS3Q0PUZ0NuLnetAz59i202ZNo/gviz/chartiframe?oid=1070188261" 
+                        seamless frameborder=0 scrolling=no></iframe-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              
+        </div>
+    </div>
+  </div>
+</div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Cloudera 2014</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>    
+        
+                  
+
+    </body>
+</html>
