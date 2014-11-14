@@ -10,4 +10,14 @@
                 <exec.mainClass>"pos.POSDemo"</exec.mainClass>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-exportDEPS</actionName>
+            <displayName>exportDEPS</displayName>
+            <goals>
+                <goal>dependency:copy-dependencies</goal>
+            </goals>
+            <properties>
+                <outputDirectory>/Users/kamir/TEST2</outputDirectory>
+            </properties>
+        </action>
     </actions>

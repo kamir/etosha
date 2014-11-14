@@ -10,11 +10,7 @@
     <dependencies>
         
         
-               <dependency>
-                    <groupId>org.etosha</groupId>
-                    <artifactId>etosha-model</artifactId>
-                    <version>0.2.0-SNAPSHOT</version>
-                </dependency>
+         
 
                 <dependency>
                     <groupId>org.apache.httpcomponents</groupId>
@@ -221,6 +217,82 @@
             <artifactId>tika-parsers</artifactId>
             <version>1.5</version>
         </dependency>
+   
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-avro</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-core</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-hadoop-core</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-hadoop-rcfile</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-hadoop-sequencefile</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-json</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-maxmind</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-metrics-servlets</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-saxon</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-solr-cell</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-solr-core</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-tika-core</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-tika-decompress</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-twitter</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.cdk</groupId>
+            <artifactId>cdk-morphlines-useragent</artifactId>
+            <version>0.9.2</version>
+        </dependency>
     </dependencies>
 
     <organization>
@@ -308,11 +380,11 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.maven.version>3.0.0</project.maven.version>
-        <project.enforcer.skip>false</project.enforcer.skip>
-        <project.enforcer.fail>true</project.enforcer.fail>
+        <project.enforcer.skip>true</project.enforcer.skip>
+        <project.enforcer.fail>false</project.enforcer.fail>
         <project.build.targetJdk>1.7</project.build.targetJdk>
-        <etosha.maven.dependency.plugin.skip>false</etosha.maven.dependency.plugin.skip>
-        <etosha.maven.duplicate.finder.skip>false</etosha.maven.duplicate.finder.skip>
+        <etosha.maven.dependency.plugin.skip>true</etosha.maven.dependency.plugin.skip>
+        <etosha.maven.duplicate.finder.skip>true</etosha.maven.duplicate.finder.skip>
 
         <dep.avro.version>1.3.3</dep.avro.version>
         <dep.accumulo.version>1.4.0</dep.accumulo.version>
@@ -363,6 +435,27 @@
     <build>
         <pluginManagement>
             <plugins>
+                
+                <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.9</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>false</overWriteSnapshots>
+              <overWriteIfNewer>true</overWriteIfNewer>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
                 <plugin>
                     <groupId>org.apache.avro</groupId>
                     <artifactId>avro-maven-plugin</artifactId>
