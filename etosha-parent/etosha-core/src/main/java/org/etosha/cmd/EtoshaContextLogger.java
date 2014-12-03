@@ -151,6 +151,22 @@ public class EtoshaContextLogger extends Configured implements Tool {
         }
 
         initConnector();
+        
+        if (cmd.equals("importImage")) {
+            
+            String fn = args[1];
+            
+            File f2 = new File( fn );
+            
+            System.out.println("> import an image to the current context ... ");
+            scb.createTheNewPage( "ImagePage#" + f2.getName());
+            scb.logImageToPage( "ImagePage#" + f2.getName() , f2, fn);
+
+            System.out.println("***userContextLogging() # done! ***\n");
+            System.exit(0);
+            
+        }
+
 
         if (cmd.equals("inspectHiveMetastore")) {
 
@@ -343,6 +359,9 @@ public class EtoshaContextLogger extends Configured implements Tool {
         System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
         System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
 
+        System.out.println("  importImage   : import an image and extract metadata from it ");
+        
+        
         System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
         System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
         System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");

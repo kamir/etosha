@@ -59,6 +59,22 @@ public class ScreenSnappLoader {
         }
 
     }
+    
+    public static void importImageToNewPage(File image) throws LoginException, IOException, AWTException {
+
+        File f = image;
+  
+        System.out.println( "image_import@"+f.getAbsolutePath() );
+        
+        // we select a context
+        String uc = javax.swing.JOptionPane.showInputDialog("??? USERCONTEXT ???", "(training)");
+        
+        // here we upload the data 
+        clt.scb.logImageToPage( clt.scb.createTheNewUCPage( uc  ), f, f.getName() );
+        
+        return;
+    }        
+            
 
     public static void importScreenShot() throws LoginException, IOException, AWTException {
 
@@ -87,7 +103,7 @@ public class ScreenSnappLoader {
         // we select a context
         String uc = javax.swing.JOptionPane.showInputDialog("??? USERCONTEXT ???", "(training)");
         
-        clt.scb.logImageToPage( clt.scb._createTheNewUCPage( uc  ), f, f.getName() );
+        clt.scb.logImageToPage( clt.scb.createTheNewUCPage( uc  ), f, f.getName() );
         
         return;
     }
