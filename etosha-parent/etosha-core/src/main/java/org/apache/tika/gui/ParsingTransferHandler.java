@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.etosha.cmd;
+package org.apache.tika.gui;
 
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
@@ -43,7 +43,7 @@ class ParsingTransferHandler extends TransferHandler {
 
     private final TransferHandler delegate;
 
-    private final EtoshaFactConnect tika;
+    private final TikaGUI tika;
 
     private static DataFlavor uriListFlavor;
     private static DataFlavor urlListFlavor;
@@ -55,7 +55,7 @@ class ParsingTransferHandler extends TransferHandler {
          }
     }
 
-    public ParsingTransferHandler(TransferHandler delegate, EtoshaFactConnect tika) {
+    public ParsingTransferHandler(TransferHandler delegate, TikaGUI tika) {
         this.delegate = delegate;
         this.tika = tika;
     }

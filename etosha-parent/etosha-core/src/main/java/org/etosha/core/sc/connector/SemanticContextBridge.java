@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.UnknownHostException;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.mail.Address;
 import javax.mail.BodyPart;
 import javax.mail.Message;
@@ -20,6 +22,7 @@ import javax.security.auth.login.LoginException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.util.Tool;
+import org.apache.tika.gui.SimpleTikaParser;
 import org.etosha.core.context.SemanticDataSetContext;
 import org.etosha.core.context.SemanticJobContext;
 import org.etosha.core.context.SemanticUserContext;
@@ -141,7 +144,7 @@ public class SemanticContextBridge {
         return nPN;
     }
 
-    public String _createTheNewUCPage(String uc) throws LoginException, IOException {
+    public String createTheNewUCPage(String uc) throws LoginException, IOException {
 
         String nPN = "USERCONTEXT_" + uc;
 
@@ -152,7 +155,7 @@ public class SemanticContextBridge {
 
         if (flag[0]) {
         } else {
-            w.edit(nPN, "Semantic User Context Log Page (created with v0.1 of SemanticContextBridge @" + getTimeStamp() + ")", "Initialisation done.");
+            w.edit(nPN, "Semantic User Context Log Page (created with v0.3 of SemanticContextBridge @" + getTimeStamp() + ")", "Initialisation done.");
 
             System.out.println("***pageCreation() # done! ***\n");
         }
@@ -212,14 +215,24 @@ public class SemanticContextBridge {
         String date = (new Date(System.currentTimeMillis())).toString();
         cont = cont.concat("\n\n[[File:" + fn + "]]\n");
 
+        // extract the METADATA ...
+        SimpleTikaParser stk = new SimpleTikaParser();
+        String MD = " ??? ";
+        try {
+            MD = stk.getMetaData( f );
+        } 
+        catch (Exception ex) {
+            Logger.getLogger(SemanticContextBridge.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        cont = cont.concat("\n\n[[Metadata:" + MD + "]]\n");
+        
         w.edit(title, cont, "image file added");
         w.upload(f, fn, "...", "descriptor");
 
         System.out.println("***imageUpload() # done! ***\n");
 
         System.out.println(w.getFullURL(title));
-
-
 
     }
 
@@ -331,7 +344,7 @@ public class SemanticContextBridge {
      */
     public void _logBashHistoryToPage(String bashText) throws LoginException, IOException {
 
-        uCont.ucPn = _createTheNewUCPage("username: " + uCont.user);
+        uCont.ucPn = createTheNewUCPage("username: " + uCont.user);
 
         String cont = w.getPageText(uCont.ucPn);
 
@@ -365,7 +378,7 @@ public class SemanticContextBridge {
             throw new Exception("File: " + f.getAbsolutePath() + " not readable!!!");
         }
 
-        uCont.ucPn = _createTheNewUCPage("username: " + uCont.user);
+        uCont.ucPn = createTheNewUCPage("username: " + uCont.user);
         String contOLD = w.getPageText(uCont.ucPn);
 
 
@@ -395,7 +408,7 @@ public class SemanticContextBridge {
 
     public void _logNoteToPage(String text) throws LoginException, IOException {
 
-        uCont.ucPn = _createTheNewUCPage("username: " + uCont.user);
+        uCont.ucPn = createTheNewUCPage("username: " + uCont.user);
 
         String cont = w.getPageText(uCont.ucPn);
 
@@ -407,7 +420,7 @@ public class SemanticContextBridge {
 
     public void _logNoteLinkToPage(String text) throws LoginException, IOException {
 
-        uCont.ucPn = _createTheNewUCPage("username: " + uCont.user);
+        uCont.ucPn = createTheNewUCPage("username: " + uCont.user);
         String nn = uCont.user + System.currentTimeMillis();
 
         String noteLink = "\n[[" + nn + " | linked note ]] ...\n";

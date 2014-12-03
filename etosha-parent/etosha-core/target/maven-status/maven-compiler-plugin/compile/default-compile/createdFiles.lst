@@ -1,7 +1,5 @@
 org/etosha/core/sc/connector/internal/SemanticLog4JConnector.class
 org/etosha/cmd/jobprofiler/TaskMetrics$InputRecordsComparator.class
-org/etosha/cmd/EtoshaPaperConnect$1.class
-org/etosha/cmd/EtoshaPaperConnect.class
 org/etosha/tools/hivemetastore/HiveTableInspector.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataImport.class
 org/etosha/cmd/ParsingTransferHandler.class
@@ -16,8 +14,10 @@ org/etosha/core/sc/connector/external/Wiki.class
 org/etosha/cmd/statistics/DataSetInspector.class
 org/etosha/sandbox/mr/corpusprofiler/WordContextMapper.class
 org/etosha/sandbox/mr/corpusprofiler/WordContextInspector4HTMLTool.class
+org/etosha/cmd/EtoshaFactConnect$1.class
 org/etosha/cmd/jobprofiler/TaskMetrics$InputBytesComparator.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataLoader$ImageSavingParser.class
+org/etosha/cmd/EtoshaFactConnect$2.class
 org/etosha/tools/gui/NoteTool.class
 org/etosha/core/sc/connector/external/GMailLoader.class
 org/etosha/io/hadoop/WholeFileRecordReader.class
@@ -41,13 +41,15 @@ org/etosha/cmd/jobprofiler/ExtractJobTaskTimeline.class
 org/etosha/sandbox/morphlines/MLPModel.class
 org/etosha/cmd/jobprofiler/ExtractJobTaskTimeline$TimeRange.class
 org/etosha/core/sc/connector/internal/ScreenSnappLoader.class
-org/etosha/cmd/EtoshaPaperConnect$2.class
+org/etosha/cmd/EtoshaFactConnect$ImageDocumentSelector.class
 org/etosha/cmd/jobprofiler/TaskMetrics.class
 org/etosha/cmd/jobprofiler/TaskMetrics$ExecTimeComparator.class
 org/etosha/cmd/admintools/EmailImporter.class
 org/etosha/cmd/jobprofiler/TaskMetrics$OverallThroughputComparator.class
+org/etosha/cmd/EtoshaFactConnect.class
 org/etosha/core/sc/connector/external/Wiki$LogEntry.class
 org/etosha/io/hadoop/WholeFileInputFormat.class
+org/etosha/cmd/EtoshaFactConnect$ImageSavingParser.class
 org/etosha/io/hdfs/HDFSWalker.class
 org/etosha/tools/clusteranalytics/ResultGrabberHelper.class
 org/etosha/io/docs/SimpleTable.class
@@ -58,10 +60,8 @@ org/etosha/sandbox/mr/corpusprofiler/WordContextMapper2.class
 org/etosha/core/sc/connector/SemanticContextBridge.class
 org/etosha/cmd/statistics/DataSetStatisticsJob.class
 org/etosha/cmd/jobprofiler/JobHistoryHelper.class
-org/etosha/cmd/EtoshaPaperConnect$ImageDocumentSelector.class
 org/etosha/io/hdfs/FSTree.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataLoader$ImageDocumentSelector.class
 org/etosha/core/sc/connector/external/Wiki$User.class
 org/etosha/tools/hivemetastore/HiveTableDataSetPage.class
 org/etosha/core/context/SemanticDataSetContext.class
-org/etosha/cmd/EtoshaPaperConnect$ImageSavingParser.class

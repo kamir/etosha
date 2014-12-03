@@ -86,7 +86,7 @@ import org.xml.sax.helpers.AttributesImpl;
  * Simple Swing GUI for Apache Tika. You can drag and drop files on top
  * of the window to have them parsed.
  */
-public class EtoshaPaperConnect extends JFrame
+public class EtoshaFactConnect extends JFrame
         implements ActionListener, HyperlinkListener {
 
     /**
@@ -106,7 +106,7 @@ public class EtoshaPaperConnect extends JFrame
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new EtoshaPaperConnect(new AutoDetectParser()).setVisible(true);
+                new EtoshaFactConnect(new AutoDetectParser()).setVisible(true);
             }
         });
     }
@@ -166,8 +166,8 @@ public class EtoshaPaperConnect extends JFrame
      */
     private final JFileChooser chooser = new JFileChooser();
 
-    public EtoshaPaperConnect(Parser parser) {
-        super("Etosha Paper Connect");
+    public EtoshaFactConnect(Parser parser) {
+        super("Etosha Fact Connect");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         addMenuBar();
@@ -263,7 +263,7 @@ public class EtoshaPaperConnect extends JFrame
             layout.show(cards, command);
         } else if ("about".equals(command)) {
             textDialog("About Apache Tika",
-                    EtoshaPaperConnect.class.getResource("about.html"));
+                    EtoshaFactConnect.class.getResource("about.html"));
         } else if ("exit".equals(command)) {
             Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(
                     new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
@@ -365,7 +365,7 @@ public class EtoshaPaperConnect extends JFrame
     private void addWelcomeCard(JPanel panel, String name) {
         try {
             JEditorPane editor =
-                new JEditorPane(EtoshaPaperConnect.class.getResource("welcome.html"));
+                new JEditorPane(EtoshaFactConnect.class.getResource("welcome.html"));
             editor.setContentType("text/html");
             editor.setEditable(false);
             editor.setBackground(Color.WHITE);
