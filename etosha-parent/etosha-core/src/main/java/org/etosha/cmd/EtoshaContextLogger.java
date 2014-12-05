@@ -31,13 +31,20 @@ import org.etosha.tools.gui.NoteTool;
  * This is the tool to interact with the Etosha Context Proxy (ECP).
  * 
  * Either a local ECP or the configured remote proxy is used.
- * The first proxy implementation is the Semantic Media Wiki.
+ * 
+ * The first proxy implementation uses the Semantic Media Wiki.
+ * Other Wiki and Triple Store implementations can be considered in the
+ * future.
  * 
  * @author kamir
  */
 
 public class EtoshaContextLogger extends Configured implements Tool {
 
+    public static String VERSION = "v0.3.31";
+    
+    public static boolean absoluteCFG = true;
+    
     /**
      * The Semantic Context Bridge (SCB) connects an electronic device
      * with an ECP.
@@ -94,7 +101,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             }
         }
 
-        System.out.println(">>> Etosha Context Logging (v 0.3.31) \ncmd: [" + cmd + "]");
+        System.out.println(">>> Etosha Context Logging ( " + VERSION + " ) \ncmd: [" + cmd + "]");
 
         if (cmd.equals("list") ) {
             list();
@@ -324,6 +331,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
     public static void main(String[] args) throws Exception {
 
         EtoshaContextLogger clt = new EtoshaContextLogger();
+        
         clt.setConf( new Configuration() );
 
         File cfgFile = clt.getCFGFile();
@@ -347,17 +355,19 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
     public void list() {
         System.out.println("  list  : show the help");
-        System.out.println("  snap  : take a screenshot ...");
+        System.out.println("\n  init  : create a new configuration file in $user/etc/smw-site.xml");
+        System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
+
+        System.out.println("\n  snap  : take a screenshot ...");
         System.out.println("  new   : define a new context (role the .bash_history)");
         System.out.println("  log   : store the current .bash_history");
         System.out.println("  ping  : check connectivity to curent context");
         System.out.println("  put   : embed a local file to the context");
         System.out.println("  note  : add a note to the current context");
         System.out.println("  notel : link a note to the current context");
-        System.out.println("  init  : create a new configuration file in $user/etc/smw-site.xml");
-        System.out.println("  mail  : load annotated mails from default mail box (see cfg)");
+       
+        System.out.println("\n  mail  : load annotated mails from default mail box (see cfg)");
         System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
-        System.out.println("  cfg   : show the client configuration, stored in $user/etc/smw-site.xml");
 
         System.out.println("  importImage   : import an image and extract metadata from it ");
         
@@ -387,10 +397,22 @@ public class EtoshaContextLogger extends Configured implements Tool {
         }
     }
 
-    private File getCFGFile() {
+    /**
+     * Where is the Etosha configuration located?
+     * 
+     * Absolute: /etc/etosha/smw-site.xml
+     * Relative: $USER_HOME/etc/etosha/smw-site.xml
+
+     * @return File
+     */
+    public static File getCFGFile() {
        
         String userHome = System.getProperty("userhome");
-        File f = new File(userHome + "/etc/etosha/smw-site.xml");
+        String fn = userHome + "/etc/etosha/smw-site.xml";
+        
+        if ( absoluteCFG ) fn = "/etc/etosha/smw-site.xml";
+        
+        File f = new File(fn);
         
         return f;
     }
