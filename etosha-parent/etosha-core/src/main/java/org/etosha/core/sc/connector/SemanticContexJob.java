@@ -50,7 +50,7 @@ public class SemanticContexJob extends Configured implements Tool {
 
 	SemanticContextBridge scb = null;
 	
-	private void init() throws UnknownHostException {
+	private void init() throws Exception {
 
 		scb = new SemanticContextBridge( this.getConf() );
 		
@@ -67,7 +67,7 @@ public class SemanticContexJob extends Configured implements Tool {
 	 * @throws IOException
 	 * @throws LoginException
 	 */
-	public int run(String[] args) throws LoginException, IOException {
+	public int run(String[] args) throws LoginException, Exception {
 
 		init();
 
