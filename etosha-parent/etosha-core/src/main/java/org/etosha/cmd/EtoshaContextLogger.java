@@ -60,7 +60,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
      * 
      * @throws UnknownHostException 
      */
-    public void initConnector() throws UnknownHostException {
+    public void initConnector() throws Exception {
         scb = new SemanticContextBridge(this.getConf());
         scb.login();
         if ( debug )
@@ -76,7 +76,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
      * @throws IOException
      * @throws LoginException
      */
-    public int run(String[] args) throws IOException, LoginException {
+    public int run(String[] args) throws IOException, LoginException, Exception {
 
         Configuration cfg = getConf();
         

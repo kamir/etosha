@@ -36,7 +36,6 @@ import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 import org.etosha.core.sc.connector.SemanticContextBridge;
-import org.etosha.core.sc.connector.external.Wiki;
 
 public class DataSetInspector extends Configured implements Tool {
 
@@ -52,7 +51,7 @@ public class DataSetInspector extends Configured implements Tool {
 		// ...
 	};
 
-	private void init() throws UnknownHostException {
+	private void init() throws Exception {
 		scb = new SemanticContextBridge( this.getConf() );
 		scb.login();
 		System.out.println("***init() # done! ***\n");
@@ -63,7 +62,7 @@ public class DataSetInspector extends Configured implements Tool {
 	 * @throws IOException
 	 * @throws LoginException
 	 */
-	public int run(String[] args) throws LoginException, IOException {
+	public int run(String[] args) throws Exception {
 
 		init();
 

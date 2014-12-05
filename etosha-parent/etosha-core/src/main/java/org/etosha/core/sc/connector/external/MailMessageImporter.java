@@ -33,7 +33,8 @@ public class MailMessageImporter extends EtoshaContextLogger implements Tool {
     
     String pn = null;
 
-    public void initConnector() throws UnknownHostException {
+    @Override
+    public void initConnector() throws Exception {
 
         scb = new SemanticContextBridge(this.getConf());
 
@@ -48,7 +49,7 @@ public class MailMessageImporter extends EtoshaContextLogger implements Tool {
      * @throws IOException
      * @throws LoginException
      */
-    public int run(String[] args) throws IOException, LoginException {
+    public int run(String[] args) throws IOException, Exception {
 
         // String user = "training";
         // File f = new File("/home/" + user + "/etc");

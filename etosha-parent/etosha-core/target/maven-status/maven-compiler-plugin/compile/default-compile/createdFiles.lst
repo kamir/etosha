@@ -1,7 +1,9 @@
 org/etosha/core/sc/connector/internal/SemanticLog4JConnector.class
+org/apache/tika/gui/TikaGUI.class
 org/etosha/cmd/jobprofiler/TaskMetrics$InputRecordsComparator.class
 org/etosha/tools/hivemetastore/HiveTableInspector.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataImport.class
+org/apache/tika/gui/TikaGUI$2.class
 org/etosha/cmd/ParsingTransferHandler.class
 org/etosha/sandbox/mr/corpusprofiler/WordContextInspectorTool2.class
 org/etosha/sandbox/mr/corpusprofiler/SumReducer.class
@@ -9,6 +11,7 @@ org/etosha/io/docs/MSExcelFileLoader.class
 org/etosha/core/sc/connector/external/Wiki$Gender.class
 org/etosha/io/hdfs/HDFSTree.class
 org/etosha/sandbox/nlp/POSDemo.class
+org/apache/tika/gui/TikaGUI$ImageDocumentSelector.class
 org/etosha/io/wiki/WikiTableBuilder.class
 org/etosha/core/sc/connector/external/Wiki.class
 org/etosha/cmd/statistics/DataSetInspector.class
@@ -33,6 +36,7 @@ org/etosha/cmd/EtoshaContextLogger.class
 org/etosha/core/context/SemanticUserContext.class
 org/etosha/mr/datasetprofiler/MultiStatsReducer.class
 org/etosha/sandbox/avro/AvroTester.class
+org/apache/tika/gui/TikaGUI$1.class
 org/etosha/core/sc/connector/SemanticContextDataSet.class
 org/etosha/core/context/SemanticJobContext.class
 org/etosha/cmd/admintools/SEQFileInspector.class
@@ -47,6 +51,7 @@ org/etosha/cmd/jobprofiler/TaskMetrics$ExecTimeComparator.class
 org/etosha/cmd/admintools/EmailImporter.class
 org/etosha/cmd/jobprofiler/TaskMetrics$OverallThroughputComparator.class
 org/etosha/cmd/EtoshaFactConnect.class
+org/apache/tika/gui/ParsingTransferHandler.class
 org/etosha/core/sc/connector/external/Wiki$LogEntry.class
 org/etosha/io/hadoop/WholeFileInputFormat.class
 org/etosha/cmd/EtoshaFactConnect$ImageSavingParser.class
@@ -62,6 +67,8 @@ org/etosha/cmd/statistics/DataSetStatisticsJob.class
 org/etosha/cmd/jobprofiler/JobHistoryHelper.class
 org/etosha/io/hdfs/FSTree.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataLoader$ImageDocumentSelector.class
+org/apache/tika/gui/TikaGUI$ImageSavingParser.class
 org/etosha/core/sc/connector/external/Wiki$User.class
+org/apache/tika/gui/SimpleTikaParser.class
 org/etosha/tools/hivemetastore/HiveTableDataSetPage.class
 org/etosha/core/context/SemanticDataSetContext.class

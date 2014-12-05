@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 import java.util.Date;
 import java.util.logging.Level;
@@ -30,11 +31,13 @@ import org.etosha.core.sc.connector.external.Wiki;
 
 public class SemanticContextBridge {
 
-    public static boolean overWriteEnvForLocaltest = true;
+    public static boolean overWriteEnvForLocaltest = false;
+    
     // will be loaded from core-site.xml file ...
     String user = "";
     String pw = "";
     String url = "";
+    
     public String project = "Etosha Process";
     public String clusterID = "CDH4.2.VM.adht";
     public String localEnv = "???";
@@ -45,9 +48,17 @@ public class SemanticContextBridge {
     public SemanticUserContext uCont = new SemanticUserContext();
     public SemanticDataSetContext dsCont = new SemanticDataSetContext();
 
-    public SemanticContextBridge(Configuration conf) throws UnknownHostException {
+    public SemanticContextBridge(Configuration conf) throws UnknownHostException, MalformedURLException {
 
+        File cfgFile = new File("/Users/kamir/etc/smw-site.xml");
+        conf.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
+        conf.reloadConfiguration();
+        System.out.println(conf);
+        
+         
         localUser = System.getProperty("user.name");
+        System.out.println(conf);
+
 
         overWriteEnvForLocaltest = conf.getBoolean("smw.mode.local", false);
 
@@ -59,13 +70,11 @@ public class SemanticContextBridge {
         String hostName = "127.0.0.1";
         
         System.out.println("Hostname of local machine: " + hostName );
+        System.out.println("Local username: " + localUser );
 
         System.out.println("***Semantic Context Bridge Logger init() ***");
 
-        conf.reloadConfiguration();
-
-        System.out.println(conf);
-
+        
         url = conf.getRaw("smw.url");
         pw = conf.get("smw.pw");
         user = conf.get("smw.user");   // for SMW account
@@ -104,10 +113,10 @@ public class SemanticContextBridge {
         try {
             w.login(user, pw.toCharArray());
         } catch (FailedLoginException e) {
-            System.err.println("***SCB.init() ###ERROR###");
+            System.err.println("***SCB.init() ###ERROR### FailedLoginException");
             e.printStackTrace();
         } catch (IOException e) {
-            System.err.println("***SCB.init() ###ERROR###");
+            System.err.println("***SCB.init() ###ERROR### IOException");
             e.printStackTrace();
 
         }
