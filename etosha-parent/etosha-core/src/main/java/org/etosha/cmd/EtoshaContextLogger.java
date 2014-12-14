@@ -330,11 +330,11 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
     public static void main(String[] args) throws Exception {
 
-        EtoshaContextLogger clt = new EtoshaContextLogger();
+        clt = new EtoshaContextLogger();
         
         clt.setConf( new Configuration() );
 
-        File cfgFile = clt.getCFGFile();
+        File cfgFile = EtoshaContextLogger.getCFGFile();
                 
         if (cfgFile.exists()) {
             /**
