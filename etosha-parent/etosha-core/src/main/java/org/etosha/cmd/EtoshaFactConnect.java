@@ -307,10 +307,11 @@ public class EtoshaFactConnect extends JFrame
         StringBuilder metadataBuffer = new StringBuilder();
 
         ContentHandler handler = new TeeContentHandler(
-                getHtmlHandler(htmlBuffer),
+//                getHtmlHandler(htmlBuffer),
                 getTextContentHandler(textBuffer),
-                getTextMainContentHandler(textMainBuffer),
-                getXmlContentHandler(xmlBuffer));
+                getTextMainContentHandler(textMainBuffer) //,
+//                getXmlContentHandler(xmlBuffer)
+        );
 
         context.set(DocumentSelector.class, new ImageDocumentSelector());
 

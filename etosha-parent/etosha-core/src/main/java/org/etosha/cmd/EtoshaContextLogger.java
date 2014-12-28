@@ -41,7 +41,7 @@ import org.etosha.tools.gui.NoteTool;
 
 public class EtoshaContextLogger extends Configured implements Tool {
 
-    public static String VERSION = "v0.3.31";
+    public static String VERSION = "v0.4.1";
     
     public static boolean absoluteCFG = true;
     

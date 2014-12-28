@@ -1,7 +1,5 @@
 /**
- * 
- * A component to read some input from command line.
- *
+ * A component which reads some input from command line.
  */
 package org.etosha.tools;
 
@@ -16,35 +14,33 @@ public class ReadCMD {
     /**
      * Prompt a label and the default value.
      * 
-     * Default is given back if an error occurs.
+     * Default is given back if an error occurs or no input was provided.
      * 
      * @param label
-     * @param def
+     * @param defaultValue
      * @return 
      */
-    public static String read(String label, String def) {
+    public static String read(String label, String defaultValue) {
  
       //  prompt the "LABEL"
-      System.out.print( "> " + label + " ( " + def + " ) ");
+      System.out.print( "> " + label + " ( " + defaultValue + " ) ");
  
       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
  
       String val = null;
- 
-      //  read the username from the command-line; need to use try/catch with the
-      //  readLine() method
+
       try {
          val = br.readLine();
          if ( val.length() < 1 ) { 
-             System.out.println("IO error trying to read input!");
-             System.out.println("Use default value (" + def + ")" );
-             val = def;
+             System.out.println("NO Input provided.");
+             System.out.println("Use default value (" + defaultValue + ")" );
+             val = defaultValue;
           } 
       } 
       catch (IOException ioe) {
          System.out.println("IO error trying to read input!");
-         System.out.println("Use default value (" + def + ")" );
-         val = def;
+         System.out.println("Use default value (" + defaultValue + ")" );
+         val = defaultValue;
       }
       return val;
     }  
