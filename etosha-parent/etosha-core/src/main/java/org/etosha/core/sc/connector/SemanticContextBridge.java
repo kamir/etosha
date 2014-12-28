@@ -23,7 +23,7 @@ import javax.security.auth.login.LoginException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.util.Tool;
-import org.apache.tika.gui.SimpleTikaParser;
+import org.semanpix.parser.SemanpixImageParser;
 import org.etosha.core.context.SemanticDataSetContext;
 import org.etosha.core.context.SemanticJobContext;
 import org.etosha.core.context.SemanticUserContext;
@@ -44,6 +44,7 @@ public class SemanticContextBridge {
     public String localUser = "default";
     public String localHostAdress = "127.0.0.1";
     public String localHostName = "localhost";
+    
     public SemanticJobContext jCont = new SemanticJobContext();
     public SemanticUserContext uCont = new SemanticUserContext();
     public SemanticDataSetContext dsCont = new SemanticDataSetContext();
@@ -96,11 +97,10 @@ public class SemanticContextBridge {
         System.out.println("smw.user=" + user);
         System.out.println("smw.pw=" + pw);
 
-
-
         w = getWiki();
 
     }
+    
     Wiki w = null;
 
     public Wiki getWiki() {
@@ -225,7 +225,7 @@ public class SemanticContextBridge {
         cont = cont.concat("\n\n[[File:" + fn + "]]\n");
 
         // extract the METADATA ...
-        SimpleTikaParser stk = new SimpleTikaParser();
+        SemanpixImageParser stk = new SemanpixImageParser();
         String MD = " ??? ";
         try {
             MD = stk.getMetaData( f );

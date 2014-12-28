@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.tika.gui;
+package org.semanpix.parser;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,6 +23,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URI;
 import java.util.Arrays;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ProgressMonitorInputStream;
@@ -42,7 +43,7 @@ import org.xml.sax.ContentHandler;
  *
  * @author kamir
  */
-public class SimpleTikaParser {
+public class SemanpixImageParser {
 
     private static ParseContext context = null;
     private static Parser parser = null;
@@ -54,16 +55,49 @@ public class SimpleTikaParser {
             "http://semanpix.de/opendata/wiki/index.php?title=Main_Page"
         };
         
-        SimpleTikaParser sp = new SimpleTikaParser();
+        SemanpixImageParser sp = new SemanpixImageParser();
     
         File f = new File("./Peter001.jpg");
-
         System.out.println( sp.getMetaData(f) );
-        
+       
+        URL url = new URL( adresses[0] );
+        System.out.println( sp.getMetaData( url ) );
+
     };
         
 
+    private static Properties getProperties(InputStream input, Metadata md)
+            throws Exception {
 
+        Properties props = new Properties();
+        
+        StringWriter htmlBuffer = new StringWriter();
+        StringWriter textBuffer = new StringWriter();
+        StringWriter textMainBuffer = new StringWriter();
+        StringWriter xmlBuffer = new StringWriter();
+        StringBuilder metadataBuffer = new StringBuilder();
+
+        ContentHandler handler = new TeeContentHandler(
+                TikaGUI.getTextContentHandler(textBuffer),
+                TikaGUI.getTextMainContentHandler(textMainBuffer),
+                TikaGUI.getXmlContentHandler(xmlBuffer));
+
+        context.set(DocumentSelector.class, new TikaGUI.ImageDocumentSelector());
+
+        parser.parse(input, handler, md, context);
+
+        String[] names = md.names();
+        Arrays.sort(names);
+        for (String name : names) {
+            
+            String name2 = toVTLIdentifier( name );
+            
+            props.put(name2,md.get(name));
+            
+        }
+
+        return props;
+    }
 
     private static String handleStream(InputStream input, Metadata md)
             throws Exception {
@@ -97,18 +131,59 @@ public class SimpleTikaParser {
         return metadataBuffer.toString();
     }
 
-    public String getMetaData(File f) throws IOException, Exception {
+    private static String toVTLIdentifier(String name) {
+        name = name.replaceAll(" ", "_");
+        return name;
+    }
 
+    public String getMetaData(File f) throws IOException, Exception {
+                
+        try {
+
+            URL url = f.toURI().toURL();
+            
+            System.out.println(url);
+                        
+            return getMetaData( url );
+            
+        } 
+        catch (MalformedURLException ex) {
+            Logger.getLogger(SemanpixImageParser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return " *** no metadata for file available *** ";
+        
+    }
+    
+    public Properties getMetaDataAsProperties(URL url) throws IOException, Exception {
                 
         try {
             
             context = new ParseContext();
+            
             parser = new AutoDetectParser();
             
+            InputStream input = url.openStream();
             
-            URL url = f.toURI().toURL();
+            Metadata metadata = new Metadata();
             
-            System.out.println(url);
+            return getProperties(input, metadata);
+            
+        } 
+        catch (MalformedURLException ex) {
+            Logger.getLogger(SemanpixImageParser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return null;
+        
+    }
+    public String getMetaData(URL url) throws IOException, Exception {
+                
+        try {
+            
+            context = new ParseContext();
+            
+            parser = new AutoDetectParser();
             
             InputStream input = url.openStream();
             
@@ -118,10 +193,10 @@ public class SimpleTikaParser {
             
         } 
         catch (MalformedURLException ex) {
-            Logger.getLogger(SimpleTikaParser.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SemanpixImageParser.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return " *** no metadata available *** ";
+        return " *** no metadata for URL available *** ";
         
     }
 

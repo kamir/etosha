@@ -4,7 +4,7 @@
     <groupId>org.apache.etosha</groupId>
     <artifactId>Etosha-Core</artifactId>
     <packaging>jar</packaging>
-    <version>0.3.0-SNAPSHOT</version> 
+    <version>0.4.1-SNAPSHOT</version> 
     
     <name>etosha-core</name>
     <url>http://maven.apache.org</url>
@@ -20,6 +20,13 @@
         <artifactId>org.apache.felix.scr.annotations</artifactId>
         <version>1.6.0</version>
       </dependency>
+      
+      
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.7</version>
+        </dependency>
  
     <dependency>
       <groupId>org.slf4j</groupId>

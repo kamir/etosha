@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.tika.gui;
+package org.semanpix.parser;
 
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.tika.gui;
+package org.semanpix.parser;
 
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -103,18 +103,23 @@ public class TikaGUI extends JFrame
      * @throws Exception if an error occurs
      */
     public static void main(String[] args) throws Exception {
+        
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        SwingUtilities.invokeLater(new Runnable() {
+        
+        SwingUtilities.invokeLater( new Runnable() {
+            
             public void run() {
                 new TikaGUI(new AutoDetectParser()).setVisible(true);
             }
+            
         });
+        
     }
 
     /**
      * Parsing context.
      */
-    private final ParseContext context;
+    private final ParseContext _context;
 
     /**
      * Configured parser instance.
@@ -185,12 +190,13 @@ public class TikaGUI extends JFrame
         setPreferredSize(new Dimension(640, 480));
         pack();
 
-        this.context = new ParseContext();
+        this._context = new ParseContext();
         this.parser = parser;
 
         this.imageParser = new ImageSavingParser(parser);
-        this.context.set(DocumentSelector.class, new ImageDocumentSelector());
-        this.context.set(Parser.class, imageParser);
+        this._context.set(DocumentSelector.class, new ImageDocumentSelector());
+        this._context.set(Parser.class, imageParser);
+        
     }
 
     private void addMenuBar() {
@@ -309,16 +315,19 @@ public class TikaGUI extends JFrame
         StringBuilder metadataBuffer = new StringBuilder();
 
         ContentHandler handler = new TeeContentHandler(
-                getHtmlHandler(htmlBuffer),
+//                getHtmlHandler(htmlBuffer),
                 getTextContentHandler(textBuffer),
-                getTextMainContentHandler(textMainBuffer),
-                getXmlContentHandler(xmlBuffer));
+                getTextMainContentHandler(textMainBuffer) //,
+     //           getXmlContentHandler(xmlBuffer)
+        );
 
-        context.set(DocumentSelector.class, new ImageDocumentSelector());
+        _context.set(DocumentSelector.class, new ImageDocumentSelector());
 
         input = new ProgressMonitorInputStream(
                 this, "Parsing stream", input);
-        parser.parse(input, handler, md, context);
+        
+//        parser.parse(input, handler, md, context);
+        parser.parse(input, handler, md, _context);
 
         String[] names = md.names();
         Arrays.sort(names);
@@ -337,7 +346,7 @@ public class TikaGUI extends JFrame
         }
 
         setText(metadata, metadataBuffer.toString());
-        setText(xml, xmlBuffer.toString());
+//        setText(xml, xmlBuffer.toString());
         setText(text, textBuffer.toString());
         setText(textMain, textMainBuffer.toString());
         setText(html, htmlBuffer.toString());

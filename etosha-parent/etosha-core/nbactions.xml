@@ -20,4 +20,12 @@
                 <outputDirectory>/Users/kamir/TEST2</outputDirectory>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-ca:s</actionName>
+            <displayName>ca:s</displayName>
+            <goals>
+                <goal>compile</goal>
+                <goal>assembly:single</goal>
+            </goals>
+        </action>
     </actions>
