@@ -8,7 +8,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.mail.Address;
@@ -226,15 +232,33 @@ public class SemanticContextBridge {
 
         // extract the METADATA ...
         SemanpixImageParser stk = new SemanpixImageParser();
-        String MD = " ??? ";
+        
+        Properties props = null;
         try {
-            MD = stk.getMetaData( f );
+            props = stk.getMetaDataAsProperties( f.toURI().toURL() );
         } 
         catch (Exception ex) {
             Logger.getLogger(SemanticContextBridge.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        cont = cont.concat("\n\n[[Metadata:" + MD + "]]\n");
+
+        StringBuffer sb = new StringBuffer();
+        Enumeration en = props.keys();
+        while( en.hasMoreElements() ) {
+            String k = (String) en.nextElement();
+            
+            if (!k.equals("User Comment")) {
+            String v = props.getProperty(k);
+            
+            String k2 = SemanpixImageParser.toVTLIdentifier( k );
+            
+//            sb.append("   [["+k+"::"+v+"]]\n");
+            sb.append("   [["+k2+"::"+v+"|'''"+ k + "''' : " + v + "]]\n");
+        }
+            
+        }
+        sb.append("----\n__SHOWFACTBOX__\n");
+
+        cont = cont.concat("\n\n===Metadata===\n" + sb.toString() + "\n");
         
         w.edit(title, cont, "image file added");
         w.upload(f, fn, "...", "descriptor");
