@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2014 The Apache Software Foundation.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +12,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ * 
+ **/
 package org.semanpix.parser;
 
 import java.io.File;
@@ -21,22 +22,16 @@ import java.io.InputStream;
 import java.io.StringWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URI;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.ProgressMonitorInputStream;
 import org.apache.tika.extractor.DocumentSelector;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.Parser;
-import org.apache.tika.parser.html.HtmlParser;
-import org.apache.tika.sax.BodyContentHandler;
-import org.apache.tika.sax.LinkContentHandler;
 import org.apache.tika.sax.TeeContentHandler;
-import org.apache.tika.sax.ToHTMLContentHandler;
 import org.xml.sax.ContentHandler;
 
 /**
@@ -64,7 +59,8 @@ public class SemanpixImageParser {
         System.out.println( sp.getMetaData( url ) );
 
     };
-        
+
+    
 
     private static Properties getProperties(InputStream input, Metadata md)
             throws Exception {
@@ -126,12 +122,12 @@ public class SemanpixImageParser {
             metadataBuffer.append("\n");
         }
 
-        System.out.println( metadataBuffer.toString() );
+        // System.out.println( metadataBuffer.toString() );
         
         return metadataBuffer.toString();
     }
 
-    private static String toVTLIdentifier(String name) {
+    public static String toVTLIdentifier(String name) {
         name = name.replaceAll(" ", "_");
         return name;
     }
