@@ -335,6 +335,12 @@
             <artifactId>cdk-morphlines-useragent</artifactId>
             <version>0.9.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>4.4-beta2-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
 
     <organization>
