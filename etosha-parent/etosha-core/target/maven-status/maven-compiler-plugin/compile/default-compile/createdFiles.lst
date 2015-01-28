@@ -8,6 +8,7 @@ org/etosha/cmd/ParsingTransferHandler.class
 org/etosha/sandbox/mr/corpusprofiler/WordContextInspectorTool2.class
 org/etosha/sandbox/mr/corpusprofiler/SumReducer.class
 org/etosha/io/docs/MSExcelFileLoader.class
+org/etosha/core/sc/connector/internal/ImageToWikiUploader.class
 org/etosha/core/sc/connector/external/Wiki$Gender.class
 org/etosha/io/hdfs/HDFSTree.class
 org/etosha/sandbox/nlp/POSDemo.class
@@ -19,6 +20,7 @@ org/etosha/sandbox/mr/corpusprofiler/WordContextMapper.class
 org/etosha/sandbox/mr/corpusprofiler/WordContextInspector4HTMLTool.class
 org/etosha/cmd/EtoshaFactConnect$1.class
 org/etosha/cmd/jobprofiler/TaskMetrics$InputBytesComparator.class
+org/etosha/tools/SemanpixImageUploader.class
 org/semanpix/parser/TikaGUI$ImageDocumentSelector.class
 org/etosha/cmd/hdfsindexer/HDFSMetadataLoader$ImageSavingParser.class
 org/etosha/cmd/EtoshaFactConnect$2.class
@@ -41,11 +43,13 @@ org/etosha/cmd/EtoshaContextLogger.class
 org/etosha/core/context/SemanticUserContext.class
 org/etosha/mr/datasetprofiler/MultiStatsReducer.class
 org/etosha/sandbox/avro/AvroTester.class
+Main.class
 org/etosha/core/sc/connector/SemanticContextDataSet.class
 org/etosha/core/context/SemanticJobContext.class
 org/etosha/cmd/admintools/SEQFileInspector.class
 org/etosha/core/sc/connector/external/MailMessageImporter.class
 org/etosha/cmd/jobprofiler/ExtractJobTaskTimeline.class
+org/semanpix/parser/TikaWrapper.class
 org/etosha/sandbox/morphlines/MLPModel.class
 org/etosha/cmd/jobprofiler/ExtractJobTaskTimeline$TimeRange.class
 org/etosha/core/sc/connector/internal/ScreenSnappLoader.class
