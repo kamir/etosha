@@ -116,6 +116,16 @@ public class TikaGUI extends JFrame
         
     }
 
+    public static String getTextContent() {
+        return textMainBuffer.toString();
+    }
+
+
+    
+
+
+  
+
     /**
      * Parsing context.
      */
@@ -276,6 +286,35 @@ public class TikaGUI extends JFrame
                     new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
         }
     }
+    
+    public static boolean DEFAULT_visibility = false;
+    
+    public static Metadata getMetadataFromFile(File f) {
+        return getMetadataFromFile( f, DEFAULT_visibility );
+    }
+        
+    public static Metadata getMetadataFromFile( File file , boolean visible ) {
+        
+        TikaGUI gui = new TikaGUI(new AutoDetectParser());
+        gui.setVisible( visible );
+        
+        Metadata metadata = new Metadata();
+            
+        
+        try {
+            TikaInputStream stream = TikaInputStream.get(file, metadata);
+            try {
+                gui.handleStream(stream, metadata);
+            } finally {
+                stream.close();
+            }
+        } catch (Throwable t) {
+            gui.handleError(file.getPath(), t);
+        }
+        
+        return metadata;
+    
+    }
 
     public void openFile(File file) {
         try {
@@ -305,14 +344,20 @@ public class TikaGUI extends JFrame
         }
     }
 
+    static StringWriter htmlBuffer = new StringWriter();
+    static StringWriter textBuffer = new StringWriter();
+    static StringWriter textMainBuffer = new StringWriter();
+    static StringWriter xmlBuffer = new StringWriter();
+    static StringBuilder metadataBuffer = new StringBuilder();
+
     private void handleStream(InputStream input, Metadata md)
             throws Exception {
         
-        StringWriter htmlBuffer = new StringWriter();
-        StringWriter textBuffer = new StringWriter();
-        StringWriter textMainBuffer = new StringWriter();
-        StringWriter xmlBuffer = new StringWriter();
-        StringBuilder metadataBuffer = new StringBuilder();
+         htmlBuffer = new StringWriter();
+         textBuffer = new StringWriter();
+         textMainBuffer = new StringWriter();
+         xmlBuffer = new StringWriter();
+         metadataBuffer = new StringBuilder();
 
         ContentHandler handler = new TeeContentHandler(
 //                getHtmlHandler(htmlBuffer),
