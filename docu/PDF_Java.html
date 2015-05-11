@@ -1,0 +1,566 @@
+
+    PDF-Dateien erstellen und in PDF-Dateien Formularfelder füllen
+
+	+ andere TechDocs <index.htm>
++ PDF bei Wikipedia <http://de.wikipedia.org/wiki/Portable_Document_Format>
++ Adobe PDF <http://www.adobe.com/de/products/acrobat/adobepdf.html>
++ Apache PDFBox <http://pdfbox.apache.org>
++ iText 5.x (AGPL) <http://itextpdf.com>
++ iText 4.2.0 (LGPL/MPL) <https://github.com/ymasory/iText-4.2.0/downloads>
++
+
+
+
+*PDF (Portable Document Format)
+<http://de.wikipedia.org/wiki/Portable_Document_Format> ist ein von
+Adobe <http://www.adobe.com/de/products/acrobat/adobepdf.html>
+entwickelter plattformunabhängiger Standard für Dateiformate für
+Dokumente. *
+
+*Insbesondere von Adobe <http://www.adobe.com/de/products/acrobat.html>,
+aber auch von vielen anderen Firmen, gibt es unzählige Tools zur Anzeige
+und Bearbeitung von PDF-Dateien. *
+
+*Auch zur Erstellung und Bearbeitung von PDF-Dateien unter Java gibt es
+viele Bibliotheken. Zwei sehr bekannte sind: PDF Library iText
+<http://itextpdf.com> und Java PDF Library Apache PDFBox
+<http://pdfbox.apache.org>.
+Zu diesen werden im Folgenden kleine Einsteigerprogrammierbeispiele
+gezeigt. *
+
+*Falls Sie nicht nur PDF-Dateien erstellen und bearbeiten wollen,
+sondern weitere Features benötigen, sollten Sie sich Reporting-Tools
+ansehen (die u.a. auch PDF erzeugen können), beispielsweise BIRT
+(Business Intelligence and Reporting Tools)
+<http://www.eclipse.org/birt> und JasperReports Java Reporting Library
+<http://jasperforge.org/projects/jasperreports>. *
+
+*Weitere Alternativen zur Generierung von PDF-Dateien sind DocBook mit
+Docbkx <maven.htm#DocBook-Docbkx> und XSL-FO mit Apache FOP
+<java-xsl.htm#XSL-FO>. *
+
+
+
+      PDF-Generierung mit iText
+
+ 1.
+
+    Dieses Programmierbeispiel enthält zwei kurze Einstiegsschnipsel:
+
+      * Ein Mini-Hello-World-Beispiel zur Generierung eines ersten
+        PDF-Dokuments per Java.
+      * Ein etwas erweitertes Programmierbeispiel zur Demonstration
+        weiterer Einsteiger-Features.
+
+    Verwendet wird die PDF Library iText <http://itextpdf.com> und als
+    Build-Tool Maven <maven.htm>.
+
+ 2.
+
+    Vorausgesetzt wird ein installiertes Maven <maven.htm#Installation>.
+
+ 3.
+
+    Legen Sie die Struktur für das neue Projekt (z.B. PdfMitIText) in
+    Ihrem Workspace-Verzeichnis (z.B. \MeinWorkspace) an:
+
+    md \MeinWorkspace\PdfMitIText\src\main\java\pdfmititext
+
+    cd \MeinWorkspace\PdfMitIText
+
+ 4.
+
+    Erzeugen Sie im PdfMitIText-Projektverzeichnis die
+    Maven-Projektkonfigurationsdatei: pom.xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+      <modelVersion>4.0.0</modelVersion>
+      <groupId>pdfmititext</groupId>
+      <artifactId>*pdf-mit-itext*</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <packaging>jar</packaging>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>*maven-assembly-plugin*</artifactId>
+            <version>2.3</version>
+            <configuration>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+              <archive>
+                <manifest>
+                  <mainClass>*pdfmititext.MeineZweitePdfDateiMitIText*</mainClass>
+                </manifest>
+              </archive>
+            </configuration>
+            <executions>
+              <execution>
+                <id>make-assembly</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <dependency>
+          <!-- iText 4.2.0: LGPL/MPL; iText 5.x: AGPL -->
+          <groupId>com.lowagie</groupId>
+          <artifactId>*itext*</artifactId>
+          <version>4.2.0</version>
+        </dependency>
+      </dependencies>
+    </project>
+
+    Um eine ausführbare Datei inklusive der benötigten Libs zu erhalten,
+    wird das Maven Assembly Plugin <maven.htm#MvnJarMitLibs> verwendet.
+
+ 5.
+
+    Erzeugen Sie im src\main\java\pdfmititext-Verzeichnis die
+    Java-Klasse: MeineErstePdfDateiMitIText.java
+
+    package pdfmititext;
+
+    import java.io.*;
+    import com.lowagie.text.*;
+    import com.lowagie.text.pdf.PdfWriter;
+
+    public class *MeineErstePdfDateiMitIText*
+    {
+       public static void *main*( String[] args ) throws FileNotFoundException, DocumentException
+       {
+          String meinText   = ( args.length > 0 ) ? args[0] : "Hallo iText-PDF-Welt!";
+          String outputFile = ( args.length > 1 ) ? args[1] : "MeineErstePdfDateiMitIText.pdf";
+          Document document = new Document( PageSize.A4 );
+          PdfWriter.getInstance( document, new FileOutputStream( outputFile ) );
+          document.open();
+          document.add( new Paragraph( meinText ) );
+          document.close();
+       }
+    }
+
+ 6.
+
+    Erzeugen Sie im src\main\java\pdfmititext-Verzeichnis die
+    Java-Klasse: MeineZweitePdfDateiMitIText.java
+
+    package pdfmititext;
+
+    import java.awt.Color;
+    import java.io.*;
+    import java.net.MalformedURLException;
+    import com.lowagie.text.*;
+    import com.lowagie.text.pdf.*;
+
+    public class *MeineZweitePdfDateiMitIText*
+    {
+       public static void *main*( String[] args ) throws DocumentException, MalformedURLException, IOException
+       {
+          String outputFile = "MeineZweitePdfDateiMitIText.pdf";
+
+          Document document = new Document( PageSize.A4 );
+          PdfWriter.getInstance( document, new FileOutputStream( outputFile ) );
+          document.open();
+
+          Font f1 = new Font( Font.HELVETICA, 12, Font.BOLD   );
+          Font f2 = new Font( Font.COURIER,   10, Font.NORMAL );
+          Font f3 = new Font( Font.HELVETICA, 10, Font.NORMAL );
+          Paragraph p = new Paragraph();
+          p.setSpacingBefore( 10 );
+          p.setSpacingAfter(  10 );
+
+          p.setFont( f1 );
+          p.add( new Phrase( "Registrierte Fonts:\n" ) );
+          p.setFont( f2 );
+          p.add( new Phrase( "" + FontFactory.getRegisteredFonts() ) );
+          document.add( p );
+
+          p.clear();
+          p.setFont( f3 );
+          f3.setColor( Color.RED );
+          p.add( new Phrase( "Rot, " ) );
+          f3.setColor( new CMYKColor( 1.f, 0f, 0f, 0f ) );
+          p.add( new Phrase( "Cyan, " ) );
+          f3.setColor( new CMYKColor( 0f, 1.f, 0f, 0f ) );
+          p.add( new Phrase( "Magenta " ) );
+          document.add( p );
+          f3.setColor( Color.BLUE );
+
+          p.clear();
+          List lst1 = new List( true, 15 );
+          lst1.add( "Unterliste mit Strichen" );
+          List lst2 = new List( false, 10 );
+          lst2.add( "Item1a" );
+          lst2.add( "Item1b" );
+          lst1.add( lst2 );
+          lst1.add( "Unterliste mit Buchstaben" );
+          List lst3 = new List( false, true );
+          lst3.add( "Item2a" );
+          lst3.add( "Item2b" );
+          lst1.add( lst3 );
+          document.add( lst1 );
+
+          p.clear();
+          p.setIndentationLeft(  200 );
+          p.setIndentationRight( 200 );
+          p.setAlignment( Element.ALIGN_JUSTIFIED );
+          Phrase ph = new Phrase( "Dies ist mein sehr langer Text, mit dem Absatzabstände, Einrückung und Blocksatz demonstriert werden." );
+          p.add( ph );
+          document.add( p );
+
+          File meineBilddatei = new File( "MeinBild.jpg" );
+          if( meineBilddatei.exists() ) {
+             Jpeg jpg = new Jpeg( meineBilddatei.toURI().toURL() );
+             jpg.setAlignment( Element.ALIGN_CENTER );
+             jpg.scalePercent( 50 );
+             document.add( jpg );
+          }
+
+          document.close();
+       }
+    }
+
+ 7.
+
+    Ihre Projektstruktur sieht jetzt so aus:
+
+    cd \MeinWorkspace\PdfMitIText
+
+    tree /F
+
+    [\MeinWorkspace\PdfMitIText]
+     |- [src]
+     |   '- [main]
+     |       '- [java]
+     |           '- [pdfmititext]
+     |               |- *MeineErstePdfDateiMitIText.java*
+     |               '- *MeineZweitePdfDateiMitIText.java*
+     '- *pom.xml*
+
+ 8.
+
+    Führen Sie für das erste Beispiel im Kommandozeilenfenster aus:
+
+    cd \MeinWorkspace\PdfMitIText
+
+    mvn package
+
+    java -cp target/pdf-mit-itext-1.0-SNAPSHOT-jar-with-dependencies.jar
+    pdfmititext.*MeineErstePdfDateiMitIText*
+
+    dir
+
+    start *MeineErstePdfDateiMitIText.pdf*
+
+    --> Die PDF-Datei MeineErstePdfDateiMitIText.pdf wird erzeugt.
+
+ 9.
+
+    Und für das zweite Beispiel (speichern Sie vorher ein beliebiges
+    Bild unter dem Dateinamen MeinBild.jpg im
+    PdfMitIText-Projektverzeichnis):
+
+    java -cp target/pdf-mit-itext-1.0-SNAPSHOT-jar-with-dependencies.jar
+    pdfmititext.*MeineZweitePdfDateiMitIText*
+
+    start *MeineZweitePdfDateiMitIText.pdf*
+
+
+
+      Mit Apache PDFBox in PDF-Dateien Formularfelder füllen
+
+ 1.
+
+    Dieses Programmierbeispiel enthält zwei kurze Einstiegsschnipsel:
+
+      * Ein Mini-Hello-World-Beispiel zur Generierung eines ersten
+        PDF-Dokuments per Java.
+      * Ein Programmierbeispiel zur Auflistung per Java von in einem
+        PDF-Dokument enthaltenen Formularfeldern und zum Füllen von
+        Formularfeldern.
+
+    Verwendet wird die Java PDF Library Apache PDFBox
+    <http://pdfbox.apache.org> und als Build-Tool Maven <maven.htm>.
+
+ 2.
+
+    Vorausgesetzt wird ein installiertes Maven <maven.htm#Installation>.
+
+ 3.
+
+    Legen Sie die Struktur für das neue Projekt (z.B. PdfMitPDFBox) in
+    Ihrem Workspace-Verzeichnis (z.B. \MeinWorkspace) an:
+
+    md \MeinWorkspace\PdfMitPDFBox\src\main\java\pdfmitpdfbox
+
+    cd \MeinWorkspace\PdfMitPDFBox
+
+ 4.
+
+    Erzeugen Sie im PdfMitPDFBox-Projektverzeichnis die
+    Maven-Projektkonfigurationsdatei: pom.xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+      <modelVersion>4.0.0</modelVersion>
+      <groupId>pdfmitpdfbox</groupId>
+      <artifactId>*pdf-mit-pdfbox*</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <packaging>jar</packaging>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>*maven-assembly-plugin*</artifactId>
+            <version>2.3</version>
+            <configuration>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+              <archive>
+                <manifest>
+                  <mainClass>*pdfmitpdfbox.PdfFormularFelder*</mainClass>
+                </manifest>
+              </archive>
+            </configuration>
+            <executions>
+              <execution>
+                <id>make-assembly</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.pdfbox</groupId>
+          <artifactId>*pdfbox*</artifactId>
+          <version>1.6.0</version>
+        </dependency>
+      </dependencies>
+    </project>
+
+    Um eine ausführbare Datei inklusive der benötigten Libs zu erhalten,
+    wird das Maven Assembly Plugin <maven.htm#MvnJarMitLibs> verwendet.
+
+ 5.
+
+    Erzeugen Sie im src\main\java\pdfmitpdfbox-Verzeichnis die
+    Java-Klasse: MeineErstePdfDateiMitPDFBox.java
+
+    package pdfmitpdfbox;
+
+    import java.io.IOException;
+    import org.apache.pdfbox.exceptions.COSVisitorException;
+    import org.apache.pdfbox.pdmodel.PDDocument;
+    import org.apache.pdfbox.pdmodel.PDPage;
+    import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
+    import org.apache.pdfbox.pdmodel.font.PDType1Font;
+
+    public class *MeineErstePdfDateiMitPDFBox*
+    {
+       public static void *main*( String[] args ) throws IOException, COSVisitorException
+       {
+          String meinText   = ( args.length > 0 ) ? args[0] : "Hallo PDFBox-Welt!";
+          String outputFile = ( args.length > 1 ) ? args[1] : "MeineErstePdfDateiMitPDFBox.pdf";
+          PDDocument pdDoc  = new PDDocument();
+          PDPage     page   = new PDPage();
+          pdDoc.addPage( page );
+          PDPageContentStream content = new PDPageContentStream( pdDoc, page );
+          content.beginText();
+          content.setFont( PDType1Font.HELVETICA_BOLD, 12 );
+          content.moveTextPositionByAmount( 100, 700 );
+          content.drawString( meinText );
+          content.endText();
+          content.close();
+          pdDoc.save( outputFile );
+          pdDoc.close();
+       }
+    }
+
+ 6.
+
+    Erzeugen Sie im src\main\java\pdfmitpdfbox-Verzeichnis die
+    Java-Klasse: PdfFormularFelder.java
+
+    package pdfmitpdfbox;
+
+    import java.io.*;
+    import java.util.*;
+    import org.apache.pdfbox.exceptions.COSVisitorException;
+    import org.apache.pdfbox.pdmodel.*;
+    import org.apache.pdfbox.pdmodel.interactive.form.*;
+
+    public class *PdfFormularFelder*
+    {
+       public static void *main*( String[] args ) throws IOException, COSVisitorException
+       {
+          System.out.println(
+                "\nSetzt Werte in die Formularfelder eines PDF-Dokuments ein (oder listet die vorhandenen Formularfelder auf)." +
+                "\nAufruf mit den Parametern: InputPdfFile OutputPdfFile Name1 Value1 Name2 Value2 ...\n" );
+          String   inputPdfFile   = (args.length > 0) ? args[0] : null;
+          String   outputPdfFile  = (args.length > 1) ? args[1] : null;
+          String[] nameValuePairs = (args.length > 2) ? Arrays.copyOfRange( args, 2, args.length ) : null;
+          *setFields*( inputPdfFile, outputPdfFile, nameValuePairs );
+       }
+
+       public static void *setFields*( String inputPdfFile, String outputPdfFile, String[] nameValuePairs )
+             throws IOException, COSVisitorException
+       {
+          if( inputPdfFile == null ) { return; }
+          PDDocument        pdDoc = PDDocument.load( new File( inputPdfFile ) );
+          PDDocumentCatalog pdCat = pdDoc.getDocumentCatalog();
+          PDAcroForm        acroForm = pdCat.getAcroForm();
+          if( acroForm == null ) {
+             System.out.println( "Das Dokument '" + inputPdfFile + "' enthaelt kein PDF-Formular." );
+             return;
+          }
+          if( outputPdfFile == null || nameValuePairs == null ) {
+             printFieldNames( acroForm );
+             return;
+          }
+          int i = 0;
+          while( i < nameValuePairs.length - 1 ) {
+             *setField*( acroForm, nameValuePairs[i++], nameValuePairs[i++] );
+          }
+          pdDoc.save( outputPdfFile );
+          pdDoc.close();
+       }
+
+       public static void *setField*( PDAcroForm acroForm, String name, String value ) throws IOException
+       {
+          PDField field = acroForm.getField( name );
+          if( field != null ) {
+             field.setValue( value );
+          } else {
+             System.err.println( "Es gibt kein Formularfeld mit dem Namen '" + name + "'." );
+             printFieldNames( acroForm );
+          }
+       }
+
+       public static void *printFieldNames*( PDAcroForm acroForm ) throws IOException
+       {
+          System.out.println( "Das PDF-Dokument enthaelt folgende Formularfelder:" );
+          @SuppressWarnings("unchecked")
+          List<PDField> fields = acroForm.getFields();
+          for( PDField f : fields ) {
+             System.out.println( f.getFullyQualifiedName() );
+          }
+       }
+    }
+
+ 7.
+
+    Ihre Projektstruktur sieht jetzt so aus:
+
+    cd \MeinWorkspace\PdfMitPDFBox
+
+    tree /F
+
+    [\MeinWorkspace\PdfMitPDFBox]
+     |- [src]
+     |   '- [main]
+     |       '- [java]
+     |           '- [pdfmitpdfbox]
+     |               |- *MeineErstePdfDateiMitPDFBox.java*
+     |               '- *PdfFormularFelder.java*
+     '- *pom.xml*
+
+ 8.
+
+    Führen Sie im Kommandozeilenfenster aus:
+
+    cd \MeinWorkspace\PdfMitPDFBox
+
+    mvn package
+
+    java -cp
+    target/pdf-mit-pdfbox-1.0-SNAPSHOT-jar-with-dependencies.jar
+    pdfmitpdfbox.*MeineErstePdfDateiMitPDFBox*
+
+    dir
+
+    start *MeineErstePdfDateiMitPDFBox.pdf*
+
+    --> Die PDF-Datei MeineErstePdfDateiMitPDFBox.pdf wird erzeugt.
+
+ 9.
+
+    Sie benötigen eine PDF-Datei mit ausfüllbaren Formularfeldern. Falls
+    Sie keine finden, können Sie mit einem beliebigen PDF-Tool eine
+    erzeugen.
+
+    Zum Beispiel folgendermaßen mit OpenOffice
+    <http://www.openoffice.de>-Writer:
+
+      * Im OpenOffice-Writer über "Ansicht | Symbolleisten" die
+        "Formular-Steuerelemente" aktivieren.
+      * Über das Formular-Bearbeitungs-Icon "Entwurfsmodus an/aus" den
+        Entwurfsmodus einschalten.
+      * Mit dem "ABC-Textfeld-Icon" ein Textfeld im Dokument aufziehen.
+      * Per Doppelklick auf das Textfeld im Dokument den "Eigenschaften:
+        Textfeld"-Dialog öffnen und unter "Allgemein" den gewünschten
+        "Namen" für das Textfeld eintragen (z.B. MeinFormularfeld1).
+      * Speichern über "Datei | Exportieren als PDF..." (z.B. als
+        MeinPdfFormular.pdf). Achten Sie darauf, dass im "PDF
+        Optionen"-Dialog unter "Allgemein" "PDF Formular erzeugen"
+        aktiviert ist.
+
+    Eine entsprechende PDF-Datei finden Sie auch in: PDF.zip
+    <../proj/PDF.zip>.
+
+10.
+
+    Führen Sie aus (ersetzen Sie dabei MeinPdfFormular.pdf durch den
+    Namen Ihrer PDF-Datei):
+
+    cd \MeinWorkspace\PdfMitPDFBox
+
+    mvn package
+
+    java -jar
+    target/pdf-mit-pdfbox-1.0-SNAPSHOT-jar-with-dependencies.jar
+    *MeinPdfFormular.pdf*
+
+    --> Die in der PDF-Datei vorhandenen Formularfelder werden aufgelistet.
+
+11.
+
+    Führen Sie aus (ersetzen Sie dabei MeinPdfFormular.pdf durch den
+    Namen Ihrer PDF-Datei und MeinFormularfeld1 durch den Namen Ihres
+    Formularfeldes):
+
+    java -jar
+    target/pdf-mit-pdfbox-1.0-SNAPSHOT-jar-with-dependencies.jar
+    *MeinPdfFormular.pdf* MeinPdfFormular-Abc.pdf *MeinFormularfeld1* Abc
+
+    start *MeinPdfFormular-Abc.pdf*
+
+    --> In das Formularfeld wird der Text Abc eingesetzt und es wird die
+    neue PDF-Datei MeinPdfFormular-Abc.pdf mit dem ausgefüllten Formular
+    gespeichert.
+
+
+
+
+------------------------------------------------------------------------
+Weitere Themen: andere TechDocs <index.htm> | PDF bei Wikipedia
+<http://de.wikipedia.org/wiki/Portable_Document_Format> | Adobe PDF
+<http://www.adobe.com/de/products/acrobat/adobepdf.html> | Apache PDFBox
+<http://pdfbox.apache.org> | iText 5.x (AGPL) <http://itextpdf.com> |
+iText 4.2.0 (LGPL/MPL)
+<https://github.com/ymasory/iText-4.2.0/downloads> | DocBook, Docbkx
+<maven.htm#DocBook-Docbkx> | XSL-FO, Apache FOP <java-xsl.htm#XSL-FO>
+© 2012 Torsten Horn, Aachen
+
