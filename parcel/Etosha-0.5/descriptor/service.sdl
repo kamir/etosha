@@ -1,0 +1,60 @@
+{
+  "name" : "ETOSHA",
+  "label" : "ETOSHA",
+  "description" : "The ETOSHA Service",
+  "version" : "0.5",
+  "icon" : "images/etosha.png",
+  "rolesWithExternalLinks" : ["ETOSHA_SERVER"],
+  "runAs" : { 
+    "user" : "root",
+    "group" : "root"
+   },  
+   "roles" : [
+    {
+       "name" : "ETOSHA_SERVER",
+       "label" : "ETOSHA Server",
+       "pluralLabel" : "ETOSHA Servers",
+       "parameters" : [
+        {
+          "name" : "port_num",
+          "label" : "Webserver port",
+          "description" : "The web server port number",
+          "required" : "true",
+          "type" : "port",
+          "default" : 9100
+        },
+        {
+          "name" : "app_path",
+          "label" : "WebApplication context path",
+          "description" : "The web applications server context.",
+          "required" : "true",
+          "type" : "string",
+          "default" : "/etosha"
+        }
+        ],
+        "externalLink" : {
+          "name" : "webserver_web_ui",
+          "label" : "Etosha-Web-UI",
+          "url" : "http://${host}:${port_num}${app_path}/index.html"
+        },
+        "topology" : {
+          "minInstances" : "1",
+          "maxInstances" : "5"
+        },
+        "logging" : {
+          "dir" : "/var/log/echo",
+          "filename" : "webserver.log",
+          "isModifiable" : true,
+          "configName" : "log.dir",
+          "loggingType" : "log4j"
+        },
+        "startRunner" : {
+          "program" : "scripts/control.sh",
+          "args" : [ "start" ],
+          "environmentVariables" : {
+          "WEBSERVER_PORT" : "${port_num}"         
+          }
+        }
+    }
+  ]
+}

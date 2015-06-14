@@ -30,11 +30,11 @@
   </property>
   <property>
     <name>smw.pw</name>
-    <value>8cwrr</value>
+    <value>change-me</value>
   </property>
   <property>
     <name>smw.url</name>
-    <value>www.semanpix.de/oldtimer/wiki/</value>
+    <value>www.semanpix.de/opendata/wiki/</value>
   </property>
   <property>
     <name>smw.env</name>

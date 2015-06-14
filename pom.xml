@@ -3,78 +3,112 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.etosha</groupId>
-  <artifactId>parent</artifactId>
-  <version>0.4.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>Etosha PARENT Project</name>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.etosha</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.5.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Etosha PARENT Project</name>
 
-  <modules>
-    <module>etosha-parent</module>
-  </modules>
+    <modules>
+        <module>etosha-parent</module>
+    </modules>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <organization>
-    <name>The Apache Software Foundation</name>
-    <url>http://www.apache.org</url>
-  </organization>
+    <organization>
+        <name>The Apache Software Foundation</name>
+        <url>http://www.apache.org</url>
+    </organization>
 
-  <licenses>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-      <comments>A business-friendly OSS license</comments>
-    </license>
-  </licenses>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
 
-  <developers>
-    <developer>
-      <id>kamir</id>
-      <name>Mirko Kaempf</name>
-      <email>mirko@semanpix.de</email>
-      <timezone>+1</timezone>
-      <organization>Semanpix</organization>
-      <organizationUrl>http://www.semanpix.de</organizationUrl>
-    </developer>
-    <developer>
-      <id>abdux</id>
-      <name>Eric Tessenow</name>
-      <email>eric@semanpix.de</email>
-      <timezone>0</timezone>
-      <organization>University of Leeds, UK</organization>
-    </developer>
-  </developers>
+    <developers>
+        <developer>
+            <id>kamir</id>
+            <name>Mirko Kaempf</name>
+            <email>mirko@cloudera.com</email>
+            <timezone>+1</timezone>
+            <organization>Cloudera</organization>
+            <organizationUrl>http://www.cloudera.com</organizationUrl>
+        </developer>
+        <developer>
+            <id>abdux</id>
+            <name>Eric Tessenow</name>
+            <email>eric@semanpix.de</email>
+            <timezone>0</timezone>
+            <organization>University of Leeds, UK</organization>
+        </developer>
+    </developers>
   
   
-<build>
-     <pluginManagement>
-  <plugins>
-  <plugin>
-  <artifactId>maven-assembly-plugin</artifactId>
-  <configuration>
-    <archive>
-      <manifest>
-        <mainClass>org.etosha.tools.admin.ContextLoggerTool</mainClass>
-      </manifest>
-    </archive>
-    <descriptorRefs>
-      <descriptorRef>jar-with-dependencies</descriptorRef>
-    </descriptorRefs>
-  </configuration>
-</plugin>
-  </plugins>
-   </pluginManagement>
-</build>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <mainClass>org.etosha.tools.admin.ContextLoggerTool</mainClass>
+                            </manifest>
+                        </archive>
+                        <descriptorRefs>
+                            <descriptorRef>jar-with-dependencies</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <configuration>
+                        <appendAssemblyId>true</appendAssemblyId>
+                        <descriptors>
+                            <descriptor>assembly_etosha_parcel.xml</descriptor>
+                        </descriptors>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>make-Etosha-parcel</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>single</goal>
+                            </goals>
+                            <configuration>
+                                <appendAssemblyId>false</appendAssemblyId>
+                                <finalName>Etosha-0.5</finalName>
+                                <descriptors>
+                                    <descriptor>assembly/assembly_etosha_parcel.xml</descriptor>
+                                </descriptors>
+                                <attach>true</attach>
+                            </configuration>
+                        </execution>  
+                    
+                    </executions>
+                </plugin>
+
+
+                
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
  
 
    
