@@ -120,7 +120,7 @@ public class DataSetInspector extends Configured implements Tool {
 	public static void main(String[] args) throws Exception {
 		Configuration cfg = new Configuration();
 		
-		File cfgFile = new File("/Users/kamir/etc/smw-site.xml");
+		File cfgFile = new File("/etc/etosha/smw-site.xml");
 		/** 
 		 * according to:
 		 * 

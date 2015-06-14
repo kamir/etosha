@@ -57,7 +57,7 @@ public class SemanticContextBridge {
 
     public SemanticContextBridge(Configuration conf) throws UnknownHostException, MalformedURLException {
 
-        File cfgFile = new File("/Users/kamir/etc/smw-site.xml");
+        File cfgFile = new File("/etc/etosha/smw-site.xml");
         conf.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
         conf.reloadConfiguration();
         System.out.println(conf);

@@ -33,7 +33,7 @@ public class DataSetStatisticsJob extends DataSetInspector {
 		Configuration cfg = new Configuration();
 		
 		// TODO: {MIDDLE} change static CFG file to a default file in /etc ...
-		File cfgFile = new File("/Users/kamir/etc/smw-site.xml");
+		File cfgFile = new File("/etc/etosha/smw-site.xml");
 		/**
 		 * according to:
 		 * 
