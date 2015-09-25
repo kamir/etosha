@@ -63,6 +63,7 @@
             <organization>University of Leeds, UK</organization>
         </developer>
     </developers>
+    
     <distributionManagement>
         <site>
             <id>website</id>
@@ -70,6 +71,8 @@
             <url>file://${basedir}/../target/dist/site/etosha/etosha-umbrella/</url>
         </site>
     </distributionManagement>
+    
+    
     <build>
         <pluginManagement>
             <plugins>
@@ -92,11 +95,12 @@
                     <configuration>
                         <appendAssemblyId>true</appendAssemblyId>
                         <descriptors>
-                            <descriptor>assembly_etosha_parcel.xml</descriptor>
+                            <!--descriptor>assembly_etosha_parcel.xml</descriptor-->
+                            <descriptor>assembly_etcs_parcel.xml</descriptor>
                         </descriptors>
                     </configuration>
                     <executions>
-                        <execution>
+                        <!--execution>
                             <id>make-Etosha-parcel</id>
                             <phase>package</phase>
                             <goals>
@@ -106,7 +110,22 @@
                                 <appendAssemblyId>true</appendAssemblyId>
                                 <finalName>Etosha-0.7</finalName>
                                 <descriptors>
-                                    <descriptor>assembly/assembly_etosha_parcel.xml</descriptor>
+                                    <descriptor>assembly_etosha_parcel.xml</descriptor>
+                                </descriptors>
+                                <attach>true</attach>
+                            </configuration>
+                        </execution-->
+                        <execution>
+                            <id>make-etcs-parcel</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>single</goal>
+                            </goals>
+                            <configuration>
+                                <appendAssemblyId>true</appendAssemblyId>
+                                <finalName>ETCS-1.0</finalName>
+                                <descriptors>
+                                    <descriptor>assembly_etcs_parcel.xml</descriptor>
                                 </descriptors>
                                 <attach>true</attach>
                             </configuration>
