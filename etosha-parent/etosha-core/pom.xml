@@ -1,127 +1,112 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.etosha</groupId>
-    <artifactId>Etosha-Core</artifactId>
+    <artifactId>etosha-core</artifactId>
     <packaging>jar</packaging>
-    <version>0.4.1-SNAPSHOT</version> 
-    
+    <version>0.7.0-SNAPSHOT</version>
     <name>etosha-core</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        
-              <dependency>
-        <groupId>biz.aQute</groupId>
-        <artifactId>bndlib</artifactId>
-        <version>1.43.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>org.apache.felix.scr.annotations</artifactId>
-        <version>1.6.0</version>
-      </dependency>
-      
-      
+        <dependency>
+            <groupId>biz.aQute</groupId>
+            <artifactId>bndlib</artifactId>
+            <version>1.43.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.annotations</artifactId>
+            <version>1.6.0</version>
+        </dependency>
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>1.7</version>
         </dependency>
- 
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.6.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>1.7.1</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-      <version>4.11</version>
-    </dependency>
-    <dependency>
-      <artifactId>commons-io</artifactId>
-      <groupId>commons-io</groupId>
-      <version>2.1</version>
-      <scope>test</scope>
-    </dependency>
-
-        
-         
-
-                <dependency>
-                    <groupId>org.apache.httpcomponents</groupId>
-                    <artifactId>httpclient</artifactId>
-                    <version>4.3.2</version>
-                </dependency>
-                <dependency>
-                    <groupId>commons-httpclient</groupId>
-                    <artifactId>commons-httpclient</artifactId>
-                    <version>3.1</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-mapreduce-client-common</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>    
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-hdfs</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                    <type>jar</type>
-                </dependency>          
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-core</artifactId>
-                    <version>2.3.0-mr1-cdh5.1.0</version>
-                    <type>jar</type>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-hdfs</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>                
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-common</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-mapreduce-client-core</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-mapreduce-client-app</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>
- 
-                <dependency>
-                    <groupId>commons-lang</groupId>
-                    <artifactId>commons-lang</artifactId>
-                    <version>2.5</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-mapreduce-client-core</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.apache.hadoop</groupId>
-                    <artifactId>hadoop-auth</artifactId>
-                    <version>2.3.0-cdh5.1.0</version>
-                </dependency>
-        
-            
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <artifactId>commons-io</artifactId>
+            <groupId>commons-io</groupId>
+            <version>2.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-common</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>${hadoopclient.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-core</artifactId>
+            <version>${hadoop-core-client.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-app</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-mapreduce-client-core</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-auth</artifactId>
+            <version>${hadoopclient.version}</version>
+        </dependency>
         <!--dependency>
          <groupId>org.etosha</groupId>
 	<artifactId>rdf2go.impl.jena</artifactId>
@@ -191,8 +176,7 @@
                     <artifactId>commons-logging-api</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>        
-        
+        </dependency>
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-common</artifactId>
@@ -215,11 +199,10 @@
             <version>1.7.2</version>
             <type>jar</type>
         </dependency>
- 
         <dependency>
             <groupId>org.etosha</groupId>
             <artifactId>etosha-model</artifactId>
-            <version>0.2.0-SNAPSHOT</version>
+            <version>0.5.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
         <dependency>
@@ -228,7 +211,6 @@
             <version>3.9</version>
             <type>jar</type>
         </dependency>
-     
         <dependency>
             <groupId>org.apache.opennlp</groupId>
             <artifactId>opennlp-tools</artifactId>
@@ -259,7 +241,6 @@
             <artifactId>tika-parsers</artifactId>
             <version>1.5</version>
         </dependency>
-   
         <dependency>
             <groupId>com.cloudera.cdk</groupId>
             <artifactId>cdk-morphlines-avro</artifactId>
@@ -342,12 +323,10 @@
             <type>jar</type>
         </dependency>
     </dependencies>
-
     <organization>
         <name>The Apache Software Foundation</name>
         <url>http://www.apache.org</url>
     </organization>
-
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -356,9 +335,6 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
-
- 
-
     <repositories>
         <repository>
             <id>cloudera-cdh</id>
@@ -370,7 +346,6 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-
         <repository>
             <id>semweb4j-repo</id>
             <name>Semweb4j.org maven repo</name>
@@ -420,12 +395,13 @@
             </releases>
         </repository>
     </repositories>
-
     <properties>
         <top.dir>${project.basedir}</top.dir>
-
+        
+        <hadoopclient.version>2.5.0-cdh5.3.0</hadoopclient.version>
+        <hadoop-core-client.version>2.5.0-mr1-cdh5.3.0</hadoop-core-client.version>
+        
         <buildtype>test</buildtype>
-
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.maven.version>3.0.0</project.maven.version>
         <project.enforcer.skip>true</project.enforcer.skip>
@@ -433,7 +409,6 @@
         <project.build.targetJdk>1.7</project.build.targetJdk>
         <etosha.maven.dependency.plugin.skip>true</etosha.maven.dependency.plugin.skip>
         <etosha.maven.duplicate.finder.skip>true</etosha.maven.duplicate.finder.skip>
-
         <dep.avro.version>1.3.3</dep.avro.version>
         <dep.accumulo.version>1.4.0</dep.accumulo.version>
         <dep.asm.version>3.2</dep.asm.version>
@@ -475,15 +450,12 @@
         <dep.yammer-metrics.version>2.2.0</dep.yammer-metrics.version>
         <dep.yourkit-api.version>9.5.6</dep.yourkit-api.version>
         <dep.zookeeper.version>3.4.5</dep.zookeeper.version>
-
         <forHadoop>for-hadoop-${hadoop.version}</forHadoop>
         <munge.symbols>NO_MUNGE_SYMBOLS</munge.symbols>
     </properties>
-
     <build>
         <pluginManagement>
             <plugins>
-                
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
@@ -525,11 +497,10 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                     </configuration>
                 </plugin>
-                
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
@@ -542,14 +513,12 @@
                             </goals>
                             <configuration>
                                 <transformers>
-                                    <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer">
-                                    </transformer>
+                                    <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
                                 </transformers>
                             </configuration>
                         </execution>
                     </executions>
                 </plugin>
-      
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jdepend-maven-plugin</artifactId>
@@ -615,16 +584,16 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                        <groupId>commons-beanutils</groupId>
-                                        <artifactId>commons-beanutils</artifactId>
+                                    <groupId>commons-beanutils</groupId>
+                                    <artifactId>commons-beanutils</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>commons-beanutils</groupId>
-                                        <artifactId>commons-beanutils-core</artifactId>
+                                    <groupId>commons-beanutils</groupId>
+                                    <artifactId>commons-beanutils-core</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>commons-collections</groupId>
-                                        <artifactId>commons-collections</artifactId>
+                                    <groupId>commons-collections</groupId>
+                                    <artifactId>commons-collections</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <classes>
@@ -637,12 +606,12 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                        <groupId>commons-beanutils</groupId>
-                                        <artifactId>commons-beanutils</artifactId>
+                                    <groupId>commons-beanutils</groupId>
+                                    <artifactId>commons-beanutils</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>commons-beanutils</groupId>
-                                        <artifactId>commons-beanutils-core</artifactId>
+                                    <groupId>commons-beanutils</groupId>
+                                    <artifactId>commons-beanutils-core</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <packages>
@@ -652,16 +621,16 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                        <groupId>org.datanucleus</groupId>
-                                        <artifactId>datanucleus-core</artifactId>
+                                    <groupId>org.datanucleus</groupId>
+                                    <artifactId>datanucleus-core</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>org.datanucleus</groupId>
-                                        <artifactId>datanucleus-rdbms</artifactId>
+                                    <groupId>org.datanucleus</groupId>
+                                    <artifactId>datanucleus-rdbms</artifactId>
                                     </dependency>
                                     <dependency>
-                                        <groupId>org.datanucleus</groupId>
-                                        <artifactId>datanucleus-connectionpool</artifactId>
+                                    <groupId>org.datanucleus</groupId>
+                                    <artifactId>datanucleus-connectionpool</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <resources>
@@ -723,7 +692,6 @@
                         </execution>
                     </executions>
                 </plugin!-->
-        
                 <plugin>
                     <artifactId>maven-assembly-plugin</artifactId>
                     <configuration>
@@ -737,7 +705,6 @@
                         </descriptorRefs>
                     </configuration>
                 </plugin>
-    
                 <!--plugin>
                   <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-assembly-plugin</artifactId>
@@ -1094,17 +1061,11 @@
             </plugin>
         </plugins>
     </build>
-
- 
-
-
     <dependencyManagement>
         <dependencies>
             <!-- compile dependencies. sorted lexicographically. -->
- 
         </dependencies>
     </dependencyManagement>
-
     <!--
     <modules>
     <module>etosha-core</module>
@@ -1112,5 +1073,4 @@
     <module>etosha-dist</module>
     </modules>
     -->
-
 </project>

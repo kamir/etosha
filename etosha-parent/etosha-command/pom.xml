@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.etosha</groupId>
     <artifactId>etosha-parent</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.5.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>etosha-command</artifactId>
@@ -24,14 +24,14 @@
           <testFailureIgnore>true</testFailureIgnore>
         </configuration>
       </plugin>
-      <plugin>
+      <!--plugin>
        <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
         </configuration>
-      </plugin>
+      </plugin-->
        <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>hibernate3-maven-plugin</artifactId>
@@ -59,12 +59,12 @@
     <dependency>
       <groupId>org.etosha</groupId>
       <artifactId>etosha-smw</artifactId>
-      <version>0.2.0-SNAPSHOT</version>
+      <version>0.5.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.etosha</groupId>
       <artifactId>etosha-persist</artifactId>
-      <version>0.2.0-SNAPSHOT</version>
+      <version>0.5.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
@@ -81,6 +81,5 @@
       <artifactId>hsqldb</artifactId>
       <version>1.8.0.7</version>
     </dependency>
-  </dependencies>
-    <version>0.2.1-SNAPSHOT</version>
+  </dependencies> 
 </project>
