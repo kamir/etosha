@@ -11,4 +11,17 @@
                 <Env.JAVA_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home</Env.JAVA_HOME>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-FULL (clean compile site assembly)</actionName>
+            <displayName>FULL (clean compile site assembly)</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>compile</goal>
+                <goal>site</goal>
+                <goal>assembly:single</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home</Env.JAVA_HOME>
+            </properties>
+        </action>
     </actions>

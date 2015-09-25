@@ -1,0 +1,45 @@
+{
+  "name" : "ETCS",
+  "label" : "ETCS",
+  "description" : "The Etosha Tripple Collector Service (build on FUSEKI)",
+  "version" : "1.0",
+  "icon" : "images/etcs.png",
+  "rolesWithExternalLinks" : ["ETC_SERVICE"],
+  "runAs" : { 
+    "user" : "root",
+    "group" : "root"
+   },  
+   "roles" : [
+    {
+       "name" : "ETC_SERVICE",
+       "label" : "ETC Service",
+       "pluralLabel" : "ETC Services",
+       "parameters" : [
+        {
+          "name" : "port_num",
+          "label" : "Fuseki Web UI port",
+          "description" : "The Fuseki Web UI port number",
+          "required" : "true",
+          "type" : "port",
+          "default" : 9200
+        }
+        ],
+        "externalLink" : {
+          "name" : "fuseki_web_ui",
+          "label" : "Fuseki Web UI UI",
+          "url" : "http://${host}:${port_num}$"
+        },
+        "topology" : {
+          "minInstances" : "1",
+          "maxInstances" : "1"
+        },
+        "startRunner" : {
+          "program" : "scripts/control.sh",
+          "args" : [ "start" ],
+          "environmentVariables" : {
+           "WEBSERVER_PORT" : "${port_num}"         
+          }
+        }
+    }
+  ]
+}

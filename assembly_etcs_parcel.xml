@@ -1,0 +1,14 @@
+<assembly>
+    <id>ETCS-1.0</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+      <fileSet>
+        <directory>${project.basedir}/parcel/ETCS-1.0</directory>
+        <outputDirectory>/</outputDirectory>
+        </fileSet>
+     </fileSets>
+</assembly>
+
