@@ -29,6 +29,7 @@ import javax.security.auth.login.LoginException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.util.Tool;
+import org.etosha.cmd.EtoshaContextLogger;
 import org.semanpix.parser.SemanpixImageParser;
 import org.etosha.core.context.SemanticDataSetContext;
 import org.etosha.core.context.SemanticJobContext;
@@ -57,7 +58,11 @@ public class SemanticContextBridge {
 
     public SemanticContextBridge(Configuration conf) throws UnknownHostException, MalformedURLException {
 
-        File cfgFile = new File("/etc/etosha/smw-site.xml");
+        
+        EtoshaContextLogger.absoluteCFG = false;
+        
+        File cfgFile = EtoshaContextLogger.getCFGFile(); //new File("/etc/etosha/smw-site.xml");
+        
         conf.addResource(cfgFile.getAbsoluteFile().toURI().toURL());
         conf.reloadConfiguration();
         System.out.println(conf);

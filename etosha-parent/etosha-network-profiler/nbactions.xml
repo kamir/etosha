@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-build and run</actionName>
+            <displayName>build and run</displayName>
+            <goals>
+                <goal>assembly:single</goal>
+                <goal>exec:java</goal>
+            </goals>
+        </action>
+    </actions>

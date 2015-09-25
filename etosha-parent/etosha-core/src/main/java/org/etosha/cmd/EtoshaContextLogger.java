@@ -111,17 +111,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
         if (cmd.equals("init")) {
             System.out.println(">>> new configuration will be created in ...");
 
-            if (!f.exists()) {
-                f.getParentFile().mkdirs();
-            }
-            
-            f = new File( f.getAbsolutePath() );
-
-            FileWriter fw = new FileWriter(f);
-            
-            fw.write(getContentDefaultCFG());
-            
-            fw.close();
+            f = writeDefaultCFGFile(f);
             
             System.out.println(">>> A new Etosha configuration was created in: "
                     + f.getAbsolutePath());
@@ -297,7 +287,22 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
     }
 
-    private String getContentDefaultCFG() throws IOException {
+    public static File writeDefaultCFGFile(File f) throws IOException {
+    
+        System.out.println("> CREATE DEFAULT CFG ...");
+        if (!f.exists()) {
+            f.getParentFile().mkdirs();
+        }
+        f = new File( f.getAbsolutePath() );
+        
+        FileWriter fw2 = new FileWriter(f);
+        fw2.write(getContentDefaultCFG());
+        fw2.close();
+        
+        return f;
+    }
+
+    private static String getContentDefaultCFG() throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(
                 EtoshaContextLogger.class.getResourceAsStream("smw-site.xml")));
@@ -407,7 +412,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
      */
     public static File getCFGFile() {
        
-        String userHome = System.getProperty("userhome");
+        String userHome = System.getProperty("user.home");
         String fn = userHome + "/etc/etosha/smw-site.xml";
         
         if ( absoluteCFG ) fn = "/etc/etosha/smw-site.xml";
