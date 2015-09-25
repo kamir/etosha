@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-compile and package</actionName>
+            <displayName>compile and package</displayName>
+            <goals>
+                <goal>compile</goal>
+                <goal>assembly:single</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home</Env.JAVA_HOME>
+            </properties>
+        </action>
+    </actions>

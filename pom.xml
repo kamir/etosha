@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                               http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.etosha</groupId>
-    <artifactId>parent</artifactId>
-    <version>0.5.0-SNAPSHOT</version>
+    <artifactId>etosha-umbrella</artifactId>
+    <version>0.7.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    
     <name>Etosha UMBRELLA Project</name>
+    
+    <properties>
+        <project.inceptionYear>2013</project.inceptionYear>
+    </properties>
+    
 
     <modules>
         <module>etosha-parent</module>
     </modules>
-
+    <!-- 
+       %ETOSHA.DOC.LINK
+       
+       JM8.2015.p.107
+    
+       Article on Open-Source Lizenz Management.
+       
+       PROBLEM: License Management is not COMPLETELY CONFIGURED
+       PROBLEM: SITE-Management is not COMPLETELY CONFIGURED
+    -->
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -23,12 +34,10 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
     <organization>
         <name>The Apache Software Foundation</name>
         <url>http://www.apache.org</url>
     </organization>
-
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -37,7 +46,6 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
-
     <developers>
         <developer>
             <id>kamir</id>
@@ -55,8 +63,13 @@
             <organization>University of Leeds, UK</organization>
         </developer>
     </developers>
-  
-  
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <name>website</name>
+            <url>file://${basedir}/../target/dist/site/etosha/etosha-umbrella/</url>
+        </site>
+    </distributionManagement>
     <build>
         <pluginManagement>
             <plugins>
@@ -73,7 +86,6 @@
                         </descriptorRefs>
                     </configuration>
                 </plugin>
-                
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
@@ -91,26 +103,73 @@
                                 <goal>single</goal>
                             </goals>
                             <configuration>
-                                <appendAssemblyId>false</appendAssemblyId>
-                                <finalName>Etosha-0.5</finalName>
+                                <appendAssemblyId>true</appendAssemblyId>
+                                <finalName>Etosha-0.7</finalName>
                                 <descriptors>
                                     <descriptor>assembly/assembly_etosha_parcel.xml</descriptor>
                                 </descriptors>
                                 <attach>true</attach>
                             </configuration>
-                        </execution>  
-                    
+                        </execution>
                     </executions>
                 </plugin>
-
-
-                
+                <plugin>
+                    <groupId>com.mycila.maven-license-plugin</groupId>
+                    <artifactId>maven-license-plugin</artifactId>
+                    <configuration>
+                        <basedir>${basedir}</basedir>
+                        <header>${basedir}/src/etc/header.txt</header>
+                        <validHeaders>
+                            <validHeader>/otherSupportedHeader.txt</validHeader>
+                            <validHeader>http://www.company.com/yetAnotherSupportedHeader.txt</validHeader>
+                        </validHeaders>
+                        <quiet>false</quiet>
+                        <failIfMissing>true</failIfMissing>
+                        <aggregate>false</aggregate>
+                        <includes>
+                            <include>src/**</include>
+                            <include>**/test/**</include>
+                        </includes>
+                        <excludes>
+                            <exclude>target/**</exclude>
+                            <exclude>.clover/**</exclude>
+                        </excludes>
+                        <useDefaultExcludes>true</useDefaultExcludes>
+                        <mapping>
+                            <jwc>XML_STYLE</jwc>
+                            <application>XML_STYLE</application>
+                            <myFileExtension>JAVADOC_STYLE</myFileExtension>
+                        </mapping>
+                        <useDefaultMapping>true</useDefaultMapping>
+                        <properties>
+                            <year>${project.inceptionYear}</year>
+                            <email>my@email.com</email>
+                        </properties>
+                        <encoding>UTF-8</encoding>
+                        <headerDefinitions>
+                            <headerDefinition>def1.xml</headerDefinition>
+                            <headerDefinition>def2.xml</headerDefinition>
+                        </headerDefinitions>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>second</id>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>first</id>
+                            <goals>
+                                <goal>update-file-header</goal>
+                            </goals>
+                            <phase>
+                        process-sources
+                    </phase>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
-
-
- 
-
-   
 </project>
