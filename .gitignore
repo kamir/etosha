@@ -1,1 +1,8 @@
-*/target/**
+/etosha-parent/etosha-persist/target/**
+/etosha-parent/etosha-smw/target/**
+/etosha-parent/etosha-command/target/**
+/etosha-parent/etosha-webapp/target/**
+/etosha-parent/target/**
+/target/**
+/etosha-parent/etosha-core/target/**
+/etosha-parent/etosha-network-profiler/target/**
