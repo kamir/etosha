@@ -6,3 +6,22 @@
 /target/**
 /etosha-parent/etosha-core/target/**
 /etosha-parent/etosha-network-profiler/target/**
+/etosha-parent/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/target/
+/etosha-parent/QRCode4DMS/build/
+/etosha-parent/QRCode4DMS/dist/
+/etosha-parent/QRCode4DMS/nbproject/private/
+/etosha-parent/etosha-qr/build/
+/etosha-parent/etosha-qr/dist/
+/etosha-parent/etosha-qr/nbproject/private/
+/etosha-parent/etosha-docworld/dist/
+/etosha-parent/etosha-docworld/build/
+/etosha-parent/etosha-docworld/nbproject/private/
+/etosha-parent/UniNotesCore/build/
+/etosha-parent/UniNotesCore/dist/
+/etosha-parent/UniNotesCore/nbproject/private/
+/etosha-parent/etosha notes-core/build/
+/etosha-parent/etosha notes-core/dist/
+/etosha-parent/etosha notes-core/nbproject/private/
+/etosha-parent/etosha-notes-core/build/
+/etosha-parent/etosha-notes-core/dist/
+/etosha-parent/etosha-notes-core/nbproject/private/

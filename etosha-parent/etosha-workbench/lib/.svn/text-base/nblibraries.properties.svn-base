@@ -1,0 +1,22 @@
+libs.ApacheVelocity.classpath=\
+    ${base}/ApacheVelocity/antlr-2.7.5.jar;\
+    ${base}/ApacheVelocity/avalon-logkit-2.1.jar;\
+    ${base}/ApacheVelocity/commons-collections-3.2.1.jar;\
+    ${base}/ApacheVelocity/commons-lang-2.4.jar;\
+    ${base}/ApacheVelocity/commons-logging-1.1.jar;\
+    ${base}/ApacheVelocity/jdom-1.0.jar;\
+    ${base}/ApacheVelocity/log4j-1.2.12.jar;\
+    ${base}/ApacheVelocity/maven-ant-tasks-2.0.9.jar;\
+    ${base}/ApacheVelocity/oro-2.0.8.jar;\
+    ${base}/ApacheVelocity/servletapi-2.3.jar;\
+    ${base}/ApacheVelocity/velocity-1.7-dep.jar;\
+    ${base}/ApacheVelocity/velocity-1.7.jar;\
+    ${base}/ApacheVelocity/werken-xpath-0.9.4.jar
+libs.CopyLibs.classpath=\
+    ${base}/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar
+libs.javaee-endorsed-api-6.0.classpath=\
+    ${base}/javaee-endorsed-api-6.0/javax.annotation.jar;\
+    ${base}/javaee-endorsed-api-6.0/jaxb-api-osgi.jar;\
+    ${base}/javaee-endorsed-api-6.0/webservices-api-osgi.jar
+libs.javaee-endorsed-api-6.0.javadoc=\
+    ${base}/javaee-endorsed-api-6.0/javaee6-doc-api.zip

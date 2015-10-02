@@ -1,0 +1,168 @@
+                                                                
+    <html>
+    <head>
+      <title>VelocityTools - Configuration - Using Properties</title>
+             <style type="text/css" media="all">
+               @import url("css/maven-theme.css");
+               @import url("css/maven-base.css");
+               @import url("css/style.css");
+                                  </style>        
+    </head>
+
+    <body class="composite">
+
+            <div id="banner">
+        <a href="http://velocity.apache.org/" id="bannerLeft">
+          <img src="http://velocity.apache.org/images/velocity_project_wide.png"
+                          align="left" alt="The Velocity Project" border="0"/>
+        </a>
+                                            <span id="bannerRight">
+            <a href="index.html">
+              <img src="images/velocitytools.png" align="right" alt="VelocityTools" border="0"/>
+            </a>
+          </span>
+                <div class="clear">
+          <hr/>
+        </div>
+      </div>
+
+            
+                  <div id="breadcrumbs">
+        <div class="xleft">
+                      <a href="http://velocity.apache.org" class="crumb">Velocity</a> &gt;
+                      <a href="index.html" class="crumb">VelocityTools</a> &gt;
+                      <a href="config.html" class="crumb">Configuration</a> &gt;
+                    Using Properties
+        </div>
+        <div class="xright">
+                                  <a href="http://velocity.apache.org/engine/devel/" class="sibling">Engine</a>
+                      |            <a href="http://velocity.apache.org/tools/devel/" class="sibling">Tools</a>
+                      |            <a href="http://velocity.apache.org/anakia/devel/" class="sibling">Anakia</a>
+                      |            <a href="http://velocity.apache.org/texen/devel/" class="sibling">Texen</a>
+                      |            <a href="http://velocity.apache.org/docbook/" class="sibling">Docbook</a>
+                      |            <a href="http://velocity.apache.org/dvsl/devel/" class="sibling">DVSL</a>
+                  </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </div>
+      
+
+        <!-- LEFT SIDE NAVIGATION -->
+                <div id="leftColumn">
+          <div id="navcolumn">
+                <h5>VelocityTools</h5>
+<ul>
+        <li class="none"><a href="index.html">Overview</a></li>
+    <li class="none"><a href="http://velocity.apache.org/download.cgi#Tools">Download</a></li>
+    <li class="none"><a href="javadoc/index.html">Javadoc</a></li>
+    <li class="none"><a href="http://wiki.apache.org/velocity/VelocityFAQ">FAQ</a></li>
+    <li class="none"><a href="http://wiki.apache.org/velocity/VelocityTools">Wiki</a></li>
+
+</ul>
+    <h5>Subprojects</h5>
+<ul>
+        <li class="none"><a href="generic.html">GenericTools</a></li>
+    <li class="none"><a href="view.html">VelocityView</a></li>
+    <li class="none"><a href="struts.html">VelocityStruts</a></li>
+
+</ul>
+    <h5>Docs</h5>
+<ul>
+        <li class="none"><a href="upgrading.html">Upgrading to 2.0</a></li>
+    <li class="none"><a href="config.html">Configuration</a>
+    <ul>
+            <li class="none"><a href="config.xml.html">Using XML</a></li>
+    <li class="none"><a href="config.properties.html">Using Properties</a></li>
+    <li class="none"><a href="config.java.html">Using Java</a></li>
+
+    </ul>
+</li>
+    <li class="none"><a href="standalone.html">Standalone Use</a></li>
+    <li class="none"><a href="frameworks.html">Web Framework Integration</a></li>
+    <li class="none"><a href="creatingtools.html">Creating Tools</a></li>
+    <li class="none"><a href="summary.html">Tools Usage Summary</a></li>
+    <li class="none"><a href="http://velocity.apache.org/engine/devel/glossary.html">Glossary</a></li>
+
+</ul>
+    <h5>Development</h5>
+<ul>
+        <li class="none"><a href="changes.html">ChangeLog</a></li>
+    <li class="none"><a href="index.html#Helping_Out">Participating</a></li>
+    <li class="none"><a href="dependencies.html">Dependencies</a></li>
+    <li class="none"><a href="index.html#Subversion_Repository">Source Code</a></li>
+    <li class="none"><a href="http://issues.apache.org/jira/browse/VELTOOLS">Report Issue</a></li>
+
+</ul>
+
+                            
+                        <h5 id="printLink"><a href="config.properties-printer.html">Print-Friendly Version</a></h5>
+
+            <a class="poweredBy" href="http://velocity.apache.org/" title="Apache Velocity" >
+              <img class="poweredBy" alt="Apache Velocity" src="http://velocity.apache.org/images/pbv90x30.png"/>
+            </a>
+          </div>
+        </div>
+        
+        <!-- RIGHT SIDE MAIN BODY -->
+        <div id="bodyColumn">
+          <div id="contentBox">
+            <div class="section"><a name="Configuration_using_Properties"><h2>Configuration using Properties</h2></a>
+      <p>
+            VelocityTools 2 can be configured using a properties file.  
+            Here's the same configuration as the 
+            <a href="config.xml.html">XML</a> and
+            <a href="config.java.html">Java</a> examples
+            in the properties format:
+        </p>
+<div class="source">
+  <pre><sourcecode>
+tools.toolbox = request,session,application
+
+tools.request.property.xhtml = true
+tools.request.toytool = ToyTool
+tools.request.toytool.restrictTo = index.vm
+tools.request.custom = org.mine.CustomTool
+tools.request.custom.randomProperty = whatever
+
+tools.session.property.create-session = true
+tools.session.property.create-session.type = boolean
+tools.session.map = java.util.HashMap
+
+tools.application.date = org.apache.velocity.tools.generic.DateTool
+
+tools.data.version = 1.1
+tools.data.version.type = number
+tools.data.date = Mon Sep 17 10:08:03 PDT 2007
+tools.data.date.class = java.util.Date
+tools.data.date.converter = org.apache.commons.beanutils.locale.converters.DateLocaleConverter
+tools.data.isSimple = true
+tools.data.type = boolean
+tools.data.foo = this is foo.
+tools.data.bar = this is bar.
+tools.data.dataKeys = version,date,isSimple.foo,bar,dataKeys,switches
+tools.data.dataKeys.type = list
+tools.data.switches = true,false,false,true
+tools.data.switches.type = list.boolean
+        </sourcecode></pre>
+</div>
+
+</div>
+
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+
+        <!-- PAGE FOOTER -->
+        <div id="footer">
+          <div class="xright">
+            Copyright &#169; 1999-2007, Apache Software Foundation
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </body>
+    </html>

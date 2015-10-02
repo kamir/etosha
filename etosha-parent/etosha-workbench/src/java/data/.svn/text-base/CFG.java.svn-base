@@ -1,0 +1,15 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package data;
+
+/**
+ *
+ * @author kamir
+ */
+public class CFG {
+    
+    static public String TEMPLATE_BASE = "G:/DEV/BITOCEAN/bitoceanTB/build/web/WEB-INF/vm";
+    
+}

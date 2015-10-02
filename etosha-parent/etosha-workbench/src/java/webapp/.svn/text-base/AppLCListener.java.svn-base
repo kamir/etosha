@@ -1,0 +1,43 @@
+package webapp;
+
+import data.CFG;
+import data.ChartProjeckt;
+import java.util.Date;
+import javax.servlet.ServletContextListener;
+import javax.servlet.ServletContextEvent;
+
+
+/**
+ *
+ * @author kamir
+ */
+public class AppLCListener implements ServletContextListener	{
+
+	public static long applicationInitialized = 0L;
+
+	/* Application Startup Event */
+	public void	contextInitialized(ServletContextEvent ce) {
+		applicationInitialized = System.currentTimeMillis();
+                Date d = new Date(applicationInitialized);
+                System.out.println(">>> contextInitialized ... " + d );
+                
+                String pfad = ce.getServletContext().getInitParameter("CE_TEMP_FOLDER");
+                String drive = ce.getServletContext().getInitParameter("CE_TEMP_FOLDER_DRV");
+                
+                System.out.println(">>> use drive: " + drive + pfad );
+                
+                ChartProjeckt.setDefaultBasePath( drive + pfad );
+                
+                ChartProjeckt pro = ChartProjeckt.getDefaultProjekt();
+                ce.getServletContext().setAttribute( "PROJEKT", pro );
+                
+                CFG.TEMPLATE_BASE = ce.getServletContext().getInitParameter("VM_TEMPLATE_FOLDER");
+        }
+
+	/* Application Shutdown	Event */
+	public void	contextDestroyed(ServletContextEvent ce) {
+            System.out.println(">>> context destroyed ... " );
+        }
+ 
+    
+}

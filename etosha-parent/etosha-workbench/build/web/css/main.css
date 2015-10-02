@@ -1,0 +1,165 @@
+/* 
+    Document   : main
+    Created on : 05.01.2012, 19:02:28
+    Author     : kamir
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+html, body {
+        margin: 0; 
+        padding: 0; 	
+        
+	font-family: Verdana;
+        background-image: url(./../img/main_bg.jpg);
+        background-repeat: repeat-x; 
+}
+
+#editor {
+    position: absolute;
+    top:  0px;
+    left: 390px;
+    bottom: 0px;
+    right: 0px;
+    background: white;
+}
+
+
+#modules {
+    position: absolute;
+    top:  160px;
+    left: 35px;
+    text-align: center;    
+    widht: 52;
+    hight: 220;
+}
+ 
+ 
+ 
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-shadow:   0px 0px 8px;
+    font-size: 16;
+    font-weight: bold;
+    color: silver;  
+    margin-bottom: 5px;
+}
+#logo {
+    position: absolute;
+    top: -10px;
+    left: -40px;
+}
+
+#projekt {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+
+ 
+
+#content {
+    position: absolute;
+    top: 55px;
+    left: 180px;
+    width: 1250px;
+ 
+    margin: 5px;
+    margin-left: 15px;
+    margin-right: 15px;   
+ 
+}
+
+
+#header {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    text-shadow:   0px 0px 8px;
+    font-size: 16;
+    font-weight: bold;
+    color: silver;  
+    margin-bottom: 5px;
+}
+
+.headerrow {
+    text-shadow: lightgray 2px 2px 2px;
+    font-size: 12;
+    font-weight: normal;
+    color: white;  
+    margin-bottom: 5px;
+}
+.headerrow i {
+    text-shadow: white 1px 1px 1px;
+    font-size: 24;
+    font-weight: bold;
+    color: #5bc0de;  
+    background: black;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-family: fantasy;
+}
+
+.headerrow b {
+    text-shadow: lightgray 1px 1px 1px;
+    font-size: 14;
+    font-weight: normal;
+    color: #5bc0de;  
+    background: black;
+    margin-bottom: 5px;
+}
+
+
+#upload_form {
+    position: relative;
+    width: 805px;
+    height: 380px;
+    background: #EEEEEE;
+    background-image: url(./../img/ui-bg_highlight-soft_75_cccccc_1x100.png);
+    background-repeat: repeat-x;
+}
+.eingabe { 
+    background: #f2f0f0;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 11px;
+    height: 27px;
+    padding-left: 5px;
+}
+
+.header-info { 
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.main_button { 
+    border-color: black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#listing { 
+    position: relative;
+    left: 815px;
+    top: -380px;
+    width: 380px;
+    height: 380px;
+    background: #fff9bd; 
+    overflow: auto;
+    
+    
+        
+};

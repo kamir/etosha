@@ -1,0 +1,139 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package data;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.Properties;
+import org.apache.velocity.Template;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
+import org.apache.velocity.exception.ParseErrorException;
+import org.apache.velocity.exception.ResourceNotFoundException;
+
+/**
+ *
+ * @author kamir
+ */
+public class SimplePageDocument {
+
+    static Properties props = null;
+    
+    private static Properties initProps() {
+        if ( props == null ) {
+            props = new Properties();
+            props.put("resource.loader","file");
+            props.put("file.resource.loader.class","org.apache.velocity.runtime.resource.loader.FileResourceLoader");
+            props.put("file.resource.loader.path", CFG.TEMPLATE_BASE );
+        } 
+        return props;
+    }
+        
+    public static void doPrepareSingleDocument( CollabProject pro ) throws IOException {
+         
+        Properties props = initProps();
+    
+        
+         Velocity.init(props);
+
+            Properties data = new Properties();
+
+            VelocityContext vc = new VelocityContext();
+            
+            vc.put("titel", "ARBEITSTITEL" );
+            vc.put("chart", pro.loadTextFromFile( pro.getElementChartLatexFile() ) );
+
+            vc.put("data", data);
+
+            Template template = null;
+            String templateFile = "SinglePageDocument.vm";
+
+            try {
+                template = Velocity.getTemplate(templateFile);
+
+            }
+            catch( ResourceNotFoundException rnfe ) {
+                System.out.println("SimplePageDocument : error : cannot find template " + templateFile );
+                rnfe.printStackTrace();
+                
+                
+                
+                
+            }
+            catch( ParseErrorException pee ) {
+                System.out.println("SimplePageDocument : Syntax error in template " + templateFile + ":" + pee );
+            }
+
+
+            StringWriter sw = new StringWriter();
+
+            if ( template != null) {
+                template.merge(vc, sw);
+            }
+
+            sw.flush();
+
+            System.out.println( sw.toString() );
+            
+            pro.writeSingleDocumentSRC( sw.toString() );
+ 
+    };
+
+    static void doPrepareSingleDocumentWEBAPP(CollabProject pro) throws IOException {
+        Properties props = initProps();
+ 
+ 
+        
+         Velocity.init(props);
+      
+
+            Properties data = new Properties();
+
+            VelocityContext vc = new VelocityContext();
+            
+            
+            vc.put("titel", "ARBEITSTITEL" );
+            vc.put("chart", pro.loadTextFromFile( pro.getElementChartLatexFile() ) );
+
+            vc.put("data", data);
+
+            Template template = null;
+            String templateFile = "SinglePageDocument.vm";
+
+            try {
+                template = Velocity.getTemplate(templateFile);
+
+            }
+            catch( ResourceNotFoundException rnfe ) {
+                System.out.println("SimplePageDocument : error : cannot find template " + templateFile );
+                rnfe.printStackTrace();
+                
+                
+                
+                
+                
+            }
+            catch( ParseErrorException pee ) {
+                System.out.println("SimplePageDocument : Syntax error in template " + templateFile + ":" + pee );
+            }
+
+
+            StringWriter sw = new StringWriter();
+
+            if ( template != null) {
+                template.merge(vc, sw);
+            }
+
+            sw.flush();
+
+            System.out.println( sw.toString() );
+            
+            pro.writeSingleDocumentSRC( sw.toString() );
+    }
+
+
+
+}

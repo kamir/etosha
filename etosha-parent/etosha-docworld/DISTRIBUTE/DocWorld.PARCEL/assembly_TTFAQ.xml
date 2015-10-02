@@ -1,0 +1,15 @@
+<!-- Copyright (c) 2014 Cloudera, Inc. All rights reserved. -->
+<assembly>
+    <id>TTFAQ</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+      <fileSet>
+        <directory>${project.basedir}/src/TTFAQ-1.1</directory>
+        <outputDirectory>/</outputDirectory>
+        </fileSet>
+     </fileSets>
+</assembly>
+

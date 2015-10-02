@@ -1,0 +1,101 @@
+                                        
+    <html>
+    <head>
+      <title>VelocityTools - Standalone Use</title>
+             <style type="text/css" media="all">
+               @import url("css/maven-theme.css");
+               @import url("css/maven-base.css");
+               @import url("css/style.css");
+                                    @import url("css/print.css");
+             </style>        
+    </head>
+
+    <body class="composite">
+
+            <div id="banner">
+        <a href="http://velocity.apache.org/" id="bannerLeft">
+          <img src="http://velocity.apache.org/images/velocity_project_wide.png"
+             width="400" height="40"             align="left" alt="The Velocity Project" border="0"/>
+        </a>
+                                            <span id="bannerRight">
+            <a href="index.html">
+              <img src="images/velocitytools.png" align="right" alt="VelocityTools" border="0"/>
+            </a>
+          </span>
+                <div class="clear">
+          <hr/>
+        </div>
+      </div>
+
+                  <div id="title">
+        <h1>Standalone Use</h1>
+        <div class="clear">
+          <hr/>
+        </div>
+      </div>
+      
+            
+
+        <!-- LEFT SIDE NAVIGATION -->
+        
+        <!-- RIGHT SIDE MAIN BODY -->
+        <div id="bodyColumn">
+          <div id="contentBox">
+            <div class="section"><a name="Just_Use_Them!"><h2>Just Use Them!</h2></a>
+      <p>
+            There's nothing particularly special about the tools in VelocityTools 2.  No 
+            special interfaces, most don't ''need'' any configuration or API access, 
+            and those that do are now relatively easy to handle (compared to 
+            VelocityTools 1.x).  So, if you need a tool, just create an instance, do 
+            any configuration you want or need and go.  Nothing else to it.
+        </p>
+
+</div>
+<div class="section"><a name="ToolManager"><h2>ToolManager</h2></a>
+      <p>
+            However, if you want to externalize your configuration or have your tools
+             created and configured for you on demand and you are not working in a 
+            servlet environment, then we have created a simple ToolManager that you 
+            can use.  It's relatively simple.  Just create a ToolManager (can be 
+            created with or without default tools available), configure it (if you 
+            want to), ask it to create a context for you, and use the context as you 
+            would any other.  Of course, there's more to it, but this should get you 
+            started:
+        </p>
+<div class="source">
+  <pre><sourcecode>
+ToolManager manager = new ToolManager();
+manager.configure("/path/to/my/configuration.xml");
+Context context = manager.createContext();
+myVelocityEngine.evaluate(context, myOutputWriter, "This is a $text.test", "Test template");
+        </sourcecode></pre>
+</div>
+    <p>
+            Of course, if you are going to be working in a servlet environment and don't
+            want to create and configure tools yourself, then you should being using
+            <a href="view.html">VelocityView</a> either
+            <a href="frameworks.html#Integration_Via_VelocityView">directly</a>
+            or through the
+            <a href="view.servlet.html">servlets</a> or
+            <a href="view.tag.html">JSP tag</a> provided for you.
+        </p>
+
+</div>
+
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+
+        <!-- PAGE FOOTER -->
+        <div id="footer">
+          <div class="xright">
+            Copyright &#169; 1999-2007, Apache Software Foundation
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </body>
+    </html>

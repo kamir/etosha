@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.etosha</groupId>
+        <artifactId>etosha-parent</artifactId>
+        <version>0.7.0-SNAPSHOT</version>
+    </parent>
+    
+    
+    <groupId>org.etosha.csd</groupId>
+    <artifactId>etosha-csd</artifactId>
+    <name>The ETOSHA-CSD</name>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+ 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <tasks>
+                                <copy file="/GITHUB/DocWorld/dist/DocWorld.war" tofile="/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts/tools/DocWorld.war"/>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution> 
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>true</appendAssemblyId>
+                    <descriptors>
+                        <descriptor>assembly_ETCS.xml</descriptor>
+                        <descriptor>assembly_TTFAQ.xml</descriptor>
+                        <descriptor>assembly_ASSA.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                
+                <executions>
+                    <execution>
+                        <id>make-TTFAQ-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>TTFAQ-1.1</finalName>
+                            <descriptors>
+                                <descriptor>assembly_TTFAQ.xml</descriptor>
+                            </descriptors>
+                            <attach>true</attach>
+                        </configuration>
+                    </execution>  
+                    
+                    <execution>
+                        <id>make-ETCS-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>ETCS-1.0</finalName>
+                            <descriptors>
+                                <descriptor>assembly_ETCS.xml</descriptor>
+                            </descriptors>
+                            <attach>true</attach>
+                        </configuration>
+                    </execution>  
+                    
+                    <execution>
+                        <id>make-ASSA-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <finalName>ASSA-1.0</finalName>
+                            <descriptors>
+                                <descriptor>assembly_ASSA.xml</descriptor>
+                            </descriptors>
+                            <attach>true</attach>
+                        </configuration>
+                    </execution>  
+                    
+                    
+                </executions>
+            </plugin>
+        
+            
+    
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <description>A webapplication for colaboration on scientiffic articles ...</description>
+    <display-name>Chart Editor</display-name>
+    <distributable/>
+    <context-param>
+        <description>Port of the Sceye DDL Adapter</description>
+        <param-name>DDL_PORT</param-name>
+        <param-value>9090</param-value>
+    </context-param>
+    <context-param>
+        <description>Store the temp data here (absolut path on server)</description>
+        <param-name>CE_TEMP_FOLDER</param-name>
+        <param-value>TEST/</param-value>
+    </context-param>
+    <context-param>
+        <description>Store the temp data here (absolut path on WIN-Server)</description>
+        <param-name>CE_TEMP_FOLDER_DRV</param-name>
+        <param-value>C:/</param-value>
+    </context-param>
+    <context-param>
+        <description>Ablageort für die Velocity Templates.</description>
+        <param-name>VM_TEMPLATE_FOLDER</param-name>
+        <param-value>C:/TEST/vm</param-value>
+    </context-param>
+    <listener>
+        <description>LifeCycle Listener for the application.</description>
+        <listener-class>webapp.AppLCListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>dwr-invoker</servlet-name>
+        <servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>WARN</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>velocity</servlet-name>
+        <servlet-class>
+            org.apache.velocity.tools.view.servlet.VelocityViewServlet
+        </servlet-class>
+        <load-on-startup>10</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dwr-invoker</servlet-name>
+        <url-pattern>/dwr/*</url-pattern>
+        <!-- Map *.vm files to Velocity -->
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>velocity</servlet-name>
+        <url-pattern>*.vm</url-pattern>
+    </servlet-mapping>
+    <!-- The Usual Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-name>velocity</servlet-name>
+    <url-pattern>*.vm</url-pattern>
+</web-app>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/bootstrap-modal/bootstrap-modal.pack.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+      <div class="container">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" style="color:gray"></span> <font color="#00bfff"><b>Q</b>n<b>A</b></font><font color="white">manager</font> </a>
+        </div>
+        <div>
+        <ul class="nav navbar-nav">
+                  <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-question-sign" style="color:#00bfff"></span> QnA items    
+               <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="v1/showItem.jsp"><span class="glyphicon glyphicon-play" style="color:#00bfff"></span> Show Item</a></li>
+               <li><a href="v1/editItem.jsp"><span class="glyphicon glyphicon-edit" style="color:#00bfff"></span> Edit Item</a></li>
+               <li><a href="v1/markdownDemo.jsp"><span class="glyphicon glyphicon-info-sign" style="color:#00bfff"></span> Info about formating with <b>markdown</b></a></li>
+            </ul>
+         </li>   
+         <li><a href="#"><span class="glyphicon glyphicon-road" style="color:#00bfff"></span> <b>Guide</b></a></li>
+         <li><a href="#"><span class="glyphicon glyphicon-cog" style="color:#00bfff"></span> Reviews</a></li>
+         <li><a href="#"><span class="glyphicon glyphicon-dashboard" style="color:#00bfff"></span> Analysis</a></li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-wrench" style="color:#00bfff"></span> Administration    
+               <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="v1/kb/status.jsp"><span class="glyphicon glyphicon-signal" style="color:#00bfff"></span> Show Knowledgebase status</a></li>
+               <li><a href="v1/startReview.jsp"><span class="glyphicon glyphicon-search" style="color:#00bfff"></span> Run review request generator</a></li>
+               <li><a href="v1/indextool/packageIndex.jsp"><span class="glyphicon glyphicon-book" style="color:#00bfff"></span> Package index</a></li>
+               <li class="divider"></li>
+               <li><a href="v1/manage.jsp"><span class="glyphicon glyphicon-search" style="color:#00bfff"></span> Manage the tool-suite </a></li>
+               <li><a href="v1/initHBaseConnector.jsp"><span class="glyphicon glyphicon-open" style="color:#00bfff"></span> Init HBase connector ...</a></li>
+               <li><a href="v1/resetHBaseConnector.jsp"><span class="glyphicon glyphicon-refresh" style="color:#00bfff"></span> Restart HBase connector ...</a></li>
+               <li class="divider"></li>
+               <li><a href="http://training03.mtv.cloudera.com:7180/">Cloudera Manager</a></li> 
+               <li><a href="http://training09.mtv.cloudera.com:8888/">HUE</a></li>
+            </ul>
+         </li>
+      </ul>  
+          </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input id="Q" type="text" placeholder="Question" class="form-control">
+            </div>
+            <div class="form-group">
+              <input id="C" type="text" placeholder="Context" class="form-control">
+                  
+            </div>
+                   <a href="" class="btn btn-lg btn-success"
+   data-toggle="modal"
+   data-target="#modal_GO" onclick="qs();" >Go</a>
+              <script> function qs() { 
+                  
+                  var context = document.getElementById('C').value;
+                  var question = document.getElementById('Q').value;
+                
+                  document.getElementById('qqinfo').innerHTML = "<b>Question:</b> " + question + " <b>Context: </b>" + context ;
+                  
+                  var url = "http://training02.sjc.cloudera.com:8983/solr/faq_collection1/query?q=question:" + question + "&facet=on&facet.field=context&facet.query=context:"+context; 
+                  
+                  document.getElementById('QSR').src = url; 
+                  
+                  var urlPDFServlet = "v1/showSearchResultsAsPDF.jsp?q=question:"  + question + "&facet=on&facet.field=context&facet.query=context:" + context;
+                  
+                  var PDFButton = "<a target='_blank' href='"+urlPDFServlet+"' class='btn btn-info'>Load results as PDF</a>";
+                  
+                  document.getElementById('frameURL').innerHTML = url; 
+ 
+                  
+                  
+                  document.getElementById('qqLoadPDF').innerHTML = PDFButton; 
+ 
+              
+} </script>   
+ 
+          </form>
+       
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        
+          <h1><font style="color:#00bfff"><b>Q</b>n<b>A</b></font> [Questions & Answers] </h1>  
+          <h3>Definitive answers and facts from Cloudera's internal mailing lists, intsurctor's guides, Skype chats, and blogs are collected. 
+              The system guides us through cleaning and obfuscuation of customer and employee names. Finally, both steps enable knowledge sharing with training partners.</h3>
+               <hr>
+               <p><a target="_blank" href="http://training09.mtv.cloudera.com:8888/search/?collection=20000004" class="btn btn-lg btn-info">Search in <b>INTERNAL</b> data &raquo;</a><br> All raw data is stored in HBase and indexed in SOLR. This is the <b>first tier</b> of 
+                   a layerd knowledge repository. All the content of this lowest layer is for internal use and for analysis only.</p>
+               <p>
+                   Collected raw data and the index sit in the Cloudera training-cluster. Feel free to <a href="https://jira.cloudera.com/browse/CUR/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel">contribute</a> 
+                   new ideas for further analysis and information extraction! Start now with your JIRA          <a href="https://jira.cloudera.com/browse/CUR/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel"><span class="glyphicon glyphicon-file"></span></a>.</p>
+        <p>        <a target="_blank" href="http://training09.mtv.cloudera.com:8888/search/?collection=20000005" class="btn btn-lg btn-info">Search in <b>PUBLIC</b> data &raquo;</a><br>The public data is accessibe in a <b>second tier</b>. An offline reader enables all Cloudera trainers to use the knowledge base
+            also in critical offline situations. VPN users can asses this data also via HUE.
+</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Questions and Answers</h2>
+          <p>If you found interesting answers to good questions, worth spreading, add it to the first data layer via
+              this simple form.</p>
+          <p>You can review and edit the table using <a href="https://docs.google.com/a/cloudera.com/spreadsheet/ccc?key=0AnwImjy2siFOdFRSQmwxS2ctZEhZaGZQR21ZdmVpM2c#gid=0">Google-Docs</a>.</p>
+          <p><a class="btn btn-success" href="static/googleform.html" role="button">Start asking &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Review</h2>
+          <p>Come in, and review existing topics! The more we think about the content and the more iterations we conduct, the better
+              our content will be.</p><p>Well understood questions, with valid answers, and cleaned from all
+              sensitive information are usefull in our training. Such <b>QA</b> items is what we collect.</p>
+          <p><a class="btn btn-default" href="v1/startReview.jsp" role="button">Improve the content &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Analysis</h2>
+          <p>What are the hot topics? What relations can be found between all the questions, and
+              how are the topics evolving over time?</p> Automatic analysis can be the best starting point for our 
+          next generation of training materials. Why not using this approach also as a general QA solution in workshops and consulting projects.</p>
+          
+          <p><a class="btn btn-default" href="v1/startAnalysis.jsp" data-toggle="modal"
+   data-target="#modal_STATS" role="button">Find more facts &raquo;</a></p>
+        </div>
+      </div>
+  </div>
+</div>
+      
+
+<div class="modal fade" style="width:1200px;" id="modal_STATS" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog" style="width:1100px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h4 class="modal-title" id="myModalLabel"><b>Corpus Analysis</b> (TODAY)</h4>
+            </div>
+            <div class="modal-body">
+                
+                <!--iframe width="900" height="350" src="//docs.google.com/spreadsheets/d/1t5lXIzs5wHRovi9TrWS3Q0PUZ0NuLnetAz59i202ZNo/gviz/chartiframe?oid=1070188261" 
+                        seamless frameborder=0 scrolling=no></iframe-->
+                <iframe width="900" height="350" src="static/analysis_stat.html" 
+                        seamless frameborder=0 scrolling=no></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              
+        </div>
+    </div>
+  </div>
+</div>
+      
+       
+<div class="modal fade" style="width:1200px;" id="modal_GO" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog" style="width:1100px;" >
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <h4 class="modal-title" id="myModalLabel">Quick Search Results</h4> 
+            
+            <div id="qqinfo"></div>
+            <div id="frameURL"></div>
+            
+            </div>
+            
+            <div class="modal-body">
+                
+    
+                <iframe id="QSR" scrolling="yes" width="1050" height="350" src="http://training02.sjc.cloudera.com:8983/solr/faq_collection1/query?q=question:HDFS&facet=on&facet.field=context&facet.field=tag&facet.query=tag:cartoon" 
+                        seamless frameborder=0 scrolling=no></iframe>
+                
+                
+                
+            </div>
+            <div class="modal-footer">
+                <div >
+                    <div id="qqLoadPDF"></div><hr><a target="_blank" href="http://training09.mtv.cloudera.com:8888/search/?collection=20000004" class="btn btn-success">Advanced Search &raquo;</a><button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+      
+      
+      
+      
+      <hr>
+      
+      
+ 
+
+       
+
+      <footer>
+          <div>
+              <p><center>  <span class="glyphicon glyphicon-envelope" style="color:gray"></span> <a href="mailto:mirko@cloudera.com">mirko@cloudera.com</a></center></p>
+          </div>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        
+        
+
+        
+ 
+        
+                
+ 
+        
+    </body>
+</html>

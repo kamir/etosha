@@ -1,0 +1,8 @@
+<dwr>
+    <allow>
+        <create creator="new" javascript="UploadMonitor">
+            <param name="class" value="be.telio.mediastore.ui.upload.UploadMonitor"/>
+        </create>
+        <convert converter="bean" match="be.telio.mediastore.ui.upload.UploadInfo"/>
+    </allow>
+</dwr>

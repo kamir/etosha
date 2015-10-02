@@ -1,0 +1,23 @@
+<project name="ajax-upload" basedir="." default="compile">
+
+    <property name="project.name" value="ajax-upload"/>
+    <property name="project.version" value="1.0"/>
+
+    <property name="servlet.jar" value="D:/opt/java/jakarta-tomcat-4.1.30/common/lib/servlet.jar"/>
+
+    <target name="war">
+        <jar destfile="../../${project.name}-${project.version}.war" basedir=".."/>
+    </target>
+
+    <target name="compile">
+        <javac srcdir="src" destdir="classes">
+            <classpath>
+                <fileset dir="lib">
+                    <include name="*.jar"/>
+                </fileset>
+                <path location="${servlet.jar}"/>
+            </classpath>
+        </javac>
+    </target>
+
+</project>

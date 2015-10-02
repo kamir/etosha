@@ -1,0 +1,947 @@
+15:41:38 WARN  NativeCodeLoader     :: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15:41:38 INFO  RecoverableZooKeeper :: Process identifier=hconnection-0x1fcf40ec connecting to ZooKeeper ensemble=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181
+15:41:38 INFO  ZooKeeper            :: Client environment:zookeeper.version=3.4.5-cdh5.3.0--1, built on 12/17/2014 02:45 GMT
+15:41:38 INFO  ZooKeeper            :: Client environment:host.name=192.168.1.66
+15:41:38 INFO  ZooKeeper            :: Client environment:java.version=1.7.0_80
+15:41:38 INFO  ZooKeeper            :: Client environment:java.vendor=Oracle Corporation
+15:41:38 INFO  ZooKeeper            :: Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+15:41:38 INFO  ZooKeeper            :: Client environment:java.class.path=jetty-runner-8.1.9.v20130131.jar
+15:41:38 INFO  ZooKeeper            :: Client environment:java.library.path=/Users/kamir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+15:41:38 INFO  ZooKeeper            :: Client environment:java.io.tmpdir=/var/folders/3k/nyrd1dwj4d953l71ys0hnl680000gn/T/
+15:41:38 INFO  ZooKeeper            :: Client environment:java.compiler=<NA>
+15:41:38 INFO  ZooKeeper            :: Client environment:os.name=Mac OS X
+15:41:38 INFO  ZooKeeper            :: Client environment:os.arch=x86_64
+15:41:38 INFO  ZooKeeper            :: Client environment:os.version=10.10.4
+15:41:38 INFO  ZooKeeper            :: Client environment:user.name=kamir
+15:41:38 INFO  ZooKeeper            :: Client environment:user.home=/Users/kamir
+15:41:38 INFO  ZooKeeper            :: Client environment:user.dir=/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts
+15:41:38 INFO  ZooKeeper            :: Initiating client connection, connectString=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181 sessionTimeout=90000 watcher=hconnection-0x1fcf40ec, quorum=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181, baseZNode=/hbase
+15:41:39 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+15:41:39 INFO  ClientCnxn           :: Socket connection established to training01.sjc.cloudera.com/172.20.63.21:2181, initiating session
+15:41:39 INFO  ClientCnxn           :: Session establishment complete on server training01.sjc.cloudera.com/172.20.63.21:2181, sessionid = 0x14d32918ce0b7d5, negotiated timeout = 60000
+16:53:47 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 1046710ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+16:54:21 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+16:54:41 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 54595ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+16:54:42 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+16:55:02 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20913ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+16:55:04 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+16:55:24 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21405ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+16:55:25 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+19:55:43 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 10819131ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+19:55:43 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+19:55:43 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.26/172.20.63.26:2181
+19:55:43 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+19:55:45 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+19:55:45 ERROR ClientCnxnSocketNIO  :: Unable to open socket to training01.sjc.cloudera.com/172.20.63.21:2181
+20:53:03 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:04 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:04 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.23/172.20.63.23:2181
+20:53:04 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:05 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:05 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.26/172.20.63.26:2181
+20:53:05 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:07 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:07 ERROR ClientCnxnSocketNIO  :: Unable to open socket to training01.sjc.cloudera.com/172.20.63.21:2181
+20:53:07 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:08 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:08 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.23/172.20.63.23:2181
+20:53:08 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:08 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:08 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.26/172.20.63.26:2181
+20:53:08 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:10 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:10 ERROR ClientCnxnSocketNIO  :: Unable to open socket to training01.sjc.cloudera.com/172.20.63.21:2181
+20:53:10 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:10 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:10 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.23/172.20.63.23:2181
+20:53:10 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:11 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:11 ERROR ClientCnxnSocketNIO  :: Unable to open socket to 172.20.63.26/172.20.63.26:2181
+20:53:11 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.SocketException: Network is unreachable
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.registerAndConnect(ClientCnxnSocketNIO.java:266)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.connect(ClientCnxnSocketNIO.java:276)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:967)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1003)
+20:53:13 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:33 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21700ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:53:33 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:37 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:53:37 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:44 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:53:46 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:48 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:53:49 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:53 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:53:54 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:53:59 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:01 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:08 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:08 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:10 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:11 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:11 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:13 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:14 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:14 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:17 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:18 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:21 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:23 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:25 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:25 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:26 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:27 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:30 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:32 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:52 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21755ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:54:52 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:52 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:53 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:54 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:56 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:56 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:57 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:54:59 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:54:59 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:55:06 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:55:07 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:55:27 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21153ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:55:28 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:55:33 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:55:33 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:55:35 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:55:37 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:55:56 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:55:57 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:17 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20635ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:56:17 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:21 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:23 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:26 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:27 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:28 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:29 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:29 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:31 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:32 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:32 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:52 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20185ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:56:53 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:54 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:56:56 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:56:59 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:00 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:02 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:02 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:03 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:05 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:06 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:06 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:26 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20345ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:57:27 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:28 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:30 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:30 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:30 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:33 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:34 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:37 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:39 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:57:50 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:57:51 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:02 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:58:03 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:05 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:58:07 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:11 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:58:12 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:14 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:58:15 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:58:19 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:58:39 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21642ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:58:40 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:00 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20193ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+20:59:01 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:03 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:04 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:04 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:05 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:10 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:11 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:11 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:13 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:32 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:33 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:53 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:53 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+20:59:56 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+20:59:57 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:08 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:09 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:09 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:09 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:09 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:11 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:12 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:12 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:12 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:13 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:13 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:15 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:18 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:19 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:19 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:20 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:21 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:22 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:22 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:23 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:23 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:24 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:24 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:25 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:27 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:27 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:27 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:29 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:32 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:32 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:35 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:36 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:37 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:39 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:39 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:39 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:41 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:42 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:42 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:43 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:51 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:51 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:00:52 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:00:52 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:12 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20300ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+21:01:14 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:14 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:14 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:14 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:15 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:16 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:18 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:20 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:21 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:41 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20253ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+21:01:41 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:46 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:48 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:01:48 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:01:49 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:00 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:01 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:20 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:22 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:25 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:25 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:27 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:28 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:48 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20677ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+21:02:49 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:49 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:50 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:02:51 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:02:52 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:12 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 20643ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+21:03:13 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:17 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:17 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:18 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:20 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:22 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:23 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:34 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:34 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:35 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:36 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:47 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:47 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:49 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:50 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:53 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:54 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:03:55 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:03:55 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:02 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:03 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:08 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:09 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:10 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:10 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:13 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:14 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:15 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:17 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:21 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:21 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:23 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:24 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:26 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:28 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:31 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:32 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:37 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:37 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:38 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:04:39 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:04:59 INFO  ClientCnxn           :: Client session timed out, have not heard from server in 21115ms for sessionid 0x14d32918ce0b7d5, closing socket connection and attempting reconnect
+21:05:00 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:05:01 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:05:01 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:05:03 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:05:04 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:05:11 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:05:12 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.23/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+21:05:12 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:05:13 INFO  ClientCnxn           :: Opening socket connection to server 172.20.63.26/172.20.63.26:2181. Will not attempt to authenticate using SASL (unknown error)
+21:05:18 WARN  ClientCnxn           :: Session 0x14d32918ce0b7d5 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+21:05:19 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)

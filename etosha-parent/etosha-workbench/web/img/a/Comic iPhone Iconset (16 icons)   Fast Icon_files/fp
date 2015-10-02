@@ -1,0 +1,781 @@
+var LJT_AdChoices = {
+	img1: 'http://www.lijit.com/___moncalamari_a10/res/images/adchoices/adChoicesSmall_icon.png',
+	img2: 'http://www.lijit.com/___moncalamari_a10/res/images/adchoices/adChoicesBig_icon.png',
+	enabled: false}
+var LJT_Beacon = {
+	uri: 'http://www.lijit.com/users/iconarchive',
+	informer: '8128368',
+	origin: "http://www.lijit.com/beacon",
+	beacons: [ "http://www.lijit.com/beacon", "http://beacon.lijit.com/beacon" ],
+	weights: [ 50, 50 ],
+	enabled: true,
+	csync: true,
+	ref: document.referrer
+}
+var LJT_FPI = {
+	url: "apr.lijit.com",
+	weight: 100  //0-100
+}
+
+var LJT_Ads = function(){
+	var init = function(){
+		adchoices.bindevents();
+	}
+	
+	var adchoices = {
+		show: function(){
+			if(LJT_AdChoices.enabled){
+				try{
+					var elid = 'lwp_adchoices_'+getZoneID();
+					var el = document.getElementById(elid);
+					el.style.display = 'block';
+				} catch(e){}
+			}
+		},
+		hide: function(){
+			try{
+				var elid = 'lwp_adchoices_'+getZoneID();
+				var el = document.getElementById(elid);
+				el.style.display = 'none';
+			} catch(e){}
+		},
+		bindevents: function(){
+			try{
+				//Mouse Hover event to toggle images
+				var elid = 'lwp_adchoices_img_'+getZoneID();
+				var el = document.getElementById(elid);
+				el.onmouseover = function(){el.src = LJT_AdChoices.img2;}
+				el.onmouseout = function(){el.src = LJT_AdChoices.img1;}
+			} catch(e){}
+		}
+	}
+	
+	var reportError = function(errorMsg, except){
+		var message = "[Ads JS] ";
+		try{
+			message += errorMsg;
+			try{message += " - "+ except.message;} catch(e){}
+			message = encodeURIComponent(message);
+			
+			var src = "http://www.lijit.com";
+			src += '/errors/ads?msg='+ message +"&r="+ Math.random();
+			
+			var errorImg = new Image();
+			errorImg.src = src;
+		} catch(e){}
+	}
+	
+	var getFlashVersion = function(){
+		var ret = '0,0,0';
+		try { // IE Browsers
+			try {
+				var ax = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+				try { ax.AllowScriptAccess = 'always'; }
+				catch(e) { return '6.0.0'; }
+			} catch(e) {}
+			ret = new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version').replace(/\D+/g, ',').match(/^,?(.+),?$/)[1];
+		} catch(e) { // Non IE Browsers
+			try {
+				if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+					ret = (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]).description.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1];
+				}
+			} catch(e) {}
+		}
+		return ret.replace(/,/g,'.');
+	}
+	
+	var isInIframe = function(){
+		try{ return window != window.top; } 
+		catch(e){
+			reportError('Failed to determine if in iFrame', e);
+			return false;
+		}
+	}
+	
+	//Check to see if a given element is a Beacon/Tracker Pixel
+	var isTracker = function (el){
+		try{
+			if((el.attributes['height'].nodeValue == '0' || el.attributes['height'].nodeValue == '1') ||
+				(el.attributes['width'].nodeValue == '0' || el.attributes['width'].nodeValue == '1')){
+				return true;
+			} else if(el.id.match(/^lwp_abf_/)){
+				return true;
+			} else {
+				return false;
+			}
+		} catch(e){
+			return false;
+		}
+	}
+	//Resize Beacons/Trackers on page. Called only when in iFrames.
+	var fixBeacons = function (startNode){
+		if(!startNode){
+			startNode = document.body;
+		}
+		function _fixBeacons(node){
+			try{
+				if(node.nodeName == 'IMG' || node.nodeName == 'img'){
+					if(isTracker(node)){
+						node.style.display = 'none';
+						node.style.height = '0px';
+						node.style.width = '0px';
+						node.style.position = 'relative';
+						node.setAttribute('handled', 'true');
+					}
+				} else if(node.nodeName == 'IFRAME' || node.nodeName == 'iframe'){
+					if(isTracker(node)){
+						node.style.display = 'none';
+						node.setAttribute('handled', 'true');
+					}
+				} else if(node.nodeName == 'DIV' || node.nodeName == 'div'){
+					if(isTracker(node)){
+						node.style.display = 'none';
+						node.setAttribute('handled', 'true');
+					}
+				}
+			} catch(e){};
+			try{
+				var children = node.childNodes;
+				if (children.length > 0) { 
+					for (var i = 0; i < children.length; i++) {
+						_fixBeacons(children[i]);
+					}
+				}
+			} catch(e){};
+		}
+			}
+	
+	var getZoneID = function(){ return ljt_getZoneID(); }
+	
+	//Called when an ad is serverd or chain is tripped.
+	var servingAd = function(){
+		//Check it is a chain
+		adchoices.show();
+		fixBeacons(document.body);
+	}
+	
+	//We are going to server the passback
+	var servingPassback = function(){
+		adchoices.hide();
+	}
+	
+	//We have no ad for a user including there passback
+	var servingNoAd = function(){
+		adchoices.hide();
+	}
+	
+	var getGUID = function(prefix) {
+		var uid = "";
+		if (typeof prefix != "undefined") {
+			uid = uid + prefix;
+		}
+		uid = uid + new Date().getTime() +
+					(((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1) + 
+					(((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1) +
+					(((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+		return uid;
+	}
+	
+	var getBeaconUrl = function () {
+		if(!LJT_Beacon.enabled){
+			return LJT_Beacon.origin;
+		} else {
+			var beacons = LJT_Beacon.beacons;
+			var weights = LJT_Beacon.weights;
+			
+			var num_values = beacons.length;
+			var total_weight = weights[0] + weights[1];
+			
+			var rand = Math.floor(Math.random() * total_weight + 1);
+			
+			var i = 0;
+			var n = 0;	
+			while(i < num_values) {
+				n += weights[i];
+				if(n >= rand) {
+					break;
+				}
+				i++;
+			}
+			
+			return beacons[i];
+		}
+	}
+	
+	var sendBeacon = function (payload){
+		try{
+			if(lwp_beacon_fired === false){
+				var locc = ljt_get_site_url();
+				locc = encodeURIComponent(locc);
+				
+				var beaconURL = getBeaconUrl() + "?";
+				
+				beaconURL += "viewId=" + lwp_beacon_guid();
+				beaconURL += "&rand=" + new Date().getTime();
+				beaconURL += "&uri="+ LJT_Beacon.uri;
+				beaconURL += "&informer="+ LJT_Beacon.informer;
+				beaconURL += "&type=fpads";
+				beaconURL += "&loc=" + locc;
+				beaconURL += "&ifr=" + ljt_get_in_iframe_flag();
+				beaconURL += "&v=1.0";
+				if(LJT_Beacon.ref && LJT_Beacon.ref != ''){
+					beaconURL += "&rr=" + escape(LJT_Beacon.ref);
+				}
+				if(LJT_Beacon.csync){
+					beaconURL += "&csync=1";
+				}
+			
+				var beaconInit = false;
+				var beacon = document.createElement('iframe');
+				if (beacon.style) {
+					beacon.style.border = '0';
+					beacon.style.width = '1px';
+					beacon.style.height = '1px';
+					beacon.style.display = 'none';
+					beaconInit = true;
+				} else if (typeof beacon.setAttribute == 'function'){
+					beacon.setAttribute('width', '1px');
+					beacon.setAttribute('height', '1px');
+					beacon.setAttribute('border', '0');
+					beaconInit = true;
+				}
+				
+				beacon.src = beaconURL;
+				if (document.body && beaconInit) {
+					document.body.appendChild(beacon);
+				} else if(beaconInit) {
+					try{
+						var temp = document.createElement('div');
+						temp.appendChild(beacon);
+						document.write(temp.innerHTML);
+					} catch(e){
+						reportError('Failed to document.write beacon', e);
+					}
+				} else {}
+
+				lwp_beacon_fired = true;
+			}
+		} catch(e){
+			reportError('Failed to generate /beacon request', e);
+		}
+	}
+
+	return {
+		init: init,
+		getZoneID: getZoneID,
+		reportError: reportError,
+		getFlashVersion: getFlashVersion,
+		isInIframe: isInIframe,
+		servingAd: servingAd,
+		servingNoAd: servingNoAd,
+		servingPassback: servingPassback,
+		fixBeacons: fixBeacons,
+		sendBeacon: sendBeacon,
+		getGUID: getGUID
+	}
+}();
+/* Legacy Functions */
+function LjtAds_ReportError(errorMsg, except){LJT_Ads.reportError(errorMsg,except);}
+function ljt_get_swf_version() {LJT_Ads.getFlashVersion();}
+function ljt_in_iframe() { return LJT_Ads.isInIframe();}
+function ljt_get_in_iframe_flag() {return LJT_Ads.isInIframe() ? '1' : '0';}
+if(typeof lwp_beacon_fired == "undefined"){lwp_beacon_fired = false;}
+function LJT_Ad_beacon(payload){return LJT_Ads.sendBeacon(payload);}
+function ljt_genUniqId(prefix) {return LJT_Ads.getGUID();}
+
+function getReferringSearch(ref) {
+	try{
+		var keyStart = 0;
+		var referring_search = '';
+		
+		// used by dogpile, excite, webcrawler, metacrawler
+		if (ref.indexOf('/search/web/') > -1) {
+			keyStart = ref.indexOf('/search/web/') + 12;
+		}
+		
+		// used by technoati
+		if (ref.indexOf('/search/') > -1) {
+			keyStart = ref.indexOf('/search/') + 8;
+		}
+		
+		// used by chubba
+		if (ref.indexOf('arg=') > -1) {
+			keyStart = ref.indexOf('arg=') + 4;
+		}
+		
+		// used by dmoz
+		if (ref.indexOf('search=') > -1) {
+			keyStart = ref.indexOf('query=') + 7;
+		}
+		// used by scrub the web
+		if (ref.indexOf('keyword') > -1) {
+			keyStart = ref.indexOf('keyword') + 8;
+		}
+		
+		// used by overture, hogsearch
+		if (ref.indexOf('keywords') > -1) {
+			keyStart = ref.indexOf('keywords') + 9;
+		}
+		
+		// used by mamma, lycos, kanoodle, snap, whatuseek
+		if (ref.indexOf('query=') > -1) {
+			keyStart = ref.indexOf('query=') + 6;
+		}
+		
+		// don't allow encrypted key words by aol
+		if (ref.indexOf('encquery') > -1) {
+			keyStart = 0;
+		}
+		
+		// used by ixquick
+		if (ref.indexOf('&query=') > -1) {
+			keyStart = ref.indexOf('&query=') + 7;
+		}
+		
+		// used by aol
+		if (ref.indexOf('&qry=') > -1) {
+			keyStart = ref.indexOf('qry=') + 4;
+		}
+		
+		// used by yahoo, hotbot
+		if (ref.indexOf('?p=') > -1) {
+			keyStart = ref.indexOf('?p=') + 3;
+		}
+		
+		if (ref.indexOf('/p=') > -1) {
+			keyStart = ref.indexOf('/p=') + 3;
+		}
+		
+		if (ref.indexOf('&p=') > -1) {
+			keyStart = ref.indexOf('&p=') + 3;
+		}
+		
+		// used by google, msn, alta vista, ask jeeves, all the web, teoma, wisenut, search.com
+		if (ref.indexOf('?q=') > -1) {
+			keyStart = ref.indexOf('?q=') + 3;
+		}
+		
+		if (ref.indexOf('/q=') > -1) {
+			keyStart = ref.indexOf('/q=') + 3;
+		}
+		
+		if (ref.indexOf('&q=') > -1) {
+			keyStart = ref.indexOf('&q=') + 3;
+		}
+		
+		// if present, get the search phrase from the referer
+		if (keyStart > 0) {
+			if (ref.indexOf('&', keyStart) > -1) {
+				referring_search = ref.substr(keyStart, (ref.indexOf('&', keyStart) - keyStart));
+			} else if (ref.indexOf('/search') > -1) {
+				if (ref.indexOf('/',keyStart)>-1) {
+					referring_search = (ref.substr(keyStart, (ref.indexOf('/', keyStart) - keyStart)));
+				} else {
+					referring_search = (ref.substr(keyStart));
+				}
+			} else {
+				referring_search = ref.substr(keyStart);
+			}
+		}
+	} catch(e){
+		LjtAds_ReportError('Failed to find referring search', e);
+		referring_search = '';
+	}
+	return referring_search;
+}
+
+var viewport = getViewport();
+/**
+ * @Note: Can and does get called with width and height of null
+ * @Note: This function is called via DSP Passback Tags
+ */
+function abf(id, width, height) {
+    // ALERT - in order to get the tid,cids,bids on the ad calls from passback tags AND maintain
+    // backward compatibility with existing passback tags since lijit isn't in complete control
+    // of them, slip in the tid,cids,bids values as part of the abf function call that is used by 3rd party
+    // DSPs to build the call back to lijit
+    var ret = "";
+	if (!viewport || viewport.status != "ok") {
+		ret = "error";
+	}
+	try {
+		var rect = getPosition(id, width, height);
+		ret = ((rect.x + rect.width  <= viewport.x + viewport.width) &&
+		(rect.y + rect.height <= viewport.y + viewport.height));
+		if ((typeof LJT_bCTids != 'undefined') && (typeof LJT_bCTids[id] != 'undefined')) {
+			ret = ret + '&amp;tid='+LJT_bCTids[id];
+		}
+		var zoneid = id.replace(/^lwp_abf_/i,'');
+		if ((typeof ljt_beacon_vals != 'undefined') && (typeof ljt_beacon_vals[zoneid] != 'undefined')) {
+		    var cidsbids = ljt_beacon_vals[zoneid].replace(/^bannerid=\d+&amp;campaignid=\d+/i,'');
+		    if (cidsbids.length > 0) {
+				ret = ret + cidsbids;
+			}
+		}
+		
+																				
+	} catch (e) {
+		ret = "error";
+	}
+
+    return ret;
+}
+
+function getViewport() {
+	var viewport = {
+		x: 0,
+		y: 0,
+		width: 0,
+		height: 0,
+		status: ''
+	};
+	var bw = 0;
+	var bh = 0;
+	try {
+		if(typeof(window.innerWidth) == 'number') {
+			bw = window.innerWidth;
+			bh = window.innerHeight;
+		} else if( document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+			bw = document.documentElement.clientWidth;
+			bh = document.documentElement.clientHeight;
+		} else if( document.body && (document.body.clientWidth || document.body.clientHeight)) {
+			bw = document.body.clientWidth;
+			bh = document.body.clientHeight;
+		} else if( document.documentElement && (document.documentElement.offsetWidth || document.documentElement.offsetHeight)) {
+			bw = document.documentElement.offsetWidth;
+			bh = document.documentElement.offsetHeight;
+		}
+		viewport.status = "ok";
+		viewport.x = 0;
+		viewport.y = 0;
+		viewport.width = bw;
+		viewport.height = bh;
+	} catch (e) {
+		viewport.status = "error";
+	}
+	return viewport;
+}
+
+function getPosition(id, width, height){
+	var w = (width) ? width : 0;
+	var h = (height) ? height: 0;
+	var y = 0;
+	var x = 0;
+	var rect = {
+		x: x,
+		y: y,
+		width: w,
+		height: h
+	};
+	try{
+		var obj = document.getElementById(id);
+		while(obj) {
+			x += obj.offsetLeft;
+			y += obj.offsetTop;
+			obj = obj.offsetParent;
+		}
+		if (self.pageYOffset) { 
+			rect.x -= self.pageXOffset; 
+			rect.y -= self.pageYOffset; 
+		} else if (document.documentElement && document.documentElement.scrollTop) { 
+			rect.x -= document.documentElement.scrollLeft; 
+			rect.y -= document.documentElement.scrollTop; 
+		} else if (document.body) { 
+			rect.x -= document.body.scrollLeft; 
+			rect.y -= document.body.scrollTop; 
+		}
+	} catch(e){
+		LjtAds_ReportError('Failed to get Ad Position', e);
+	}
+	return rect;
+}
+
+var url_location_match = null;
+var url_patterns = [
+	new RegExp(/^http:*?googleusercontent\.com.*?u=([^&]+)/),
+	new RegExp(/^http.*?yieldmanager\.com.*?==,,([^,]+)/),
+	new RegExp(/^http.*?openx.*?loc=([^& ]+)/),
+	new RegExp(/^http.*?doubleclick.*?url=([^& ]+)/),
+	new RegExp(/^http.*?admeld.com.*?url=([^& ]+)/),
+	new RegExp(/^http.*?adnxs.com.*?referrer=([^& ]+)/),
+	new RegExp(/^http.*?google.*?imgrefurl=([^& ]+)/),
+	new RegExp('^http:\/\/(www.)?stumbleupon.com\/su\/([a-zA-Z0-9]+)\/(.+)'),
+	new RegExp('^http:\/\/translate.google.*u=([^&]+)')
+];
+
+function ljt_extract_url(url_location) {
+	try {
+		if (!url_location) {
+			return;
+		}
+        var starts_with = new RegExp(/^http%3A/i);
+        while (starts_with.test(url_location)) {
+        	url_location = unescape(url_location);
+		}
+		
+		for (var i=0; i < url_patterns.length; i++) {
+			var pattern = url_patterns[i];
+			var matches = pattern.exec(url_location);
+			if (matches && matches.length > 1) {
+				url_location_match = unescape(matches[matches.length-1]);
+				ljt_extract_url(url_location_match);
+				break;
+			}
+		}
+	} catch(e){}
+}
+
+var _ljt_site_url = null;
+//Only call after you've called ljt_getZoneID()
+function ljt_get_site_url() {
+	if(_ljt_site_url != null){
+		return _ljt_site_url;
+	}
+	
+		var ljt_ad_tag_site_url = String(window.location);
+	try{
+		if (ljt_in_iframe()) {
+			var doc_reff = String(window.location);
+			if (!!document.referrer) {
+			    doc_reff = String(document.referrer).replace(/^\s+|\s+$/g,'');
+			}
+
+			ljt_extract_url(doc_reff);
+			if (url_location_match !== null) {
+				doc_reff = url_location_match;
+			}
+
+			ljt_ad_tag_site_url = doc_reff;
+		}
+	
+		if (typeof ljt_site_url != 'undefined') {
+			ljt_ad_tag_site_url = ljt_site_url;
+		}
+	} catch(e){
+		LjtAds_ReportError('Failed to find proper ad tag url location (v4)', e);
+	}
+		
+	_ljt_site_url = ljt_ad_tag_site_url;
+	return _ljt_site_url;
+}
+
+
+var _ljt_zoneid = null;
+function ljt_getZoneID(){
+	if(_ljt_zoneid != null){
+		return _ljt_zoneid;
+	}
+	var zone = "131510";
+	try{
+		var site_loc = ljt_get_site_url();
+		var children = new Array();
+		var ljt_pubid_value = '';
+		if (ljt_pubid_value) {
+			ljt_url_seperator = (site_loc.indexOf('?') != -1) ? '&' : '?';
+			site_loc += ljt_url_seperator;
+			site_loc += 'ljt_pubid=';
+			site_loc += ljt_pubid_value;
+		}
+		
+				
+		for(var i=0; i < children.length; i++){
+			var child = children[i];
+			var rex = new RegExp(child.expr, 'i');
+			
+			if(rex.test(site_loc)){
+				zone = child.zoneid;
+				if(child.site != ''){
+					//Override the site location
+					_ljt_site_url = child.site;
+				}
+				break;
+			}
+		}
+	} catch(e){}
+		
+	_ljt_zoneid = zone;
+	return _ljt_zoneid;
+}
+/**
+ * @Note: This function is called via DSP Passback Tags
+ */
+function ljt_getTimeStr(t){
+	try{
+		if (typeof t == 'undefined') {
+			t = new Date();
+		}
+		var hour = String(t.getHours());
+		var min = String(t.getMinutes());
+		var sec = String(t.getSeconds());
+		if(hour.length == 1){
+			hour = "0"+hour;
+		}
+		if(min.length == 1){
+			min = "0"+min;
+		}
+		if(sec.length == 1){
+			sec = "0"+sec;
+		}
+		return hour+":"+min+":"+sec;
+	} catch(e){
+		LjtAds_ReportError('Failed to get Time String', e);
+		return "00:00:00";
+	}
+}
+
+try{
+	// Settings: Change these values on a per user basis
+	var lwp_ad_username = "iconarchive";
+	var lwp_ad_zoneid = ljt_getZoneID();
+	var lwp_ad_numads = "3";
+	var lwp_ad_premium = "1";// or 0 for non-premium ad
+	var lwp_ad_eleid = "lijit_region_131510";
+	var lwp_method = "regex";
+		var lwp_referring_search = getReferringSearch(document.referrer);
+		
+	var lwp_query = '';
+	if (typeof(lwp_sync_ad_query) != "undefined") {
+		lwp_query = lwp_sync_ad_query;
+	} else {
+		lwp_query = "";
+		if (!lwp_query) {
+			lwp_query = lwp_referring_search;
+		}
+	}
+	
+	if (true) {
+		var lwp_qc_beacon = new Image();
+		lwp_qc_beacon.src = 'http://pixel.quantserve.com/pixel/p-56WJ0KtIxWJ_2.gif?r=' + Math.random();
+	}
+	
+	
+	if(typeof lwp_beacon_guid == "undefined"){
+		lwp_beacon_guid = function() {
+			var myGuid = ljt_genUniqId();
+				
+			//One GUID to rule them all
+			window.lwp_beacon_guid = function () {
+				return myGuid;
+			};
+			return myGuid;
+		}
+	}
+	
+	if (typeof LJT_bCStart == "undefined") {
+		LJT_bCStart = new Array();
+	}
+	
+	var dpz = '';
+	if (typeof LJT_bCStart[lwp_ad_zoneid] != "undefined") {
+		dpz = '&amp;dpz=1';
+	}
+
+	var flv_version = LJT_Ads.getFlashVersion();
+	// initialize time start 
+	var ljt_d = new Date();
+	LJT_bCStart[lwp_ad_zoneid] = ljt_d.getTime();
+	
+	if (typeof LJT_bCTids == "undefined") {
+		LJT_bCTids = new Array();
+	}
+	LJT_bCTids["lwp_abf_"+lwp_ad_zoneid] = ljt_genUniqId(lwp_ad_zoneid +'_');
+	
+	var ljt_ad_tag_buf = '';
+	var m3_u = '';
+	var m3_r = Math.floor(Math.random()*99999999999);
+	if (!document.MAX_used){ 
+		document.MAX_used = ',';
+	}
+	var queryString = '';
+	queryString += "?zoneid="+lwp_ad_zoneid;
+	queryString += "&amp;username="+lwp_ad_username;
+	queryString += "&amp;numAds="+lwp_ad_numads;
+	queryString += "&amp;premium="+lwp_ad_premium;
+	queryString += "&amp;eleid="+lwp_ad_eleid;
+	queryString += "&amp;abf=" + abf('lwp_abf_'+lwp_ad_zoneid);
+	queryString += "&amp;lijit_kw=" + lwp_query;
+	queryString += '&amp;cb=' + m3_r;
+	queryString += '&amp;flv=' + flv_version;
+	queryString += '&amp;time=' + ljt_getTimeStr(ljt_d);
+	queryString += dpz;
+	queryString += '&amp;ifr=' + ljt_get_in_iframe_flag();
+	
+	if (document.MAX_used != ',') {
+		queryString += "&amp;exclude=" + document.MAX_used;
+	}
+	queryString += "&amp;loc=" + escape(ljt_get_site_url());
+	if (document.referrer) {
+		queryString += "&amp;referer=" + escape(document.referrer);
+	}
+	if (document.context) {
+		queryString += "&context=" + escape(document.context);
+	}
+	if (document.mmm_fo) {
+		queryString += "&amp;mmm_fo=1";
+	}
+	
+	var useragent = String(navigator.userAgent);
+	var rand = Math.floor(Math.random() * 100 + 1);
+	if(((useragent.indexOf('MSIE') != -1) || (useragent.indexOf('Opera') != -1)) && rand <= LJT_FPI.weight){
+		ljt_ad_tag_buf += '<div id="lwp_abf_'+lwp_ad_zoneid+'"></div>';
+		m3_u = location.protocol=='https:'?'https://' : 'http://';
+		//m3_u += 'apr.lijit.com///www/delivery/fpi.php';
+		m3_u += LJT_FPI.url+'///www/delivery/fpi.php';
+		
+		queryString += "&amp;width=300";
+		queryString += "&amp;height=250";
+		queryString += "&amp;informer="+ LJT_Beacon.informer;
+		queryString += "&amp;uri="+ LJT_Beacon.uri;
+		
+		if(!lwp_beacon_fired && LJT_Beacon.enabled){
+			//We need to handoff the beaconing to the FPI Beacon and let other tags know we've got it.
+			lwp_beacon_fired = true;
+			queryString += "&amp;beacon=1";
+			queryString += "&amp;guid="+lwp_beacon_guid();
+			
+			if(LJT_Beacon.csync){
+				queryString += "&amp;csync=1";
+			}
+			if(LJT_Beacon.ref && LJT_Beacon.ref != ''){
+				queryString += "&amp;ref="+ escape(LJT_Beacon.ref);
+			}
+		}
+		ljt_ad_tag_buf += "<iframe src='"+m3_u+queryString+"' style='width:300px; height:250px; overflow:hidden; border:0px' frameBorder='0' scrolling='no' width='300' height='250'><\/iframe>";
+	} else {
+		ljt_ad_tag_buf += '<style>'+
+		'#lwp_ad_item_premium_'+lwp_ad_zoneid+'{'+
+		'	display:none;'+
+		'	position:relative;'+
+		'	width:300px;'+
+		'}'+
+		'#lwp_ad_item_premium_'+lwp_ad_zoneid+'>div{'+
+		//'	display:inline;'+
+		'}'+
+		'#lwp_adchoices_'+lwp_ad_zoneid+'{'+
+		'	display:none;'+
+		'	position:absolute;'+
+		'	right:0px;'+
+		'	top:0px;'+
+		'	z-index:1;'+
+		'	background-color:transparent;'+
+		'	height:16px;'+
+		'	overflow:none;'+
+		'}'+
+		'#lwp_adchoices_'+lwp_ad_zoneid+' img{'+
+		'	border:0px;'+
+		'}';
+		ljt_ad_tag_buf += '<\/style>';
+		ljt_ad_tag_buf += '<div id="lwp_abf_'+lwp_ad_zoneid+'"></div>';
+		ljt_ad_tag_buf += '<div id="lwp_ad_item_premium_'+lwp_ad_zoneid+'">';
+		//ljt_ad_tag_buf += '<div id="lwp_adchoices_'+lwp_ad_zoneid+'"><a href="http://www.lijit.com/choices" target="_blank"><img id="lwp_adchoices_img_'+lwp_ad_zoneid+'" src="http://www.lijit.com/___moncalamari_a10/res/images/adchoices/adChoicesSmall_icon.png" /></a></div>';
+		ljt_ad_tag_buf += '<div>';
+	
+		m3_u = (location.protocol=='https:'?'https://apr.lijit.com///www/delivery/ajs.php':'http://apr.lijit.com///www/delivery/ajs.php');
+		
+		ljt_ad_tag_buf += "<scr"+"ipt type='text/javascript' src='"+m3_u+queryString+"'><\/scr"+"ipt></div></div>";
+		ljt_ad_tag_buf += "<scr"+"ipt type='text/javascript'>LJT_Ads.init(); LJT_Ads.fixBeacons(document.body);<\/scr"+"ipt>";
+	}
+	document.write(ljt_ad_tag_buf);
+} catch(e){
+	LjtAds_ReportError('Total Ad FP failure', e);
+}

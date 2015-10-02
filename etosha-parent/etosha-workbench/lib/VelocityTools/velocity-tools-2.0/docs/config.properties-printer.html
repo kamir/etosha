@@ -1,0 +1,102 @@
+                                            
+    <html>
+    <head>
+      <title>VelocityTools - Configuration - Using Properties</title>
+             <style type="text/css" media="all">
+               @import url("css/maven-theme.css");
+               @import url("css/maven-base.css");
+               @import url("css/style.css");
+                                    @import url("css/print.css");
+             </style>        
+    </head>
+
+    <body class="composite">
+
+            <div id="banner">
+        <a href="http://velocity.apache.org/" id="bannerLeft">
+          <img src="http://velocity.apache.org/images/velocity_project_wide.png"
+             width="400" height="40"             align="left" alt="The Velocity Project" border="0"/>
+        </a>
+                                            <span id="bannerRight">
+            <a href="index.html">
+              <img src="images/velocitytools.png" align="right" alt="VelocityTools" border="0"/>
+            </a>
+          </span>
+                <div class="clear">
+          <hr/>
+        </div>
+      </div>
+
+                  <div id="title">
+        <h1>Configuration - Using Properties</h1>
+        <div class="clear">
+          <hr/>
+        </div>
+      </div>
+      
+            
+
+        <!-- LEFT SIDE NAVIGATION -->
+        
+        <!-- RIGHT SIDE MAIN BODY -->
+        <div id="bodyColumn">
+          <div id="contentBox">
+            <div class="section"><a name="Configuration_using_Properties"><h2>Configuration using Properties</h2></a>
+      <p>
+            VelocityTools 2 can be configured using a properties file.  
+            Here's the same configuration as the 
+            <a href="config.xml.html">XML</a> and
+            <a href="config.java.html">Java</a> examples
+            in the properties format:
+        </p>
+<div class="source">
+  <pre><sourcecode>
+tools.toolbox = request,session,application
+
+tools.request.property.xhtml = true
+tools.request.toytool = ToyTool
+tools.request.toytool.restrictTo = index.vm
+tools.request.custom = org.mine.CustomTool
+tools.request.custom.randomProperty = whatever
+
+tools.session.property.create-session = true
+tools.session.property.create-session.type = boolean
+tools.session.map = java.util.HashMap
+
+tools.application.date = org.apache.velocity.tools.generic.DateTool
+
+tools.data.version = 1.1
+tools.data.version.type = number
+tools.data.date = Mon Sep 17 10:08:03 PDT 2007
+tools.data.date.class = java.util.Date
+tools.data.date.converter = org.apache.commons.beanutils.locale.converters.DateLocaleConverter
+tools.data.isSimple = true
+tools.data.type = boolean
+tools.data.foo = this is foo.
+tools.data.bar = this is bar.
+tools.data.dataKeys = version,date,isSimple.foo,bar,dataKeys,switches
+tools.data.dataKeys.type = list
+tools.data.switches = true,false,false,true
+tools.data.switches.type = list.boolean
+        </sourcecode></pre>
+</div>
+
+</div>
+
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+
+        <!-- PAGE FOOTER -->
+        <div id="footer">
+          <div class="xright">
+            Copyright &#169; 1999-2007, Apache Software Foundation
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </body>
+    </html>
