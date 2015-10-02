@@ -1,0 +1,63 @@
+21:55:02 WARN  NativeCodeLoader     :: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21:55:02 INFO  RecoverableZooKeeper :: Process identifier=hconnection-0x6e51e03 connecting to ZooKeeper ensemble=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181
+21:55:02 INFO  ZooKeeper            :: Client environment:zookeeper.version=3.4.5-cdh5.3.0--1, built on 12/17/2014 02:45 GMT
+21:55:02 INFO  ZooKeeper            :: Client environment:host.name=10.252.11.63
+21:55:02 INFO  ZooKeeper            :: Client environment:java.version=1.7.0_80
+21:55:02 INFO  ZooKeeper            :: Client environment:java.vendor=Oracle Corporation
+21:55:02 INFO  ZooKeeper            :: Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+21:55:02 INFO  ZooKeeper            :: Client environment:java.class.path=jetty-runner-8.1.9.v20130131.jar
+21:55:02 INFO  ZooKeeper            :: Client environment:java.library.path=/Users/kamir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+21:55:02 INFO  ZooKeeper            :: Client environment:java.io.tmpdir=/var/folders/3k/nyrd1dwj4d953l71ys0hnl680000gn/T/
+21:55:02 INFO  ZooKeeper            :: Client environment:java.compiler=<NA>
+21:55:02 INFO  ZooKeeper            :: Client environment:os.name=Mac OS X
+21:55:02 INFO  ZooKeeper            :: Client environment:os.arch=x86_64
+21:55:02 INFO  ZooKeeper            :: Client environment:os.version=10.10.4
+21:55:02 INFO  ZooKeeper            :: Client environment:user.name=kamir
+21:55:02 INFO  ZooKeeper            :: Client environment:user.home=/Users/kamir
+21:55:02 INFO  ZooKeeper            :: Client environment:user.dir=/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts
+21:55:02 INFO  ZooKeeper            :: Initiating client connection, connectString=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181 sessionTimeout=90000 watcher=hconnection-0x6e51e03, quorum=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181, baseZNode=/hbase
+21:55:02 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+21:55:02 INFO  ClientCnxn           :: Socket connection established to training01.sjc.cloudera.com/172.20.63.21:2181, initiating session
+21:55:02 INFO  ClientCnxn           :: Session establishment complete on server training01.sjc.cloudera.com/172.20.63.21:2181, sessionid = 0x14d32918ce0b7d7, negotiated timeout = 60000
+22:01:16 WARN  NativeCodeLoader     :: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22:01:16 INFO  RecoverableZooKeeper :: Process identifier=hconnection-0x7c300df2 connecting to ZooKeeper ensemble=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181
+22:01:16 INFO  ZooKeeper            :: Client environment:zookeeper.version=3.4.5-cdh5.3.0--1, built on 12/17/2014 02:45 GMT
+22:01:16 INFO  ZooKeeper            :: Client environment:host.name=10.252.11.63
+22:01:16 INFO  ZooKeeper            :: Client environment:java.version=1.7.0_80
+22:01:16 INFO  ZooKeeper            :: Client environment:java.vendor=Oracle Corporation
+22:01:16 INFO  ZooKeeper            :: Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+22:01:16 INFO  ZooKeeper            :: Client environment:java.class.path=jetty-runner-8.1.9.v20130131.jar
+22:01:16 INFO  ZooKeeper            :: Client environment:java.library.path=/Users/kamir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+22:01:16 INFO  ZooKeeper            :: Client environment:java.io.tmpdir=/var/folders/3k/nyrd1dwj4d953l71ys0hnl680000gn/T/
+22:01:16 INFO  ZooKeeper            :: Client environment:java.compiler=<NA>
+22:01:16 INFO  ZooKeeper            :: Client environment:os.name=Mac OS X
+22:01:16 INFO  ZooKeeper            :: Client environment:os.arch=x86_64
+22:01:16 INFO  ZooKeeper            :: Client environment:os.version=10.10.4
+22:01:16 INFO  ZooKeeper            :: Client environment:user.name=kamir
+22:01:16 INFO  ZooKeeper            :: Client environment:user.home=/Users/kamir
+22:01:16 INFO  ZooKeeper            :: Client environment:user.dir=/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts
+22:01:16 INFO  ZooKeeper            :: Initiating client connection, connectString=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181 sessionTimeout=90000 watcher=hconnection-0x7c300df2, quorum=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181, baseZNode=/hbase
+22:01:16 INFO  ClientCnxn           :: Opening socket connection to server training03.sjc.cloudera.com/172.20.63.23:2181. Will not attempt to authenticate using SASL (unknown error)
+22:01:17 INFO  ClientCnxn           :: Socket connection established to training03.sjc.cloudera.com/172.20.63.23:2181, initiating session
+22:01:17 INFO  ClientCnxn           :: Session establishment complete on server training03.sjc.cloudera.com/172.20.63.23:2181, sessionid = 0x24e4b29a8e70033, negotiated timeout = 60000
+22:06:43 WARN  NativeCodeLoader     :: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22:06:43 INFO  RecoverableZooKeeper :: Process identifier=hconnection-0x6bd0d51c connecting to ZooKeeper ensemble=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181
+22:06:43 INFO  ZooKeeper            :: Client environment:zookeeper.version=3.4.5-cdh5.3.0--1, built on 12/17/2014 02:45 GMT
+22:06:43 INFO  ZooKeeper            :: Client environment:host.name=10.252.11.63
+22:06:43 INFO  ZooKeeper            :: Client environment:java.version=1.7.0_80
+22:06:43 INFO  ZooKeeper            :: Client environment:java.vendor=Oracle Corporation
+22:06:43 INFO  ZooKeeper            :: Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/jre
+22:06:43 INFO  ZooKeeper            :: Client environment:java.class.path=jetty-runner-8.1.9.v20130131.jar
+22:06:43 INFO  ZooKeeper            :: Client environment:java.library.path=/Users/kamir/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+22:06:43 INFO  ZooKeeper            :: Client environment:java.io.tmpdir=/var/folders/3k/nyrd1dwj4d953l71ys0hnl680000gn/T/
+22:06:43 INFO  ZooKeeper            :: Client environment:java.compiler=<NA>
+22:06:43 INFO  ZooKeeper            :: Client environment:os.name=Mac OS X
+22:06:43 INFO  ZooKeeper            :: Client environment:os.arch=x86_64
+22:06:43 INFO  ZooKeeper            :: Client environment:os.version=10.10.4
+22:06:43 INFO  ZooKeeper            :: Client environment:user.name=kamir
+22:06:43 INFO  ZooKeeper            :: Client environment:user.home=/Users/kamir
+22:06:43 INFO  ZooKeeper            :: Client environment:user.dir=/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts
+22:06:43 INFO  ZooKeeper            :: Initiating client connection, connectString=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181 sessionTimeout=90000 watcher=hconnection-0x6bd0d51c, quorum=training03.sjc.cloudera.com:2181,training01.sjc.cloudera.com:2181,training06.sjc.cloudera.com:2181, baseZNode=/hbase
+22:06:45 INFO  ClientCnxn           :: Opening socket connection to server training01.sjc.cloudera.com/172.20.63.21:2181. Will not attempt to authenticate using SASL (unknown error)
+22:06:45 INFO  ClientCnxn           :: Socket connection established to training01.sjc.cloudera.com/172.20.63.21:2181, initiating session
+22:06:45 INFO  ClientCnxn           :: Session establishment complete on server training01.sjc.cloudera.com/172.20.63.21:2181, sessionid = 0x14d32918ce0b7d8, negotiated timeout = 60000

@@ -146,7 +146,7 @@
             </plugin>
         </plugins>
     </build>
-    <name>Etosha-Network-Profiler</name>
+    <name>Etosha Network-Profiler</name>
     <description>The ETOSHA network profiler calculates properties from arbitrary network-datasets, using Apache Spark and GraphX.
         Results are published in a Semantic-Metastore.</description>
 </project>

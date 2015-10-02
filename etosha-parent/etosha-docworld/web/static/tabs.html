@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery UI Tabs - Tabs at bottom</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>
+$(function() {
+$( "#tabs" ).tabs();
+// fix the classes
+$( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
+.removeClass( "ui-corner-all ui-corner-top" )
+.addClass( "ui-corner-bottom" );
+// move the nav to the bottom
+$( ".tabs-bottom .ui-tabs-nav" ).appendTo( ".tabs-bottom" );
+});
+</script>
+<style>
+/* force a height so the tabs don't jump as content height changes */
+#tabs .tabs-spacer { float: left; height: 200px; }
+.tabs-bottom .ui-tabs-nav { clear: left; padding: 0 .2em .2em .2em; }
+.tabs-bottom .ui-tabs-nav li { top: auto; bottom: 0; margin: 0 .2em 1px 0; border-bottom: auto; border-top: 0; }
+.tabs-bottom .ui-tabs-nav li.ui-tabs-active { margin-top: -1px; padding-top: 1px; }
+</style>
+</head>
+<body>
+
+
+<div id="tabs" class="tabs-bottom">
+<ul>
+<li><a href="#tabs-1">Raw Document</a></li>
+<li><a href="#tabs-2">FAQ Item</a></li>
+<li><a href="#tabs-3">Document Context</a></li>
+<li><a href="#tabs-4">Graph based Navigation</a></li>
+</ul>
+
+
+
+<div class="tabs-spacer"></div>
+<div id="tabs-1">
+<p>
+RAW Content ...
+</p>
+</div>
+<div id="tabs-2">
+<p>
+FAQ Item ...
+</p>
+</div>
+<div id="tabs-3">
+<p>
+Search the neighborhood ...</p>
+</div>
+<div id="tabs-4">
+<p>
+Navigate the Graph ...
+</p>
+</div>
+
+</div>
+</body>
+</html>
+
+

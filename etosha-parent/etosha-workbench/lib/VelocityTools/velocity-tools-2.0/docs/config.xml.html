@@ -1,0 +1,177 @@
+                                                                
+    <html>
+    <head>
+      <title>VelocityTools - Configuration - Using XML</title>
+             <style type="text/css" media="all">
+               @import url("css/maven-theme.css");
+               @import url("css/maven-base.css");
+               @import url("css/style.css");
+                                  </style>        
+    </head>
+
+    <body class="composite">
+
+            <div id="banner">
+        <a href="http://velocity.apache.org/" id="bannerLeft">
+          <img src="http://velocity.apache.org/images/velocity_project_wide.png"
+                          align="left" alt="The Velocity Project" border="0"/>
+        </a>
+                                            <span id="bannerRight">
+            <a href="index.html">
+              <img src="images/velocitytools.png" align="right" alt="VelocityTools" border="0"/>
+            </a>
+          </span>
+                <div class="clear">
+          <hr/>
+        </div>
+      </div>
+
+            
+                  <div id="breadcrumbs">
+        <div class="xleft">
+                      <a href="http://velocity.apache.org" class="crumb">Velocity</a> &gt;
+                      <a href="index.html" class="crumb">VelocityTools</a> &gt;
+                      <a href="config.html" class="crumb">Configuration</a> &gt;
+                    Using XML
+        </div>
+        <div class="xright">
+                                  <a href="http://velocity.apache.org/engine/devel/" class="sibling">Engine</a>
+                      |            <a href="http://velocity.apache.org/tools/devel/" class="sibling">Tools</a>
+                      |            <a href="http://velocity.apache.org/anakia/devel/" class="sibling">Anakia</a>
+                      |            <a href="http://velocity.apache.org/texen/devel/" class="sibling">Texen</a>
+                      |            <a href="http://velocity.apache.org/docbook/" class="sibling">Docbook</a>
+                      |            <a href="http://velocity.apache.org/dvsl/devel/" class="sibling">DVSL</a>
+                  </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </div>
+      
+
+        <!-- LEFT SIDE NAVIGATION -->
+                <div id="leftColumn">
+          <div id="navcolumn">
+                <h5>VelocityTools</h5>
+<ul>
+        <li class="none"><a href="index.html">Overview</a></li>
+    <li class="none"><a href="http://velocity.apache.org/download.cgi#Tools">Download</a></li>
+    <li class="none"><a href="javadoc/index.html">Javadoc</a></li>
+    <li class="none"><a href="http://wiki.apache.org/velocity/VelocityFAQ">FAQ</a></li>
+    <li class="none"><a href="http://wiki.apache.org/velocity/VelocityTools">Wiki</a></li>
+
+</ul>
+    <h5>Subprojects</h5>
+<ul>
+        <li class="none"><a href="generic.html">GenericTools</a></li>
+    <li class="none"><a href="view.html">VelocityView</a></li>
+    <li class="none"><a href="struts.html">VelocityStruts</a></li>
+
+</ul>
+    <h5>Docs</h5>
+<ul>
+        <li class="none"><a href="upgrading.html">Upgrading to 2.0</a></li>
+    <li class="none"><a href="config.html">Configuration</a>
+    <ul>
+            <li class="none"><a href="config.xml.html">Using XML</a></li>
+    <li class="none"><a href="config.properties.html">Using Properties</a></li>
+    <li class="none"><a href="config.java.html">Using Java</a></li>
+
+    </ul>
+</li>
+    <li class="none"><a href="standalone.html">Standalone Use</a></li>
+    <li class="none"><a href="frameworks.html">Web Framework Integration</a></li>
+    <li class="none"><a href="creatingtools.html">Creating Tools</a></li>
+    <li class="none"><a href="summary.html">Tools Usage Summary</a></li>
+    <li class="none"><a href="http://velocity.apache.org/engine/devel/glossary.html">Glossary</a></li>
+
+</ul>
+    <h5>Development</h5>
+<ul>
+        <li class="none"><a href="changes.html">ChangeLog</a></li>
+    <li class="none"><a href="index.html#Helping_Out">Participating</a></li>
+    <li class="none"><a href="dependencies.html">Dependencies</a></li>
+    <li class="none"><a href="index.html#Subversion_Repository">Source Code</a></li>
+    <li class="none"><a href="http://issues.apache.org/jira/browse/VELTOOLS">Report Issue</a></li>
+
+</ul>
+
+                            
+                        <h5 id="printLink"><a href="config.xml-printer.html">Print-Friendly Version</a></h5>
+
+            <a class="poweredBy" href="http://velocity.apache.org/" title="Apache Velocity" >
+              <img class="poweredBy" alt="Apache Velocity" src="http://velocity.apache.org/images/pbv90x30.png"/>
+            </a>
+          </div>
+        </div>
+        
+        <!-- RIGHT SIDE MAIN BODY -->
+        <div id="bodyColumn">
+          <div id="contentBox">
+            <div class="section"><a name="Configuration_using_XML"><h2>Configuration using XML</h2></a>
+      <p>
+            Providing an xml format configuration file is still the standard, 
+            but unlike VelocityTools 1.x, it is no longer necessary at all, 
+            thanks to the introduction of default configurations.  The default 
+            configurations for <a href="generic.html">
+            GenericTools</a>, <a href="view.html">
+            VelocityView</a> and <a href="struts.html">
+            VelocityStruts</a> are all defined via XML.
+        </p>
+    <p>
+            Here's a somewhat thorough example:
+        </p>
+<div class="source">
+  <pre><sourcecode>
+&lt;tools&gt;
+    &lt;toolbox scope="request" xhtml="true"&gt;
+        &lt;tool key="toytool" class="ToyTool" restrictTo="index.vm"/&gt;
+        &lt;tool key="custom" class="org.mine.CustomTool" randomProperty="whatever"/&gt;
+    &lt;/toolbox&gt;
+
+    &lt;toolbox scope="session"&gt;
+        &lt;property name="create-session" value="true" type="boolean"/&gt;
+        &lt;tool key="map" class="java.util.HashMap"/&gt;
+    &lt;/toolbox&gt;
+
+    &lt;toolbox scope="application"&gt;
+        &lt;tool class="org.apache.velocity.tools.generic.DateTool"/&gt;
+    &lt;/toolbox&gt;
+
+    &lt;data type="number" key="version" value="1.1"/&gt;
+    &lt;data key="startdate" value="Mon Sep 17 10:08:03 PDT 2007" class="java.util.Date" 
+             converter="org.apache.commons.beanutils.locale.converters.DateLocaleConverter"/&gt;
+    &lt;data type="boolean" key="isSimple" value="true"/&gt;
+    &lt;data key="foo" value="this is foo."/&gt;
+    &lt;data key="bar"&gt;this is bar.&lt;/data&gt;
+    &lt;data type="list" key="dataKeys" value="version,date,isSimple,foo,bar,dataKeys,switches"/&gt;
+    &lt;data type="list.boolean" key="switches" value="true,false,false,true"/&gt;
+&lt;/tools&gt;
+        </sourcecode></pre>
+</div>
+    <p>
+            For those upgrading from VelocityTools 1.x, you will notice that 
+            the format has changed rather drastically.  Not to worry, the old 
+            format is still supported, though it has been deprecated and does 
+            not offer as many features as the new one.  We strongly recommend 
+            you upgrade to the new format.
+        </p>
+
+</div>
+
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+
+        <!-- PAGE FOOTER -->
+        <div id="footer">
+          <div class="xright">
+            Copyright &#169; 1999-2007, Apache Software Foundation
+          </div>
+        </div>
+        <div class="clear">
+          <hr/>
+        </div>
+      </body>
+    </html>

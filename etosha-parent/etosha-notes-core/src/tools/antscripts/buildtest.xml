@@ -1,0 +1,6 @@
+
+<project name="uninotes" default="test" basedir=".">
+	<target name="test">
+		<echo message="Uni-Notes Testscrip ..." />
+	</target>
+</project>

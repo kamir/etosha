@@ -1,0 +1,199 @@
+/* css reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+
+/* base rules */
+body {
+	font-size:14px;
+	font-family:Lucida Sans;
+	background:url(../img/body_bg_color.png);	
+	color:#fff;
+	
+}
+
+a:link { font-weight:bold; color:#086d99; text-decoration:underline; }
+a:visited { font-weight:bold; color:#2995c3; text-decoration:underline; }
+a:focus { font-weight:bold; color:#31b2e8; text-decoration:underline; }
+a:hover { font-weight:bold; color:#2995c3; text-decoration:underline; }
+a:active { font-weight:bold; color:#2995c3; text-decoration:underline; }
+
+/*
+a .mylink:link {color:; text-decoration:underline};
+a .mylink:visited {color:; text-decoration:underline};
+a .mylink:active {color:; text-decoration:underline};
+a .mylink:hover {color:; text-decoration:underline};
+*/
+
+
+
+
+.clear{ clear:both;}
+.space30{ height:30px; width:100%;}
+.space60{ height:60px; width:100%;} 
+
+/* main blocks positioning */
+#container_0{ position:absolute; min-height:100%; width:100%;}
+#container_1{ position:relative; margin-bottom:238px; }
+
+.container_center_main{ margin:0px auto; width:960px;}
+.container_center_mainmenu{ margin:0px auto; width:1062px;}
+.container_center_bg{ margin:0px auto; max-width:1200px; position:relative;}
+#footer{ position:absolute; bottom:0px; height:238px; width:100%;}
+
+/* */
+
+
+
+/* header */
+#header{ background:url(../img/header_bg.png); height:289px; }
+#headerinfo{ height:240px; position:relative; width:100%;background:url(../img/header_graffik.png);}
+#logo{ background:url(../img/logo.png) no-repeat; width:141px; height:145px; position:absolute; top:30px; left:30px;}
+#loginmenu{ background:url(../img/loginmenu_bg.png); width:186px; height:19px; position:absolute; right:0px; top:20px;}
+#loginmenu ul{ margin-left:24px;}
+#loginmenu ul li{ float:left; color:#fff;  padding:0px 1px; line-height:18px; font-size:10px;}
+#loginmenu ul li a{ color:#fff;  text-decoration:none;  text-transform:uppercase; font-size:10px;}
+
+#messages{ position:relative; left:250px; top:100px; width:640px; }
+.kidtypeaint{ visibility:hidden;  position:absolute; top:30px; line-height:40px;}
+
+#mainmenu, #header_shadows{ background:url(../img/mainmenu_borders.png); height:49px;}
+#mainmenu ul{ display:block; margin-left:80px;}
+#mainmenu li{ float:left;}
+#mainmenu a{ font-weight:bold; font-size:18px; color:#000; text-decoration:none;  }
+#mainmenu a:hover, #mainmenu a.active { color:#009adb; } 
+
+
+#mainmenu #startseite a{ background:url(../img/mainmenu/mainmenu_03.png); height:49px;width:143px; display:block;}
+#mainmenu #startseite a.active, #mainmenu #startseite a:hover{ background:url(../img/mainmenu/mainmenu_03.png) 0px 49px; }
+#mainmenu #uberuns a{background:url(../img/mainmenu/mainmenu_04.png); height:49px;width:127px; display:block;}
+#mainmenu #uberuns a.active,#mainmenu  #uberuns a:hover{ background:url(../img/mainmenu/mainmenu_04.png) 0px 49px; }
+#mainmenu #produkte a{background:url(../img/mainmenu/mainmenu_05.png); height:49px;width:218px; display:block;}
+#mainmenu #produkte a.active, #mainmenu  #produkte a:hover{ background:url(../img/mainmenu/mainmenu_05.png) 0px 49px; }
+#mainmenu #service a{background:url(../img/mainmenu/mainmenu_06.png); height:49px;width:186px; display:block;}
+#mainmenu #service a.active, #mainmenu  #service a:hover{ background:url(../img/mainmenu/mainmenu_06.png) 0px 49px; }
+#mainmenu #kontakt  a{background:url(../img/mainmenu/mainmenu_07.png); height:49px;width:143px; display:block;}	
+#mainmenu #kontakt a.active, #mainmenu  #kontakt a:hover{ background:url(../img/mainmenu/mainmenu_07.png) 0px 49px; }						
+
+
+
+
+/* body*/
+#body{ background:url(../img/body_bg.png) repeat-x; min-height:907px;}
+#logo_bg{ background:url(../img/logo_bg.png) no-repeat; height:894px; width:1200px; position:absolute; z-index:1}
+#titelcontent{z-index:2; position:relative;}
+
+#slider{border:1px solid #fff; font-size:10px; text-align:justify;  }
+
+#wellcome{}
+#wellcome h1{ line-height:60px; border-bottom:1px dotted #fff; font-size:26px;}
+#wellcome .text{ text-align:justify; padding-top:30px; text-shadow: #666 0px 1px 2px; }
+ 
+#titleboxes{}
+#titleboxes .box{ float:left; background:url(../img/box_bg.png); width:302px; height:257px; position:relative;}
+#titleboxes  .rightborder{ margin-right:27px;}
+.box_inhalt{ padding:25px 15px;}
+.box_inhalt h3{ font-size:22px; text-transform:uppercase; padding-bottom:12px; color:#006996; border-bottom:1px dotted #006996; margin-bottom:15px;}
+.box_inhalt2{ padding:25px 15px;}
+.box_inhalt2 h3{ font-size:22px; padding-bottom:12px; color:#006996; border-bottom:1px dotted #006996; margin-bottom:15px;}
+.boxttext{ color:#fff; font-size:12px; margin-top:10px; line-height:12px;}
+.boxttext a{ color:#fff;}
+
+.boxsocials{ position:relative; bottom:-3px;}
+.twitter_icon{ position:absolute; z-index:2; background:url(../img/twitter_icon.png); width:108px; height:132px; right:80px; top:0px;}
+.facebook_icon{ position:absolute; z-index:1;background:url(../img/facebook_icon.png); width:106px; height:138px; right:0px;top:0px;}
+
+/* contenbody */
+#contenbody{ position:relative; top:-49px; left:0px; min-height:910px;background:#fff; z-index:2}
+#contentbottom_border{ background:url(../img/contentbottom_border.png); height:9px; width:100%; position:absolute; bottom:-9px;}
+
+#leftsidebar{ position:absolute; left:0px; top:0px;}
+
+#leftmenu{}
+#leftmenu .menuhead{ background:url(../img/leftmenu_title.png); width:242px;height:22px; position:absolute; top:-22px; left:0px;}
+#leftmenu ul{display:block; background:url(../img/leftmenu_bg.png) no-repeat;height:142px;width:252px; padding-top:2px}
+#leftmenu #startseite a{ background:url(../img/leftmenu/leftmenu_03.png); height:27px;width:242px; display:block;}
+#leftmenu #startseite a.active, #leftmenu #startseite a:hover{ background:url(../img/leftmenu/leftmenu_03.png) 242px 0px; }
+#leftmenu #uberuns a{background:url(../img/leftmenu/leftmenu_05.png); height:27px;width:242px; display:block;}
+#leftmenu #uberuns a.active, #leftmenu #uberuns a:hover{ background:url(../img/leftmenu/leftmenu_05.png) 242px 0px; }
+#leftmenu #produkte a{background:url(../img/leftmenu/leftmenu_06.png);height:27px;width:242px; display:block;}
+#leftmenu #produkte a.active, #leftmenu #produkte a:hover{ background:url(../img/leftmenu/leftmenu_06.png) 242px 0px; }
+#leftmenu #service a{background:url(../img/leftmenu/leftmenu_07.png); height:27px;width:242px; display:block;}
+#leftmenu #service a.active, #leftmenu #service a:hover{ background:url(../img/leftmenu/leftmenu_07.png) 242px 0px; }
+#leftmenu #kontakt a{background:url(../img/leftmenu/leftmenu_08.png);height:27px;width:242px; display:block;}	
+#leftmenu #kontakt a.active, #leftmenu #kontakt a:hover{ background:url(../img/leftmenu/leftmenu_08.png) 242px 0px; }						
+
+
+
+.bar_box{ width:218px; padding:13px;}
+.bar_box .body{ padding:15px; color:#000; font-size:12px; }
+.bar_box a{ color:#000;}
+.bar_box h3{font-size:22px; text-transform:uppercase; padding-bottom:12px; color:#000; border-bottom:2px dotted #006996; margin-bottom:11px;}
+.bar_box h4{ padding:2px; background:#cccccc; font-size:12px; padding-bottom:4px; color:#000; border-bottom:1px dotted #006996; margin-bottom:4px;}
+
+.bar_box li{ padding:5px 0px;}
+
+.bar_box .text{  margin-top:15px;}
+
+.grau .border_top{ background:url(../img/bar_border_01.png); height:10px;}
+.grau .body{ background:#e6e6e6;}  
+.grau .border_bottom{background:url(../img/bar_border_03.png); height:11px;}
+.grau ul { margin-left:0px; }
+.grau ul li { margin-left:0px; }
+
+.blau .border_top{background:url(../img/bar_border_05.png); height:9px;}
+.blau .body{ background:#0097d8;}
+.blau .border_bottom{background:url(../img/bar_border_07.png); height:10px;}
+.grau2 .border_top{ background:url(../img/bar_border_01a.png); height:10px;}
+.grau2 .body{ background:#cccccc;}  
+.grau2 .border_bottom{background:url(../img/bar_border_03a.png); height:11px;}
+
+
+
+
+
+#content{margin-left:242px;  position:relative; padding:30px; top:-146px;}
+#content .textelement{ margin-bottom:50px;}
+
+#content h1{ font-size:26px; padding-bottom:19px; margin-bottom:34px; border-bottom:1px dotted #000; color:#000; text-transform:uppercase;}
+#content h5{ font-size:26px; padding-bottom:19px; margin-bottom:34px; border-bottom:1px dotted #000; color:#000; text-transform:none;}
+#content h10{ font-size:26px; padding-bottom:19px; margin-bottom:34px; border-bottom:1px dotted #000; color:#000; text-transform:none;}
+
+#content h2{ font-size:22px; padding-bottom:13px; margin-bottom:22px; border-bottom:1px dotted #000; color:#000; text-transform:uppercase;}
+#content h20{ font-size:22px; padding-bottom:13px; margin-bottom:22px; border-bottom:1px dotted #000; color:#000; text-transform:none;}
+
+#content h3{ font-size:18px; padding-bottom:6px; margin-bottom:14px; border-bottom:1px dotted #000; color:#000; text-transform:uppercase;}
+#content h30{ font-size:18px; padding-bottom:6px; margin-bottom:14px; border-bottom:1px dotted #000; color:#000;text-transform:none;}
+
+#content .text{ text-align:justify; color:#000;}
+#content .text p{ margin-bottom:2em;}
+						
+#content ul { margin-left:20px; }
+#content ul li { margin-left:25px; list-style-type: square; }
+			
+#contenthead{ background:url(../img/contenthead.png); position:absolute;top:-18px; right:0px; width:718px; z-index:1; height:164px;}
+#contentinalt{ position:relative; top:-18px; z-index:2;}										
+
+
+/* footer */
+#footer{background:url(../img/footer_bg.png)  repeat-x;}
+#footerinfo{ position:relative;}
+#footer_logo{ background:url(../img/footer_logo.png) no-repeat; width:190px; height:190px; position:absolute; right:-10px; top:-22px;}
+
+
+#footermenu{ color:#64c4ec; padding-top:30px;}
+#footermenu a{ text-decoration:none; color:#64c4ec;}
+#footermenu li { float:left; padding:0px 3px;}
+
+#copywrite{ font-size:13px; color:#000; margin-top:40px;}
+#designed{ font-size:10px; color:#000; margin-top:55px;}			
+#designed a{ color:#000; text-decoration:none;}
+							
+
+
+#spacerBAR {
+	color: #C33;
+}
+#container_0 #container_1 #header .container_center_main #headerinfo #loginmenu ul .spacerBAR {
+	color: #666;
+	font-size: 16px;
+}

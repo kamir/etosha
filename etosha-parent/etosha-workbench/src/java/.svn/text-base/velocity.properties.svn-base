@@ -1,0 +1,48 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.    
+#
+# velocity.properties - example configuration
+#
+
+
+# uncomment the next two lines to load templates from the 
+# classpath (WEB-INF/classes)
+#resource.loader=class
+#class.resource.loader.class=org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+
+# comment the next two lines to stop loading templates from the
+# file system
+resource.loader=file
+file.resource.loader.class=org.apache.velocity.runtime.resource.loader.FileResourceLoader
+
+
+# additional config for file system loader only.. tell Velocity where the root
+# directory is for template loading.  You can define multiple root directories
+# if you wish, I just use the one here.  See the text below for a note about
+# the ${webapp.root}
+file.resource.loader.path=${webapp.root}/WEB-INF/velocity
+
+# caching should be 'true' in production systems, 'false' is a development
+# setting only.  Change to 'class.resource.loader.cache=false' for classpath
+# loading
+file.resource.loader.cache=false
+
+
+# override default logging to direct velocity messages
+# to our application log for example.  Assumes you have 
+# defined a log4j.properties file</span>
+runtime.log.logsystem.log4j.category=com.bitocean.charteditor 

@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage[latin1]{inputenc}  \usepackage[T1]{fontenc}
+\usepackage{lmodern}           \usepackage[ngerman]{babel}
+\title{Arbeitsdokument}
+\author{Mirko Kämpf \and Mathew Fullerton\thanks{TUM}}
+\date{Martin-Luther Universität Halle-Wittenberg\\
+Institut für Physik\\
+\vspace{2cm}
+Diskussionspapier Nummer:  \\ 05. Januar 2012}
+\begin{document}
+\maketitle
+\begin{abstract}% deutsche Fassung
+Worum geht es in diesem Papier?
+\end{abstract}
+\renewcommand{\abstractname}{Abstract}
+
+\noindent
+Classification: \\
+Keywords:  
+
+\section{Einleitung}
+Die Einleitung folgt hier ...
+\end{document}

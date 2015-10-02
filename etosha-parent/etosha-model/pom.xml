@@ -12,7 +12,7 @@
     <artifactId>etosha-model</artifactId>
     <packaging>jar</packaging>
 
-    <name>etosha-object-model</name>
+    <name>Etosha Object-Model</name>
 
  <build>
     <pluginManagement>

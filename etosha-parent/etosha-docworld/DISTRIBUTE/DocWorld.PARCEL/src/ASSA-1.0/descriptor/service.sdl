@@ -1,0 +1,45 @@
+{
+  "name" : "ASSA",
+  "label" : "ASSA",
+  "description" : "The Simple Spark Streaming Application Service",
+  "version" : "1.0",
+  "icon" : "images/assa.png",
+  "rolesWithExternalLinks" : ["ASSA_SERVICE"],
+  "runAs" : { 
+    "user" : "root",
+    "group" : "root"
+   },  
+   "roles" : [
+    {
+       "name" : "ASSA_SERVICE",
+       "label" : "ASSA Service",
+       "pluralLabel" : "ASSA Services",
+       "parameters" : [
+        {
+          "name" : "port_num",
+          "label" : "Spark-Context Web UI port",
+          "description" : "The Spark-Context Web UI port number",
+          "required" : "true",
+          "type" : "port",
+          "default" : 9100
+        }
+        ],
+        "externalLink" : {
+          "name" : "spark_context_web_ui",
+          "label" : "Spark-Context UI",
+          "url" : "http://${host}:${port_num}$"
+        },
+        "topology" : {
+          "minInstances" : "1",
+          "maxInstances" : "1"
+        },
+        "startRunner" : {
+          "program" : "scripts/control.sh",
+          "args" : [ "start" ],
+          "environmentVariables" : {
+           "WEBSERVER_PORT" : "${port_num}"         
+          }
+        }
+    }
+  ]
+}

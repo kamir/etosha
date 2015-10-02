@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+  document.write(unescape('%3Cscript%3E%20if%20%28typeof%20LJT_executeCB%20%3D%3D%20%27function%27%29%20%7B%20LJT_executeCB%28lwp_ad_zoneid%29%3B%20%7D%20else%20%7B%20var%20ljt_ad_tag_buf%20%3D%20%27%27%3B%20var%20m3_u%20%3D%20LJT_AP_ADDRESS%20%2B%27ajs.php%27%3B%20var%20m3_r%20%3D%20Math.floor%28Math.random%28%29*99999999999%29%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%3Cscr%22%2B%22ipt%20type%3D%27text%2Fjavascript%27%20src%3D%27%22%2Bm3_u%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%3Fzoneid%3D%22%2Blwp_ad_zoneid%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Busername%3D%22%2Blwp_ad_username%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Bparent%3D%22%2Blwp_parent_ad_id%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3BnumAds%3D%22%2Blwp_ad_numads%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3BnumAds%3D%22%2Blwp_ad_numads%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Bpremium%3D%22%2Blwp_ad_premium%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Bpassthru%3Dam_intl%22%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Babf%3D%22%2B%20abf%28%22lwp_abf_%22%20%2B%20lwp_ad_zoneid%29%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Btime%3D%22%2B%20ljt_getTimeStr%28%29%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Beleid%3D%22%2Blwp_ad_eleid%3B%20ljt_ad_tag_buf%20%2B%3D%20%27%26amp%3Bcb%3D%27%20%2B%20m3_r%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Bloc%3D%22%20%2B%20escape%28window.location%29%3B%20if%20%28document.referrer%29%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Breferer%3D%22%20%2B%20escape%28document.referrer%29%3B%20if%20%28document.context%29%20%20ljt_ad_tag_buf%20%2B%3D%20%22%26context%3D%22%20%2B%20escape%28document.context%29%3B%20if%20%28document.mmm_fo%29%20%20%20ljt_ad_tag_buf%20%2B%3D%20%22%26amp%3Bmmm_fo%3D1%22%3B%20ljt_ad_tag_buf%20%2B%3D%20%22%27%3E%3C%5C%2Fscr%22%2B%22ipt%3E%22%3B%20document.write%28ljt_ad_tag_buf%29%3B%20%7D%20%3C%2Fscript%3E%0A'));      
+
+    
+
+  
+
+
+
+
+  
+  
+  
+    document.write("<script type=\"text/javascript\" src=\"http://um.simpli.fi/am_match?admeld_user_id=b1067db3-6e65-44ab-bc54-7bc1fc0857b0&admeld_adprovider_id=338&admeld_call_type=js&admeld_callback=http://tag.admeld.com/match\"><\/script>");
+  
+    document.write("<img width=\"0\" height=\"0\" src=\"http://cm.g.doubleclick.net/pixel?google_nid=admeld&google_cm&google_sc&admeld_user_id=b1067db3-6e65-44ab-bc54-7bc1fc0857b0&admeld_adprovider_id=832&admeld_call_type=redirect&admeld_callback=http://tag.admeld.com/match\"/>");
+  
+    document.write("<img width=\"0\" height=\"0\" src=\"http://a.triggit.com/pxamicm?admeld_user_id=b1067db3-6e65-44ab-bc54-7bc1fc0857b0&admeld_adprovider_id=310&admeld_call_type=redirect&admeld_callback=http://tag.admeld.com/match\"/>");
+  
+  
+
+
+

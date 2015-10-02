@@ -1,0 +1,69 @@
+function trkMoIt_28234() {
+	tmo_trkMoI_28234 = window.setTimeout("trkMoIc_28234()", 300);
+};
+function trkMoIf_28234() {
+	if(("undefined" == typeof tmo_trkMoI_28234) || !tmo_trkMoI_28234) return;
+	window.clearTimeout(tmo_trkMoI_28234);
+};
+function trkMoIc_28234() {
+	if(("undefined" != typeof flg_trkMoI_28234) && flg_trkMoI_28234) return true;
+	flg_trkMoI_28234 = true;
+	var img = document.createElement("img");
+	img.src = 'http://asn.advolution.de/000071e7400030124000003d8/?trkMoI=1';
+	img.height = 1;
+	img.width = 1;
+	document.body.appendChild(img);
+	return true;
+};
+function cSwfV_28234() {
+	if (8<1)return true;
+    var flashVersionDetected;
+    if (navigator.plugins && (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"])) {
+        var fD = navigator.plugins["Shockwave Flash" + (navigator.plugins["Shockwave Flash 2.0"] ? " 2.0" : "")].description;
+		flashVersionDetected = parseInt(fD.match(/( \d{1,2})\.\d+/)[1]);
+        return flashVersionDetected>=8?true:false;
+    }
+    flashVersionDetected = false; x=false;
+    document.write("<scr"+"ipt language=VBScript>\nintCurVersion = 15\nintMinVersion = " + 8 + "\nDo\nOn Error Resume Next\n"
+        +"flashVersionDetected = (IsObject(CreateObject(\"ShockwaveFlash.ShockwaveFlash.\" & intCurVersion)))\n"
+        +"If flashVersionDetected = true Then Exit Do\nintCurVersion = intCurVersion - 1\nLoop While intCurVersion >= intMinVersion\n"
+        +"x=flashVersionDetected\n</scr"+"ipt>");
+    return x;
+}
+if(0 == parseInt("1"))  acChkCre([["Flash-Version (8)", cSwfV_28234()]]);
+function openNewWindow(url, width, height, popup) {//{{{
+    var add = new Array();
+    if(width) add.push("width="+width);
+    if(height) add.push("height="+height);
+    var w = window.open(url, "adOpenWin", add.join(","));
+    if(popup) w.focus();
+    else w.blur();
+}//}}}
+if (cSwfV_28234()) {
+
+    var wm = "transparent";
+    wm = wm.length ? wm : "transparent";
+    var qual = String("best").toLowerCase();
+    switch(qual) {
+        case "low":
+        case "medium":
+        case "high":
+        case "best":
+            break;
+        default:
+            qual = "best";
+    }
+
+	document.write('<div style="margin:0px;padding:0px;width:300px; height:250px;" onmouseover="trkMoIt_28234()" onmouseout="trkMoIf_28234()"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="250" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">'
+		+'<param name="movie" value="http://asn.advolution.de/cr/00030124/2.swf?clickTag=http%3A%2F%2Fib.adnxs.com%2Fclick%3FMzMzMzMzwz8WMTMzMzPDPwAAAEAzM8M_FjEzMzMzwz8zMzMzMzPDP0CmyusCg2k24qRzcZqLzkwJxgpPAAAAADxgBgA2AQAAQAEAAAIAAAB6GRIAI9cAAAAAAABVU0QAVVNEACwB-gAvJgAAUBIDAQUCAQUAAAAATRoQOgAAAAA.%2Fcnd%3D%21NAUaLAiz2w0Q-rJIGKOuAyAA%2Freferrer%3Dhttp%253A%252F%252Fwww.iconarchive.com%252Fshow%252Fcomic-iphone-icons-by-fasticon.html%2Fclickenc%3Dhttp%3A%2F%2Fasn.advolution.de%2F000071e7400030124000003d8/" />\n'
+        +'<param name="play" value="true" /><param name="wmode" value="'+wm+'"/><param name="quality" value="'+qual+'" />\n'
+        +'<param name="loop" value="true" /><param name="scale" value="showall" /><param name="menu" value="false" />\n'
+        +'<param name="swliveConnect" value="true" /><param name="allowScriptAccess" value="always" />\n'
+        +'<embed src="http://asn.advolution.de/cr/00030124/2.swf?clickTag=http%3A%2F%2Fib.adnxs.com%2Fclick%3FMzMzMzMzwz8WMTMzMzPDPwAAAEAzM8M_FjEzMzMzwz8zMzMzMzPDP0CmyusCg2k24qRzcZqLzkwJxgpPAAAAADxgBgA2AQAAQAEAAAIAAAB6GRIAI9cAAAAAAABVU0QAVVNEACwB-gAvJgAAUBIDAQUCAQUAAAAATRoQOgAAAAA.%2Fcnd%3D%21NAUaLAiz2w0Q-rJIGKOuAyAA%2Freferrer%3Dhttp%253A%252F%252Fwww.iconarchive.com%252Fshow%252Fcomic-iphone-icons-by-fasticon.html%2Fclickenc%3Dhttp%3A%2F%2Fasn.advolution.de%2F000071e7400030124000003d8/" quality="'+qual+'" width="300" height="250" type="application/x-shockwave-flash"'
+        +' pluginspage="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"'
+        +' wmode="'+wm+'" play="true" loop="true" scale="showall" menu="false" allowScriptAccess="always">'
+        +'</embed>\n</object></div>');
+} else {
+	document.write('<a href="http://ib.adnxs.com/click?MzMzMzMzwz8WMTMzMzPDPwAAAEAzM8M_FjEzMzMzwz8zMzMzMzPDP0CmyusCg2k24qRzcZqLzkwJxgpPAAAAADxgBgA2AQAAQAEAAAIAAAB6GRIAI9cAAAAAAABVU0QAVVNEACwB-gAvJgAAUBIDAQUCAQUAAAAATRoQOgAAAAA./cnd=!NAUaLAiz2w0Q-rJIGKOuAyAA/referrer=http%3A%2F%2Fwww.iconarchive.com%2Fshow%2Fcomic-iphone-icons-by-fasticon.html/clickenc=http://asn.advolution.de/000071e7400030124000003d8/" target="_blank"><img src="http://asn.advolution.de/cr/00030124/4.gif" width="300" height="250" alt="Hier klicken!" border="0" onmouseover="trkMoIt_28234()" onmouseout="trkMoIf_28234()" /></a>');
+}
+document.write("\<img src=\"http://add2.eprimo.de/add2.php\" width=\"1\" height=\"1\" style=\"visibility:hidden display:none;\" alt=\"\" border=\"0\"\>");
