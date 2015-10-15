@@ -1,0 +1,553 @@
+Id	Weight
+DEMO01	1
+77	98
+78	90
+79	157
+80	4
+81	90
+83	15
+84	68
+85	51
+87	16
+88	54
+104	14
+105	45
+76	44
+106	73
+107	84
+108	88
+109	97
+110	129
+111	77
+122	67
+123	66
+124	108
+125	18
+127	124
+112	98
+114	23
+115	28
+116	54
+117	73
+128	37
+129	22
+133	65
+134	102
+119	10
+120	34
+121	88
+139	106
+140	11
+137	78
+138	92
+118	94
+135	22
+136	31
+141	134
+142	105
+148	18
+150	24
+151	60
+143	71
+145	34
+146	59
+147	76
+155	88
+154	54
+152	4
+153	7
+156	34
+157	59
+158	76
+160	21
+161	55
+2/10/2015 21:27:51_mjudd@cloudera.com_28	39
+2/10/2015 21:26:37_etroyka@cloudera.com_29	24
+2/10/2015 21:38:05_mjudd@cloudera.com_30	41
+2/10/2015 21:48:01_etroyka@cloudera.com_31	33
+2/10/2015 21:56:01_etroyka@cloudera.com_32	34
+2/11/2015 13:42:50_etroyka@cloudera.com_33	39
+2/10/2015 18:26:06_mirko.kaempf@cloudera.com_23	55
+2/10/2015 19:17:51_mirko.kaempf@cloudera.com_24	11
+2/10/2015 21:11:16_etroyka@cloudera.com_25	46
+2/10/2015 21:17:35_etroyka@cloudera.com_26	7
+2/10/2015 21:22:01_etroyka@cloudera.com_27	87
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	8
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	65
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	14
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	3
+8/20/2014 8:12:34_mirko.kaempf@cloudera.com_5	7
+8/20/2014 8:14:08_mirko.kaempf@cloudera.com_6	6
+8/20/2014 8:34:18_mirko.kaempf@cloudera.com_7	56
+8/20/2014 8:35:40_mirko.kaempf@cloudera.com_8	9
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	7
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	2
+10/7/2014 16:34:18_mirko.kaempf@cloudera.com_13	17
+1/6/2015 13:24:53_mirko.kaempf@cloudera.com_14	24
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	31
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	1
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	10
+1/7/2015 9:40:49_mirko.kaempf@cloudera.com_21	21
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	28
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	22
+10/7/2014 16:32:29_mirko.kaempf@cloudera.com_12	31
+1/6/2015 13:41:08_mirko.kaempf@cloudera.com_17	1
+1/6/2015 13:42:35_mirko.kaempf@cloudera.com_18	1
+1/6/2015 13:45:36_mirko.kaempf@cloudera.com_19	1
+2/11/2015 15:44:42_etroyka@cloudera.com_40	40
+2/11/2015 15:57:59_charding@cloudera.com_41	130
+2/11/2015 16:04:09_charding@cloudera.com_42	78
+2/11/2015 16:11:27_charding@cloudera.com_43	78
+2/11/2015 16:15:39_charding@cloudera.com_44	133
+2/11/2015 16:49:14_charding@cloudera.com_45	29
+2/11/2015 17:00:31_charding@cloudera.com_46	28
+2/11/2015 17:03:04_charding@cloudera.com_47	198
+2/11/2015 20:55:36_dclute@cloudera.com_48	49
+2/11/2015 20:59:37_etroyka@cloudera.com_49	89
+2/11/2015 20:59:47_dclute@cloudera.com_50	55
+2/11/2015 21:01:55_etroyka@cloudera.com_51	46
+2/11/2015 21:05:44_etroyka@cloudera.com_52	103
+2/11/2015 21:09:37_etroyka@cloudera.com_53	138
+2/11/2015 21:13:32_etroyka@cloudera.com_54	81
+2/11/2015 21:17:16_etroyka@cloudera.com_55	34
+2/11/2015 21:22:22_dclute@cloudera.com_56	16
+2/11/2015 21:23:23_etroyka@cloudera.com_57	52
+2/11/2015 21:25:23_dclute@cloudera.com_58	81
+2/11/2015 21:29:37_etroyka@cloudera.com_59	113
+2/11/2015 21:36:10_etroyka@cloudera.com_60	24
+2/11/2015 22:29:00_etroyka@cloudera.com_76	47
+2/11/2015 22:44:36_mhagen@cloudera.com_77	34
+2/12/2015 3:28:52_ajalis@cloudera.com_78	60
+2/12/2015 3:32:04_ajalis@cloudera.com_79	39
+2/12/2015 3:33:50_ajalis@cloudera.com_80	14
+2/12/2015 3:35:17_ajalis@cloudera.com_81	99
+2/11/2015 14:01:14_etroyka@cloudera.com_34	64
+2/11/2015 14:03:10_etroyka@cloudera.com_35	9
+2/11/2015 14:21:19_etroyka@cloudera.com_36	38
+2/11/2015 14:53:32_etroyka@cloudera.com_37	59
+2/11/2015 14:59:57_etroyka@cloudera.com_38	24
+2/11/2015 15:20:41_etroyka@cloudera.com_39	30
+2/11/2015 21:40:39_etroyka@cloudera.com_61	33
+2/11/2015 21:43:38_etroyka@cloudera.com_62	44
+2/11/2015 21:47:51_etroyka@cloudera.com_63	28
+2/11/2015 21:49:59_mjudd@cloudera.com_64	24
+2/11/2015 21:51:05_etroyka@cloudera.com_65	77
+2/11/2015 22:04:25_etroyka@cloudera.com_71	32
+2/11/2015 22:09:06_etroyka@cloudera.com_72	46
+2/11/2015 22:11:34_etroyka@cloudera.com_73	17
+2/11/2015 22:15:26_etroyka@cloudera.com_74	9
+2/11/2015 22:22:33_etroyka@cloudera.com_75	54
+2/11/2015 21:53:33_etroyka@cloudera.com_66	14
+2/11/2015 21:56:01_etroyka@cloudera.com_67	11
+2/11/2015 22:00:02_etroyka@cloudera.com_68	46
+2/11/2015 22:01:30_etroyka@cloudera.com_69	26
+2/11/2015 22:03:38_etroyka@cloudera.com_70	3
+2/12/2015 3:36:32_ajalis@cloudera.com_82	71
+2/12/2015 3:38:21_ajalis@cloudera.com_83	72
+2/12/2015 4:08:12_charding@cloudera.com_84	94
+2/12/2015 4:11:38_charding@cloudera.com_85	62
+2/12/2015 16:35:01_mmyers@cloudera.com_122	66
+2/12/2015 16:40:58_mmyers@cloudera.com_123	63
+2/12/2015 16:41:55_mmyers@cloudera.com_124	52
+2/12/2015 16:42:52_mmyers@cloudera.com_125	42
+2/12/2015 16:43:38_mmyers@cloudera.com_126	13
+2/12/2015 15:27:15_mmyers@cloudera.com_101	54
+2/12/2015 15:28:38_mmyers@cloudera.com_102	52
+2/12/2015 15:33:55_mmyers@cloudera.com_103	11
+2/12/2015 15:34:59_mmyers@cloudera.com_104	41
+2/12/2015 15:38:41_mmyers@cloudera.com_105	26
+2/12/2015 16:09:15_mmyers@cloudera.com_111	39
+2/12/2015 16:11:48_mmyers@cloudera.com_112	20
+2/12/2015 16:12:42_mmyers@cloudera.com_113	31
+2/12/2015 16:14:58_mmyers@cloudera.com_114	33
+2/12/2015 16:17:26_mmyers@cloudera.com_115	21
+2/12/2015 15:19:15_mmyers@cloudera.com_96	17
+2/12/2015 15:20:27_mmyers@cloudera.com_97	23
+2/12/2015 15:21:25_mmyers@cloudera.com_98	11
+2/12/2015 15:23:00_mmyers@cloudera.com_99	61
+2/12/2015 15:24:41_mmyers@cloudera.com_100	18
+2/12/2015 15:00:36_mmyers@cloudera.com_86	37
+2/12/2015 15:02:10_mmyers@cloudera.com_87	34
+2/12/2015 15:03:38_mmyers@cloudera.com_88	26
+2/12/2015 15:04:34_mmyers@cloudera.com_89	7
+2/12/2015 15:05:28_mmyers@cloudera.com_90	10
+2/12/2015 16:18:00_mmyers@cloudera.com_116	1
+2/12/2015 16:19:57_mmyers@cloudera.com_117	13
+2/12/2015 16:28:55_mmyers@cloudera.com_118	58
+2/12/2015 16:30:10_mmyers@cloudera.com_119	8
+2/12/2015 16:32:25_mmyers@cloudera.com_120	24
+2/12/2015 16:34:16_mmyers@cloudera.com_121	1
+2/12/2015 15:06:35_mmyers@cloudera.com_91	14
+2/12/2015 15:10:39_mmyers@cloudera.com_92	1
+2/12/2015 15:12:13_mmyers@cloudera.com_93	36
+2/12/2015 15:13:52_mmyers@cloudera.com_94	23
+2/12/2015 15:17:44_mmyers@cloudera.com_95	29
+2/12/2015 15:41:51_mmyers@cloudera.com_106	50
+2/12/2015 15:42:57_mmyers@cloudera.com_107	1
+2/12/2015 15:44:01_mmyers@cloudera.com_108	25
+2/12/2015 15:49:48_mmyers@cloudera.com_109	20
+2/12/2015 16:07:58_mmyers@cloudera.com_110	9
+2/12/2015 17:18:58_mmyers@cloudera.com_136	81
+2/12/2015 17:39:32_charding@cloudera.com_137	101
+2/12/2015 17:43:58_charding@cloudera.com_138	117
+2/12/2015 17:47:29_charding@cloudera.com_139	235
+2/12/2015 20:21:33_bruce@cloudera.com_140	84
+2/12/2015 22:11:17_charding@cloudera.com_141	86
+2/12/2015 22:15:56_charding@cloudera.com_142	20
+2/12/2015 22:18:35_charding@cloudera.com_143	85
+2/12/2015 22:19:01_charding@cloudera.com_144	20
+2/12/2015 22:57:57_mjudd@cloudera.com_145	51
+2/13/2015 11:32:27_mhagen@cloudera.com_146	72
+2/13/2015 11:34:05_mhagen@cloudera.com_147	44
+2/13/2015 11:36:10_mhagen@cloudera.com_148	33
+2/13/2015 11:37:40_mhagen@cloudera.com_149	43
+2/13/2015 11:39:41_mhagen@cloudera.com_150	33
+2/13/2015 11:41:34_mhagen@cloudera.com_151	35
+2/13/2015 11:43:59_mhagen@cloudera.com_152	51
+2/13/2015 11:48:02_mhagen@cloudera.com_153	91
+2/13/2015 11:49:49_mhagen@cloudera.com_154	58
+2/13/2015 16:45:05_whouseholder@cloudera.com_166	59
+2/13/2015 16:48:26_mjudd@cloudera.com_167	8
+2/13/2015 16:52:29_mjudd@cloudera.com_168	31
+2/13/2015 16:54:38_mjudd@cloudera.com_169	63
+2/13/2015 17:09:47_whouseholder@cloudera.com_170	18
+2/13/2015 14:58:05_bruce@cloudera.com_155	68
+2/13/2015 16:10:20_etroyka@cloudera.com_156	1
+2/13/2015 16:11:34_etroyka@cloudera.com_157	1
+2/13/2015 16:15:40_etroyka@cloudera.com_158	13
+2/13/2015 16:21:17_whouseholder@cloudera.com_159	25
+2/13/2015 16:21:38_etroyka@cloudera.com_160	34
+2/12/2015 17:03:03_mmyers@cloudera.com_132	54
+2/12/2015 17:04:48_mmyers@cloudera.com_133	69
+2/12/2015 17:09:34_mmyers@cloudera.com_134	45
+2/12/2015 17:11:11_mmyers@cloudera.com_135	12
+2/13/2015 16:26:01_whouseholder@cloudera.com_161	50
+2/13/2015 16:27:58_whouseholder@cloudera.com_162	11
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	40
+2/13/2015 16:40:07_whouseholder@cloudera.com_164	36
+2/13/2015 16:41:05_etroyka@cloudera.com_165	8
+2/12/2015 16:47:50_mmyers@cloudera.com_127	18
+2/12/2015 16:48:44_mmyers@cloudera.com_128	18
+2/12/2015 16:49:37_mmyers@cloudera.com_129	5
+2/12/2015 16:53:27_mmyers@cloudera.com_130	10
+2/12/2015 16:54:58_mmyers@cloudera.com_131	52
+14a5b767b7633178	148
+143e98c4c324968d	501
+143e5ee24f7e6ba7	426
+143b2847e6ddcbbf	311
+1439d995f2767439	359
+1439c5c6164bd6a2	341
+143b281056d34a55	296
+1439bf7410b6cf15	214
+2/14/2015 9:09:06_mirko.kaempf@cloudera.com_176	22
+2/15/2015 23:25:48_mirko.kaempf@cloudera.com_177	2
+2/15/2015 23:27:00_mirko.kaempf@cloudera.com_178	2
+3/12/2015 14:42:14_etroyka@cloudera.com_null	97
+3/25/2015 15:36:32_etroyka@cloudera.com_null	36
+2/13/2015 17:25:46_mjudd@cloudera.com_171	46
+2/13/2015 17:40:14_mjudd@cloudera.com_172	27
+2/13/2015 18:25:12_mjudd@cloudera.com_173	27
+2/13/2015 19:21:04_whouseholder@cloudera.com_174	28
+2/14/2015 9:04:14_mirko.kaempf@cloudera.com_175	66
+14a5ed8ee53a790e	149
+14a5dc2fdd1a0567	65
+3/25/2015 15:39:47_etroyka@cloudera.com_null	82
+6/10/2015 18:34:36_mirko.kaempf@cloudera.com_null	2
+140702c675c968a2	315
+1406f570e484571e	365
+140a3c1edcffbfd0	309
+14070e2e4afcef62	260
+14070df85ad0be7e	272
+14070a7aa81fee75	249
+138e3649bb81f4c9	232
+138e35adc8acee02	131
+1406f31f2f0d522e	212
+1406f15d0001a5b7	188
+1406f13a108414df	160
+138e32e3094954d2	160
+138e31b7b0303ac6	123
+138e2c7e454c3a76	88
+14bfb5a739d19436	192
+14bfb4a45849770c	96
+14bfa76ed1f0c2da	73
+14bd0cc2cbc0c0b7	113
+14a5a6d6b9a00a89	55
+14030f1dfb97587e	38
+14030f0c656a4716	36
+1406f0e2ca6d652a	119
+DEMO01	1
+77	98
+78	90
+79	157
+80	4
+81	90
+83	15
+84	68
+85	51
+87	16
+88	54
+104	14
+105	45
+76	44
+106	73
+107	84
+108	88
+109	97
+110	129
+111	77
+122	67
+123	66
+124	108
+125	18
+127	124
+112	98
+114	23
+115	28
+116	54
+117	73
+128	37
+129	22
+133	65
+134	102
+119	10
+120	34
+121	88
+139	106
+140	11
+137	78
+138	92
+118	94
+135	22
+136	31
+141	134
+142	105
+148	18
+150	24
+151	60
+143	71
+145	34
+146	59
+147	76
+155	88
+154	54
+152	4
+153	7
+156	34
+157	59
+158	76
+160	21
+161	55
+2/10/2015 21:27:51_mjudd@cloudera.com_28	39
+2/10/2015 21:26:37_etroyka@cloudera.com_29	24
+2/10/2015 21:38:05_mjudd@cloudera.com_30	41
+2/10/2015 21:48:01_etroyka@cloudera.com_31	33
+2/10/2015 21:56:01_etroyka@cloudera.com_32	34
+2/11/2015 13:42:50_etroyka@cloudera.com_33	39
+2/10/2015 18:26:06_mirko.kaempf@cloudera.com_23	55
+2/10/2015 19:17:51_mirko.kaempf@cloudera.com_24	11
+2/10/2015 21:11:16_etroyka@cloudera.com_25	46
+2/10/2015 21:17:35_etroyka@cloudera.com_26	7
+2/10/2015 21:22:01_etroyka@cloudera.com_27	87
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	8
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	65
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	14
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	3
+8/20/2014 8:12:34_mirko.kaempf@cloudera.com_5	7
+8/20/2014 8:14:08_mirko.kaempf@cloudera.com_6	6
+8/20/2014 8:34:18_mirko.kaempf@cloudera.com_7	56
+8/20/2014 8:35:40_mirko.kaempf@cloudera.com_8	9
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	7
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	2
+10/7/2014 16:34:18_mirko.kaempf@cloudera.com_13	17
+1/6/2015 13:24:53_mirko.kaempf@cloudera.com_14	24
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	31
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	1
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	10
+1/7/2015 9:40:49_mirko.kaempf@cloudera.com_21	21
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	28
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	22
+10/7/2014 16:32:29_mirko.kaempf@cloudera.com_12	31
+1/6/2015 13:41:08_mirko.kaempf@cloudera.com_17	1
+1/6/2015 13:42:35_mirko.kaempf@cloudera.com_18	1
+1/6/2015 13:45:36_mirko.kaempf@cloudera.com_19	1
+2/11/2015 15:44:42_etroyka@cloudera.com_40	40
+2/11/2015 15:57:59_charding@cloudera.com_41	130
+2/11/2015 16:04:09_charding@cloudera.com_42	78
+2/11/2015 16:11:27_charding@cloudera.com_43	78
+2/11/2015 16:15:39_charding@cloudera.com_44	133
+2/11/2015 16:49:14_charding@cloudera.com_45	29
+2/11/2015 17:00:31_charding@cloudera.com_46	28
+2/11/2015 17:03:04_charding@cloudera.com_47	198
+2/11/2015 20:55:36_dclute@cloudera.com_48	49
+2/11/2015 20:59:37_etroyka@cloudera.com_49	89
+2/11/2015 20:59:47_dclute@cloudera.com_50	55
+2/11/2015 21:01:55_etroyka@cloudera.com_51	46
+2/11/2015 21:05:44_etroyka@cloudera.com_52	103
+2/11/2015 21:09:37_etroyka@cloudera.com_53	138
+2/11/2015 21:13:32_etroyka@cloudera.com_54	81
+2/11/2015 21:17:16_etroyka@cloudera.com_55	34
+2/11/2015 21:22:22_dclute@cloudera.com_56	16
+2/11/2015 21:23:23_etroyka@cloudera.com_57	52
+2/11/2015 21:25:23_dclute@cloudera.com_58	81
+2/11/2015 21:29:37_etroyka@cloudera.com_59	113
+2/11/2015 21:36:10_etroyka@cloudera.com_60	24
+2/11/2015 22:29:00_etroyka@cloudera.com_76	47
+2/11/2015 22:44:36_mhagen@cloudera.com_77	34
+2/12/2015 3:28:52_ajalis@cloudera.com_78	60
+2/12/2015 3:32:04_ajalis@cloudera.com_79	39
+2/12/2015 3:33:50_ajalis@cloudera.com_80	14
+2/12/2015 3:35:17_ajalis@cloudera.com_81	99
+2/11/2015 14:01:14_etroyka@cloudera.com_34	64
+2/11/2015 14:03:10_etroyka@cloudera.com_35	9
+2/11/2015 14:21:19_etroyka@cloudera.com_36	38
+2/11/2015 14:53:32_etroyka@cloudera.com_37	59
+2/11/2015 14:59:57_etroyka@cloudera.com_38	24
+2/11/2015 15:20:41_etroyka@cloudera.com_39	30
+2/11/2015 21:40:39_etroyka@cloudera.com_61	33
+2/11/2015 21:43:38_etroyka@cloudera.com_62	44
+2/11/2015 21:47:51_etroyka@cloudera.com_63	28
+2/11/2015 21:49:59_mjudd@cloudera.com_64	24
+2/11/2015 21:51:05_etroyka@cloudera.com_65	77
+2/11/2015 22:04:25_etroyka@cloudera.com_71	32
+2/11/2015 22:09:06_etroyka@cloudera.com_72	46
+2/11/2015 22:11:34_etroyka@cloudera.com_73	17
+2/11/2015 22:15:26_etroyka@cloudera.com_74	9
+2/11/2015 22:22:33_etroyka@cloudera.com_75	54
+2/11/2015 21:53:33_etroyka@cloudera.com_66	14
+2/11/2015 21:56:01_etroyka@cloudera.com_67	11
+2/11/2015 22:00:02_etroyka@cloudera.com_68	46
+2/11/2015 22:01:30_etroyka@cloudera.com_69	26
+2/11/2015 22:03:38_etroyka@cloudera.com_70	3
+2/12/2015 3:36:32_ajalis@cloudera.com_82	71
+2/12/2015 3:38:21_ajalis@cloudera.com_83	72
+2/12/2015 4:08:12_charding@cloudera.com_84	94
+2/12/2015 4:11:38_charding@cloudera.com_85	62
+2/12/2015 16:35:01_mmyers@cloudera.com_122	66
+2/12/2015 16:40:58_mmyers@cloudera.com_123	63
+2/12/2015 16:41:55_mmyers@cloudera.com_124	52
+2/12/2015 16:42:52_mmyers@cloudera.com_125	42
+2/12/2015 16:43:38_mmyers@cloudera.com_126	13
+2/12/2015 15:27:15_mmyers@cloudera.com_101	54
+2/12/2015 15:28:38_mmyers@cloudera.com_102	52
+2/12/2015 15:33:55_mmyers@cloudera.com_103	11
+2/12/2015 15:34:59_mmyers@cloudera.com_104	41
+2/12/2015 15:38:41_mmyers@cloudera.com_105	26
+2/12/2015 16:09:15_mmyers@cloudera.com_111	39
+2/12/2015 16:11:48_mmyers@cloudera.com_112	20
+2/12/2015 16:12:42_mmyers@cloudera.com_113	31
+2/12/2015 16:14:58_mmyers@cloudera.com_114	33
+2/12/2015 16:17:26_mmyers@cloudera.com_115	21
+2/12/2015 15:19:15_mmyers@cloudera.com_96	17
+2/12/2015 15:20:27_mmyers@cloudera.com_97	23
+2/12/2015 15:21:25_mmyers@cloudera.com_98	11
+2/12/2015 15:23:00_mmyers@cloudera.com_99	61
+2/12/2015 15:24:41_mmyers@cloudera.com_100	18
+2/12/2015 15:00:36_mmyers@cloudera.com_86	37
+2/12/2015 15:02:10_mmyers@cloudera.com_87	34
+2/12/2015 15:03:38_mmyers@cloudera.com_88	26
+2/12/2015 15:04:34_mmyers@cloudera.com_89	7
+2/12/2015 15:05:28_mmyers@cloudera.com_90	10
+2/12/2015 16:18:00_mmyers@cloudera.com_116	1
+2/12/2015 16:19:57_mmyers@cloudera.com_117	13
+2/12/2015 16:28:55_mmyers@cloudera.com_118	58
+2/12/2015 16:30:10_mmyers@cloudera.com_119	8
+2/12/2015 16:32:25_mmyers@cloudera.com_120	24
+2/12/2015 16:34:16_mmyers@cloudera.com_121	1
+2/12/2015 15:06:35_mmyers@cloudera.com_91	14
+2/12/2015 15:10:39_mmyers@cloudera.com_92	1
+2/12/2015 15:12:13_mmyers@cloudera.com_93	36
+2/12/2015 15:13:52_mmyers@cloudera.com_94	23
+2/12/2015 15:17:44_mmyers@cloudera.com_95	29
+2/12/2015 15:41:51_mmyers@cloudera.com_106	50
+2/12/2015 15:42:57_mmyers@cloudera.com_107	1
+2/12/2015 15:44:01_mmyers@cloudera.com_108	25
+2/12/2015 15:49:48_mmyers@cloudera.com_109	20
+2/12/2015 16:07:58_mmyers@cloudera.com_110	9
+2/12/2015 17:18:58_mmyers@cloudera.com_136	81
+2/12/2015 17:39:32_charding@cloudera.com_137	101
+2/12/2015 17:43:58_charding@cloudera.com_138	117
+2/12/2015 17:47:29_charding@cloudera.com_139	235
+2/12/2015 20:21:33_bruce@cloudera.com_140	84
+2/12/2015 22:11:17_charding@cloudera.com_141	86
+2/12/2015 22:15:56_charding@cloudera.com_142	20
+2/12/2015 22:18:35_charding@cloudera.com_143	85
+2/12/2015 22:19:01_charding@cloudera.com_144	20
+2/12/2015 22:57:57_mjudd@cloudera.com_145	51
+2/13/2015 11:32:27_mhagen@cloudera.com_146	72
+2/13/2015 11:34:05_mhagen@cloudera.com_147	44
+2/13/2015 11:36:10_mhagen@cloudera.com_148	33
+2/13/2015 11:37:40_mhagen@cloudera.com_149	43
+2/13/2015 11:39:41_mhagen@cloudera.com_150	33
+2/13/2015 11:41:34_mhagen@cloudera.com_151	35
+2/13/2015 11:43:59_mhagen@cloudera.com_152	51
+2/13/2015 11:48:02_mhagen@cloudera.com_153	91
+2/13/2015 11:49:49_mhagen@cloudera.com_154	58
+2/13/2015 16:45:05_whouseholder@cloudera.com_166	59
+2/13/2015 16:48:26_mjudd@cloudera.com_167	8
+2/13/2015 16:52:29_mjudd@cloudera.com_168	31
+2/13/2015 16:54:38_mjudd@cloudera.com_169	63
+2/13/2015 17:09:47_whouseholder@cloudera.com_170	18
+2/13/2015 14:58:05_bruce@cloudera.com_155	68
+2/13/2015 16:10:20_etroyka@cloudera.com_156	1
+2/13/2015 16:11:34_etroyka@cloudera.com_157	1
+2/13/2015 16:15:40_etroyka@cloudera.com_158	13
+2/13/2015 16:21:17_whouseholder@cloudera.com_159	25
+2/13/2015 16:21:38_etroyka@cloudera.com_160	34
+2/12/2015 17:03:03_mmyers@cloudera.com_132	54
+2/12/2015 17:04:48_mmyers@cloudera.com_133	69
+2/12/2015 17:09:34_mmyers@cloudera.com_134	45
+2/12/2015 17:11:11_mmyers@cloudera.com_135	12
+2/13/2015 16:26:01_whouseholder@cloudera.com_161	50
+2/13/2015 16:27:58_whouseholder@cloudera.com_162	11
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	40
+2/13/2015 16:40:07_whouseholder@cloudera.com_164	36
+2/13/2015 16:41:05_etroyka@cloudera.com_165	8
+2/12/2015 16:47:50_mmyers@cloudera.com_127	18
+2/12/2015 16:48:44_mmyers@cloudera.com_128	18
+2/12/2015 16:49:37_mmyers@cloudera.com_129	5
+2/12/2015 16:53:27_mmyers@cloudera.com_130	10
+2/12/2015 16:54:58_mmyers@cloudera.com_131	52
+14a5b767b7633178	148
+143e98c4c324968d	501
+143e5ee24f7e6ba7	426
+143b2847e6ddcbbf	311
+1439d995f2767439	359
+1439c5c6164bd6a2	341
+143b281056d34a55	296
+1439bf7410b6cf15	214
+2/14/2015 9:09:06_mirko.kaempf@cloudera.com_176	22
+2/15/2015 23:25:48_mirko.kaempf@cloudera.com_177	2
+2/15/2015 23:27:00_mirko.kaempf@cloudera.com_178	2
+3/12/2015 14:42:14_etroyka@cloudera.com_null	97
+3/25/2015 15:36:32_etroyka@cloudera.com_null	36
+2/13/2015 17:25:46_mjudd@cloudera.com_171	46
+2/13/2015 17:40:14_mjudd@cloudera.com_172	27
+2/13/2015 18:25:12_mjudd@cloudera.com_173	27
+2/13/2015 19:21:04_whouseholder@cloudera.com_174	28
+2/14/2015 9:04:14_mirko.kaempf@cloudera.com_175	66
+14a5ed8ee53a790e	149
+14a5dc2fdd1a0567	65
+3/25/2015 15:39:47_etroyka@cloudera.com_null	82
+6/10/2015 18:34:36_mirko.kaempf@cloudera.com_null	2
+140702c675c968a2	315
+1406f570e484571e	365
+140a3c1edcffbfd0	309
+14070e2e4afcef62	260
+14070df85ad0be7e	272
+14070a7aa81fee75	249
+138e3649bb81f4c9	232
+138e35adc8acee02	131
+1406f31f2f0d522e	212
+1406f15d0001a5b7	188
+1406f13a108414df	160
+138e32e3094954d2	160
+138e31b7b0303ac6	123
+138e2c7e454c3a76	88
+14bfb5a739d19436	192
+14bfb4a45849770c	96
+14bfa76ed1f0c2da	73
+14bd0cc2cbc0c0b7	113
+14a5a6d6b9a00a89	55
+14030f1dfb97587e	38
+14030f0c656a4716	36
+1406f0e2ca6d652a	119

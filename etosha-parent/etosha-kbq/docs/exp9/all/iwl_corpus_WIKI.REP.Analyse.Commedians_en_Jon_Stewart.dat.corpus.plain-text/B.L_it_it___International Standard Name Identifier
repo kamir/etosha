@@ -1,0 +1,40 @@
+Lo '''International Standard Name Identifier''' ('''ISNI''') è un metodo di identificazione degli autori e contributori di pubblicazioni mediali come libri, programmi TV, articoli di giornale.
+
+Sviluppato dall'ente [[International Organization for Standardization]] (ISO) come [http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=44292 ''Draft International Standard 27729''], la norma standard è stat pubblicata il 15 maggio 2013. Il ''technical committee 46'', ''subcommittee 9'' ([[TC 46/SC 9]]) è il responsabile dello sviluppo della norma.
+
+Il codice ISNI, attraverso uno strumento che crea il codice appositamento, viene assegnato in modo univoco senza possibilità di codici identici o similari.
+
+==Usi==
+Il numero ISNI permette l'identificazione univoca di un lavoro, creando collegamenti verso diversi altri identificativi usati nell'industria dei media. Un esempio è l'identificazione di un autore musicale che può essere anche l'autore dei suoi testi; un solo codice ISNI lo identifica.
+
+== ORCID ==
+[[ORCID]] ([[Open Researcher and Contributor ID]]) sono identificatori riservati parte dei codici ISNI, per ricercatori.<ref name="ORCID-ISNI">{{Cita web|url=http://about.orcid.org/content/what-relationship-between-isni-and-orcid|titolo=What is the relationship between ISNI and ORCID? |editore=ORCID |opera=About ORCID |accesso=29 marzo 2013}}</ref> gestiti da una organizzazione separata.<ref name="ORCID-ISNI" /> I singoli ricercatori possono creare un proprio identificatore ORCID.<ref name="ISNI-ORCID">{{Cita web|url=http://www.isni.org/isni_and_orcid|titolo=ISNI and ORCID|editore=ISNI|accesso=29 marzo 2013}}</ref><ref name="ORCID-ISNI" />
+
+==Amministrazione ISNI==
+ISNI è amministrato da un'agenzia internazionale conosciuta come ISNI-IA. La società senza fini di lucro britannica ha tra i suoi soci la ''[[Confédération Internationale des Sociétés d´Auteurs et Compositeurs]]'' ([[CISAC]]), la ''[[Conference of European National Librarians]]'' ([[CENL]]), la ''[[International Federation of Reproduction Rights Organisations]]'' ([[IFRRO]]), la ''[[International Performers Database Association]]'' ([[IPDA]]), il ''[[Online Computer Library Center]]'' ([[OCLC]]) e [[ProQuest]]. È gestita da dirigenti nominati dai soci, nel caso del CENL, da rappresentanti della [[Bibliothèque nationale de France]] e dalla [[British Library]].
+
+==Assegnazione del numero ISNI==
+L'agenzia ISNI-IA utilizza un sistema ''[[XML|data-schema]]'', con algoritmi di disambiguazione, e [[database]] che rispettano gli standard ISO. Il sistema è basato sul [[Virtual International Authority File]] ([[VIAF]]), sviluppato da [[OCLC]] per la catalogazione bibliotecaria.
+L'assegnazione dei numeri è gestita dalle ''Registration Agencies'' abilitate da ISNI-IA.
+
+==Formato==
+È formato da 16 cifre suddivise in quattro blocchi.
+
+== Note ==
+{{Reflist}}
+
+==Voci correlate==
+* [[International Standard Text Code]] ([[ISTC]])
+* [[Digital Author Identification]] ([[DAI]])
+* [[Virtual International Authority File]] ([[VIAF]])
+
+==Collegamenti esterni==
+*[http://www.isni.org/ ISNI]
+*[http://www.iso.org/ International Organization for Standardization]
+
+{{Numeri internazionali}}
+{{Standard ISO}}
+
+{{Controllo di autorità}}
+
+[[Categoria:Standard ISO]]

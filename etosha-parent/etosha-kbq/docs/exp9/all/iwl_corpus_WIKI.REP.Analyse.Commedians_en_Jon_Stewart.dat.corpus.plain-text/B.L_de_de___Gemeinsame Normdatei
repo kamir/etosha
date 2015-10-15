@@ -1,0 +1,75 @@
+{{Infobox Bibliothek
+|Name = Gemeinsame Normdatei
+|ISIL = DE-588
+}}
+
+Die '''Gemeinsame Normdatei''' ('''GND''') ist eine [[Normdatei]] für Personen, [[Körperschaft (Katalogisierung)|Körperschaften]], Kongresse, Geografika, Sachschlagwörter und Werktitel, die vor allem zur [[Katalogisierung]] von Literatur in Bibliotheken dient, zunehmend aber auch von Archiven, Museen, Projekten und in [[Webanwendung|Web-Anwendungen]] genutzt wird. Sie wird von der [[Deutsche Nationalbibliothek|Deutschen Nationalbibliothek]] (DNB), allen deutschsprachigen [[Bibliotheksverbund|Bibliotheksverbünden]], der [[Zeitschriftendatenbank]] (ZDB) und zahlreichen weiteren Institutionen kooperativ geführt. Normdaten erleichtern die Katalogisierung, bieten eindeutige Sucheinstiege und die Möglichkeit der Vernetzung unterschiedlicher Informationsressourcen.
+
+[[Datei:Gemeinsame Normdatei 2012 Opera.png|miniatur|GND (Screenshot)]]
+
+Die GND löste am 19. April 2012 die bis dahin getrennt geführten Normdateien [[Personennamendatei]] (PND), [[Gemeinsame Körperschaftsdatei]] (GKD), [[Schlagwortnormdatei]] (SWD) und die  Einheitssachtitel-Datei des [[Deutsches Musikarchiv|Deutschen Musikarchivs]] (DMA-EST-Datei) ab. Seit Juli 2014 werden die Normdaten nach den [[Resource Description and Access|RDA]]-Regeln erfasst, die unter anderem auch von der [[Library of Congress]] verwendet werden.<ref>Renate Behrens, Christine Frodl: „Erste Meilensteine im RDA-Projekt“. In: ''Dialog mit Bibliotheken'', Jg. 26 (2014), Heft 1, S. 25-31, hier S. 28.</ref>
+
+== Grundlagen ==
+
+Die Gemeinsame Normdatei wurde von 2009 bis 2012 in einem gemeinsamen Projekt der Deutschen Nationalbibliothek, der deutschsprachigen Bibliotheksverbünde sowie der Zeitschriftendatenbank entwickelt. Ziel des Projekts war die Zusammenführung der bisher getrennt geführten Normdateien GKD, PND und SWD sowie der DMA-EST-Datei. Dabei sollten ein gemeinsames [[Datenformat]] realisiert und die vorhandenen Regelwerksunterschiede harmonisiert werden.
+
+Der Erstellung von Normdatensätzen lagen früher unterschiedliche Regelwerke zugrunde. Dies waren die „[[Regeln für die alphabetische Katalogisierung]]“ (RAK-WB und RAK-Musik) für die [[Formalerschließung]] sowie die „[[Regeln für den Schlagwortkatalog]]“ (RSWK) für die [[Sacherschließung|Inhaltserschließung]]. Die uneinheitlichen Regeln zur Bildung der Vorzugsbenennung für die Formal- und Inhaltserschließung führten insbesondere im Bereich Körperschaften, Kongresse und Geografika zu redundanten Datensätzen in der GKD und der SWD. Daher wurden für die GND für die Fälle, in denen die Regeln der Formal- und Inhaltserschließung voneinander abweichen, Übergangsregeln erarbeitet, die eine gemeinsame Nutzung der Normdatensätze ermöglichen. Die Übergangsregeln berücksichtigten so weit wie möglich bereits die Regelungen der RDA ([[Resource Description and Access]]).
+
+Auch die Datenformate der Normdateien, sowohl die Internformate als auch die Austauschformate, unterschieden sich teilweise beträchtlich. Das Austauschformat der GND basiert auf [[Machine-Readable Cataloging|MARC 21]] Authority. Durch die Zusammenführung aller Normdatensätze in der GND konnten die zuvor bestehenden Formatunterschiede überwunden werden. Bereits vorhandene parallele Datensätze aus den unterschiedlichen Normdateien können jedoch erst im Laufe der Zeit zusammengeführt werden.
+
+Im Projekt [[Virtual International Authority File]] (VIAF) wird die GND mit anderen Normdateien virtuell zu einer internationalen Normdatei verbunden.
+
+== Inhalt und Umfang ==
+
+Die Gemeinsame Normdatei enthält ca. 10 Mio. Datensätze (Stand: Juni 2013) folgender [[Entität (Informatik)|Entitätentypen]]:
+
+* 4.628.000 Personennamen (nicht individualisiert, keine Typ-Angabe)
+* 2.882.000 Personen (individualisiert, Typ p)
+* 1.172.000 Körperschaften (Typ k)
+* 587.000 Kongresse/Veranstaltungen (Typ v)
+* 293.000 Geografika (Typ g)
+* 202.000 Sachbegriffe (Typ s)
+* 193.000 Werke (Typ w)
+
+Die hier aufgeführten Entitätentypen entsprechen in Bibliotheken sogenannten Satzarten (Datensatzart). Abgesehen von Personennamen kann jede Satzart durch die Angabe eines Entitätencodes<ref>[http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/entitaetencodierung.pdf?__blob=publicationFile ''GND-Entitätencodierung Vergaberichtlinien''] (Stand: 21. Juni 2013).</ref> in sich weiter differenziert werden. So kann ein Geografikum beispielsweise ein Bauwerk, aber auch ein Staat sein. Insgesamt stehen rund 50 Entitätentypen zur Verfügung.
+
+In der Gemeinsamen Normdatei wird zu jeder Entitätenbeschreibung eine eindeutige Identifikationsnummer (Grundlage für den [[Uniform Resource Identifier]]), eine normierte Vorzugsbenennung, abweichende Namensformen und verschiedene beschreibende Attribute verzeichnet. Die Attribute werden möglichst als Relationen zu anderen Normdatensätzen abgelegt, wobei die Art der Beziehung jeweils codiert ist.<ref>[http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/afsListeCodes2012.pdf?__blob=publicationFile ''GND: Liste der Codierungen in Unterfeld $4 – alphabetisch nach Code''] (Stand: 21. Juni 2013).</ref> Beispiele für relationierte Attribute sind Geburts- und Sterbeorte von Personen sowie ihre Berufe. Für Körperschaften können u. a. Vorgänger- und Nachfolgerbeziehungen, aber auch administrative Überordnungen angegeben werden. Auf diese Weise entsteht ein Netz von miteinander in Beziehung stehenden Datensätzen ([[Linked Data]]), das sich besonders für die Nutzung im Web eignet, die Navigation innerhalb der Normdatei erlaubt und somit die Recherchemöglichkeiten für Nutzer verbessert.
+
+== Nutzung und Schnittstellen ==
+
+Die Gemeinsame Normdatei wird bei der Deutschen Nationalbibliothek gehalten. Die Bibliotheksverbünde haben den GND-Grundbestand einmalig in ihre Verbundsysteme eingespielt und beziehen seitdem die Aktualisierungen der Normdatei über das [[Open Archives Initiative|OAI]]-Verfahren. Die GND wird nicht nur von Bibliotheken, sondern auch von Archiven, Museen und Redaktionen von Nachschlagewerken bearbeitet und erweitert. Die Mitarbeit erfolgt entweder über Bibliotheksverbünde oder nach Absprache mit der Deutschen Nationalbibliothek.
+
+Die GND-Normdaten stehen allen Interessenten in den Formaten MARC 21 Authority, MARC21-xml und RDFxml kostenfrei unter der Lizenz [[CC0]] zur Verfügung.
+
+== Institutionenübergreifende Integration von Normdaten ==
+
+Im Dezember 2012 wurde unter dem Namen ''Institutionenübergreifende Integration von Normdaten'' (IN2N) ein Kooperationsprojekt zwischen der [[Deutsche Nationalbibliothek|Deutschen Nationalbibliothek]] (DNB) und dem [[Deutsches Filminstitut|Deutschen Filminstitut]] (DIF) gestartet. Ziel des von der [[Deutsche Forschungsgemeinschaft|Deutschen Forschungsgemeinschaft]] (DFG) geförderten Projektes ist es, Institutionen außerhalb des Bibliothekswesens bei der Nutzung der GND zu unterstützen und in die Erschließung einzubeziehen.<ref>[http://deutsches-filminstitut.de/projekte-festivals/in2n/ IN2N], ''Deutsches Filminstitut'', Abfragedatum: 21. November 2013.</ref> Unter anderem wurden im Rahmen des Projektes bereits die Datensätze aus [[filmportal.de]] mit den Personenartikeln aus [[Wikipedia]] abgeglichen.<ref>Alexander Haffner: „Institutionenübergreifende Integration von Normdaten (IN2N)“. In: [http://www.dnb.de/SharedDocs/Downloads/DE/DNB/service/dialog20132volltext.pdf?__blob=publicationFile ''Dialog mit Bibliotheken'', Jg. 25 (2013), Heft 2], S. 42-45.</ref>
+
+Ende 2014 wurden die Normdaten des DIF in die GND eingespielt. In den Monaten davor wurden unter anderem bereits Daten des [[Ibero-Amerikanisches Institut|Ibero-Amerikanischen Instituts]] (Berlin) und der [[Forschungsstelle Osteuropa]] an der Universität Bremen in die GND übernommen.
+
+== Literatur ==
+* Barbara Pfeifer: ''Vom Projekt zum Einsatz. Die gemeinsame Normdatei (GND).'' In: Klaus-Rainer Brintzinger (Hrsg.): ''Bibliotheken. Tore zur Welt des Wissens. 101. Deutscher Bibliothekartag in Hamburg 2012'', Olms, Hildesheim u.a. 2013, S. 80-91
+* Brigitte Wiechmann: ''Die Gemeinsame Normdatei (GND). Rückblick und Ausblick.'' In: ''Dialog mit Bibliotheken'', Band 24, Heft 2, 2012 ([http://d-nb.info/1038598885/34 PDF; 465 KB])
+* Renate Behrens-Neumann: ''Die Gemeinsame Normdatei (GND). Ein Projekt kommt zum Abschluss.'' In: ''Dialog mit Bibliotheken'', Band 24, Heft 1, 2012 ([http://d-nb.info/1026682169/34 PDF; 130 KB])
+* Eva-Maria Gulder: ''Die Gemeinsame Normdatei (GND).'' Bayerische Staatsbibliothek München (Normdatenredaktion), September 2011. ([https://www.bibliothek.uni-augsburg.de/download/GND-Projekt_pdf.pdf online als PDF-Datei])
+
+== Weblinks ==
+{{Wikidata-Eigenschaft|P227|GND-Datensätze}}
+* [http://swb.bsz-bw.de/DB=2.104/ Suche über Online-GND] (Dienst des [[Bibliotheksservice-Zentrum Baden-Württemberg]])
+* [http://www.dnb.de/DE/Standardisierung/GND/gnd_node.html Informationsseite zur Gemeinsamen Normdatei] (Deutsche Nationalbibliothek)
+* [http://in2n.de Institutionenübergreifende Integration von Normdaten] (Deutsche Nationalbibliothek und Deutsches Filminstitut)
+* [https://portal.dnb.de/ Suche über DNB-Portal] (Deutsche Nationalbibliothek)
+* [https://wiki.dnb.de/display/ILTIS/Informationsseite+zur+GND Informationsseite zur GND] im DNB-Wiki
+* [https://wiki.bsz-bw.de/doku.php?id=v-team:katalogisierung:normdaten:gnd:start Informationsseite zur GND] im BSZ-Wiki
+* [http://www.ndb.badw-muenchen.de/eb_gnd.htm Auswahl von auf der GND basierenden Datenbanken, Lexika etc.] (Bernhard Ebneth, NDB)
+* [http://in2n.de/ Institutionenübergreifende Integration von Normdaten] (IN2N)
+
+== Einzelnachweise ==
+<references />
+
+{{Normdaten|TYP=w|GND=7749153-1|VIAF=188136221}}
+
+[[Kategorie:Normdatei]]
+[[Kategorie:Werk unter einer Creative-Commons-Lizenz]]
+[[Kategorie:Bibliothekswesen]]
+[[Kategorie:Deutsche Nationalbibliothek]]

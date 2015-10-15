@@ -1,0 +1,10 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	1.0	1.0	244,000000	5,497168	approach	5,497168
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	2.0	1.0	122,500000	4,808111	teaching	4,808111
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	3.0	1.0	82,000000	4,406719	admin	4,406719
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	4.0	1.0	61,750000	4,123094	best	4,123094
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	8.0	1.0	31,375000	3,446011	class	3,446011
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	133.0	2.0	2,827068	1,039240	the	2,078480
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	43.0	1.0	6,651163	1,894792	what	1,894792
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	56.0	1.0	5,339286	1,675092	for	1,675092
+7/30/2014 22:00:32_mirko.kaempf@cloudera.com_1	243.0	99.0	1.0	3,454545	1,239691	is	1,239691

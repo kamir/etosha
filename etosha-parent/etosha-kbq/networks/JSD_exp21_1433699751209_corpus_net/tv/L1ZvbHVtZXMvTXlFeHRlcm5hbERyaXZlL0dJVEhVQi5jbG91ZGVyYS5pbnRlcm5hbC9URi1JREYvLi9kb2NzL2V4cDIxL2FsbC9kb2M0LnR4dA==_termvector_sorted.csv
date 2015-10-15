@@ -1,0 +1,4 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+/Volumes/MyExternalDrive/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	4.0	1.0	1.0	5,000000	1,609438	everywhere	1,609438
+/Volumes/MyExternalDrive/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	4.0	2.0	1.0	3,000000	1,098612	cars	1,098612
+/Volumes/MyExternalDrive/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	4.0	4.0	1.0	2,000000	0,693147	big	0,693147

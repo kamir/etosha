@@ -1,0 +1,67 @@
+{{Sito web
+| nome = Virtual International Authority File (VIAF)
+| logo = 
+| screenshot = [[File:VIAF Screenshot 2012.png|300px|]]
+| didascalia = VIAF: Screenshot (2012)
+| url = http://viaf.org
+| commerciale = no
+| tipo = Motore di ricerca, catalogo pubblico on-line
+| lingua = inglese
+| registrazione = no
+| proprietario = [[Online Computer Library Center]]
+| autore = Progetto congiunto di biblioteche nazionali
+| data di lancio = 
+| stato corrente = attivo
+| revenue = 
+| slogan = 
+}}
+
+Il '''Virtual International Authority File''' (acronimo: '''VIAF''') è un progetto internazionale che ha dato vita ad un'unica [[base dati]] di [[voci di autorità]] controllate, (ca. 20 milioni di autori provenienti da 24 cataloghi collettivi nazionali) a disposizione quale servizio gratuito del [[web semantico]]; in essa l'utente può cercare un autore utilizzando la forma del nome utilizzata nella propria [[lingua (linguistica)|lingua]], scrittura e alfabeto preferiti e accedere immediatamente ai cataloghi nazionali o internazionali corrispondenti per visualizzare la lista delle loro opere. 
+
+Es. La ricerca con la forma del nome usata nei cataloghi spagnoli: ''Augustus Iulianus, 331 36''3 e quella fatta con la forma usata nei cataloghi tedeschi ''Julian Römisches Reich, Kaiser 331-363'' consentono entrambe di arrivare ad effettuare direttamente la ricerca nei diversi cataloghi nazionali.
+
+Promosso dalla [[Biblioteca del Congresso]] [[USA|statunitense]], la [[Deutsche Nationalbibliothek]] [[Germania|tedesca]] (DNB), è ora sostenuto dall'[[Online Computer Library Center]] (OCLC)<ref>{{cita web|url=http://www.oclc.org/viaf.en.html|titolo=VIAF|lingua=en|accesso=17 gennaio 2015}}</ref>; hanno aderito successivamente numerose altre biblioteche nazionali fra cui l'[[Istituto centrale per il catalogo unico|Istituto centrale per il catalogo unico delle biblioteche italiane e per le informazioni bibliografiche]] (ICCU).
+
+== Partecipanti ==
+* [[Biblioteca Apostolica Vaticana]]
+* [[Biblioteca Nacional de España]]
+* [[Biblioteca Nazionale del Portogallo]]
+* [[Biblioteca nazionale di Israele]]
+* [[Biblioteca nazionale svedese]]
+* [[Biblioteca Nazionale Svizzera]]
+* [[Biblioteca Nazionale Széchényi]]
+* [[Bibliotheca Alexandrina]] (Egitto)
+* [[Bibliothèque nationale de France]]
+* [[Clementinum|Biblioteca nazionale della repubblica ceca]]
+* [[Deutsche Nationalbibliothek]]
+* [[Getty Research Institute]]
+* [[Istituto centrale per il catalogo unico|Istituto centrale per il catalogo unico delle biblioteche italiane e per le informazioni bibliografiche]]
+* [[Katalog Zbiorów Polskich Bibliotek Naukowych]] (NUKAT)
+* [[Library and Archives Canada]]
+* [[Library of Congress]] (che rappresenta [[Name Authority Cooperative Program for Cooperative Cataloging]], NACO)
+* [[National Library of Australia]]
+
+=== In fase di studio ===
+* [[BIBNET]]
+* [[Biblioteca di stato russa]]
+* [[BIBSYS]]
+
+== Note ==
+<references/>
+
+== Bibliografia ==
+* {{cita pubblicazione | autore = Barbara B. Tillett | data = 22 agosto 2001 | titolo = A Virtual International Authority File | rivista = Proceedings of the 67th IFLA Council and General Conference ''Libraries and Librarians : Making a Difference in the Knowledge Age'', Boston, August 16-25, 2001 | url = http://archive.ifla.org/IV/ifla67/papers/094-152ae.pdf | lingua = inglese | accesso = 30 novembre 2013 | abstract = Sì | cid = Tillett 2001 }}
+* {{cita pubblicazione | autore = OCLC | data = agosto 2009 | titolo = Expanding the Concept of Universal Bibliographic Control | editore = OCLC | città = Dublin, OH | url = http://www.oclc.org/content/dam/oclc/services/brochures/213998usf_virtual_international_authority_file_VIAF.pdf | lingua = inglese | accesso = 30 novembre 2013 | abstract = sì}}
+* {{cita pubblicazione | autore = Giulia Manzotti | data = 15 dicembre 2010 | titolo = Analisi e riflessioni sul VIAF, Virtual International Authority File | rivista = Rivista italiana di biblioteconomia, archivistica e scienza dell'informazione | editore = Università degli Studi — Dipartimento di Storia, Archeologia, Geografia, Arte e Spettacolo | città = Firenze | volume = 1 | numero = 2 | doi =  10.4403/jlis.it-4520 | id = ISSN 2038-1026 | url = http://leo.cilea.it/index.php/jlis/article/view/4520/4422 | accesso = 30 novembre 2013 | abstract = Sì | cid = Manzotti 2010 }}
+* {{cita pubblicazione | autore = Michael Kelley | coautori = Meredith Schwartz | data = 1º maggio 2012 | titolo = VIAF Service Transitions To OCLC | rivista = Library Journal | editore = Media Source | città = Plain City | volume = 137 | numero = 8 | pagine = 16 | id = ISSN 0363-0277 | url = http://connection.ebscohost.com/c/articles/74717065/viaf-service-transitions-oclc | lingua = inglese | accesso = 30 novembre 2013 | abstract = Sì | cid = Kelley Schwartz }}
+* {{Cita conferenza|titolo=Authority control, stato dell'arte e nuove prospettive|autore=Barbara Tillet|conferenza=Authority control: definizione e esperienze internazionali, Firenze, 10-12 febbraio 2003. Atti del convegno|editore=Firenze University Press|città=Firenze|pp=29-45|url=http://www.fupress.com/archivio/pdf/4383.pdf|accesso=17 gennaio 2015|formato=PDF|cid= illett 2013}}
+
+==Voci correlate==
+*[[Controllo di autorità]]
+
+==Collegamenti esterni==
+*{{en}} [http://viaf.org Sito ufficiale]
+
+{{Portale|Internet|Letteratura}}
+[[Categoria:Biblioteconomia e scienza dell'informazione]]
+[[Categoria:Identificatori]]

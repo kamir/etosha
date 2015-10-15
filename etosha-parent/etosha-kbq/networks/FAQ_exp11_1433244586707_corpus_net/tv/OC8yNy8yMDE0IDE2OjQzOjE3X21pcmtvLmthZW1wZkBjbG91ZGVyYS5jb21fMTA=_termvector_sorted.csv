@@ -1,0 +1,5 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	243.0	6.0	1.0	41,500000	3,725693	restart	3,725693
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	243.0	6.0	1.0	41,500000	3,725693	solr	3,725693
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+8/27/2014 16:43:17_mirko.kaempf@cloudera.com_10	243.0	101.0	1.0	3,405941	1,225521	to	1,225521

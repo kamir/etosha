@@ -4,7 +4,7 @@ dir
 159
 svn://linufaktur.selfhost.me/bitOcean/bitOceanTB/lib/javaee-endorsed-api-6.0
 svn://linufaktur.selfhost.me/bitOcean
-
+delete
 
 
 2012-01-08T21:01:04.288509Z
@@ -34,80 +34,12 @@ kamir
 
 empty
 
-webservices-api-osgi.jar
-file
-
-
-
-
-2012-01-03T14:17:18.285121Z
-20595ddeae0cba192254045e46a87558
-2012-01-08T21:01:04.288509Z
-155
-kamir
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-51029
-
-jaxb-api-osgi.jar
-file
-
-
-
-
-2012-01-03T14:17:18.234121Z
-1efcb2a7ee5e7e32062caac45e0fa6d8
-2012-01-08T21:01:04.288509Z
-155
-kamir
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-103799
-
 javaee6-doc-api.zip
 file
 
 
 
-
+delete
 2012-01-03T14:17:19.865121Z
 4a1aa18ca9523955f1e544e3cac99452
 2012-01-08T21:01:04.288509Z
@@ -141,7 +73,7 @@ file
 
 
 
-
+delete
 2012-01-03T14:17:18.219121Z
 3fc31ee43d30bb591d86e180cb8abad9
 2012-01-08T21:01:04.288509Z
@@ -169,4 +101,72 @@ has-props
 
 
 21714
+
+jaxb-api-osgi.jar
+file
+
+
+
+delete
+2012-01-03T14:17:18.234121Z
+1efcb2a7ee5e7e32062caac45e0fa6d8
+2012-01-08T21:01:04.288509Z
+155
+kamir
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+103799
+
+webservices-api-osgi.jar
+file
+
+
+
+delete
+2012-01-03T14:17:18.285121Z
+20595ddeae0cba192254045e46a87558
+2012-01-08T21:01:04.288509Z
+155
+kamir
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+51029
 

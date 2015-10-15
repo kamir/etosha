@@ -34,14 +34,14 @@ kamir
 
 empty
 
-jdom-1.0.jar
+antlr-2.7.5.jar
 file
 
 
 
 
-2012-01-04T16:27:01.596534Z
-0b8f97de82fc9529b1028a77125ce4f8
+2012-01-04T16:27:01.493534Z
+6d57df718efd2a03981c309ce3330a1f
 2012-01-08T21:01:04.288509Z
 155
 kamir
@@ -66,7 +66,7 @@ has-props
 
 
 
-153253
+435563
 
 avalon-logkit-2.1.jar
 file
@@ -136,74 +136,6 @@ has-props
 
 575389
 
-antlr-2.7.5.jar
-file
-
-
-
-
-2012-01-04T16:27:01.493534Z
-6d57df718efd2a03981c309ce3330a1f
-2012-01-08T21:01:04.288509Z
-155
-kamir
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-435563
-
-velocity-1.7-dep.jar
-file
-
-
-
-
-2012-01-04T16:27:01.759534Z
-ca5d17c12fb351a20cddec538baff3fe
-2012-01-08T21:01:04.288509Z
-155
-kamir
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-806736
-
 commons-lang-2.4.jar
 file
 
@@ -272,14 +204,14 @@ has-props
 
 52915
 
-maven-ant-tasks-2.0.9.jar
+jdom-1.0.jar
 file
 
 
 
 
-2012-01-04T16:27:01.682534Z
-056bcba0c5ff9e954bbdfdec1138063f
+2012-01-04T16:27:01.596534Z
+0b8f97de82fc9529b1028a77125ce4f8
 2012-01-08T21:01:04.288509Z
 155
 kamir
@@ -304,7 +236,7 @@ has-props
 
 
 
-1018394
+153253
 
 log4j-1.2.12.jar
 file
@@ -340,14 +272,14 @@ has-props
 
 358085
 
-servletapi-2.3.jar
+maven-ant-tasks-2.0.9.jar
 file
 
 
 
 
-2012-01-04T16:27:01.727534Z
-c097f777c6fd453277c6891b3bb4dc09
+2012-01-04T16:27:01.682534Z
+056bcba0c5ff9e954bbdfdec1138063f
 2012-01-08T21:01:04.288509Z
 155
 kamir
@@ -372,41 +304,7 @@ has-props
 
 
 
-77977
-
-velocity-1.7.jar
-file
-
-
-
-
-2012-01-04T16:27:01.795534Z
-3692dd72f8367cb35fb6280dc2916725
-2012-01-08T21:01:04.288509Z
-155
-kamir
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-449505
+1018394
 
 oro-2.0.8.jar
 file
@@ -441,6 +339,108 @@ has-props
 
 
 65261
+
+servletapi-2.3.jar
+file
+
+
+
+delete
+2012-01-04T16:27:01.727534Z
+c097f777c6fd453277c6891b3bb4dc09
+2012-01-08T21:01:04.288509Z
+155
+kamir
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+77977
+
+velocity-1.7-dep.jar
+file
+
+
+
+
+2012-01-04T16:27:01.759534Z
+ca5d17c12fb351a20cddec538baff3fe
+2012-01-08T21:01:04.288509Z
+155
+kamir
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+806736
+
+velocity-1.7.jar
+file
+
+
+
+
+2012-01-04T16:27:01.795534Z
+3692dd72f8367cb35fb6280dc2916725
+2012-01-08T21:01:04.288509Z
+155
+kamir
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+449505
 
 werken-xpath-0.9.4.jar
 file

@@ -1,0 +1,27 @@
+El '''número de control de la Biblioteca del Congrés''' (en anglès: ''Library of Congress Control Number'' o ''LCCN'') és un número  de  sèrie basat  en el sistema de numeració de registres de catalogació a la [[Biblioteca del Congrés dels Estats Units]]. No té res a veure amb el contingut de qualsevol llibre, i no s'ha de confondre amb la [[Classificació de la Biblioteca del Congrés]]. Com que la majoria d'informació bibliogràfica s'ha creat actualment per via electrònica, emmagatzemat i compartit amb altres biblioteques, encara hi ha una necessitat d'identificar cada registre únic, i la LCCN encara realitza aquesta funció. Els [[bibliotecari]]s de tot el món utilitzen aquest [[identificador]] únic en el procés de catalogació de la majoria dels llibres que s'han publicat als Estats Units. Això els ajuda a arribar a la correcta catalogació de dades (conegut com un registre de catalogació), que la Biblioteca del Congrés i tercers posen a disposició a la web i a través d'altres mitjans de comunicació. En la seva forma més elemental el número  inclou un any i un número de sèrie. L'any té dos dígits des de 1898 al 2000, i quatre dígits a partir del 2001. Els tres anys ambigus es distingeixen per la mida del número de sèrie. També hi ha algunes peculiaritats en els números que comencen amb un "7" a causa d'un experiment aplicat sense èxit entre 1969 i 1972.
+
+Els números de sèrie tenen una longitud de sis dígits i han d'incloure zeros a l'esquerra. El [[Guió (signe de puntuació)|guió]] que es considera sovint que separa l'any i el número de sèrie és opcional. Més recentment, la Biblioteca del Congrés ha donat instruccions als editors de no incloure un guió.
+
+== Història ==
+El sistema de numeració LCCN ha estat en ús des de [[1898]], moment en què la sigla LCCN originalment era el Número de Targeta de la Biblioteca del Congrés. La Biblioteca del Congrés preparava cartes d'informació bibliogràfica per al seu [[catàleg de biblioteca|catàleg de la biblioteca]] i venia duplicats de les targetes a altres biblioteques per al seu ús en els seus catàlegs. Això es coneix com a catalogació centralitzada. A cada joc de targetes se li va donar un número de sèrie per ajudar a identificar-lo.
+
+El febrer del 2008, la Biblioteca del Congrés va crear el servei permanent LCCN, proporcionant un URL estable per a tots els números de control de la Biblioteca del Congrés.<ref>{{ref-web | url = http://www.loc.gov/ala/an-2008-update.html| títol = Library of Congress Update for 2008 ALA Annual Conference: January-May, 2008| consulta = 29-9-2008 }}</ref>
+
+==Vegeu també==
+* [[ISBN]] (International Standard Book Number)
+* [[CODEN]]
+
+==Referències==
+<references />
+
+==Enllaços externs==
+*[http://www.loc.gov/marc/lccn_structure.html Estructura del número  de control de la Biblioteca del Congrés] {{en}}
+*[http://lccn.loc.gov/lccnperm-faq.html Preguntes  freqüents sobre el LCCN] {{en}}
+*[http://catalog.loc.gov/webvoy.htm Cerca al catàleg LCCN] {{en}}
+
+
+{{ORDENA:Numero De Control De La Biblioteca Del Congres}}	<!--ORDENA generat per bot-->
+[[Categoria:Estats Units]]
+[[Categoria:Biblioteconomia]]
+
+[[sv:USA:s kongressbibliotek#LCCN]]

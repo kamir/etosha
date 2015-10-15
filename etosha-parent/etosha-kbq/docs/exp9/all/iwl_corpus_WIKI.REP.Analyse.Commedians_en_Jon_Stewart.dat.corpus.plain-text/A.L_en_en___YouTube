@@ -1,0 +1,1222 @@
+<!-- {{Coord|37.6278522|-122.426103|display=title}} -->
+{{pp-semi-indef}}
+{{pp-move-indef}}
+{{Infobox dot-com company
+|name     = YouTube, LLC
+|logo     = [[File:YouTube logo 2013.svg|200px]]
+|company_type     = [[Subsidiary]]
+|foundation       = {{Start date and age|2005|02|14}}
+|founder          = {{Unbulleted list|[[Steve Chen]]|[[Chad Hurley]]|[[Jawed Karim]]}}
+|location_city    = 901 Cherry Avenue, [[San Bruno, California|San Bruno]], <br /> [[California]]
+|location_country = [[United States]]
+|area_served      = [[World]]wide (except [[Censorship of YouTube|blocked countries]])
+|parent           = Independent (2005–2006)<br />[[Google]] (2006–present)
+|key_people       = [[Susan Wojcicki]] ([[Chief executive officer|CEO]])<br />[[Chad Hurley]] ([[Adviser]])
+|company_slogan   = Broadcast Yourself (2005–2012)
+|industry         = [[Internet]] <br /> [[Video hosting service]]
+|ipv6             = 
+|advertising      = Google [[AdSense]]
+|launch_date      = {{Start date and age|2005|02|14}}
+|screenshot       = [[File:YouTube Homepage Dec 7 2012.png|270px]]
+|caption          = Screenshot of YouTube's homepage
+| url              = {{URL|https://www.youtube.com/|YouTube.com}} <br /> (see [[#Localization|list of localized domain names]])
+| content_license = Uploader holds copyright (standard license); [[Creative Commons]] can be selected.<!-- content_license is not part of "Infobox dot-com company" which is the primary reason "Infobox website" was added. Please Talk before doing anything -->
+| type            = [[Video hosting service]]
+| alexa           = {{Steady}} 3 ({{as of|2015|01|24|alt=January 2015}})<ref name="alexa">{{cite web|url= http://www.alexa.com/siteinfo/youtube.com |title= Youtube.com Site Info | publisher= [[Alexa Internet]] |accessdate= January 24, 2014 }}</ref><!--Updated monthly by OKBot.-->
+|language         = 76 language versions available through user interface<ref name="languages">{{cite web|url=http://i.imgur.com/5or6g6B.png|title=YouTube language versions|accessdate=April 1, 2014}}</ref>
+| programming_language = [[Python (programming language)|Python]]<ref>{{cite web|url=http://www.gooli.org/blog/youtube-runs-on-python/|title=YouTube runs on Python|first=Vincent|last=Lextrait|date=July 2010|accessdate=September 5, 2010 |archiveurl=http://archive.is/20120530/http://www.lextrait.com/Vincent/implementations.html |archivedate=May 30, 2012}}</ref> and proprietary [[JavaScript]]
+| registration    = Optional (only required for certain tasks such as uploading videos, viewing flagged videos, viewing flagged comments, liking videos, adding videos to playlists and commenting on videos)
+| current_status  = Active
+}}
+'''YouTube''' is a [[video hosting service|video-sharing]] [[website]] headquartered in [[San Bruno, California|San Bruno]], [[California]], [[United States]]. The service was created by three former [[PayPal]] employees in February 2005. In November 2006, it was bought by Google for US$1.65 billion.<ref>{{Cite news| title=Surprise! There's a third YouTube co-founder|author=Hopkins, Jim|work=USA Today| url =http://www.usatoday.com/tech/news/2006-10-11-youtube-karim_x.htm|accessdate=November 29, 2008 | date=October 11, 2006}}</ref> YouTube now operates as one of Google's [[subsidiary|subsidiaries]].<ref>{{cite web|title=Google buys YouTube for $1.65 billion|url=http://www.nbcnews.com/id/15196982/ns/business-us_business/t/google-buys-youtube-billion/#.UbECrBG9KSM|publisher=NBC News}}</ref> The site allows users to upload, view, and share videos, and it makes use of [[WebM]], [[H.264]], and [[Adobe Systems|Adobe]] [[Flash Video]] technology to display a wide variety of [[user-generated content|user-generated]] and [[corporate media]] video. Available content includes [[video clip]]s, TV clips, [[music video]]s, and other content such as [[video blog]]ging, short original videos, and educational videos.
+
+Most of the content on YouTube has been uploaded by individuals, but media corporations including [[CBS]], the [[BBC]], [[Vevo]], [[Hulu]], and other organizations offer some of their material via YouTube, as part of the YouTube partnership program.<ref>{{Cite news| title=BBC strikes Google-YouTube deal|author=Weber, Tim|publisher=BBC| url =http://news.bbc.co.uk/1/hi/business/6411017.stm|accessdate=January 17, 2009 | date=March 2, 2007}}</ref> Unregistered users can watch videos, and registered users can upload videos to their channels. Videos considered to contain potentially offensive content are available only to registered users affirming themselves to be at least 18 years old.
+
+==Company history==
+{{Main|History of YouTube}}
+[[File:Youtube founders.jpg|thumb|400px|From left to right: [[Chad Hurley]], [[Steve Chen]], and [[Jawed Karim]]]]
+YouTube was founded by [[Chad Hurley]], [[Steve Chen]], and [[Jawed Karim]], who were all early employees of [[PayPal]].<ref name="usatoday">{{Cite news| url = http://www.usatoday.com/tech/news/techinnovations/2005-11-21-video-websites_x.htm | title = Video websites pop up, invite postings | work = USA Today | date = November 21, 2005 | accessdate =July 28, 2006 | last = Graham | first = Jefferson}}</ref> Hurley had studied design at [[Indiana University of Pennsylvania]], and Chen and Karim studied [[computer science]] together at the [[University of Illinois at Urbana-Champaign]].<ref>{{cite web|title=YouTube: Sharing Digital Camera Videos |publisher=[[University of Illinois at Urbana-Champaign]]| url =http://www.cs.uiuc.edu/news/articles.php?id=2006Feb3-126|accessdate=November 29, 2008 }}</ref>
+
+According to a story that has often been repeated in the media, Hurley and Chen developed the idea for YouTube during the early months of 2005, after they had experienced difficulty sharing videos that had been shot at a dinner party at Chen's apartment in San Francisco. Karim did not attend the party and denied that it had occurred, but Chen commented that the idea that YouTube was founded after a dinner party "was probably very strengthened by marketing ideas around creating a story that was very digestible".<ref name = "time">{{Cite news| title=The Gurus of YouTube|author=Cloud, John|work=Time Magazine| url =http://www.time.com/time/printout/0,8816,1570721,00.html|accessdate=November 29, 2008 | date=December 16, 2006}}</ref>
+
+Karim said the inspiration for YouTube first came from [[Janet Jackson]]'s role in the 2004 [[Super Bowl XXXVIII halftime show controversy|Super Bowl incident]], when her breast was exposed during her performance, and later from the [[2004 Indian Ocean earthquake and tsunami|2004 Indian Ocean tsunami]]. Karim could not easily find video clips of either event online, which led to the idea of a video sharing site.<ref>{{cite web| title = Surprise! There's a third YouTube co-founder| publisher = [[USA Today]]| date = October 11, 2006| url = http://usatoday30.usatoday.com/tech/news/2006-10-11-youtube-karim_x.htm?csp=34| accessdate = June 19, 2013}}</ref> Hurley and Chen said that the original idea for YouTube was a video version of an [[online dating service]], and had been influenced by the website [[Hot or Not]].<ref>{{cite news| title =The YouTube Gurus | publisher = Time.com| date = December 25, 2006| url = http://www.time.com/time/magazine/article/0,9171,1570795-5,00.html| accessdate = June 19, 2013}}</ref><ref>[https://web.archive.org/web/20050428014715/http://www.youtube.com/ Earliest surviving version of the YouTube website] [[Wayback Machine]], April 28, 2005. Retrieved June 19, 2013.</ref>
+
+YouTube began as a venture-funded technology startup, primarily from a $11.5 million investment by [[Sequoia Capital]] between November 2005 and April 2006.<ref>{{Cite news| title=Venture Firm Shares a YouTube Jackpot|author=Miguel Helft and Matt Richtel|work=The New York Times |url=http://www.nytimes.com/2006/10/10/technology/10payday.html|accessdate=November 30, 2008 | date=October 10, 2006}}</ref> YouTube's early headquarters were situated above a pizzeria and Japanese restaurant in [[San Mateo, California]].<ref>{{Cite news| title=Ready for Its Close-Up|author=Sara Kehaulani Goo|work=Washington Post| url =http://www.washingtonpost.com/wp-dyn/content/article/2006/10/06/AR2006100600660.html|accessdate=November 29, 2008 | date=October 7, 2006}}</ref> The [[domain name]] <code>www.youtube.com</code> was activated on February 14, 2005, and the website was developed over the subsequent months.<ref>{{cite web| url = http://whois.domaintools.com/youtube.com| title = Whois Record for <code>www.youtube.com</code> | accessdate =April 1, 2009 | publisher =DomainTools }}</ref>
+
+The first YouTube video, titled ''[[Me at the zoo]]'', shows co-founder Jawed Karim at the [[San Diego Zoo]].<ref>{{Cite news|title=YouTube: Overnight success has sparked a backlash|author=Alleyne, Richard|work=The Daily Telegraph |location=London  | url =http://www.telegraph.co.uk/news/uknews/2480280/YouTube-Overnight-success-has-sparked-a-backlash.html|accessdate=January 17, 2009  | date=July 31, 2008}}</ref> The video was uploaded on April 23, 2005, and can still be viewed on the site.<ref>{{cite web|url=http://youtube.com/watch?v=jNQXAC9IVRw|title=Me at the zoo|publisher=YouTube|date=April 23, 2005|accessdate=August 3, 2009}}</ref>
+
+YouTube offered the public a [[beta test]] of the site in May 2005, six months before the official launch in November 2005. The site grew rapidly, and in July 2006 the company announced that more than 65,000 new videos were being uploaded every day, and that the site was receiving 100 million video views per day.<ref>{{Cite news|title=YouTube serves up 100 million videos a day online |url=http://www.usatoday.com/tech/news/2006-07-16-youtube-views_x.htm |work=USA Today|date=July 16, 2006 |accessdate=November 29, 2008}}</ref> According to data published by [[market research]] company [[comScore]], YouTube is the dominant provider of online video in the United States, with a [[market share]] of around 43% and more than 14 billion views of videos in May 2010.<ref>{{cite web| title=comScore Releases May 2010 U.S. Online Video Rankings| publisher =[[comScore]]| url =http://www.comscore.com/Press_Events/Press_Releases/2010/6/comScore_Releases_May_2010_U.S._Online_Video_Rankings|accessdate=June 27, 2010 }}</ref>
+
+In 2014 YouTube said that 300 hours of new videos were uploaded to the site every minute,<ref>{{Cite web|url = http://www.cnet.com/news/youtube-music-key-googles-stab-at-taking-paid-streaming-songs-mainstream/|title = YouTube's Music Key: Can paid streaming finally hook the masses?|date = |accessdate = |website = |publisher = |last = |first = }}</ref> three times more than one year earlier<ref>{{Cite web|url = http://www.dagensmedia.se/nyheter/article3863831.ece|title = 300 timmar film laddas upp på Youtube – i minuten|date = |accessdate = |website = |publisher = |last = Gustav|first = Radell}}</ref> and that around three quarters of the material comes from outside the U.S.<ref name = "60_hours">{{Cite news| title = YouTube hits 4 billion daily video views|author=Oreskovic, Alexei| publisher = Reuters| url = http://www.reuters.com/article/2012/01/23/us-google-youtube-idUSTRE80M0TS20120123|accessdate=January 23, 2012 | date=January 23, 2012}}</ref><ref name="48_hours">{{cite web| title = Statistics|work=YouTube Press Office | url =http://www.youtube.com/yt/press/statistics.html|accessdate=March 23, 2014}}</ref><ref>{{cite web| title = Eric Schmidt, Princeton Colloquium on Public & Int'l Affairs| publisher = YouTube| url = http://www.youtube.com/watch?v=9nXmDxf7D_g#t=14m52s|accessdate=June 1, 2009 }}</ref> The site has 800 million unique users a month.<ref name="seabrook20120116">{{cite news | url=http://www.newyorker.com/reporting/2012/01/16/120116fa_fact_seabrook?currentPage=all | title=Streaming Dreams | work=The New Yorker | date=January 16, 2012 | accessdate=January 6, 2012 | author=Seabrook, John}}</ref> It is estimated that in 2007 YouTube consumed as much [[bandwidth (computing)|bandwidth]] as the entire [[Internet]] in 2000.<ref>{{Cite news| title = Web could collapse as video demand soars|work=The Daily Telegraph |location=London  | url = http://www.telegraph.co.uk/news/main.jhtml?xml=/news/2008/04/07/nweb107.xml|accessdate=April 21, 2008  | first=Lewis | last=Carter | date=April 7, 2008}}</ref> [[Alexa Internet|Alexa]] ranks YouTube as the third most visited website on the Internet, behind [[Google]] and Facebook.<ref>{{cite web| title = Alexa Traffic Rank for YouTube (three month average)| publisher = [[Alexa Internet]]| url =http://www.alexa.com/siteinfo/youtube.com|accessdate=March 30, 2010}}</ref>
+
+The choice of the name <code>www.youtube.com</code> led to problems for a similarly named website, <code>www.utube.com</code>. The site's owner, [[Universal Tube & Rollform Equipment]], filed a lawsuit against YouTube in November 2006 after being regularly overloaded by people looking for YouTube. Universal Tube has since changed the name of its website to <code>www.utubeonline.com</code>.<ref>{{Cite news| title = Help! YouTube is killing my business!|author=Zappone, Christian| publisher = CNN| url = http://money.cnn.com/2006/10/12/news/companies/utube/index.htm|accessdate=November 29, 2008 | date=October 12, 2006}}</ref><ref>{{Cite news| title =Utube sues YouTube|author=Blakely, Rhys|work=The Times |location=London  | url = http://business.timesonline.co.uk/tol/business/industry_sectors/media/article623050.ece|accessdate=November 29, 2008  | date=November 2, 2006}}</ref>
+
+In October 2006, [[Google|Google Inc.]] announced that it had acquired YouTube for $1.65 billion in Google [[stock]], and the deal was finalized on November 13, 2006.<ref>{{Cite news| title = Google closes $A2b YouTube deal|author=[[Reuters]]|work=The Age | location=Melbourne| url = http://www.theage.com.au/news/Busness/Google-closes-A2b-YouTube-deal/2006/11/14/1163266548827.html|accessdate=November 29, 2008 | date=November 14, 2006}}</ref>
+
+Google does not provide detailed figures for YouTube's running costs, and YouTube's revenues in 2007 were noted as "[[materiality (auditing)|not material]]" in a regulatory filing.<ref name=Moneyclip>{{Cite news|first=Yi-Wyn|last=Yen|date=March 25, 2008|url=http://tech.fortune.cnn.com/2008/03/25/youtube-looks-for-the-money-clip/|title=YouTube Looks For the Money Clip|accessdate=March 26, 2008}}</ref> In June 2008, a ''[[Forbes]]'' magazine article projected the 2008 revenue at $200 million, noting progress in advertising sales.<ref name="Forbes08">{{Cite news|first=Quentin|last=Hardy|author2=Evan Hessel |url=http://www.forbes.com/forbes/2008/0616/050.html|title=GooTube|work=Forbes Magazine|date=May 22, 2008|accessdate=August 3, 2009}}</ref> In January 2012, it was estimated that visitors to YouTube spent an average of 15 minutes a day on the site, in contrast to the four or five hours a day spent by a typical U.S. citizen watching television.<ref name="seabrook20120116" />
+
+YouTube entered into a marketing and advertising partnership with [[NBC]] in June 2006.<ref>{{Cite news|title=Online Video: The Market Is Hot, but Business Models Are Fuzzy |url=http://knowledge.wharton.upenn.edu/article.cfm?articleid=1519|author=Knowledge@wharton|accessdate=July 19, 2012}}</ref> In November 2008, YouTube reached an agreement with [[Metro-Goldwyn-Mayer|MGM]], [[Lions Gate Entertainment]], and [[CBS]], allowing the companies to post full-length films and television episodes on the site, accompanied by advertisements in a section for US viewers called "Shows". The move was intended to create competition with websites such as [[Hulu]], which features material from [[NBC]], [[Fox Broadcasting Company|Fox]], and [[Walt Disney Studios Motion Pictures|Disney]].<ref>{{Cite news| title = MGM to Post Full Films on YouTube|author=Brad Stone and Brooks Barnes|work=The New York Times| url = http://www.nytimes.com/2008/11/10/business/media/10mgm.html?ref=technology|accessdate=November 29, 2008 | date=November 10, 2008}}</ref><ref>{{Cite news|url=http://www.washingtonpost.com/wp-dyn/content/article/2009/04/30/AR2009043001853.html |title=It's Official: Disney Joins News Corp., NBCU In Hulu; Deal Includes Some Cable Nets |accessdate=April 30, 2009 |date=April 30, 2009 |author=Staci D. Kramer |work=paidContent.org}}</ref> In November 2009, YouTube launched a version of "Shows" available to UK viewers, offering around 4,000 full-length shows from more than 60 partners.<ref>{{Cite news| title = YouTube launches UK TV section with more than 60 partners|author=Allen, Katie|work=The Guardian |location=London  | url = http://www.guardian.co.uk/media/2009/nov/19/youtube-uk-full-length-shows|accessdate=December 13, 2009  | date=November 19, 2009}}</ref> In January 2010, YouTube introduced an online film rentals service,<ref>{{Cite news| title = YouTube takes a small step into the film rental market | author=Miguel Helft |work=The New York Times | url = http://www.nytimes.com/2010/01/21/technology/internet/21youtube.html | accessdate=August 13, 2010 | date= January 20, 2010}}</ref> which is available only to users in the US, Canada and the UK as of 2010.<ref>{{Cite news|url=http://news.bbc.co.uk/1/hi/8471635.stm |title=YouTube turns to movie rental business|accessdate=May 7, 2010 |date=January 21, 2010|work=BBC News | first=Maggie | last=Shiels}}</ref><ref>{{cite news|url=http://www.bbc.co.uk/news/technology-15214939 |title=YouTube to offer film rentals in the UK|publisher=BBC News|date=October 7, 2011|accessdate=October 7, 2011}}</ref> The service offers over 6,000 films.<ref>{{Cite news| title=Google Partners With Sony Pictures, Universal And Warner Brothers For YouTube Movies|author=Tsotsis, Alexia| publisher = techcrunch.com| url =http://techcrunch.com/2011/05/09/google-partners-with-sony-pictures-nbc-universal-and-warner-brothers-for-youtube-movies/|accessdate=June 5, 2011 | date=May 9, 2011}}</ref>
+
+[[File:901cherryave.jpg|thumb|250px|YouTube's headquarters as of 2010 in [[San Bruno, California|San Bruno]], California.]]
+
+In March 2010, YouTube began free streaming of certain content, including 60 cricket matches of the [[Indian Premier League]]. According to YouTube, this was the first worldwide free online broadcast of a major sporting event.<ref>{{Cite news| title = Cricket: IPL goes global with live online deal|work=The Guardian |location=London  | url =http://www.guardian.co.uk/media/2010/jan/20/youtube-live-indian-premier-league|accessdate=February 6, 2010  | first=Mark | last=Sweney | date=January 20, 2010}}</ref>
+
+On March 31, 2010, the YouTube website launched a new design, with the aim of simplifying the interface and increasing the time users spend on the site. Google product manager Shiva Rajaraman commented: "We really felt like we needed to step back and remove the clutter."<ref>{{cite news| title =YouTube redesigns website to keep viewers captivated |agency=AFP| url = http://www.google.com/hostednews/afp/article/ALeqM5jfGfKKsiwbxNv8XoUbm8ZlRZZWyw|accessdate=April 1, 2010}}</ref> In May 2010, it was reported that YouTube was serving more than two billion videos a day, which it described as "nearly double the prime-time audience of all three major US television networks combined".<ref>{{cite news| title = YouTube serving up two billion videos daily|author=Chapman, Glenn|agency=AFP| url = http://www.google.com/hostednews/afp/article/ALeqM5jK4sI9GfUTCKAkVGhDzpJ1ACZm9Q|accessdate=May 17, 2010}}</ref> In May 2011, YouTube reported in its company blog that the site was receiving more than three billion views per day.<ref name="48_hours" /> In January 2012, YouTube stated that the figure had increased to four billion videos streamed per day.<ref name = "60_hours" />
+
+In October 2010, Hurley announced that he would be stepping down as chief executive officer of YouTube to take an advisory role, and that [[Salar Kamangar]] would take over as head of the company.<ref>{{Cite news|url=http://www.google.com/hostednews/afp/article/ALeqM5ggtnJSISuXoPHgxu6HwPJJqVTT6g?docId=CNG.f7ff59e3829714d23524d35ed1afdd63.921|title=Hurley stepping down as YouTube chief executive|accessdate=October 30, 2010 |date=October 29, 2010|agency=AFP}}</ref>
+
+In April 2011, James Zern, a YouTube software engineer, revealed that 30% of videos accounted for 99% of views on the site.<ref>{{Cite news|url=http://www.telegraph.co.uk/technology/news/8464418/Almost-all-YouTube-views-come-from-just-30-of-films.html|title=Almost all YouTube views come from just 30% of films|accessdate=April 21, 2011 |date=April 20, 2011|work=The Daily Telegraph |location=London  |first=Ben|last=Whitelaw}}</ref>
+
+In November 2011, the [[Google+]] social networking site was integrated directly with YouTube and the [[Google Chrome|Chrome]] web browser, allowing YouTube videos to be viewed from within the Google+ interface.<ref>{{Cite news| title =Google+ now connects with YouTube, Chrome| publisher = [[CNET]]|url=http://news.cnet.com/8301-1023_3-57318595-93/google-now-connects-with-youtube-chrome/?part=rss&subj=news&tag=2547-1_3-0-20|accessdate=November 4, 2011 | date=November 4, 2011 | first=Lance | last=Whitney}}</ref>
+
+In December 2011, YouTube launched a new version of the site interface, with the video channels displayed in a central column on the home page, similar to the news feeds of [[social networking]] sites.<ref>{{Cite news| title =YouTube's website redesign puts the focus on channels|publisher=BBC|url=http://www.bbc.co.uk/news/technology-16006524|accessdate=December 2, 2011 | date=December 2, 2011}}</ref> At the same time, a new version of the YouTube logo was introduced with a darker shade of red, the first change in design since October 2006.<ref>{{cite web|url=http://mashable.com/2006/10/26/youtube-gets-new-logo-facelift-and-trackbacks-growing-fast/|title=YouTube Gets New Logo, Facelift and Trackbacks&nbsp;– Growing Fast!|author=Cashmore, Pete|date=October 26, 2006|accessdate=December 2, 2011}}</ref>
+
+In May 2013, YouTube launched a pilot program to begin offering some content providers the ability to charge $0.99 per month or more for certain channels, but the vast majority of its videos would remain free to view.<ref name = "subscription">{{cite news|url=http://www.bbc.co.uk/news/business-22474715|title=YouTube launches pay-to-watch subscription channels|work=[[BBC News]]|date=May 9, 2013|accessdate=May 11, 2013}}</ref><ref>{{cite news|url=http://www.mercurynews.com/business/ci_23184159/youtube-providers-could-begin-charging-fees-this-week|title=YouTube providers could begin charging fees this week|last=Nakaso|first=Dan|work=[[San Jose Mercury News|Mercury News]]|date=May 7, 2013|accessdate=May 10, 2013}}</ref>
+
+In February 2015, YouTube announced the launch of a new app specifically for use by children visiting the site, called YouTube Kids. It allows parental controls and restrictions on who can upload content, and will initially be available on Google's [[Android (operating system)|Android]] devices only.<ref>{{cite news|url=http://m.bbc.co.uk/news/technology-31549499|title=Google's YouTube to launch kids' app|publisher=BBC News|date=20 February 2015|accessdate=22 February 2015}}</ref>
+
+==Features==
+
+===Video technology===
+
+====Playback====
+Previously, viewing YouTube videos on a personal computer required the [[Adobe Flash Player]] [[plug-in (computing)|plug-in]] to be installed in the [[web browser|browser]].<ref>{{Cite news| title =Flash moves on to smart phones|publisher=BBC|url=http://news.bbc.co.uk/1/hi/8287239.stm|accessdate=November 30, 2009 | date=October 5, 2009 | first=Jonathan | last=Fildes}}</ref>
+
+In January 2010, YouTube launched an experimental version of the site that used the built-in multimedia capabilities of web browsers supporting the [[HTML5]] standard.<ref name="youtubehtml5">{{Cite news| url = http://www.youtube.com/html5 | title = YouTube HTML5 Video Player | work = YouTube | accessdate =April 12, 2011}}</ref> This allowed videos to be viewed without requiring [[Adobe Flash Player]] or any other plug-in to be installed.<ref>{{cite web|url=http://www.labnol.org/internet/youtube-video-without-flash-player/9016/|title=Watch this YouTube Video without the Flash Player|accessdate=November 30, 2009}}</ref><ref>{{cite web|url=http://www.downloadsquad.com/2009/11/08/html5-youtube-viewer-close-but-not-quite-there/|title=HTML5 YouTube viewer: close, but not quite there|accessdate=November 30, 2009}}</ref> The YouTube site had a page that allowed supported browsers to opt into the HTML5 trial. Only browsers that supported HTML5 Video using the [[H.264/MPEG-4 AVC|H.264]] or [[WebM]] formats could play the videos, and not all videos on the site were available.<ref>{{cite web|url=http://www.youtube.com/html5|title=YouTube HTML5 Video Player|accessdate=January 21, 2010}}</ref><ref>{{cite web|url=http://news.cnet.com/8301-30685_3-20005378-264.html?tag=mncol|title=Google tries freeing Web video with WebM|author=Shankland, Stephen|publisher= [[CNET]].com|date=May 19, 2010|accessdate=June 30, 2010}}</ref>
+
+On January 27, 2015, YouTube announced that HTML5 will be the default playback method on supported browsers. Supported browsers include [[Google Chrome]], [[Safari (web browser)|Safari 8]], and [[Internet Explorer|Internet Explorer 11]].<ref name="default_html5">{{Cite news| url =http://arstechnica.com/gadgets/2015/01/youtube-declares-html5-video-ready-for-primetime-makes-it-default/ |first=Ron|last=Amadeo |title = YouTube says HTML5 video ready for primetime, makes it default | work = Ars Technica |date=January 27, 2015| accessdate =January 29, 2015}}</ref>
+
+YouTube experimented with [[Dynamic Adaptive Streaming over HTTP]] (MPEG-DASH), which is an adaptive bit-rate HTTP-based streaming solution optimizing the bitrate and quality for the available network.<ref>{{cite web|author=Rajeev Tiwari |url=http://streamingcodecs.blogspot.hu/2013/01/mpeg-dash-support-in-youtube.html |title=Streaming Media and RTOS: MPEG-DASH Support in Youtube |publisher=Streamingcodecs.blogspot.hu |date=January 3, 2013 |accessdate=March 13, 2014}}</ref> Currently they are using [[Adaptive bitrate streaming#Adobe Dynamic Streaming for Flash|Adobe Dynamic Streaming for Flash]].<ref>{{youtube|UklDSMG9ffU|YouTube: Google I/O 2013 - Adaptive Streaming for You and YouTube}}</ref>
+
+====Uploading====
+All YouTube users can upload videos up to 15 minutes each in duration. Users who have a good track record of complying with the site's Community Guidelines may be offered the ability to upload videos up to 12 hours in length, which requires verifying the account, normally through a mobile phone.<ref>[http://www.google.com/support/youtube/bin/answer.py?answer=71673 Video length for uploading] YouTube Help. Retrieved April 17, 2012.</ref> When YouTube was launched in 2005, it was possible to upload long videos, but a ten-minute limit was introduced in March 2006 after YouTube found that the majority of videos exceeding this length were unauthorized uploads of television shows and films.<ref>{{cite web| title =YouTube caps video lengths to reduce infringement|author=Fisher, Ken| publisher = Ars Technica| url=http://arstechnica.com/news.ars/post/20060329-6481.html|accessdate=December 4, 2008 }}</ref><ref name="longer">{{cite web| title =Account Types: Longer videos| publisher = YouTube| url=http://www.google.com/support/youtube/bin/answer.py?answer=71673&ctx=sibling|accessdate=December 4, 2008 }}</ref> The 10-minute limit was increased to 15 minutes in July 2010.<ref name="15min">{{Cite news|url=http://news.cnet.com/8301-27076_3-20012090-248.html|title=YouTube bumps video limit to 15 minutes|date=July 29, 2010|first=Josh|last=Lowensohn|publisher=CNET|accessdate=July 29, 2010}}</ref> If an up-to-date browser version is used, videos greater than 20 [[gigabyte|GB]] can be uploaded.<ref>[https://support.google.com/youtube/answer/71673?rd=1 "Upload videos longer than 15 minutes"]. YouTube. Retrieved April 6, 2014.</ref>
+
+YouTube accepts videos uploaded in most [[Container format (digital)|container formats]], including [[Audio Video Interleave|.AVI]], [[Matroska|.MKV]], [[QuickTime|.MOV]], [[MPEG-4 Part 14|.MP4]], [[DivX]], [[Flash Video|.FLV]], and [[Theora|.ogg]] and [[Theora|.ogv]]. These include video formats such as [[MPEG-4]], [[Moving Picture Experts Group|MPEG]], [[VOB]], and [[Windows Media Video|.WMV]]. It also supports [[3GP and 3G2|3GP]], allowing videos to be uploaded from mobile phones.<ref>{{cite web| title =Video Formats: File formats| publisher = YouTube| url=http://www.google.com/support/youtube/bin/answer.py?answer=55744&topic=10526|accessdate=December 4, 2008 }}</ref> Videos with [[progressive scan]]ning or interlaced scanning can be uploaded, but for the best video quality, YouTube suggests interlaced videos be [[Deinterlacing|deinterlaced]] before uploading. All the video formats on YouTube use progressive scanning.<ref>{{cite web| title =Getting Started: File formats| publisher = YouTube| url=http://www.google.com/support/youtube/bin/answer.py?hl=en&answer=55744 |accessdate=August 14, 2010}}</ref>
+
+====Quality and formats====
+YouTube originally offered videos at only one quality level, displayed at a resolution of 320×240 [[pixel]]s using the [[Sorenson codec|Sorenson Spark]] codec (a variant of [[H.263]]),<ref name="incomplete-h263">{{cite web|url=http://www.kaourantin.net/2005/08/quest-for-new-video-codec-in-flash-8.html|title=The quest for a new video codec in Flash 8 |author=Tinic Uro |quote=We went this route before with Sorenson Spark which is an incomplete implementation of H.263 and it bit us badly when trying to implement certain solutions. |date=August 13, 2005 |accessdate=January 27, 2011}}</ref><ref name="flash-video">{{cite web |url=http://download.macromedia.com/f4v/video_file_format_spec_v10_1.pdf |title=Adobe Flash Video File Format Specification Version 10.1 |author=Adobe Systems Incorporated |format=PDF |page=72 |quote=Sorenson H.263 |year=2010 |accessdate=January 27, 2011}}</ref> with mono MP3 audio.<ref>{{cite web|url=http://www.sorensonmedia.com/news/?n=379|title=Market Demand for Sorenson Media's Sorenson Spark Video Decoder Expands Sharply|publisher=Sorenson Media|date=June 2, 2009|accessdate=July 31, 2009}}</ref> In June 2007, YouTube added an option to watch videos in [[3GP and 3G2|3GP]] format on mobile phones.<ref>{{cite web|url=http://www.downloadsquad.com/2007/06/17/youtube-mobile-goes-live/|title=YouTube Mobile goes live|date=June 17, 2007|accessdate=August 11, 2010}}</ref> In March 2008, a high-quality mode was added, which increased the resolution to 480×360 pixels.<ref>{{cite web|url=http://youtube-global.blogspot.com/2008/03/youtube-videos-in-high-quality.html|title=YouTube Blog&nbsp;– YouTube Videos in High Quality|date=March 24, 2008|publisher=YouTube|accessdate=April 4, 2009}}</ref>
+
+In November 2008, [[720p]] [[high-definition video|HD]] support was added. At the time of the 720p launch, the YouTube player was changed from a [[4:3]] [[aspect ratio]] to a [[widescreen]] [[16:9]].<ref>{{cite web|url=http://news.cnet.com/8301-17939_109-10104182-2.html?tag=mncol;txt|title=YouTube videos go HD with a simple hack|work=CNET|date=November 20, 2008|accessdate=August 14, 2010}}</ref> With this new feature, YouTube began a switchover to [[H.264/MPEG-4 AVC]] as its default video compression format. In November 2009, [[1080p]] HD support was added. In July 2010, YouTube announced that it had launched a range of videos in [[4K resolution|4K]] format, which allows a resolution of up to 4096×3072 pixels.<ref>{{cite news|url=http://youtube-global.blogspot.com/2010/07/whats-bigger-than-1080p-4k-video-comes.html |title=What's bigger than 1080p? 4K video comes to YouTube |publisher=Official YouTube Blog|date=July 9, 2010|accessdate=July 10, 2010}}</ref><ref>{{cite news|url=http://news.cnet.com/8301-27076_3-20010174-248.html|title=YouTube now supports 4k-resolution videos|publisher=CNET|date=July 9, 2010|accessdate=July 10, 2010|first=Josh|last=Lowensohn}}</ref> YouTube has since lowered the maximum resolution to 3840×2160 pixels, which is twice as many pixels in both directions as [[1080p]].<ref>{{cite web|url=https://support.google.com/youtube/answer/1722171?hl=en|title=Advanced encoding settings - YouTube Help|work=Google|accessdate=February 1, 2014}}</ref>
+
+In June 2014, YouTube introduced videos playing at 60 [[Frame rate|frames per second]], in order to reproduce video games with a frame rate comparable to high-end [[Video card|graphics cards]].<ref>{{cite news|url=http://youtubecreator.blogspot.nl/2014/06/look-ahead-creator-features-coming-to.html|title=Look ahead: creator features coming to YouTube|work=The Official YouTube Partners & Creators Blog|date=June 26, 2014|first=Matthew|last=Glotzbach}}</ref><ref>{{cite news|url=http://www.theguardian.com/technology/2014/jun/27/battlefield-hardline-youtube-trailers-games|title=Battlefield Hardline ushers in era of smooth YouTube trailers|work=[[The Guardian]]|date=June 27, 2014|accessdate=June 29, 2014|first=Keith|last=Stuart}}</ref> The videos play back at a resolution of 720p or higher.<ref>{{cite news|url=http://techcrunch.com/2014/10/29/60-fps-youtube/|title=YouTube Can Now Play Videos At A Buttery 60 Frames Per Second|date=October 29, 2014|first=Greg|last=Kumparak}}</ref>
+
+YouTube videos are available in a range of quality levels. The former names of standard quality (SQ), high quality (HQ) and high definition (HD) have been replaced by numerical values representing the vertical resolution of the video. The default video stream is encoded in the [[VP9]] format with stereo [[Opus (audio format)|Opus]] audio; if VP9/WebM is not supported in the browser/device or the browser's user agent reports [[Windows XP]], then [[H.264/MPEG-4 AVC]] video with stereo [[Advanced Audio Coding|AAC]] audio is used instead.<ref>{{cite web|url=http://vimeo.com/109102513|title=Deploying VP9 at YouTube: a postmortem - Steven Robertson|date=October 16, 2014|accessdate=December 9, 2014}}</ref>
+
+<div class="NavFrame collapsed">
+<div class="NavHead">Comparison of YouTube media encoding options</div>
+<div class="NavContent" style="text-align:left">
+{| class="wikitable"
+|-
+! |
+| Discontinued
+| style="background:lime;" | Current
+|}
+'''Non-DASH'''
+{| class="wikitable sortable" style="text-align: center;"
+! itag value{{ref|media_type_table_note_1|[1]}}
+! Default container
+! data-sort-type="number"| Video resolution
+! Video encoding
+! Video profile
+! Video bitrate (Mbit/s) {{ref|media_type_table_note_2|[2]}}
+! Audio encoding
+! data-sort-type="number"| Audio bitrate (kbit/s) {{ref|media_type_table_note_2|[2]}}
+|-
+| style="background:lime;" | '''5'''
+|<!--Default container  --> FLV
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> Sorenson H.263
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.25
+|<!--Audio encoding     --> MP3
+|<!--Audio bitrate      --> 64
+|-
+!<!--itag value         --> 6
+|<!--Default container  --> FLV
+|<!--Video resolution   --> 270p
+|<!--Video encoding     --> Sorenson H.263
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.8
+|<!--Audio encoding     --> MP3
+|<!--Audio bitrate      --> 64
+|-
+!<!--itag value         --> 13
+|<!--Default container  --> 3GP
+|<!--Video resolution   --> {{n/a}}
+|<!--Video encoding     --> MPEG-4 Visual
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> {{n/a}}
+|-
+| style="background:lime;" | '''17'''
+|<!--Default container  --> 3GP
+|<!--Video resolution   --> 144p
+|<!--Video encoding     --> MPEG-4 Visual
+|<!--Video profile      --> Simple
+|<!--Video bitrate      --> 0.05
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 24
+|-
+| style="background:lime;" | '''18'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Baseline
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 96
+|-
+| style="background:lime;" | '''22'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 2-3
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 192
+|-
+!<!--itag value         --> 34
+|<!--Default container  --> FLV
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+!<!--itag value         --> 35
+|<!--Default container  --> FLV
+|<!--Video resolution   --> 480p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.8-1
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+| style="background:lime;" | '''36'''
+|<!--Default container  --> 3GP
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> MPEG-4 Visual
+|<!--Video profile      --> Simple
+|<!--Video bitrate      --> 0.175
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 32
+|-
+!<!--itag value         --> 37
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 3–5.9
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 192
+|-
+!<!--itag value         --> 38
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 3072p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 3.5-5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 192
+|-
+| style="background:lime;" | '''43'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 128
+|-
+!<!--itag value         --> 44
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 480p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 1
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 128
+|-
+!<!--itag value         --> 45
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 2
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 192
+|-
+!<!--itag value         --> 46
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 192
+|-
+| style="background:lime;" | '''82'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 96
+|-
+| style="background:lime;" | '''83'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> 0.5
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 96
+|-
+| style="background:lime;" | '''84'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> 2-3
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 192
+|-
+| style="background:lime;" | '''85'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> 3-4
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 192
+|-
+| style="background:lime;" | '''100'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 128
+|-
+!<!--itag value         --> 101
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 192
+|-
+!<!--itag value         --> 102
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> VP8
+|<!--Video profile      --> 3D
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 192
+|}
+'''DASH (video only)'''
+{| class="wikitable sortable" style="text-align: center;"
+! itag value{{ref|media_type_table_note_1|[1]}}
+! Default container
+! data-sort-type="number"| Video resolution
+! Video encoding
+! Video profile
+! data-sort-type="number"| Video bitrate (Mbit/s) {{ref|media_type_table_note_2|[2]}}
+|-
+| style="background:lime;" | '''133'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.2–0.3
+|-
+| style="background:lime;" | '''134'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.3–0.4
+|-
+| style="background:lime;" | '''135'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 480p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.5–1
+|-
+| style="background:lime;" | '''136'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 1–1.5
+|-
+| style="background:lime;" | '''137'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 2.5–3
+|-
+| style="background:lime;" | '''138'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 2160p–4320p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 13.5–25
+|-
+| style="background:lime;" | '''160'''{{ref|media_type_table_note_3|[3]}}
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 144p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.1
+|-
+| style="background:lime;" | '''242'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.1–0.2
+|-
+| style="background:lime;" | '''243'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.25
+|-
+| style="background:lime;" | '''244'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 480p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.5
+|-
+| style="background:lime;" | '''247'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.7–0.8
+|-
+| style="background:lime;" | '''248'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 1.5
+|-
+| style="background:lime;" | '''264'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 1440p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 4–4.5
+|-
+| style="background:lime;" | '''266'''
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 2160p–2304p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 12.5–16
+|-
+| style="background:lime;" | '''271'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 1440p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 9
+|-
+!<!--itag value         --> 272
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 2160p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 15–17.5
+|-
+| style="background:lime;" | '''278'''{{ref|media_type_table_note_3|[3]}}
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 144p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 0.08
+|-
+| style="background:lime;" | '''298'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 720p [[high frame rate|HFR]]
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 3–3.5
+|-
+| style="background:lime;" | '''299'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> MP4
+|<!--Video resolution   --> 1080p [[high frame rate|HFR]]
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 5.5
+|-
+| style="background:lime;" | '''302'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 720p [[high frame rate|HFR]]
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 2.5
+|-
+| style="background:lime;" | '''303'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 1080p [[high frame rate|HFR]]
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 5
+|-
+| style="background:lime;" | '''308'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 1440p [[high frame rate|HFR]]
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 10
+|-
+| style="background:lime;" | '''313'''
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 2160p
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 13–15
+|-
+| style="background:lime;" | '''315'''{{ref|media_type_table_note_4|[4]}}
+|<!--Default container  --> WebM
+|<!--Video resolution   --> 2160p [[high frame rate|HFR]]
+|<!--Video encoding     --> VP9
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> 20-25
+|}
+'''DASH (audio only)'''
+{| class="wikitable sortable" style="text-align: center;"
+! itag value{{ref|media_type_table_note_1|[1]}}
+! Default container
+! Audio encoding
+! Audio bitrate (kbit/s) {{ref|media_type_table_note_2|[2]}}
+|-
+!<!--itag value         --> 139
+|<!--Default container  --> M4A
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 48
+|-
+| style="background:lime;" | '''140'''
+|<!--Default container  --> M4A
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+| style="background:lime;" | '''141'''{{ref|media_type_table_note_5|[5]}}
+|<!--Default container  --> M4A
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 256
+|-
+| style="background:lime;" | '''171'''
+|<!--Default container  --> WebM
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 128
+|-
+!<!--itag value         --> 172
+|<!--Default container  --> WebM
+|<!--Audio encoding     --> Vorbis
+|<!--Audio bitrate      --> 192
+|}
+'''Live streaming'''
+{| class="wikitable sortable" style="text-align: center;"
+! itag value{{ref|media_type_table_note_1|[1]}}
+! Default container
+! data-sort-type="number"| Video resolution
+! Video encoding
+! Video profile
+! Video bitrate (Mbit/s) {{ref|media_type_table_note_2|[2]}}
+! Audio encoding
+! Audio bitrate (kbit/s) {{ref|media_type_table_note_2|[2]}}
+|-
+| style="background:lime;" | '''92'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.15–0.3
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 48
+|-
+| style="background:lime;" | '''93'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 360p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.5–1
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+| style="background:lime;" | '''94'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 480p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 0.8–1.25
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+| style="background:lime;" | '''95'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main
+|<!--Video bitrate      --> 1.5–3
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 256
+|-
+| style="background:lime;" | '''96'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 1080p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> High
+|<!--Video bitrate      --> 2.5–6
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 256
+|-
+!<!--itag value         --> 120{{ref|media_type_table_note_6|[6]}}
+|<!--Default container  --> FLV
+|<!--Video resolution   --> 720p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Main@L3.1
+|<!--Video bitrate      --> 2
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 128
+|-
+| style="background:lime;" | '''127'''{{ref|media_type_table_note_7|[7]}}
+|<!--Default container  --> TS
+|<!--Video resolution   --> {{n/a}}
+|<!--Video encoding     --> {{n/a}}
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 96
+|-
+| style="background:lime;" | '''128'''{{ref|media_type_table_note_7|[7]}}
+|<!--Default container  --> TS
+|<!--Video resolution   --> {{n/a}}
+|<!--Video encoding     --> {{n/a}}
+|<!--Video profile      --> {{n/a}}
+|<!--Video bitrate      --> {{n/a}}
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 96
+|-
+| style="background:lime;" | '''132'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 240p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Baseline
+|<!--Video bitrate      --> 0.15–0.2
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 48
+|-
+| style="background:lime;" | '''151'''
+|<!--Default container  --> TS
+|<!--Video resolution   --> 72p
+|<!--Video encoding     --> H.264
+|<!--Video profile      --> Baseline
+|<!--Video bitrate      --> 0.05
+|<!--Audio encoding     --> AAC
+|<!--Audio bitrate      --> 24
+|}
+{{note|media_type_table_note_1}}[1]
+''itag'' is an undocumented parameter used internally by YouTube to
+differentiate between quality profiles. Until December 2010, there was also a
+URL parameter known as ''fmt'' that allowed a user to force a profile using
+''itag'' codes.
+
+{{note|media_type_table_note_2}}[2]
+Approximate values based on statistical data; actual bitrate can be higher or
+lower due to variable encoding rate.
+
+{{note|media_type_table_note_3}}[3]
+Encoded in 15 FPS.
+
+{{note|media_type_table_note_4}}[4]
+Encoded in 60 FPS.
+
+{{note|media_type_table_note_5}}[5]
+Available in the DASH manifest and on YouTube's content distribution servers, but not used in playback.
+
+{{note|media_type_table_note_6}}[6]
+Has metadata referring to "Elemental Technologies Live".
+
+{{note|media_type_table_note_7}}[7]
+Used as alternate audio tracks.
+
+<ref>{{cite web| url=http://adterrasperaspera.com/blog/2010/05/24/approximate-youtube-bitrates| title=YTCrack v0.24b| first=Fred| last=Macall| year=2013| accessdate=August 25, 2013}}</ref><ref>{{cite web| url=http://users.ohiohills.com/fmacall/YTCRACK.TXT| title=Approximate YouTube Bitrates| first=Patrick| last=McFarland| date=May 24, 2010| accessdate=August 12, 2010}}</ref><ref>{{cite web| url=http://webvideotechniques.com/123/bigger-and-better-encoding-for-youtube-hd| title=Bigger and Better: Encoding for YouTube 720p HD |date=December 2008| accessdate=August 12, 2010}}</ref><ref>{{cite web| url=http://trevorgreenfield.com/rants-and-raves/youtubes-1080p-failure-depends-on-how-you-look-at-it| title=YouTube's 1080p&nbsp;– Failure Depends on How You Look At It| date=November 22, 2009| accessdate=August 12, 2010| last=Greenfield |first=Trevor}}{{dead link|date=July 2012}}</ref><ref>{{cite web| url=http://youtube-global.blogspot.com/2009/11/1080p-hd-comes-to-youtube.html| title=1080p HD Is Coming to YouTube| date=November 12, 2009| accessdate=August 12, 2010| last=Biggs| first=Billy}}</ref>
+</div>
+</div>
+
+====3D videos====
+In a video posted on July 21, 2009,<ref>{{cite web|url=http://www.youtube.com/watch?v=5ANcspdYh_U|title=YouTube in 3D|publisher=YouTube|date=July 21, 2009|accessdate=August 3, 2009}}</ref> YouTube software engineer Peter Bradshaw announced that YouTube users can now upload [[3D film|3D videos]]. The videos can be viewed in several different ways, including the common [[anaglyph 3D|anaglyph]] (cyan/red lens) method which utilizes glasses worn by the viewer to achieve the 3D effect.<ref>{{Cite news|url=http://www.physorg.com/news167575864.html|title=YouTube in 3D?|work=Physorg|date=July 23, 2009|accessdate=August 3, 2009|first=Miranda|last=Marquit}}</ref><ref>{{Cite news|url=http://techie-buzz.com/video-tools/youtube-3d-videos.html|title=YouTube 3D Videos|date=July 20, 2009|work=Techie Buzz|first=Keith|last=Dsouza|accessdate=August 3, 2009}}</ref><ref>{{Cite news|url=http://www.thinkdigit.com/Internet/YouTube-adds-a-dimension-3D-goggles-not_3219.html|title=YouTube adds a dimension, 3D goggles not included|date=July 21, 2009|accessdate=August 3, 2009|work=thinkdigit|first=Kshitij|last=Sobti}}</ref> The YouTube [[Adobe Flash|Flash]] player can display stereoscopic content interleaved in rows, columns or a checkerboard pattern, side-by-side or [[anaglyph 3D|anaglyph]] using a red/cyan, green/magenta or blue/yellow combination. In May 2011, an [[HTML5]] version of the YouTube player began supporting side-by-side 3D footage that is compatible with [[Nvidia 3D Vision]].<ref>{{cite web |url=http://www.anandtech.com/show/4354/youtube-adds-stereoscopic-3d-video-support-and-3d-vision-support-too |title=YouTube Adds Stereoscopic 3D Video Support (And 3D Vision Support, Too) |author=Ryan Smith |publisher=[[AnandTech]] |date=May 26, 2011 |accessdate=May 26, 2011}}</ref>
+
+===Content accessibility===
+YouTube offers users the ability to view its videos on web pages outside their website. Each YouTube video is accompanied by a piece of [[HTML]] that can be used to embed it on any page on the Web.<ref>{{cite web|title=YouTube embedded video guide|url=http://www.athenswalk.net/_/Blog/Entries/2013/7/30_YouTube_embed_code_guide.html}}</ref> This functionality is often used to embed YouTube videos in [[social networking]] pages and blogs. Users wishing to post a video discussing, inspired by or related to another user's video are able to make a "video response". On August 27, 2013, YouTube announced that it would remove video responses for being an underused feature.<ref name="responses">{{cite web|url=http://youtubecreator.blogspot.ca/2013/08/so-long-video-responsesnext-up-better.html|title=So long, video responses... Next up: better ways to connect|work=YouTube Creators Blog|date=August 27, 2013|accessdate=August 28, 2013}}</ref> Embedding, rating, commenting and response posting can be disabled by the video owner.<ref>{{cite web|url=https://support.google.com/youtube/answer/58123|title=Control comments and video responses|author=YouTube|accessdate=August 28, 2013}}</ref>
+
+YouTube does not usually offer a download link for its videos, and intends for them to be viewed through its website interface.<ref>{{cite web|url=http://www.youtube.com/t/terms|title=Terms of Use, 5.B|publisher=YouTube|accessdate=August 25, 2010}}</ref> A small number of videos, such as the weekly addresses by President [[Barack Obama]], can be downloaded as [[MPEG-4 Part 14|MP4]] files.<ref>{{Cite news|url=http://news.cnet.com/8301-17939_109-10144823-2.html|title=(Some) YouTube videos get download option|author=CNET|date=January 16, 2009|accessdate=January 17, 2009}}</ref> Numerous third-party web sites, applications and browser [[Plug-in (computing)|plug-ins]] allow users to download YouTube videos.<ref>{{Cite news|url=http://latimesblogs.latimes.com/technology/2009/02/---mark-milian.html?cid=149000259|title=YouTube looks out for content owners, disables video ripping|author=Milian, Mark|work=Los Angeles Times|date=February 19, 2009|accessdate=February 21, 2009}}</ref> In February 2009, YouTube announced a test service, allowing some partners to offer video downloads for free or for a fee paid through [[Google Checkout]].<ref>{{Cite news|url=http://www.washingtonpost.com/wp-dyn/content/article/2009/02/12/AR2009021203239.html|title=YouTube Hopes To Boost Revenue With Video Downloads|work=Washington Post|date=February 12, 2009|accessdate=February 19, 2009 | first=Leena | last=Rao}}</ref> In June 2012, Google sent [[cease and desist]] letters threatening legal action against several websites offering online download and conversion of YouTube videos.<ref>{{Cite news|url=http://torrentfreak.com/google-threatens-to-sue-huge-youtube-mp3-conversion-site-120619/|title=Google Threatens To Sue Huge YouTube MP3 Conversion Site|author=Torrentfreak|date=June 19, 2012|accessdate=September 4, 2013}}</ref> In response, [[Zamzar]] removed the ability to download YouTube videos from its site.<ref>{{cite web|url=http://blog.zamzar.com/2012/06/12/downloading-youtube-videos-no-longer-supported/|title=Downloading YouTube videos – no longer supported|author=Zamzar|date=June 12, 2012|accessdate=September 4, 2013}}</ref> The default settings when uploading a video to YouTube will retain a [[copyright]] on the video for the uploader, but since July 2012 it has been possible to select a [[Creative Commons]] license as the default, allowing other users to reuse and remix the material if it is free of copyright.<ref>{{Cite news|url=http://youtube-global.blogspot.com/2012/07/heres-your-invite-to-reuse-and-remix-4.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+youtube%2FPKJx+%28YouTube+Blog%29|title=Here's your invite to reuse and remix the 4 million Creative Commons-licensed videos on YouTube|work=YouTube Official Blog|date=July 25, 2012|accessdate=February 12, 2013}}</ref>
+
+====Platforms====
+Most modern [[smartphone]]s are capable of accessing YouTube videos, either within an application or through an optimized website. YouTube Mobile was launched in June 2007, using [[Real Time Streaming Protocol|RTSP]] streaming for the video.<ref>{{cite web|url=http://m.youtube.com/|title=YouTube Mobile}}</ref> Not all of YouTube's videos are available on the mobile version of the site.<ref>{{cite web|url=http://googlesystem.blogspot.com/2007/06/mobile-youtube.html|title=Mobile YouTube|author=Google Operating System|date=June 15, 2007|accessdate=January 17, 2009}}</ref>
+
+Since June 2007, YouTube's videos have been available for viewing on a range of [[Apple Inc.|Apple]] products. This required YouTube's content to be transcoded into Apple's preferred video standard, [[H.264/MPEG-4 AVC|H.264]], a process that took several months. YouTube videos can be viewed on devices including [[Apple TV]], [[iPod Touch]] and the [[iPhone]].<ref>{{cite web|url=http://www.apple.com/pr/library/2007/06/20youtube.html|title=YouTube Live on Apple TV Today; Coming to iPhone on June 29|publisher=[[Apple Inc.|Apple]]|date=June 20, 2007|accessdate=January 17, 2009}}</ref> In July 2010, the mobile version of the site was relaunched based on [[HTML5]], avoiding the need to use [[Adobe Flash Player]] and optimized for use with touch screen controls.<ref>{{cite web|url=http://www.geek.com/articles/mobile/goodbye-flash-youtube-mobile-goes-html5-on-iphone-and-android-2010079/|title=Goodbye Flash: YouTube mobile goes HTML5 on iPhone and Android|author=Zibreg, Christian|date=July 8, 2010|accessdate=January 9, 2012}}</ref> The mobile version is also available as an [[Mobile app|app]] for the [[Android (operating system)|Android]] platform.<ref>{{cite web|url=http://techcrunch.com/2010/07/07/youtube-iphone-mobile-html5/|title=YouTube Mobile Goes HTML5, Video Quality Beats Native Apps Hands Down|author=Kincaid, Jason|date=July 7, 2010|accessdate=January 9, 2012}}</ref><ref>{{cite web|url=http://googlemobile.blogspot.com/2010/12/youtube-21-app-now-available-on-android.html|title=YouTube 2.1 App Now Available on Android Market|date=December 8, 2010|accessdate=January 9, 2012}}</ref> In September 2012, YouTube launched its first app for the iPhone, following the decision to drop YouTube as one of the preloaded apps in the iPhone 5 and [[iOS]] 6 operating system.<ref>{{cite news|url=http://www.guardian.co.uk/technology/appsblog/2012/sep/11/youtube-iphone-app|title=New YouTube iPhone app preempts iOS6 demotion|work=The Guardian|location=London|date=September 11, 2012|accessdate=September 11, 2012}}</ref> According to [[GlobalWebIndex]], YouTube was used by 35% of [[smartphone]] users between April and June 2013, making it the third most used app.<ref>{{cite web |url=http://www.businessinsider.com/google-smartphone-app-popularity-2013-9#infographic |title=Google+ Is The Fourth Most-Used Smartphone App |author=Cooper Smith |work=Business Insider |date=September 5, 2013 |accessdate=September 5, 2013}}</ref>
+
+A [[TiVo]] service update in July 2008 allowed the system to search and play YouTube videos.<ref>{{Cite news|url=http://gizmodo.com/5026092/tivo-getting-youtube-streaming-today|title=TiVo Getting YouTube Streaming Today|publisher=[[Gizmodo]]|date=July 17, 2007|accessdate=February 17, 2009}}</ref> In January 2009, YouTube launched "YouTube for TV", a version of the website tailored for set-top boxes and other TV-based media devices with web browsers, initially allowing its videos to be viewed on the [[PlayStation 3]] and [[Wii]] [[video game console]]s.<ref>{{Cite news|url=http://latimesblogs.latimes.com/technology/2009/01/youtube-wii-ps3.html|title=YouTube video comes to Wii and PlayStation 3 game consoles|work=Los Angeles Times|date=January 15, 2009|accessdate=January 17, 2009}}</ref><ref>{{cite web| title=Coming Up Next... YouTube on Your TV | url=http://www.youtube.com/blog?entry=sDFlZe7FwJI | archiveurl=http://www.webcitation.org/5leW9usjn | archivedate=November 29, 2009 | publisher=YouTube Blog | date=January 15, 2009 | accessdate=May 10, 2009}}</ref> In June 2009, YouTube XL was introduced, which has a simplified interface designed for viewing on a standard television screen.<ref>{{cite web| title=Experience YouTube XL on the Big Screen| url=http://www.youtube.com/blog?entry=ByKmsHdhra8| work=YouTube Blog | publisher=YouTube | date=June 2, 2009 | accessdate=June 20, 2009}}</ref>  YouTube is also available as an app on [[Xbox Live]].<ref>{{cite web| title=Xbox Live Getting Live TV, YouTube & Bing Voice Search| url=http://mashable.com/2011/06/06/youtube-bing-tv-xbox-live/| work=Mashable| date=June 6, 2011 | accessdate=December 22, 2011}}</ref> On November 15, 2012, Google launched an official app for the [[Wii]], allowing users to watch YouTube videos from the Wii channel.<ref>{{Cite news|url=http://www.techradar.com/news/gaming/consoles/youtube-app-wanders-onto-nintendo-wii-days-before-wii-u-launch-1112972|title=YouTube app wanders onto Nintendo Wii days before Wii U launch|publisher=Techradar.com|date=November 15, 2012|accessdate=November 20, 2012}}</ref> An app is also available for [[Wii U]] and [[Nintendo 3DS]], and videos can be viewed on the [[Internet Browser (Wii U)|Wii U Internet Browser]] using HTML5.<ref>{{Cite news|url=http://youtube-global.blogspot.ca/2012/11/just-for-u-youtube-arrives-on-wii-u.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+youtube/PKJx+(YouTube+Blog)|title=Just for U: YouTube arrives on Wii U|publisher=Youtube.com|date=November 22, 2012|accessdate=December 17, 2012}}</ref> Google made YouTube available on the [[Roku]] player on December 17, 2013<ref>[http://variety.com/2013/digital/news/youtube-channel-now-playing-on-roku-1200969005/ ''Variety: YouTube Channel Now Playing on Roku''] Retrieved December 17, 2013</ref> and in October 2014, the Sony [[PlayStation 4]].<ref>[http://youtube-global.blogspot.co.uk/2014/10/pwn-share-repeat-with-youtube-on.html Pwn, share, repeat with YouTube on PlayStation 4], YouTube blog, October 28, 2014.</ref>
+
+===Localization===
+On June 19, 2007, Google CEO [[Eric Schmidt]] was in Paris to launch the new [[Internationalization and localization|localization]] system.<ref name="local"/> The interface of the website is available with localized versions in 75 countries, one territory (Hong Kong) and a worldwide version.<ref>{{cite web|url=https://www.youtube.com|title=YouTube homepage (See the localisation section below)|accessdate=February 9, 2015}}</ref>
+{| class="wikitable sortable collapsible collapsed"
+|-
+! Country
+! Language
+! Launch date
+|-
+| {{Flag|USA}} (and worldwide launch)
+| [[American English|English]]
+| {{dts|2005|February|15|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Brazil}}
+| [[Brazilian Portuguese|Portuguese]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|France}}
+| [[French language|French]], and [[Basque language|Basque]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local">{{Cite news|first=Peter|last=Sayer|url=http://www.pcadvisor.co.uk/news/index.cfm?NewsID=9772|title=Google launches YouTube France News|publisher=PC Advisor|date=June 19, 2007|accessdate=August 3, 2009}}</ref>
+|-
+| {{Flag|Ireland}}
+| [[Hiberno-English|English]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Italy}}
+| [[Italian language|Italian]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Japan}}
+| [[Japanese language|Japanese]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Netherlands}}
+| [[Dutch language|Dutch]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Poland}}
+| [[Polish language|Polish]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Spain}}
+| [[Spanish language|Spanish]], [[Galician language|Galician]], [[Catalan language|Catalan]], and [[Basque language|Basque]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|United Kingdom}}
+| [[British English|English]]
+| {{dts|2007|June|19|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Mexico}}
+| [[Mexican Spanish|Spanish]]
+| {{dts|2007|October|11|format=mdy}}<ref>{{cite web|url=http://www.eluniversal.com.mx/articulos/43235.html|title=Presentan hoy YouTube México|publisher=[[El Universal (Mexico City)|El Universal]]|date=October 11, 2007|accessdate=September 9, 2010|language=Spanish|trans_title=YouTube México launched today}}{{dead link|date=February 2014}}</ref>
+|-
+| {{Flag|Hong Kong}}
+| [[Traditional Chinese characters|Chinese]], and [[Hong Kong English|English]]
+| {{dts|2007|October|17|format=mdy}}<ref>{{Cite news|url=http://stanley5.blogspot.com/2007/10/youtube.html|title=中文上線&nbsp;– YouTube 香港中文版登場！|publisher=Stanley5|date=October 17, 2007|accessdate=January 2, 2012}}</ref>
+|-
+| {{Flag|Taiwan}}
+| [[Traditional Chinese characters|Chinese]]
+| {{dts|2007|October|18|format=mdy}}<ref>{{Cite news|url=http://www.zdnet.com.tw/news/software/0,2000085678,20125299,00.htm|title=YouTube台灣網站上線 手機版再等等|publisher=[[ZDNet]]|date=October 18, 2007|accessdate=January 2, 2012}}{{dead link|date=February 2013}}</ref>
+|-
+| {{Flag|Australia}}
+| [[Australian English|English]]
+| {{dts|2007|October|22|format=mdy}}<ref name="AUS-NZ">{{Cite news|first=Kristen|last=Nicole|url=http://mashable.com/2007/10/22/youtube-australia-new-zealand/|title=YouTube Launches in Australia & New Zealand|publisher=[[Mashable]]|date=October 22, 2007|accessdate=August 3, 2009}}</ref>
+|-
+| {{Flag|New Zealand}}
+| [[New Zealand English|English]]
+| {{dts|2007|October|22|format=mdy}}<ref name="AUS-NZ" />
+|-
+| {{Flag|Canada}}
+| [[Canadian French|French]], and [[Canadian English|English]]
+| {{dts|2007|November|6|format=mdy}}<ref>{{Cite news|first=Kristen|last=Nicole|url=http://mashable.com/2007/11/06/youtube-canada/|title=YouTube Canada Now Live|date=November 6, 2007|publisher=[[Mashable]]|accessdate=August 3, 2009}}</ref>
+|-
+| {{Flag|Germany}}
+| [[German language|German]]
+| {{dts|2007|November|8|format=mdy}}<ref>{{Cite news|first=Adam|last=Ostrow|url=http://mashable.com/2007/11/08/youtube-germany/|title=YouTube Germany Launches|publisher=[[Mashable]]|date=November 8, 2007|accessdate=August 3, 2009}}</ref>
+|-
+| {{Flag|Russia}}
+| [[Russian language|Russian]]
+| {{dts|2007|November|13|format=mdy}}<ref>{{Cite news|first=|last=|url=http://www.kommersant.ru/doc/824940/|title=YouTube перевелся на русский|language=ru|publisher=Kommersant Moscow|date=November 14, 2007|accessdate=March 22, 2012}}</ref>
+|-
+| {{Flag|South Korea}}
+| [[Korean language|Korean]]
+| {{dts|2008|January|23|format=mdy}}<ref>{{Cite news|first=Martyn|last=Williams|url=http://www.pcworld.com/article/141684/youtube_launches_korean_site.html|publisher=[[PC World]]|date=January 23, 2008|accessdate=March 22, 2012|title=YouTube Launches Korean Site}}</ref>
+|-
+| {{Flag|India}}
+| [[Hindi language|Hindi]], [[Bengali language|Bengali]], [[Indian English|English]], [[Gujarati language|Gujarati]], [[Kannada language|Kannada]], [[Malayalam language|Malayalam]], [[Marathi language|Marathi]], [[Tamil language|Tamil]], [[Telugu language|Telugu]], and [[Urdu]]
+| {{dts|2008|May|7|format=mdy}}<ref>{{Cite news|first=Sandeep|last=Joshi|url=http://www.hindu.com/2008/05/08/stories/2008050857242200.htm|title=YouTube now has an Indian incarnation|work=The Hindu  |date=May 8, 2008|accessdate=August 3, 2009|location=Chennai, India}}</ref>
+|-
+| {{Flag|Israel}}
+| [[Hebrew language|Hebrew]], and [[English language|English]]
+| {{dts|2008|September|16|format=mdy}}
+|-
+| {{Flag|Czech Republic}}
+| [[Czech language|Czech]]
+| {{dts|2008|October|9|format=mdy}}<ref>{{Cite news|first=Petr|last=Bokuvka|url=http://czechdaily.wordpress.com/2008/10/12/czech-version-of-youtube-launched-and-its-crap-it-sucks/|title=Czech version of YouTube launched. And it's crap. It sucks|work=The Czech Daily Word|publisher=Wordpress.com|date=October 12, 2008|accessdate=August 3, 2009}}</ref>
+|-
+| {{Flag|Sweden}}
+| [[Swedish language|Swedish]]
+| {{dts|2008|October|22|format=mdy}}<ref>[http://www.kullin.net/2008/10/launch-video-unavailable-when-youtube-opens-up-in-sweden/ Launch video unavailable when YouTube opens up in Sweden] October 23, 2008. Retrieved December 7, 2012.</ref>
+|-
+| {{Flag|South Africa}}
+| [[Afrikaans language|Afrikaans]], [[Zulu language|Zulu]], and [[South African English|English]]
+| {{dts|2010|May|17|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Argentina}}
+| [[Argentine Spanish|Spanish]]
+| {{dts|2010|September|8|format=mdy}}<ref name="countries">{{cite web|url=http://www.webcitation.org/5sbofbU9A|title=YouTube launches in Argentina|date=September 9, 2010|accessdate=September 9, 2010}}</ref>
+|-
+| {{Flag|Algeria}}
+| [[French language|French]], and [[literary Arabic|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1">{{cite web|url=http://arabcrunch.com/2011/03/youtube-launches-local-version-for-algeria-egypt-jordan-morocco-saudi-arabia-tunisia-and-yemen.html |title=YouTube Launches Local Version For Algeria, Egypt, Jordan, Morocco, Saudi Arabia, Tunisia and Yemen |publisher=ArabCrunch |accessdate=March 13, 2011}}</ref>
+|-
+| {{Flag|Egypt}}
+| [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Jordan}}
+| [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Morocco}}
+| [[French language|French]], and [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Saudi Arabia}}
+| [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Tunisia}}
+| [[French language|French]], and [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Yemen}}
+| [[Arabic language|Arabic]]
+| {{dts|2011|March|9|format=mdy}}<ref name="arabcrunch1"/>
+|-
+| {{Flag|Kenya}}
+| [[Swahili language|Swahili]], and [[English language|English]]
+| {{dts|2011|September|1|format=mdy}}<ref>{{Cite news|first=Nmachi|last=Jidenma|url=http://thenextweb.com/africa/2011/10/05/google-launches-youtube-in-kenya/|title=Google launches YouTube in Kenya|publisher=[[The Next Web]]|date=September 1, 2011|accessdate=March 22, 2012}}</ref>
+|-
+| {{Flag|Philippines}}
+| [[Filipino language|Filipino]], and [[Philippine English|English]]
+| {{dts|2011|October|13|format=mdy}}<ref name="philippines">{{Cite news|first=Tam|last=Nod|url=http://www.philstar.com/Article.aspx?articleId=737018&publicationSubCategoryId=200|title=YouTube launches 'The Philippines'|publisher=The Philippine Star|date=October 13, 2011|accessdate=October 13, 2011}}</ref>
+|-
+| {{Flag|Singapore}}
+| [[Singapore English|English]]
+| {{dts|2011|October|20|format=mdy}}<ref>{{cite news|title=YouTube launches Singapore site|url=http://www.todayonline.com/Singapore/EDC111020-0000359/YouTube-launches-Singapore-site|accessdate=October 20, 2011|newspaper=TODAY|date=October 20, 2011}}{{dead link|date=February 2013}}</ref>
+|-
+| {{Flag|Belgium}}
+| [[Belgian French|French]], and [[Dutch language|Dutch]]
+| {{dts|2011|November|16|format=mdy}}<ref name="local" />
+|-
+| {{Flag|Colombia}}
+| [[Colombian Spanish|Spanish]]
+| {{dts|2011|November|30|format=mdy}}<ref>[http://thenextweb.com/la/2011/12/01/youtube-launches-localized-website-for-columbia/ YouTube launches localized website for Colombia] December 1, 2011. Retrieved December 1, 2011.</ref>
+|-
+| {{Flag|Uganda}}
+| [[Ugandan English|English]]
+| {{dts|2011|December|2|format=mdy}}<ref>[http://pctechmagazine.com/index.php?option=com_content&view=article&id=1069:google-launches-youtube-uganda&catid=1:latest-news&Itemid=162 Google Launches YouTube Uganda] December 2, 2011. Retrieved January 15, 2012.</ref>
+|-
+| {{Flag|Nigeria}}
+| [[Nigerian Standard English|English]]
+| {{dts|2011|December|7|format=mdy}}<ref>[http://www.techmtaa.com/2011/12/07/google-to-launch-youtube-nigeria-today/ Google to Launch YouTube Nigeria Today] December 7, 2011. Retrieved January 15, 2012.</ref>
+|-
+| {{Flag|Chile}}
+| [[Spanish language|Spanish]]
+| {{dts|2012|January|20|format=mdy}}<ref>[http://nextvlatam.com/index.php/5-otts/google-launches-youtube-chile/ Google launches YouTube Chile]{{dead link|date=February 2014}} March 19, 2012. Retrieved March 22, 2012.</ref>
+|-
+| {{Flag|Hungary}}
+| [[Hungarian language|Hungarian]]
+| {{dts|2012|February|29|format=mdy}}<ref>[http://kultura.hu/main.php?folderID=1094&articleID=323455&ctag=&iid=11 Google Launches Hungarian YouTube]{{dead link|date=February 2013}} March 12, 2012. Retrieved March 22, 2012.</ref>
+|-
+| {{Flag|Malaysia}}
+| [[Malaysian language|Malay]], and [[Malaysian English|English]]
+| {{dts|2012|March|22|format=mdy}}<ref>[http://www.webpronews.com/youtube-launches-local-domain-for-malaysia-2012-03 YouTube Launches Local Domain For Malaysia] March 22, 2012. Retrieved March 22, 2012.</ref>
+|-
+| {{Flag|Peru}}
+| [[Spanish language|Spanish]]
+| {{dts|2012|March|25|format=mdy}}<ref>[http://www.webpronews.com/youtube-peru-launched-expansion-continues-2012-03 YouTube Peru Launched, Expansion continues] March 27, 2012. Retrieved April 1, 2012.</ref>
+|-
+| {{Flag|United Arab Emirates}}
+| [[Arabic language|Arabic]], and [[English language|English]]
+| {{dts|2012|April|1|format=mdy}}<ref>{{cite web|url=http://www.emirates247.com/business/technology/uae-version-of-youtube-launched-2012-04-02-1.451741|title=UAE version of YouTube launched|publisher=Emirates 247|date=April 2, 2012|accessdate=February 14, 2014|author=Bindu Suresh Rai}}</ref>
+|-
+| {{Flag|Greece}}
+| [[Greek language|Greek]]
+| {{dts|2012|May|1|format=mdy}}
+|-
+| {{Flag|Indonesia}}
+| [[Indonesian language|Indonesian]], and [[English language|English]]
+| {{dts|2012|May|17|format=mdy}}<ref>[http://www.thejakartaglobe.com/home/youtube-launches-indonesian-version/524443  "YouTube Launches Indonesian Version"], June 15, 2012. Retrieved July 8, 2012.</ref>
+|-
+| {{Flag|Ghana}}
+| [[English language|English]]
+| {{dts|2012|June|5|format=mdy}}<ref>[http://www.humanipo.com/blog/713/Google-launches-YouTube-in-Ghana  "Google launches YouTube in Ghana"], June 22, 2012. Retrieved July 8, 2012.</ref>
+|-
+| {{Flag|Senegal}}
+| [[French language|French]], and [[English language|English]]
+| {{dts|2012|July|4|format=mdy}}<ref>[http://www.telecompaper.com/news/youtube-launches-local-portal-in-senegal  "YouTube launches local portal in Senegal"], Jubr>
+{{note|media_type_table_note_3}}[3] itag 120 is for live streaming and has metadata referring to "Elemental Technologies Live".July 16, 2012. Retrieved July 25, 2012.</ref>
+|-
+| {{Flag|Turkey}}
+| [[Turkish language|Turkish]]
+| {{dts|2012|October|1|format=mdy}}<ref>[http://www.aa.com.tr/en/turkiye/86446--g  "YouTube's Turkish version goes into service"], October 1, 2012. Retrieved October 1, 2012.</ref>
+|-
+| {{Flag|Ukraine}}
+| [[Ukrainian language|Ukrainian]], and [[Russian language|Russian]]
+| {{dts|2012|December|13|format=mdy}}<ref>{{Cite news|first=Maryna|last=Tarasova|url=http://google-ukraine-blog.blogspot.com/2012/12/youtube.html|publisher=Google Ukraine Blog|title=YouTube приходить в Україну! (YouTube comes in Ukraine!)|date=December 13, 2012|location=Ukraine|language=uk}}</ref>
+|-
+| {{Flag|Denmark}}
+| [[Danish language|Danish]]
+| {{dts|2013|February|1|format=mdy}}<ref>{{Cite news|url=http://www.iprospect.dk/youtube-lanceres-i-danmark|publisher=iProspect|title=YouTube lanceres i Danmark|accessdate=April 17, 2013|location=Denmark}}{{dead link|date=February 2014}}</ref>
+|-
+| {{Flag|Finland}}
+| [[Finnish language|Finnish]]
+| {{dts|2013|February|1|format=mdy}}<ref>{{Cite news|first=Vilja|last=Sormunen|url=http://www.klok.fi/blog/youtube-launches-in-the-nordics/|publisher=KLOK|title=YouTube Launches in the Nordics|date=February 6, 2013|accessdate=February 11, 2013|location=Nordic}}</ref>
+|-
+| {{Flag|Norway}}
+| [[Norwegian language|Norwegian]]
+| {{dts|2013|February|1|format=mdy}}<ref>{{Cite news|url=http://www.tono.no/YouTube+lansert+i+Norge.12888.cms|publisher=[[TONO]]|title=YOUTUBE LAUNCHED IN NORWAY|accessdate=April 17, 2013|location=Norway}}</ref>
+|-
+| {{Flag|Switzerland}}
+| [[German language|German]], [[French language|French]], and [[Italian language|Italian]]
+| {{dts|2013|March|29|format=mdy}}<ref>{{Cite news|url=http://www.swissinfo.ch/eng/business/YouTube_goes_Swiss.html?cid=35450210|publisher=[[swissinfo]]|title=YouTube goes Swiss|accessdate=April 17, 2013|location=Swiss}}</ref>
+|-
+| {{Flag|Austria}}
+| [[German language|German]]
+| {{dts|2013|March|29|format=mdy}}<ref>{{Cite news|url=http://www.wienerzeitung.at/themen_channel/wz_digital/digital_news/538498_YouTube.at-seit-Donnerstag-online.html|publisher=[[Wiener Zeitung]]|title=YouTube.at since Thursday online|accessdate=April 17, 2013|location=Austria}}</ref>
+|-
+| {{Flag|Romania}}
+| [[Romanian language|Romanian]]
+| {{dts|2013|April|18|format=mdy}}<ref>{{Cite news|url=http://www.zf.ro/zf-24/youtube-romania-se-lanseaza-intr-o-saptamana-10764820|publisher=ZF.ro|title=Youtube România se lansează într-o săptămână|accessdate=May 14, 2013|location=Romania}}</ref>
+|-	
+| {{Flag|Portugal}}
+| [[Portuguese language|Portuguese]]
+| {{dts|2013|April|25|format=mdy}}<ref>{{Cite news|url=http://www.lusonoticias.com/index.php?option=com_content&view=article&id=27764:google-lanca-versao-lusa-do-youtube&catid=343&Itemid=159|publisher=Luso Noticias|title=Google lança versão lusa do YouTube|accessdate=May 14, 2013|location=Portugal}}</ref>
+|-
+| {{Flag|Slovakia}}
+| [[Slovak language|Slovak]]
+| {{dts|2013|April|25|format=mdy}}<ref>{{cite web|url=http://vat.pravda.sk/obraz-a-zvuk/clanok/281254-slovaci-uz-mozu-oficialne-zarabat-na-tvorbe-videi-pre-youtube/|title=Slováci už môžu oficiálne zarábať na tvorbe videí pre YouTube|publisher=Vat Pravda|date=May 21, 2013|accessdate=February 14, 2014|author=[http://vat.pravda.sk/autor/64-svec-tomas/ tš]|language=Slovak}}</ref>
+|-
+| {{Flag|Bahrain}}
+| [[Arabic language|Arabic]]
+| {{dts|2013|August|16|format=mdy}}<ref name="gcc">{{cite web|url=http://www.tbreak.ae/news/youtube-expands-monetization-partnership-gcc|title=YouTube expands monetization and partnership in GCC|publisher=tbreak Media|date=September 16, 2013|accessdate=February 14, 2014|author=[http://www.tbreak.ae/author/theregos Nick Rego]}}</ref>
+|-
+| {{Flag|Kuwait}}
+| [[Arabic language|Arabic]]
+| {{dts|2013|August|16|format=mdy}}<ref name="gcc"/>
+|-
+| {{Flag|Oman}}
+| [[Arabic language|Arabic]]
+| {{dts|2013|August|16|format=mdy}}<ref name="gcc"/>
+|-
+| {{Flag|Qatar}}
+| [[Arabic language|Arabic]]
+| {{dts|2013|August|16|format=mdy}}<ref name="gcc"/>
+|-
+| {{Flag|Bosnia and Herzegovina}}
+| [[Bosnian language|Bosnian]], [[Croatian language|Croatian]], and [[Serbian language|Serbian]]
+| {{dts|2014|March|17|format=mdy}}
+|-
+| {{Flag|Bulgaria}}
+| [[Bulgarian language|Bulgarian]]
+| {{dts|2014|March|17|format=mdy}}<ref>{{cite web|url=https://newtrend.bg/digital-company/youtube/youtube-reklama-bulgaria|title=YouTube рекламата става достъпна и за България|publisher=New Trend|date=March 18, 2014|accessdate=April 5, 2014|author=[http://newtrend.bg/author/ivelina Ивелина Атанасова]|language=Bulgarian}}</ref>
+|-
+| {{Flag|Croatia}}
+| [[Croatian language|Croatian]]
+| {{dts|2014|March|17|format=mdy}}<ref>{{cite web|url=http://liderpress.hr/poslovna-znanja/oglasavanje-na-video-platformi-youtube-od-sad-dostupno-i-u-hrvatskoj/|title=Oglašavanje na video platformi YouTube od sad dostupno i u Hrvatskoj|publisher=Lider|date=March 19, 2014|accessdate=April 5, 2014|language=Croatian}}</ref>
+|-
+| {{Flag|Estonia}}
+| [[Estonian language|Estonian]]
+| {{dts|2014|March|17|format=mdy}}<ref>{{cite web|url=http://www.meedium.ee/blog/youtube-reklaamid-eestis|title=Youtube reklaamid - uued võimalused nüüd ka Eestis!|publisher=Meedium|date=March 19, 2014|accessdate=April 5, 2014|author=Siiri Oden|language=Estonian}}</ref>
+|-
+| {{Flag|Latvia}}
+| [[Latvian language|Latvian]]
+| {{dts|2014|March|17|format=mdy}}<ref>{{cite web|url=http://marketing.lv/tagad-reklamas-iespejas-youtube-kanala-iespejams-izmantot-ari-latvija/|title=Tagad reklāmas iespējas Youtube kanālā iespējams izmantot arī Latvijā|publisher=Marketing|date=March 18, 2014|accessdate=April 5, 2014|author=[http://marketing.lv/author/marta/ Marta]|language=Latvian}}</ref>
+|-
+| {{Flag|Lithuania}}
+| [[Lithuanian language|Lithuanian]]
+| {{dts|2014|March|17|format=mdy}}
+|-
+| {{Flag|Macedonia}}
+| [[Macedonian language|Macedonian]], [[Serbian language|Serbian]], and [[Turkish language|Turkish]]
+| {{dts|2014|March|17|format=mdy}}
+|-
+| {{Flag|Montenegro}}
+| [[Serbian language|Serbian]], and [[Croatian language|Croatian]]
+| {{dts|2014|March|17|format=mdy}}
+|-
+| {{Flag|Serbia}}
+| [[Serbian language|Serbian]]
+| {{dts|2014|March|17|format=mdy}}
+|-
+| {{Flag|Slovenia}}
+| [[Slovenian language|Slovenian]]
+| {{dts|2014|March|17|format=mdy}}<ref>{{cite web|url=http://www.dnevnik.si/magazin/znanost-in-tehnologija/na-youtube-prihajajo-tudi-slovenski-video-oglasi|title=Na Youtube prihajajo tudi slovenski video oglasi|publisher=[[Dnevnik (Slovenia)|Dnevnik]]|date=March 18, 2014|accessdate=April 5, 2014|author=STA|language=Slovenian}}</ref>
+|-
+| {{Flag|Thailand}}
+| [[Thai language|Thai]]
+| {{dts|2014|April|1|format=mdy}}<ref>{{cite web|url=http://www.nationmultimedia.com/business/YouTube-introduces-homepage-especially-30230795.html|title=YouTube introduces homepage especially|publisher=[[The Nation (Thailand)|The Nation]]|date=April 3, 2014|accessdate=April 4, 2014|author=Asina Pornwasin}}</ref>
+|-
+| {{Flag|Lebanon}}
+| [[Arabic language|Arabic]]
+| {{dts|2014|May|1|format=mdy}}<ref name="gcc"/>
+|-
+| {{Flag|Puerto Rico}}
+| [[Puerto Rican Spanish|Spanish]], and [[American English|English]]
+| {{dts|2014|August|23|format=mdy}}
+|-
+| {{Flag|Vietnam}}
+| [[Vietnamese language|Vietnamese]]
+| {{dts|2014|October|1|format=mdy}}<ref>[https://www.youtube.com/?hl=vi Google launches YouTube Việt Nam] October 1, 2014. Retrieved May 10, 2014.</ref>
+|-
+| {{Flag|Libya}}
+| [[Arabic language|Arabic]]
+| {{dts|2015|February|1|format=mdy}}
+|}
+
+The YouTube interface suggests which local version should be chosen on the basis of the [[IP address]] of the user. In some cases, the message "This video is not available in your country" may appear because of copyright restrictions or inappropriate content.<ref>{{cite web| title = Learn More: Video not available in my country|publisher = YouTube Help| url = http://www.google.com/support/youtube/bin/answer.py?hl=en-uk&answer=92571|accessdate=August 4, 2009}}</ref>
+
+The interface of the YouTube website is available in 61 language versions, including [[Amharic language|Amharic]], [[Bengali language|Bengali]], [[Icelandic language|Icelandic]], [[Persian language|Persian]] and [[Urdu language|Urdu]], which do not have local channel versions.<ref name="languages"/>
+
+Access to YouTube was blocked in [[Turkey]] between 2008 and 2010, following controversy over the posting of videos deemed insulting to [[Mustafa Kemal Atatürk]] and some material offensive to Muslims.<ref>{{Cite news| title = Turkey lifts two-year ban on YouTube| publisher = BBC News| url = http://www.bbc.co.uk/news/technology-11659816|date=October 30, 2010|accessdate=October 3, 2012}}</ref><ref>{{Cite news| title =Turks censor YouTube censorship|author=Danforth, Nick|work=San Francisco Chronicle| url = http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2009/07/30/ED68191LKM.DTL|date=July 31, 2009|accessdate=August 4, 2009}}</ref> In October 2012, a local version of YouTube was launched in Turkey, with the domain <code>youtube.com.tr</code>. The local version is subject to the content regulations found in [[Legal system of the Republic of Turkey|Turkish law]].<ref>{{Cite news| title = YouTube cedes to Turkey and uses local Web domain| publisher = CNET| url = http://news.cnet.com/8301-1023_3-57524907-93/youtube-cedes-to-turkey-and-uses-local-web-domain/|date=October 2, 2012|accessdate=October 3, 2012}}</ref>
+
+In March 2009, a dispute between YouTube and the British [[Royalties|royalty]] collection agency [[PRS for Music]] led to premium music videos being blocked for YouTube users in the United Kingdom. The removal of videos posted by the major record companies occurred after failure to reach agreement on a licensing deal. The dispute was resolved in September 2009.<ref>{{Cite news| title = Music videos back on YouTube in multi-million pound PRS deal|author=Barnett, Emma|work=The Daily Telegraph |location=London  | url = http://www.telegraph.co.uk/technology/google/6127624/Music-videos-back-on-YouTube-in-multi-million-pound-PRS-deal.html|date=September 3, 2009|accessdate=September 3, 2009 }}</ref> In April 2009, a similar dispute led to the removal of premium music videos for users in Germany.<ref>{{Cite news| title = Now YouTube stops the music in Germany|work=The Guardian |location=London  | url = http://www.guardian.co.uk/media/pda/2009/apr/01/youtube-digital-music-and-audio|date=April 1, 2009|accessdate=April 2, 2009 }}</ref>
+
+===Music Key===
+{{main|Music Key}}
+On November 12, 2014, YouTube announced the launch of Music Key, a [[Comparison of on-demand streaming music services|subscription music streaming]] service, providing advertising-free playback of official music videos hosted by YouTube, along with background and offline playback on mobile platforms. Music Key is intended to integrate with and replace the existing [[Google Play Music]] "All Access" service.<ref name=engadget-musickey>{{cite web |url=http://www.engadget.com/2014/11/12/youtube-launches-music-key/ |title=YouTube unveils Music Key subscription service, here's what you need to know |last=Trew |first=James |date=November 12, 2014 |website=Engadget |accessdate=November 13, 2014}}</ref><ref name=verge-musickey>{{cite web |url=http://www.theverge.com/2014/11/12/7201969/youtube-music-key-new-subscription-service |title=YouTube announces plans for a subscription music service |last=Newton |first=Casey |date=November 12, 2014 |website=The Verge |publisher=Vox Media |accessdate=November 13, 2014}}</ref><ref name=variety-musickey>{{cite web |url=http://variety.com/2014/digital/news/youtube-launches-music-key-subscription-service-with-more-than-30-million-songs-1201354498/ |title=YouTube Launches 'Music Key' Subscription Service with More Than 30 Million Songs |last=Spangler |first=Todd |date=November 12, 2014 |website=Variety |accessdate=November 13, 2014}}</ref>
+
+==April Fools==
+YouTube has featured an [[April Fools' Day|April Fools]] prank on the site on April 1 of every year since 2008:
+* '''2008:''' All the links to the videos on the main page were redirected to [[Rick Astley]]'s music video "[[Never Gonna Give You Up]]", a prank known as "[[Rickrolling]]".<ref>{{cite web| url=http://techcrunch.com/2008/03/31/youtube-rickrolls-users/ | title=YouTube RickRolls Users | publisher=TechCrunch.com | date=March 31, 2008 | accessdate=April 2, 2010}}</ref><ref>{{cite web| url=http://ryanspoon.com/blog/2008/03/31/youtube-rickrolls-april-fools-in/ | title=YouTube RickRolls April Fools In | publisher=RyanSpoon.com | date=March 31, 2008 | accessdate=April 2, 2010}}</ref>
+
+* '''2009:''' When clicking on a video on the main page, the whole page turned upside down. YouTube claimed that this was a new layout.<ref>{{cite web| url=http://www.searchcowboys.com/news/453 | title=April fools: YouTube turns the world up-side-down | publisher=searchcowboys.com | date=April 1, 2009 | accessdate=April 2, 2010}}</ref>
+
+* '''2010:''' YouTube temporarily released a "TEXTp" mode, which translated the colors in the videos to random upper case letters. YouTube claimed in a message that this was done in order to reduce bandwidth costs by $1 per second.<ref>{{cite web| url=http://youtube-global.blogspot.com/2010/03/textp-saves-youtube-bandwidth-money.html | title=TEXTp saves YouTube bandwidth, money | publisher=YouTube | date=April 1, 2010 | accessdate=April 2, 2010}}</ref>
+
+* '''2011:''' The site celebrated its "100th anniversary" with a "1911 button" and a range of [[Photographic print toning|sepia-toned]] silent, early 1900s-style films, including "Flugelhorn Feline", a parody of [[Keyboard Cat]].<ref>{{cite news| url=http://www.telegraph.co.uk/technology/google/8421394/YouTube-goes-back-to-1911-for-April-Fools-Day.html| title=YouTube goes back to 1911 for April Fools' Day|work=The Daily Telegraph |location=London  | date=April 1, 2011 | accessdate=April 1, 2011| first=Shane| last=Richmond}}</ref>
+
+* '''2012:''' Clicking on the image of a DVD next to the site logo led to a video about "The YouTube Collection", an option to order every YouTube video for home delivery on [[DVD]], [[videotape|videocassette]], [[Laserdisc]], or [[Betamax]] tapes. The spoof promotional video touted "the complete YouTube experience completely offline."<ref>{{cite news| url=http://www.dailymail.co.uk/news/article-2123580/April-Fools-Day-2012-Google-YouTube-past-jokes.html| title=Simon Cowell's bromance, the self-driving Nascar and Hungry Hippos for iPad... the best April Fools' gags|work=The Daily Mail |location=London  | date=April 1, 2012 | accessdate=April 2, 2012| first1=Pamela| last1=Owen|first2=Meghan|last2=Keneally}}</ref>
+
+* '''2013:''' YouTube teamed up with newspaper satire company ''[[The Onion]]'' to claim that the video sharing website was launched as a contest which had finally come to an end, and would announce a winner of the contest when the site went back up in 2023. A video of two presenters announcing the nominees streamed live for twelve hours.<ref>{{cite news| url=http://newsfeed.time.com/2013/04/01/watch-youtube-announces-it-will-shut-down/| title=WATCH: YouTube Announces It Will Shut Down|work=Time.com | date=April 1, 2013 | accessdate=April 26, 2013| first=Kristene|last=Quan}}</ref>
+
+* '''2014:''' YouTube announced that it was responsible for the creation of all viral video trends, and revealed previews of upcoming memes, such as "Clocking", "Kissing Dad", and "Glub Glub Water Dance".<ref>[http://www.huffingtonpost.com/2014/04/01/youtube-april-fools_n_5068694.html YouTube Reveals Its Viral Secrets In April Fools' Day Video] Kleinman, Alexis, ''Huffington Post'', April 1, 2014. Retrieved April 1, 2014.</ref>
+* '''2015:''' YouTube added a music button to the video bar that played samples from "[[Sandstorm (Darude composition)|Sandstorm]]" by [[Darude]]. Additionally, when users searched for a song title, a message would appear saying "Did you mean: Darude - Sandstorm by Darude".<ref>{{cite web|last1=Chu|first1=Sanna|title=YouTube Adds Darude ‘Sandstorm’ Button To Its Videos For April Fools’ Day|url=http://www.idigitaltimes.com/youtube-adds-darude-sandstorm-button-its-videos-april-fools-day-428591|website=idigitaltimes.com|accessdate=1 April 2015}}</ref>
+
+==Social impact==
+{{Main|Social impact of YouTube}}
+Both private individuals<ref name=Reuters20070225/> and large production companies<ref name=WiredUK20131127>{{cite web |url=http://www.wired.co.uk/news/archive/2013-11/27/youtube-community |title=The rise and fall of YouTube's celebrity pioneers |last=Tufnell |first=Nicholas |date=November 27, 2013 |website=Wired UK |archiveurl=http://www.webcitation.org/6Mblm3WtO |archivedate=January 13, 2014 }}</ref> have used YouTube to grow audiences. Independent content creators have built grassroots followings numbering in the thousands at very little cost or effort, while mass retail and radio promotion proved problematic.<ref name=Reuters20070225>{{cite web |url=http://www.reuters.com/article/2007/02/26/us-youtube-idUSN2518918320070226 |title=YouTube stars don't always welcome record deals |last=Bruno |first=Antony |date=February 25, 2007 |publisher=Reuters |archiveurl=http://www.webcitation.org/6Mg15Wsfd |archivedate=January 16, 2014 }}</ref> Concurrently, [[old media]] celebrities moved into the website at the invitation of a YouTube management that witnessed early content creators accruing substantial followings, and perceived audience sizes potentially larger than that attainable by television.<ref name=WiredUK20131127/>  While YouTube's revenue-sharing "Partner Program" made it possible to earn a substantial living as a video producer—its top five hundred partners each earning more than $100,000 annually<ref name="NewYorker20120116">{{cite news |url=http://www.newyorker.com/reporting/2012/01/16/120116fa_fact_seabrook?currentPage=all |title=Streaming Dreams / YouTube turns pro|website=The New Yorker |last= Seabrook |first=John |date=January 16, 2012 |archiveurl=http://www.webcitation.org/6MVASRAtr |archivedate=January 9, 2014 }}</ref>—in 2012 [[Complete Music Update|CMU]] business editor characterized YouTube as "a free-to-use... promotional platform for the music labels".<ref name=BBC20121221>{{cite web |url=http://www.bbc.co.uk/news/technology-20812870 |title=Gangnam Style hits one billion views on YouTube |last= |first= |date=December 21, 2012 |publisher=BBC News |archiveurl=http://www.webcitation.org/6MjXqzO00 |archivedate=January 19, 2014 }}</ref>  In 2013 ''[[Forbes]]''' Katheryn Thayer asserted that digital-era artists' work must not only be of high quality, but must elicit reactions on the YouTube platform and social media.<ref name=Forbes20131029>{{cite web |url=http://www.forbes.com/sites/katherynthayer/2013/10/29/the-youtube-music-awards-why-artists-should-care/ |title=The Youtube Music Awards: Why Artists Should Care |last=Thayer |first=Katheryn |date=October 29, 2013 |website=Forbes |archiveurl=http://www.webcitation.org/6KupXHvTe |archivedate=November 6, 2013 }}</ref> In 2013, videos of the 2.5% of artists categorized as "mega", "mainstream" and "mid-sized" received 90.3% of the relevant views on YouTube and [[Vevo]].<ref name=NextBigSound2013YearInRewind>{{cite web |url=https://www.nextbigsound.com/industryreport/2013/ |title=2013: Year in Rewind (report title) / Mapping the Landscape (specific section title) |date=January 2014 |publisher=[[Next Big Sound]] |archiveurl=http://www.webcitation.org/6Ml0gCaZu |archivedate=January 20, 2014 }} "Developing" artists 6.9%; "Undiscovered" artists 2.8%.</ref> By early 2013 ''[[Billboard (magazine)|Billboard]]'' had announced that it was factoring YouTube streaming data into calculation of the [[Billboard Hot 100|''Billboard'' Hot 100]] and related genre charts.<ref name=Billboard20130220>{{cite web |url=http://www.billboard.com/articles/news/1549399/hot-100-news-billboard-and-nielsen-add-youtube-video-streaming-to-platforms |title=Hot 100 News: Billboard and Nielsen Add YouTube Video Streaming to Platforms |author=''Billboard'' staff  |date=February 20, 2013 |website=Billboard |archiveurl=http://www.webcitation.org/6Mje9ORDm |archivedate=January 19, 2014 }}</ref>
+
+Observing that face-to-face communication of the type that online videos convey has been "fine-tuned by millions of years of evolution", TED [[curator]] [[Chris Anderson (entrepreneur)|Chris Anderson]] referred to several YouTube contributors and asserted that "what [[Johannes Gutenberg|Gutenberg]] did for writing, online video can now do for face-to-face communication".<ref name=TED201007Anderson>{{cite web |url=http://www.ted.com/talks/chris_anderson_how_web_video_powers_global_innovation.html |title=How web video powers global innovation |last=Anderson |first=Chris |date=July 2010 |publisher=[[TED (conference)|TED]] |archiveurl=http://www.webcitation.org/6M8aa7tLF |archivedate=December 25, 2013 }} (click on "Show transcript" tab) • Corresponding [http://www.webcitation.org/6M8ap1TVP YouTube video] from official TED channel was titled "How YouTube is driving innovation."</ref> Anderson asserted that it's not far-fetched to say that online video will dramatically accelerate scientific advance, and that video contributors may be about to launch "the biggest learning cycle in human history."<ref name="TED201007Anderson"/> In education, for example, the [[Khan Academy]] grew from YouTube video tutoring sessions for founder Salman Khan's cousin into what ''[[Forbes]]''' &nbsp;Michael Noer called "the largest school in the world", with technology poised to [[disruptive innovation|disrupt]] how people learn.<ref name=Forbes20121102>{{cite web |url=http://www.forbes.com/sites/michaelnoer/2012/11/02/one-man-one-computer-10-million-students-how-khan-academy-is-reinventing-education/print/ |title=One Man, One Computer, 10 Million Students: How Khan Academy Is Reinventing Education |last=Noer |first=Michael |date=November 2, 2012 |website=Forbes |archiveurl=http://www.webcitation.org/6MEcAmYCW |archivedate=December 29, 2013 }}</ref>
+
+YouTube was awarded a 2008 [[George Foster Peabody Award]], the website being described as a [[Speakers' Corner]] that "both embodies and promotes democracy."<ref>[http://www.peabodyawards.com/award-profile/youtube.com 68th Annual Peabody Awards], May 2009.</ref> ''The Washington Post'' reported that a disproportionate share of YouTube's most subscribed channels feature minorities, contrasting with mainstream television in which the stars are largely white.<ref name=WashPost20120420>{{cite web |url=http://www.washingtonpost.com/business/economy/in-online-video-minorities-find-an-audience/2012/04/20/gIQAdhliWT_story.html |title=In online video, minorities find an audience |last=Tsukayama |first=Hayley |date=April 20, 2012 |website=The Washington Post |archiveurl=http://www.webcitation.org/6MhzkT8Bw |archivedate=January 18, 2014 }}</ref>
+
+A [[Pew Research Center]] study reported the development of "visual journalism", in which citizen eyewitnesses and established news organizations share in content creation.<ref name=PEW20120716>{{cite web |url=http://www.journalism.org/2012/07/16/press-release-2/ |title=PEJ: YouTube & News:  A New Kind of Visual Journalism Is Developing, but Ethics of Attribution Have Yet to Emerge |last=Journalism Project Staff |date=July 16, 2012 |publisher=[[Pew Research Center]] |archiveurl=http://www.webcitation.org/6MG65Jkgs |archivedate=December 30, 2013 }}</ref> The study also concluded that YouTube was becoming an important platform by which people acquire news.<ref name=PewYTnews20120716>{{cite web |url=http://www.journalism.org/2012/07/16/youtube-news/ |title=YouTube and News: A New Kind of Visual News |last=Journalism Project Staff |date=July 16, 2012 |publisher=[[Pew Research Center]] |archiveurl=http://www.webcitation.org/6MGBLpG5R |archivedate=December 3, 2013 }}</ref>
+
+YouTube has enabled people to more directly engage with government, such as in the [[CNN/YouTube presidential debates]] (2007) in which ordinary people submitted questions to U.S. presidential candidates via YouTube video, with a [[techPresident]] co-founder saying that Internet video was changing the political landscape.<ref name=NYTimes20070613>{{cite news |url=http://www.nytimes.com/2007/06/13/us/politics/13cnd-youtube.html?_r=2&oref=slogin&pagewanted=all |title=New Presidential Debate Site? Clearly, YouTube |last=Seelye |first=Katharine Q. |date=June 13, 2007 |website=The New York Times |archiveurl=http://www.webcitation.org/6MkfSh3oB |archivedate=January 19, 2014 }}</ref> Describing the [[Arab Spring|Arab Spring (2010- )]], sociologist [[Philip N. Howard]] quoted an activist's succinct description that organizing the political unrest involved using "Facebook to schedule the protests, Twitter to coordinate, and YouTube to tell the world."<ref name=PacificStd20110223>{{cite web |url=http://www.psmag.com/navigation/politics-and-law/the-cascading-effects-of-the-arab-spring-28575/ |title=The Arab Spring's Cascading Effects |last=Howard |first=Philip N. |date=February 23, 2011 |website=Pacific Standard |archiveurl=http://www.webcitation.org/6MSsLaMuk |archivedate=January 8, 2014 }}</ref> In 2012, more than a third of the U.S. Senate introduced a resolution condemning [[Joseph Kony]] 16 days after the "[[Kony 2012]]" video was posted to YouTube, with resolution co-sponsor Senator Lindsey Graham remarking that the video "will do more to lead to (Kony's) demise than all other action combined."<ref name=Politico20120322>{{cite web |url=http://dyn.politico.com/printstory.cfm?uuid=76ECD47B-6BE4-4703-BC79-E7955A4DE0D6 |title=Joseph Kony captures Congress' attention |last=Wong |first=Scott |date=March 22, 2012 |website=Politico |archiveurl=http://www.webcitation.org/6MTcd5rKH |archivedate=January 8, 2014 }}</ref>
+
+[[File:ObamaYouTubers307.png|thumb|right|250px|Leading YouTube content creators met at the White House with U.S. President Obama to discuss how government could better connect with the "YouTube generation".<ref name=Tubefilter20140302/><ref name=WhiteHouse20140306>{{cite web|last=Jenkins|first=Brad L.|title=YouTube Stars Talk Health Care (and Make History) at the White House|url=http://www.whitehouse.gov/blog/2014/03/06/youtube-stars-talk-health-care-and-make-history-white-house|publisher=WhiteHouse.gov|archiveurl=http://www.webcitation.org/6Nt6OZDwh|archivedate=March 7, 2014|location=Washington, D.C.|date=March 6, 2014}}</ref>]]
+Conversely, YouTube has also allowed government to more easily engage with citizens, the [[White House]]'s official YouTube channel being the seventh top news organization producer on YouTube in 2012<ref name=PewWhiteHouse20120716>{{cite web |url=http://www.journalism.org/2012/07/16/youtube-video-creationa-shared-process/ |title=YouTube Video Creation–A Shared Process |last=Journalism Project Staff |date=July 16, 2012 |publisher=[[Pew Research Center]] |archiveurl=http://www.webcitation.org/6MGUczS29 |archivedate=December 31, 2013 }}</ref> and in 2013 a healthcare exchange commissioned [[Barack Obama|Obama]] impersonator [[Iman Crosson]]'s YouTube music video spoof to encourage young Americans to enroll in the [[Patient Protection and Affordable Care Act|Affordable Care Act (Obamacare)]]-compliant health insurance.<ref name=LATimes20131212>{{cite web |url=http://www.latimes.com/nation/politics/politicsnow/la-pn-obamacare-hollywood-new-social-media-campaign-20131212,0,2435151.story |title=Round 2: Obamacare and Hollywood open new social media campaign |last=Reston |first=Maeve |date=December 12, 2013 |website=Los Angeles Times |archiveurl=http://www.webcitation.org/6MDF1fYKv |archivedate=December 28, 2013 }}</ref> In February 2014, U.S. President Obama held a meeting at the White House with leading YouTube content creators to not only promote awareness of [[Patient Protection and Affordable Care Act|Obamacare]]<ref name=Buzzfeed20140302>{{cite news |last=McMorris-Santoro |first=Evan |title=Obama Enlisted YouTube Personalities For Final Health Care Enrollment Push Last Week |url=http://www.buzzfeed.com/evanmcsan/obama-enlisted-youtube-personalities-for-final-health-care-e |website=Buzzfeed |date=March 2, 2014 |archiveurl=http://www.webcitation.org/6Nnp553tF |archivedate=March 3, 2014}}</ref> but more generally to develop ways for government to better connect with the "YouTube Generation".<ref name=Tubefilter20140302>{{cite web |last=Cohen |first=Joshua |title=Obama Meets With YouTube Advisors On How To Reach Online Audiences |url=http://www.tubefilter.com/2014/03/02/obama-meets-with-youtube-advisors-on-how-to-reach-online-audiences/ |website=Tubefilter |archiveurl=http://www.webcitation.org/6NnoxHlEE |archivedate=March 3, 2014 |date=March 2, 2014}}</ref> Whereas YouTube's inherent ability to allow presidents to directly connect with average citizens was noted, the YouTube content creators' [[new media]] savvy was perceived necessary to better cope with the website's distracting content and fickle audience.<ref name=Tubefilter20140302/>
+
+Some YouTube videos have themselves had a direct effect on world events, such as ''[[Innocence of Muslims]]'' (2012) which spurred [[Reactions to Innocence of Muslims|protests and related anti-American violence]] internationally.<ref name=CNN20120914>{{cite news |url=http://www.cnn.com/2012/09/13/world/meast/embassy-attacks-main/ |title=U.S. warns of rising threat of violence amid outrage over anti-Islam video |last=CNN Wire Staff |date=September 14, 2012 |publisher=CNN |archiveurl=http://www.webcitation.org/6MDeXn5wt |archivedate=December 29, 2013 }}</ref>
+
+[[TED (conference)|TED]] curator [[Chris Anderson (entrepreneur)|Chris Anderson]] described a phenomenon by which geographically distributed individuals in a certain field share their independently developed skills in YouTube videos, thus challenging others to improve their own skills, and spurring invention and evolution in that field.<ref name=TED201007Anderson/>  Journalist [[Virginia Heffernan]] stated in ''The New York Times'' that such videos have "surprising implications" for the dissemination of culture and even the future of classical music.<ref name=NYTimes20060827>{{cite news |url=http://www.nytimes.com/2006/08/27/arts/television/27heff.html?_r=0&ei=5088&pagewanted=all |title=Web Guitar Wizard Revealed at Last |last=Heffernan |first=Virginia |date=August 27, 2006 |website=The New York Times |archiveurl=http://www.webcitation.org/6Mg4TJMoR |archivedate=January 16, 2014 }}</ref>
+
+''[[The Legion of Extraordinary Dancers]]''<ref name=TED201002LXD>{{cite web |url=http://www.ted.com/talks/the_lxd_in_the_internet_age_dance_evolves.html |title=The LXD: In the Internet age, dance evolves |last=Chu |first=Jon M. |date=February 2010 |publisher=[[TED (conference)|TED]] |archiveurl=http://www.webcitation.org/6MioNt4ZG |archivedate=January 18, 2014 }}</ref> and the [[YouTube Symphony Orchestra]]<ref name=Reuters20090414/> selected their membership based on individual video performances.<ref name=TED201007Anderson/><ref name=Reuters20090414>{{cite web |url=http://www.reuters.com/article/2009/04/14/us-youtube-idUSTRE53D4PE20090414 |title=YouTube orchestra prepares for Carnegie debut |last1=Nichols |first1=Michelle (reporter) |last2= Simao |first2=Paul (editor) |date=April 14, 2009 |publisher=Reuters |archiveurl=http://www.webcitation.org/6MjbFECh1 |archivedate=January 19, 2014 }}</ref> Further, the cybercollaboration charity video "[[We Are the World 25 for Haiti (YouTube edition)]]" was formed by [[Audio mixing (recorded music)|mixing]] performances of 57 globally distributed singers into a single musical work,<ref name="CNNtranscripts201003">{{cite web |url=http://transcripts.cnn.com/TRANSCRIPTS/1003/06/cnr.02.html |title=CNN Newsroom |last=Levs |first=Josh (interviewer) |date=March 6, 2010 |publisher=CNN |archiveurl=http://www.webcitation.org/5rP8iAylb |archivedate=July 22, 2010 }} Also [http://www.webcitation.org/5rP8iAylU CNN Saturday Morning News] and [http://www.webcitation.org/5rP8iAyli CNN Sunday Morning] (archives).</ref> with ''The Tokyo Times'' noting the "We Pray for You" YouTube cyber-collaboration video as an example of a trend to use [[crowdsourcing]] for charitable purposes.<ref name=TokyoTimes20110511>{{cite web |url=http://www.tokyotimes.jp/post/en/1829/Crowdsourcing+After+Quakebook+We+Pray+For+You.html |title=Crowdsourcing: After Quakebook, We Pray For You |last=Smart |first=Richard |date=May 11, 2011 |website=The Tokyo Times |archiveurl=http://www.webcitation.org/5z0XgwnkQ |archivedate=May 28, 2011 }}</ref>
+
+The anti-bullying [[It Gets Better Project]] expanded from a single YouTube video directed to discouraged or suicidal [[LGBT]] teens,<ref name=SFChronicle20101008>{{cite web |url=http://www.sfgate.com/news/article/Dan-Savage-overwhelmed-by-gay-outreach-s-response-3171312.php |title=Dan Savage overwhelmed by gay outreach's response |last=Hartlaub |first=Peter |date=October 8, 2010 |website=San Francisco Chronicle |archiveurl=http://www.webcitation.org/6MLHCl0uF |archivedate=January 3, 2014 }}</ref> that within two months drew video responses from hundreds including U.S. President Barack Obama, Vice President Biden, White House staff, and several cabinet secretaries.<ref name=WhiteHouseItGetsBetter>{{cite web |url=http://www.whitehouse.gov/issues/it-gets-better |title=It Gets Better |publisher=WhiteHouse.gov |archiveurl=http://www.webcitation.org/6MM4LalB5 |archivedate=January 3, 2014 }}</ref> Similarly, in response to fifteen-year-old [[Suicide of Amanda Todd|Amanda Todd]]'s video "My story: Struggling, bullying, suicide, self harm",  legislative action was undertaken almost immediately after her suicide to study the prevalence of bullying and form a national anti-bullying strategy.<ref name=CanadaTV20121014>{{cite web |url=http://www.ctvnews.ca/canada/in-wake-of-amanda-todd-suicide-mps-to-debate-anti-bullying-motion-1.995254 |title=In wake of Amanda Todd suicide, MPs to debate anti-bullying motion |date=October 14, 2012 |publisher=CTV News |archiveurl=http://www.webcitation.org/6MMlIcGEg |archivedate=January 4, 2014 }}</ref>
+
+==Revenue sources==
+The vast majority of videos on YouTube are free to view and supported by advertising.<ref name = "subscription" /> In May 2007, YouTube launched its Partner Program, a system based on [[AdSense]] which allows the uploader of the video to share the revenue produced by advertising on the site.<ref>{{Cite news|url=http://techcrunch.com/2007/05/04/youtube-launches-revenue-sharing-partners-program-but-no-pre-rolls/|title=YouTube Launches Revenue Sharing Partners Program, but no Pre-Rolls|work=TechCrunch |first=John|last=Biggs|date=May 4, 2007|accessdate=May 20, 2013}}</ref> YouTube typically takes 45 percent of the advertising revenue from videos in the Partner Program, with 55 percent going to the uploader.<ref>{{Cite news|url=http://www.theverge.com/2013/3/4/4062810/youtube-partners-complain-revenue-sharing-google-ads|title=It's not TV, it's the Web: YouTube partners complain about Google ads, revenue sharing|work=The Verge |first=Tim|last=Carmody|date=March 4, 2013|accessdate=May 20, 2013}}</ref> There are over a million members of the YouTube Partner Program.<ref>[https://www.youtube.com/yt/press/statistics.html Statistics - YouTube] Retrieved May 20, 2013.</ref> According to [[TubeMogul]], in 2013 a pre-roll advertisement on YouTube (one that is shown before the video starts) cost advertisers on average $7.60 per 1000 views. Usually no more than half of eligible videos have a pre-roll advertisement, due to a lack of interested advertisers.<ref name="nyt">{{cite news|url=http://www.nytimes.com/2014/02/02/business/chasing-their-star-on-youtube.html|publisher=New York Times|title=Chasing Their Star, on YouTube}}</ref> Assuming pre-roll advertisements on half of videos, a YouTube partner would earn 0.5 X $7.60 X 55% = $2.09 per 1000 views in 2013.<ref name="nyt" />
+
+In May 2013, YouTube introduced a trial scheme of 53 subscription channels with prices ranging from $0.99 to $6.99 a month.<ref>{{Cite news|url=http://www.theregister.co.uk/2013/05/09/youtube_subscription_channels/|title=YouTube launches subscriptions with 53 paid channels|work=The Register |first=Neil|last=McAllister|date=May 9, 2013|accessdate=May 20, 2013}}</ref> The move was seen as an attempt to compete with other providers of online subscription services such as [[Netflix]] and [[Hulu]].<ref name = "subscription" />
+
+==Community policy==
+YouTube has a set of community guidelines aimed to reduce abuse of the site's features. Generally prohibited material includes sexually explicit content, videos of animal abuse, [[shock site|shock videos]], content uploaded without the [[copyright]] holder's consent, hate speech, spam, and predatory behaviour.<ref name="guidelines" /> Despite the guidelines, YouTube has faced criticism from news sources for content in violation of these guidelines.
+
+===Copyrighted material===
+At the time of uploading a video, YouTube users are shown a message asking them not to violate copyright laws.<ref>{{Cite news|url=http://www.independent.co.uk/life-style/gadgets-and-tech/features/rhodri-marsden-why-did-my-youtube-account-get-closed-down-1770618.html|title=Why did my YouTube account get closed down?|work=The Independent |location=London  |first=Rhodri|last=Marsden|date=August 12, 2009|accessdate=August 12, 2009 }}</ref> Despite this advice, there are still many unauthorized clips of copyrighted material on YouTube. YouTube does not view videos before they are posted online, and it is left to copyright holders to issue a [[Digital Millennium Copyright Act|DMCA]] [[takedown notice]] pursuant to the terms of the [[Online Copyright Infringement Liability Limitation Act]]. Three successful complaints for [[copyright infringement]] against a user account will result in the account and all of its uploaded videos being deleted.<ref>[http://www.youtube.com/t/copyright_strike Why do I have a sanction on my account?] YouTube. Retrieved February 5, 2012.</ref><ref>{{Cite news|url=http://news.bbc.co.uk/1/hi/programmes/click_online/8696716.stm|title=Is YouTube's three-strike rule fair to users?|work=BBC News|date=May 21, 2010|accessdate=February 5, 2012 | location=London}}</ref>
+
+Organizations including [[Viacom]], [[Mediaset]], and the English [[Premier League]] have filed lawsuits against YouTube, claiming that it has done too little to prevent the uploading of copyrighted material.<ref>{{Cite news| title = Viacom will sue YouTube for $1bn|publisher=BBC News| url = http://news.bbc.co.uk/1/hi/business/6446193.stm|accessdate=May 26, 2008 | date=March 13, 2007}}</ref><ref>{{Cite news|title=Mediaset Files EUR500 Million Suit Vs Google's YouTube |url=http://money.cnn.com/news/newsfeeds/articles/djf500/200807301025DOWJONESDJONLINE000654_FORTUNE5.htm |date=July 30, 2008 |publisher=[[CNNMoney.com]] |accessdate=August 19, 2009}}</ref><ref>{{Cite news| title =Premier League to take action against YouTube |work=The Daily Telegraph |location=London  | url = http://www.telegraph.co.uk/sport/main.jhtml?xml=/sport/2007/05/05/ufnrup05.xml|accessdate=May 24, 2008  | date=May 5, 2007}}</ref> Viacom, demanding $1 billion in damages, said that it had found more than 150,000 unauthorized clips of its material on YouTube that had been viewed "an astounding 1.5 billion times". YouTube responded by stating that it "''goes far beyond its legal obligations in assisting content owners to protect their works''".<ref>{{Cite news| title = YouTube law fight 'threatens net' |publisher=BBC News| url = http://news.bbc.co.uk/1/hi/technology/7420955.stm|accessdate=May 28, 2008 | date=May 27, 2008}}</ref>
+
+During the same court battle, Viacom won a court ruling requiring YouTube to hand over 12 [[terabyte]]s of data detailing the viewing habits of every user who has watched videos on the site. The decision was criticized by the [[Electronic Frontier Foundation]], which called the court ruling "a setback to privacy rights".<ref name=privacy_bbc>{{Cite journal |title=Google must divulge YouTube log |work=BBC News |url=http://news.bbc.co.uk/1/hi/technology/7488009.stm |date=July 3, 2008 |publisher=BBC News}}</ref><ref>{{Cite news|title=Google Told to Turn Over User Data of YouTube |last=Helft |first=Miguel |newspaper=The New York Times |url=http://www.nytimes.com/2008/07/04/technology/04youtube.html |date=July 4, 2008}}</ref> In June 2010, Viacom's lawsuit against Google was rejected in a [[summary judgment]], with U.S. federal Judge [[Louis L. Stanton]] stating that Google was protected by provisions of the Digital Millennium Copyright Act. Viacom announced its intention to appeal the ruling.<ref>{{Cite news| title = US judge tosses out Viacom copyright suit against YouTube |author=Lefkow, Chris|agency=AFP| url = http://www.google.com/hostednews/afp/article/ALeqM5h_AfErLSMMGD417l8aR0CYib0aNQ|accessdate=June 24, 2010 | date=June 23, 2010}}</ref>
+
+On April 5, 2012, the [[United States Court of Appeals for the Second Circuit]] reinstated the case, allowing Viacom's lawsuit against Google to be heard in court again.<ref>{{Cite news| title =Google and Viacom: YouTube copyright lawsuit back on|publisher=BBC News| url = http://www.bbc.co.uk/news/business-17631703|accessdate=April 5, 2012 | date=April 5, 2012}}</ref> On March 18, 2014, the lawsuit was settled after seven years with an undisclosed agreement.<ref>{{Cite news| title =Google and Viacom settle seven-year YouTube row| work=[[BBC News]]|url =http://www.bbc.co.uk/news/technology-25665596|accessdate=March 18, 2014| date=March 18, 2014}}</ref>
+
+In August 2008, a US court ruled in ''[[Lenz v. Universal Music Corp.]]'' that copyright holders cannot order the removal of an online file without first determining whether the posting reflected [[fair use]] of the material. The case involved Stephanie Lenz from [[Gallitzin, Pennsylvania]], who had made a home video of her 13-month-old son dancing to [[Prince (musician)|Prince]]'s song "[[Let's Go Crazy]]", and posted the 29-second video on YouTube.<ref>{{Cite news|first= Bob|last= Egelko|title=Woman can sue over YouTube clip de-posting |url=http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2008/08/20/MNU412FKRL.DTL |quote= |work=San Francisco Chronicle |date=August 20, 2008 |accessdate=August 25, 2008 }}</ref>
+
+In the case of ''[[Smith v. Summit Entertainment LLC]]'', professional singer Matt Smith sued Summit Entertainment for the wrongful use of copyright takedown notices on YouTube.<ref>{{cite web |title=Court Docket |work=Smith  v. Summit Entertainment LLC |author=Ohio Northern District Court |url=https://www.docketalarm.com/cases/Ohio_Northern_District_Court/3--11-cv-00348/Smith__v_Summit_Entertainment_LLC/#q= |publisher=Docket Alarm, Inc. |date=July 18, 2013 |accessdate=October 21, 2014}}</ref>  He asserted seven [[causes of action]], and four were ruled in Smith's favor.<ref>{{cite web |title=Order |url=http://scholar.google.com/scholar_case?case=4653165041580834913# |author=District Judge James G. Carr |work=Smith v. Summit Entertainment LLC |publisher=United States District Court, N.D. Ohio, Western Division |date=June 6, 2011 |accessdate=November 7, 2011}}</ref>
+
+In April 2012, a court in [[Hamburg]] ruled that YouTube could be held responsible for copyrighted material posted by its users. The performance rights organization [[Gesellschaft für musikalische Aufführungs- und mechanische Vervielfältigungsrechte|GEMA]] argued that YouTube had not done enough to prevent the uploading of German copyrighted music. YouTube responded by stating:
+
+{{Cquote|''We remain committed to finding a solution to the music licensing issue in Germany that will benefit artists, composers, authors, publishers and record labels, as well as the wider YouTube community''.<ref>{{Cite news| title = YouTube loses court battle over music clips|work=[[BBC News]] |location=London| url = http://www.bbc.co.uk/news/technology-17785613|date=April 20, 2012|accessdate=April 20, 2012 }}</ref>}}
+
+As of 2013, YouTube and GEMA have still not reached a licensing agreement. As a result, most videos containing copyrighted music have been blocked in Germany since 2009.
+
+In April 2013, it was reported that [[Universal Music Group]] and YouTube have a contractual agreement that prevents content blocked on YouTube by a request from UMG from being restored, even if the uploader of the video files a [[Digital Millennium Copyright Act|DMCA]] counter-notice. When a dispute occurs, the uploader of the video has to contact UMG.<ref>{{cite web|url=http://torrentfreak.com/youtube-deal-with-universal-blocks-dmca-counter-notices-130405/ |title=YouTube's Deal With Universal Blocks DMCA Counter Notices |publisher=TorrentFreak |date=April 5, 2013 |accessdate=April 5, 2013}}</ref><ref>{{cite web|url=http://support.google.com/youtube/bin/answer.py?hl=en&answer=3045545 |title=Videos removed or blocked due to YouTube's contractual obligations |publisher=[[Google]] |accessdate=April 5, 2013}}</ref>
+
+====Content ID====
+In June 2007, YouTube began trials of a system for automatic detection of uploaded videos that infringe [[copyright]]. The system was regarded by Google CEO [[Eric Schmidt]] as necessary for resolving lawsuits such as the one from [[Viacom]], which alleged that YouTube profited from pirated content.<ref>{{Cite news|first= Kevin J.|last= Delaney|title=YouTube to Test Software To Ease Licensing Fights |url=http://online.wsj.com/article/SB118161295626932114.html|quote= |work=Wall Street Journal |date=June 12, 2007 |accessdate=December 4, 2011 }}</ref> The system, which became known as Content ID, creates an ID File for copyrighted audio and video material, and stores it in a database. When a video is uploaded, it is checked against the database, and flags the video as a copyright violation if a match is found.<ref name="youtube">[http://www.youtube.com/t/contentid_more More about Content ID] YouTube. Retrieved December 4, 2011.</ref>
+
+When this occurs, the content owner has the choice of blocking the video to make it unviewable, tracking the viewing statistics of the video, or adding advertisements to the video. YouTube describes Content ID as "very accurate in finding uploads that look similar to reference files that are of sufficient length and quality to generate an effective ID File".<ref name="youtube" /> Content ID accounts for over a third of the monetized views on YouTube.<ref>[http://www.youtube.com/t/press_statistics Press Statistics] YouTube. Retrieved March 13, 2012.</ref>
+
+An independent test in 2009 uploaded multiple versions of the same song to YouTube, and concluded that while the system was "surprisingly resilient" in finding copyright violations in the audio tracks of videos, it was not infallible.<ref>{{cite web|title=Testing YouTube's Audio Content ID System|url=https://www.eff.org/deeplinks/2009/04/testing-youtubes-aud|date=April 23, 2009|author=Von Lohmann, Fred|accessdate=December 4, 2011}}</ref> The use of Content ID to remove material automatically has led to controversy in some cases, as the videos have not been checked by a human for [[fair use]].<ref>{{cite web|title=YouTube's January Fair Use Massacre|url=https://www.eff.org/deeplinks/2009/01/youtubes-january-fair-use-massacre|date=February 3, 2009|author=Von Lohmann, Fred|accessdate=December 4, 2011}}</ref> If a YouTube user disagrees with a decision by Content ID, it is possible to fill in a form disputing the decision.<ref>[http://www.youtube.com/t/contentid_dispute Content ID disputes] YouTube. Retrieved December 4, 2011.</ref> YouTube has cited the effectiveness of Content ID as one of the reasons why the site's rules were modified in December 2010 to allow some users to upload videos of unlimited length.<ref>[http://youtube-global.blogspot.com/2010/12/up-up-and-away-long-videos-for-more.html Up, Up and Away&nbsp;– Long videos for more users] YouTube, December 9, 2010. Retrieved December 4, 2010.</ref>
+
+===Controversial content===
+{{see also|Criticism of Google#YouTube|Censorship by Google#YouTube}}
+YouTube has also faced criticism over the offensive content in some of its videos. The uploading of videos containing [[defamation]], pornography, and material encouraging criminal conduct is prohibited by YouTube's [[terms of service]].<ref name="guidelines">{{cite web| url = http://youtube.com/t/community_guidelines| title = YouTube Community Guidelines | publisher = YouTube| accessdate =November 30, 2008}}</ref> Controversial content has included that pertaining to [[Holocaust denial]] and the [[Hillsborough disaster]], in which 96 football fans from Liverpool were crushed to death in 1989.<ref>{{cite web| title =YouTube criticized in Germany over anti-Semitic Nazi videos| publisher = Reuters| url = http://www.haaretz.com/hasen/spages/898004.html|accessdate=May 28, 2008 }}</ref><ref>{{cite web| title =Fury as YouTube carries sick Hillsboro video insult| publisher = icLiverpool| url = http://icliverpool.icnetwork.co.uk/0100news/0100regionalnews/tm_headline=fury-as-youtube-carries-sick-hillsboro-video-insult%26method=full%26objectid=18729523%26page=1%26siteid=50061-name_page.html|accessdate=May 24, 2008 }}{{dead link|date=February 2014}}</ref>
+
+YouTube relies on its users to flag the content of videos as inappropriate, and a YouTube employee will view a flagged video to determine whether it violates the site's terms of service.<ref name="guidelines"/> In July 2008, the Culture and Media Committee of the [[House of Commons of the United Kingdom]] stated that it was "unimpressed" with YouTube's system for policing its videos, and argued that "proactive review of content should be standard practice for sites hosting [[user-generated content]]". YouTube responded by stating:
+
+{{Cquote|''We have strict rules on what's allowed, and a system that enables anyone who sees inappropriate content to report it to our 24/7 review team and have it dealt with promptly. We educate our community on the rules and include a direct link from every YouTube page to make this process as easy as possible for our users. Given the volume of content uploaded on our site, we think this is by far the most effective way to make sure that the tiny minority of videos that break the rules come down quickly''.<ref>{{Cite news| title =YouTube attacked by MPs over sex and violence footage|work=The Daily Telegraph |location=London  | url = http://www.telegraph.co.uk/connected/main.jhtml?xml=/connected/2008/07/31/dlyoutube131.xml|accessdate=August 21, 2008  | first1=James | last1=Kirkup | first2=Nicole | last2=Martin | date=July 31, 2008}}</ref> (July 2008)}}
+
+In October 2010, U.S. Congressman [[Anthony Weiner]] urged YouTube to remove from its website videos of [[imam]] [[Anwar al-Awlaki]], saying that by hosting al-Awlaki's messages, "We are facilitating the recruitment of homegrown terror".<ref>{{cite news|url=http://www.foxnews.com/politics/2010/10/25/rep-weiner-calls-youtube-al-awlakis-videos/ |title=Al-Awlaki's YouTube Videos Targeted by Rep. Weiner |publisher=Fox News |date=October 25, 2010 |accessdate=November 13, 2010}}</ref> British security minister [[Pauline Neville-Jones]] commented: "These Web sites would categorically not be allowed in the U.K. They incite cold-blooded murder, and as such are surely contrary to the public good." YouTube pulled some of the videos in November 2010, stating they violated the site's guidelines prohibiting "dangerous or illegal activities such as bomb-making, hate speech and incitement to commit violent acts", or came from accounts "registered by a member of a designated [[foreign terrorist organization]]".<ref>{{cite news|url=http://www.nytimes.com/2010/11/05/world/05britain.html?_r=1&adxnnl=1&adxnnlx=1289639324-GpxO1vB7vZ5y1qXSlTRnWA |title=YouTube Withdraws Cleric's Videos |work=The New York Times|date=November 4, 2010 |accessdate=November 13, 2010 |first1=John F. |last1=Burns |first2=Miguel |last2=Helft}}</ref> In December 2010, YouTube added "promotes terrorism" to the list of reasons that users can give when flagging a video as inappropriate.<ref>{{Cite news| title =YouTube is letting users decide on terrorism-related videos|author=Bennett, Brian|work=Los Angeles Times| url = http://www.latimes.com/news/nationworld/nation/la-na-youtube-terror-20101213,0,3375845.story|accessdate=December 14, 2010 | date=December 12, 2010}}</ref>
+
+===User comments===
+{{See also |Criticism of Google#YouTube user comments}}
+
+Most videos enable users to leave comments, and these have attracted attention for the [[Troll (Internet)|negative]] aspects of both their form and content. In 2006, ''[[Time (magazine)|Time]]'' praised [[Web 2.0]] for enabling "community and collaboration on a scale never seen before", and added that YouTube "harnesses the stupidity of crowds as well as its wisdom. Some of the comments on YouTube make you weep for the future of humanity just for the spelling alone, never mind the obscenity and the naked hatred".<ref>[http://www.time.com/time/magazine/article/0,9171,1569514,00.html "Time's Person of the Year: You"], ''Time'', December 13, 2006</ref> ''[[The Guardian]]'' in 2009 described users' comments on YouTube as:
+
+{{Cquote|''Juvenile, aggressive, misspelled, sexist, homophobic, swinging from raging at the contents of a video to providing a pointlessly detailed description followed by a LOL, YouTube comments are a hotbed of infantile debate and unashamed ignorance&nbsp;– with the occasional burst of wit shining through''.<ref>{{cite web|last=Owen |first=Paul |url=http://www.guardian.co.uk/technology/blog/2009/nov/03/youtube-funniest-comments |title=Our top 10 funniest YouTube comments – what are yours? |publisher=Guardian |date=November 3, 2009 |accessdate=March 13, 2014}}</ref>}}
+
+In September 2008, ''[[The Daily Telegraph]]'' commented that YouTube was "notorious" for "some of the most confrontational and ill-formed comment exchanges on the internet", and reported on YouTube Comment Snob, "a new piece of software that blocks rude and illiterate posts".<ref>[http://www.telegraph.co.uk/news/newstopics/howaboutthat/2668997/YouTubes-worst-comments-blocked-by-filter.html "YouTube's worst comments blocked by filter"], ''Daily Telegraph'', September 2, 2008</ref> ''[[The Huffington Post]]'' noted in April 2012 that finding comments on YouTube that appear "offensive, stupid and crass" to the "vast majority" of the people is hardly difficult.<ref>{{cite news|last=Rundle|first=Michael|title=Policing Racism Online: Liam Stacey, YouTube And The Law Of Big Numbers|url=http://www.huffingtonpost.co.uk/2012/04/06/policing-racism-online-liam-stacey-fabrice-muamba-abuse-twitter-youtube-facebook_n_1407795.html|accessdate=June 1, 2012|newspaper=[[The Huffington Post]]|date=April 7, 2012}}</ref>
+
+On November 6, 2013, Google implemented a new comment system that requires all YouTube users to use a [[Google+]] account in order to comment on videos and making the comment system Google+ oriented. The changes are in large part an attempt to address the frequent criticisms of the quality and tone of YouTube comments. They give creators more power to moderate and block comments, and add new sorting mechanisms to ensure that better, more relevant discussions appear at the top.<ref>[http://www.theguardian.com/technology/2013/nov/07/youtube-comments-trolls-moderation-google "YouTube aims to tame the trolls with changes to its comments section"], Stuart Dredge, ''The Guardian'', November 7, 2013. Retrieved November 9, 2013.</ref> The new system restored the ability to include [[Uniform resource locator|URLs]] in comments, which had previously been removed due to problems with abuse.<ref>{{cite web|url=http://productforums.google.com/forum/#!topic/youtube/OdxWjrLvzYw|title=No more links in comments?|work=Google product forums|year=2009|accessdate=August 28, 2013}}</ref><ref>{{cite web|url=https://support.google.com/youtube/answer/171666?hl=en-GB|title=View and post comments|work=Google Support|year=2013|accessdate=November 11, 2013}}</ref>
+
+YouTube co-founder [[Jawed Karim]] posted the question, "why the fuck do I need a google+ account to comment on a video?" on his YouTube channel to express his negative opinion of the change.<ref>{{cite news |first=Alex |last=Hern |url =http://www.theguardian.com/technology/2013/nov/08/youtube-cofounder-why-the-fuck-do-i-need-a-google-account-to-comment |title =YouTube co-founder hurls abuse at Google over new YouTube comments |work =The Guardian |location=London |date =November 8, 2013 |accessdate=November 11, 2013 }}</ref> The official YouTube announcement<ref>{{YouTube|bVGp8Z8Yb28|"Meet the new YouTube comments"}}, November 6, 2013. Retrieved November 9, 2013.</ref> received 20,097 "thumbs down" votes and generated more than 32,000 comments in two days.<ref>[http://www.ibtimes.com/youtube-founder-blasts-new-youtube-comments-jawed-karim-outraged-google-plus-requirement-1462814 "YouTube Founder Blasts New YouTube Comments: Jawed Karim Outraged At Google Plus Requirement"], Ryan W. Neal, ''International Business Times'', November 8, 2013. Retrieved November 9, 2013.</ref> Writing in the ''Newsday'' blog Silicon Island, Chase Melvin noted that "Google+ is nowhere near as popular a social media network as Facebook, but it's essentially being forced upon millions of YouTube users who don't want to lose their ability to comment on videos" and "Discussion forums across the Internet are already bursting with outcry against the new comment system". In the same article Melvin goes on to say:<ref>{{cite web | last = Chase | first = Melvin | title = YouTube comments require Google+ account, Google faces uproar | publisher = Newsday | date = November 20, 2013 | url = http://www.newsday.com/business/technology/silicon-island-1.1521604/youtube-comments-require-google-account-google-faces-uproar-1.6429420}} {{subscription}} [http://www.amny.com/silicon-island-1.1521604/youtube-comments-require-google-account-google-faces-uproar-1.6429420 Alternate link].</ref>
+{{Cquote |''Perhaps user complaints are justified, but the idea of revamping the old system isn't so bad.''
+
+''Think of the crude, misogynistic and racially-charged mudslinging that has transpired over the last eight years on YouTube without any discernible moderation. Isn't any attempt to curb unidentified libelers worth a shot? The system is far from perfect, but Google should be lauded for trying to alleviate some of the damage caused by irate YouTubers hiding behind animosity and anonymity.''}}
+
+===View counts===
+In December 2012, two billion views were removed from the view counts of [[Universal Music Group|Universal]] and [[Sony Music Entertainment|Sony]] music videos on YouTube, prompting a claim by ''[[The Daily Dot]]'' that the views had been deleted due to a violation of the site's [[terms of service]], which ban the use of automated processes to inflate view counts. This was disputed by ''[[Billboard (magazine)|Billboard]]'', which said that the two billion views had been moved to [[Vevo]], since the videos were no longer active on YouTube.<ref name="daily_dot">{{cite web|url=http://www.dailydot.com/news/youtube-universal-sony-fake-views-black-hat/|title=YouTube strips Universal and Sony of 2 billion fake views|publisher=[[The Daily Dot]]|date=December 21, 2012|accessdate=January 10, 2014}}</ref><ref name="guardian_migrate">{{cite web|url=http://www.theguardian.com/technology/2012/dec/28/youtube-video-views-disappear-migrate|title=Two billion YouTube music video views disappear ... or just migrate?|publisher=The Guardian|date=December 28, 2012|accessdate=January 10, 2014}}</ref>
+
+==Censorship and filtering==
+{{Main|Censorship of YouTube}}
+
+As of September 2012, countries with standing national bans on YouTube include [[People's Republic of China|China]], [[Iran]], [[Pakistan]], and [[Turkmenistan]].
+
+YouTube is blocked for a variety of reasons, including:<ref name=ONIYouTubeCensored>[http://opennet.net/youtube-censored-a-recent-history "YouTube Censored: A Recent History"], OpenNet Initiative. Retrieved September 23, 2012.</ref>
+* limiting public exposure to content that may ignite social or political unrest;
+* preventing criticism of a ruler, government, government officials, religion, or religious leaders;
+* violations of national laws, including:
+** [[copyright]] and [[intellectual property]] protection laws;
+** violations of [[hate speech]], ethics, or morality-based laws; and
+** [[national security]] legislation.
+* preventing access to videos judged to be inappropriate for youth;
+* reducing distractions at work or school; and
+* reducing the amount of network bandwidth used.
+
+In some countries, YouTube is completely blocked, either through a long term standing ban or for more limited periods of time such as during periods of unrest, the run-up to an election, or in response to upcoming political anniversaries. In other countries access to the website as a whole remains open, but access to specific videos is blocked. In cases where the entire site is banned due to one particular video, YouTube will often agree to remove or limit access to that video in order to restore service.<ref name=ONIYouTubeCensored/>
+
+Businesses, schools, government agencies, and other private institutions often block social media sites, including YouTube, due to bandwidth limitations and the site's inevitable potential for distraction.<ref name=ONIYouTubeCensored/>
+
+Several countries have blocked access to YouTube:
+
+* [[Iran]] temporarily blocked access on December 3, 2006, to YouTube and several other sites, after declaring them as violating social and moral codes of conduct. The YouTube block came after a video was posted online that appeared to show an Iranian soap opera star having sex.<ref>{{Cite news|url=http://www.guardian.co.uk/iran/story/0,,1963166,00.html|title=Censorship fears rise as Iran blocks access to top websites|date=November 4, 2006|accessdate =December 17, 2006 |work=The Guardian |location=London   | first=Robert | last=Tait}}</ref> The block was later lifted and then reinstated after [[Iranian presidential election, 2009|Iran's 2009 presidential election]].<ref>{{cite web|url=http://www.google.com/hostednews/afp/article/ALeqM5jSPlmVgh-SfeEO9WhpOVG6Slnu0w|work=[[American Free Press]]|publisher=Google|title=Mobile phones, Facebook, YouTube cut in Iran|date=July 13, 2009|accessdate =July 8, 2009}}</ref> In 2012, Iran reblocked access, along with access to Google, after the controversial film ''[[Innocence of Muslims]]''' trailer was released on YouTube.<ref>{{cite news|url=http://www.cnn.com/2012/09/24/world/meast/iran-youtube-blocked/index.html |title=Iran blocks YouTube, Google over Mohammed video |publisher=CNN.com |date=September 24, 2012 |accessdate=September 24, 2012}}</ref>
+* [[Thailand]] blocked access between 2006 and 2007 due to offensive videos relating to King [[Bhumibol Adulyadej]].<ref>{{Cite news| title =Thailand blocks access to YouTube|publisher=BBC| url =http://news.bbc.co.uk/1/hi/world/asia-pacific/6528303.stm|accessdate=November 30, 2008 | date=April 4, 2007}}</ref><ref>{{Cite news| title=Ban on YouTube lifted after deal | date=August 31, 2007 | url =http://nationmultimedia.com/2007/08/31/headlines/headlines_30047192.php | work =[[The Nation]] }}</ref>
+* Some [[Australia]]n state education departments block YouTube citing an inability to determine what sort of video material might be accessed.<ref>{{Cite news|url=http://www.australianit.news.com.au/story/0,24897,21330109-15306,00.html|title=States still hold out on YouTube|date=March 6, 2007|author=Colley, Andrew|publisher=Australian IT|accessdate=October 11, 2007}} {{Dead link |date=December 2013}}</ref>
+* [[China]] blocked access from October 15, 2007, to March 22, 2008, and again starting on March 24, 2009. Access remains blocked.<ref>{{cite web| title =Youku Transcends YouTube as China Becomes Center of Internet|last=Lococo|first=Edmond|last2=Lee|first2=Mark| publisher = Bloomberg News| url =http://www.businessweek.com/news/2010-10-17/youku-transcends-youtube-as-china-becomes-center-of-internet.html|accessdate=October 23, 2010|date=October 17, 2010}}{{dead link|date=July 2012}}</ref><ref>{{Cite news|title=China 'blocks YouTube video site'|author=Sommerville, Quentin|publisher=BBC News|url=http://news.bbc.co.uk/2/hi/asia-pacific/7961069.stm|accessdate=March 24, 2009 | date=March 24, 2009}}</ref><ref>{{cite web | last = | first = | authorlink = | title =YouTube遭中國封鎖？ | work = | publisher =Now News | date =October 19, 2007 | url =http://www.nownews.com/2007/10/19/11444-2174423.htm | accessdate = April 8, 2013}}</ref><ref>{{cite web | title =China Blocks YouTube | publisher=PC World | date =October 18, 2007 | url =http://www.pcworld.com/article/138599/article.html | accessdate = April 8, 2013}}</ref>
+* [[Morocco]] blocked access in May 2007, possibly as a result of videos critical of Morocco's actions in [[Western Sahara]].<ref>{{Cite news| title =YouTube site 'blocked' in Morocco|work=[[BBC News]]  | url =http://news.bbc.co.uk/1/hi/world/africa/6702973.stm|accessdate=December 25, 2013 | date=May 29, 2007}}</ref> YouTube became accessible again on May 30, 2007, after ''Maroc Telecom'' unofficially announced that the denied access to the website was a mere "technical glitch".<ref>{{cite web |url=http://ar.rsf.org/article.php3?id_article=22322 |title=''YouTube again accessible via Maroc Telecom'' |date=May 30, 2007 |accessdate=May 30, 2007 |publisher=Reporters Without Borders }}{{dead link|date=February 2014}}</ref>
+* [[Turkey]] blocked access between 2008 and 2010 after controversy over videos deemed insulting to [[Mustafa Kemal Atatürk]].<ref name="gatekeepers">{{Cite news|author= Rosen, Jeffrey|title=Google's Gatekeepers |url=http://www.nytimes.com/2008/11/30/magazine/30google-t.html?_r=1&partner=rss&emc=rss&pagewanted=all |quote= |work=The New York Times |date=November 30, 2008 |accessdate=December 1, 2008 }}</ref><ref name="bbc turkey">{{Cite news|title=Turkey goes into battle with Google|url=http://news.bbc.co.uk/1/hi/world/europe/10480877.stm |quote= |publisher=BBC News |date=July 2, 2010 |accessdate=July 3, 2010}}</ref><ref>{{cite news| title =Turkey lifts two-year ban on YouTube|publisher=BBC News| url=http://www.bbc.co.uk/news/technology-11659816|date=October 30, 2010|accessdate=October 31, 2010 }}</ref> In November 2010, a video of the Turkish politician [[Deniz Baykal]] caused the site to be blocked again briefly, and the site was threatened with a new shutdown if it did not remove the video.<ref>{{cite news| title =Turkey Reinstates YouTube Ban|work=The Wall Street Journal| url=http://online.wsj.com/article/SB10001424052748704462704575590420251199614.html?mod=googlenews_wsj|date=November 2, 2010|accessdate=November 2, 2010| first=Marc| last=Champion}}</ref> During the two and a half year block of YouTube, the video-sharing website remained the eighth most-accessed site in Turkey.<ref>[http://www.freedomhouse.org/report/freedom-net/2012/turkey#_ftn21 "Turkey report"], ''Freedom on the Net 2012'', Freedom House, September 24, 2012.</ref><ref>[http://www.alexa.com/topsites/countries/TR "Top Sites in Turkey"], Alexa. Retrieved August 26, 2010.</ref> In 2014, Turkey blocked the access for the second time, after "a high-level intelligence leak."<ref>{{cite web | url=http://www.businessinsider.com/youtube-blocked-in-turkey-2014-3?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+businessinsider+(Business+Insider) | title=YouTube Blocked In Turkey Amid High-Level Intelligence Leak | publisher=[[Business Insider]] | date=March 27, 2014 | accessdate=March 27, 2014 | author=Kelley, Michael}}</ref><ref>{{cite web | url=http://www.bbc.com/news/world-europe-26773702 | title=Turkey moves to block YouTube access after 'audio leak' | publisher=[[BBC]] | date=March 27, 2014 | accessdate=March 27, 2014}}</ref><ref>{{cite web | url=http://www.nbcnews.com/tech/tech-news/youtube-banned-turkey-n63776 | title=YouTube Banned in Turkey | publisher=[[NBC News]] | date=March 27, 2014 | accessdate=March 27, 2014 | author=Wagstaff, Keith}}</ref>
+* [[Pakistan]] blocked access on February 23, 2008, because of "offensive material" towards the Islamic faith, including display of the [[Jyllands-Posten Muhammad cartoons controversy|Danish cartoons]] of [[Muhammad]].<ref>{{Cite news| title =Pakistan blocks YouTube website|publisher=BBC| url =http://news.bbc.co.uk/1/hi/world/south_asia/7261727.stm|accessdate=November 30, 2008 | date=February 24, 2008}}</ref> This led to a near global blackout of the YouTube site for around two hours, as the Pakistani block was inadvertently transferred to other countries. On February 26, 2008, the ban was lifted after the website had removed the objectionable content from its servers at the request of the government.<ref name="PAK-ban-lifted">{{Cite news| title = Pakistan lifts YouTube ban | url = http://www.abc.net.au/news/stories/2008/02/27/2173501.htm?section=world |agency=AFP | publisher = [[ABC News (Australia)]] | date = February 26, 2008 | accessdate = February 26, 2008}}</ref><ref>{{Cite news| title =Pakistan lifts the ban on YouTube|publisher=BBC| url=http://news.bbc.co.uk/1/hi/technology/7262071.stm|accessdate=November 30, 2008 | date=February 26, 2008}}</ref> Many Pakistanis circumvented the three-day block by using [[virtual private network]] software.<ref>{{cite web| title =Pakistan web users get round YouTube ban| publisher = Silicon Republic| url=http://www.siliconrepublic.com/news/news.nv?storyid=single10381| archiveurl=https://web.archive.org/web/20080629065235/http://www.siliconrepublic.com/news/news.nv?storyid=single10381| archivedate=June 29, 2008|accessdate=November 30, 2008 }}</ref> In May 2010, following the [[Everybody Draw Mohammed Day]], Pakistan again blocked access to YouTube, citing "growing sacrilegious content".<ref>{{Cite news| title =Pakistan blocks access to YouTube in internet crackdown|publisher=BBC News| url =http://news.bbc.co.uk/1/hi/world/south_asia/10130195.stm|accessdate=May 20, 2010 | date=May 20, 2010}}</ref> The ban was lifted on May 27, 2010, after the website removed the objectionable content from its servers at the request of the government. However, individual videos deemed offensive to Muslims posted on YouTube will continue to be blocked.<ref>[http://www.metro.co.uk/news/828161-youtube-ban-lifted-by-pakistan-authorities "YouTube ban lifted by Pakistan authorities"], Joanne McCabe, ''Metro'' (Associated Newspapers Limited, UK), May 27, 2010. Retrieved September 18, 2012</ref><ref>[http://articles.timesofindia.indiatimes.com/2010-05-27/pakistan/28304621_1_blasphemous-caricatures-blasphemous-material-sacrilegious-content "Pakistan lifts ban on YouTube"], ''The Times of India'', May 27, 2010</ref> Pakistan again placed a ban on YouTube in September 2012, after the site refused to remove the film ''[[Innocence of Muslims]]'', with the ban still in operation as of September 2013.<ref>[http://articles.economictimes.indiatimes.com/2013-09-17/news/42148641_1_blasphemous-content-videos-pakistan-ban Pakistan ban on YouTube stays even after one year] ''The Economic Times'', September 17, 2013. Retrieved December 11, 2013.</ref>
+* [[Turkmenistan]] blocked access on December 25, 2009, for unknown reasons. Other websites, such as [[LiveJournal]] were also blocked.<ref>{{cite web |url=http://enews.ferghana.ru/news.php?id=1516&mode=snews |title=Turkmenistan: YouTube and LiveJournal are blocked |publisher=Ferghana News |location=Moscow |date=December 25, 2009 |accessdate = December 25, 2009}}</ref>
+* [[Libya]] blocked access on January 24, 2010, because of videos that featured demonstrations in the city of [[Benghazi]] by families of detainees who were killed in [[Abu Salim prison]] in 1996, and videos of family members of Libyan leader [[Muammar Gaddafi]] at parties. The blocking was criticized by [[Human Rights Watch]].<ref>{{Cite news|url= http://www.google.com/hostednews/afp/article/ALeqM5gMqNCaIpcd74x_33F16sT_6IDriw|title=Watchdog urges Libya to stop blocking websites|agency=Agence France-Presse|accessdate=February 7, 2010}}</ref> In November 2011, after the [[2011 Libyan Civil War|Libyan Civil War]], YouTube was once again allowed in [[Libya]].<ref>[http://www.freedomhouse.org/report/freedom-net/2012/libya "Libya"], ''Freedom on the Net 2012'', Freedom House, September 24, 2012</ref>
+* [[Afghanistan]], [[Bangladesh]],  [[Russia]], and [[Sudan]] blocked access in September 2012 following controversy over a 14-minute trailer for the film ''[[Innocence of Muslims]]'' which had been posted on the site.<ref>[http://www.afghanistantimes.af/news_details.php?id=1654&&cid=1 "Afghanistan to unblock YouTube – Afghanistan Times"], December 1, 2012.</ref><ref>[http://www.reuters.com/article/2012/09/12/us-afghanistan-youtube-idUSBRE88B0SC20120912 "Afghanistan bans YouTube to block anti-Muslim film"], Miriam Arghandiwal, Reuters (Kabul), September 12, 2012.</ref><ref>[http://www.independent.co.uk/news/world/asia/youtube-blocked-in-bangladesh-over-prophet-mohamed-video-8152056.html "YouTube blocked in Bangladesh over Prophet Mohamed video"], ''The Independent'' (AP), September 18, 2012.</ref><ref>[http://www.washingtonpost.com/business/economy/youtube-blocked-in-pakistan/2012/09/17/30081fa2-00ea-11e2-b257-e1c2b3548a4a_story.html "YouTube blocked in Pakistan"], Hayley Tsukayama, ''Washington Post'', September 17, 2012.</ref><ref>{{Cite news| title =Pakistan, Bangladesh Block YouTube Amid Islam Film Protests|publisher=[[Bloomberg L.P.|Bloomberg]]| url =http://www.bloomberg.com/news/2012-09-18/pakistan-bangladesh-block-youtube-to-restrict-anti-islam-film.html|accessdate=September 18, 2012 | date=September 18, 2012}}</ref><ref>{{cite news|title=Russian court bans anti-Islam film|url=http://www.thenews.com.pk/Todays-News-1-134721-Russian-court-bans-anti-Islam-film|newspaper=The News|date=September 29, 2012}}</ref>
+* In [[Libya]] and [[Egypt]], the ''[[Innocence of Muslims]]'' trailer was blamed for [[2012 diplomatic missions attacks|violent protests]] in September 2012. YouTube stated that "This video—which is widely available on the Web—is clearly within our guidelines and so will stay on YouTube. However, given the very difficult situation in Libya and Egypt we have temporarily restricted access in both countries."<ref>{{cite news| title ='Innocence of Muslims': Mystery shrouds film's California origins|work=Los Angeles Times| url =http://www.latimes.com/news/nationworld/world/la-fg-libya-filmmaker-20120913,0,1418897,full.story|accessdate=September 13, 2012 | date=September 12, 2012}}</ref><ref>{{Cite news| title =YouTube restricts video access over Libyan violence|publisher=CNN| url =http://edition.cnn.com/2012/09/12/tech/web/youtube-violence-libya/index.html?hpt=hp_c3|accessdate=September 13, 2012 | date=September 12, 2012}}</ref>
+
+===Music Key licensing===
+In May 2014, prior to the launch of YouTube's subscription-based Music Key service, the [[independent music]] trade organization Worldwide Independent Network alleged that YouTube was using non-negotiable contracts with independent labels that were "undervalued" in comparison to other streaming services, and that YouTube would block all music content from labels who do not reach a deal to be included on the paid service. In a statement to the ''[[Financial Times]]'' in June 2014, Robert Kyncl confirmed that YouTube would block the content of labels who do not negotiate deals to be included in the paid service "to ensure that all content on the platform is governed by its new contractual terms." Stating that 90% of labels had reached deals, he went on to say that "while we wish that we had [a] 100% success rate, we understand that is not likely an achievable goal and therefore it is our responsibility to our users and the industry to launch the enhanced music experience."<ref name=verge-blockmusic>{{cite web|title=YouTube will block videos from artists who don't sign up for its paid streaming service|url=http://www.theverge.com/2014/6/17/5817408/youtube-reportedly-block-videos-indie-artists|website=The Verge|accessdate=June 17, 2014}}</ref><ref name=guardian-musicpass>{{cite news|title=YouTube subscription music licensing strikes wrong notes with indie labels|url=http://www.theguardian.com/technology/2014/may/22/indie-labels-youtube-subscription-music|work=The Guardian|location=London|accessdate=June 17, 2014}}</ref><ref name=guardian-stall>{{cite news|title=Talks with indie labels stall over YouTube music subscription service|url=http://www.theguardian.com/technology/2014/may/23/talks-indie-labels-stall-youtube-music-subscription-service|work=The Guardian|location=London|accessdate=June 17, 2014}}</ref><ref name=guardian-indieblock>{{cite news|title=YouTube to block indie labels who don't sign up to new music service|url=http://www.theguardian.com/technology/2014/jun/17/youtube-indie-labels-music-subscription|work=The Guardian|location=London|accessdate=June 17, 2014}}</ref> The ''Financial Times'' later reported that YouTube had reached an aggregate deal with [[Merlin Network]]—a trade group representing over 20,000 independent labels, for their inclusion in the service. However, YouTube itself has not confirmed the deal.<ref name=variety-musickey />
+
+==See also==
+{{Spoken Wikipedia|Youtube spoken word.ogg|2011-03-26}}
+{{Portal|Companies|Internet|San Francisco Bay Area}}
+
+* [[CNN-YouTube presidential debates]]
+* [[List of YouTube personalities]]
+* ''[[Ouellette v. Viacom International Inc.]]''
+* [[Reply Girls]]
+* [[YouTube Awards]]
+* [[YouTube Instant]]
+* [[YouTube Live]]
+* [[YouTube Multi Channel Network]]
+* [[YouTube Symphony Orchestra]]
+* ''[[Viacom International Inc. v. YouTube, Inc.]]''
+
+'''General:'''
+* [[Alternative media]]
+* [[Comparison of video hosting services]]
+* [[List of Internet phenomena]]
+* [[List of video hosting services]]
+
+==References==
+
+===Notes===
+{{Reflist|30em}}
+
+===Further reading===
+{{refbegin}}
+* {{cite book| last = Kelsey| first = Todd| title = Social Networking Spaces: From Facebook to Twitter and Everything In Between| url = http://books.google.com/?id=1EgTu8fFMJgC| year = 2010| publisher = Springer-Verlag| isbn = 978-1-4302-2596-6 }}
+* {{cite book| last = Lacy| first = Sarah| title = The Stories of Facebook, YouTube and MySpace: The People, the Hype and the Deals Behind the Giants of Web 2.0| year = 2008| publisher = Crimson| location = Richmond| isbn = 978-1-85458-453-3 }}
+* {{cite news|url=http://www.nytimes.com/2012/07/01/magazine/on-youtube-amateur-is-the-new-pro.html?hpw |title=On YouTube, Amateur Is the New Pro |publisher=New York Times |date=June 28, 2012}}
+{{refend}}
+
+==External links==
+{{Sister project links}}
+* {{Official website|//www.youtube.com|mobile=//m.youtube.com}}
+* {{Blogger|youtube-global|YouTube}}
+* [//www.youtube.com/yt/press/ Press room – YouTube]
+* [https://developers.google.com/youtube/ YouTube – Google Developers]
+* {{cite web|last=Haran|first=Brady|title=Why do YouTube views freeze at 301?|url=http://www.numberphile.com/videos/301_views.html|work=Numberphile|publisher=Brady Haran|authorlink=Brady Haran|author2=Hamilton, Ted }}
+* {{cite journal |title=The 22 Key Turning Points In The History Of YouTube|url=http://www.businessinsider.com/key-turning-points-history-of-youtube-2013-2?op=1|journal=Business Insider |date = February 15, 2013 |last=Dickey |first=Megan Rose| archiveurl=http://www.webcitation.org/6N1AhzYVF |archivedate=January 30, 2014}}
+* [http://video.pbs.org/video/2365039828/ Are Youtubers Revolutionizing Entertainment?] (June 6, 2013), video produced for PBS by [[Off Book (web series)]].
+
+{{YouTube navigation}}
+{{Navboxes
+|list=
+{{Google Inc.}}
+{{android}}
+{{Digital distribution platforms}}
+{{YouTube most subbed}}
+{{YTMAs}}
+}}
+
+{{Use mdy dates|date=November 2014}}
+{{Good article}}
+
+[[Category:YouTube| ]]
+[[Category:2005 establishments in California]]
+[[Category:American websites]]
+[[Category:Companies based in San Mateo County, California]]
+[[Category:Companies established in 2005]]
+[[Category:Companies initially financed with venture capital]]
+[[Category:Entertainment websites]]
+[[Category:Google acquisitions]]
+[[Category:Google services]]
+[[Category:Internet companies of the United States]]
+[[Category:Internet properties established in 2005]]
+[[Category:Multilingual websites]]
+[[Category:Recommender systems]]
+[[Category:Video hosting]]
+[[Category:Video on demand services]]
+[[Category:Android (operating system) software]]
+[[Category:IOS software]]
+[[Category:Firefox OS software]]

@@ -1,0 +1,56 @@
+[[File:Gemeinsame Normdatei 2012 Opera.png|thumb|GND screenshot]]
+
+The '''Integrated Authority File''' ({{lang-de|Gemeinsame Normdatei}}, also known as: ''Universal Authority File'') or '''GND''' is an international [[authority file]] for the organisation of personal names, subject headings and corporate bodies from [[Library catalog|catalogues]]. It is used mainly for [[documentation]] in [[library|libraries]] and increasingly also by [[archive]]s and [[museum]]s. The GND is managed by the [[German National Library]] in cooperation with various library networks in [[German-speaking Europe]] and other partners. The GND falls under the [[CC0|Creative Commons Zero]] (CC0) license.<ref>[http://www.dnb.de/EN/Standardisierung/GND/gnd.html Integrated Authority File (GND)]</ref>
+
+The GND specification provides a hierarchy of high-level entities and sub-classes, useful in [[library classification]], and an approach to unambiguous identification of single elements. It also comprises an [[ontology (computer science)|ontology]] intended for [[knowledge representation]] in the [[semantic web]], available in the [[Resource Description Framework|RDF]] format.<ref>[http://d-nb.info/standards/elementset/gnd GND Ontology – Namespace Document],  version 2012-06-30.</ref>
+
+The Integrated Authority File became operational in April 2012 and integrates the content of the following authority files which have since been discontinued:
+* [[Name Authority File]] (German: ''Personennamendatei''; PND)
+* [[Corporate Bodies Authority File]] (German: ''Gemeinsame Körperschaftsdatei''; GKD)
+* [[Subject Headings Authority File]] (German: ''Schlagwortnormdatei''; SWD)
+* Uniform Title File of the Deutsches Musikarchiv (German: ''Einheitssachtitel-Datei des Deutschen Musikarchivs''; DMA-EST)
+
+At the time of its introduction ("GND-Grundbestand" from 5 April 2012), the GND holds 9,493,860 files, including 2,650,000 personalized names.
+
+Other authority files are: [[Library of Congress Name Authority File]] (LCNAF) by the [[Library of Congress]], [[Web NDL Authorities]] by the [[National Diet Library]] (Japan), [[LIBRIS]] by the National Library of Sweden, and the [[Virtual International Authority File]] (VIAF).
+
+==Types of GND high-level entities==
+
+There are seven main types of GND entities:<ref>[http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/entitaetencodierung.pdf?__blob=publicationFile  Entitätencodierung: Vergaberichtlinien] (short lists: old and new version)</ref>
+
+{| class="wikitable"
+|- 
+! Typ !! German (official) !! English (translation)
+|- class="hintergrundfarbe5"
+| '''p''' || Person (individualisiert) || person (individualized)
+|- class="hintergrundfarbe5"
+| '''n''' || Name (nicht individualisiert) || name (not individualized)
+|- 
+| '''k''' || Körperschaft || corporate body
+|- 
+| '''v''' || Veranstaltung || event
+|-
+| '''w''' || Werk || work
+|- 
+| '''s''' || Sachbegriff || topical term
+|- 
+| '''g''' || Geografikum || geographical place name
+|}
+
+==References==
+{{reflist}}
+
+==External links==
+
+{{Wikidata property|P227|GND identifiers}}
+* [http://www.dnb.de/EN/gnd Information pages about the GND] from the German National Library
+* [http://swb.bsz-bw.de/DB=2.104/SET=4/TTL=1/LNG=EN/START_WELCOME?retrace=0 Search via OGND] (Bibliotheksservice-Zentrum Baden-Württemberg)
+* [http://www.dnb.de/SharedDocs/Downloads/DE/DNB/service/rundschreibenBereitstellungGNDGrundbestand.pdf?__blob=publicationFile Bereitstellung des ersten GND-Grundbestandes] DNB, 19 April 2012
+* [http://connect.ala.org/files/ALA_MFIG_Heuvelmann.pdf From Authority Control to Linked Authority Data] Presentation given by Reinhold Heuvelmann (German National Library) to the ALA MARC Formats Interest Group, June 2012
+
+{{Authority control}}
+
+[[Category:2012 establishments]]
+[[Category:Library cataloging and classification]]
+[[Category:Identifiers]]
+[[Category:Creative Commons-licensed databases]]

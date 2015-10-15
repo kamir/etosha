@@ -1,0 +1,41 @@
+{{Infotaula lloc web
+|nom            = ''Virtual International Authority File''<br>VIAF
+|logo           = 
+|peu de logo    = 
+|captura        = 
+|peu de foto    = 
+|url            = [http://viaf.org viaf.org]
+|alexa          = 
+|comercial      = 
+|ingressos      =
+|tipus          = [[Registre d'autoritat]]<br>[[Base de dades]]
+|llengua        = [[anglès]]
+|registre       = 
+|usuaris        = Consultació: obert a tots<br>Actualització: els organismes participants
+|propietari     = 
+|creador        = 
+|editor         = 
+|data de llançament  = 
+|estat actual   = Actiu
+|llicència      = 
+|escrit en      = 
+|ip             = 
+|eslògan        = 
+|notes          =
+}}
+El '''''Virtual International Authority File'''''  o '''VIAF''' és un [[registre d'autoritat]]s  d'abast internacional, dissenyat per poder accedir als principals fitxers de noms i autors en l’alfabet i la llengua preferits per cada usuari.<ref>{{ref-publicació |cognom= BC |nom= |enllaçautor= Biblioteca de Catalunya|article= La Biblioteca de Catalunya participa en el projecte capdavanter VIAF (Virtual International Authority File)|url= http://www.bnc.cat/Visita-ns/Noticies/La-Biblioteca-de-Catalunya-participa-en-el-projecte-capdavanter-VIAF-Virtual-International-Authority-File|format= |llengua= |consulta= 24 d'octubre del 2014|publicació= Nota de premsa|data= {{data inici|2013|10|24}} |citació= [...] amb la incorporació a VIAF dels registres de noms fets per les biblioteques catalanes, es fa un pas més en el posicionament de Catalunya i la llengua catalana en el món.|ref=BC }}</ref>
+
+Es tracta d'un projecte conjunt de diverses Biblioteques Nacionals i és operat pel '''Online Computer Library Center ([[OCLC]])'''.<ref>{{ref-publicació |cognom=Kelley |nom=Michael |cognom2 =Schwartz |nom2=Meredith |any=2012 |article=VIAF service transitions to OCLC |publicació=Library Journal |volum=Vol. 137 |exemplar=Num. 8 |pàgina =16 |editorial=Media Source Inc.}}</ref> El projecte va ser iniciat per la [[Biblioteca Nacional d'Alemanya]] i la [[Biblioteca del Congrés dels Estats Units]].<ref>{{Ref-llibre |cognom= Bennett|nom= Rick |cognom2= Hengel-Dittrich |nom2= Christina |cognom3= O'Neill|nom3 = Edward T |cognom4= Tillett |nom4 = Barbara B |editor= |títol= VIAF (Virtual International Authority File): Linking Die Deutsche Bibliothek and Library of Congress Name Authority Files|url= http://archive.ifla.org/IV/ifla72/papers/123-Bennett-en.pdf |format= |consulta= |llengua= anglès |volum= |edició= |editorial= International Federation of Library Associations and Institutions |lloc= L'Haia |data= {{data inici|2006|8|24}}|pàgina= |pàgines= |col·lecció= |isbn= |citació= The long-term goal of the VIAF project is to combine the authoritative names from many national libraries and other significant sources into a shared global authority service.|ref= }}</ref> Amb més de vint milions de fitxes (el 2012), és la base de dades creuades del [[Informàtica en núvol|núvol informàtic]] més important, també per la seva integració amb [[Viquipèdia]].<ref>{{Ref-llibre |cognom= Coyle |nom=Karen |capítol= |urlcapítol= |editor= |títol= Linked Data Tools: Connecting on the Web: Library technology reports|url= http://www.alatechsource.org/taxonomy/term/106/linked-data-tools-connecting-on-the-web |format=  |llengua= anglès|volum= |edició= |editorial=American Library Association |lloc= |data= 2012 |pàgina= 35 |isbn= 9780838958599 |citació= |ref= }}</ref>
+
+La finalitat és la d'enllaçar tots els fitxers nacionals d'autoritats (com la base de dades normativa alemanya ''[[Gemeinsame Normdatei|Gemeinsame Normdatei (GND)]]'' i d'altres en un únic fitxer mundial  d'autoritats en línia. En aquest fitxer, els registres idèntics de diferents dades són enllaçats. Cada registre '''VIAF''' té un únic codi estàndard que fa referència als registres originals de cada autoritat. També conté informació addicional sobre les obres escrites sobre aquesta autoritat. Totes les dades són disponibles en línia per a facilitar la recerca i l'intercanvi de dades. Per als autors de l'àmbit de parla català, s'hi incorporen les dades del [[Catàleg d'autoritats de noms i títols de Catalunya|Catàleg d'autoritats de noms i títols de Catalunya (Càntic)]].{{sfn|BNC}}
+
+A la península Ibèrica hi col·laboren la [[Biblioteca de Catalunya]], la [[Biblioteca Nacional de Portugal]] i la [[Biblioteca Nacional d'Espanya]].
+== Referències ==
+{{referències|2}}
+
+== Enllaços externs ==
+* [http://viaf.org Lloc Web Oficial]
+* [https://www.oclc.org/services/brochures.en.html Informació sobre els objectius i els mètodes del VIAF] (al [[OCLC]]) {{en}}
+
+[[Categoria:Bibliografia]]
+[[Categoria:Identificadors]]

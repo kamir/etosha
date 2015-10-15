@@ -1,0 +1,12 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	1.0	1.0	244,000000	5,497168	google	5,497168
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	1.0	1.0	244,000000	5,497168	mailbox	5,497168
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	2.0	1.0	122,500000	4,808111	advanced	4,808111
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	3.0	1.0	82,000000	4,406719	search	4,406719
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	17.0	1.0	15,294118	2,727468	my	2,727468
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	30.0	1.0	9,100000	2,208274	an	2,208274
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	33.0	1.0	8,363636	2,123893	do	2,123893
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	73.0	1.0	4,328767	1,465283	i	1,465283
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	75.0	1.0	4,240000	1,444563	can	1,444563
+8/20/2014 9:49:51_mirko.kaempf@cloudera.com_9	243.0	86.0	1.0	3,825581	1,341710	in	1,341710

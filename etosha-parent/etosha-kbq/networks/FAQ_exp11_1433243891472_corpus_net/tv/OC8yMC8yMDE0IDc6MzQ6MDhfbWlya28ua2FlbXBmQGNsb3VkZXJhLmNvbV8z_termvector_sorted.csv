@@ -1,0 +1,11 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	1.0	1.0	244,000000	5,497168	shard	5,497168
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	1.0	1.0	244,000000	5,497168	solrj	5,497168
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	3.0	1.0	82,000000	4,406719	index	4,406719
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	4.0	1.0	61,750000	4,123094	specific	4,123094
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	17.0	1.0	15,294118	2,727468	using	2,727468
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	31.0	1.0	8,838710	2,179141	data	2,179141
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	86.0	1.0	3,825581	1,341710	in	1,341710
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	101.0	1.0	3,405941	1,225521	to	1,225521
+8/20/2014 7:34:08_mirko.kaempf@cloudera.com_3	243.0	119.0	1.0	3,042017	1,112521	a	1,112521

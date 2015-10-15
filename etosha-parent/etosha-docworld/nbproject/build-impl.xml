@@ -18,8 +18,8 @@
 
         -->
 <project xmlns:webproject1="http://www.netbeans.org/ns/web-project/1" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:webproject3="http://www.netbeans.org/ns/web-project/3" basedir=".." default="default" name="Etosha_DocWorld-impl">
-    <import file="rest-build.xml"/>
     <import file="jaxws-build.xml"/>
+    <import file="rest-build.xml"/>
     <import file="ant-deploy.xml"/>
     <fail message="Please build using Ant 1.7.1 or higher.">
         <condition>
@@ -1060,9 +1060,8 @@ exists or setup the property manually. For example like this:
     <target depends="init" if="dist.ear.dir" name="library-inclusion-in-manifest">
         <copyfiles files="${file.reference.markdown4j-2.2.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${file.reference.TCClientModul-0.1.2-SNAPSHOT-jar-with-dependencies.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
-        <copyfiles files="${file.reference.restfb-1.6.11.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
-        <copyfiles files="${reference.WikiAPIClient.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${libs.jaxws21.classpath}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
+        <copyfiles files="${reference.WikiAPIClient.jar}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <copyfiles files="${libs.Metro_2.2.classpath}" iftldtodir="${build.web.dir}/WEB-INF" todir="${dist.ear.dir}/lib"/>
         <mkdir dir="${build.web.dir}/META-INF"/>
         <manifest file="${build.web.dir}/META-INF/MANIFEST.MF" mode="update"/>
@@ -1070,9 +1069,8 @@ exists or setup the property manually. For example like this:
     <target depends="init" name="library-inclusion-in-archive" unless="dist.ear.dir">
         <copyfiles files="${file.reference.markdown4j-2.2.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${file.reference.TCClientModul-0.1.2-SNAPSHOT-jar-with-dependencies.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
-        <copyfiles files="${file.reference.restfb-1.6.11.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
-        <copyfiles files="${reference.WikiAPIClient.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${libs.jaxws21.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
+        <copyfiles files="${reference.WikiAPIClient.jar}" todir="${build.web.dir}/WEB-INF/lib"/>
         <copyfiles files="${libs.Metro_2.2.classpath}" todir="${build.web.dir}/WEB-INF/lib"/>
     </target>
     <target depends="init" if="dist.ear.dir" name="-clean-webinf-lib">

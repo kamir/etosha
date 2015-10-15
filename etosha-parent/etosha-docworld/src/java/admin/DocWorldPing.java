@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * 
  */
 package admin;
 
@@ -11,8 +10,11 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
+ /**
+ * Simple Ping Test. 
+ * 
+ * Is the HBase cluster still running fine?
+ * 
  * @author kamir
  */
 public class DocWorldPing {
@@ -33,6 +35,7 @@ public class DocWorldPing {
         String k = "Hi";
         String v = "Mirko!";
         try {
+            
             a.putDoc(k.getBytes(), v.getBytes() );
         
             String r = new String( a.getDoc( k.getBytes() ) );

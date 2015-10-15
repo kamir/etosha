@@ -1,0 +1,10 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	1.0	1.0	244,000000	5,497168	intelij	5,497168
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	4.0	1.0	61,750000	4,123094	our	4,123094
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	6.0	1.0	41,500000	3,725693	course	3,725693
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	12.0	1.0	21,250000	3,056357	why	3,056357
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	19.0	1.0	13,789474	2,623906	we	2,623906
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	26.0	1.0	10,346154	2,336615	use	2,336615
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	27.0	1.0	10,000000	2,302585	spark	2,302585
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	33.0	1.0	8,363636	2,123893	do	2,123893
+1/6/2015 13:39:22_mirko.kaempf@cloudera.com_16	243.0	86.0	1.0	3,825581	1,341710	in	1,341710
