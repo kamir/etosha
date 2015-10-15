@@ -1,0 +1,283 @@
+Microsoft PowerPoint - Budapest_Youtube_OSS_Cyber_short [Compatibility Mode]Endogenous versus exogenous dynamics and scaling laws in YouTube Open Source Softwares and Cyber-risksin YouTube, Open Source Softwares and Cyber-risks
+Didi S tt Collaborators:Didier Sornette Chair of Entrepreneurial Risks ETH Zurich
+(Swiss Federal Institute of Technology Zurich)
+Collaborators: Riley Crane (post-doc) Thomas Maillart (PhD student)(Swiss Federal Institute of Technology, Zurich)
+Department of Management, Technology and Economics http://www.er.ethz.ch/
+( )
+Social networks
+Guidelines from Physics: perturb and study the responseperturb and study the response
+Updated every hour AMAZON BOOK SALES
+Updated every hour
+20:00    4 March. 2005
+D. Sornette et al., Phys. Rev. Letts. 93 (22), 228701 (2004)
+Epidemic processes by word-of-mouth
+Simplest example of branching
+starting from an existing branch, with probability C0 the branch stops at the next step; with
+probability C1, the branch continues to grow at th t t ith b bilit C it d lthe next step; with probability C2, it develops
+two branches
+The critical condition C1 + 2C2 = 1 together with the normalization C0+C1+C2 = 1 yields the condition C0 = C2 at criticality.
+Mean field theory of Hawkes self-exciting conditional Poisson Process
+Theory: Null Hypotheses • The tests are about the slopes of the
+f i di i l hresponse functions, conditional on the class of peak determined by the slope y
+of the growth  AT CRITICALITY n=1
+Endogenous Exogenous
+Non-critical: +
+Hawkes ETAS model and numerical simulations The impact of cascades of generations
+Rate of aftershocks for a numerical simulation of the ETAS model
+¾ is the global law also an
+Omori law ?Omori law ?
+Endogenous precursorg p
+Endogenous relaxationEndogenous relaxation
+TMTM
+Riley Crane Didier SornetteRiley Crane, Didier Sornette ETH Zurich, D-MTEC Chair of Entrepreneurial Risks
+The Front Page
+Overview  Video Arrival and Site Growth  Featuring – Endogenous/Exogenous Shocks  Dynamical Relaxation Following Shocks Dynamical Relaxation Following Shocks
+Perl script via application programming interface (API) for thePerl script, via application programming interface (API) for the automated request of data.  Stored in MySQL database
+YouTube responds with a structured (XML) document containing information such as the cumulative number of times a video has been
+i d (d i ) l ith d i ti i f ti ( t ti )viewed (dynamic), along with descriptive information (static) concerning the user who posted the video, the title, tags, length,
+category rating comments etccategory, rating, comments, etc
+Birth of a Video
+Locally - distribution of Waiting
+Non-Stationary Poisson Process
+Non-Stationary Poisson Rate Cumulative Number of Videos
+Non Stationary Poisson Rate
+Most Viewed Page
+Most Recent Page
+The Effect of Featuring Growth of a Video before being featured
+FeaturingFeaturing begins
+Decline of a video after being featured
+F i dFeaturing ends
+“Endogenous”
+“Exogenous”
+Typical Relaxation Following Peak
+Typical Relaxation Following Peak
+Typical Relaxation Following Peak
+Typical Relaxation Following Peak
+Typical Relaxation Following Peak
+Typical Relaxation Following Peak
+Typical Response Shock: more than 100 views on a single day, and has at least 10 days following this peak.
+Of the 5 million videos we are tracking, 76% do not receive 100 views on any given day. Furthermore, 15% either don't have 10 days worth of data, or don't have 10 days following a
+qualified peak.  This leaves us with roughly 9% (=421,487 videos).
+A = Amplitude
+p = exponent governing decay
+ A Least-Squares Fit is performed on the log-log data over the largest possible range.
+ The exponent “p” is extracted
+Sorting Out the data:  Peak Height Fraction
+“C iti l/E d ” “Not Critical/Exo”
+F ti 40% “Critical/Endo” Fraction ~ 1%
+Fraction ~ 40%
+Exponent – Shock as Fraction of Total Peak Height “Critical”Critical relaxes slowly(most viewed)
+“Not Critical” relaxes quickly
+Software vulnerability dynamics• vulnerability process is a good proxy of
+software resilience to bugs
+with S. Frei (ETH Zurich)
+ccdf dynamics
+y y
+4. patch release (blue)
+exploits and patch can appear before disclosure (crosses) or after (circles)
+time ccdf
+once again, response distribution in this process is heavily tailed
+very characteristic is the distribution of  exploits (before disclosure, green crosses) which shows some patterns of power-law with phase transition,
+in lower tail
+between types of softwares: - Microsoft (blue)Microsoft (blue) - Linux (red) - Oracle (purple)
+- Mozilla (green)(g )
+• We can see that time to patch distribution is also heavilytaileddistribution is also heavily tailed.
+• While it varies differently according to consideredaccording to considered
+software the allure remains somehow the similar,
+especially when we consider Microsoft (blue) and Linux (red)(red).
+(Frei et al. 2006)
+Observations :
+Predicting the rise and fall of social and economic interactions by monitoring and modeling internet activities
+and commercial sales
+-meteorite at the Cretaceous/Tertiary KT boundary -volcanic eruptions (Deccan traps)
+Discoveries -serendipity -maturation
+-external shock
+Volatility bursts in financial time series -external shock -cumulative effect of “small” newsexternal shock
+-self-organized instability Immune system
+Earthquakes -tectonic driving
+Brain (learning) t l i t
+Parturition -mother/foetus triggered?
+Aviation industry recession Commercial success and sales
+-mother-foetus complex?
+-Ads -epidemic network
+Open Source Software (OSS)Open Source Software (OSS) Contribution in Mozilla
+• data mining in Concurrent Versioning System (CVS)data mining in Concurrent Versioning System (CVS) • analyze software (Mozilla Project) since its start (1998) • focus on developers, debuggers, contribution
+Open Source Software (OSS) Network (with Thomas Maillart)
+• One Key feature of OSS is the capability to y p y reuse pieces of source code wherever they are useful or needed.
+• Programs call other Programs, allowing development time savings, and long range updates
+• We can define Links between programs (nodes)We can define Links between programs (nodes) as Edges of an OSS Network. These Links are directed.
+• We study the connectivity of nodes (out degrees) distribution among a particular OSS g ) g p subset: packages included in Debian Linux Distribution
+Open Source Software (OSS) NetworkOpen Source Software (OSS) Network
+Debian software
+• on four orders ofon four orders of magnitude
+• this is the typical• this is the typical pattern of a scale free network
+linux kernel
+ee et o
+Open Source Software (OSS) C t ib ti i M illContribution in Mozilla
+• Since no formal organisation occurs in OSS• Since no formal organisation occurs in OSS, we determine the activity of source code
+committers in time seriescommitters in time series
+• We differentiate by developers (adding features) and debugger (adding robustness)features) and debugger (adding robustness)
+• We can clearly see that clusters of activity i ti d ( d t )occur in time and space (source code tree)
+Open Source Software (OSS) C t ib ti i M illContribution in Mozilla
+• distribution of contributions (both development and debugging) is heavy tailedgg g) y
+• we analyze distribution of deviations between development and debugging per committer todevelopment and debugging per committer to
+find coder’s profiles.
+• Man are de eloping as m ch as deb gging• Many are developing as much as debugging • But some develop far much more than
+debugging
+• The graphs show 4 distributions:
+1. checkins in the source code repository (purple) 2 contribution in lines of code (blue)2. contribution in lines of code (blue) 3. bugs treated (red) 4. difference between checking and bugs (green)
+• We can see that all distributions are heavy tailed• We can see that all distributions are heavy tailed, denoting a wide dispersion in coders contributions as well as in their specialization (developers or debuggers)
+• From the green graph, we assert that developers mainly also debug (lower tail) while have a tendency to onlyalso debug (lower tail) while have a tendency to only
+develop (upper tail)
+Open Source Software (OSS) Contribution in MozillaContribution in Mozilla
+- Activity Maps - • Clusters of activity appear by visual Activity by Folder by Codery pp y
+inspection
+• Coders tend to work in localized space ( source code tree) and time
+y
+s
+e
+n
+i
+o
+r
+i
+t
+y
+• Open question: are there cascading effects, source code development ? Intuitevely Yes!
+• Wh h f h di d e r
+s
+s
+o
+r
+t
+e
+d
+b
+y
+• What are the sources of these cascading effects? exogenous? endogenous? How does source code development process evolves in
+the life of OSS project?
+c
+o
+d
+b
+y
+p
+a
+t
+h
+Activity by Folder vs Time Activity by Coder vs Time
+o
+l
+d
+e
+r
+s
+Definition of the branching model:
+Simplest example of branching
+starting from an existing branch, with probability C0 the branch stops at the next step; with
+probability C1, the branch continues to grow at th t t ith b bilit C it d lthe next step; with probability C2, it develops
+two branches
+The critical condition C1 + 2C2 = 1 together with the normalization C0+C1+C2 = 1 yields the condition C0 = C2 at criticality.
+Mean field theory of Hawkes self-exciting conditional Poisson Process
+Theory: Null Hypotheses • The tests are about the slopes of the
+f i di i l hresponse functions, conditional on the class of peak determined by the slope y
+of the growth  AT CRITICALITY n=1
+Endogenous Exogenous
+Foreshock (orForeshock (or growth)
+¾ pglobal # plocal ?global local
+D-MTEC Chair of Entrepreneurial Risks
+Endogenous precursorg p
+Endogenous relaxationEndogenous relaxation
+Videos Added per Minute times is Exponential
+Non-Stationary Poisson Process
+Exponent 3.3 reveals the average nb of “friends”
+Non-Stationary Poisson Rate Cumulative Number of Videos
+Non Stationary Poisson Rate
+N(t)≈t^≈t^3 33N(t)≈t^≈t^3.3.3
+Most Viewed Page
+Most Recent Page
+The Effect of Featuring Growth of a Video before being featured
+FeaturingFeaturing begins
+Editorial Featuring ( bi d )(arbitrary random)
+Decline of a video after being featured
+F i dFeaturing ends
+Datum
+(Front page)
+v ewed)
+(Front page)
+• we identify 4 steps in vulnerability process:
+with S. Frei (ETH Zurich)
+ccdf dynamics
+y y
+(crosses) or after (circles)
+once again, response distribution in this process is heavily tailed
+very characteristic is the distribution of  exploits (before disclosure, green crosses) which shows some patterns of power-law with phase transition,
+in lower tail
+time
+Towards Predictions
+Observations :
+Predicting the rise and fall of social and economic interactions by monitoring and modeling internet activities
+and commercial sales
+Endogenous versus Exogenous E ti ti DiscoveriesExtinctions
+-meteorite at the Cretaceous/Tertiary KT boundary -volcanic eruptions (Deccan traps)
+Discoveries -serendipity -maturation
+-self-organized critical events Financial crashes
+-external shock
+Volatility bursts in financial time series -external shock -cumulative effect of “small” newsexternal shock
+-self-organized instability Immune system
+external viral or bacterial attack
+Earthquakes -tectonic driving
+-mother-foetus complex?
+Recovery after wars?
+Social unrestsRecovery after wars? -internally generated (civil wars) -externally generated
+Social unrests -triggering factors -rotting of social tissue
+Motivation, Effort, ProductionMotivation, Effort, Production in Open Source Software
+Open Source Software (OSS)Open Source Software (OSS) Contribution in Mozilla
+• data mining in Concurrent Versioning System (CVS)data mining in Concurrent Versioning System (CVS) • analyze software (Mozilla Project) since its start (1998) • focus on developers, debuggers, contribution
+Open Source Software (OSS) Network (with Thomas Maillart)
+• One Key feature of OSS is the capability to y p y reuse pieces of source code wherever they are useful or needed.
+• Programs call other Programs, allowing development time savings, and long range updates
+• We can define Links between programs (nodes)We can define Links between programs (nodes) as Edges of an OSS Network. These Links are directed.
+• We study the connectivity of nodes (out degrees) distribution among a particular OSS g ) g p subset: packages included in Debian Linux Distribution
+Open Source Software (OSS) NetworkOpen Source Software (OSS) Network
+Debian software
+• exponent = 1 Debian software
+• This distribution is also heavy tailedy
+• The graphs show 4 distributions:
+1. checkins in the source code repository (purple) 2 contribution in lines of code (blue)2. contribution in lines of code (blue) 3. bugs treated (red) 4. difference between checking and bugs (green)
+• We can see that all distributions are heavy tailed• We can see that all distributions are heavy tailed, denoting a wide dispersion in coders contributions as well as in their specialization (developers or debuggers)
+• From the green graph, we assert that developers mainly also debug (lower tail) while have a tendency to onlyalso debug (lower tail) while have a tendency to only
+develop (upper tail)
+Open Source Software (OSS) Contribution in MozillaContribution in Mozilla
+- Activity Maps - • Clusters of activity appear by visual Activity by Folder by Codery pp y
+inspection
+• Coders tend to work in localized space ( source code tree) and time
+y
+s
+e
+n
+i
+o
+r
+i
+t
+y
+)
+)
+• Open question: are there cascading effects, source code development ? Intuitevely Yes!
+• Wh h f h di d e r
+s
+(
+s
+o
+r
+t
+e
+d
+b
+y
+• What are the sources of these cascading effects? exogenous? endogenous? How does source code development process evolves in
+the life of OSS project?
+c
+o
+d

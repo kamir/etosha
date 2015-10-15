@@ -1,0 +1,263 @@
+{{Ficha de sitio web
+| nombre           = ''Internet Movie Database (IMDb)''
+| logotipo         = [[Archivo:IMDb logo.svg|200px]] 
+| url              = [http://www.imdb.com www.imdb.com]
+| comercial        = Sí
+| tipo             = [[Base de datos]] [[en línea]] para el [[cine]], la [[televisión]], y los [[videojuego]]s
+| registro         = El registro es opcional para miembros para participar en discusiones, comentarios, calificaciones y votaciones, incluyendo acceso a listados de películas, catálogos, y horarios.<ref>{{cita web|autor=Imdb.com|título=What are the advantages of registering with IMDb.com?|url=http://www.imdb.com/help/show_leaf?whyregister|fechaacceso=9 de noviembre de 2012}}</ref> 
+| idioma           = [[Idioma inglés|Inglés]] 
+| español          = Sí
+| propietario      = [[Amazon.com]]
+| creador          = [[Col Needham]]
+| fechalanzamiento = {{fecha de lanzamiento|17|10|1990}}<ref name=imdbhistory>{{cita web|autor=Col Needham|título=IMDb History|url=http://www.imdb.com/help/show_leaf?history|fechaacceso=29 de septiembre de 2012|idioma=Inglés}}</ref> 
+| alexa            = {{decreciente}} 51 (septiembre de 2012) <ref name="alexa">{{cita web|url= http://www.alexa.com/siteinfo/imdb.com |título= Imdb.com Site Info | editorial= [[Alexa Internet]] |fechaacceso= 29 de septiembre de 2012 }}</ref><!--Favor de actualizar este número mensualmente.-->
+| estadoactual     = Activo
+| url_2            = [http://www.imdb.es/]
+}}
+
+La '''''Internet Movie Database''''' ('''IMDb''', en [[idioma español|español]] ''Base de datos de películas en Internet'') es una [[base de datos]] [[en línea]] que almacena información relacionada con [[película]]s, personal de equipo de producción (incluyendo [[Director de cine|directores]] y [[Producción audiovisual|productores]]), [[actor]]es, [[Serie de televisión|series de televisión]], [[Programa (televisión)|programas de televisión]], [[videojuego]]s, [[actor]]es de [[doblaje]] y, más recientemente, personajes ficticios que aparecen en los medios de entretenimiento visual. Recibe más de 100 millones de usuarios únicos al mes y cuenta con una versión móvil.<ref>{{cita web|url=http://www.celebjunkyz.com/2009/08/19/top-ten-internet-companies/ |título=Top Ten Internet Companies &#124; CelebJunkyz.com &#124; Celebrity News Celebrity Gossip Celebrity Blog |editorial=CelebJunkyz.com |fecha=19 de agosto de 2009 |fechaacceso=20 de agosto de 2011}}</ref> IMDb fue inaugurada el [[17 de octubre]] de [[1990]],<ref name=imdbhistory></ref> y en [[1998]] fue adquirida por [[Amazon.com]].<ref>{{cita noticia|nombre=[[The New York Times]]|título=Company news: Amazon.com is in deals for three internet companies|url=http://www.nytimes.com/1998/04/28/business/company-news-amazoncom-is-in-deals-for-three-internet-companies.html|fecha=28 de abril de 1998|fechaacceso=29 de septiembre de 2012}}</ref>
+
+== IMDbPro ==
+Desde [[2002]] IMDb tiene en una página "hermana" llamada IMDbPro, más completa, que necesita una suscripción de pago. Orientada a un público profesional, muestra información de contacto de personas y empresas ligadas a la industria cinematográfica norteamericana, así como información de casting.<ref name="imdbproinfo">{{cita noticia|nombre=[[IMDb]]|título=Imdb reveals the top 10 stars, films and tv series of the last 10 years to celebrate the 10th anniversary of IMDbPro|url=http://www.imdb.com/pressroom/press_releases_ind/2012/01_25|fecha=25 de enero de 2012|fechaacceso=29 de septiembre de 2012}}</ref>
+
+== Historia ==
+
+Los antecedentes de IMDb se remontan a [[1989]], cuando un aficionado publicó una discusión en un grupo de noticias en [[usenet]] sobre actrices atractivas. <ref name="faq1997" /> A partir de ese momento, otros usuarios de la lista comenzaron a recopilar actores y actrices con las películas en las que habían intervenido. La base de datos original fue construida a partir de las listas de créditos que Col Needham y otros dos lectores, Dave Knight y Andy Krieg, habían comenzado a publicar en el grupo. Needham publicó en septiembre de 1991 la primera herramienta simple (una serie de "[[shell script]]s" de [[Unix]]) que permitía la consulta de las listas existentes en ese momento: la lista de directores, la de actores, la de actrices y la de actores fallecidos. Con la fusión de las cuatro la base de datos resultante se convertiría finalmente en la IMDb.<ref name="faq1997" />
+
+=== Publicación del sitio web ===
+En [[1992]], la base de datos se había expandido para incluir categorías adicionales de cineastas, curiosidades, biografías y resúmenes argumentales. 
+
+En 1993 se publicó la interfaz para consultas utilizando correo electrónico creada por Alan Jay.<ref name=faq1997>{{cita web|autor=Col Needham|título=Internet Movie Database frequently asked questions|url=http://faqs.cs.uu.nl/na-dir/movies/movie-database-faq.html|fechaacceso=4 de noviembre de 2012|fecha=6 de noviembre de 1997|idioma=inglés}}</ref> En [[1994]], la interfaz de correo electrónico se revisó para aceptar el envío de toda información, lo cual significaba que la gente ya no tendría que enviar sus actualizaciones a contenedores de listas específicos. Sin embargo, se mantuvo la estructura en la que la información recibida sobre una película era dividida entre múltiples administradores de sección. 
+
+Paralelamente, en el mismo año de 1993, se publicó la base de datos en la [[World Wide Web]] con el nombre de ''Cardiff Internet Movie Database''.{{cita requerida}} . [[Rob Hartill]] fue el autor original de la interfaz de la web que residía en los servidores del Departamento de Ciencias de la Computación de la [[Universidad de Cardiff]] (Reino Unido). Desde sus inicios el sitio web ha sido desarrollado en [[Perl]] y el sistema de [[base de datos]] es un desarrollo propio.<ref>[http://www.imdb.com/help/show_leaf?techinfo What software/hardware are you using to run the site?]</ref> 
+
+Durante los años siguientes IMDb se gestionó como un esfuerzo colectivo de un grupo de voluntarios mientras se agregaban nuevas listas, se completaban contenidos incorporando características internacionales como la lista de nombres alternativos y se sucedían mejoras y reescrituras del software.<ref name=faq1997 />
+
+=== Constitución como empresa ===
+En [[1996]], IMDb se constituyó como empresa en el Reino Unido, con el nombre de The Internet Movie Database Ltd.<ref>{{cita web|autor=Duedil.com|título=Internet Movie Database Limited|url=https://www.duedil.com/company/03144377/internet-movie-database-limited|fechaacceso=29 de septiembre de 2012|idioma=Inglés}}</ref>  El fundador, Col Needham, se convirtió en el propietario primario así como en su imagen principal. IMDb se convirtió en un servicio patrocinado y financiado con publicidad. El debut empresarial se acompañó de nuevas secciones y una reescritura y optimización del sitio web. <ref name=faq1997 />
+
+=== Adquisición por Amazon.com ===
+En [[1998]], [[Jeff Bezos]], el fundador, propietario y CEO de [[Amazon.com]], llegó a un acuerdo con Col Needham y otros accionistas principales para comprar el 100% de las acciones de IMDb y adjuntarlo a Amazon.com como una empresa filial.<ref>{{cita web|url=http://www.prnewswire.co.uk/cgi/news/release?id=37602|título=News Release|editorial=PR Newswire Europe Ltd.|fechaacceso=15 de enero de 2007}}</ref> Esto dio a IMDb la capacidad para pagar salarios a los accionistas por su trabajo, mientras Amazon.com sería capaz de usar el IMDb como un recurso de anuncios para vender DVD y cintas de vídeo.
+
+IMDb continuó expandiendo su funcionalidad. El [[15 de enero]] de [[2002]], añadió un servicio de suscripción conocido como IMDbPro, dirigido a los profesionales del entretenimiento. IMDb fue anunciado y lanzado en el [[Festival de Cine de Sundance]] en 2002.<ref name="imdbproinfo"></ref> Proporciona una variedad de servicios incluyendo detalles sobre la producción de la película, taquilla, así como un directorio de la empresa.
+
+Como un incentivo adicional para los usuarios, a partir de [[2003]], si son identificados entre los "100 mejores contribuidores" en términos de cantidades de presentaciones de datos sólidos, reciben acceso gratuito a IMDbPro para el siguiente año; para [[2006]], esto fue aumentado a los 150 mejores contribuidores, y para [[2010]], a los 250 mejores.<ref>{{cita web|url=http://www.imdb.com/updates/guide/top_contributors#top2010|título=IMDb announcement: Top 250 Contributors for 2010|fechaacceso=25 de agosto de 2011|autor=Col Needham|fecha=1 de enero de 2011|editorial=IMDb Contributors Top Contributors}}</ref> En noviembre de [[2008]], IMDb lanzó su primera versión oficial en un idioma extranjero, con [http://www.imdb.de/ IMDb.de] (en alemán).<ref>{{cita noticia|nombre=[[Amazon]]|título=Internet Movie Database launches IMDb.de, a German Language Website Offering Comprehensive Information for Movie and TV Fans|url=http://phx.corporate-ir.net/phoenix.zhtml?c=97664&p=irol-newsArticle_Print&ID=1222929&highlight=|fecha=6 de noviembre de 2008|fechaacceso=29 de septiembre de 2012}}</ref>  Adicionalmente en 2008, IMDb adquirió otras dos compañías: [[Withoutabox]]<ref>{{cita noticia|nombre=[[Amazon]]|título=Internet Movie Database (www.imdb.com) Reaches Definitive Agreement to Acquire Withoutabox|url=http://phx.corporate-ir.net/phoenix.zhtml?c=176060&p=irol-newsArticle&ID=1097345&highlight=withoutabox|fecha=17 de enero de 2008|fechaacceso=29 de septiembre de 2012}}</ref>  y [[Box Office Mojo]].<ref>{{cita noticia|nombre=[[Los Angeles Times]]|título=Amazon's IMDb.com acquies Boxofficemojo.com|url=http://latimesblogs.latimes.com/entertainmentnewsbuzz/2008/12/online-movie-si.html|fecha=17 de diciembre de 2008|fechaacceso=29 de septiembre de 2012}}</ref>
+
+El [[17 de octubre]] de [[2010]], IMDb lanzó un vídeo original (www.imdb.com/20) en celebración de su 20° aniversario.<ref>{{cita web | apellido = Ehlrich| nombre = Brenna | título = IMDb Turns 20, Launches Original Video to Celebrate | url=http://mashable.com/2010/09/30/imdb-20|editorial=mashable.com | fechaacceso = 30 de septiembre de 2010 }}</ref>
+
+A partir de mayo de [[2011]], el sitio ha sido [[Gran Cortafuegos|filtrado]] en China por más de un año, aunque muchos internautas lo abordan a través de un [[Proxy|servidor proxy]] o [[red privada virtual]].
+
+== IMDb Top 250 ==
+'''"The IMDb Top 250"''' es destinado a ser un listado de los 250 películas con mejor calificación, basado en calificaciones de los usuarios registrados del sitio web usando los métodos descritos.<ref>{{cita noticia | url=http://www.imdb.es/chart/top?ref_=nb_mv_3_chttp|título=Top 250 películas votadas por nuestros usuarios|editorial=IMDb| fechaacceso=2 de febrero de 2013}}</ref> Solamente producciones cinematográficas (excluyendo documentales) que duren por lo menos 45 minutos y tengan más de 3000 calificaciones son consideradas; todas las demás producciones no son elegibles.<ref>{{cita noticia | url=http://www.imdb.com/help/search?domain=helpdesk_faq&index=1&file=notintop250|título=Types of titles excluded from the Top 250|editorial=IMDb| fechaacceso=25 de abril de 2007}}</ref>
+
+{| class=wikitable
+|-align=center
+!Ranking
+!Calificación
+!Título de película
+!Director
+!Protagonista
+!Año de estreno
+|-align=center
+|#1
+|[http://www.imdb.es/title/tt0111161/ 9.3]
+|''[[The Shawshank Redemption]]''
+|[[Frank Darabont]]
+|[[Tim Robbins]]
+|[[1994]]
+|-align=center
+|#2
+|[http://www.imdb.es/title/tt0068646/ 9.2]
+|''[[El padrino (película)|The Godfather]]''
+|[[Francis Ford Coppola]]
+|[[Marlon Brando]]
+|[[1972]]
+|-align=center
+|#3
+|[http://www.imdb.es/title/tt0071562/ 9.0]
+|''[[El padrino II|The Godfather: Part II]]''
+|[[Francis Ford Coppola]]
+|[[Al Pacino]]
+|[[1974]]
+|-align=center
+|#4
+|[http://www.imdb.es/title/tt0110912/ 9.0]
+|''[[Pulp Fiction]]''
+|[[Quentin Tarantino]]
+|[[John Travolta]]
+|[[1994]]
+|-align=center
+|#5
+|[http://www.imdb.es/title/tt0060196/ 9.0]
+|''[[Il buono, il brutto, il cattivo|The Good, the Bad, and the Ugly]]''
+|[[Sergio Leone]]
+|[[Clint Eastwood]]
+|[[1966]]
+|-align=center
+|#6
+|[http://www.imdb.es/title/tt0468569/ 9.0]
+|''[[The Dark Knight]]''
+|[[Christopher Nolan]]
+|[[Christian Bale]]
+|[[2008]]
+|-align=center
+|#7
+|[http://www.imdb.es/title/tt0050083/ 8.9]
+|''[[12 Angry Men (película de 1957)|Twelve Angry Men]]''
+|[[Sidney Lumet]]
+|[[Henry Fonda]]
+|[[1957]]
+|-align=center
+|#8
+|[http://www.imdb.es/title/tt0108052/ 8.9]
+|''[[Schindler's List]]''
+|[[Steven Spielberg]]
+|[[Liam Neeson]]
+|[[1993]]
+|-align=center
+|#9
+|[http://www.imdb.es/title/tt0167260/ 8.9]
+|''[[El Señor de los Anillos: El retorno del Rey|The Lord of the Rings: The Return of the King]]''
+|[[Peter Jackson]]
+|[[Elijah Wood]]
+|[[2003]]
+|-align=center
+|#10
+|[http://www.imdb.es/title/tt0137523/ 8.9]
+|''[[Fight Club]]''
+|[[David Fincher]]
+|[[Edward Norton]]
+|[[1999]]
+|-align=center
+|#11
+|[http://www.imdb.es/title/tt0080684/ 8.8]
+|''[[Star Wars: Episode V - The Empire Strikes Back|Star Wars Episode V: The Empire Strikes Back]]''
+|[[Irvin Kershner]]
+|[[Mark Hamill]]
+|[[1980]]
+|-align=center
+|#12
+|[http://www.imdb.es/title/tt0120737/ 8.8]
+|''[[El Señor de los Anillos: La Comunidad del Anillo|The Lord of the Rings: The Fellowship of the Ring]]''
+|[[Peter Jackson]]
+|[[Elijah Wood]]
+|[[2001]]
+|-align=center
+|#13
+|[http://www.imdb.es/title/tt0073486/ 8.8]
+|''[[One Flew Over the Cuckoo's Nest]]''
+|[[Miloš Forman]]
+|[[Jack Nicholson]]
+|[[1975]]
+|-align=center
+|#14
+|[http://www.imdb.es/title/tt1375666/ 8.8]
+|''[[Inception]]''
+|[[Christopher Nolan]]
+|[[Leonardo DiCaprio]]
+|[[2010]]
+|-align=center
+|#15
+|[http://www.imdb.es/title/tt0099685/ 8.8]
+|''[[Goodfellas]]''
+|[[Martin Scorsese]]
+|[[Robert De Niro]]
+|[[1990]]
+|-align=center
+|#16
+|[http://www.imdb.es/title/tt0076759/ 8.8]
+|''[[Star Wars: Episode IV - A New Hope|Star Wars Episode IV: A New Hope]]''
+|[[George Lucas]]
+|[[Mark Hamill]]
+|[[1977]]
+|-align=center
+|#17
+|[http://www.imdb.es/title/tt0047478/ 8.8]
+|''[[Los siete samuráis|Seven Samurai]]''
+|[[Akira Kurosawa]]
+|[[Toshiro Mifune]]
+|[[1954]]
+|-align=center
+|#18
+|[http://www.imdb.es/title/tt0109830/ 8.7]
+|''[[Forrest Gump]]''
+|[[Robert Zemeckis]]
+|[[Tom Hanks]]
+|[[1994]]
+|-align=center
+|#19
+|[http://www.imdb.es/title/tt0133093/ 8.7]
+|''[[Matrix]]''
+|[[Andy Wachowski]]
+|[[Keanu Reeves]]
+|[[1999]]
+|-align=center
+|#20
+|[http://www.imdb.es/title/tt0167261/ 8.7]
+|''[[El Señor de los Anillos: las dos torres|The Lord of the Rings: The Two Towers]]''
+|[[Peter Jackson]]
+|[[Elijah Wood]]
+|[[2002]]
+|-align=center
+|#21
+|[http://www.imdb.es/title/tt0317248/ 8.7]
+|''[[Ciudad de Dios|City of God]]''
+|[[Fernando Meirelles]]
+|[[Alexandre Rodrigues]]
+|[[2002]]
+|-align=center
+|#22
+|[http://www.imdb.es/title/tt0064116/ 8.7]
+|''[[C'era una volta il West|Once Upon a Time in the West]]''
+|[[Sergio Leone]]
+|[[Charles Bronson]]
+|[[1968]]
+|-align=center
+|#23
+|[http://www.imdb.es/title/tt0114369/ 8.7]
+|''[[Se7en]]''
+|[[David Fincher]]
+|[[Brad Pitt]]
+|[[1995]]
+|-align=center
+|#24
+|[http://www.imdb.es/title/tt0102926/ 8.7]
+|''[[The Silence of the Lambs (película)|The Silence of the Lambs]]''
+|[[Jonathan Demme]]
+|[[Anthony Hopkins]]
+|[[1991]]
+|-align=center
+|#25
+|[http://www.imdb.es/title/tt0034583/ 8.7]
+|''[[Casablanca (película)|Casablanca]]''
+|[[Michael Curtiz]]
+|[[Humphrey Bogart]]
+|[[1942]]
+|}
+
+== Véase también ==
+{{Lista de columnas|2|
+* [[Filmaffinity]]
+* [[Rotten Tomatoes]]
+* [[Internet Broadway Database]]
+* [[Internet Adult Film Database]] (IAFD)
+* [[Adult Film Database]] (AFDb)
+* [[The Movie Database]] (TMDb)
+}}
+
+== Referencias ==
+{{listaref|2}}
+
+== Enlaces externos ==
+* [http://www.imdb.com/ IMDb] (en inglés)
+* [http://www.imdbpro.com/ IMDb Pro] (en [[Idioma inglés|inglés]], solo para suscriptores que paguen una cuota)
+* [http://m.imdb.com Versión móvil de IMDb] (en inglés)
+
+[[Categoría:Bases de datos en línea de cine]]
+[[Categoría:Amazon.com]]
+[[Categoría:Sitios web de cine]]
+[[Categoría:Foros de Internet]]
+[[Categoría:Organizaciones fundadas en 1990]]
+[[Categoría:Web 2.0]]
+[[Categoría:Sitios web en inglés]]
+[[Categoría:Sitios web en portugués]]

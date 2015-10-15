@@ -1,0 +1,10 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	4.0	1.0	61,750000	4,123094	parquet	4,123094
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	4.0	1.0	61,750000	4,123094	work	4,123094
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	13.0	1.0	19,692308	2,980228	files	2,980228
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	22.0	1.0	12,045455	2,488687	with	2,488687
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	27.0	1.0	10,000000	2,302585	spark	2,302585
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	73.0	1.0	4,328767	1,465283	i	1,465283
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	75.0	1.0	4,240000	1,444563	can	1,444563
+1/6/2015 15:05:27_mirko.kaempf@cloudera.com_20	243.0	86.0	1.0	3,825581	1,341710	in	1,341710

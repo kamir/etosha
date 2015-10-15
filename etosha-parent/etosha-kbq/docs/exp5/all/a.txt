@@ -1,0 +1,9 @@
+Auto 
+Reifen 
+Bus 
+Kiste 
+Lager 
+Lager 
+Bus 
+Kiste 
+Immer 

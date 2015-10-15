@@ -1,0 +1,423 @@
+Talk_030314Overview and Applications
+Outline
+(2) Correlation based networks • Estimating correlations from time series • Partial correlations • Dependency network • Node influence • Applications in financial markets • Applications in other systems
+(4) Discussion
+(1) Introduction to network science • Terminology • Network properties • Matrix representation
+(3) Node influence I. Cascading failures in industry networks II. Overlapping communities in networks III. Failure and recovery in networks IV. Evolution of networks V. Cascading failures in the financial system VI. Interdependent networks
+Outline
+(4) Discussion
+(1) Introduction to network science • Terminology • Network properties • Matrix representation
+(3) Node influence I. Cascading failures in industry networks II. Overlapping communities in networks III. Failure and recovery in networks IV. Evolution of networks V. Cascading failures in the financial system VI. Interdependent networks
+What is a network?
+What is a network?
+! ▪ components: nodes, vertices    N
+What is a network?
+What is a network?
+! ▪ components: nodes, vertices    N ! ▪ interactions:  links, edges      L ! ▪ system:     network, graph  (N,L)
+Peter Mary
+Protein 9
+Movie 1
+N=4! L=4
+The choice of the proper network representation determines our ability to use network theory successfully. ! In some cases there is a unique, unambiguous representation. In other cases, the representation is by no means unique. ! For example,, the way we assign the links between a group of individuals will determine the nature of the question we can study.
+Network representation?
+Directed links : URLs on the www phone calls metabolic reactions
+Undirected Directed
+Undirected links : coauthorship links Actor network protein interactions
+An undirected link is the superposition of two opposite directed links.
+A G
+D
+E
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+! !!!!!!
+DirectedUndirected
+⎛
+⎝
+⎜ ⎜ ⎜⎜
+⎞
+⎠
+⎟ ⎟ ⎟⎟
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Aij =
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+€
+Outline
+(2) Correlation based networks • Estimating correlations from time series • Partial correlations • Dependency network • Node influence • Applications in financial markets • Applications in other systems
+(4) Discussion
+(1) Introduction to network science • Terminology • Network properties • Matrix representation
+(3) Node influence I. Cascading failures in industry networks II. Overlapping communities in networks III. Failure and recovery in networks IV. Evolution of networks V. Cascading failures in the financial system VI. Interdependent networks
+ri t( ) = log Pi t( )⎡⎣ ⎤⎦ − log Pi t −1( )⎡⎣ ⎤⎦ S&P500 Return
+S&P500 Price
+ri − ri( ) ⋅ rj − rj( ) σ i ⋅σ j
+PC i, j  m( )  = C i, j( ) − C i,m( ) ⋅C j,m( ) 1− C 2 i,m( )( ) ⋅ 1− C 2 j,m( )( )
+Quantifying functional relationships
+Partial correlation: The partial correlation (residual correlation) between i and j given m, is the correlation
+between i and j after removing their dependency on m; thus, it is a measure of the correlation between i and j after removing the affect of m on their correlation
+Correlation Partial Correlation
+C i, j( ) =
+ri − ri( ) ⋅ rj − rj( ) σ i ⋅σ j
+PC i, j  m( )  = C i, j( ) − C i,m( ) ⋅C j,m( ) 1− C 2 i,m( )( ) ⋅ 1− C 2 j,m( )( )
+Quantifying functional relationships
+Partial correlation: The partial correlation (residual correlation) between i and j given m, is the correlation
+between i and j after removing their dependency on m; thus, it is a measure of the correlation between i and j after removing the affect of m on their correlation
+Correlation Partial Correlation
+C i, j( ) =
+ri − ri( ) ⋅ rj − rj( ) σ i ⋅σ j
+PC i, j  m( )  = C i, j( ) − C i,m( ) ⋅C j,m( ) 1− C 2 i,m( )( ) ⋅ 1− C 2 j,m( )( )
+stock
+0.2
+0.4
+0.6
+0.8
+1
+stock
+Quantifying functional relationships
+a
+b
+c
+d
+e
+f
+a
+b
+c
+d
+e
+f
+3. Dependency Matrix
+2. Correlation Influence
+N−1
+4. Construct Planar Graph (PMFG, Tumminello et al., PNAS 2005)
+Data
+N = 300 T = 748
+Index Sector # stocks 1 Basic Materials 24 2 Consumer Cyclical 22 3 Consumer Non Cyclical 25 4 Capital Goods 12 5 Conglomerates 8 6 Energy 17 7 Financial 53 8 Healthcare 19 9 Services 69
+10 Technology 34 11 Transportation 5 12 Utilities 12
+D.Y. Kenett, M. Tumminello, A. Madi, G. Gur-Gershgoren, R.N. Mantegna and E. Ben Jacob (2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12) e15032, doi:10.1371/journal.pone. 0015032
+Stock Dependency Network: S&P Stocks
+D.Y. Kenett, M. Tumminello, A. Madi, G. Gur-Gershgoren, R.N. Mantegna and E. Ben Jacob (2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12) e15032, doi:10.1371/journal.pone. 0015032
+Stock Dependency Network: S&P Stocks
+Sector Dependency Network
+Sector Dependency Network
+Factor models are simple and widespread model of multivariate time series! A general multifactor model for N variables xi(t) is
+is a constant describing the weight of factor j in explaining the dynamics of the variable xi(t).! The number of factors is K and they are described by the time series fj(t). is a (Gaussian) zero mean noise with unit variance
+Factor models
+Factor models: examples
+Multifactor models have been introduced to model a set of asset prices, generalizing CAPM! ! ! ! where now B is a (NxK) matrix and f(t) is a (Kx1) vector of factors. ! ! The factors can be selected either on a theoretical ground (e.g. interest rates for bonds, inflation, industrial production growth, oil price, etc.) or on a statistical ground (i.e. by applying factor analysis methods, etc.)! ! Examples of multifactor models are Arbitrage Pricing Theory (Ross 1976) and the Intertemporal CAPM (Merton 1973).
+Factor models and Principal Component Analysis (PCA)
+A factor is associated to each relevant eigenvalue-eigenvector
+€
+K
+€
+f (h )(t) for h =1,...,K and εi(t) for i =1,...,n are i.i.d. random variables with mean 0 and variance 1
+h-th eigenvalue
+Random Matrix Theory
+€
+€
+λ
+€
+Random Matrix Theory
+best fit : σ 2 = 0.74 (solid line)
+€
+N = 406 assets of the S & P 500 (1991-1996) Q = 3.22
+Random Matrix Theory helps to select the relevant eigenvalues
+ri = γ i f + 1 − γ i 2 f εi ,         i = 1,...,N ,
+Simple Index
+ρi, j SI( ) = ri rj = γ i γ j
+RMT
+h = 1
+k
+ρi, j RMT( ) = ri rj = γ i , hγ j ,hλh
+h = 1
+Network analysis of influence and dependencies between Companies/Countries
+Dror Y. Kenett, Matthias Raddant, Lior Zatlavi, Thomas Lux and Eshel Ben-Jacob (2012), Correlations in the global financial village, International Journal of Modern Physics Conference Series 16(1) 13-28.
+Investigating market structure
+1)
+2)
+Dror Y. Kenett, Xuqing Huang, Irena Vodenska, Shlomo Havlin, and H. Eugene Stanley (2014 Applications for financial markets, arXiv:1402.1405
+Application to other systems
+Immune system Dependency network
+(4) Discussion
+(1) Introduction to network science • Terminology • Network properties • Matrix representation
+(3) Node influence I. Cascading failures in industry networks II. Overlapping communities in networks III. Failure and recovery in networks IV. Evolution of networks V. Cascading failures in the financial system VI. Interdependent networks
+Electrical Equipment
+1)
+2)
+3)
+4)
+Wei Li, Dror Y. Kenett, Kazuko Yamasaki, H. Eugene Stanley, Shlomo Havlin (preprint), Ranking the economic importance of countries and industries
+II. Overlapping communities
+i=1
+∑ + dpkp,iki + kpi sin φpi +φi( ) i = 1,...,N
+Ammar Tareen, Dror Y. Kenett, H. Eugene Stanley, Shlomo Havlin (preprint), Overlapping behavior of financial assets
+III. Failure and recovery in networks a
+b
+Antonio Majdandzic, Boris Podobnik, Sergey Buldyrev, Dror Y. Kenett, Shlomo Havlin, and H. Eugene Stanley (2014), Spontaneous recovery in dynamical networks, Nature Physics 10, 34-38.
+IV. Evolution of networks
+eigenvector_centrality
+degree
+VI. Interdependent networks
+Buldyrev, S. V., Parshani, R., Paul, G., Stanley, H. E., & Havlin, S. (2010). Catastrophic cascade of failures in interdependent networks. Nature, 464(7291), 1025-1028.
+Summary Dependency Networks
+! Node influence
+! Network in finance and economics ! Topology of networks ! Dynamics in networks and of networks ! Interdependent networks ! Cascading failures and targeted attacks ! Recovery in networks
+References 1. Dror Y. Kenett, Michele Tumminello, Asaf Madi, Gitit Gur-Gershgoren, Rosario N. Mantegna, and Eshel Ben-Jacob
+(2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12), e15032.
+2. Dror Y. Kenett, Yoash Shapira, Asaf Madi, Sharron Bransburg-Zabary, Gitit Gur-Gershgoren, and Eshel Ben-Jacob (2011), Index cohesive force analysis reveals that the US market became prone to systemic collapses since 2002, PLoS ONE 6(4): e19378
+3. Asaf Madi, Dror Y. Kenett, Sharron Bransburg-Zabary, Yifat Merbl, Francisco J. Quintana, Stefano Boccaletti, Alfred I. Tauber, Irun R. Cohen, and Eshel Ben-Jacob (2011), Analyses of antigen dependency networks unveil immune system reorganization between birth and adulthood, Chaos 21, 016109.
+4. Yoed N. Kenett, Dror Y. Kenett, Eshel Ben-Jacob and Miriam Fuast (2011), Global and Local Features of Semantic Networks: Evidence from the Hebrew Mental Lexicon, PLoS ONE 6(8): e23912
+5. Dror Y. Kenett, Matthias Raddant, Lior Zatlavi, Thomas Lux and Eshel Ben-Jacob (2012), Correlations in the global financial village, International Journal of Modern Physics Conference Series 16(1) 13-28.
+6. Dror Y. Kenett, Tobias Preis, Gitit Gur-Gershgoren, Eshel Ben-Jacob (2012), Dependency network and node influence: Application to the study of Financial Markets, International Journal of Bifurcation and Chaos 22(7), 1250181.
+7. Dror Y. Kenett, Matthias Raddant, Lior Zatlavi, Thomas Lux and Eshel Ben-Jacob (2012), Correlations in the global financial village, International Journal of Modern Physics Conference Series 16(1) 13-28.
+8. Shlomo Havlin, Dror Y. Kenett, Eshel Ben-Jacob, Armin Bunde, Hans Hermann, Jurgen Kurths, Scott Kirkpatrick, Sorin Solomon, Juval Portugali (2012), Challenges of network science: applications to infrastructures, climate, social systems and economics, European Journal of Physics Special Topics 214, 273-293.
+9. Antonio Majdandzic, Boris Podobnik, Sergey Buldyrev, Dror Y. Kenett, Shlomo Havlin, and H. Eugene Stanley (2014), Spontaneous recovery in dynamical networks, Nature Physics 10, 34-38.
+10. Dror Y. Kenett, Jianxi Gao, Xuqing Huang, Shuai Shao, Irena Vodenska, Sergey V. Buldyrev, Gerald Paul, H. Eugene Stanley, and Shlomo Havlin (2014), Network of interdependent networks: Overview of theory and applications. In Networks of Networks: The Last Frontier of Complexity, pages 3–36. Springer.
+11. Dror Y. Kenett, Xuqing Huang, Irena Vodenska, Shlomo Havlin, and H. Eugene Stanley (2014 Analysis: Applications for financial markets, arXiv:1402.1405 ! !
+Thank You !
+(2) Correlation based networks • Estimating correlations from • Partial correlations • Dependency network • Node influence • Applications in financial markets • Applications in other systems
+(4) Discussion
+(1) Introduction to network science • Terminology • Network properties • Matrix representation
+(3) Node influence I. Cascading failures in industry networks II. Overlapping communities in networks III. Failure and recovery in networks IV. Evolution of networks V. Cascading failures in the financial system VI. Interdependent networks
+What is a network?
+What is a network?
+! ▪ components: nodes, vertices    N
+What is a network?
+! ▪ components: nodes, vertices    N ! ▪ interactions:  links, edges      L
+What is a network?
+! ▪ components: nodes, vertices    N ! ▪ interactions:  links, edges      L ! ▪ system:     network, graph  (N,L)
+Peter Mary
+Albert
+Albert
+co-worker
+friendbrothers
+friend
+Links: undirected (symmetrical) ! ! Graph:
+Directed links : URLs on the www phone calls metabolic reactions
+Undirected Directed
+A
+B
+D
+C
+L
+MF
+G
+H
+I
+F
+0 1 0 1 1 0 0 1 0 0 0 1 1 1 1 0
+"
+#
+$ $ $ $
+%
+&
+' ' ' '
+Note that for a directed graph (right) the matrix is not symmetric.!
+! !!!!!!
+4
+ki = Aij j =1
+Aij = Aji
+ki = Aij j =1
+kj = Aij i=1
+Aij = Aji
+ki = Aij j =1
+kj = Aij i=1
+Aij = Aji
+ki = Aij j =1
+kj = Aij i=1
+Aij = Aji
+ki = Aij j =1
+kj = Aij i=1
+Aij = Aji
+ki = Aij j =1
+kj = Aij i=1
+Aij = Aji
+C
+C
+C
+sto ck
+0 0.1 0.11 0.4 0.2 0.5
+0.1 0 0.3 0.12 0.32 0.05
+0.11 0.3 0 0.7 0.21 0.5
+0.4 0.12 0.7 0 0.17 0.13
+0.2 0.32 0.21 0.17 0 0.15
+0.5 0.05 0.5 0.13 0.15 0
+a b c d e f
+a
+b
+c
+d
+e
+f
+d(i j) = 1N −1 D(i,k | j)k≠ j ,i
+N−1
+∑
+1. Calculate partial correlation PC i,k  j( )     j = 1,2,...,N
+4. Construct Planar Graph (PMFG, Tumminello et al., PNAS 2005)
+Data
+N = 300 T = 748
+Index Sector # stocks 1 Basic Materials 24 2 Consumer Cyclical 22 3 Consumer Non Cyclical 25 4 Capital Goods 12 5 Conglomerates 8 6 Energy 17 7 Financial 53 8 Healthcare 19 9 Services 69
+10 Technology 34 11 Transportation 5 12 Utilities 12
+D.Y. Kenett, M. Tumminello, A. Madi, G. Gur-Gershgoren, R.N. Mantegna and E. Ben Jacob (2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12) e15032, doi:10.1371/journal.pone. 0015032
+Stock Dependency Network: S&P Stocks
+D.Y. Kenett, M. Tumminello, A. Madi, G. Gur-Gershgoren, R.N. Mantegna and E. Ben Jacob (2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12) e15032, doi:10.1371/journal.pone. 0015032
+Stock Dependency Network: S&P Stocks
+Sector Dependency Network
+Sector Dependency Network
+Factor models are simple and widespread model of multivariate time series! A general multifactor model for N variables xi(t) is
+is a constant describing the weight of factor j in explaining the dynamics of the variable xi(t).! The number of factors is K and they are described by the time series fj(t). is a (Gaussian) zero mean noise with unit variance
+Factor models
+Factor models: examples
+Multifactor models have been introduced to model a set of asset prices, generalizing CAPM! ! ! ! where now B is a (NxK) matrix and f(t) is a (Kx1) vector of factors. ! ! The factors can be selected either on a theoretical ground (e.g. interest rates for bonds, inflation, industrial production growth, oil price, etc.) or on a statistical ground (i.e. by applying factor analysis methods, etc.)! ! Examples of multifactor models are Arbitrage Pricing Theory (Ross 1976) and the Intertemporal CAPM (Merton 1973).
+Factor models and Principal Component Analysis (PCA)
+A factor is associated to each relevant eigenvalue-eigenvector
+€
+xi(t) = γ i(h ) λh f (h )(t) h=1
+K
+∑ + 1− γ i(h ) 2
+How many eigenvalues should be included ?
+Random Matrix Theory
+The idea is to compare the properties of an empirical correlation ! matrix C with the null hypothesis of a random matrix.
+€
+Q = T N ≥1  fixed;   T→∞;   N→∞
+Density of eigenvalues of a Random Matrix
+€
+ρ λ( )= Q2πσ 2 λMAX − λ( ) λ − λMIN( )
+λ
+€
+€
+V. Plerou et al. ! PRL 83, 1471 (1999)! L.Laloux et al, ! PRL 83, 1468 (1999)
+€
+N = 406 assets of the S & P 500 (1991-1996) Q = 3.22
+Random Matrix Theory helps to select the relevant eigenvalues
+ri = γ i f + 1 − γ i 2 f εi ,         i = 1,...,N ,
+Simple Index
+ri f = γ i f 2 = γ i , !
+ρi, j SI( ) = ri rj = γ i γ j
+RMT
+ri = γ i,h λh fh
+h = 1
+K
+Semantic Dependency network
+Chemicals
+Mining
+c d
+Antonio Majdandzic, Boris Podobnik, Sergey Buldyrev, Dror Y. Kenett, Shlomo Havlin, and H. Eugene Stanley (2014), Spontaneous recovery in dynamical networks, Nature Physics 10, 34-38.
+IV. Evolution of networks
+4
+0 0.5 1 Value
+0 0.5 1 Value
+Bipartite Model V. Cascading failures in the financial system
+VI. Interdependent networks
+Buldyrev, S. V., Parshani, R., Paul, G., Stanley, H. E., & Havlin, S. (2010). Catastrophic cascade of failures in interdependent networks. Nature, 464(7291), 1025-1028.
+Summary Dependency Networks
+! Node influence
+! Network in finance and economics ! Topology of networks ! Dynamics in networks and of networks ! Interdependent networks ! Cascading failures and targeted attacks ! Recovery in networks
+References 1. Dror Y. Kenett, Michele Tumminello, Asaf Madi, Gitit Gur-Gershgoren, Rosario N. Mantegna, and Eshel Ben-Jacob
+(2010), Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market, PLoS ONE 5(12), e15032.
+2. Dror Y. Kenett, Yoash Shapira, Asaf Madi, Sharron Bransburg-Zabary, Gitit Gur-Gershgoren, and Eshel Ben-Jacob (2011), Index cohesive force analysis reveals that the US market became prone to systemic collapses since 2002, PLoS ONE 6(4): e19378
+3. Asaf Madi, Dror Y. Kenett, Sharron Bransburg-Zabary, Yifat Merbl, Francisco J. Quintana, Stefano Boccaletti, Alfred I. Tauber, Irun R. Cohen, and Eshel Ben-Jacob (2011), Analyses of antigen dependency networks unveil immune system reorganization between birth and adulthood, Chaos 21, 016109.
+4. Yoed N. Kenett, Dror Y. Kenett, Eshel Ben-Jacob and Miriam Fuast (2011), Global and Local Features of Semantic Networks: Evidence from the Hebrew Mental Lexicon, PLoS ONE 6(8): e23912
+5. Dror Y. Kenett, Matthias Raddant, Lior Zatlavi, Thomas Lux and Eshel Ben-Jacob (2012), Correlations in the global financial village, International Journal of Modern Physics Conference Series 16(1) 13-28.
+6. Dror Y. Kenett, Tobias Preis, Gitit Gur-Gershgoren, Eshel Ben-Jacob (2012), Dependency network and node influence: Application to the study of Financial Markets, International Journal of Bifurcation and Chaos 22(7), 1250181.
+7. Dror Y. Kenett, Matthias Raddant, Lior Zatlavi, Thomas Lux and Eshel Ben-Jacob (2012), Correlations in the global financial village, International Journal of Modern Physics Conference Series 16(1) 13-28.
+8. Shlomo Havlin, Dror Y. Kenett, Eshel Ben-Jacob, Armin Bunde, Hans Hermann, Jurgen Kurths, Scott Kirkpatrick, Sorin Solomon, Juval Portugali (2012), Challenges of network science: applications to infrastructures, climate, social systems and economics, European Journal of Physics Special Topics 214, 273-293.
+9. Antonio Majdandzic, Boris Podobnik, Sergey Buldyrev, Dror Y. Kenett, Shlomo Havlin, and H. Eugene Stanley (2014), Spontaneous recovery in dynamical networks, Nature Physics 10, 34-38.
+10. Dror Y. Kenett, Jianxi Gao, Xuqing Huang, Shuai Shao, Irena Vodenska, Sergey V. Buldyrev, Gerald Paul, H. Eugene Stanley, and Shlomo Havlin (2014), Network of interdependent networks: Overview of theory and applications. In Networks of Networks: The Last Frontier of Complexity, pages 3–36. Springer.
+11. Dror Y. Kenett, Xuqing Huang, Irena Vodenska, Shlomo Havlin, and H. Eugene Stanley (2014 Analysis: Applications for financial markets, arXiv:1402.1405 ! !
+Thank You !
+Questions? Email: drorkenett@gmail.com

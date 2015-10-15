@@ -34,17 +34,24 @@ kamir
 
 empty
 
-VelocityTools
-dir
-
 ApacheVelocity
-dir
-
-javaee-endorsed-api-6.0
 dir
 
 CopyLibs
 dir
+
+VelocityTools
+dir
+
+commons-lang3-3.1
+dir
+
+javaee-endorsed-api-6.0
+dir
+
+
+
+delete
 
 nblibraries.properties
 file
@@ -79,7 +86,4 @@ kamir
 
 
 1106
-
-commons-lang3-3.1
-dir
 

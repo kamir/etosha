@@ -1,0 +1,160 @@
+{{Redirect|IMDb|the in-memory database management system|In-memory database}}
+{{Use mdy dates|date=November 2014}}
+{{Infobox website
+|name=Internet Movie Database (IMDb)
+|logo=[[File:IMDb logo.svg|200px]]
+|caption=IMDb homepage on August 21, 2012
+|url={{url|https://www.imdb.com}}
+|commercial=Yes
+|type=Online database for movies, television, and video games
+|language=English
+|registration=Registration is optional for members to participate in discussions, comments, ratings, and voting.
+|owner=[[Amazon.com]]
+|author=[[Col Needham]] (CEO)
+|launch date={{Start date and age|1990|10|17}}
+|alexa={{DecreasePositive}} 44 ({{as of|2015|04|06|alt=April 2015}})<ref name="alexa">{{cite web|url= http://www.alexa.com/siteinfo/imdb.com |title= Imdb.com Site Info | publisher= [[Alexa Internet]] |accessdate= April 6, 2015 }}</ref>
+|current status=Active
+}}
+
+The '''Internet Movie Database''' (abbreviated '''IMDb''') is an [[online database]] of information related to [[film]]s, [[television program]]s, and [[video game]]s, including cast, production crew, fictional characters, biographies, plot summaries, trivia and reviews. Actors and crew can post their own résumé and upload photos of themselves for a yearly fee. U.S. users can also view over 6,000 movies and television shows from CBS, Sony, and various independent film makers.
+
+Launched in 1990 by professional computer programmer Col Needham, the company was incorporated in the UK as Internet Movie Database Ltd in 1996, with revenue generated through advertising, licensing, and partnerships. In 1998, it became a subsidiary of Amazon.com, who were then able to use it as an advertising resource for selling DVDs and videotapes.
+
+{{As of|2015|04}}, IMDb had approximately 3.3 million<!--Condensed values per MOS:LARGENUM--> titles (includes episodes) and 6.5 million<!--Condensed values per MOS:LARGENUM--> personalities in its database,<ref>{{cite web|url=http://www.imdb.com/stats|title=Stats|publisher=IMDb|accessdate=April 22, 2015}}</ref> as well as 60 million registered users and is an [[Alexa Internet|Alexa]] Top 50 site.
+
+The site enables registered users to submit new material and request edits to existing entries. Although all data are checked before going live, the system has been open to abuse, and occasional errors are acknowledged. Users are also invited to rate any film on a scale of 1 to 10, and the totals are converted into a [[Weighted arithmetic mean|weighted mean]]-rating that is displayed beside each title, with online filters employed to deter ballot-stuffing. The site also features message boards, which stimulate regular debates among authenticated users.
+
+==History==
+
+===History before website===
+{{Unreferenced section|date=December 2012}}
+IMDb originated with a [[Usenet]] posting by British film fan and professional computer programmer [[Col Needham]] entitled "Those Eyes", about actresses with beautiful eyes. Others with similar interests soon responded with additions or different lists of their own. Needham subsequently started a (male) "Actors List", while Dave Knight began a "[[film director|Directors]] List", and Andy Krieg took over "THE LIST" from Hank Driskill, which would later be renamed the "Actress List". Both lists had been restricted to people who were alive and working, but soon retired people were added so Needham started what was then (but did not remain) a separate "Dead Actors/Actresses List". The goal of the participants now was to make the lists as inclusive as possible.
+
+By late 1990, the lists included almost 10,000 movies and television series correlated with actors and actresses appearing therein. On October 17, 1990, Needham developed and posted a collection of [[Unix]] [[shell script]]s which could be used to search the four lists, and thus the database that would become the IMDb was born.<ref>Chmielewski, Dawn C. (January 19, 2013), [http://articles.latimes.com/2013/jan/19/business/la-fi-himi-needham-20130120 "Col Needham created IMDb"], ''[[Los Angeles Times]]''</ref> At the time, it was known as the "rec.arts.movies movie database", but by 1993 had been moved out of the Usenet group as an independent website underwritten and controlled by Needham and personal followers. Other website users were invited to contribute data which they may have collected and verified, on a volunteer basis, which greatly increased the amount and types of data to be stored. Entire new sections were added.
+
+As the site grew huge, full production crews, uncredited performers and other demographic data were added. Needham's group allowed some advertising to support ongoing operations of the site, including the hiring of full-time paid data managers. All the primary staff came (and still come) from the burgeoning computer industry and/or training schools and did not have extensive expertise in the visual media.{{citation needed|date=December 2012}} In 1998, unable to secure sufficient funding from limited advertising, contributions and unable to raise support from the visual media industries or academia, Needham sold the IMDb site to Amazon.com, on condition that its operation would remain in the hands of Needham and his small cadre of managers, who soon were able to move into full-time paid staff positions.
+
+===On the web===
+The database had been expanded to include additional categories of filmmakers and other demographic material, as well as trivia, biographies, and plot summaries. The movie ratings had been properly integrated with the list data and a centralized email interface for querying the database had been created by Alan Jay. Later in the year{{when|date=December 2012}} it moved onto the [[World Wide Web]] (a network in its infancy at that time) under the name of ''Cardiff Internet Movie Database''.<ref>{{cite web|url=http://www.cs.cf.ac.uk/movies/|title=Historical Internet Movie Database Site|publisher=Cardiff School of Computer Science & Informatics|accessdate=March 21, 2013}}</ref> The database resided on the servers of the computer science department of [[Cardiff University]] in [[Wales]]. [[Rob Hartill]] was the original web interface author. In 1994 the email interface was revised to accept the submission of all information meaning that people no longer had to email the specific list maintainer with their updates. However, the structure remained that information received on a single film was divided among multiple section managers, the sections being defined and determined by categories of film personnel and the individual filmographies contained therein. Over the next few years, the database was run on a network of [[Web mirror|mirrors]] across the world with donated bandwidth.{{citation needed|date=December 2012}}
+
+The website is [[Perl]]-based.<ref>[http://www.imdb.com/help/show_leaf?techinfo What software/hardware are you using to run the site?] imdb.com</ref> As of May 2011, the site has been [[Internet censorship in the People's Republic of China|filtered in China]] for more than one year, although many users address it through [[proxy server]] or by [[VPN]].<ref>{{cite web|url=http://www.techradar.com/news/internet/china-blocks-number-one-movie-site-imdb-663458|title=China blocks number-one movie site IMDb|publisher=2012 Future US, Inc|date=January 14, 2010|author=Chacksfield, Marc}}</ref>
+
+On October 17, 2010, IMDb launched original video (www.imdb.com/20) in celebration of its 20th anniversary.<ref>{{cite web|last=Ehlrich|first=Brenna|title=IMDb Turns 20, Launches Original Video to Celebrate|url=http://mashable.com/2010/09/30/imdb-20|publisher=mashable.com|date=September 30, 2010}}</ref>
+
+===As an independent company===
+In 1996 IMDb was incorporated in the United Kingdom, becoming the Internet Movie Database Ltd. Founder Col Needham became the primary owner as well as the figurehead. General revenue for site operations was generated through advertising, licensing and partnerships.{{citation needed|date=May 2015}}
+
+===As Amazon.com subsidiary===
+In 1998, [[Jeff Bezos]], founder, owner and CEO of Amazon.com, struck a deal with Col Needham and other principal shareholders to buy IMDb outright and attach it to Amazon as a subsidiary, private company.<ref>{{cite web|url=http://www.prnewswire.co.uk/cgi/news/release?id=37602|title=INTERNET BOOKSELLER AMAZON.COM ANNOUNCES ACQUISITION OF UNITED KINGDOM COMPANY THE INTERNET MOVIE DATABASE LTD.|publisher=IMDb via PR Newswire Europe|accessdate=January 15, 2007}}</ref> This gave IMDb the ability to pay the shareholders salaries for their work, while Amazon.com would be able to use the IMDb as an advertising resource for selling DVDs and videotapes.
+
+IMDb continued to expand its functionality. On January 15, 2002, it added a subscription service known as IMDbPro, aimed at entertainment professionals. IMDbPro was announced and launched at the 2002 Sundance Film Festival. It provides a variety of services including film production and box office details, as well as a company directory.
+
+As an additional incentive for users, as of 2003, users identified as one of "the top 100 contributors" of hard data received complimentary free access to IMDbPro for the following calendar year; for 2006 this was increased to the top 150 contributors, and for 2010 to the top 250.<ref>{{cite web|url=http://www.imdb.com/updates/guide/top_contributors#top2010|title=IMDb announcement: Top 250 Contributors for 2010|accessdate=August 25, 2011|first=Col|last=Needham|date=January 1, 2011|publisher=IMDb Contributors Top Contributors}}</ref> In 2008 IMDb launched their first official foreign language version with the German IMDb.de. Also in 2008, IMDb acquired two other companies, [[Withoutabox]] and [[Box Office Mojo]].
+
+==Television episodes==
+On January 26, 2006, "Full Episode Support" came online, allowing the database to support separate cast and crew listings for each episode of every television series. This was described by Col Needham as "the largest change we've ever made to our data model",{{citation needed|date=April 2010}} and increased the number of titles in the database from 485,000 to nearly 755,000.{{citation needed|date=December 2012}}
+
+==Characters' filmography==
+On October 2, 2007,{{citation needed|date=October 2013}} the characters' filmography was added. Character entries are created from character listings in the main filmography database, and as such do not need any additional verification by IMDb staff. They have already been verified when they are added to the main filmography.
+
+==Instant viewing==
+On September 15, 2008, a feature was added that enables instant viewing of over 6,000 movies and television shows from CBS, Sony and a number of [[independent film]] makers, with direct links from their profiles.<ref>{{cite news|url=http://news.cnet.com/8301-13515_3-10042280-26.html?tag=mncol|publisher=[[cnet]]|title=IMDb now serves full-length videos|first=Harrison|last=Hoffman|date=September 15, 2008|accessdate=September 17, 2008}}</ref> Due to licensing restrictions, this feature is only available to viewers in the United States.<ref>{{cite web|url=http://www.theregister.co.uk/2008/09/16/imdb_adds_streaming_movies_and_tv/|publisher=The Register|title=IMDb adds full-length streaming movies (Show your US ID card at the door)|last=Modine|first=Austin|date=September 16, 2008|accessdate=September 17, 2008}}</ref>
+
+==Content and format==
+
+===Data provided by subjects===
+In 2006, IMDb introduced its "Résumé Subscription Service", where actors and crew can post their own [[résumé]] and upload photos of themselves<ref>[https://web.archive.org/web/20061023141910/http://www.lycos-europe.com/Index-Eng/G-English-Files/PR-20060710-IMDb.html Lycos Europe and IMDb sign sales agreement for 9 European markets]. [[Lycos Europe]] press release, July 10, 2006.</ref> for a yearly fee.<ref>IMDb Resume FAQ: [http://resume.imdb.com/help/show_leaf?resumenotrecurring Can I subscribe only for one month or one year?]. Retrieved January 22, 2008.</ref> The base annual charge for including a photo with an account was $39.95 until 2010, when it was increased to $54.95. IMDb résumé pages are kept on a sub-page of the regular entry about that person, with a regular entry automatically created for each résumé subscriber who does not already have one.<ref>IMDb Resume FAQ: [http://resume.imdb.com/help/show_leaf?resumenamepagediff Is there any difference between a regular IMDb name page and an IMDb name page created via IMDb Resume?]. Retrieved January 22, 2008.</ref>
+
+As of 2012, Resume Services is now included as part of an IMDbPro subscription, and is no longer offered as a separate subscription service.
+
+===Copyright, vandalism and error issues===
+All volunteers who contribute content to the database technically retain copyright on their contributions but the compilation of the content becomes the exclusive property of IMDb with the full right to copy, modify, and sublicense it and they are verified before posting.<ref>[http://www.imdb.com/help/show_article?conditions IMDb Copyright and Conditions of Use]. imdb.com</ref> Credit is not given on specific title or filmography pages to the contributor(s) who have provided information. Conversely, a credited text entry, such as a plot summary, may be "corrected" for content, grammar, sentence structure, perceived omission or error, by other contributors without having to add their names as co-authors. Due to the process of having the submitted data or text reviewed by a section manager, IMDb is different from database projects like [[Wikipedia]], [[Discogs]] or [[OpenStreetMap]] in that contributors cannot add, delete, or modify the data or text on impulse, and the manipulation of data is controlled by IMDb technology and salaried staff.<ref>[http://www.imdb.com/interfaces#plain The Plain Text Data Files] IMDb – Alternate Interfaces</ref> IMDb has been subject to deliberate additions of false information;  in 2012 a spokesperson said: "We make it easy for users and professionals to update much of our content, which is why we have an 'edit page.' The data that is submitted goes through a series of consistency checks before it goes live. Given the sheer volume of the information, occasional mistakes are inevitable, and, when reported, they are promptly fixed. We always welcome corrections."<ref>{{cite web|url=http://www.hollywoodreporter.com/news/james-marsden-likes-barry-manilow-390278|title=Which A-List Star Is Hacking IMDb Pages?|publisher=Hollywoodreporter.com|date=November 14, 2012|accessdate=February 25, 2013}}</ref>
+
+The Java Movie Database (JMDB)<ref name="jmdb" /> is reportedly creating an IMDb_Error.log file that lists all the errors found while processing the IMDb plain text files. A Wiki alternative to IMDb is Open Media Database [http://www.omdb.org] whose content is also contributed by users but licensed under [[Creative Commons license|CC-by]] and the [[GNU Free Documentation License|GFDL]]. Since 2007, IMDb has been experimenting with wiki-programmed sections for complete film synopses, parental guides, and FAQs about titles as determined by (and answered by) individual contributors.
+
+===Data format and access===
+IMDb does not provide an [[Web API|API]] for automated queries. However, most of the data can be downloaded as [[data compression|compressed]] plain text files and the information can be extracted using the [[command-line interface]] tools provided.<ref>{{cite web|url=http://imdb.com/interfaces|title=Alternate Interfaces|publisher=IMDb|accessdate=January 15, 2007}}</ref> Beside that there is the Java-based [[graphical user interface]] (GUI) application available which is able to process the compressed plain text files and allow to search and display the information.<ref name="jmdb">{{cite web|url=http://www.jmdb.de/|title=Java Movie Database (JMDB)|publisher=Jmdb.de|accessdate=October 27, 2010}}</ref> This GUI application supports different languages but the movie related data is of course English as made available by IMDb. A [[Python (programming language)|Python]] package called IMDbPY can also be used to process the compressed plain text files into a number of different [[SQL]] databases, enabling easier access to the entire dataset for searching or data mining.<ref>{{cite web|url=http://imdbpy.sourceforge.net/|title=IMDbPY|publisher=IMDbPY|accessdate=February 14, 2011}}</ref>
+
+===Film titles===
+The IMDb has sites in [[English language|English]] as well as versions translated completely or in part into other languages ([[Finnish language|Finnish]], [[French language|French]], [[German language|German]], [[Hungarian language|Hungarian]], [[Italian language|Italian]], [[Polish language|Polish]], [[Portuguese language|Portuguese]] and [[Romanian language|Romanian]]). The non-English language sites display film titles in the specified language. While originally the IMDb's [[English language]] sites displayed titles according to their original country-of-origin language, in 2010 the IMDb began allowing individual users in the [[United Kingdom|UK]] and [[United States|USA]] to choose primary title display by either the original-language titles, or the [[United States|US]] or [[United Kingdom|UK]] release title (normally, in [[English language|English]]).
+
+==Ancillary features==
+
+===User ratings of films===
+As one adjunct to data, the IMDb offers a [[rating scale]] that allows users to rate films on a scale of one to ten. The rating system has been claimed to be flawed for several reasons.<ref>{{cite web|last=Wong|first=David|url=http://www.cracked.com/funny-7618-imdb/|title=IMDB|publisher=Cracked.com|date=|accessdate=February 25, 2013}}</ref><ref>{{cite web|url=http://screenrant.com/imdbs-top-250-discussion-mikee-53740/|title=Why IMDb's Top 250 Matters...And Why It Doesn't|publisher=Screenrant.com|date=April 13, 2010|accessdate=February 25, 2013}}</ref>
+
+IMDb indicates that submitted ratings are filtered and weighted in various ways in order to produce a [[weighted mean]] that is displayed for each film, series, and so on. It states that filters are used to avoid [[ballot stuffing]]; the method is not described in detail to avoid attempts to circumvent it. In fact, it sometimes produces an extreme difference between the weighted average and the arithmetic mean. For example, ''[[Jonas Brothers: The 3D Concert Experience]]'' is considered to be the worst film with a weighted average of 2.1 as of 2014, but has a rather ordinary arithmetic mean of 3.9.<ref>[http://www.imdb.com/chart/bottom?tt1229827 IMDb Charts: IMDb Bottom 100]. imdb.com</ref><ref>[http://www.imdb.com/title/tt1229827/ratings Jonas Brothers: The 3D Concert Experience (2009) – User ratings]. imdb.com</ref>
+
+====Film rankings (IMDb Top 250)====
+The IMDb Top 250 list is  a listing of the top rated 250 films of all-time, based on ratings by the registered users of the website using the methods described. Currently, ''[[The Shawshank Redemption]]'' is #1 on the list.<ref>{{cite news|url=http://www.imdb.com/top_250_films|title=Top 250 movies as voted by our users|publisher=IMDb|accessdate=March 1, 2007}}</ref> The 'top 250' rating is based on only the ratings of "regular voters". The exact number of votes a registered user would have to make to be considered to be a user who votes regularly has been kept secret. IMDb has stated that to maintain the effectiveness of the top 250 list they ''"deliberately do not disclose the criteria used for a person to be counted as a regular voter"''.<ref>[http://www.imdb.com/help/search?domain=helpdesk_faq&index=1&file=notintop250 The user votes average on film X is 9.4, so it should appear in your top 250 films listing, yet it doesn't. Why?]</ref> In addition to other weightings, the top 250 films are also based on a weighted rating formula referred to in [[actuarial science]] as a ''credibility formula''.<ref>{{cite book|url=https://web.archive.org/web/20070703084323/http://stats.lse.ac.uk/norberg/links/papers/CRED-eas.pdf|title=Encyclopedia of Actuarial Science|format=PDF|author=Norberg, Ragnar|doi=10.1002/9780470012505.tac068|chapter=Credibility Theory|year=2006|isbn=0470846763}} [http://isfaserveur.univ-lyon1.fr/~norberg/links/papers/CRED-eas.pdf mirror]</ref> This label arises because a statistic is taken to be more credible the greater the number of individual pieces of information; in this case from eligible users who submit ratings. Though the current formula is not disclosed, IMDb originally used the following formula to calculate their weighted rating:<ref>{{cite web|title=IMDB's statement on their voting calculation|url=http://www.imdb.com/help/show_leaf?votes|website=imdb.com|accessdate=2015-02-05}}</ref><ref>{{cite web|title=IMDB Vote FAQ|url=http://www.imdb.com/help/show_leaf?votestopfaq|website=IMDB.COM|accessdate=2015-02-06}}</ref>
+
+:<math>W = \frac{Rv + Cm}{v+m} </math>
+where:
+:<math>W\ </math> = weighted rating
+:<math>R\ </math> = average for the movie as a number from 0 to 10 (mean) = (Rating)
+:<math>v\ </math> = number of votes for the movie = (votes)
+:<math>m\ </math> = minimum votes required to be listed in the Top 250 (currently 25,000)
+:<math>C\ </math> = the mean vote across the whole report (currently 7.0)
+
+The <math>W\ </math> in this formula is equivalent to a Bayesian posterior mean (See [[Bayesian statistics]]).
+
+The IMDb also has a Bottom 100 feature which is assembled through a similar process although only 1500 votes must be received to qualify for the list.<ref>{{cite news|url=http://www.imdb.com/bottom_100_films|title=Bottom 100|publisher=IMDb|accessdate=March 1, 2007}}</ref>
+
+The top 250 list comprises a wide range of feature films, including major releases, cult films, independent films, critically acclaimed films, silent films and non-English language films. Short films and TV episodes are not included.
+
+===Fan activity===
+One of the most used features of the Internet Movie Database is the message boards that coincide with every title (excepting, as of 2013, TV episodes<ref>Each TV episode uses the same message board for the whole series</ref>) and name entry, along with over 140 main boards. This section is one of the more recent features of IMDb, having its beginnings in 2001. In order to post on the message boards a user needs to "authenticate" their account via cell phone, credit card, or by having been a recent customer of the parent company [[Amazon.com]]. Message boards have expanded in recent years. The Soapbox started in 1999 is a general message board meant for debates on any subject. The Politics board started in 2007 is a message board to discuss politics, news events and current affairs as well as history and economics. Both these message boards have become the most popular message boards in IMDb, more popular on a long term basis than any individual movie message board.
+
+==Litigation==
+In 2011, in the case of ''[[Hoang v. Amazon.com]]'', IMDb was sued by an anonymous actress for more than {{Currency|1&nbsp;million}} due to IMDb revealing her age (40, at the time).<ref>{{cite web|last=Bahr|first=Lindsey|url=http://insidemovies.ew.com/2011/10/18/imdb-lawsuit/|title=Lawsuit against IMDb revealing private information|publisher=Insidemovies.ew.com|date=October 18, 2011|accessdate=April 25, 2013}}</ref> The actress claimed that revealing her age could cause her to lose acting opportunities.<ref>{{cite news|url=http://www.bbc.co.uk/news/entertainment-arts-15492579|title=Acting unions criticise IMDb in age row|publisher=BBC|date=October 29, 2011|accessdate=October 29, 2011}}</ref> Judge [[Marsha J. Pechman]], a U.S. district judge in Seattle, dismissed the lawsuit, saying the actress had no grounds to proceed with an anonymous complaint. She re-filed and so revealed that the complainant is Huong Hoang of Texas, who uses the stage name Junie Hoang.<ref>{{cite web|url=http://news.sky.com/home/world-news/article/16144281|title=Actress Sued Amazon For Revealing Age 40 Identified As Huong Junie Hoang|publisher=News.sky.com|date=January 7, 2012|accessdate=April 21, 2012}}</ref> In 2013, Pechman dismissed all causes of action except for a [[breach of contract]] claim against IMDb; a jury then sided with IMDb on that claim.<ref>{{cite web|title=Actress age claim against IMDb rejected|url=http://www.bbc.co.uk/news/entertainment-arts-22120587|work=BBC News|accessdate=April 12, 2013}}</ref>  {{As of|February 2015}}, the case against IMDb remains under appeal.<ref name=9thcir-calendar>{{cite web |title=Calendar for Seattle, Washington |url=http://www.ca9.uscourts.gov/calendar/view.php?caseno=13-35390 |publisher=United States Court of Appeals for the Ninth Circuit |accessdate=November 24, 2014}}</ref><ref>{{cite news |last1=Gardner |first1=Eriq |title=Appeals Court Hears the Scary Things That Can Happen to Actors Who Lie to IMDb |url=http://www.hollywoodreporter.com/thr-esq/appeals-court-hears-scary-things-770835 |accessdate=February 10, 2015 |agency=Hollywood Reporter |date=February 6, 2015}}</ref>
+
+Also in 2011, in the case of United Video Properties Inc., et al. v. Amazon.Com Inc. et al.,<ref>{{cite web|title=Case Docket: United Video Properties Inc., et al v. Amazon.Com Inc. et al|url=http://ia700408.us.archive.org/8/items/gov.uscourts.ded.45528/gov.uscourts.ded.45528.docket.html|publisher=[[RECAP]]|accessdate=November 5, 2013}}</ref> IMDb and Amazon were sued by [[Rovi Corporation]] and others for patent infringement over their various program listing offerings.<ref>{{cite news|last=Masnick|first=Mike|title=Rovi Sues Amazon for Not Licensing its Electronic TV Guide Patent|url=http://www.techdirt.com/articles/20110105/03393312527/rovi-sues-amazon-not-licensing-its-electronic-tv-guide-patent.shtml|accessdate=November 5, 2013|newspaper=[[Techdirt]]|date=January 12, 2011}}</ref> The patent claims were ultimately construed in a way favorable to IMDb and Rovi/United Video Properties lost the case, though as of November 2014 it is on appeal.<ref>{{cite news|last=Mullin|first=Joe|title=Netflix roasts Rovi's 'Interactive TV guide' patents at ITC|url=http://arstechnica.com/tech-policy/2013/11/netflix-roasts-rovis-interactive-tv-guide-patents-at-itc/|accessdate=November 5, 2013|newspaper=[[Ars Technica]]|date=November 4, 2013}}</ref>
+
+==See also==
+{{div col|colwidth=20em}}
+*[[AllMusic]] – a similar database, but for music
+*[[AllRovi]] – a commercial database launched by the Rovi Corporation that compiles information from the former services Allmovie and Allmusic
+*[[Animator.ru]]
+*[[Big Cartoon DataBase]]
+*[[DBCult Film Institute]]
+*[[Filmweb]]
+*[[FindAnyFilm.com]]
+*[[Flickchart]]
+*[[Internet Adult Film Database]]
+*[[Internet Movie Firearms Database]] (IMFDb)
+*[[Bibliographic database|Internet Book Database]] (IBookDb)
+*[[Internet Broadway Database]] (IBDb)
+*[[Internet Off-Broadway Database]] (IOBDb)
+*[[Internet Speculative Fiction Database]] (ISFDb)
+*[[Internet Theatre Database]] (ITDb)
+*[[List of films considered the best]]
+*[[List of films considered the worst]]
+*[[Metacritic]]
+*[[Rotten Tomatoes]]
+*[[TheTVDB]]
+{{div col end}}
+
+==Notes==
+{{reflist|group=N}}
+
+==References==
+{{reflist|30em}}
+
+==External links==
+{{Wikidata property|P345|IMDb identifiers}}
+* [http://www.imdb.com/ Official website]
+
+{{Amazon|state=collapsed}}
+{{Webby Awards|cat=Film|year=1997|type=winner|cat2=Film|year2=1998|type2=winner|cat3=Film|year3=1999|type3=winner|cat4=Movie and Film|year4=2000|type4=nominee}}
+
+[[Category:Amazon.com acquisitions]]
+[[Category:Entertainment Internet forums]]
+[[Category:Film websites]]
+[[Category:Internet properties established in 1990]]
+[[Category:Online film databases]]
+[[Category:Recommender systems]]
+[[Category:Social cataloging applications]]
+[[Category:Television websites]]
+[[Category:Webby Award winners]]
+[[Category:American websites]]
+[[Category:Online databases]]

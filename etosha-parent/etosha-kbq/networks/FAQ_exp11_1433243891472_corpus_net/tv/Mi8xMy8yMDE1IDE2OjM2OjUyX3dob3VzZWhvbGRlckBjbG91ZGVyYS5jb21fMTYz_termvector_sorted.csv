@@ -1,0 +1,11 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	1.0	1.0	244,000000	5,497168	precedence	5,497168
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	3.0	1.0	82,000000	4,406719	complete	4,406719
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	4.0	1.0	61,750000	4,123094	order	4,123094
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	6.0	1.0	41,500000	3,725693	configuration	3,725693
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	9.0	1.0	28,000000	3,332205	values	3,332205
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	43.0	1.0	6,651163	1,894792	what	1,894792
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	56.0	1.0	5,339286	1,675092	for	1,675092
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	70.0	1.0	4,471429	1,497708	of	1,497708
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	99.0	1.0	3,454545	1,239691	is	1,239691
+2/13/2015 16:36:52_whouseholder@cloudera.com_163	243.0	133.0	1.0	2,827068	1,039240	the	1,039240

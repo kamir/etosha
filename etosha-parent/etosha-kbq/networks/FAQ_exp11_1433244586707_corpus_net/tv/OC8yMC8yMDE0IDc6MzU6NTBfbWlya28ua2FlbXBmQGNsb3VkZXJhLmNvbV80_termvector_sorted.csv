@@ -1,0 +1,9 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	1.0	1.0	244,000000	5,497168	demo	5,497168
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	1.0	1.0	244,000000	5,497168	snapshot	5,497168
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	4.0	1.0	61,750000	4,123094	feature	4,123094
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	25.0	1.0	10,720000	2,372111	hdfs	2,372111
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	73.0	1.0	4,328767	1,465283	i	1,465283
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	75.0	1.0	4,240000	1,444563	can	1,444563
+8/20/2014 7:35:50_mirko.kaempf@cloudera.com_4	243.0	133.0	1.0	2,827068	1,039240	the	1,039240

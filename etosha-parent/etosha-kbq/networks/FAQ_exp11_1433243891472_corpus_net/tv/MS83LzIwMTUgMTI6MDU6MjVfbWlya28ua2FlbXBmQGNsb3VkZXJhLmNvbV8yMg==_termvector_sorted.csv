@@ -1,0 +1,14 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	1.0	1.0	244,000000	5,497168	works	5,497168
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	2.0	1.0	122,500000	4,808111	additional	4,808111
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	3.0	1.0	82,000000	4,406719	explain	4,406719
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	6.0	1.0	41,500000	3,725693	cache	3,725693
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	6.0	1.0	41,500000	3,725693	example	3,725693
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	70.0	2.0	4,471429	1,497708	how	2,995416
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	13.0	1.0	19,692308	2,980228	way	2,980228
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	22.0	1.0	12,045455	2,488687	with	2,488687
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	27.0	1.0	10,000000	2,302585	spark	2,302585
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	30.0	1.0	9,100000	2,208274	an	2,208274
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	73.0	1.0	4,328767	1,465283	i	1,465283
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	75.0	1.0	4,240000	1,444563	can	1,444563
+1/7/2015 12:05:25_mirko.kaempf@cloudera.com_22	243.0	133.0	1.0	2,827068	1,039240	the	1,039240

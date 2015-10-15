@@ -16,7 +16,7 @@
     <context-param>
         <description>Store the temp data here (absolut path on WIN-Server)</description>
         <param-name>CE_TEMP_FOLDER_DRV</param-name>
-        <param-value>/opt/TEMP</param-value>
+        <param-value>/opt/TEMP/</param-value>
     </context-param>
     <context-param>
         <description>Ablageort für die Velocity Templates.</description>

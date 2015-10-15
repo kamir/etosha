@@ -1,0 +1,51 @@
+[[Fitxer:Gemeinsame Normdatei 2012 Opera.png|thumb|GND (captura de pantalla)]]
+El '''''Gemeinsame Normdatei''''' (abreujat '''GND'''), en anglès ''Integrated Authority File'' (IAF), és un [[control d'autoria]] internacional per l'organització de noms personals, encapçalaments de tema i organitzacions corporatives de [[catàleg de biblioteca|catàlegs]]. Es fa servir principalment per documentació en [[biblioteca|biblioteques]] i [[arxiu]]s. El GND és controlat per la [[Biblioteca Nacional d'Alemanya]] en cooperació amb diverses xarxes de biblioteques. El GND es troba dins de la llicència [[CC0|Creative Commons Zero]] (C00).<ref>[http://www.dnb.de/EN/Service/DigitaleDienste/LinkedData/linkeddata_node.html Linked Data Service of the German National Library] {{en}}</ref>
+
+L'especificació GND proveeix una jerarquia d'entitats d'alt nivell i subclasses, útils per la [[sistema de classificació|classificació bibliotecària]], i una aproximació a la identificació inequívoca d'elements. També comprèn una [[Ontologia (tecnologia de la informació)|ontologia]] de noms de propietats i tipus de dades, pensats per la [[representació del coneixement]] en el [[web semàntic]], disponible en el format [[XML]].<ref> [http://d-nb.info/standards/elementset/gnd#marc21equivalent GND Ontology - Namespace Document] {{en}}</ref>
+
+Alguns altres controls d'autoria són: [[Virtual International Authority File]] (VIAF), Autories de la [[Biblioteca del Congrés dels Estats Units]] (LCNAF), [[Autoritats Web NDL]] de la [[Biblioteca Nacional de la Dieta del Japó]] i [[LIBRIS]] de la [[Biblioteca Nacional de Suècia]].
+
+== Tipus d'entitats GND d'alt nivell ==
+El ''Gemeinsame Normdatei'' esdevingué operatiu l'abril de 2012 i integra el contingut dels següents controls d'autoria que, des de llavors, són obsolets:
+
+* ''Personennamendatei'' (PND)
+* ''Gemeinsame Körperschaftsdatei'' (GKD)
+* ''Schlagwortnormdatei'' (SWD)
+* ''Einheitssachtitel-Datei des Deutschen Musikarchivs'' (DMA-EST)
+
+En el moment de la seva introducció (5 d'abril de 2012) el GND contenia 9.493.860 entrades, incloent-hi 2,650,000 noms personalitzats.
+
+Hi ha sis tipus principals d'entitats GND:<ref>[http://www.dnb.de/SharedDocs/Downloads/DE/DNB/standardisierung/inhaltserschliessung/entitaetencodierung.pdf?__blob=publicationFile Entitätencodierung: Vergaberichtlinien] {{de}}</ref>
+
+{| class="wikitable"
+|- 
+! Tipus !! Alemany (oficial) !! Català (traducció)
+|- class="hintergrundfarbe5"
+| '''p''' || Person (individualisiert) || persona (individualitzada)
+|- class="hintergrundfarbe5"
+| '''n''' || Name (nicht individualisiert) || nom (not individualitzat)
+|- 
+| '''k''' || Körperschaft || cos corporatiu
+|- 
+| '''v''' || Veranstaltung || esdeveniment
+|-
+| '''w''' || Werk || obra
+|- 
+| '''s''' || Sachbegriff || encapçalament de tema
+|- 
+| '''g''' || Geografikum || nom de lloc geogràfic
+|}
+
+== Referències ==
+{{referències}}
+
+== Enllaços externs ==
+{{Propietat Wikidata |1=P227 |2=GND }}
+* [http://swb.bsz-bw.de/DB=2.104/SET=4/TTL=1/LNG=EN/START_WELCOME?retrace=0 Search via OGND] {{en}}, {{de}}
+* [http://www.dnb.de/EN/Standardisierung/Normdaten/GND/gnd_node.html Information pages of the DNB] about the GND
+* [http://www.dnb.de/SharedDocs/Downloads/DE/DNB/service/rundschreibenBereitstellungGNDGrundbestand.pdf?__blob=publicationFile Bereitstellung des ersten GND-Grundbestandes] DNB, 19 April 2012
+* [http://connect.ala.org/files/ALA_MFIG_Heuvelmann.pdf From Authority Control to Linked Authority Data] Presentation given by Reinhold Heuvelmann (German National Library) to the ALA MARC Formats Interest Group, June 2012
+{{Autoritat}}
+
+[[Categoria:Ciències de la informació]]
+[[Categoria:Identificadors]]

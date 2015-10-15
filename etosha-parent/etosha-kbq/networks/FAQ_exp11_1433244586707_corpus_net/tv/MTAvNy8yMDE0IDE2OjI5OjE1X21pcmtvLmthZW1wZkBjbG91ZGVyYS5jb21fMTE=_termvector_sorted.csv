@@ -1,0 +1,11 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	1.0	1.0	244,000000	5,497168	deault	5,497168
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	1.0	1.0	244,000000	5,497168	defined	5,497168
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	1.0	1.0	244,000000	5,497168	reflection	5,497168
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	7.0	1.0	35,714286	3,575551	value	3,575551
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	7.0	1.0	35,714286	3,575551	avro	3,575551
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	9.0	1.0	28,000000	3,332205	used	3,332205
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	13.0	1.0	19,692308	2,980228	where	2,980228
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	99.0	2.0	3,454545	1,239691	is	2,479382
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	40.0	1.0	7,075000	1,956567	if	1,956567
+10/7/2014 16:29:15_mirko.kaempf@cloudera.com_11	243.0	133.0	1.0	2,827068	1,039240	the	1,039240

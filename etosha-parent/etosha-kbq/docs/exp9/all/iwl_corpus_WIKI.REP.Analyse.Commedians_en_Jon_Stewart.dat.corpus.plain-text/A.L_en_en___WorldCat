@@ -1,0 +1,54 @@
+{{Infobox website
+| name = WorldCat
+| logo = [[File:Logo wcmasthead en.png]]
+| url = {{URL|//www.worldcat.org/}}
+| commercial = 
+| type = Catalog and community
+| registration = Free 
+| owner = 
+| author = 
+| screenshot = 
+| location = [[Hong Kong]]
+}}
+'''WorldCat''' is a [[union catalog]] that itemizes the collections of 72,000 [[library|libraries]] in 170 countries and territories<ref name="statistics">{{cite web
+| url         =http://www.oclc.org/worldcat/catalog.en.html
+| title       =A global library resource
+| publisher   =[[Online Computer Library Center]]
+| accessdate  =January 24, 2014
+}}</ref> that participate in the [[Online Computer Library Center]] (OCLC) global cooperative. It is operated by OCLC Online Computer Library Center, Inc.<ref>{{cite web|url=http://www.worldcat.org/whatis/|title=What is WorldCat?|work=worldcat.org|accessdate=13 February 2015}}</ref> while its [[data base]] is maintained collectively by the participating libraries.
+
+==History==
+The OCLC was created in 1967,<ref name="ourstory">{{cite web |url= http://www.oclc.org/en-US/about/story.html |title= Our Story |author=<!--Staff writer(s); no by-line.--> |date= 2014|website= oclc.org| accessdate=November 11, 2014}}</ref> the same year [[Fred Kilgour]] founded WorldCat,<ref>{{cite news |author=[[Margalit Fox]] |title=Frederick G. Kilgour, Innovative Librarian, Dies at 92 |url=http://www.nytimes.com/2006/08/02/us/02kilgour.html |quote=Frederick G. Kilgour, a distinguished librarian who nearly 40 years ago transformed a consortium of Ohio libraries into what is now the largest library cooperative in the world, making the catalogs of thousands of libraries around the globe instantly accessible to far-flung patrons, died on Monday in Chapel Hill, N.C. He was 92. |work=[[The New York Times]] |date=August 2, 2006 |accessdate=2009-12-22 }}</ref> though the first catalog records were added in 1971.<ref name="history">{{cite web |url= http://www.oclc.org/worldcat/catalog/timeline.en.html |title=A brief history of WorldCat|author=<!--Staff writer(s); no by-line.--> |date=February 10, 2015 |website= oclc.org| accessdate=February 13, 2014}}</ref> It contains more than 330 million records, representing over 2 billion physical and digital assets in 485 languages, {{As of|2014|11|lc=on}}.<ref name="statistics"/> It is the world's largest [[Bibliography|bibliographic]] database. OCLC makes WorldCat itself available free to libraries, but the catalog is the foundation for other fee-based OCLC services (such as [[interlibrary loan|resource sharing]] and collection management). 
+In 2003, OCLC began the "Open WorldCat" pilot program, making abbreviated records from a subset of WorldCat available to partner web sites and booksellers, to increase the accessibility of its member libraries' collections. In 2006, it became possible to search WorldCat directly at its website. In 2007, WorldCat Identities began providing pages for 20 million "identities", predominantly authors and persons who are the subjects of published titles.{{cn|date=March 2015}}
+
+==Model==
+{{unreferenced section|date=March 2015}}
+WorldCat operates on a [[batch processing]] model rather than a real-time model.  That is, WorldCat records are synchronized at intermittent intervals with the underlying library catalogs instead of real-time or every day.  Consequently:
+*WorldCat shows that a particular item is owned by a particular library but does not provide that library's [[call number]].
+* WorldCat does not indicate whether or not an item is currently borrowed, lost, undergoing restoration or repair, or moved to storage not directly accessible to patrons (thereby forcing interested patrons to submit a retrieval request and wait).
+*Furthermore, WorldCat does not show whether or not a library owns multiple copies of a particular title.  
+
+As an alternative, WorldCat allows participating institutions to add direct links from WorldCat to their own catalog entries for a particular item, which enables the user to determine its real-time status.  However, this still requires users to open multiple Web pages, each pointing to a different [[Online public access catalog|OPAC]] with its own distinctive user interface design (which places item status in a different portion of the Web browser display), until they can locate a catalog entry that shows the item is currently available at a particular library.
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+* {{cite news |url=http://www.guardian.co.uk/technology/2009/jan/22/library-search-engines-books |title=Why you can't find a library book in your search engine |first=Wendy M. |last=Grossman |date= 21 January 2009 |newspaper=[[The Guardian]] }}
+
+== External links ==
+*{{Official website|//www.worldcat.org/}}
+*[http://www.oclc.org/worldcat/web/ OCLC - "Web scale" discovery and delivery of library resources]
+*[http://www.oclc.org/bibformats/default.htm OCLC Bibliographic Formats and Standards]
+*[http://www.worldcat.org/identities/ WorldCat Identities]
+
+==See also==
+* [[Copac]], provided by Research Libraries UK
+* [[Library and Archives Canada]]
+* [[Research Libraries UK]]
+
+[[Category:Bibliographic databases]]
+[[Category:Catalogues]]
+[[Category:Cooperatives]]
+[[Category:OCLC]]
+[[Category:Websites]]

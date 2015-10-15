@@ -1,0 +1,62 @@
+{{Infobox identifier
+| name          = International Standard Name Identifier
+| image         = 
+| image_size    = 
+| image_caption = 
+| image_alt     = 
+| acronym       = ISNI
+| number        = 
+| start_date    = {{Start date|2012|03|15}}
+| organisation  = ISNI-IA
+| digits        = 16
+| check_digit   = MOD 11-2
+| example       = http://isni-url.oclc.nl/isni/0000000031979523
+| website       = {{URL|www.isni.org}}
+}}
+The '''International Standard Name Identifier''' ('''ISNI''') is an identifier for uniquely identifying the public identities of contributors to media content such as books, TV programmes, and newspaper articles. Such an identifier consists of 16 numerical digits divided into four blocks.
+
+It was developed under the auspices of the [[International Organization for Standardization]] (ISO) as [http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=44292 Draft International Standard 27729;] the valid standard was published on 15 March 2012. The ISO technical committee 46, subcommittee 9 ([[TC 46/SC 9]]) is responsible for the development of the standard.
+
+ISNI can be used for disambiguating names that might otherwise be confused, and links the data about names that are collected and used in all sectors of the media industries.
+
+==Uses of an ISNI==
+The ISNI allows a single identity (such as an author's [[pseudonym]] or the [[impression (publishing)|imprint]] used by a [[publisher]]) to be identified using a unique number. This unique number can then be linked to any of the numerous other identifiers that are used across the media industries to identify names and other forms of identity.
+
+An example of the use of such a number is the identification of a musical performer who is also a writer both of music and of poems. Where he or she might currently be identified in many different databases using numerous private and public identification systems, under the ISNI system, he or she would have a single linking ISNI record. The many different databases could then exchange data about that particular identity without resorting to messy methods such as comparing text strings. An often quoted example in the English language world is the difficulty faced when identifying 'John Smith' in a database. While there may be many records for 'John Smith', it is not always clear which record refers to the specific 'John Smith' that is required.
+
+If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.
+
+ISNI can be used by libraries and archives when sharing catalogue information; for more precise searching for information online and in databases, and it can aid the management of rights across national borders and in the digital environment.
+
+===ORCID===
+[[ORCID]] (Open Researcher and Contributor ID) identifiers are reserved block of ISNI identifiers, for scholarly researchers.<ref name="ORCID-ISNI">{{cite web|url=http://about.orcid.org/content/what-relationship-between-isni-and-orcid|title=What is the relationship between ISNI and ORCID? |publisher=ORCID |work=About ORCID |accessdate=29 March 2013}}</ref> administered by a separate organisation.<ref name="ORCID-ISNI" /> Individual researchers can create and claim their own ORCID identifier.<ref name="ISNI-ORCID">{{cite web|url=http://www.isni.org/isni_and_orcid|title=ISNI and ORCID|publisher=ISNI|accessdate=29 March 2013}}</ref> The two organisations coordinate their efforts.<ref name="ORCID-ISNI" /><ref name="ISNI-ORCID" />
+
+==ISNI governance==
+ISNI is governed by an 'International Agency', commonly known as the ISNI-IA.<ref>{{cite web|url=http://www.isni.org/|title=ISNI|accessdate=19 December 2014}}</ref><ref name="About">{{cite web|url=http://www.isni.org/about|title=About the ISNI International Agency|accessdate=19 December 2014}}</ref> This UK registered, not-for-profit company has been founded by a consortium of organisations consisting of the [[Confédération Internationale des Sociétés d´Auteurs et Compositeurs]] (CISAC), the [[Conference of European National Librarians]] (CENL), the [[International Federation of Reproduction Rights Organisations]] (IFRRO), the [[International Performers Database Association]] (IPDA), the [[Online Computer Library Center]] (OCLC) and [[ProQuest]]. It is managed by directors nominated from these organisations and, in the case of CENL, by representatives of the [[Bibliothèque nationale de France]] and the [[British Library]].
+
+==ISNI assignment==
+ISNI-IA uses an assignment system comprising a user interface, [[XML schema|data-schema]], [[disambiguation]] [[algorithm]]s, and database that meets the requirements of the ISO standard, while also using existing technology where possible. The system is based primarily on the [[Virtual International Authority File]] (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.
+
+Access to the assignment system and database, and to the numbers that are generated as the output of the process, are controlled by independent bodies known as 'registration agencies'. These registration agencies deal directly with customers, ensuring that data is provided in appropriate formats and recompensing the ISNI-IA for the cost of maintaining the assignment system. Registration agencies are appointed by ISNI-IA but will be managed and funded independently.
+
+==See also==
+* [[Authority control]]
+* [[Digital Author Identification]] (DAI)
+* [[International Standard Text Code]] (ISTC)
+* [[ResearcherID]]
+* [[Ringgold identifier]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Wikidata property |1=P213 |2=ISNI }}
+
+*{{official website|http://www.isni.org/}}
+
+{{International numbering standards}}
+{{ISO standards}}
+
+[[Category:ISO standards]]
+[[Category:Universal identifiers]]
+[[Category:Library cataloging and classification]]

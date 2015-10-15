@@ -1,0 +1,65 @@
+Das '''Virtual International Authority File''' ('''VIAF''') ist eine virtuelle internationale [[Normdatei]] für Personendaten. Es ist ein Gemeinschaftsprojekt mehrerer [[Nationalbibliothek]]en und [[Bibliotheksverbund|Bibliotheksverbünde]], das durch das [[Online Computer Library Center]] (OCLC) betrieben wird. Das Projekt wurde gemeinsam von der [[Deutsche Nationalbibliothek|Deutschen Nationalbibliothek]] und der [[Library of Congress]] initiiert.
+
+[[Datei:VIAF Screenshot 2012.png|thumb|VIAF: Screenshot (2012)]]
+
+== Inhalt und Ziele ==
+
+Ziel des VIAF ist die Verknüpfung nationaler Normdateien (wie der von der Deutschen Nationalbibliothek betreuten [[Gemeinsame Normdatei|Gemeinsamen Normdatei]]) zu einer weltweit einheitlichen virtuellen Normdatei. Dabei werden die Datenbestände von 25 Normdateien zusammengeführt und identische [[Datensatz|Datensätze]] in einer [[Konkordanz]]<nowiki/>datei verlinkt. Die Daten werden online angeboten und stehen für Recherchen, den Datenaustausch und die gemeinsame Datennutzung zur Verfügung. Zur Aktualisierung der Datenbestände wird das [[OAI Protocol for Metadata Harvesting|''Protocol for Metadata Harvesting'' der Open Archives Initiative]] (OAI-PMH) verwendet. Einmal pro Monat findet ein Musterabgleich („[[Pattern Matching]]“) statt, bei dem neue Datensätze mit den bestehenden zusammengeführt werden.<ref>Der angestrebte monatliche Abgleich fällt allerdings mitunter aus, so dass die VIAF-Daten nur für einen Teil der beteiligten Normdateien aktuell sind. So gab es beispielsweise Anfang Oktober 2012 noch Einträge mit dem Stand von Mai 2012.</ref>
+
+Zur Referenzierung erhält ein VIAF-Datensatz eine eigene Normdatennummer als [[Identifikator]], aus der eine Form als [[Uniform Resource Identifier]] für [[Linked Open Data|Linked-Data]]-Anwendungen hervorgeht. Er enthält Verweise auf die zusammengeführten Datensätze der beteiligten Normdateien und deren [[Ansetzung]]en.
+
+== Teilnehmende Bibliotheken ==
+Am Projekt nehmen folgende Bibliotheken bzw. Bibliotheksverbünde teil (Stand: September 2013):
+
+* [[Bibliotheca Alexandrina]], Ägypten
+* [[National Library of Australia]], Australien
+* [[Open VLACC]], Belgien
+* [[Dansk BiblioteksCenter]] (DBC), Dänemark
+* [[Deutsche Nationalbibliothek]], Deutschland
+* [[Bibliothèque nationale de France]], Frankreich
+* [[Système universitaire de documentation]], Frankreich
+* [[The National Library of Israel]], Israel
+* [[Istituto Centrale per il Catalogo Unico]], Italien
+* [[Nationale Parlamentsbibliothek]], Japan
+* [[Library and Archives Canada]], Kanada
+* [[Lettische Nationalbibliothek]], Lettland
+* [[BIBSYS]], Norwegen
+* [[Biblioteka Narodowa]], Polen
+* [[Narodowy Uniwersalny Katalog]] (NUKAT), Polen
+* [[Biblioteca Nacional de Portugal]], Portugal
+* [[Königliche Bibliothek zu Stockholm]], Schweden
+* [[Schweizerische Nationalbibliothek]], Schweiz
+* [[Bibliothekstyp#RERO (Réseau des bibliothèques de Suisse occidentale)|RERO]], Schweiz
+* [[Spanische Nationalbibliothek|Biblioteca Nacional de España]], Spanien
+* [[Biblioteca de Catalunya]], Spanien
+* [[Nationalbibliothek der Tschechischen Republik]], Tschechien
+* [[Széchényi-Nationalbibliothek]], Ungarn
+* [[Getty Center|Getty Research Institute]], USA
+* [[Library of Congress]], USA
+* [[Vatikanische Apostolische Bibliothek|Biblioteca Apostolica Vaticana]], Vatikan
+
+Folgende Institutionen beteiligen sich testweise:
+* [[National- und Universitätsbibliothek Zagreb]], Kroatien
+* [[Königliche Bibliothek der Niederlande]], Niederlande
+* [[Lebanese National Library]], Libanon
+* [[Russische Staatsbibliothek]], Russland
+* [[National Library Board]], Singapur
+* [[Perseus Project]], Vereinigte Staaten
+* [[Syriac Reference Portal]]
+* [[International Standard Name Identifier]]
+
+Außerdem werden testweise Einträge der englischsprachigen Wikipedia verlinkt.
+
+== Literatur ==
+* Rick Bennett, Christina Hengel-Dittrich, Edward T. O'Neill, Barbara B. Tillett: [http://archive.ifla.org/IV/ifla72/papers/123-Bennett-en.pdf ''VIAF (Virtual International Authority File): Linking Die Deutsche Bibliothek and Library of Congress Name Authority Files.''] Projektbeschreibung für den World Library and Information Congress: 72nd [[International Federation of Library Associations and Institutions|IFLA]] General Conference and Council, 20.–24. August 2006, Seoul, Korea (englisch, PDF-Datei; 635 kB).
+
+== Weblinks ==
+* [http://viaf.org/ Website des VIAF] (englisch)
+* [http://www.oclc.org/services/brochures/213998usf_virtual_international_authority_file_VIAF.pdf Beschreibung des VIAF] (englisch, PDF-Datei; 391 kB)
+* [http://www.dnb.de/DE/Wir/Projekte/Abgeschlossen/viaf.html Informationen über das VIAF] auf der Website der DNB
+
+== Anmerkungen ==
+<references />
+
+[[Kategorie:Normdatei]]
+[[Kategorie:Digitale Bibliothek]]

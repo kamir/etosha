@@ -1,0 +1,35 @@
+Simple English Wikipedia
+From Wikipedia, the free encyclopedia
+Favicon of Wikipedia Simple English Wikipedia
+Wikipedia-logo-simple.png
+Screenshot [show]
+Web address	simple.wikipedia.org
+Commercial?	No
+Type of site
+Internet encyclopedia project
+Registration	Optional
+Available in	Basic English
+Owner	Wikimedia Foundation
+Launched	November 17, 2003; 11 years ago
+The Simple English Wikipedia is an English edition of the online encyclopedia Wikipedia, primarily written in Basic English and Special English.[1] It is one of five Wikipedias written in an Anglic language, the others being the English Wikipedia, the Pitkern-Norfuk Wikipedia, the Scots Wikipedia, and the Old English Wikipedia (though the last is largely unintelligible to a native English speaker). Launched on November 17, 2003, the site has the stated aim of providing an encyclopedia for "people with different needs, such as students, children, adults with learning difficulties and people who are trying to learn English".[2] As of May, 2014, the site contains over 100,000 content pages, and has more than 362,000 registered users, of whom 699 are currently active.[3]
+
+Contents  [hide] 
+1 Description
+2 Use as a resource for learning English
+3 References
+4 External links
+Description[edit]
+Articles on the Simple English Wikipedia are usually shorter than their English Wikipedia counterparts, typically presenting only basic information: Tim Dowling of The Guardian newspaper explained that "the Simple English version tends to stick to commonly accepted facts".[4] The interface is also more simply labeled; for instance, the "Random article" link on the English Wikipedia is replaced with a "Show Any Page" link; users are invited to "change" rather than "edit" pages; clicking on a red link shows a "not yet started" message rather than the usual "page does not exist".[5] The project uses around 2,000 common English words,[1] and is based on Basic English, an 850-word auxiliary international language created by Charles Kay Ogden in the 1920s.[4]
+
+Use as a resource for learning English[edit]
+Simple English Wikipedia's basic presentation style makes it ideal for beginners learning English.[6] Its simpler word structure and syntax, while detracting from the raw information standpoint, can make the information easy to understand. Material from the Simple English Wikipedia forms the basis for One Encyclopedia per Child,[7] a One Laptop per Child project.[8]
+
+References[edit]
+^ Jump up to: a b Parris, Sheri R. (2009). Adolescent Literacy, Field Tested: Effective Solutions for Every Classroom. International Reading Assoc. p. 76. ISBN 0-87207-695-4. A version of Wikipedia, called Simple English Wikipedia, contains entries using the 2,000 or so most common words in English and is well suited for younger readers.
+Jump up ^ Simple English Wikipedia (2009). "Simple English Wikipedia". Wikimedia Foundation. Retrieved 2009-05-17.
+Jump up ^ Simple English Wikipedia (2013). "Special:Statistics". Wikimedia Foundation. Retrieved March 3, 2013.
+^ Jump up to: a b Tim Dowling (January 14, 2008). "Wikipedia too long-winded for you? Try the simple version". The Guardian. Retrieved 2009-05-17.
+Jump up ^ Ayers, Phoebe; Matthews, Charles; Yates, Ben (2008). How Wikipedia works: and how you can be a part of it. No Starch Press. p. 417.
+Jump up ^ Fabien Snauwaert (2010). How to Learn English. p. 34. Retrieved 18 June 2011.
+Jump up ^ "One Encyclopedia Per Child". Wiki.laptop.org. Retrieved 2009-07-29.
+Jump up ^ Lawrence A. Tomei, Robert Morris (2008). Encyclopedia of Information Technology Curriculum Integration. Idea Group Inc (IGI). p. 544. ISBN 1-59904-881-7.

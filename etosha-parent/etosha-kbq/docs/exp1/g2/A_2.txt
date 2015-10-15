@@ -1,0 +1,36 @@
+Simple English Wikipedia
+From Wikipedia, the free encyclopedia
+Favicon of Wikipedia Simple English Wikipedia
+Wikipedia-logo-simple.png
+Screenshot [show]
+URL	simple.wikipedia.org
+Commercial?	No
+Type of site	Internet encyclopedia project
+Registration	Optional
+Available language(s)	Basic English
+Owner	Wikimedia Foundation
+Launched	November 17, 2003; 11 years ago
+The Simple English Wikipedia is a Wikipedia encyclopedia, written in basic English.[1]
+
+Articles in the Simple English Wikipedia use shorter sentences and simpler grammar than the English Wikipedia.
+
+The Simple English Wikipedia is also for people with different needs. Some examples of people who use Simple English Wikipedia:
+
+Students
+Children
+Adults who might find it hard to learn or read
+People who are learning English
+Other people use the Simple English Wikipedia because the simple language helps them understand hard ideas or topics they do not know about.
+
+When the Simple English Wikipedia began in 2003, the ordinary English Wikipedia already had 150,000 articles, and seven other Wikipedias in other languages had over 15,000 articles. Since the other Wikipedias already have so many articles, most Simple English articles take articles from other Wikipedias and make them simple; they are usually not new articles. Right now, the Simple English Wikipedia has 112,705 articles.
+
+This makes Simple English articles a good way to understand difficult articles from the ordinary English Wikipedia. If someone cannot understand an idea in complex English, they can read the Simple English article.
+
+Many articles are shorter than the same articles in the English Wikipedia.[2] Technical subjects use some terms which are not simple. Editors try to explain these terms in a simple way.
+
+Related pages[change | change source]
+Wikipedia:Simple English Wikipedia
+Simple English Wiktionary
+References[change | change source]
+Jump up ↑ Tim Dowling (January 14, 2008). "Wikipedia too long-winded for you? Try the simple version". The Guardian. Retrieved 2009-05-17.
+Jump up ↑ Koen Smets, et al. "Automatic Vandalism Detection in Wikipedia: Towards a Machine Learning Approach". University of Antwerp. Retrieved 2009-05-17.

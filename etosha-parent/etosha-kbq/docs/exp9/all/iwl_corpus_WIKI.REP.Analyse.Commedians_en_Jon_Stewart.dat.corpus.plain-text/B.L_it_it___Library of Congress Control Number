@@ -1,0 +1,31 @@
+{{F|Stati Uniti d'America|gennaio 2015}}
+Il '''Library of Congress Control Number''' o '''LCCN''' è un sistema [[Numero di serie|seriale]] di numerazione delle schede del catalogo della [[Library of Congress]] (Biblioteca del Congresso) degli Stati Uniti. Non ha niente a che fare con il contenuto dei libri, e non deve essere confuso con il [[Library of Congress Classification]] (sistema di classificazione della Biblioteca del Congresso).
+
+==Storia==
+Il sistema di numerazione LCCN è in uso fin dal [[1898]], quando l'acronimo LCCN originalmente stava per Library of Congress Card Number (numero di scheda della Biblioteca del Congresso). Veniva anche chiamato Library of Congress Catalog Card Number (numero di scheda del catalogo della Biblioteca del Congresso). La Library of Congress preparò delle schede di informazioni bibliografiche per il suo catalogo della libreria con l'intenzione anche di vendere dei duplicati delle stesse schede alle altre librerie per l'uso nei loro cataloghi. Questo è conosciuto come catalogazione centralizzata. Ad ogni scheda veniva dato un numero seriale per aiutarne l'identificazione.
+
+Sebbene la maggior parte delle informazioni bibliografiche viene ora creata elettronicamente, memorizzata e condivisa con altre librerie, c'è ancora la necessità di identificare ogni singola registrazione, e il codice LCCN continua ad esercitare questa funzione. 
+
+I [[bibliotecari]] di tutto il mondo usano questo sistema di identificazione univoco nel processo di catalogazione della maggior parte dei libri che sono stati pubblicati negli Stati Uniti. Questo li aiuta ad ottenere i corretti dati di catalogazione (conosciuti come record di catalogazione), che la Library of Congress ed altre fonti rendono disponibili sul Web e attraverso i loro media. 
+
+Nel febbraio [[2008]], la Library of Congress ha creato il servizio LCCN Permalink, provvedendo un URL fisso per tutti i Library of Congress Control Numbers.<ref>{{Cita web |titolo=Library of Congress Update for 2008 ALA Annual Conference: January–May, 2008 |url= http://www.loc.gov/ala/an-2008-update.html |accesso=29 settembre 2008}}</ref>
+
+==Formato==
+Nella sua forma più elementare il numero comprende un anno e un numero seriale. L'anno ha due cifre dal 1898 al 2000, e quattro cifre a iniziare dal 2001. I tre anni ambigui sono differenziati dalla lunghezza del numero seriale. Ci sono anche alcune peculiarità nei numeri che iniziano per "7" a causa di un esperimento fallito usato tra il 1969 e il 1972.
+
+I numeri seriali sono composti da sei cifre e dovrebbero includere degli zero in testa. Il [[trattino]], che si vede spesso per separare l'anno dal numero seriale, è opzionale. Più recentemente, la Library of Congress ha pregato gli editori di non includere un trattino.
+
+==Note==
+<references />
+
+==Voci correlate==
+*[[Gemeinsame Normdatei]] (GND)
+*International Standard Book Number ([[ISBN]])
+
+==Collegamenti esterni==
+*[http://www.loc.gov/marc/lccn_structure.html Struttura del LC Control Number]
+*[http://lccn.loc.gov/lccnperm-faq.html LCCN Permalink FAQ]
+*[http://catalog.loc.gov/webvoy.html Cerca nel catalogo] per cercare un LCCN
+
+{{Portale|Stati Uniti d'America}}
+[[Categoria:Identificatori]]

@@ -1,0 +1,149 @@
+{{confusion|ISSN}}
+L''''''International Standard Book Number''''' ('''ISBN''') ou '''Numéro international normalisé du livre''' ('''NINL''') est un numéro international qui permet d’identifier, de manière unique, chaque édition de chaque livre publié, que son support soit numérique ou sur papier<ref>[http://www.bnf.fr/fr/professionnels/s_informer_obtenir_isbn.html Définition de la BNF]</ref>. Il est destiné à simplifier la gestion informatique pour tous les intervenants de la chaîne du livre (imprimeur, éditeur, libraire, bibliothèque{{Etc.}}).
+
+== Présentation ==
+
+La norme [[Organisation internationale de normalisation|ISO]] 2108 ([[International Classification for Standards|ICS]] {{n°|01.140.20}}) spécifie la construction du numéro ISBN, les règles de son attribution ainsi que l’administration du système ISBN. La première édition de cette norme est parue en 1972. L'ISBN se réfère à une édition particulière d'un texte. Une œuvre peut donc avoir un numéro ISBN pour la version brochée, un autre pour la version reliée, un troisième pour la version PDF, ePub{{Etc.}}<ref>http://www.afnil.org/default.asp?Info=2</ref>
+
+[[Fichier:ISBNetEAN.jpg|thumb|Codes ISBN et EAN au dos d’un livre.]]
+
+=== Attribution ===
+Lors d’une nouvelle édition, le numéro ISBN de chaque édition précédente doit être mentionné, de même que pour une [[traduction]], l’ISBN pouvant être inclus dans un code à barres de type [[EAN 13]].
+* En France, c’est l’[[Agence francophone pour la numérotation internationale du livre]] (AFNIL) qui gère les numéros ISBN.
+* Au Québec et au Canada francophone, [[Bibliothèque et Archives nationales du Québec]] (BAnQ) agit à titre de représentante officielle de l'AFNIL pour l’attribution des numéros ISBN.
+* En Suisse, la Schweizer Buchhändler- und Verleger-Verband (SBVV) gère les numéros ISBN pour la Suisse romande et la Suisse alémanique. Pour la Suisse italienne, c'est l'Agenzia ISBN per l’area di lingua italiana EDISER qui attribue les numéros ISBN
+
+=== ISBN 10 ===
+Le numéro <nowiki>ISBN 10</nowiki> se composait de quatre segments, trois segments de longueur variable et un segment de longueur fixe, la longueur totale de l’ISBN comprenait dix chiffres (le {{date|1|janvier|2007}}, la longueur a été étendue à 13 chiffres en ajoutant un groupe initial de 3 chiffres). Les quatre segments d’un ancien code ISBN à 10 chiffres sont :
+:'''A''' - '''B''' - '''C''' - '''D'''
+* '''A''' identifie un groupe de codes par pays, zone géographique ou zone linguistique ; sa longueur est variable : un caractère pour les zones ayant une production abondante (0, 1, 2{{etc.}}), plusieurs pour les zones ayant une production moins abondante, jusqu’à 5 caractères au maximum. Ce premier segment ne présume pas de la langue de rédaction de l’ouvrage, ainsi des ouvrages publiés en France avec un code 2- peuvent être rédigés en anglais.<br />Quelques exemples :
+** pour les publications faites au Cambodge, le code est ''99950'' ;
+** les organisations internationales ont un code réservé : ''92''<ref>{{en}} [http://www.isbn-international.org/en/identifiers/allidentifiers.html La liste complète des codes].</ref> ;
+** le ''0'' ou ''1'' sont utilisés pour les productions de pays anglophones ([[Afrique du Sud]], [[Australie]], [[Canada]] anglophone, [[États-Unis]], [[Gibraltar]], [[Irlande (pays)|Irlande]], [[Namibie]], [[Nouvelle-Zélande]], [[Porto Rico]], [[Royaume-Uni]], [[Zimbabwe]]) ;
+** le ''2'' pour les pays francophones ([[France]], [[Belgique]], [[Canada]] francophone, [[Luxembourg (pays)|Luxembourg]], [[Suisse]] francophone), mais 982 pour le Pacifique Sud (zone géographique) ;
+** le ''3'' pour les pays germanophones ([[Allemagne]], [[Autriche]], [[Suisse]] germanophone) ;
+** le ''4'' pour le [[Japon]] ;
+* '''B''' identifie l’[[édition (activité)|éditeur]] de la publication. Sa longueur est variable au sein de chaque groupe linguistique : d’un caractère pour les éditeurs ayant une production abondante à 7 caractères pour les éditeurs ayant une production moindre.
+* '''C''' correspond au numéro d’ordre de l’ouvrage chez l’éditeur qui l’attribue normalement séquentiellement (sauf en cas de partage de code résultant d’un accord entre éditeurs). Sa longueur est, elle aussi, variable : d’un caractère pour les éditeurs ayant une production peu abondante, à 6 pour les éditeurs ayant une production abondante. On complète cette zone par des zéros de telle façon que la longueur totale soit égale à 10.
+* '''D''' est un code clé de vérification sur un caractère calculé à partir des chiffres précédents. Outre les chiffres de 0 à 9, la [[clé de contrôle]] peut prendre la valeur ''X'', qui représente le nombre 10. Ce code est calculé de la façon suivante :
+** on attribue une pondération à chaque position (de 1 à 9 en allant en sens croissant) et on fait la somme des produits ainsi obtenus ;
+** on conserve le reste de la [[division euclidienne]] de ce nombre par 11 ;
+** si le reste de la division euclidienne est 10, la clé de contrôle n’est pas 10 mais la lettre ''X''. Ceci permet donc d’avoir les codes 0, 1, 2..., 8, 9, X.
+** Ce qui correspond au calcul suivant : 
+<center><math>c_{10}\ = \ \sum_{i=1}^{9} (c_{i} \cdot i)\ mod\ 11</math></center>
+
+; Remarques
+: Comme aucune des pondérations n'est divisible par 11, une erreur portant sur un chiffre entraînera automatiquement une incohérence du code de contrôle.
+: Il est facile de vérifier que ce code de contrôle ne détecte pas systématiquement deux ou plus de deux erreurs.
+: La vérification du code de contrôle peut se faire en effectuant le même calcul sur le code ISBN complet, en appliquant la pondération 10 au dixième chiffre de la clé de contrôle (si ce chiffre clé est ''X'', on lui attribue la valeur 10) : la somme pondérée doit alors être un multiple de 11.
+
+; Exemple
+: Pour le numéro ISBN (à 9 chiffres) ''2-266-11156'' quelle est la clé de contrôle ?
+{| border="1" cellpadding="8" cellspacing="0" class="wikitable centre" rules="all" style="border:1px solid #999;border-collapse:collapse;background:#F9F9F9;color:#000;text-align:center"
+|-
+!Code ISBN (exemple)
+| 2|| 2|| 6|| 6|| 1|| 1|| 1|| 5|| 6
+|-
+!Pondération
+|1|| 2|| 3|| 4|| 5|| 6|| 7|| 8|| 9
+|-
+!Produit
+|2||4||18||24|| 5|| 6|| 7||40||54
+|}
+: Soit au total '''160''' dont le reste de la division euclidienne par 11 est '''6'''. La clé de contrôle est donc '''6'''.
+: L’ISBN au complet est : '''2-266-11156-6'''. Il s’agit ici de l’ISBN de l’édition de poche de ''[[La Chute d'Hypérion]]'' de [[Dan Simmons]].
+: La vérification de la clé complète à 10 chiffres donne la somme pondérée 160 + 6 x 10 = 220, qui est bien un multiple de 11.
+
+=== <nowiki>ISBN 13</nowiki> et code à barres EAN-13 ===
+Pour faciliter leur gestion informatique, chaque livre porte un code à barres à la norme [[EAN 13]] et un code <nowiki>ISBN 13</nowiki> dont il est dérivé.
+
+Ce code comporte 13 chiffres et est aujourd’hui obligatoire (depuis janvier 2007)<ref>[http://www.afnil.org/pdf/Guide%20d%27impl%C3%A9mentation%20ISBN13.pdf ''Guide d'implémentation des ISBN à 13 chiffres''], International ISBN Agency, Berlin, 2004 ({{1re}} édition) {{pdf}}</ref>, et doit être utilisé pour tous les nouveaux codes ISBN à la place du code à 10 chiffres. En effet, l’ancienne numérotation est arrivée à saturation et ne permettrait plus d’attribuer simplement des groupes de codes spécifiques aux différents éditeurs (qui devaient alors rechercher des accords avec d’autres éditeurs ayant des ressources de numéros libres dans les groupes de numérotation qui leur avaient été attribués dans le passé).
+
+La conversion d’un ancien code <nowiki>ISBN 10</nowiki> en code <nowiki>ISBN 13</nowiki> compatible avec la norme [[Code-barres EAN|EAN]] est automatique (et obligatoire pour toutes les transactions électroniques à compter de janvier 2007).
+Ce code comporte 13 chiffres, et est calculé à partir du numéro <nowiki>ISBN 10</nowiki> de la façon suivante :
+* les trois premiers chiffres valent « 978 » (978 est le premier des identifiants attribués aux livres dans la codification EAN) ;
+* les neuf chiffres suivants sont les neuf premiers chiffres de l’ISBN (code de la zone géographique, code de l’éditeur, numérotation interne à l’éditeur) ;
+* le dernier chiffre (c13) est une clé de contrôle calculée en fonction des 12 premiers chiffres en calculant le reste de la division par 10 (le modulo 10) de la différence entre 10 et le modulo 10 de la somme de chaque chiffre, chaque chiffre étant pondéré selon un indice de position égal à 1 pour les positions impaires et 3 pour les positions paires, soit suivant la formule<ref>{{en}} [http://www.bisg.org/isbn-13/conversions.html Tableau de conversion des 10 chiffres/ 13 chiffres ISBN].</ref> :
+<center><math>c_{13}\ =\ (10 - (\sum_{i=0}^{5} c_{2i+1} + 3 \cdot \sum_{i=1}^{6} c_{2i})\ mod\ 10)\ mod\ 10</math></center>
+Le chiffre clé obtenu ne peut varier que de 0 à 9 (il n’y a plus de chiffre ''X''). Aussi, la vérification de la clé de contrôle peut se faire en vérifiant que la somme pondérée (calculée sur les 13 chiffres) est bien un multiple de 10.
+
+'''Exemple''' :
+* si le code ISBN vaut : 2-86889-006-7 ; 
+* le code EAN-13 sera de la forme : 978286889006y, avec :
+*: y = modulo(10 - modulo((9 + 3×7 + 8 + 3×2 + 8 + 3×6 + 8 + 3×8 + 9 + 3×0 + 0 + 3×6), 10), 10),
+*: soit y = modulo(10 - modulo(129, 10), 10) = 1,
+* donc le code <nowiki>ISBN 13</nowiki> vaudra : 978-2-86889-006-1 ;
+* le code EAN-13 sera quant à lui : 9782868890061 (on ôte simplement les tirets) ;
+* la vérification de la clé de contrôle donne la somme pondérée 129 + 1 = 130 qui est bien un multiple de 10<ref>[http://www.isbn-international.org/fr/ISBNmanualfr.pdf document de l’{{lang|en|International ISBN Agency}} § 7.5] {{pdf}}</ref>.
+
+;Attention
+La conversion inverse n’est plus autorisée, en effet :
+* il existe maintenant des codes ISBN à 13 chiffres dont le premier groupe de trois chiffres vaut '''979''' et non ''978'' ;
+* les groupes de trois premiers chiffres ''978'' et ''979'' ont été attribués dans la norme EAN pour l’ISBN ;
+* d’autres préfixes pourront être alloués en cas de besoin à l’ISBN ;
+* certaines publications pourront utiliser des codes EAN-13 non attribués à l’ISBN, mais attribués pour d’autres classes de produits avec lesquels ces publications sont distribuées ;
+* la norme ISBN impose que les versions imprimées du code comportent les tirets séparateurs afin d’en faciliter la lecture. Les codes <nowiki>ISBN 13</nowiki> et EAN-13 ne sont donc pas équivalents. Il existe cependant des heuristiques permettant de reconstituer le code <nowiki>ISBN 13</nowiki> à partir du code EAN-13 (cf. [[#Liens externes|liens externes]]).
+
+Il existe sur le web des convertisseurs automatiques qui vous permettent de réaliser simplement cette opération<ref>{{en}} [http://www.isbn.org/converterpub.asp Convertisseur automatique des ISBN à 10 chiffres vers les ISBN à 13 chiffres].</ref>.
+
+== Évolution ==
+Théoriquement, le nombre maximal d’ouvrages pouvant être référencés par la codification <nowiki>ISBN 10</nowiki> était de {{nobr|1 milliard}}, c’est-à-dire 10{{exp|9}}, où 9 est le nombre de positions utiles (la dixième étant réservée au caractère de contrôle). Cependant la structure interne du code limitait grandement cette possibilité théorique d’attribution : certains domaines (que ce soit au niveau de la communauté linguistique ou de l’éditeur) risquaient de bientôt saturer.
+
+[[Fichier:Isbn13.GIF|thumb|Exemple d'un ISBN nouvelle version]]
+La '''nouvelle version de la norme ISO 2108'''<ref>[http://www.afnil.org/ Information concernant le changement à 13 positions sur le site de l’AFNIL].</ref> (datée d’avril 2006) prévoit que le code ISBN comporte 13 chiffres. Cette norme est entrée en vigueur le '''{{date|1|janvier|2007}}'''. Ce changement répond à deux objectifs : accroître la capacité de numérotation et rendre plus compatible cette numérotation avec les systèmes de code à barres à 13 chiffres, ceux-ci étant les plus utilisés dans la distribution<ref>Marie-Claire Barthet, « ISBN – Une norme pour treize chiffres », dans ''Les Exclusives, la lettre des adhérents de l’[[Association française de normalisation|AFNOR]]'', {{numéro}}322, 18 avril 2006.</ref>.
+
+Cette évolution de 10 à 13 chiffres est semblable à l’évolution du protocole informatique d’adressage [[Internet Protocol|IP]] de la [[IPv4|version 4]] sur 4 [[octet]]s à la [[IPv6|version 6]] sur 16 [[octet]]s.
+
+Pour rester compatible avec l’ISBN actuel à 10 chiffres, tout en permettant une migration aisée et automatique des anciens numéros ISBN, l’encodage [[Code-barres EAN|EAN-13]] des codes <nowiki>ISBN 10</nowiki> a été utilisé comme base du format du code ISBN 13, en réutilisant le préfixe 978 et ainsi que la méthode de calcul de la clef de contrôle du code EAN-13.
+
+Dès qu’un domaine n’a plus de numéro disponible, un autre code pour l’en-tête de l’[[Code-barres EAN|EAN]] est alors utilisé : '''979''' au lieu de 978. L’entrée en vigueur du nouveau système est spécifiée pour le {{date|1|janvier|2007}}<ref>[http://www.collectionscanada.gc.ca/isn/041011-1020-f.html ISBN Foire aux questions - Numéros international normalisé (ISNs) - Bibliothèque et Archives Canada].</ref>. Toutefois, le groupe de code ''979'' était déjà utilisé pour la publication de partitions musicales, qui entrent dans le champ de la norme ISO 2108 et donc disposent d’un code ISBN à compter de janvier 2007.
+
+Pour l’ISBN 13, sa présentation est la suivante: '''G''' - '''A''' - '''B''' - '''C''' - '''K''', où ''K'' est la clé de vérification du code [[Code-barres EAN|EAN]] ''(et non plus celle de l’ISBN 10)'', et où '''G''' est un des groupes de 3 chiffres attribués par l’EAN à l’ISBN (actuellement 978 ou 979).
+
+C’est ce code à 13 chiffres qui a été retenu pour servir d’extension à l’ISBN, sous le nom : « <nowiki>ISBN 13</nowiki> ». Ce code unique a les avantages suivants :
+* il peut être dérivé en [[Code-barres EAN|EAN-13]] (au prix de la perte des tirets séparateurs) ;
+* il permet de réunir sous un même code produit des publications comportant des éléments bibliographiques, audio/vidéo ; 
+* il est directement compatible avec les traitements dans les chaînes de commande et d’expédition, où la norme EAN est utilisée pour d’autres classes de produits, ce qui simplifie ce processus ;
+* cette nouvelle numérotation permet d’attribuer des codes ISBN aux éditeurs de publications électroniques.
+
+== Législation en France ==
+* Arrêté du 12 janvier [[1995]] fixant les mentions obligatoires figurant sur les documents imprimés, graphiques et photographique soumis au [[dépôt légal]] (''[[Journal officiel de la République française|Journal officiel]]'' du 20 janvier 1995) :
+::Article 1 : Sur tous les exemplaires d'un même document soumis au dépôt légal, doivent figurer les mentions suivantes : pour le dépôt des livres, des cartes et des plans : 1° […] 2° […] 3°[…] 4° La mention de l'ISBN et éventuellement de l'[[International Standard Serial Number|ISSN]].
+* Arrêté du 12 janvier 1995 fixant les mentions obligatoires figurant sur les déclarations accompagnant le dépôt légal des documents imprimés, graphiques et photographiques :
+::Article 2 : La déclaration de l'éditeur doit comporter les mentions suivantes : pour le dépôt des livres, cartes, plans et partitions musicales : 1° […] 2° Le numéro international normalisé (ISBN ou, s'il y a lieu, [[International Standard Music Number|ISMN]] pour les partitions musicales).
+
+== Notes et références ==
+{{Références|colonnes=2}}
+
+== Annexes ==
+{{Autres projets
+| commons=Category:ISBN
+| commons titre=ISBN
+| wiktionary=ISBN
+| wiktionary titre=ISBN
+}}
+=== Articles connexes ===
+* [[Bibliographie]]
+* [[International Standard Serial Number]]
+* [[Amazon Standard Identification Number]]
+* [[International Standard Music Number]]
+* [[International Standard Audiovisual Number]]
+* [[Code-barres EAN|EAN]]
+
+=== Liens externes ===
+* {{mul}} [http://www.isbn-international.org/agency Site officiel de l’Agence internationale ISBN]
+* {{fr}} [http://www.afnil.org/ Site officiel de l'AFNIL]
+* {{fr}} [http://www.digilex.ch/utilitaires/isbn2codebarre Générateur de code barre EAN13 format vectoriel sur la base d’un ISBN]
+* {{en}} [http://barcoderobot.com/isbn-13.html Générateur des codes à barres <nowiki>ISBN 13</nowiki> standardisés]
+* {{en}} [http://isbndb.com/ Base de donnée libre de numéros ISBN (et des livres associés)] - ISBNdb.com
+* {{en}} [http://www.books-by-isbn.com/ Moteur de recherche de livre par code ISBN]
+* {{en}} [http://www.tux.org/~milgram/bookland/#online Générateur de code à barres (génère un fichier Postscript ou pdf à partir du code)] - Tux.org
+
+{{Palette|Codes d'identification|Normes ISO}}
+{{Portail|Sciences de l'information et des bibliothèques}}
+
+[[Catégorie:Organisme international de normalisation]]
+[[Catégorie:Sciences de l'information et des bibliothèques]]
+[[Catégorie:Norme ISO]]
+[[Catégorie:Identifiant]]
+[[Catégorie:Somme de contrôle]]

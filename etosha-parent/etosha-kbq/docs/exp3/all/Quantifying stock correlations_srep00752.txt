@@ -1,0 +1,359 @@
+untitledQuantifying the Behavior of Stock Correlations Under Market Stress Tobias Preis1,2,3, Dror Y. Kenett2,4, H. Eugene Stanley2, Dirk Helbing5 & Eshel Ben-Jacob4
+1Warwick Business School, University of Warwick, Coventry, CV4 7AL, United Kingdom, 2Center for Polymer Studies, Department of Physics, Boston University, Boston, MA 02215, USA, 3Department of Mathematics, University College London, London, WC1E 6BT, UK, 4School of Physics and Astronomy, Tel-Aviv University, Tel-Aviv 69978, Israel and, 5Chair of Sociology, in particular of Modeling and Simulation, ETH Zurich, 8092 Zurich, Switzerland.
+Understanding correlations in complex systems is crucial in the face of turbulence, such as the ongoing financial crisis. However, in complex systems, such as financial systems, correlations are not constant but instead vary in time. Here we address the question of quantifying state-dependent correlations in stock markets. Reliable estimates of correlations are absolutely necessary to protect a portfolio. We analyze 72 years of daily closing prices of the 30 stocks forming the Dow Jones Industrial Average (DJIA). We find the striking result that the average correlation among these stocks scales linearly with market stress reflected by normalizedDJIA index returns on various time scales. Consequently, the diversification effect which should protect a portfolio melts away in times of market losses, just when it would most urgently be needed. Our empirical analysis is consistent with the interesting possibility that one could anticipate diversification breakdowns, guiding the design of protected portfolios.
+W ild fluctuations in stock prices1–8 continue to have a huge impact on the world economy and the personal fortunes ofmillions, shedding light on the complex nature of financial and economic systems. For these systems, a truly gargantuan amount of pre-existing precise financial market data9–11 com-
+plemented by new big data ressources12–15 is available for analyses. The complex mechanisms of financial market moves can lead to sudden trend switches16–18 in a number of
+stocks. Such sudden trend switches can occur in a synchronized fashion, in a large number of stocks simulta- neously, or in an unsynchronized fashion, affecting only a few stocks at the same time.
+Diversification in stockmarkets refers to the reduction of portfolio risk caused by the investment in a variety of stocks. If stock prices do not move up and down in perfect synchrony, a diversified portfolio will have less risk than the weighted average risk of its constituent stocks19,20. Hence it should be possible to reduce risk in price of individual stocks by the combination of an appropriate set of stocks. To identify such an appropriate set of stocks with anti-correlated price time series, the assumption mostly used is that the correlations among stocks are constant over time21–26. This widely used assumption is also the basis for the determination of capital require- ments of financial institutions that usually own a huge variety of constituents belonging to different asset classes.
+Recent studies building on the availability of huge and detailed data sets of financial markets have analyzed and modeled the static and dynamic behavior of this very complex system27–39, suggesting that financial markets are governed by systemic shifts and display non-equilibrium properties.
+A very well known stylized fact of financial markets is the leverage effect, a term coined by Black to describe the negative correlation between past price returns and future realized volatilities in stock markets. According to Reigneron et al.40, the index leverage effect can be decomposed into a volatility effect and a correlation effect. In the course of recent financial market crises, this effect has regained center stage, and the work of different groups has focused on uncovering its true nature40–46). Reigneron et al. analyzed daily returns of six indices from 2000 to 2010 and found that a downward index trends increase the average correlation between stocks, as quantified by measurements of eigenvalues of the conditional correlation matrix. They suggest that a quadratic term should be included to the linear regressions of the dependence of mean correlation on the index return the previous day.
+Here, we will expand on these results utilizing 72 years of trading of the 30Dow Jones industrial average (DJIA) components (see also47,48). Using this financial data set we will quantify state-dependent stockmarket correlations and analyze how they vary in face of dramatic market losses. In such ‘‘stress’’ scenarios, reliable correlations are most needed to protect the value of a portfolio against losses.
+SUBJECT AREAS: STATISTICAL PHYSICS,
+THERMODYNAMICS AND NONLINEAR DYNAMICS
+should be addressed to T.P. (mail@tobiaspreis.
+de)
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 1
+Results To quantify state-dependent correlations, we analyze historical daily closing prices of the N; 30 components of the DJIA over 72 years, from 15 March 1939 until 31 December 2010, which can be down- loaded as a Supplementary Dataset. During these T; 18596 trading days, various adjustments of the DJIA occurred. We explicitly con- sider an adjustment of the index when one of the 30 stocks is removed from the index and replaced by a new stock in order to ensure that we accurately reproduce the index value of the DJIA at each trading day (Fig. 1). To calculate the official index value pDJIA, the sum of prices of all
+30 stocks is divided by a normalization factor dDJIA, known as the DJIA divisor. The DJIA divisor anticipates index jumps caused by effects of stock splits, bonus issues, dividends payouts or replace- ments of individual index components keeping the index value con- sistent (Fig. 1A). Consequently, the index value of the DJIA at day t is given by
+pDJIA tð Þ~ PN i~1
+pi tð Þ dDJIA
+, ð1Þ
+where pi(t) reflects the price of DJIA component i at day t in units of USD and where t is measured in units of trading days. The normal- ization factor dDJIA is also measured in units of USD. Consequently,
+the value of the DJIA is dimensionless. Due to changes in the com- ponents of theDJIA, a component i does not necessarily reflect prices of one stock only. A subscript i is also used for a component’s pre- decessor or successor. To quantify state-dependent correlations, we calculate the mean
+value of Pearson product-moment correlation coefficients49 among all DJIA components in a time interval comprising Dt trading days each (Fig. 2). In each time interval comprising Dt trading day, we determine correlation coefficients for all pairs ofN; 30 stocks. From these correlation coefficients, we calculate their mean value for each time interval separately. We relate mean correlation coefficients to corresponding market
+states, which we quantify by DJIA index returns for time intervals starting at trading day t and ending at trading day t 1 Dt,
+rDJIA t,Dtð Þ~ log pDJIA tzDtð Þð Þlog pDJIA tð Þð Þ : ð2Þ
+We normalize the time series of DJIA index returns, rDJIA(t, Dt), by its standard deviation, sDJIA(Dt), defined as
+sDJIA Dtð Þ:
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ 1 T
+XT t~1
+rDJIA tð Þ !2vuut : ð3Þ
+D JI
+A D
+iv is
+or (U
+KO MCD MMM MRK
+B D
+JI A
+C om
+po ne
+nt s
+Figure 1 | Index components of the Dow Jones Industrial Average (DJIA). (A) To calculate the index value of the DJIA, we determine the sum of prices of all 30 stocks belonging to the index and divide them by the depicted ‘‘DJIA Divisor’’. Adjustments of this divisor ensure that various corporate actions
+such as stock splits do not affect the index value. (B) We analyze DJIA values and prices of all index components for 72 years fromMarch 15, 1939 until
+December 31, 2010. Vertical dashed lines correspond to events in which at least one stock was removed from the index and replaced by another stock. The
+index changes are explicitly taken into account to ensure that the dataset, comprising 18,596 trading days, accurately reflects all 30 daily closing prices
+needed for the index calculation. We use current and historical ticker symbols to abbreviate company names50.
+www.nature.com/scientificreports
+The normalized time series ofDJIA index returns,R(t,Dt), is given by
+R t,Dtð Þ~ rDJIA t,Dtð Þ{ 1T
+XT t~1
+rDJIA tð Þ
+sDJIA Dtð Þ : ð4Þ
+In each time interval comprising Dt trading days, we calculate a local correlation matrix consisting of Pearson correlation coefficients49
+capturing the dependencies among individual stock returns. Time- dependent returns of an individual stock i are given by
+ri tð Þ~ log pi tz1ð Þð Þlog pi tð Þð Þ : ð5Þ
+In a Dt trading day interval, we calculate a correlation coefficient between return time series of stock i and return time series of stock j by
+ci,j t,Dtð Þ~ Dt
+PtzDt{1 t~t
+ri tð Þ PtzDt{1 t~t
+rj tð Þ Dt2si t,Dtð Þsj t,Dtð Þ ð6Þ
+with the standard deviation of return time series i determined in the same time interval comprising Dt trading days defined as
+si t,Dtð Þ:
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ 1 Dt
+XtzDt{1 t~t
+ri tð Þ !2
+:
+vuut ð7Þ The mean correlation coefficient of all DJIA components is given by the mean of all non-diagonal matrix elements of ci,j
+C t,Dtð Þ~ 1 N N{1ð Þ
+X i,j,i=j
+ci,j t,Dtð Þ ð8Þ
+Figure 2 | Visualization of the analysis method. (A) For a time interval of Dt trading days, we calculate for the index the price return log(pDJIA(t1Dt))/ log(pDJIA(t)) in this interval. (B) We determine the Pearson correlation coefficients of all pairs of all 30 DJIA components depicted in a matrix of
+correlation coefficients. Ticker symbols are used to abbreviate company names in this example.We calculate themean correlation coefficient by averaging
+over all non-diagonal elements of this matrix.
+M ea
+n Co
+rr el
+at io
+n , C
+0.3
+0.4
+0.5
+0.6
+−2.5 −2.0 −1.5 −1.0 −0.5 0.0 0.5 1.0 1.5 2.0 2.5
+t=10 Days t=20 Days t=30 Days t=40 Days t=50 Days t=60 Days
+Normalized DJIA Return, R [Standard Deviations]
+Re tu
+rn , R
+0 2000 6000 10000 14000 18000
+A B
+Figure 3 | Quantification of state-dependent correlations among index components. (A) Graphs reflect the relationship between the average correlation coefficientC among stocks belonging to the Dow Jones Industrial Average and its normalized return in intervals ofDt trading days. Themean correlation
+coefficient shows a striking, non-constant behavior, with aminimum between 0 and 11 standard deviations reflecting typical market conditions. For the
+range of all Dt values analyzed, we find the data collapse onto a single line. Corresponding error bars are shown in Fig. 4A. The data collapse suggests that
+the striking increase of themean correlation coefficient for positive and negative values of the normalized index return is independent of the time interval
+Dt. The largest mean correlation coefficients coincide with the most negative index returns. (B) Normalized DJIA returns, R(t,Dt), and mean correlation
+coefficients, C(t, Dt), shown for Dt 5 10 days. For both time series, we reject the null hypothesis of non-stationarity on the basis of results from the
+Augmented Dickey-Fuller test. For R(t, Dt 5 10), we obtain DF 5 224.28, p , 0.01, while for C(t, Dt 5 10) we obtain DF 5 213.45, p , 0.01.
+www.nature.com/scientificreports
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 3
+Figure 3A depicts the relationship between normalizedDJIA index return and corresponding mean correlation coefficient capturing the dependency amoung its components. Figure 3B depicts both nor- malized DJIA index returns and mean correlation coefficients which are used in our analysis forDt5 10 days. Negative index returns tend to come with stronger correlation coefficients than positive index returns (Fig. 3A). Results for different time intervals Dt collapse into one single curve, suggesting a universal relationship. To quantify the relationship between normalized index return and
+average correlation, we aggregate mean correlation coefficients for different values ofDt ranging from 10 trading days to 60 trading days (Fig. 4),
+C� tð Þ~ 1 Dtmax{Dtminz1
+XDtmax Dt~Dtmin
+C t,Dtð Þ: ð9Þ
+We find consistency with two linear relationships quantifying the increase of the aggregated correlation C1 for positive index return R and the aggregated correlation C2 for negative index return R,
+Cz:azRzbz ð10Þ with a1 5 0.064 6 0.002 and b1 5 0.188 6 0.004 (p-value, 0.001) quantifies the right part in Fig. 4A. The aggregatated correlations,
+C{:a{Rzb{ ð11Þ with a2 5 20.085 6 0.002 and b2 5 0.267 6 0.005 (p–value , 0.001) quantifies the left part in Fig. 4A. The larger is a negative or positive DJIA return the larger is the corresponding mean correla- tion. In contrast, a reference scenario of randomly shuffled stock returns leads to a constant relationship (Fig. 4B), supporting our findings in Fig. 4A. However, this method destroys all correlations of this complex financial system and not only the link between aggregated correlation C* and normalized index returns R. As an additional test, we use non-shuffled time series of underlying stock returns for our analysis and randomly shuffle the DJIA return time series only (Fig. 4C).We find that the linear relationships reported in Fig. 4A also vanishes in this scenario highlighting the robustness of our findings. Our findings are qualitatively consistent with results reported in
+previous work40,43,44 but quantitatively different. Instead of linear relationships, Reigneron et al.40 suggest that a quadratic term should be included in the linear regressions of the dependence of mean correlation on the index return on the previous day.
+Discussion In summary, we find a universal relationship between the mean correlation among DJIA components which can be considered as a stock market portfolio and the normalized returns of this portfolio. This suggests that a ‘‘diversification breakdown’’ tends to occur when stable correlations are most needed for portfolio protection. Our findings, which are qualitatively consistent with earlier findings42,44
+but quantitatively different, could be used to anticipate changes in mean correlation of portfolios when financial markets are suffering significant losses. This would enable a more accurate assessment of the risk of losses. Thus, we suggest that in order to anticipate under- lying correlation risks the possibility exists to hedge index deriva- tives. Our results could also shed light on why correlation risks in mortgage bundles were underestimated at the beginning of the recent financial crisis. Future work will build upon the relationship quan- tified here to uncover the underlying mechanisms governing this phenomenon.
+1. O’Hara,M.MarketMicrostructure Theory (Blackwell, Cambridge, Massachusetts, 1995).
+2. Bouchaud, J. P. & Potters, M. Theory of Financial Risk and Derivative Pricing: From Statistical Physics to Risk Management (Cambridge University press, 2003).
+3. Sornette, D.Why stock markets crash: critical events in complex financial systems (Princeton University Press, 2004).
+4. Volt, J. The statistical mechanics of financial markets (Springer Verlag, 2005). 5. Sinha, S., Chatterjee, A., Chakraborti, A. & Chakrabarti, B. K. Econophysics: an
+introduction (Wiley-VCH, 2010). 6. Preis, T. O¨konophysik: Die Physik des Finanzmarktes (Gabler Verlag, 2011). 7. Abergel, F., Chakrabarti, B. K., Chakrabarti, A. & Mitra, M. Econophysics of
+Order-driven Markets (Springer Verlag, 2011). 8. Takayasu, H. ed., Practical Fruits of Econophysics (Springer, Berlin, 2006). 9. Gabaix, X., Gopikrishnan, P., Plerou, V. & Stanley, H. E. A theory of power-law
+distributions in financial markets. Nature 423, 267-270 (2003). 10. Feng, L., Li, B., Podobnik, B., Preis, T. & Stanley, H. E. Linking agent-basedmodels
+and stochastic models of financial markets. Proc. Natl. Acad. Sci. U.S.A 109, 8388 (2012).
+Figure 4 | Quantification of the aggregated correlation. (A) Utilizing the data collapse reported in Fig. 3, we aggregate in each bin of the graph the
+mean correlation coefficients for 10 days # Dt # 60 days. Error bars are
+plotted depicting 21 and 11 standard deviations around the mean of the
+mean correlation values included in each bin. The increase of the
+aggregated correlation C* for positive and negative index returns is
+consistent with two linear relationships:C*5 a1R1 b1 with a1 5 0.0646
+0.002 and b1 5 0.188 6 0.004 (p – value, 0.001) quantifies the right part.
+C* 5 a2R 1 b2 with a2 5 20.085 6 0.002 and b2 5 0.267 6 0.005 (p –
+value, 0.001). The red colored regions are used to obtain the coefficients.
+In order to reduce noise, the range of normalized DJIA returns is restricted
+to bin values occurring, on average, more than 10 times for individual Dt
+intervals. (B) By randomly shuffling time series of daily returns for each
+stock individually, we test the robustness of the relationship and find that
+the linear relationships reported in (A) disappear, supporting our findings.
+(C) We use non-shuffled time series of underlying stock returns for an
+additional parallel analysis with randomly shuffled DJIA returns. The
+above linear relationships also vanish in this test scenario underlining the
+robustness of our findings.
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 4
+11. Plerou, V., Gopikrishnan, P., Gabaix, X. & Stanley, H. E. Quantifying stock-price response to demand fluctuations. Phys. Rev. E 66, 027104 (2002).
+12. Preis, T., Moat, H. S., Stanley, H. E. & Bishop, S. R. Quantifying the Advantage of Looking Forward. Sci. Rep. 2, 350 (2012).
+13. Preis, T., Reith, D. & Stanley, H. E. Complex dynamics of our economic life on different scales: insights from search engine query data. Phil. Trans. R. Soc. A 368, 5707-5719 (2010).
+14. King, G. Ensuring the Data-Rich Future of the Social Sciences. Science 331, 719-721 (2011).
+15. Vespignani, A. Predicting the Behavior of Techno-Social Systems. Science 325, 425–428 (2009).
+16. Petersen, A. M., Wang, F., Havlin, S. & Stanley, H. E. Market dynamics immediately before and after financial shocks: Quantifying the Omori, productivity, and Bath laws. Phys. Rev. E 82, 036114 (2010).
+17. Preis, T., Schneider, J. J. & Stanley, H. E. Switching processes in financial markets. Proc. Natl. Acad. Sci. U.S.A 108, 7674-7678 (2011).
+18. Preis, T. Econophysics - complex correlations and trend switchings in financial time series. Eur. Phys. J.-Spec. Top. 194, 5-86 (2011).
+19. O’Sullivan, A. & Sheffrin, S. M. Economics: Principles in Action (Pearson Prentice Hall, Upper Saddle River, New Jersey, 2002).
+20. Markowitz, H. M. Portfolio Selection. J. Finance 7, 77-91 (1952). 21. Campbell, R. A. J., Forbes, C. S., Koedijk, K. G. & Kofman, P. Increasing
+correlations or just fat tails? J. Empir. Finance 15, 287-309 (2008). 22. Krishan, C. N. V., Petkova, R. &Ritchken, P. Correlation risk. J. Empir. Finance 16,
+353-367 (2009). 23. Longin, F. & Solnik, B. Is the correlation in international equity returns constant:
+1960-1990? J. Int. Money Finance 14, 3-26 (1995). 24.Meric, I. &Meric, G. Co-Movement of European EquityMarkets Before and After
+the 1987 Crash. Multinatnl. Finance J. 1, 137-152 (1997). 25. Rey, D. M. Time-varying Stock Market Correlations and Correlation Breakdown.
+Schweizerische Gesellschaft fu¨r Finanzmarktforschung 4, 387-412 (2000). 26. Sancetta, A. & Satchell, S. E. Changing Correlation and Equity Portfolio
+Diversification Failure for Linear Factor Models during Market Declines. Appl. Math. Finance 14, 227-242 (2007).
+27. Brock,W.A., Hommes, C.H. &Wagener, F. O.O.More hedging instrumentsmay destabilize markets. J. Econ. Dyn. Control 33, 1912-1928 (2009).
+28. Lux, T. &Marchesi, M. Scaling and criticality in a stochastic multi-agent model of a financial market. Nature 397, 498-500 (1999).
+29. Hommes, C. H. Modeling the stylized facts in finance through simple nonlinear adaptive systems. Proc. Natl. Acad. Sci. U.S.A. 99, 7221-7228 (2002).
+30. Nuti, G., Mirghaemi, M., Treleaven, P. & Yingsaeree, C. Algorithmic Trading. Computer 44, 61-69 (2011).
+31. Kenett, D. Y. et al. Index Cohesive Force Analysis Reveals That the US Market Became Prone to Systemic Collapses Since 2002. PLoS One 6, e19378 (2011).
+32. Kenett, D. Y., Raddant,M., Lux, T. & Ben-Jacob, E. Evolvement of Uniformity and volatility in the stressed global financial village. PLoS One 7, e31144 (2012).
+33. Kenett, D. Y., Raddant, M., Zatlavi, L., Lux, T. & Ben-Jacob, E. Correlations in the global financial village. Int. J. Mod. Phys. Conf. Ser. 16, 13-28 (2012).
+34. Cont, R. & Bouchaud, J. P. Herd behavior and aggregate fluctuations in financial markets. Macroecon. Dyn. 4, 170196 (2000).
+35. Preis, T. GPU-computing in econophysics and statistical physics. Eur. Phys. J.-Spec. Top. 194, 87-119 (2011).
+36. Eisler, Z. & Kertesz, J. Scaling theory of temporal correlations and size-dependent fluctuations in the traded value of stocks. Phys. Rev. E 73, 046109 (2006).
+37. Preis, T. Simulating the microstructure of financial markets. Journal of Physics: Conference Series 221, 012019 (2010).
+38. Allez, R. & Bouchaud, J. P. Individual and collective stock dynamics: intra-day seasonalities. New J. Phys. 13, 025010 (2011).
+39. Kenett, D. Y. et al. Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market. PLoS ONE 5, e15032 (2010).
+40. Reigneron, P. A., Allez, R. & Bouchaud, J. P. Principal regression analysis and the index leverage effect. Physica A 390, 3026-3035 (2011).
+41. Pollet, J.M.&Wilson,M. Average correlation and stockmarket returns. J. Finance Econ. 96, 364-380 (2010).
+42. Bouchaud, J. P. & Potters, M. More stylized facts of financial markets: leverage effect and downside correlations. Physica A 299, 60-70 (2001).
+43. Bouchaud, J. P., Matacz, A. & Potters, M. Leverage effect in financial markets: The retarded volatility model . Phys. Rev. Lett. 87, 228701 (2001).
+44. Cizeau, P., Potters, M. & Bouchaud, J. P. Correlation structure of extreme stock returns. Quant. Finan. 1, 217-222 (2001).
+45. Balogh, E., Simonsen, I., Nagy, B. & Neda, Z. Persistent collective trend in stock markets. Phys. Rev. E 82, 066113 (2010).
+46. Borland, L. & Hassid, Y. Market panic on different time-scales. ArXiv e-prints 1010.4917 (2010).
+47. Kenett, D. Y., Preis, T., Gur-Gershgoren, G. & Ben-Jacob, E. Quantifying meta-correlations in financial markets. EPL 99, 38001 (2012).
+48. Kenett, D. Y., Preis, T., Gur-Gershgoren, G. & Ben-Jacob E. Dependency network and node influence: Application to the study of financial markets. Int. Jour. Bifur. Chaos 22, 1250181 (2012).
+49. Pearson, K. Contributions to the mathematical theory of evolution II: skew variations in homogeneous material. Phil. Trans. R. Soc. Lond. A 186, 343-414 (1895).
+50. The URL http://en.wikipedia.org/wiki/Ticker_symbol was retrieved on 23rd October 2011.
+Acknowledgements We thank Dr. Helen Susannah Moat for comments. This work was partially supported by the German Research Foundation Grant PR 1305/1-1 (TP) and the National Science Foundation (HES) and by the CHIRP project Coping with Crises in Complex Socio-Economic Systems. Additional support comes from the Tauber family Foundation and theMaguy-Glass Chair in the Physics of Complex Systems at Tel Aviv University (DYK and EBJ). This work was also supported by the Intelligence Advanced Research Projects Activity (IARPA) via Department of Interior National Business Center (DoI/NBC) contract number D12PC00285. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon. Disclaimer: The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of IARPA, DoI/NBC, or the U.S. Government.
+Author contributions All authors performed analyses, discussed the results, and contributed to the text of the manuscript.
+Additional information Supplementary information accompanies this paper at http://www.nature.com/ scientificreports
+Competing financial interests: The authors declare no competing financial interests.
+License: This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
+How to cite this article: Preis, T., Kenett, D.Y., Stanley, H.E., Helbing, D. & Ben-Jacob, E. Quantifying the Behavior of Stock Correlations Under Market Stress. Sci. Rep. 2, 752; DOI:10.1038/srep00752 (2012).
+www.nature.com/scientificreports
+Title
+Figure 1 Index components of the Dow Jones Industrial Average (DJIA).
+Figure 2 Visualization of the analysis method.
+Figure 3 Quantification of state-dependent correlations among index components.
+References
+Quantifying the Behavior of Stock Correlations Under Market Stress Tobias Preis1,2,3, Dror Y. Kenett2,4, H. Eugene Stanley2, Dirk Helbing5 & Eshel Ben-Jacob4
+1Warwick Business School, University of Warwick, Coventry, CV4 7AL, United Kingdom, 2Center for Polymer Studies, Department of Physics, Boston University, Boston, MA 02215, USA, 3Department of Mathematics, University College London, London, WC1E 6BT, UK, 4School of Physics and Astronomy, Tel-Aviv University, Tel-Aviv 69978, Israel and, 5Chair of Sociology, in particular of Modeling and Simulation, ETH Zurich, 8092 Zurich, Switzerland.
+Understanding correlations in complex systems is crucial in the face of turbulence, such as the ongoing financial crisis. However, in complex systems, such as financial systems, correlations are not constant but instead vary in time. Here we address the question of quantifying state-dependent correlations in stock markets. Reliable estimates of correlations are absolutely necessary to protect a portfolio. We analyze 72 years of daily closing prices of the 30 stocks forming the Dow Jones Industrial Average (DJIA). We find the striking result that the average correlation among these stocks scales linearly with market stress reflected by normalizedDJIA index returns on various time scales. Consequently, the diversification effect which should protect a portfolio melts away in times of market losses, just when it would most urgently be needed. Our empirical analysis is consistent with the interesting possibility that one could anticipate diversification breakdowns, guiding the design of protected portfolios.
+W ild fluctuations in stock prices1–8 continue to have a huge impact on the world economy and the personal fortunes ofmillions, shedding light on the complex nature of financial and economic systems. For these systems, a truly gargantuan amount of pre-existing precise financial market data9–11 com-
+plemented by new big data ressources12–15 is available for analyses. The complex mechanisms of financial market moves can lead to sudden trend switches16–18 in a number of
+stocks. Such sudden trend switches can occur in a synchronized fashion, in a large number of stocks simulta- neously, or in an unsynchronized fashion, affecting only a few stocks at the same time.
+Diversification in stockmarkets refers to the reduction of portfolio risk caused by the investment in a variety of stocks. If stock prices do not move up and down in perfect synchrony, a diversified portfolio will have less risk than the weighted average risk of its constituent stocks19,20. Hence it should be possible to reduce risk in price of individual stocks by the combination of an appropriate set of stocks. To identify such an appropriate set of stocks with anti-correlated price time series, the assumption mostly used is that the correlations among stocks are constant over time21–26. This widely used assumption is also the basis for the determination of capital require- ments of financial institutions that usually own a huge variety of constituents belonging to different asset classes.
+Recent studies building on the availability of huge and detailed data sets of financial markets have analyzed and modeled the static and dynamic behavior of this very complex system27–39, suggesting that financial markets are governed by systemic shifts and display non-equilibrium properties.
+A very well known stylized fact of financial markets is the leverage effect, a term coined by Black to describe the negative correlation between past price returns and future realized volatilities in stock markets. According to Reigneron et al.40, the index leverage effect can be decomposed into a volatility effect and a correlation effect. In the course of recent financial market crises, this effect has regained center stage, and the work of different groups has focused on uncovering its true nature40–46). Reigneron et al. analyzed daily returns of six indices from 2000 to 2010 and found that a downward index trends increase the average correlation between stocks, as quantified by measurements of eigenvalues of the conditional correlation matrix. They suggest that a quadratic term should be included to the linear regressions of the dependence of mean correlation on the index return the previous day.
+Here, we will expand on these results utilizing 72 years of trading of the 30Dow Jones industrial average (DJIA) components (see also47,48). Using this financial data set we will quantify state-dependent stockmarket correlations and analyze how they vary in face of dramatic market losses. In such ‘‘stress’’ scenarios, reliable correlations are most needed to protect the value of a portfolio against losses.
+SUBJECT AREAS: STATISTICAL PHYSICS,
+THERMODYNAMICS AND NONLINEAR DYNAMICS
+PHYSICS
+Received 29 June 2012
+Accepted 25 September 2012
+Published 18 October 2012
+Correspondence and requests for materials
+should be addressed to T.P. (mail@tobiaspreis.
+de)
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 1
+Results To quantify state-dependent correlations, we analyze historical daily closing prices of the N; 30 components of the DJIA over 72 years, from 15 March 1939 until 31 December 2010, which can be down- loaded as a Supplementary Dataset. During these T; 18596 trading days, various adjustments of the DJIA occurred. We explicitly con- sider an adjustment of the index when one of the 30 stocks is removed from the index and replaced by a new stock in order to ensure that we accurately reproduce the index value of the DJIA at each trading day (Fig. 1). To calculate the official index value pDJIA, the sum of prices of all
+30 stocks is divided by a normalization factor dDJIA, known as the DJIA divisor. The DJIA divisor anticipates index jumps caused by effects of stock splits, bonus issues, dividends payouts or replace- ments of individual index components keeping the index value con- sistent (Fig. 1A). Consequently, the index value of the DJIA at day t is given by
+pDJIA tð Þ~ PN i~1
+pi tð Þ dDJIA
+, ð1Þ
+where pi(t) reflects the price of DJIA component i at day t in units of USD and where t is measured in units of trading days. The normal- ization factor dDJIA is also measured in units of USD. Consequently,
+the value of the DJIA is dimensionless. Due to changes in the com- ponents of theDJIA, a component i does not necessarily reflect prices of one stock only. A subscript i is also used for a component’s pre- decessor or successor. To quantify state-dependent correlations, we calculate the mean
+value of Pearson product-moment correlation coefficients49 among all DJIA components in a time interval comprising Dt trading days each (Fig. 2). In each time interval comprising Dt trading day, we determine correlation coefficients for all pairs ofN; 30 stocks. From these correlation coefficients, we calculate their mean value for each time interval separately. We relate mean correlation coefficients to corresponding market
+states, which we quantify by DJIA index returns for time intervals starting at trading day t and ending at trading day t 1 Dt,
+rDJIA t,Dtð Þ~ log pDJIA tzDtð Þð Þlog pDJIA tð Þð Þ : ð2Þ
+We normalize the time series of DJIA index returns, rDJIA(t, Dt), by its standard deviation, sDJIA(Dt), defined as
+sDJIA Dtð Þ:
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ 1 T
+XT t~1
+rDJIA tð Þ2{ 1T XT t~1
+rDJIA tð Þ !2vuut : ð3Þ
+D JI
+A D
+iv is
+or (U
+MSFT
+PG
+UTX
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 2
+The normalized time series ofDJIA index returns,R(t,Dt), is given by
+R t,Dtð Þ~ rDJIA t,Dtð Þ{ 1T
+XT t~1
+rDJIA tð Þ
+sDJIA Dtð Þ : ð4Þ
+In each time interval comprising Dt trading days, we calculate a local correlation matrix consisting of Pearson correlation coefficients49
+capturing the dependencies among individual stock returns. Time- dependent returns of an individual stock i are given by
+ri tð Þ~ log pi tz1ð Þð Þlog pi tð Þð Þ : ð5Þ
+In a Dt trading day interval, we calculate a correlation coefficient between return time series of stock i and return time series of stock j by
+ci,j t,Dtð Þ~ Dt
+PtzDt{1 t~t
+ri tð Þrj tð Þ{ PtzDt{1 t~t
+ri tð Þ PtzDt{1 t~t
+rj tð Þ Dt2si t,Dtð Þsj t,Dtð Þ ð6Þ
+with the standard deviation of return time series i determined in the same time interval comprising Dt trading days defined as
+si t,Dtð Þ:
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ 1 Dt
+XtzDt{1 t~t
+−10
+−5
+0
+5
+C
+0.0 0.2 0.4 0.6 0.8
+0 2000 6000 10000 14000 18000
+A B
+Figure 3 | Quantification of state-dependent correlations among index components. (A) Graphs reflect the relationship between the average correlation coefficientC among stocks belonging to the Dow Jones Industrial Average and its normalized return in intervals ofDt trading days. Themean correlation
+coefficient shows a striking, non-constant behavior, with aminimum between 0 and 11 standard deviations reflecting typical market conditions. For the
+range of all Dt values analyzed, we find the data collapse onto a single line. Corresponding error bars are shown in Fig. 4A. The data collapse suggests that
+the striking increase of themean correlation coefficient for positive and negative values of the normalized index return is independent of the time interval
+Dt. The largest mean correlation coefficients coincide with the most negative index returns. (B) Normalized DJIA returns, R(t,Dt), and mean correlation
+coefficients, C(t, Dt), shown for Dt 5 10 days. For both time series, we reject the null hypothesis of non-stationarity on the basis of results from the
+Augmented Dickey-Fuller test. For R(t, Dt 5 10), we obtain DF 5 224.28, p , 0.01, while for C(t, Dt 5 10) we obtain DF 5 213.45, p , 0.01.
+www.nature.com/scientificreports
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 3
+Figure 3A depicts the relationship between normalizedDJIA index return and corresponding mean correlation coefficient capturing the dependency amoung its components. Figure 3B depicts both nor- malized DJIA index returns and mean correlation coefficients which are used in our analysis forDt5 10 days. Negative index returns tend to come with stronger correlation coefficients than positive index returns (Fig. 3A). Results for different time intervals Dt collapse into one single curve, suggesting a universal relationship. To quantify the relationship between normalized index return and
+average correlation, we aggregate mean correlation coefficients for different values ofDt ranging from 10 trading days to 60 trading days (Fig. 4),
+C� tð Þ~ 1 Dtmax{Dtminz1
+XDtmax Dt~Dtmin
+C t,Dtð Þ: ð9Þ
+We find consistency with two linear relationships quantifying the increase of the aggregated correlation C1 for positive index return R and the aggregated correlation C2 for negative index return R,
+Cz:azRzbz ð10Þ with a1 5 0.064 6 0.002 and b1 5 0.188 6 0.004 (p-value, 0.001) quantifies the right part in Fig. 4A. The aggregatated correlations,
+C{:a{Rzb{ ð11Þ with a2 5 20.085 6 0.002 and b2 5 0.267 6 0.005 (p–value , 0.001) quantifies the left part in Fig. 4A. The larger is a negative or positive DJIA return the larger is the corresponding mean correla- tion. In contrast, a reference scenario of randomly shuffled stock returns leads to a constant relationship (Fig. 4B), supporting our findings in Fig. 4A. However, this method destroys all correlations of this complex financial system and not only the link between aggregated correlation C* and normalized index returns R. As an additional test, we use non-shuffled time series of underlying stock returns for our analysis and randomly shuffle the DJIA return time series only (Fig. 4C).We find that the linear relationships reported in Fig. 4A also vanishes in this scenario highlighting the robustness of our findings. Our findings are qualitatively consistent with results reported in
+previous work40,43,44 but quantitatively different. Instead of linear relationships, Reigneron et al.40 suggest that a quadratic term should be included in the linear regressions of the dependence of mean correlation on the index return on the previous day.
+Discussion In summary, we find a universal relationship between the mean correlation among DJIA components which can be considered as a stock market portfolio and the normalized returns of this portfolio. This suggests that a ‘‘diversification breakdown’’ tends to occur when stable correlations are most needed for portfolio protection. Our findings, which are qualitatively consistent with earlier findings42,44
+but quantitatively different, could be used to anticipate changes in mean correlation of portfolios when financial markets are suffering significant losses. This would enable a more accurate assessment of the risk of losses. Thus, we suggest that in order to anticipate under- lying correlation risks the possibility exists to hedge index deriva- tives. Our results could also shed light on why correlation risks in mortgage bundles were underestimated at the beginning of the recent financial crisis. Future work will build upon the relationship quan- tified here to uncover the underlying mechanisms governing this phenomenon.
+1. O’Hara,M.MarketMicrostructure Theory (Blackwell, Cambridge, Massachusetts, 1995).
+2. Bouchaud, J. P. & Potters, M. Theory of Financial Risk and Derivative Pricing: From Statistical Physics to Risk Management (Cambridge University press, 2003).
+3. Sornette, D.Why stock markets crash: critical events in complex financial systems (Princeton University Press, 2004).
+4. Volt, J. The statistical mechanics of financial markets (Springer Verlag, 2005). 5. Sinha, S., Chatterjee, A., Chakraborti, A. & Chakrabarti, B. K. Econophysics: an
+introduction (Wiley-VCH, 2010). 6. Preis, T. O¨konophysik: Die Physik des Finanzmarktes (Gabler Verlag, 2011). 7. Abergel, F., Chakrabarti, B. K., Chakrabarti, A. & Mitra, M. Econophysics of
+Order-driven Markets (Springer Verlag, 2011). 8. Takayasu, H. ed., Practical Fruits of Econophysics (Springer, Berlin, 2006). 9. Gabaix, X., Gopikrishnan, P., Plerou, V. & Stanley, H. E. A theory of power-law
+distributions in financial markets. Nature 423, 267-270 (2003). 10. Feng, L., Li, B., Podobnik, B., Preis, T. & Stanley, H. E. Linking agent-basedmodels
+and stochastic models of financial markets. Proc. Natl. Acad. Sci. U.S.A 109, 8388 (2012).
+Figure 4 | Quantification of the aggregated correlation. (A) Utilizing the data collapse reported in Fig. 3, we aggregate in each bin of the graph the
+mean correlation coefficients for 10 days # Dt # 60 days. Error bars are
+plotted depicting 21 and 11 standard deviations around the mean of the
+mean correlation values included in each bin. The increase of the
+aggregated correlation C* for positive and negative index returns is
+consistent with two linear relationships:C*5 a1R1 b1 with a1 5 0.0646
+0.002 and b1 5 0.188 6 0.004 (p – value, 0.001) quantifies the right part.
+C* 5 a2R 1 b2 with a2 5 20.085 6 0.002 and b2 5 0.267 6 0.005 (p –
+value, 0.001). The red colored regions are used to obtain the coefficients.
+In order to reduce noise, the range of normalized DJIA returns is restricted
+to bin values occurring, on average, more than 10 times for individual Dt
+intervals. (B) By randomly shuffling time series of daily returns for each
+stock individually, we test the robustness of the relationship and find that
+the linear relationships reported in (A) disappear, supporting our findings.
+(C) We use non-shuffled time series of underlying stock returns for an
+additional parallel analysis with randomly shuffled DJIA returns. The
+above linear relationships also vanish in this test scenario underlining the
+robustness of our findings.
+www.nature.com/scientificreports
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 4
+11. Plerou, V., Gopikrishnan, P., Gabaix, X. & Stanley, H. E. Quantifying stock-price response to demand fluctuations. Phys. Rev. E 66, 027104 (2002).
+12. Preis, T., Moat, H. S., Stanley, H. E. & Bishop, S. R. Quantifying the Advantage of Looking Forward. Sci. Rep. 2, 350 (2012).
+13. Preis, T., Reith, D. & Stanley, H. E. Complex dynamics of our economic life on different scales: insights from search engine query data. Phil. Trans. R. Soc. A 368, 5707-5719 (2010).
+14. King, G. Ensuring the Data-Rich Future of the Social Sciences. Science 331, 719-721 (2011).
+15. Vespignani, A. Predicting the Behavior of Techno-Social Systems. Science 325, 425–428 (2009).
+16. Petersen, A. M., Wang, F., Havlin, S. & Stanley, H. E. Market dynamics immediately before and after financial shocks: Quantifying the Omori, productivity, and Bath laws. Phys. Rev. E 82, 036114 (2010).
+17. Preis, T., Schneider, J. J. & Stanley, H. E. Switching processes in financial markets. Proc. Natl. Acad. Sci. U.S.A 108, 7674-7678 (2011).
+18. Preis, T. Econophysics - complex correlations and trend switchings in financial time series. Eur. Phys. J.-Spec. Top. 194, 5-86 (2011).
+19. O’Sullivan, A. & Sheffrin, S. M. Economics: Principles in Action (Pearson Prentice Hall, Upper Saddle River, New Jersey, 2002).
+20. Markowitz, H. M. Portfolio Selection. J. Finance 7, 77-91 (1952). 21. Campbell, R. A. J., Forbes, C. S., Koedijk, K. G. & Kofman, P. Increasing
+correlations or just fat tails? J. Empir. Finance 15, 287-309 (2008). 22. Krishan, C. N. V., Petkova, R. &Ritchken, P. Correlation risk. J. Empir. Finance 16,
+353-367 (2009). 23. Longin, F. & Solnik, B. Is the correlation in international equity returns constant:
+1960-1990? J. Int. Money Finance 14, 3-26 (1995). 24.Meric, I. &Meric, G. Co-Movement of European EquityMarkets Before and After
+the 1987 Crash. Multinatnl. Finance J. 1, 137-152 (1997). 25. Rey, D. M. Time-varying Stock Market Correlations and Correlation Breakdown.
+Schweizerische Gesellschaft fu¨r Finanzmarktforschung 4, 387-412 (2000). 26. Sancetta, A. & Satchell, S. E. Changing Correlation and Equity Portfolio
+Diversification Failure for Linear Factor Models during Market Declines. Appl. Math. Finance 14, 227-242 (2007).
+27. Brock,W.A., Hommes, C.H. &Wagener, F. O.O.More hedging instrumentsmay destabilize markets. J. Econ. Dyn. Control 33, 1912-1928 (2009).
+28. Lux, T. &Marchesi, M. Scaling and criticality in a stochastic multi-agent model of a financial market. Nature 397, 498-500 (1999).
+29. Hommes, C. H. Modeling the stylized facts in finance through simple nonlinear adaptive systems. Proc. Natl. Acad. Sci. U.S.A. 99, 7221-7228 (2002).
+30. Nuti, G., Mirghaemi, M., Treleaven, P. & Yingsaeree, C. Algorithmic Trading. Computer 44, 61-69 (2011).
+31. Kenett, D. Y. et al. Index Cohesive Force Analysis Reveals That the US Market Became Prone to Systemic Collapses Since 2002. PLoS One 6, e19378 (2011).
+32. Kenett, D. Y., Raddant,M., Lux, T. & Ben-Jacob, E. Evolvement of Uniformity and volatility in the stressed global financial village. PLoS One 7, e31144 (2012).
+33. Kenett, D. Y., Raddant, M., Zatlavi, L., Lux, T. & Ben-Jacob, E. Correlations in the global financial village. Int. J. Mod. Phys. Conf. Ser. 16, 13-28 (2012).
+34. Cont, R. & Bouchaud, J. P. Herd behavior and aggregate fluctuations in financial markets. Macroecon. Dyn. 4, 170196 (2000).
+35. Preis, T. GPU-computing in econophysics and statistical physics. Eur. Phys. J.-Spec. Top. 194, 87-119 (2011).
+36. Eisler, Z. & Kertesz, J. Scaling theory of temporal correlations and size-dependent fluctuations in the traded value of stocks. Phys. Rev. E 73, 046109 (2006).
+37. Preis, T. Simulating the microstructure of financial markets. Journal of Physics: Conference Series 221, 012019 (2010).
+38. Allez, R. & Bouchaud, J. P. Individual and collective stock dynamics: intra-day seasonalities. New J. Phys. 13, 025010 (2011).
+39. Kenett, D. Y. et al. Dominating clasp of the financial sector revealed by partial correlation analysis of the stock market. PLoS ONE 5, e15032 (2010).
+40. Reigneron, P. A., Allez, R. & Bouchaud, J. P. Principal regression analysis and the index leverage effect. Physica A 390, 3026-3035 (2011).
+41. Pollet, J.M.&Wilson,M. Average correlation and stockmarket returns. J. Finance Econ. 96, 364-380 (2010).
+42. Bouchaud, J. P. & Potters, M. More stylized facts of financial markets: leverage effect and downside correlations. Physica A 299, 60-70 (2001).
+43. Bouchaud, J. P., Matacz, A. & Potters, M. Leverage effect in financial markets: The retarded volatility model . Phys. Rev. Lett. 87, 228701 (2001).
+44. Cizeau, P., Potters, M. & Bouchaud, J. P. Correlation structure of extreme stock returns. Quant. Finan. 1, 217-222 (2001).
+45. Balogh, E., Simonsen, I., Nagy, B. & Neda, Z. Persistent collective trend in stock markets. Phys. Rev. E 82, 066113 (2010).
+46. Borland, L. & Hassid, Y. Market panic on different time-scales. ArXiv e-prints 1010.4917 (2010).
+47. Kenett, D. Y., Preis, T., Gur-Gershgoren, G. & Ben-Jacob, E. Quantifying meta-correlations in financial markets. EPL 99, 38001 (2012).
+48. Kenett, D. Y., Preis, T., Gur-Gershgoren, G. & Ben-Jacob E. Dependency network and node influence: Application to the study of financial markets. Int. Jour. Bifur. Chaos 22, 1250181 (2012).
+49. Pearson, K. Contributions to the mathematical theory of evolution II: skew variations in homogeneous material. Phil. Trans. R. Soc. Lond. A 186, 343-414 (1895).
+50. The URL http://en.wikipedia.org/wiki/Ticker_symbol was retrieved on 23rd October 2011.
+Acknowledgements We thank Dr. Helen Susannah Moat for comments. This work was partially supported by the German Research Foundation Grant PR 1305/1-1 (TP) and the National Science Foundation (HES) and by the CHIRP project Coping with Crises in Complex Socio-Economic Systems. Additional support comes from the Tauber family Foundation and theMaguy-Glass Chair in the Physics of Complex Systems at Tel Aviv University (DYK and EBJ). This work was also supported by the Intelligence Advanced Research Projects Activity (IARPA) via Department of Interior National Business Center (DoI/NBC) contract number D12PC00285. The U.S. Government is authorized to reproduce and distribute reprints for Governmental purposes notwithstanding any copyright annotation thereon. Disclaimer: The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies or endorsements, either expressed or implied, of IARPA, DoI/NBC, or the U.S. Government.
+Author contributions All authors performed analyses, discussed the results, and contributed to the text of the manuscript.
+Additional information Supplementary information accompanies this paper at http://www.nature.com/ scientificreports
+Competing financial interests: The authors declare no competing financial interests.
+License: This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/
+How to cite this article: Preis, T., Kenett, D.Y., Stanley, H.E., Helbing, D. & Ben-Jacob, E. Quantifying the Behavior of Stock Correlations Under Market Stress. Sci. Rep. 2, 752; DOI:10.1038/srep00752 (2012).
+www.nature.com/scientificreports
+SCIENTIFIC REPORTS | 2 : 752 | DOI: 10.1038/srep00752 5
+Title
+Figure 1 Index components of the Dow Jones Industrial Average (DJIA).
+Figure 2 Visualization of the analysis method.
+Figure 3 Quantification of state-dependent correlations among index components.
+References
+Figure 4 Quantification of the aggregated correlation.

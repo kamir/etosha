@@ -1,0 +1,11 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	1.0	1.0	244,000000	5,497168	changed	5,497168
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	2.0	1.0	122,500000	4,808111	update	4,808111
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	3.0	1.0	82,000000	4,406719	schema	4,406719
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	3.0	1.0	82,000000	4,406719	index	4,406719
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	6.0	1.0	41,500000	3,725693	solr	3,725693
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	9.0	1.0	28,000000	3,332205	after	3,332205
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	73.0	2.0	4,328767	1,465283	i	2,930566
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	133.0	2.0	2,827068	1,039240	the	2,078480
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+8/19/2014 7:28:53_mirko.kaempf@cloudera.com_2	243.0	75.0	1.0	4,240000	1,444563	can	1,444563

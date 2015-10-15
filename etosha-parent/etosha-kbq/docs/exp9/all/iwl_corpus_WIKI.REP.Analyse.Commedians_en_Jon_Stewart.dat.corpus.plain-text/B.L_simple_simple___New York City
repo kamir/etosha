@@ -1,0 +1,257 @@
+{{Infobox settlement
+<!-- See Template:Infobox settlement for additional fields and descriptions -->
+| name                    = New York City
+| official_name           = City of New York
+| settlement_type         = [[City]]
+<!-- images, nickname, motto --->
+| image_skyline           = NYC Montage 2011.jpg
+| imagesize               = 275px
+| image_caption           = Clockwise from top: [[Midtown Manhattan]], the [[United Nations Headquarters]], the [[Statue of Liberty]], the [[Brooklyn Bridge]], [[Central Park]], [[Times Square]], and the [[Unisphere]] in [[Queens]]
+| image_flag              = Flag of New York City.svg
+| image_seal              = Seal of New York City.svg
+| nickname                = "[[Big Apple|The Big Apple]]", "Gotham", "[[List of places referred to as the Center of the Universe|The Center of the Universe]]","[[Liberty City]]", "The City That Never Sleeps",<ref>{{cite quick |web|url=http://hotword.dictionary.com/big-apple-gotham/|title=Why is New York City known as "the Big Apple" and "Gotham?"|publisher=Dictionary.com, LLC|accessdate=May 28, 2013}}</ref> "The Capital of the World",<ref>{{cite web|url=http://www.pbs.org/wgbh/americanexperience/features/general-article/newyork-postwar/|title=General Article: New York After WWII|publisher=Corporation for Public Broadcasting|accessdate=May 28, 2013}}</ref><ref>
+{{cite quick |web|url=http://www.nyc.gov/html/lmec/html/about/nycapital.shtml|title=About New York City|publisher=The City of New York|accessdate=May 28, 2013}}</ref><ref>
+{{cite quick |web|url=http://www.baruch.cuny.edu/nycdata/forward.htm|title=FORWARD New York – Capital of the Modern World|author=Eugene J. Sherman|publisher=The Weissman Center for International Business Baruch College/CUNY 2011|accessdate=May 28, 2013}}</ref> "Metropolis".<ref name="Fleisher">Fleisher, Michael and Lincoln, Janet E. ''The Great Superman Book'' (Grand Central Publishing, 1978), pp. 223–225.</ref>
+<!-- maps and coordinates ------>
+| image_map               = Map of New York Highlighting New York City.svg
+| map_caption             = Location in [[New York|New York State]]
+| pushpin_map             = USA
+| pushpin_label_position  = left
+| pushpin_label           = New York
+| pushpin_map_caption     = Location in the [[United States]]
+| latd  = 40 |latm  = 40.2 |latNS  = N <!-- Coords in 0.6' (0.01 deg; ~1 km) increments -->
+| longd = 73 |longm = 56.4 |longEW = W
+| coor_pinpoint           = <!-- to specify exact location of coordinates (was coor_type) -->
+| coordinates_region      = US-NY
+| coordinates_type        = <!-- parameter list passed to Coord template, overrides coordinates_region -->
+| coordinates_display     = inline,title
+| coordinates_format      = dms
+| coordinates_footnotes   = {{GR|1|dateform=mdy}}
+<!-- location ------------------>
+| subdivision_type        = [[List of sovereign states|Country]]
+| subdivision_name        = {{nowrap|{{flag|United States of America}}}}
+| subdivision_type2       = [[U.S. state|State]]
+| subdivision_name2       = {{flag|New York}}
+| subdivision_type3       = [[Colony|Historic colony]]
+| subdivision_name3       = {{flagicon|Kingdom of Great Britain}} [[Province of New York|Colony of New York]]
+----
+| subdivision_type4       = [[County (United States)|Counties]]
+| subdivision_name4       = [[The Bronx|Bronx]], [[Brooklyn|Kings]], [[Manhattan|New York]], [[Queens]], [[Staten Island|Richmond]]
+<!-- established --------------->
+| established_title       = Settled
+| established_date        = 1624
+| established_title1      = [[Municipal corporation|Incorporated]]
+| established_date1       = 1898
+| established_title2      = <!-- Incorporated (city) -->
+<!-- government type, leaders -->
+| government_footnotes    = <ref name="MayorsOffice">{{cite quick |web
+  |url=http://www.nyc.gov/portal/site/nycgov/menuitem.e985cf5219821bc3f7393cd401c789a0/
+  |title=Biography
+  |accessdate=2010-01-08
+  |publisher=New York, City of
+  |author=the Mayor, New York City Office of
+  |date=January 8, 2010}}
+</ref>
+| government_type         = [[Mayor–council government|Mayor–Council]]
+| governing_body          = [[New York City Council]]
+| leader_party            = [[Democratic Party (United States)|D]]
+| leader_title            = [[Mayor of New York City|Mayor]]
+| leader_name             = [[Bill de Blasio]]
+<!-- display settings  --------->
+| total_type              = Total
+| unit_pref               = US
+<!-- area ---------------------->
+| area_footnotes          = {{GR|1|dateform=mdy}}
+| area_total_sq_mi        = 468.5
+| area_land_sq_mi         = 302.6
+| area_water_sq_mi        = 165.8
+| area_metro_sq_mi        = 11842
+<!-- elevation ----------------->
+| elevation_footnotes     = {{GR|3|dateform=mdy}}
+| elevation_m             = 10
+| elevation_ft            = 33
+<!-- population ---------------->
+| population_footnotes    = {{GR|2|dateform=mdy}}
+| population_rank         = [[List of United States cities by population|1st]]
+| population_density_sq_mi= 27550
+| population_est          = 8,336,697<ref name=nytimes_a>{{cite news|last=Roberts|first=Sam|title=Fewer People Are Abandoning the Bronx, Census Data Show|url=http://www.nytimes.com/2013/03/14/nyregion/more-people-moving-to-bronx-census-shows.html|newspaper=New York Times|date=March 14, 2013}}</ref><ref name=Moore>{{cite news | title = The Bronx is up — and the Battery's up! In fact, city population is booming to its highest number ever| url = http://www.nydailynews.com/new-york/nyc-population-time-high-article-1.1288402 | author = Moore, Tina | newspaper=New York Daily News| accessdate = 2013-03-14}}</ref>
+| pop_est_as_of           = 2012
+| population_metro        = 18897109 ([[Table of United States Metropolitan Statistical Areas|1st]])
+| population_blank1_title = [[United States combined statistical area|CSA]]
+| population_blank1       = 22214083<ref name=Combined/> ([[Table of United States Combined Statistical Areas|1st]])
+| population_demonym      = New Yorker
+<!-- time zone(s) -------------->
+| timezone1               = [[Eastern Time Zone (North America)|Eastern (EST)]]
+| utc_offset1             = -5
+| timezone1_DST           = [[Eastern Daylight Time|EDT]]
+| utc_offset1_DST         = -4
+<!-- postal codes, area code --->
+| postal_code_type        = [[ZIP code|ZIP code(s)]]
+| postal_code             = 100xx–104xx, 11004–05, 111xx–114xx, 116xx
+| area_code               = [[Area code 212|212]], [[Area code 347|347]], [[Area code 646|646]], [[Area code 718|718]], [[Area code 917|917]], [[Area code 929|929]]
+<!-- blank fields (section 1) -->
+| blank_name              = [[Federal Information Processing Standard|FIPS code]]
+| blank_info              = 36-51000
+| blank1_name             = [[Geographic Names Information System|GNIS]] feature ID
+| blank1_info             = 975772
+<!-- website, footnotes -------->
+| website                 = {{URL|www.nyc.gov}}
+}}
+
+'''New York City''' is the largest [[city]] in the [[United States]] and [[New York]]. Over 8 million people live in it, and over 22 million people live in and around it. It is in the state of [[New York]], which is in the [[northeastern United States]].
+
+== History ==
+The oldest part of the city, the island of [[Manhattan]], still has its original [[Lenape]] [[Native American]] name. Although Native people such as the Lenape and Canarsees had lived there for many thousands of years, New York City was first explored by [[Europe]]ans in the 1500s.  [[Florence|Florentine]] explorer [[Giovanni da Verrazzano]] found the entrance to New York Harbor in the year 1524 and English explorer [[Henry Hudson]] named the [[Hudson River]] in 1609.
+
+New York City was settled by Europeans from [[The Netherlands]] in 1624. The Dutch called the whole area of New York '''"Nieuw Nederland"''' ([[New Netherland]]) and they named a [[fort]] and town on the south end of Manhattan Island '''Nieuw Amsterdam''' (New [[Amsterdam]]),<ref name=nieuw>{{cite book | last=Rubin | first=Susan Goldman | year=2004 | title=L'Chaim!: To Jewish Life in America! | publisher=Harry N. Adams in association with The Jewish Museum | isbn=0810950359 }}</ref> after the capital city of the Netherlands, which was to become present-day New York. The English took over the colony in 1664 during the second [[Anglo-Dutch War]]. They changed the name to '''New York''', to honor the [[Duke of York]], who later became King [[James II]] of [[England]].  The Dutch surrendered Nieuw Amsterdam without fighting. They were afraid of the English [[Royal Navy]], so they traded the town to England for the colony of [[Surinam]] in [[South America]], which they thought was worth more money.
+
+By the time the English took New York, there were many other Dutch towns in what would become New York City, including Breukelen ([[Brooklyn]]), Vlissingen ([[Flushing]]), and Nieuw Haarlem ([[Harlem]]). There were already some English towns in the area also, such as Gravesend in Brooklyn and Newtown in Queens. [[Dutch people|Dutch]], English and other people had been living together in New York for a long time.
+
+New York quickly grew to become a large and important port city.  The  important [[Battle of Long Island]] of the [[American Revolution]] was fought in Brooklyn in 1776. New York was the capital of the United States under the [[Articles of Confederation]] from 1785 to 1788.  When the [[US Constitution]] was made, it stayed as the capital from 1789 until 1790.<ref>[http://www.senate.gov/reference/reference_item/Nine_Capitals_of_the_United_States.htm The Nine Capitals of the United States]. United States Senate Historical Office. Accessed June 9, 2005. Based on Fortenbaugh, Robert, ''The Nine Capitals of the United States'', York, PA: Maple Press, 1948.</ref>
+
+In 1898, the cities of New York and Brooklyn came together with the Bronx, Staten Island, and the towns in Queens County to make Greater New York. This is the total area of the City of New York today.  Around this time, many new [[immigrant]]s came into New York City.  They came in at [[Ellis Island]], an island in New York's harbor near the [[Statue of Liberty]].  Many of them then moved to the [[Lower East Side]] neighborhood in Manhattan, which had over a million people living in just a few square miles.
+
+== Geography ==
+[[File:USA grants tomb.jpg|thumb|150px|right|[[Grant's Tomb]], Manhattan]]
+
+Most of New York City is on three islands near the [[Atlantic Ocean]], although one part is on the mainland of [[North America]]. The city includes all of [[Manhattan|Manhattan Island]] and [[Staten Island]], and the western end of [[Long Island]]. There are also many smaller islands.
+
+The city is divided into five major parts called ''boroughs''. Each one is also a county. They are:
+
+{| class="wikitable sortable"
+|-
+! Boroughs !! Notes
+|-
+| [[Manhattan]] || (New York County, on Manhattan Island)
+|-
+| [[Brooklyn]] || (Kings County, on Long Island)
+|-
+| [[The Bronx]] || (Bronx County, on the mainland)
+|-
+| [[Queens]] || (Queens County, on Long Island)
+|-
+| [[Staten Island]] || (Richmond County, on Staten Island)
+|}
+
+Water divides several parts of the city. Part of the [[Hudson River]] forms the border between Manhattan and the Bronx on one side, and the State of [[New Jersey]] on the other side. The [[East River]] forms the border between Manhattan on one side, and Brooklyn and Queens on the other side. The Harlem River forms the border between Manhattan and the Bronx (except for a small part of Manhattan that is on the mainland). Part of [[Long Island Sound]] separates the Bronx and Queens. Newtown Creek is part of the border between Brooklyn and Queens. Some parts of the city are very separate from the others because of water, such as [[Rockaway]] in Queens and [[City Island]] in the Bronx. A small piece of land in Manhattan is international territory and belongs to the [[United Nations Headquarters]].
+
+The hallmark of New York city is its many [[skyscraper]]s, especially in Manhattan. In New York City there are about 5600 skyscrapers. 48 of them are over 200 metres tall, which is the highest number of skyscrapers in one area in the world.
+
+=== Climate ===
+New York's climate is between [[humid subtropical]] and humid [[continental climate|continental]]. The hottest temperature every in New York City is 106 &deg;F and the coldest temperature ever is -13 &deg;F. In 2012, [[Hurricane Sandy (2012)|Hurricane Sandy]] hit New York City, causing part of Manhattan to lose [[electricity|power]]. New York City gets some [[snow]] in winter.
+<div style="width:70%">
+{{Weather box|date=July 2014
+| location = Central Park, New York City
+| single line = Y |imperial first = Y
+|Jan high F = 38.3
+|Feb high F = 41.6
+|Mar high F = 49.7
+|Apr high F = 61.2
+|May high F = 70.8
+|Jun high F = 79.3
+|Jul high F = 84.1
+|Aug high F = 82.6
+|Sep high F = 75.2
+|Oct high F = 63.8
+|Nov high F = 53.8
+|Dec high F = 43.0
+|Jan low F = 26.9
+|Feb low F = 28.9
+|Mar low F = 35.2
+|Apr low F = 44.8
+|May low F = 54.0
+|Jun low F = 63.6
+|Jul low F = 68.8
+|Aug low F = 67.8
+|Sep low F = 60.8
+|Oct low F = 50.0
+|Nov low F = 41.6
+|Dec low F = 32.0
+|Jan precipitation inch= 3.65
+|Feb precipitation inch= 3.09
+|Mar precipitation inch= 4.36
+|Apr precipitation inch= 4.50
+|May precipitation inch= 4.19
+|Jun precipitation inch= 4.41
+|Jul precipitation inch= 4.60
+|Aug precipitation inch= 4.44
+|Sep precipitation inch= 4.28
+|Oct precipitation inch= 4.40
+|Nov precipitation inch= 4.02
+|Dec precipitation inch= 4.00
+|source=<ref>{{citeweb|title=NOWData |url=http://www.nws.noaa.gov/climate/xmacis.php?wfo=okx |accessdate=14 July 2014}}</ref>
+}}
+</div>
+
+==People==
+New York City currently has over 8 million people. Over 18 million people live in the city and nearby areas. The majority of the people in New York City belong to [[ethnic group]]s that are minorities in the US.  New York City has had large numbers of immigrants for centuries. In the early 19th Century, they came from [[Ireland]] and [[Germany]]. Later in the 19th century, they came from [[Italy]], [[Russia]] and [[Eastern Europe]].  Today, many are from [[Puerto Rico]], [[Haiti]], the [[Dominican Republic]] and [[Colombia]].
+
+== Government ==
+[[File:NewYork LibertyStatue.jpg|150px|right|thumb|Statue of Liberty]]
+[[File:The_United_Nations_Secretariat_Building.jpg|150px|right|thumb|The United Nations Building in Manhattan]]
+
+The mayor of New York is [[Bill de Blasio]], a [[Democratic Party (United States)|Democrat]]. The city also has a City Council that makes some local laws. Most laws in New York City are set by the state government in [[Albany, New York|Albany]].
+
+== Transportation ==
+Subway transportation is provided by the [[New York City Subway]] system, one of the biggest in the world.<ref>[http://www.mta.info/nyct/facts/ridership/index.htm#atGlance_s "2009 Subway Ridership at a Glance"] New York City Transit</ref> [[Pennsylvania Station]], the busiest [[train station]] in the United States, is here.<ref>Empire State Development. [http://www.esd.ny.gov/Subsidiaries_Projects/MSDC/MSDCAboutUs.html "About Moynihan Station."] Accessed 2011-03-07.</ref>
+
+[[John F. Kennedy International Airport]], which is in the [[Queens]] neighborhood of New York, is one of the busiest [[airport]]s in the United States.
+
+== Famous sites ==
+
+{| class="wikitable sortable"
+|-
+! Site !! Where
+|-
+| [[Statue of Liberty]] || [[New York Harbor|Harbor]]
+|-
+| [[Empire State Building]] || Midtown 
+|-
+| [[Rockefeller Center]] || Midtown 
+|-
+| [[George Washington Bridge]] || Uptown
+|-
+| [[United Nations Headquarters]] || Midtown
+|-
+| [[Central Park]] || Manhattan
+|-
+| [[St. Patrick's Cathedral]] || Midtown
+|-
+| [[Grant's Tomb]] || Uptown
+|-
+| [[Times Square]] || Midtown
+|-
+| [[Wall Street|World]] trade centre || Midtown 
+|}
+
+== References ==
+
+{| class="wikitable sortable"
+|-
+! Ref
+|-
+| {{reflist|refs=
+<ref name=Combined>{{cite web|url=http://factfinder2.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t|title=ACS DEMOGRAPHIC AND HOUSING ESTIMATES Geographies New York-Newark-Bridgeport, NY-NJ-CT-PA Combined Statistical Area Table DP05 2011 American Community Survey 1-Year Estimates|publisher=U.S. Census Bureau|accessdate=May 4, 2013}}</ref>
+}}
+|}
+
+
+== Other websites ==
+
+{| class="wikitable sortable"
+|-
+! Website
+|-
+| [http://www.nyc.gov Official New York City Government site]
+|-
+| [http://wiki.worldflicks.org/new_york_city.html WorldFlicks in New York: photos and interesting places on Google Maps]
+|}
+
+{{USLargestCities}}
+
+{{Commonscat}}
+{{Wikivoyage}}
+
+[[Category:New York City| ]]
+[[Category:Former capitals of the United States]]
+[[Category:Cities with more than 500,000 inhabitants]]

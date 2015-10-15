@@ -1,0 +1,11 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	1.0	1.0	244,000000	5,497168	dataset	5,497168
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	1.0	1.0	244,000000	5,497168	kite	5,497168
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	8.0	1.0	31,375000	3,446011	rdd	3,446011
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	8.0	1.0	31,375000	3,446011	create	3,446011
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	24.0	1.0	11,125000	2,409195	from	2,409195
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	30.0	1.0	9,100000	2,208274	an	2,208274
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	70.0	1.0	4,471429	1,497708	how	1,497708
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	73.0	1.0	4,328767	1,465283	i	1,465283
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	75.0	1.0	4,240000	1,444563	can	1,444563
+1/6/2015 13:36:18_mirko.kaempf@cloudera.com_15	243.0	119.0	1.0	3,042017	1,112521	a	1,112521

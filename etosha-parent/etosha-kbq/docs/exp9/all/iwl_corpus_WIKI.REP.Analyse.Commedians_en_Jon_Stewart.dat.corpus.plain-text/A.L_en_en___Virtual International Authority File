@@ -1,0 +1,110 @@
+{{selfref |For use of VIAF with Wikipedia, see [[Wikipedia:Authority control]].}}
+{{Infobox identifier
+| name          = Virtual International Authority File
+| image         = VIAF Screenshot 2012.png
+| image_size    = 
+| image_caption = Screenshot 2012
+| image_alt     = 
+| acronym       = VIAF
+| number        = 
+| start_date    = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| organisation  = [[Online Computer Library Center]]
+| digits        = 
+| check_digit   = 
+| example       = https://viaf.org/viaf/70042340
+| website       = {{URL|viaf.org}}
+}}
+
+The '''Virtual International Authority File''' ('''VIAF''') is an international [[authority file]]. It is a joint project of several national libraries and operated by the [[Online Computer Library Center]] (OCLC).<ref>{{cite journal |last1=Kelley |first1=Michael | last2 =Schwartz |first2=Meredith |year=2012 |title=VIAF service transitions to OCLC |journal=[[Library Journal]] |volume=137 |issue=8 |page =16 | publisher=[[Media Source Inc.|Media Source]]}}</ref><ref>{{Citation | url = http://www.oclc.org/viaf/ | title = VIAF | publisher = OCLC}}.</ref> The project was initiated by the [[German National Library]] and the US [[Library of Congress]].
+
+The aim is to link the national authority files (such as the German [[Name Authority File]]) to a single virtual authority file. In this file, identical records from the different data sets are linked together. A VIAF record receives a standard data number, contains the primary "see" and "see also" records from the original records, and refers to the original authority records. The data are made available online and are available for research and data exchange and sharing. Reciprocal updating uses the [[Open Archives Initiative]] protocol.
+
+The file numbers are also being added to [[Wikipedia]] biographical articles.<ref>{{Citation | url = http://www.oclc.org/research/news/2012/12-07a.html | title = VIAFbot Edits 250,000 Wikipedia Articles to Reciprocate All Links from VIAF into Wikipedia | date= 2012-12-07 | publisher = [[OCLC]]}}</ref>
+
+== Participating libraries ==
+{| class="wikitable sortable"
+! English-language name
+! Native-language name (if non-English)
+! Location
+! Country
+|-
+| {{Ill|nl|Bibnet}}: [[Flemish Public Libraries]] (VLACC: Flemish Central Catalogue) || ''VLACC: Vlaamse Centrale Catalogus'' || [[Brussels]] || [[Belgium]]
+|-
+| [[BIBSYS]]: [[National Library of Norway]] || ''BIBSYS'': ''Nasjonalbiblioteket'' || [[Trondheim]] || [[Norway]]
+|-
+| [[Istituto Centrale per il Catalogo Unico|Central Institute for the Union Catalogue of Italian Libraries and Bibliographic Information]] || ''Istituto Centrale per il Catalogo Unico'' || [[Rome]] || [[Italy]] 
+|-
+| [[German National Library]] || ''Deutsche Nationalbibliothek'' || [[Frankfurt]] || [[Germany]]  
+|-
+| [[Getty Research Institute]] || – || [[Los Angeles]], [[California]] || United States 
+|-
+| [[Library and Archives Canada]] || ''Bibliothèque et Archives Canada'' || [[Ottawa]], [[Ontario]] || [[Canada]] 
+|-
+| [[Bibliotheca Alexandrina|Library of Alexandria]] || ''Bibliotheca Alexandrina'' || [[Alexandria]] || [[Egypt]] 
+|-
+| [[Library of Congress]] (NACO consortium)|| – || [[Washington, D.C.]] || United States
+|-
+| [[National Diet Library]] || 国立国会図書館 || [[Tokyo]] and [[Kyoto]] || [[Japan]]
+|-
+| [[National Library of Australia]] || – || [[Canberra]] || [[Australia]]
+|-
+| [[Bibliothèque nationale de France|National Library of France]] || ''Bibliothèque nationale de France'' || [[Paris]] || [[France]]  
+|-
+| [[National Library of Israel]] || הספרייה הלאומית || [[Jerusalem]] || [[Israel]] 
+|-
+| [[Biblioteca Nacional de Portugal|National Library of Portugal]] || ''Biblioteca Nacional de Portugal'' || [[Lisbon]] || [[Portugal]] 
+|-
+| [[Biblioteca Nacional de España|National Library of Spain]] || ''Biblioteca Nacional de España'' || [[Madrid]] || [[Spain]]  
+|-
+| [[National Library of Sweden]] || ''Kungliga Biblioteket'' || [[Stockholm]] || [[Sweden]] 
+|-
+| [[National Library of the Czech Republic]] || ''Národní knihovna České republiky'' || [[Prague]] || [[Czech Republic]]
+|-
+| [[National Széchényi Library]] || ''Országos Széchényi Könyvtár'' || [[Budapest]] || [[Hungary]]
+|-
+| {{Ill|fr|RERO (library network)|Réseau des bibliothèques de Suisse occidentale}}: Library Network of Western Switzerland || ''Réseau des bibliothèques de Suisse occidentale'',  ''Rete delle bibliotheche della Svizzera occidentale'' or ''Westschweizer Bibliothekverbund'' || [[Martigny]] || [[Switzerland]]
+|-
+| [[Système universitaire de documentation|French university library consortium]] || ''Système universitaire de documentation'' || – || [[France]]
+|-
+| [[Swiss National Library]] || ''Schweizerische Nationalbibliothek'', ''Bibliothèque nationale suisse'', ''Biblioteca nazionale svizzera'',  || [[Berne]] || [[Switzerland]]
+|-
+| {{Ill|pl|NUKAT}}: Union Catalogue of Polish Research Libraries || ''NUKAT: katalog zbiorów polskich bibliotek naukowych'' || – || [[Poland]]
+|-
+| [[Vatican Library]] || ''Bibliotheca Apostolica Vaticana'' || – || [[Vatican City]] 
+|}
+
+== Libraries added for testing purposes ==
+{| class="wikitable sortable"
+! English-language name
+! Native-language name (if non-English)
+! Location
+! Country
+|-
+| [[ISNI]] || – || [[London]] || [[United Kingdom]]
+|-
+| [[National Library Board|National Library Board Singapore]] || – || – || [[Singapore]]
+|-
+| [[National Library of the Netherlands]] || ''Koninklijke Bibliotheek'' || [[The Hague]] || [[The Netherlands]]
+|-
+| [[Russian State Library]] || ''Российская государственная библиотека'' || [[Moscow]] || [[Russia]]
+|}
+
+==See also==
+*[[Integrated Authority File]] (GND)
+*[[International Standard Name Identifier]]
+{{portal|Library and information science}}
+
+==References==
+{{reflist}}
+
+== External links ==
+
+{{Wikidata property |1=P214 |2=VIAF }}
+
+* {{official website|http://viaf.org/}}
+* [https://www.oclc.org/services/brochures.en.html Brochures about aspects and purposes of VIAF] (at [[OCLC]])
+
+[[Category:Identifiers]]
+[[Category:Library cataloging and classification]]
+[[Category:Library of Congress]]
+[[Category:OCLC]]

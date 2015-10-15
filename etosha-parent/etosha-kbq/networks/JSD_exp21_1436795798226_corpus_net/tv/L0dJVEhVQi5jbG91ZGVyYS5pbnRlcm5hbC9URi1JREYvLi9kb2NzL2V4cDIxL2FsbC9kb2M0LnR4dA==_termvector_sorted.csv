@@ -1,0 +1,4 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	8.0	2.0	1.0	5,000000	1,609438	cars	1,609438
+/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	8.0	2.0	1.0	5,000000	1,609438	everywhere	1,609438
+/GITHUB.cloudera.internal/TF-IDF/./docs/exp21/all/doc4.txt	8.0	6.0	1.0	2,333333	0,847298	big	0,847298

@@ -1,0 +1,115 @@
+http://blog.cloudera.com/blog/2015/04/cloudera-enterprise-5-4-is-released/ 1/3
+Cloudera Enterprise 5.4 is ReleasedHadoop & Big Data
+Our Customers
+Meet The Engineer (22)
+We’re pleased to announce the release of Cloudera Enterprise 5.4 (comprising CDH 5.4, Cloudera Manager 5.4, and Cloudera Navigator 2.3).
+Cloudera Enterprise 5.4 (Release Notes) reflects critical investments in a production-ready customer experience through  governance, security, performance and deployment flexibility in cloud environments. It also includes support for a significant number of updated open standard components–including Apache Spark 1.3, Impala 2.2, and Apache HBase 1.0 (as well as unsupported beta releases of Hive-on-Spark data processing and OpenStack deployments).
+Recently Cloudera made the upgrade process considerably easier via an improved CDH upgrade wizard; see details about that wizard here and best practices here. (Note: Due to metadata format changes in Apache Hadoop 2.6, upgrading to CDH 5.4.0 and later from any earlier release requires an HDFS metadata upgrade, as well. Note also that for parcel-based installations of CDH 5.4, Cloudera Manager 5.4 is required.)
+Here are some of the highlights (incomplete; see the respective Release Notes for CDH, Cloudera Manager, and Cloudera Navigator for full lists of features and fixes):
+Security
+SSL and Kerberos support in Apache Flume for the Thrift source and sink.
+SSL support across Cloudera Search (Solr and all integrations with CDH).
+Cluster-wide redaction of sensitive data in logs is now possible.
+HBase impersonation in Hue allows your client to authenticate to HBase as any user, and to re-authenticate at any time.
+Solr metadata stored in ZooKeeper can now be protected by ZooKeeper ACLs.
+Kerberos is now supported for Apache Sqoop2.
+Performance
+Includes beta release of Hive-on-Spark as an option for improved Hive data processing performance (unsupported).
+MultiWAL support for HBase RegionServers allows you to increase throughput when a region writes to the write- ahead log (WAL).
+You can now store medium-sized objects (MOBs) up to 10MB in size directly in HBase while maintaining read and write performance.
+A new Kafka connector for Spark Streaming avoids the need for the HDFS WAL.
+Hue pages render much faster.
+Data Management and Governance
+Impala (CDH 5.4 and higher) lineage
+Cloudera Search (CDH 5.4 and higher) auditing
+Auditing of Navigator activity, such as audit views, metadata searches, and policy editing
+Avro and Parquet schema inference
+Platform enhancements
+SAML for single sign-on
+HBase support on Microsoft Azure.
+Real-Time Architecture
+Cloudera Distribution of Apache Kafka 1.3 installs by default and is supported for production use.
+Spark Streaming now has a receiver-less “direct” connector for Kafka.
+New or Updated Open Source Components
+Apache Hadoop 2.6
+Apache HBase 1.0
+Apache Hive 1.1
+Apache Oozie 4.1
+Apache Solr 4.10.3
+Apache Spark 1.3
+Search �
+http://blog.cloudera.com/blog/2015/04/cloudera-enterprise-5-4-is-released/ 2/3
+Oozie (26)
+Tools (9)
+Training (46)
+Hue 3.7
+Impala 2.2
+JDK8u40, JDK7u75
+Over the next few weeks, we’ll publish blog posts that cover some of these features in detail. In the meantime:
+Download Cloudera Enterprise 5.4
+Explore documentation
+As always, we value your feedback; please provide any comments and suggestions through our community forums. You can also file bugs via issues.cloudera.org.
+DENIS / APRIL 27, 2015 / 8:25 AM
+Hi,
+Thanks
+We’ll be doing that shortly.
+Prove you're human! *
+Website
+Comment
+5/10/2015 Cloudera Enterprise 5.4 is Released | Cloudera Engineering Blog
+http://blog.cloudera.com/blog/2015/04/cloudera-enterprise-5-4-is-released/ 3/3
+Enterprise Solutions Partner Solutions Industry Solutions
+Resource Library Support
+Hadoop & Big Data Management Team Board Events Press Center Careers Contact Us Subscription Center
+Cloudera, Inc. 1001 Page Mill Road Bldg 2 Palo Alto, CA 94304
+www.cloudera.com US: 1-888-789-1488 Intl: 1-650-362-0488
+Share: Follow us:
+by Justin Kestelyn (@kestelyn) April 23, 2015 2 comments
+Cloudera Enterprise 5.4 is ReleasedHadoop & Big Data
+Our Customers
+FAQs
+Blog
+Mahout (5)
+MapReduce (74)
+Meet The Engineer (22)
+We’re pleased to announce the release of Cloudera Enterprise 5.4 (comprising CDH 5.4, Cloudera Manager 5.4, and Cloudera Navigator 2.3).
+Cloudera Enterprise 5.4 (Release Notes) reflects critical investments in a production-ready customer experience through  governance, security, performance and deployment flexibility in cloud environments. It also includes support for a significant number of updated open standard components–including Apache Spark 1.3, Impala 2.2, and Apache HBase 1.0 (as well as unsupported beta releases of Hive-on-Spark data processing and OpenStack deployments).
+Recently Cloudera made the upgrade process considerably easier via an improved CDH upgrade wizard; see details about that wizard here and best practices here. (Note: Due to metadata format changes in Apache Hadoop 2.6, upgrading to CDH 5.4.0 and later from any earlier release requires an HDFS metadata upgrade, as well. Note also that for parcel-based installations of CDH 5.4, Cloudera Manager 5.4 is required.)
+Here are some of the highlights (incomplete; see the respective Release Notes for CDH, Cloudera Manager, and Cloudera Navigator for full lists of features and fixes):
+Security
+SSL and Kerberos support in Apache Flume for the Thrift source and sink.
+SSL support across Cloudera Search (Solr and all integrations with CDH).
+Cluster-wide redaction of sensitive data in logs is now possible.
+HBase impersonation in Hue allows your client to authenticate to HBase as any user, and to re-authenticate at any time.
+Solr metadata stored in ZooKeeper can now be protected by ZooKeeper ACLs.
+Kerberos is now supported for Apache Sqoop2.
+Performance
+Includes beta release of Hive-on-Spark as an option for improved Hive data processing performance (unsupported).
+MultiWAL support for HBase RegionServers allows you to increase throughput when a region writes to the write- ahead log (WAL).
+You can now store medium-sized objects (MOBs) up to 10MB in size directly in HBase while maintaining read and write performance.
+A new Kafka connector for Spark Streaming avoids the need for the HDFS WAL.
+Hue pages render much faster.
+Data Management and Governance
+Expanded coverage in Cloudera Navigator
+Impala (CDH 5.4 and higher) lineage
+Cloudera Search (CDH 5.4 and higher) auditing
+Auditing of Navigator activity, such as audit views, metadata searches, and policy editing
+Avro and Parquet schema inference
+Platform enhancements
+Redesigned metadata search provides autocomplete, faster filtering, and saved searches
+SAML for single sign-on
+Cloud Deployments
+Support Developers Contact Us Downloads
+COMMUNITY DOCUMENTATION DOWNLOADS TRAINING BLOGS
+Search �
+Ops And DevOps (23)
+Can you please update Impala roadmap?
+Thanks
+six +  = 11
+Cloudera Enterprise Cloudera Express Cloudera Manager CDH All Downloads Professional Services Training
+Enterprise Solutions Partner Solutions Industry Solutions
+Resource Library Support
+Hadoop & Big Data Management Team Board Events Press Center Careers Contact Us Subscription Center
+Cloudera, Inc. 1001 Page Mill Road Bldg 2 Palo Alto, CA 94304
+www.cloudera.com US: 1-888-789-1488 Intl: 1-650-362-0488
+Share: Follow us:

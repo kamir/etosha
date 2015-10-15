@@ -1,0 +1,13 @@
+Exponential random graph models, also known as p* models, constitute a family of
+statistical models for social networks. The importance of this modeling framework lies in
+its capacity to represent social structural effects commonly observed in many human
+social networks, including general degree-based effects as well as reciprocity and
+transitivity, and at the node-level, homophily and attribute-based activity and popularity
+effects. The models can be derived from explicit hypotheses about dependencies among
+network ties. They are parameterized in terms of the prevalence of small subgraphs
+(configurations) in the network and can be interpreted as describing the combinations of
+local social processes from which a given network emerges. The models are estimable
+from data and readily simulated. Versions of the models have been proposed for
+univariate and multivariate networks, valued networks, bipartite graphs and for
+longitudinal network data. Nodal attribute data can be incorporated in social selection
+models, and through an analogous framework for social influence models.

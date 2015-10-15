@@ -1,0 +1,43 @@
+La '''numéro de contrôle de la Bibliothèque du Congrès''' (en [[anglais]] ''{{lang|en|Library of Congress Control Number}}'' ou '''LCCN''') est un [[numéro de série|système de numérotation des enregistrements]] du catalogue de la [[Bibliothèque du Congrès]] aux [[États-Unis]]. Elle ne concerne pas le contenu propre des ouvrages, et ne doit pas être confondue avec la [[classification de la Bibliothèque du Congrès]]. 
+
+== Histoire ==  
+
+Le système de numérotation LCCN a été mis en service en [[1898]], à l'origine, l'acronyme LCCN désignait le numéro de carte de la Bibliothèque du Congrès (en [[anglais]] ''{{lang|en|Library of Congress Card Number}}''). La Bibliothèque du Congrès constituait des cartes contenant les informations bibliographiques de leur [[Catalogue de bibliothèque|catalogue]] et vendait de copies de ces dites à d'autres bibliothèques pour les utiliser dans leurs catalogues. Le LCCN fut ainsi reconnu comme le premier catalogage centralisé. Chaque série de cartes donnant un numéro de série pour aider à identifier l'ouvrage. 
+
+La plupart des informations bibliographiques circulant aujourd'hui par voie électronique stockée et partagée avec d'autres bibliothèques, il est toujours nécessaire d'identifier chaque enregistrement unique, et le LCCN exerce encore cette fonction. 
+
+Les [[bibliothécaire]]s du monde entier utilisent cette unique [[identifiant]] dans le processus de catalogage de la plupart des livres qui ont été publiés aux États-Unis. Il les aide à atteindre un niveau de catalogage des données de plusieurs bibliothèques dont la Bibliothèque du Congrès, connu sous le nom de catalogage record, et de le mettre à disposition des tiers sur le Web et par d'autres médias. 
+
+En [[février 2008]], la Bibliothèque du Congrès a créé le ''{{lang|en|LCCN Permalink service}}'', qui fournit une adresse Internet stable pour tous les numéros de contrôle de la Bibliothèque du Congrès<ref>{{Lien web|titre=Mise à jour de la Bibliothèque du Congrès pour 2008 ALA Annual Conference: Janvier-Mai, 2008|url=http://www.loc.gov/ala/an-2008-update.html}}</ref>.
+
+==Format==
+
+Dans sa forme la plus élémentaire, il se compose du numéro de l'année et d'un numéro de série. Le numéro de l'année est composé de deux chiffres pour [[1898]] à [[2000]], et de quatre à partir de [[2001]]. Les trois années ambiguës se distinguent par la taille du numéro de série. Il existe aussi des particularités dans les numéros commençant par un « 7 » en raison de l'échec d'une expérience appliquée entre 1969 et 1972. 
+
+Les numéros de série sont au nombre de six chiffres, et devraient inclure des zéros. Le [[trait d'union]], qui est souvent vu la séparation de l'année et le numéro de série, est optionnel. Plus récemment, la Bibliothèque du Congrès a chargé les éditeurs de ne pas inclure un trait d'union.
+
+== Voir aussi ==  
+=== Articles connexes ===
+* [[Amazon Standard Identification Number|ASIN]] (Amazon Standard Identification Number)
+* [[Education Resources Information Center|ERIC]] (Education Resources Information Center)
+* [[Gemeinsame Normdatei|GND]] (Gemeinsame Normdatei)
+* [[ISBN]] (International Standard Book Number)  
+* [[ISSN]] (International Standard Serial Number)
+* [[Online Computer Library Center|OCLC]] (Online Computer Library Center)
+
+=== Liens externes ===
+* [http://www.loc.gov/marc/lccn_structure.html Structure de la LC Control Number]  
+* [http://lccn.loc.gov/lccnperm-faq.html FAQ LCCN Permalink]  
+* [http://catalog.loc.gov/webvoy.htm Rechercher un LCCN sur le catalogue]
+
+== Notes et références ==
+{{Traduction/Référence|en|Library of Congress Control Number|257081368}}
+<references />
+
+{{Portail|Sciences de l'information et des bibliothèques}}
+
+{{DEFAULTSORT:Numero de controle de la Bibliotheque du Congres}}
+[[Catégorie:Classification]]
+[[Catégorie:Bibliothèque du Congrès]]
+
+[[sv:USA:s kongressbibliotek#LCCN]]

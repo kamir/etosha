@@ -1,0 +1,126 @@
+Mirko Kämpf, Q12014, Cloudera Inc.
+About using many datasets in multiple Hadoop clusters
+Monday, February 3, 14
+Data Driven Market Studies
+Monday, February 3, 14
+Analysis Scenario ...
+Social Media Analysis - more than a buzzword! - Based on daily access rates to Wikipedia pages (or even groups in a given semantic context) one can study complex systems like financial markets or technology evolution and emerging markets, like the market around the Hadoop Ecosystsem.
+Monday, February 3, 14
+Hadoop: An emerging market?
+Monday, February 3, 14
+network of pages
+relevance index Monday, February 3, 14
+Q1: 2011  hadoop reaches a stable relevance level in english language
+Q2: 2011  hadoop’s relevance starts growing in all other languages with a delay of about 6 months.
+Public recognition ... local vs. global
+Monday, February 3, 14
+Public recognition ... local vs. global
+Q2: 2010  SOLR reaches a stable, and still slowly growing relevance level above 1 in english language.
+Q3: 2010  SOLR’s relevance remains stable slightly higher level and is contin- uosly growing in all other languages with a delay of about 4 months.
+Monday, February 3, 14
+First Step:  (Re)Thinking the Process ...
+We need stable, repeatable, and traceable processes with high quality process documentation.
+My code is my documentation, might work well in simple MapReduce but how do I track all my Hive queries, which have been executed
+with flexible parameters?
+Second Step: Care about Metadata ...
+What data is where and how was it (pre)processed? How about data quality, is it worth to run a job on it?
+We need stable, repeatable, and traceable processes with high quality process documentation.
+My code is my documentation, might work well in simple MapReduce but how do I track all my Hive queries, which have been executed
+with flexible parameters?
+It’s all about processes & metadata?
+What data is where and how was it preprocessed? How about data quality, is it worth to run a job on it?
+Monday, February 3, 14
+Monday, February 3, 14
+Linked Data Cloud Masters - an data set integration layer (DSI-layer) on top of multiple Hadoop clusters works based on web services and semantic web technology the concept of data locality will be achieved across multiple clusters. Cost tracking and optimization services are supportive for several business models following the Data As a Service paradigm.
+Architecture: the bird’s view Colored boxes represent required services and
+can be implemented by arbitrary tools and applications. They just have to implement the dataset integration framework.
+Monday, February 3, 14
+Research, using linked datasets
+Monday, February 3, 14
+Cluster Spanning Dataset Management
+•Job and Dataset Context •Dataflow & -link Context
+first results
+Step 1:  Job and Dataset Context
+• Q: What job did produce a dataset by using what algorithm specific parameters and at what cost? A: Build in semantic logging collects metadata in a shareable knowledge base, which is searchable and has an API for tool integration.
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Monday, February 3, 14
+semantic annotations
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Monday, February 3, 14
+for each column of the data set we have a row of metadata with a well defined
+meaning, encoded in an ontology
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Metadata processors generate searchable / queryable results
+Monday, February 3, 14
+Step 2:  Dataflow & -link Context
+• Q: How can I join data from multiple Office documents without the manual export nightmare? A: Dataset integrators map content from std. Office- file types to tables in Hadoop, and allow fast access via Impala, or batch jobs via Hive and MapReduce.
+Domain focused flexibility is achieved by semantic mapping definitions, which allow any kind of data extraction and migration, based on established technologies like Flume, Sqoop, JMS, and XML.
+Monday, February 3, 14
+?
+Domain focused flexibility is achieved by semantic mapping definitions, which allow any kind of data
+extraction and migration, based on established technologies like Flume, Sqoop, JMS, and XML.
+*Can also be done via Oracle SOA Suite 11g Monday, February 3, 14
+Next Steps:
+• Release 0.1 April 2013) • finish the generic context-log framework (reference and sample apps) • finish the doc-mapper cartridge framework • integrate the whole app in HUE
+• Release 0.2 October 2013) • finish the Dataset-Exploder and Dataset-Profiler • integrate doc-mapper cartridges in to Sqoop
+• Release 0.3 trelease = f( resources, demand ) • finish the cluster spanning dataset integration layer
+which uses a shared semantic knowledge graph
+any feedback welcome: mirko@cloudera.com Monday, February 3, 14
+First results of a case study:
+network of pages
+relevance index Monday, February 3, 14
+Q1: 2011  hadoop reaches a stable relevance level in english language
+Q2: 2011  hadoop’s relevance starts growing in all other languages with a delay of about 6 months.
+Public recognition ... local vs. global
+Monday, February 3, 14
+Public recognition ... local vs. global
+Q2: 2010  SOLR reaches a stable, and still slowly growing relevance level above 1 in english language.
+Q3: 2010  SOLR’s relevance remains stable slightly higher level and is contin- uosly growing in all other languages with a delay of about 4 months.
+Monday, February 3, 14
+First Step:  (Re)Thinking the Process ...
+We need stable, repeatable, and traceable processes with high quality process documentation.
+My code is my documentation, might work well in simple MapReduce but how do I track all my Hive queries, which have been executed
+with flexible parameters?
+Monday, February 3, 14
+Second Step: Care about Metadata ...
+What data is where and how was it (pre)processed? How about data quality, is it worth to run a job on it?
+We need stable, repeatable, and traceable processes with high quality process documentation.
+My code is my documentation, might work well in simple MapReduce but how do I track all my Hive queries, which have been executed
+with flexible parameters?
+Monday, February 3, 14
+I have a dream ...
+Monday, February 3, 14
+... it requires: distributed metadata
+Cloudera Manager (CDH 4)
+future:
+The path ...
+MapReduce API Oozie, Sqoop, Flume
+Monday, February 3, 14
+Cluster Spanning Dataset Management
+classical cluster
+Monday, February 3, 14
+Step 1:  Job and Dataset Context
+• Q: What job did produce a dataset by using what algorithm specific parameters and at what cost? A: Build in semantic logging collects metadata in a shareable knowledge base, which is searchable and has an API for tool integration.
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Monday, February 3, 14
+Key concept: Wiki based knowledge graph with built in
+semantic annotations
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Monday, February 3, 14
+for each column of the data set we have a row of metadata with a well defined
+meaning, encoded in an ontology
+Transparency is achieved by traceability from final results (charts, tables), down to the code
+including runtime parameters and process logs.
+Metadata processors generate searchable / queryable results
+Monday, February 3, 14
+Step 2:  Dataflow & -link Context
+• Q: How can I join data from multiple Office documents without the manual export nightmare? A: Dataset integrators map content from std. Office- file types to tables in Hadoop, and allow fast access via Impala, or batch jobs via Hive and MapReduce.
+Domain focused flexibility is achieved by semantic mapping definitions, which allow any kind of data extraction and migration, based on established technologies like Flume, Sqoop, JMS, and XML.
+Monday, February 3, 14
+Step 2:  Dataflow & link Context
+?

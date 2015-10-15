@@ -1,0 +1,4 @@
+docId	N	ni	tf	(1+N/ni)	idf	word	tfidf
+2/11/2015 21:22:22_dclute@cloudera.com_56	243.0	1.0	1.0	244,000000	5,497168	kafka	5,497168
+2/11/2015 21:22:22_dclute@cloudera.com_56	243.0	2.0	1.0	122,500000	4,808111	vs	4,808111
+2/11/2015 21:22:22_dclute@cloudera.com_56	243.0	12.0	1.0	21,250000	3,056357	flume	3,056357

@@ -1,0 +1,35 @@
+Die '''Library of Congress Control Number''' ('''LCCN''') ist ein [[Identifikator]], der von der [[Library of Congress]] vergeben wird. Die LCCN, ursprünglich „Library of Congress ''Catalog'' Card Number“, ist das Datenbank-Kennzeichen (Satznummer) eines Eintrages in der amerikanischen [[Nationalbibliographie]] einschließlich der Normdaten; es wird in Feld 010 (und 001) der [[Machine-Readable Catalog|MARC]]-Dateien geführt. Ab 1901 bis zur Einführung des MARC-Dienstes konnten die amerikanischen Bibliotheken unter dieser Nummer ''Katalogkarten'' bei der Kongressbibliothek bestellen, darum finden sich diese Nummern häufig im Impressum amerikanischer Bücher (vgl. heute [[Cataloging in Publication]]).
+
+Das System ist seit 1898 in Gebrauch. Es ist unabhängig vom Inhalt eines Buches und sollte auch nicht mit der [[Library of Congress Classification]] (LCC) verwechselt werden.
+
+In seiner heutigen Form, ab 2001, besteht das Kennzeichen aus einem zweistelligen alphabetischen Präfix, der nur für gewisse [[Normdaten]] gebraucht wird, gefolgt von der vierstelligen Jahreszahl und einer sechsstelligen Ordnungszahl. Letztere wird zur besseren Lesbarkeit häufig gekürzt und mit [[Bindestrich|Divis]] abgetrennt dargestellt.
+
+[[Datei:LC Authorities 2012.png|miniatur|LC Authorities (Bildschirmfoto)]]
+Beispiele (alt und neu):
+* <tt>␣␣␣92022183␣</tt> (92-22183) ''Knapp: Elliptic curves'' (Buch)
+* <tt>␣␣2002024184</tt> (2002-024184) ''Marker: Model theory'' (Buch)
+* <tt>n␣␣50036535␣</tt> (n50-36535) ''Guy Davenport'' (Person)
+* <tt>no2008168642</tt> (no2008-168642) ''United States. President (2009-: Obama)'' (Person)
+* <tt>sh␣85092242␣</tt> (sh85-92242) ''Noncommutative rings'' (Schlagwort)
+
+Bis zum Jahre 2000 wurde nur eine zweistellige Jahreszahl benutzt. Für die mehrdeutigen Jahre 1998, 1999 und 2000 beginnen die anhängenden fortlaufenden Nummern bei einem festgelegten [[Versatz (Drucktechnik)|Versatz]]. Eine Besonderheit gilt für Zahlen, die mit einer 7 beginnen, wegen eines abgebrochenen Experiments aus den Jahren 1969 bis 1972.
+
+Die fortlaufenden Nummern innerhalb eines Jahres bestehen aus sechs Ziffern mit führenden Nullen. Der in die Zahl eingefügte Bindestrich ist optional und soll entsprechend jüngsten Vorgaben der Library of Congress nicht mehr verwendet werden.
+
+Auch das '''Library of Congress Name Authority File''' (LCNAF), ein Pendant zur [[Gemeinsame Normdatei|Gemeinsamen Normdatei]] (GND), greift auf die Struktur der LCCN zurück.
+
+== Siehe auch ==
+* [[Library of Congress Subject Headings]] (Thesaurus für die Verschlagwortung)
+
+== Weblinks ==
+
+* [http://www.loc.gov/marc/lccn_structure.html Structure of the LC Control Number] (englisch)
+* [http://catalog.loc.gov/ Search the catalog of The Library of Congress] (englisch)
+* [http://authorities.loc.gov/ Library of Congress Authorities] (englisch) zur Personensuche
+
+[[Kategorie:Library of Congress]]
+[[Kategorie:Dokumentation]]
+[[Kategorie:Identifikator]]
+[[Kategorie:Bibliothekswesen]]
+
+[[sv:USA:s kongressbibliotek#LCCN]]
