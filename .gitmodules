@@ -1,0 +1,3 @@
+[submodule "etosha-parent/etosha-workbench/SUBPROJECTS/ace"]
+	path = etosha-parent/etosha-workbench/SUBPROJECTS/ace
+	url = https://github.com/ajaxorg/ace.git
