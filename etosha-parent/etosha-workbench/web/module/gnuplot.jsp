@@ -5,7 +5,7 @@
 
 <div id="tab-5" style="width: 70%; height: 720px;">
     
-    <iframe style="width: 1100; height: 720px;" id="iFRAME" frameborder="0" scrolling="auto"
+    <iframe style="width: 1100; height: 721px;" id="iFRAME" frameborder="0" scrolling="auto"
             <%// src="http://127.0.0.1:8080/FileBrowser/Browser.jsp" %>
             <%//src="http://127.0.0.1:9080/share/page/site/rh2/documentlibrary"  %>
 
