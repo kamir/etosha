@@ -2,7 +2,7 @@
 #set output "chart.eps"
 
 set term png enhanced transparent
-set output "chart.png"
+set output "rendered/chart.png"
 set key left top
 set size 0.5,0.5
 set xrange [0:9]

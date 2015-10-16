@@ -34,14 +34,48 @@ kamir
 
 empty
 
-chart.tex
+SinglePage.pdf
 file
 
 
 
+delete
+2012-01-09T12:20:42.578537Z
+b1552fe94c0eb46115f958575eec7076
+2012-01-10T11:33:21.634419Z
+158
+kamir
+has-props
 
-2012-01-09T12:20:36.476537Z
-9a12e65d376475b9f0cc19667beec5e5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+238997
+
+SinglePage.tex
+file
+
+
+
+delete
+2012-01-09T12:20:36.818537Z
+292f224d2e8cde3b70a9dc56eca54f42
 2012-01-10T11:33:21.634419Z
 158
 kamir
@@ -66,10 +100,7 @@ kamir
 
 
 
-344
-
-freeplane
-dir
+697
 
 chart.cmd
 file
@@ -110,7 +141,7 @@ file
 
 
 
-
+delete
 2012-01-09T11:45:36.690537Z
 e5f570756ab047e9057db08f48d4b007
 2012-01-10T11:33:21.634419Z
@@ -139,16 +170,16 @@ has-props
 
 3815
 
-map.mm
+chart.tex
 file
 
 
 
-
-2012-01-07T03:58:32.278123Z
-7339f7518a30c477e40173067bf6fa48
-2012-01-08T21:01:04.288509Z
-155
+delete
+2012-01-09T12:20:36.476537Z
+9a12e65d376475b9f0cc19667beec5e5
+2012-01-10T11:33:21.634419Z
+158
 kamir
 
 
@@ -171,14 +202,14 @@ kamir
 
 
 
-1828
+344
 
 compile_gnuplot.bat
 file
 
 
 
-
+delete
 2012-01-09T11:36:17.172537Z
 bfb60cc7b5c42976392764dec3164cc9
 2012-01-10T11:33:21.634419Z
@@ -207,18 +238,14 @@ kamir
 
 501
 
-SinglePage.pdf
+compile_gnuplot_macos.sh
 file
 
 
 
+add
 
-2012-01-09T12:20:42.578537Z
-b1552fe94c0eb46115f958575eec7076
-2012-01-10T11:33:21.634419Z
-158
-kamir
-has-props
+bfb60cc7b5c42976392764dec3164cc9
 
 
 
@@ -230,6 +257,18 @@ has-props
 
 
 
+copied
+svn://linufaktur.selfhost.me/bitOcean/bitOceanTB/web/DATA/P0/default/compile_gnuplot.bat
+159
+
+compile_gnuplot_win.bat
+file
+
+
+
+add
+
+bfb60cc7b5c42976392764dec3164cc9
 
 
 
@@ -239,14 +278,18 @@ has-props
 
 
 
-238997
+
+
+copied
+svn://linufaktur.selfhost.me/bitOcean/bitOceanTB/web/DATA/P0/default/compile_gnuplot.bat
+159
 
 compile_latex.bat
 file
 
 
 
-
+delete
 2012-01-09T11:56:04.975537Z
 7b2c1d0f69d345d1bec580002aa0917d
 2012-01-10T11:33:21.634419Z
@@ -275,16 +318,72 @@ kamir
 
 537
 
-SinglePage.tex
+compile_latex_macos.sh
 file
 
 
 
+add
 
-2012-01-09T12:20:36.818537Z
-292f224d2e8cde3b70a9dc56eca54f42
-2012-01-10T11:33:21.634419Z
-158
+7b2c1d0f69d345d1bec580002aa0917d
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://linufaktur.selfhost.me/bitOcean/bitOceanTB/web/DATA/P0/default/compile_latex.bat
+159
+
+compile_latex_win.bat
+file
+
+
+
+add
+
+7b2c1d0f69d345d1bec580002aa0917d
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://linufaktur.selfhost.me/bitOcean/bitOceanTB/web/DATA/P0/default/compile_latex.bat
+159
+
+docs
+dir
+
+
+
+add
+
+freeplane
+dir
+
+map.mm
+file
+
+
+
+delete
+2012-01-07T03:58:32.278123Z
+7339f7518a30c477e40173067bf6fa48
+2012-01-08T21:01:04.288509Z
+155
 kamir
 
 
@@ -307,5 +406,12 @@ kamir
 
 
 
-697
+1828
+
+rendered
+dir
+
+
+
+add
 
