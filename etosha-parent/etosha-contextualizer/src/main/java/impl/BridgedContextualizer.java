@@ -10,7 +10,7 @@ import contextualizer.IContextualizer;
  * instead of the SMW-ask syntax. But, SMW is not considered to be a triple store only.
  * 
  * We use it as a documentation-manager for our cluster activity.
- *  * 
+ * 
  * All data is collected during runtime, can be persisted, exported and even 
  * imported from remote locations such as the SMW or other triple stores. 
  * 
