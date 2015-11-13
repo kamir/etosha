@@ -6614,10 +6614,17 @@ public class WikiORIGINAL implements Serializable
         URLConnection connection = new URL(url).openConnection();
         connection.setConnectTimeout(CONNECTION_CONNECT_TIMEOUT_MSEC);
         connection.setReadTimeout(CONNECTION_READ_TIMEOUT_MSEC);
+     
+        
+        
+        String userPassword = "borussia" + ":" + "1836";
+        String encoding = new sun.misc.BASE64Encoder().encode(userPassword.getBytes());
+        connection.setRequestProperty("Authorization", "Basic " + encoding);
+
         setCookies(connection);
         connection.connect();
         grabCookies(connection);
-
+        
         // check lag
         int lag = connection.getHeaderFieldInt("X-Database-Lag", -5);
         if (lag > maxlag)

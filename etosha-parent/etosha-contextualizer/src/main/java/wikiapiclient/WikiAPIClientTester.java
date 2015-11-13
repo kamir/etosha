@@ -23,6 +23,9 @@ public class WikiAPIClientTester {
          * This is the "ORIGINAL" GNU Licensed Wiki-Client tool.
          */
         WikiORIGINAL w = new WikiORIGINAL();
+
+        WikiORIGINAL w2 = new WikiORIGINAL( "www.semanpix.de/opendata/wiki","");
+        w2.getPageText("Main");
         
         String pn = "Berlin";
         
