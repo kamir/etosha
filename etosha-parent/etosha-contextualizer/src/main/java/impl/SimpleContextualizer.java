@@ -86,8 +86,12 @@ public class SimpleContextualizer implements IContextualizer {
 	}
 
 	@Override
-	public void initDEMO() throws ContextIsReadOnlyException {
-		throw new ContextIsReadOnlyException();		
+	public void initDEMO() {
 	}
+
+    @Override
+    public String getName() {
+        return this.getClass().getName();
+    }
 
 }
