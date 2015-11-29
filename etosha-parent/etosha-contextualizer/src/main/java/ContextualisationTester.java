@@ -28,6 +28,7 @@ public class ContextualisationTester {
 	
 	public void testContexter(IContextualizer contexter) {
 		
+            System.out.println( "[TEST] " + contexter.getName() );
 
 		String s = "S";
 		String p = "P";
@@ -52,9 +53,8 @@ public class ContextualisationTester {
 	
 		
 		} 
-		catch (ContextIsReadOnlyException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		catch (Exception e) {
+                    e.printStackTrace();
 		}
 				
 

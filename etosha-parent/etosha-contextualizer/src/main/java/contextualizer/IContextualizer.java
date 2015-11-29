@@ -12,7 +12,9 @@ public interface IContextualizer {
 
 	public abstract void init();
 	
-	public abstract void initDEMO() throws ContextIsReadOnlyException;
+	public abstract void initDEMO();
+
+        public String getName();
 	
 
 }
