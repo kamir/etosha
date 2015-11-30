@@ -8,11 +8,23 @@
             <explicit-platform explicit-source-supported="true"/>
             <web-module-libraries>
                 <library dirs="200">
+                    <file>${file.reference.etosha-contextualizer-0.5.0-SNAPSHOT-jar-with-dependencies.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
                     <file>${libs.ant-contrib.classpath}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
                     <file>${libs.ApacheVelocity.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${libs.Jung2Dep.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${libs.MorphMiner2.classpath}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">

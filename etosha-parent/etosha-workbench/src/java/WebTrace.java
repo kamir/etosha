@@ -1,4 +1,6 @@
 
+import edu.uci.ics.jung.graph.Graph;
+import java.io.File;
 import java.net.URL;
 import java.util.Vector; 
 
@@ -35,8 +37,12 @@ class WebTrace {
     }
 
     // JUNG2 representation of graph ...
-    Object getGraphOfTraces() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Graph<Integer, String> getGraphOfTraces() {
+
+        SimpleTraceGraphView sgtv = new SimpleTraceGraphView( new File( "simple-trace-graph.dat"), urlListe );
+        sgtv.open();
+        return sgtv.g;
+        
     }
     
 }

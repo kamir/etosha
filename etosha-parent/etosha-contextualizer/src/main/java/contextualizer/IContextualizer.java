@@ -14,7 +14,7 @@ public interface IContextualizer {
 	
 	public abstract void initDEMO();
 
-        public String getName();
+        public abstract String getName();
 	
 
 }
