@@ -33,7 +33,7 @@
         
         <dependency>
             <groupId>org.apache.jena</groupId>
-            <artifactId>apache-jena-libs</artifactId>
+            <artifactId>apache-jena</artifactId>
             <type>pom</type>
             <version>3.0.0</version>
         </dependency>

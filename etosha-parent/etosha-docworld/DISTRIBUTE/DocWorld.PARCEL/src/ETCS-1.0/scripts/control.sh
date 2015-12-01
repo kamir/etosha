@@ -6,6 +6,11 @@ CMD=$1
 WEBSERVER_PORT=3030
 MODEL_FILE=../main/data/model.ttl
 
+#
+# Here we use a parameter to define a location of the modelfile.
+#
+MODEL_FILE=$2
+
 ######################################
 #
 #  Etosha Triple Collector Service

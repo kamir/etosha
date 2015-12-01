@@ -66,6 +66,12 @@ public class DataExplorer {
 
                         TableScraper.open(trace.position, selector );
                         
+                        /**
+                         * THIS MUST be provided by the TableScaper!!!
+                         */
+                        Scrapelet s = new Scrapelet();
+                        currentSnippet = s;
+                        
                         break;
                 
             }
@@ -78,8 +84,10 @@ public class DataExplorer {
     private void persist() {
         
         System.out.println( ">>> PERSIST the current trace of our journey here." );
+
         openTraceGraph();
         
+        Exposer.persist();
     
     }
 
@@ -136,8 +144,13 @@ public class DataExplorer {
         
     }
     
+    static SchemaRepository repo = null;
     
     public static void main(String[] args) throws MalformedURLException, IOException {
+        
+        Exposer.init();
+        
+        repo = SchemaRepository.getSchemaRepository();
     
         String pageZeroA = "https://de.wikipedia.org/wiki/Stollberg/Erzgeb.";
         String pageZeroB = "http://finance.yahoo.com/q/cp?s=%5ESDAXI+Components";
@@ -165,15 +178,21 @@ public class DataExplorer {
 
             switch( j ) {
                 
-                case 0 : explorer.move();
+                case 0 : explorer.move();  // go on to another page ...
                          break;
+                    
                 case 1 : explorer.scrape();
                          // current snippet is not null any more !!!
                          break;
+                    
                 case 2 : explorer.persist();
                          break;
-                case 3 : explorer.expose( explorer.currentSnippet );
-                         break;
+                    
+                case 3 : { // METADATA about a snippet goes to the Exposer
+                           explorer.expose( explorer.currentSnippet );
+                           break;
+                         }
+                    
                 case 4 : explorer.stop();
                          i = -1;
                          break;
@@ -201,7 +220,7 @@ public class DataExplorer {
 
     private void expose(Scrapelet currentSnippet) {
         if ( this.currentSnippet != null )
-           Exposer.exposeToDefaultRepository( currentSnippet );
+           Exposer.exposeToDefaultStore( currentSnippet );
     }
 
     

@@ -1,6 +1,23 @@
+/**
+ * 
+ * This tool overwrites the triple store data with test data.
+ * 
+ * The TripleStoreRunner uses the generated data to expose a TTL file
+ * via FUSEKI.
+ * 
+ * Whenever a DEFAULT-JENA-IN-RAM contextualizer is used, you can simply 
+ * expose its data via FUSEKI.
+ * 
+ * Maybe it is also good to create an additional copy in this case, otherwise
+ * you may loose data by running the next test.
+ * 
+ */
+
 import contextualizer.ContextIsReadOnlyException;
 import contextualizer.ContextualizerFactory;
+import contextualizer.EtoshaDatasetVocabulary;
 import contextualizer.IContextualizer;
+import org.apache.jena.rdf.model.Property;
 
 
 public class ContextualisationTester {
@@ -31,16 +48,19 @@ public class ContextualisationTester {
             System.out.println( "[TEST] " + contexter.getName() );
 
 		String s = "S";
-		String p = "P";
-		String o = "O";
+                
+                
+                Property p = EtoshaDatasetVocabulary.isOwnedBy;
+                // String p2 = "isOwnedBy";
+		
+                String o = "O";
 		String n = "N";
 		
 		contexter.putSPO(s, p, o);
-		contexter.putNSPO(n, s, p, o);
+		// contexter.putNSPO(n, s, p2, o);
 		
 		try {
-			contexter.initDEMO();
-			
+
 			// show all neighbors (outlink) 
 			
 			// show all neighbors (inlik) 
@@ -51,6 +71,7 @@ public class ContextualisationTester {
 					
 			// show all neighbors[nr outlinks] by category[nr of elements in this cat] 
 	
+                        contexter.close();
 		
 		} 
 		catch (Exception e) {

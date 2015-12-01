@@ -7,6 +7,7 @@ import java.io.OutputStream;
 
 import contextualizer.ContextIsReadOnlyException;
 import contextualizer.IContextualizer;
+import org.apache.jena.rdf.model.Property;
 
 /**
  * The simplest contextualisation approach
@@ -58,7 +59,7 @@ public class SimpleContextualizer implements IContextualizer {
 	 * @param o
 	 */
 	@Override
-	public void putSPO( String s, String p, String o ) {
+	public void putSPO( String s, Property p, String o ) {
 		
 	}
 	
@@ -85,10 +86,7 @@ public class SimpleContextualizer implements IContextualizer {
 		this.fileName = fileName;
 	}
 
-	@Override
-	public void initDEMO() {
-	}
-
+ 
     @Override
     public String getName() {
         return this.getClass().getName();

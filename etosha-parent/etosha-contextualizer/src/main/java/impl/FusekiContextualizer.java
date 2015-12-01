@@ -1,6 +1,7 @@
 package impl;
 
 import contextualizer.IContextualizer;
+import org.apache.jena.rdf.model.Property;
 
 /**
  * For single cluster usage and multi cluster usafe we offer a statefull
@@ -39,7 +40,7 @@ public class FusekiContextualizer implements IContextualizer {
     }
 
     @Override
-    public void putSPO(String s, String p, String o) {
+    public void putSPO(String s, Property p, String o) {
 		// TODO Auto-generated method stub
 
     }
@@ -50,10 +51,5 @@ public class FusekiContextualizer implements IContextualizer {
 
     }
 
-    @Override
-    public void initDEMO() {
-		// TODO Auto-generated method stub
-
-    }
-
+ 
 }

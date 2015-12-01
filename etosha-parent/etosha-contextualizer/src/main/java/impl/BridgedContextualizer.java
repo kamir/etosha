@@ -3,6 +3,7 @@ package impl;
 import contextualizer.ContextIsReadOnlyException;
 import contextualizer.ContextualizerFactory;
 import contextualizer.IContextualizer;
+import org.apache.jena.rdf.model.Property;
 
 /**
  * Human readable contextualization is important. We ue two backends in
@@ -59,7 +60,7 @@ public class BridgedContextualizer implements IContextualizer {
     }
 
     @Override
-    public void putSPO(String s, String p, String o) {
+    public void putSPO(String s, Property p, String o) {
         c1.putSPO(s, p, o);
         c2.putSPO(s, p, o);
     }
@@ -70,10 +71,6 @@ public class BridgedContextualizer implements IContextualizer {
         c2.init();
     }
 
-    @Override
-    public void initDEMO() {
-        c1.initDEMO();
-        c2.initDEMO();
-    }
+ 
 
 }

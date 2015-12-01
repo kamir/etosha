@@ -21,9 +21,10 @@ public class ContextualizerFactory {
 	 * @param string
 	 * @return
 	 */
-	public static IContextualizer getJenaInMemoryContextualizer(String string) {
+	public static IContextualizer getJenaInMemoryContextualizer(String s) {
+            
 		JenaInMemoryContextualizer cj = new JenaInMemoryContextualizer();
-		
+                cj.setDefaultFilename( s );    
 		return cj;
 	}
 

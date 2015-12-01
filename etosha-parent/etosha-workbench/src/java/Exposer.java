@@ -1,5 +1,7 @@
 
+import org.apache.jena.rdf.model.Property;
 import contextualizer.ContextualizerFactory;
+import contextualizer.EtoshaDatasetVocabulary;
 import contextualizer.IContextualizer;
 
 /**
@@ -8,38 +10,55 @@ import contextualizer.IContextualizer;
  */
 class Exposer {
 
-    static void exposeToDefaultRepository(Scrapelet currentSnippet) {
+    // Bridged-Context is the default ...
+    static IContextualizer contexter = null;
+
+    static void init() {
 
         // Bridged-Context is the default ...
-        IContextualizer contexter = ContextualizerFactory.getBridgedContextualizer();
+        contexter = ContextualizerFactory.getBridgedContextualizer();
 
-        System.out.println("[TEST] " );
-        System.out.println( contexter.getClass().getName() );
+    }
 
-        String s = "S";
-        String p = "P";
-        String o = "O";
-        String n = "N";
+    static void close() {
 
-        // Here we process the snippet ...
-        
-        
-        
-        contexter.putSPO(s, p, o);
-        contexter.putNSPO(n, s, p, o);
+        // Bridged-Context is the default ...
+        contexter.close();
 
+    }
+    
+    static void exposeToDefaultStore(Scrapelet currentSnippet) {
         try {
-            contexter.initDEMO();
 
-			// show all neighbors (outlink) 
-			// show all neighbors (inlik) 
-			// show categories of all neighbors
-			// show all neighbors by category 
-			// show all neighbors[nr outlinks] by category[nr of elements in this cat] 
-        } catch (Exception e) {
+            System.out.println( "### " + currentSnippet );
+            
+            /**
+             * ************
+             *
+             * Here we take the information about the snippet which has to be
+             * exposed.
+             */
+            String s = "S";
+            Property p = EtoshaDatasetVocabulary.isOwnedBy;
+            String o = "O";
+            String n = "N";
+
+            // Here we process the snippet ...
+            contexter.putSPO(s, p, o);
+
+        } 
+        catch (Exception e) {
             e.printStackTrace();
         }
 
+    }
+
+    static void persist() {
+        
+        // The contexter should do a persist instead of a close call .....
+        
+        contexter.close();
+ 
     }
 
 }

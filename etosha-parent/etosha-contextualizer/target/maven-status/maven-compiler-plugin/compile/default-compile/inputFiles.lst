@@ -1,0 +1,17 @@
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/ContextualisationTester.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/wikiapiclient/SnippetLoader.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/EtoshaDatasetVocabulary.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/IContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/DatasetInspectorFrame.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/impl/FusekiContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/wikiapiclient/WikiAPIClientTester.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/wikiapiclient/WikiORIGINAL.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/DAProjectContext.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/impl/SMWContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/impl/SimpleContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/tools/WikiSynchTool.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/ContextIsReadOnlyException.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/impl/JenaInMemoryContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/contextualizer/ContextualizerFactory.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/impl/BridgedContextualizer.java
+/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/src/main/java/TripleStoreRunner.java

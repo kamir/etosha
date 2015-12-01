@@ -33,7 +33,7 @@
                         <phase>package</phase>
                         <configuration>
                             <tasks>
-                                <copy file="/GITHUB/DocWorld/dist/DocWorld.war" tofile="/GITHUB/DocWorld.PARCEL/src/TTFAQ-1.1/scripts/tools/DocWorld.war"/>
+                                <copy file="/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-docworld/dist/Etosha_DocWorld.war" tofile="/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/TTFAQ-1.1/scripts/tools/EDW.war"/>
                             </tasks>
                         </configuration>
                         <goals>

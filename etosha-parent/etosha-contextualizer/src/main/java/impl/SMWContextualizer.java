@@ -1,6 +1,7 @@
 package impl;
 
 import contextualizer.IContextualizer;
+import org.apache.jena.rdf.model.Property;
 
 /**
  * Human readable contextualization is important. We ue two backends in
@@ -40,7 +41,7 @@ public class SMWContextualizer implements IContextualizer {
     }
 
     @Override
-    public void putSPO(String s, String p, String o) {
+    public void putSPO(String s, Property p, String o) {
 		// TODO Auto-generated method stub
 
     }
@@ -51,11 +52,7 @@ public class SMWContextualizer implements IContextualizer {
 
     }
 
-    @Override
-    public void initDEMO() {
-		// TODO Auto-generated method stub
-
-    }
+ 
 
     @Override
     public String getName() {
