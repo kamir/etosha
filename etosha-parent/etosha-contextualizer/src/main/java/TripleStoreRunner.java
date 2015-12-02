@@ -1,6 +1,7 @@
 /**
+ * We can run FUSEKI in single mode on any cluster node.
  * 
- * This tool exposes the TTL file via Fuseki.
+ * This tool exposes a TTL file via Fuseki.
  * 
  * The TripleStoreRunner uses the generated data to expose a TTL file
  * via FUSEKI.
@@ -23,7 +24,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author kamir
+ * @author Mirko Kämpf
  */
 public class TripleStoreRunner {
 
@@ -46,10 +47,15 @@ public class TripleStoreRunner {
 
     public static void main(String[] ARGS) throws IOException, InterruptedException {
 
-        System.out.println("> TRY TO RUN TS ...");
+        System.out.println("*** ATTEMPT *** TripleStoreRunner.runTS() ..." );
+        
         TripleStoreRunner.runTS();
-        System.out.println("> TS is RUNNING in a new Thread.");
-
+        
+        if( TripleStoreRunner.running )
+            System.out.println(">>> Triple Store is RUNNING in a new Thread.");
+        else 
+            System.out.println("!!! Triple Store is NOT WORKING.");
+        
         // JUST KEEP the program running as long as the Widget is visible ...
         javax.swing.JOptionPane.showInputDialog("CLOSE");
 
@@ -62,7 +68,9 @@ class TripleStoreRunnable implements Runnable {
     public void run() {
 
         try {
-            runFuseki();
+            
+            runFusekiSingleMode();
+            
         } catch (IOException ex) {
             Logger.getLogger(TripleStoreRunnable.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InterruptedException ex) {
@@ -71,7 +79,7 @@ class TripleStoreRunnable implements Runnable {
 
     }
 
-    public void runFuseki() throws IOException, InterruptedException {
+    public void runFusekiSingleMode() {
 
         ProcessBuilder pb = new ProcessBuilder(
                 TripleStoreRunner.FUSEKI_SCRIPT, TripleStoreRunner.FUSEKI_CMD, TripleStoreRunner.FUSEKI_DATA);
