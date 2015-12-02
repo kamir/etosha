@@ -50,11 +50,21 @@ public class SemanpixImageParser {
             "http://semanpix.de/opendata/wiki/index.php?title=Main_Page"
         };
         
+        /**
+         * 
+         * 
+         */
         SemanpixImageParser sp = new SemanpixImageParser();
     
+        /**
+         * Local File ...
+         */
         File f = new File("./Peter001.jpg");
         System.out.println( sp.getMetaData(f) );
-       
+
+        /**
+         * Remote File via URL ...
+         */
         URL url = new URL( adresses[0] );
         System.out.println( sp.getMetaData( url ) );
 

@@ -1,7 +1,8 @@
 
+import org.etosha.vocab.EtoshaDatasetVocabulary;
+
 import org.apache.jena.rdf.model.Property;
-import contextualizer.ContextualizerFactory;
-import contextualizer.EtoshaDatasetVocabulary;
+import contextualizer.ContextualizerFactory; 
 import contextualizer.IContextualizer;
 
 /**

@@ -20,6 +20,12 @@
         <NPT2.project.basedir>/Users/kamir/NetBeansProjects/PlanarityTester-master/dist/</NPT2.project.basedir>
     </properties>
     <dependencies>
+        
+    <dependency>
+      <groupId>org.etosha</groupId>
+      <artifactId>etosha-vocab</artifactId>
+      <version>0.7.0-SNAPSHOT</version>
+    </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>

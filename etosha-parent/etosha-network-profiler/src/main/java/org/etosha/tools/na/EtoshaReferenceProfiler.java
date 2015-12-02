@@ -50,7 +50,7 @@ import org.etosha.networks.CCNetNode;
 import org.etosha.networks.LayerDescriptor;
 import org.etosha.networks.Link;
 import org.etosha.networks.LinkComparator;
-import org.etosha.networks.rdf.EtoshaNetworkVocabulary;
+import org.etosha.vocab.EtoshaNetworkVocabulary;
 import org.openide.util.Exceptions;
 
 public class EtoshaReferenceProfiler {

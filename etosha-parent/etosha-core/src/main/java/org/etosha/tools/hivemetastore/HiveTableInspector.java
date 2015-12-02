@@ -1,5 +1,5 @@
 /*
- * The Hive-JDBC client ist an example application which shows
+ * The Hive-JDBC client is an example application which shows
  * how to load data from an Hadoop cluster via the 
  * Hive-JDBC interface.
  * 

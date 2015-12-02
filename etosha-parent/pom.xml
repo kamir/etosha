@@ -18,11 +18,11 @@
     <module>etosha-core</module>
     <module>etosha-model</module>
     <module>etosha-persist</module>
-    <module>etosha-command</module>
     <module>etosha-smw</module>
     <module>etosha-contextualizer</module>
     <module>etosha-webapp</module> 
-    <module>etosha-network-profiler</module> 
+    <module>etosha-network-profiler</module>
+    <module>etosha-vocab</module>
   </modules>
 
   <build>

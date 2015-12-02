@@ -27,7 +27,9 @@
 /etosha-parent/etosha-notes-core/nbproject/private/
 /etosha-parent/etosha-kbq/build/
 /etosha-parent/etosha-kbq/nbproject/private/
-/.git-rewrite/t/etosha-core/target/
-/.git-rewrite/t/etosha-parent/etosha-core/target/
-/.git-rewrite/t/etosha-parent/etosha-model/target/
-/.git-rewrite/t/etosha-parent/etosha-contextualizer/target/
+/.git-rewrite/t/etosha-core/target/**
+/.git-rewrite/t/etosha-parent/etosha-core/target/**
+/.git-rewrite/t/etosha-parent/etosha-model/target/**
+/.git-rewrite/t/etosha-parent/etosha-contextualizer/target/**
+/etosha-parent/etosha-contextualizer/target/**
+/etosha-parent/etosha-vocab/target/**
