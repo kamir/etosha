@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.etosha.vocab;
 
 import org.apache.jena.rdf.model.*;
@@ -14,6 +9,8 @@ import org.apache.jena.rdf.model.*;
  * EtoshaNetworkVocabulary
  *
  * vocabulary class for namespace http://www.semanpix.de/2015/etosha-net/1.0#
+ * 
+ * Statistical properties of networks are described by this ontology.
  *
  */
 public class EtoshaNetworkVocabulary {
@@ -34,11 +31,22 @@ public class EtoshaNetworkVocabulary {
     /** <p>The namespace of the vocabalary as a resource</p> */
     public static final Resource NAMESPACE = m.createResource( uri );
 
+    /** <p>Provides the filterthreshold for link creation of this graph (linkstrength is greater than TS).</p> */
     public static final Property TS = m.createProperty( uri + "TS" );
+    
+    /** <p>Provides the number of edges of this graph.</p> */
     public static final Property zEdges = m.createProperty( uri + "ZEDGES" );
+
+    /** <p>Provides the number of nodes of this graph.</p> */
     public static final Property zNodes = m.createProperty( uri + "ZNODES" );
+    
+    /** <p>Provides the number of clusters this graph.</p> */
     public static final Property zClusters = m.createProperty( uri + "ZCLUSTERS" );
+    
+    /** <p>Provides the global diameter of this graph.</p> */
     public static final Property diameter = m.createProperty( uri + "DIAMETER" );
+
+    /** <p>Provides the global clustering coefficient of this graph.</p> */
     public static final Property globalClusterCoefficient = m.createProperty( uri + "CLUSTERING_GLOBAL" );
     
     

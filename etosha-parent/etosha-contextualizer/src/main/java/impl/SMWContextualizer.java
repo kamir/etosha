@@ -1,6 +1,8 @@
 package impl;
 
 import contextualizer.IContextualizer;
+import static impl.JenaInMemoryContextualizer.model;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Property;
 
 /**
@@ -22,6 +24,11 @@ public class SMWContextualizer implements IContextualizer {
 
     public static final String DEFAULT_WIKI = "www.semanpix.de/opendata/wiki";
 
+        @Override
+    public Model getModel() {
+        return model;
+    }
+    
     @Override
     public void open() {
 		// TODO Auto-generated method stub
@@ -57,6 +64,11 @@ public class SMWContextualizer implements IContextualizer {
     @Override
     public String getName() {
         return this.getClass().getName();
+    }
+
+    @Override
+    public void addGraph(Model m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

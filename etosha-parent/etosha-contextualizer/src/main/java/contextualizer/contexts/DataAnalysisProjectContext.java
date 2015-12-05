@@ -29,6 +29,7 @@ public class DataAnalysisProjectContext {
     
     /**
      * For the tests we use the 6 static categories in the ConceptBrowser
+     * 
      * on the DEMO page (http://www.semanpix.de/opendata/etosha/v2/cb.html).
      */
     public DataAnalysisProjectContext() {

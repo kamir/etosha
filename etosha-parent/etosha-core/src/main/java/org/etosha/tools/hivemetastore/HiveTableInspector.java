@@ -155,8 +155,10 @@ class HiveTableDataSetPage {
         s = s + "[[Category:DataSet]]\n";
         s = s + "Stored in Cluster : [[Is available in cluster::"+cluster+"]]\n";
         s = s + "Checksum : [[has state tracking checksum::"+getChecksum( schemaCore )+"]] created @ " + ts  + "\n";
-        s = s + schema;
+        s = s + schema + "\n";
+        s = s + "(Snippet was created by: [[createdBy:" + this.getClass().getName() + ")]]";
         return s;
+        
     }
     
     

@@ -34,12 +34,13 @@ import java.util.logging.Logger;
  */
 public class TripleStoreRunner {
     
-    public static int availablePort = 0; 
+    public static int availablePort = 4099; 
     
     public static String FUSEKI_SCRIPT = "/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/src/ETCS-1.0/scripts/control.sh";
     public static String FUSEKI_CMD = "start";
 
     public static int FUSEKI_PORT = 3070;
+    
     public static String FUSEKI_DATA = "/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/test.ttl";
 
     public static boolean running = false;
@@ -55,6 +56,13 @@ public class TripleStoreRunner {
 
         theFusekiThread.start();
 
+    }
+    
+
+    public static void stopTS() {
+
+        myRunnable.stop();
+    
     }
     
     static Thread theFusekiThread = null;
@@ -145,6 +153,7 @@ class TripleStoreRunnable implements Runnable {
         TripleStoreRunner.running = true;
 
         System.out.println(">>> FUSEKI WAS started on port : " + port);
+        System.out.println("[WEB-UI] http://localhost:"  + port);
 
         while ((line = br.readLine()) != null) {
             System.out.println(line);

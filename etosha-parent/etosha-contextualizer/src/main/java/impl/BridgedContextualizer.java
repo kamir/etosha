@@ -3,6 +3,8 @@ package impl;
 import contextualizer.ContextIsReadOnlyException;
 import contextualizer.ContextualizerFactory;
 import contextualizer.IContextualizer;
+import static impl.JenaInMemoryContextualizer.model;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Property;
 
 /**
@@ -23,6 +25,10 @@ import org.apache.jena.rdf.model.Property;
  */
 public class BridgedContextualizer implements IContextualizer {
 
+        @Override
+    public Model getModel() {
+        return model;
+    }
     IContextualizer c1 = null;
     IContextualizer c2 = null;
 
@@ -69,6 +75,11 @@ public class BridgedContextualizer implements IContextualizer {
     public void init() {
         c1.init();
         c2.init();
+    }
+
+    @Override
+    public void addGraph(Model m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
  

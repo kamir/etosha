@@ -4,18 +4,64 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    
     <parent>
         <groupId>org.etosha</groupId>
         <artifactId>etosha-parent</artifactId>
-        <version>0.5.0-SNAPSHOT</version>
+        <version>0.7.0-SNAPSHOT</version>
     </parent>
+    
     <artifactId>etosha-contextualizer</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.7.0-SNAPSHOT</version>
+    
     <name>Etosha Contextualizer</name>
 
     <dependencies>
       
+                <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-core</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.solr</groupId>
+            <artifactId>solr-solrj</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-xmp</artifactId>
+            <version>1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
+            <version>1.5</version>
+        </dependency>
+        
+    
+        
+        
+        
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-gmail</artifactId>
+            <version>v1-rev15-1.19.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.google.gdata</groupId>
+            <artifactId>core</artifactId>
+            <version>1.47.1</version>
+        </dependency>
+        
+        
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena</artifactId>
@@ -29,6 +75,7 @@
       <artifactId>etosha-vocab</artifactId>
       <version>0.7.0-SNAPSHOT</version>
     </dependency>
+ 
     
     
         <dependency>

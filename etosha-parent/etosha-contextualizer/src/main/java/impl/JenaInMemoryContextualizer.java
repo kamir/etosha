@@ -65,7 +65,9 @@ public class JenaInMemoryContextualizer implements IContextualizer {
         try {
             
             out2 = new FileOutputStream( f );
+            
             model.write(out2, "TTL");
+            
             out2.close();
             
             System.out.println( "MODEL is now in file: " + f.getAbsolutePath() );
@@ -116,6 +118,16 @@ public class JenaInMemoryContextualizer implements IContextualizer {
 
     public void setDefaultFilename(String s) {
         setDefaultFilename( s, "BASE" );
+    }
+
+    @Override
+    public void addGraph(Model m) {
+        model.add(m);
+    }
+
+    @Override
+    public Model getModel() {
+        return model;
     }
 
 }

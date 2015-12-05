@@ -6,6 +6,7 @@
             <goals>
                 <goal>compile</goal>
                 <goal>assembly:single</goal>
+                <goal>install</goal>
             </goals>
             <properties>
                 <Env.JAVA_HOME>/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home</Env.JAVA_HOME>

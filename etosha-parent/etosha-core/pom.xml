@@ -1,11 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.apache.etosha</groupId>
+    <groupId>org.etosha</groupId>
     <artifactId>etosha-core</artifactId>
     <packaging>jar</packaging>
     <version>0.7.0-SNAPSHOT</version>
+    
     <name>etosha-core</name>
+    
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -203,14 +205,14 @@
         <dependency>
             <groupId>org.etosha</groupId>
             <artifactId>etosha-contextualizer</artifactId>
-            <version>0.5.0-SNAPSHOT</version>
+            <version>0.7.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>org.etosha</groupId>
             <artifactId>etosha-model</artifactId>
-            <version>0.5.0-SNAPSHOT</version>
+            <version>0.7.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 
@@ -593,16 +595,16 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                    <groupId>commons-beanutils</groupId>
-                                    <artifactId>commons-beanutils</artifactId>
+                                        <groupId>commons-beanutils</groupId>
+                                        <artifactId>commons-beanutils</artifactId>
                                     </dependency>
                                     <dependency>
-                                    <groupId>commons-beanutils</groupId>
-                                    <artifactId>commons-beanutils-core</artifactId>
+                                        <groupId>commons-beanutils</groupId>
+                                        <artifactId>commons-beanutils-core</artifactId>
                                     </dependency>
                                     <dependency>
-                                    <groupId>commons-collections</groupId>
-                                    <artifactId>commons-collections</artifactId>
+                                        <groupId>commons-collections</groupId>
+                                        <artifactId>commons-collections</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <classes>
@@ -615,12 +617,12 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                    <groupId>commons-beanutils</groupId>
-                                    <artifactId>commons-beanutils</artifactId>
+                                        <groupId>commons-beanutils</groupId>
+                                        <artifactId>commons-beanutils</artifactId>
                                     </dependency>
                                     <dependency>
-                                    <groupId>commons-beanutils</groupId>
-                                    <artifactId>commons-beanutils-core</artifactId>
+                                        <groupId>commons-beanutils</groupId>
+                                        <artifactId>commons-beanutils-core</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <packages>
@@ -630,16 +632,16 @@
                             <exception>
                                 <conflictingDependencies>
                                     <dependency>
-                                    <groupId>org.datanucleus</groupId>
-                                    <artifactId>datanucleus-core</artifactId>
+                                        <groupId>org.datanucleus</groupId>
+                                        <artifactId>datanucleus-core</artifactId>
                                     </dependency>
                                     <dependency>
-                                    <groupId>org.datanucleus</groupId>
-                                    <artifactId>datanucleus-rdbms</artifactId>
+                                        <groupId>org.datanucleus</groupId>
+                                        <artifactId>datanucleus-rdbms</artifactId>
                                     </dependency>
                                     <dependency>
-                                    <groupId>org.datanucleus</groupId>
-                                    <artifactId>datanucleus-connectionpool</artifactId>
+                                        <groupId>org.datanucleus</groupId>
+                                        <artifactId>datanucleus-connectionpool</artifactId>
                                     </dependency>
                                 </conflictingDependencies>
                                 <resources>
@@ -971,6 +973,39 @@
                         </reportPlugins>
                     </configuration>
                 </plugin>
+                
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>2.0</version>
+                    <configuration>
+                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>shade</goal>
+                            </goals>
+                            <configuration>
+                                <filters>
+                                    <filter>
+                                        <artifact>*:*</artifact>
+                                        <excludes>
+                                            <exclude>META-INF/*.SF</exclude>
+                                            <exclude>META-INF/*.DSA</exclude>
+                                            <exclude>META-INF/*.RSA</exclude>
+                                            <exclude>META-INF/LICENSE*</exclude>
+                                            <exclude>license/*</exclude>
+                                        </excludes>
+                                    </filter>
+                                </filters>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+  
+  
                 <plugin>
                     <groupId>org.apache.rat</groupId>
                     <artifactId>apache-rat-plugin</artifactId>

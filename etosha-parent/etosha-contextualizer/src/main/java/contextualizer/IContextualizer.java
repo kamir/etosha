@@ -1,5 +1,6 @@
 package contextualizer;
 
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Property;
 
 public interface IContextualizer {
@@ -16,5 +17,8 @@ public interface IContextualizer {
  
         public abstract String getName();
 	
+        public abstract void addGraph( Model m );
+
+    public Model getModel();
 
 }

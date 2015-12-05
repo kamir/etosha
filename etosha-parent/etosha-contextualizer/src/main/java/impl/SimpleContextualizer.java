@@ -7,6 +7,8 @@ import java.io.OutputStream;
 
 import contextualizer.ContextIsReadOnlyException;
 import contextualizer.IContextualizer;
+import static impl.JenaInMemoryContextualizer.model;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Property;
 
 /**
@@ -25,6 +27,10 @@ public class SimpleContextualizer implements IContextualizer {
 	private String fileName;
 	OutputStream out = null;
 
+            @Override
+    public Model getModel() {
+        return model;
+    }
 	@Override
 	public void init() {
 		try {
@@ -90,6 +96,11 @@ public class SimpleContextualizer implements IContextualizer {
     @Override
     public String getName() {
         return this.getClass().getName();
+    }
+
+    @Override
+    public void addGraph(Model m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

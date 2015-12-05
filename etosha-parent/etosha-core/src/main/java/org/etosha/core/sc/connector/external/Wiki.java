@@ -6347,6 +6347,15 @@ public class Wiki implements Serializable
         URLConnection connection = new URL(url).openConnection();
         connection.setConnectTimeout(CONNECTION_CONNECT_TIMEOUT_MSEC);
         connection.setReadTimeout(CONNECTION_READ_TIMEOUT_MSEC);
+        String username = "borussia";
+        String password = "1836";
+        
+        String userPassword = username + ":" + password;
+        String encoding = new sun.misc.BASE64Encoder().encode(userPassword.getBytes());
+        
+        connection.setRequestProperty("Authorization", "Basic " + encoding);
+        
+        
         setCookies(connection);
         connection.connect();
         grabCookies(connection);
@@ -6405,10 +6414,27 @@ public class Wiki implements Serializable
     {
         logurl(url, caller);
         URLConnection connection = new URL(url).openConnection();
+        String username = "borussia";
+        String password = "1836";
+        
+        String userPassword = username + ":" + password;
+        String encoding = new sun.misc.BASE64Encoder().encode(userPassword.getBytes());
+        
+        connection.setRequestProperty("Authorization", "Basic " + encoding);
+        
+        
+        
         setCookies(connection);
         connection.setDoOutput(true);
         connection.setConnectTimeout(CONNECTION_CONNECT_TIMEOUT_MSEC);
         connection.setReadTimeout(CONNECTION_READ_TIMEOUT_MSEC);
+        
+        
+        
+        
+        
+        
+        
         connection.connect();
         OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream(), "UTF-8");
         out.write(text);
@@ -6450,6 +6476,20 @@ public class Wiki implements Serializable
         connection.setDoOutput(true);
         connection.setConnectTimeout(CONNECTION_CONNECT_TIMEOUT_MSEC);
         connection.setReadTimeout(CONNECTION_READ_TIMEOUT_MSEC);
+        
+        
+        
+        String username = "borussia";
+        String password = "1836";
+        
+        String userPassword = username + ":" + password;
+        String encoding = new sun.misc.BASE64Encoder().encode(userPassword.getBytes());
+        
+        connection.setRequestProperty("Authorization", "Basic " + encoding);
+        
+        
+        
+        
         connection.connect();
         boundary = "--" + boundary + "\r\n";
         

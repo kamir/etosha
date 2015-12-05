@@ -19,18 +19,27 @@ import javax.swing.JOptionPane;
  */
 public class DataExplorer {
 
-    private static void list(String t, String[] links) {
-        System.out.println("["+t+"]");
-        int c = 0;
-        StringBuffer sb = new StringBuffer();
-        for( String u : links ) {
-            sb.append( "[" + c + "] \t" + u + "\n");
-            c++;
+    public void cd(String url) {
+        
+        System.out.println( ">>> CD to {"+ url + "}");
+        int index = url.lastIndexOf(" => ");
+        
+        url = url.substring(index + 4);
+
+        System.out.println( ">>> MOVE now to {"+ url + "}");
+        
+        try {
+            URL u = new URL( url );
+            trace.goTo(u);
+        } 
+        catch (MalformedURLException ex) {
+            Logger.getLogger(DataExplorer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        System.out.println( sb.toString() );
+        
     }
 
-    private void move() throws IOException {
+    
+    public void move() throws IOException {
 
         list( "TARGETS", getLinks( trace.position ) );
 
@@ -45,7 +54,7 @@ public class DataExplorer {
 
     Scrapelet currentSnippet = null;
     
-    private void scrape() throws IOException {
+    public void scrape() throws IOException {
 
         // HERE WE SCRAPE VIA JSOUP ...
         String[] OPTIONS = {"LIST", "TABLE" };            
@@ -81,7 +90,7 @@ public class DataExplorer {
         
     }
 
-    private void persist() {
+    public void persist() {
         
         System.out.println( ">>> PERSIST the current trace of our journey here." );
 
@@ -91,18 +100,31 @@ public class DataExplorer {
     
     }
 
-    private void stop() {
+    public void stop() {
         
         System.out.println( ">>> STOP the journey here: " + this.trace.position );
 
     }
+    
+    
+    private static void list(String t, String[] links) {
+        System.out.println("["+t+"]");
+        int c = 0;
+        StringBuffer sb = new StringBuffer();
+        for( String u : links ) {
+            sb.append( "[" + c + "] \t" + u + "\n");
+            c++;
+        }
+        System.out.println( sb.toString() );
+    }
+
     
     WebTrace trace = new WebTrace();
     
     public void init(URL url) {
             trace.goTo(url);
     }
-    private void init(String u) throws MalformedURLException {
+    public void init(String u) throws MalformedURLException {
         init( new URL( u ) );
     }
 
@@ -125,24 +147,6 @@ public class DataExplorer {
         return links;
     };
     
-    public void cd(String url) {
-        
-        System.out.println( ">>> CD to {"+ url + "}");
-        int index = url.lastIndexOf(" => ");
-        
-        url = url.substring(index + 4);
-
-        System.out.println( ">>> MOVE now to {"+ url + "}");
-        
-        try {
-            URL u = new URL( url );
-            trace.goTo(u);
-        } 
-        catch (MalformedURLException ex) {
-            Logger.getLogger(DataExplorer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }
     
     static SchemaRepository repo = null;
     

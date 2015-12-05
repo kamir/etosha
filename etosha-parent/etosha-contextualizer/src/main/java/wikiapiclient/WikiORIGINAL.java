@@ -6612,11 +6612,11 @@ public class WikiORIGINAL implements Serializable
         logurl(url, caller);
         
         URLConnection connection = new URL(url).openConnection();
+        
         connection.setConnectTimeout(CONNECTION_CONNECT_TIMEOUT_MSEC);
         connection.setReadTimeout(CONNECTION_READ_TIMEOUT_MSEC);
-     
-        
-        
+ 
+
         String userPassword = "borussia" + ":" + "1836";
         String encoding = new sun.misc.BASE64Encoder().encode(userPassword.getBytes());
         connection.setRequestProperty("Authorization", "Basic " + encoding);

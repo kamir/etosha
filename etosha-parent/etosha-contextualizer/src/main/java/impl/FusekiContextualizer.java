@@ -1,6 +1,8 @@
 package impl;
 
 import contextualizer.IContextualizer;
+import static impl.JenaInMemoryContextualizer.model;
+import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Property;
 
 /**
@@ -19,6 +21,11 @@ public class FusekiContextualizer implements IContextualizer {
     @Override
     public String getName() {
         return this.getClass().getName();
+    }
+    
+        @Override
+    public Model getModel() {
+        return model;
     }
 
     @Override
@@ -49,6 +56,11 @@ public class FusekiContextualizer implements IContextualizer {
     public void init() {
 		// TODO Auto-generated method stub
 
+    }
+
+    @Override
+    public void addGraph(Model m) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
  

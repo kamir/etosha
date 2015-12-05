@@ -25,37 +25,36 @@ import org.etosha.tools.hivemetastore.HiveTableInspector;
 import org.etosha.core.sc.connector.SemanticContextBridge;
 import org.etosha.core.sc.connector.external.GMailLoader;
 import org.etosha.core.sc.connector.internal.ScreenSnappLoader;
+import org.etosha.tools.ReadCMD;
 import org.etosha.tools.gui.NoteTool;
 
 /**
  * This is the tool to interact with the Etosha Context Proxy (ECP).
- * 
+ *
  * Either a local ECP or the configured remote proxy is used.
- * 
- * The first proxy implementation uses the Semantic Media Wiki.
- * Other Wiki and Triple Store implementations can be considered in the
- * future.
- * 
+ *
+ * The first proxy implementation uses the Semantic Media Wiki. Other Wiki and
+ * Triple Store implementations can be considered in the future.
+ *
  * @author kamir
  */
-
 public class EtoshaContextLogger extends Configured implements Tool {
 
-    public static String VERSION = "v0.4.1";
-    
+    public static String VERSION = "v0.7.0";
+
     public static boolean absoluteCFG = true;
-    
+
     /**
-     * The Semantic Context Bridge (SCB) connects an electronic device
-     * with an ECP.
-     * 
-     * One user login is related to dynamic evolving context. This context
-     * is maintained in the context proxy and allows connecting the contexts
-     * of many users.
-     * 
+     * The Semantic Context Bridge (SCB) connects an electronic device with an
+     * ECP.
+     *
+     * One user login is related to dynamic evolving context. This context is
+     * maintained in the context proxy and allows connecting the contexts of
+     * many users.
+     *
      */
     public SemanticContextBridge scb = null;
-    
+
     /**
      * The pagename to work with.
      */
@@ -64,29 +63,30 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
     /**
      * We have to connect to the ECP using the SCB implementation.
-     * 
-     * @throws UnknownHostException 
+     *
+     * @throws UnknownHostException
      */
     public void initConnector() throws Exception {
         scb = new SemanticContextBridge(this.getConf());
         scb.login();
-        if ( debug )
+        if (debug) {
             System.out.println("*** EtoshaContextLogger.init()  ***\n# done!");
+        }
     }
 
     /**
-     * 
+     *
      * We use the Hadoop Tool Runner ...
-     * 
+     *
      * @param args
-     * 
+     *
      * @throws IOException
      * @throws LoginException
      */
     public int run(String[] args) throws IOException, LoginException, Exception {
 
         Configuration cfg = getConf();
-        
+
         File f = getCFGFile();
 
         int status = 0;
@@ -95,75 +95,71 @@ public class EtoshaContextLogger extends Configured implements Tool {
         if (args != null) {
             if (args.length > 0) {
                 cmd = args[1];
-            } 
-            else {
+            } else {
                 cmd = "list";
             }
         }
 
         System.out.println(">>> Etosha Context Logging ( " + VERSION + " ) \ncmd: [" + cmd + "]");
 
-        if (cmd.equals("list") ) {
+        if (cmd.equals("list")) {
             list();
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("init")) {
             System.out.println(">>> new configuration will be created in ...");
 
             f = writeDefaultCFGFile(f);
-            
+
             System.out.println(">>> A new Etosha configuration was created in: "
                     + f.getAbsolutePath());
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("cfg")) {
 
             System.out.println(">>> Your current Etosha configuration is in: ");
 
-            f = new File( f.getAbsolutePath() );
+            f = new File(f.getAbsolutePath());
 
             if (!f.exists()) {
                 f.getParentFile().mkdirs();
 
                 System.out.println(">>> New configuration will be created in ...");
-            
+
                 FileWriter fw = new FileWriter(f);
                 fw.write(getContentDefaultCFG());
                 fw.close();
-                
+
                 System.out.println(">>> New configuration was created in: "
                         + f.getAbsolutePath());
 
                 System.out.println(getContentDefaultCFG());
 
-            } 
-            else {
+            } else {
                 System.out.println(">>> location : " + f.getAbsolutePath());
                 System.out.println(getLocalCFG(f));
             }
-            System.exit(0);
+//            System.exit(0);
 
         }
 
         initConnector();
-        
         if (cmd.equals("importImage")) {
-            
+
             String fn = args[1];
-            
-            File f2 = new File( fn );
-            
+
+            File f2 = new File(fn);
+
             System.out.println("> import an image to the current context ... ");
-            scb.createTheNewPage( "ImagePage#" + f2.getName());
-            scb.logImageToPage( "ImagePage#" + f2.getName() , f2, fn);
+            scb.createTheNewPage("ImagePage#" + f2.getName());
+            scb.logImageToPage("ImagePage#" + f2.getName(), f2, fn);
 
             System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
-            
-        }
+//            System.exit(0);
 
+        }
 
         if (cmd.equals("inspectHiveMetastore")) {
 
@@ -172,12 +168,11 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
             try {
                 HiveTableInspector.run(args);
-            } 
-            catch (SQLException ex) {
+            } catch (SQLException ex) {
                 Logger.getLogger(EtoshaContextLogger.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("mail")) {
@@ -187,7 +182,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
 
             GMailLoader.run(args);
 
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("snap")) {
@@ -196,16 +191,15 @@ public class EtoshaContextLogger extends Configured implements Tool {
             ScreenSnappLoader.clt = this;
 
             ScreenSnappLoader.run(args);
-            
-            exit( args );
+
+            exit(args);
 
         }
 
         if (cmd.equals("new")) {
             System.out.println("> create new context ... ");
-            
-            
-            System.exit(0);
+
+//            System.exit(0);
         }
 
         if (cmd.equals("log")) {
@@ -219,7 +213,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             scb._logBashHistoryToPage(text);
 
             System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("note")) {
@@ -232,7 +226,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             scb._logNoteToPage(text);
 
             System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("notel")) {
@@ -245,7 +239,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             scb._logNoteLinkToPage(text);
 
             System.out.println("***userContextLogging() # done! ***\n");
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("inspectSEQ")) {
@@ -254,7 +248,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             System.out.println("\n\n>>>> inspect SEQ file ... " + p.toString());
             SEQFileInspector.inspectFile(cfg, p);
 
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("inspectAVRO")) {
@@ -263,7 +257,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
             System.out.println("\n\n>>>> inspect AVRO file ... " + p.toString());
             AVROFileInspector.inspectFile(cfg, p);
 
-            System.exit(0);
+//            System.exit(0);
         }
 
         if (cmd.equals("put")) {
@@ -280,7 +274,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
                 ex.printStackTrace();
                 System.out.println("***userContextLogging() # failed! ***\n");
             }
-            System.exit(0);
+//            System.exit(0);
         }
 
         return status;
@@ -288,17 +282,17 @@ public class EtoshaContextLogger extends Configured implements Tool {
     }
 
     public static File writeDefaultCFGFile(File f) throws IOException {
-    
+
         System.out.println("> CREATE DEFAULT CFG ...");
         if (!f.exists()) {
             f.getParentFile().mkdirs();
         }
-        f = new File( f.getAbsolutePath() );
-        
+        f = new File(f.getAbsolutePath());
+
         FileWriter fw2 = new FileWriter(f);
         fw2.write(getContentDefaultCFG());
         fw2.close();
-        
+
         return f;
     }
 
@@ -336,11 +330,11 @@ public class EtoshaContextLogger extends Configured implements Tool {
     public static void main(String[] args) throws Exception {
 
         clt = new EtoshaContextLogger();
-        
-        clt.setConf( new Configuration() );
+
+        clt.setConf(new Configuration());
 
         File cfgFile = EtoshaContextLogger.getCFGFile();
-                
+
         if (cfgFile.exists()) {
             /**
              * according to:
@@ -352,10 +346,28 @@ public class EtoshaContextLogger extends Configured implements Tool {
              */
             clt.getConf().addResource(cfgFile.getAbsoluteFile().toURI().toURL());
         }
-        
+
         int exitCode = ToolRunner.run(clt.getConf(), clt, args);
 
-        System.exit(exitCode);
+        if (args.length > 0) {
+            System.out.println("*** " + args[0] + " ***");
+
+            if (!args[0].equals("ECLShell")) {
+                System.exit(exitCode);
+            }
+        }
+
+        String cmd = ReadCMD.read("CMD", "list");
+        if (cmd.equals("exit")) {
+            System.exit(exitCode);
+        }
+
+        args = new String[2];
+
+        args[0] = "ECLShell";
+        args[1] = cmd;
+
+        EtoshaContextLogger.main(args);
     }
 
     public void list() {
@@ -370,13 +382,12 @@ public class EtoshaContextLogger extends Configured implements Tool {
         System.out.println("  put   : embed a local file to the context");
         System.out.println("  note  : add a note to the current context");
         System.out.println("  notel : link a note to the current context");
-       
+
         System.out.println("\n  mail  : load annotated mails from default mail box (see cfg)");
         System.out.println("* chat  : load annotated chat threads from default chat client (Skype)");
 
         System.out.println("  importImage   : import an image and extract metadata from it ");
-        
-        
+
         System.out.println("\n  inspectSEQ      : inspect a SEQUENCE file and add meta-data to data set context");
         System.out.println("  inspectAVRO     : inspect an AVRO file and add meta-data to data set context");
         System.out.println("* inspectPARQUET  : inspect a PARQUET file and add meta-data to data set context");
@@ -385,40 +396,40 @@ public class EtoshaContextLogger extends Configured implements Tool {
         System.out.println("  profileAVRO     : inspect an AVRO file and add meta-data to data set context");
         System.out.println("  profilePARQUET  : inspect a PARQUET file and add meta-data to data set context");
 
-        
         System.out.println("\n  inspectHiveMetastore      : inspect the Hive-Metastore and collect notes about the tables");
 
     }
 
-            
     /**
      * only exit from JVM if on CMD-line mode ...
-     * 
-     * @param args 
+     *
+     * @param args
      */
     private void exit(String[] args) {
-        if( args[0].equals( this.getClass().getName() ) ) {
-            System.exit( 0 );
+        if (args[0].equals(this.getClass().getName())) {
+            System.exit(0);
         }
     }
 
     /**
      * Where is the Etosha configuration located?
-     * 
-     * Absolute: /etc/etosha/smw-site.xml
-     * Relative: $USER_HOME/etc/etosha/smw-site.xml
-
+     *
+     * Absolute: /etc/etosha/smw-site.xml Relative:
+     * $USER_HOME/etc/etosha/smw-site.xml
+     *
      * @return File
      */
     public static File getCFGFile() {
-       
+
         String userHome = System.getProperty("user.home");
         String fn = userHome + "/etc/etosha/smw-site.xml";
-        
-        if ( absoluteCFG ) fn = "/etc/etosha/smw-site.xml";
-        
+
+        if (absoluteCFG) {
+            fn = "/etc/etosha/smw-site.xml";
+        }
+
         File f = new File(fn);
-        
+
         return f;
     }
 
