@@ -44,10 +44,16 @@ public class EtoshaEmailVocabulary {
 
     public static final Property dateSent = m.createProperty(uri + "dateSent");
 
+    public static final Property dateReceived = m.createProperty(uri + "dateReceived");
+
     public static final Property hasParts = m.createProperty(uri + "hasParts");
 
     public static final Property nrOfParts = m.createProperty(uri + "nrOfParts");
     
     public static final Property hasLabel = m.createProperty(uri + "hasLabel");
-    
+
+    public static final Property hasMailID = m.createProperty(uri + "hasMailID");
+
+    public static final Property belongsToThread = m.createProperty(uri + "belongsToThread");
+
 }

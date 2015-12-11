@@ -12,8 +12,8 @@ import org.apache.lucene.store.FSDirectory;
  */
 public class IndexOpener {
     
-    public static IndexReader GetIndexReader() throws IOException {
-        IndexReader indexReader = DirectoryReader.open(FSDirectory.open(new File(Configuration.INDEX_DIRECTORY)));
+    public static IndexReader GetIndexReader(  File f) throws IOException {
+        IndexReader indexReader = DirectoryReader.open(FSDirectory.open(f));
         return indexReader;
     }
 
@@ -22,10 +22,10 @@ public class IndexOpener {
      * @return
      * @throws IOException 
      */
-    public static Integer TotalDocumentInIndex() throws IOException
+    public static Integer TotalDocumentInIndex(File f) throws IOException
     {
-        Integer maxDoc = GetIndexReader().maxDoc();
-        GetIndexReader().close();
+        Integer maxDoc = GetIndexReader(f).maxDoc();
+        GetIndexReader(f).close();
         return maxDoc;
     }
 }

@@ -1,7 +1,9 @@
 package com.computergodzilla.cosinesimilarity;
 
-import com.cloudera.QualifyKnowledgeBase;
+import com.etosha.QualifyKnowledgeBase;
+import com.etosha.mailcollectiontool.ConfigurationMailCollection;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,14 +30,20 @@ public class VectorGenerator {
     Integer totalNoOfDocumentInIndex;
     IndexReader indexReader;
     
+    File indexFile = null;
+    
     public VectorGenerator() throws IOException
     {
+        
         allterms1 = new HashMap<>();
         allterms2 = new HashMap<>();
         
-        indexReader = IndexOpener.GetIndexReader();
+        File f = new File(Configuration.INDEX_DIRECTORY);
+        indexFile = f;
         
-        totalNoOfDocumentInIndex = IndexOpener.TotalDocumentInIndex();
+        indexReader = IndexOpener.GetIndexReader(f);
+        
+        totalNoOfDocumentInIndex = IndexOpener.TotalDocumentInIndex(f);
 
         docVector1 = new DocVector[totalNoOfDocumentInIndex];
         docVector2 = new DocVector[totalNoOfDocumentInIndex];
@@ -46,11 +54,11 @@ public class VectorGenerator {
     
     public void GetAllTerms() throws IOException
     {
-        AllTerms allTerms1 = new AllTerms();
+        AllTerms allTerms1 = new AllTerms( indexFile );
         allTerms1.initAllTerms( Configuration.FIELD_CONTENT_1 );
         allterms1 = allTerms1.getAllTerms();
         
-        AllTerms allTerms2 = new AllTerms();
+        AllTerms allTerms2 = new AllTerms( indexFile );
         allTerms2.initAllTerms(  Configuration.FIELD_CONTENT_2 );
         allterms2 = allTerms2.getAllTerms();
     }

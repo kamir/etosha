@@ -16,7 +16,7 @@ import org.apache.commons.math.linear.RealVectorFormat;
 public class DocVector {
 
     public String id = "?";
-    int docId;
+    public int docId;
     
     String context = "";
     String file = "";

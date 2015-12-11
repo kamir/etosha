@@ -5,6 +5,7 @@
  */
 package com.computergodzilla.cosinesimilarity;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -32,11 +33,11 @@ public class AllTerms {
     public static Integer totalNoOfDocumentInIndex;
     IndexReader indexReader;
     
-    public AllTerms() throws IOException
+    public AllTerms(File f) throws IOException
     {    
         allTerms = new HashMap<>();
-        indexReader = IndexOpener.GetIndexReader();
-        totalNoOfDocumentInIndex = IndexOpener.TotalDocumentInIndex();
+        indexReader = IndexOpener.GetIndexReader(f);
+        totalNoOfDocumentInIndex = IndexOpener.TotalDocumentInIndex(f);
         _allTermsCount = new Hashtable<String,Integer>(); 
     }
         
