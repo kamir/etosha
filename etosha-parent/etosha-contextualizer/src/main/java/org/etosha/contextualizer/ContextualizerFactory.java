@@ -28,6 +28,8 @@ public class ContextualizerFactory {
 		return cj;
 	}
 
+ 
+
 //	public static IContextualizer getSMWContextualizer(String string) {
 //		SMWContextualizer sc = new SMWContextualizer();
 //
@@ -40,9 +42,11 @@ public class ContextualizerFactory {
 //		return getSMWContextualizer(SMWContextualizer.DEFAULT_WIKI);
 //	}
 
-//	public static IContextualizer getBridgedContextualizer() {
+	public static IContextualizer getBridgedContextualizer() {
 //		BridgedContextualizer sc = new BridgedContextualizer();
 //		return sc;
-//	}
+            
+            return null;
+	}
 
 }
