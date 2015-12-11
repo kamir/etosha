@@ -1,8 +1,5 @@
-
-<<<<<<< HEAD
-import java.io.IOException;
-=======
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
+ 
+import java.io.IOException; 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Level;
@@ -10,14 +7,8 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
-<<<<<<< HEAD
- * We browse the web. Step from URL to URL and explore the context of each
+  * We browse the web. Step from URL to URL and explore the context of each
  * page. Available links, lists and tables are selected and presented.
- *  
-=======
- *
- * 
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
  * 
  **/
 
@@ -26,8 +17,7 @@ import javax.swing.JOptionPane;
  * @author kamir
  */
 public class DataExplorer {
-
-<<<<<<< HEAD
+ 
     public void cd(String url) {
         
         System.out.println( ">>> CD to {"+ url + "}");
@@ -126,8 +116,7 @@ public class DataExplorer {
         }
         System.out.println( sb.toString() );
     }
-
-=======
+ 
     private static void list(String t, String[] links) {
 
         System.out.println("["+t+"]");
@@ -137,29 +126,13 @@ public class DataExplorer {
         }
         System.out.println( sb.toString() );
     }
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
-    
+ 
     WebTrace trace = new WebTrace();
     
     public void init(URL url) {
             trace.goTo(url);
     }
-<<<<<<< HEAD
-    public void init(String u) throws MalformedURLException {
-=======
-    private void init(String u) throws MalformedURLException {
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
-        init( new URL( u ) );
-    }
-
-    
-    // Jsoup inspection of current position
-<<<<<<< HEAD
-    public String[] getDataTables(URL url) throws IOException {
-        String[] t = ScraperTool.getDataTables(url);
-        return t;
-    };
-
+ 
     // Jsoup inspection of current position
     public String[] getDataLists(URL url) throws IOException{
         String[] l = ScraperTool.getDataLists(url);
@@ -226,9 +199,11 @@ public class DataExplorer {
                          i = -1;
                          break;
             }
+        }
 
-            
-=======
+    
+      
+ 
     public String[] getDataTables() {
         String[] dummy = {"tabA","tabB","tabE","tabF","tabD"};
         return dummy;
@@ -258,48 +233,45 @@ public class DataExplorer {
     }
     
     
-    public static void main(String[] args) throws MalformedURLException {
-    
-        String start = "https://stats.wikimedia.org/wikisitemap.html";
-        
-        DataExplorer explorer = new DataExplorer();
-        explorer.init( start );
-
-        int i = 0;
-        
-        while( i != -1 ) {
-            
-            list( "DATA-LISTS", explorer.getDataLists() );
-            list( "DATA-TABLES", explorer.getDataTables() );
-            list( "TARGETS", explorer.getLinks() );
-
-            String[] OPTIONS = {"SCRAPE list","SCRAPE table", "MOVE"};
-            
-            int j = javax.swing.JOptionPane.showOptionDialog(null, "What should we do?", "Select:", JOptionPane.DEFAULT_OPTION , 1, null, OPTIONS, 2);
-            
-            
-            i = Integer.parseInt( javax.swing.JOptionPane.showInputDialog("Where to go?") );
-
-            String[] urls = explorer.getLinks();
-            if( i > 0 && i < urls.length )
-                explorer.cd( urls[i] );
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
-
-        }
-        
-        System.out.println( explorer.trace.toString() );
-        
-        explorer.openTraceGraph();
-        
-    }
+//    public static void main(String[] args) throws MalformedURLException {
+//    
+//        String start = "https://stats.wikimedia.org/wikisitemap.html";
+//        
+//        DataExplorer explorer = new DataExplorer();
+//        explorer.init( start );
+//
+//        int i = 0;
+//        
+//        while( i != -1 ) {
+//            
+//            list( "DATA-LISTS", explorer.getDataLists() );
+//            list( "DATA-TABLES", explorer.getDataTables() );
+//            list( "TARGETS", explorer.getLinks() );
+//
+//            String[] OPTIONS = {"SCRAPE list","SCRAPE table", "MOVE"};
+//            
+//            int j = javax.swing.JOptionPane.showOptionDialog(null, "What should we do?", "Select:", JOptionPane.DEFAULT_OPTION , 1, null, OPTIONS, 2);
+//            
+//            
+//            i = Integer.parseInt( javax.swing.JOptionPane.showInputDialog("Where to go?") );
+//
+//            String[] urls = explorer.getLinks();
+//            if( i > 0 && i < urls.length )
+//                explorer.cd( urls[i] );
+// 
+//        
+//        System.out.println( explorer.trace.toString() );
+//        
+//        explorer.openTraceGraph();
+//        
+//    }
 
     private void openTraceGraph() {
         
         Object graph = this.trace.getGraphOfTraces();
         
         // SHOW GRAPH AS IN MORPHMINER ...
-        
-<<<<<<< HEAD
+         
         // store the trace ...
         
     }
@@ -307,8 +279,7 @@ public class DataExplorer {
     private void expose(Scrapelet currentSnippet) {
         if ( this.currentSnippet != null )
            Exposer.exposeToDefaultStore( currentSnippet );
-=======
->>>>>>> d06fcbf7ea46d68ceb8674210db0b4cea0d12c6b
+ 
     }
 
     
