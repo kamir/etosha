@@ -33,3 +33,4 @@
 /.git-rewrite/t/etosha-parent/etosha-contextualizer/target/**
 /etosha-parent/etosha-contextualizer/target/**
 /etosha-parent/etosha-vocab/target/**
+/etosha-parent/etosha-model/target/
