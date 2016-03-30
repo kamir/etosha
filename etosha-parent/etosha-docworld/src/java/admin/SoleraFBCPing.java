@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  * 
  * @author kamir
  */
-public class DocWorldPing {
+public class SoleraFBCPing {
 
     /**
      * Simple Ping Test. 
@@ -43,7 +43,7 @@ public class DocWorldPing {
             System.out.println( k + " " + r );
         } 
         catch (Exception ex) {
-            Logger.getLogger(DocWorldPing.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SoleraFBCPing.class.getName()).log(Level.SEVERE, null, ex);
         }
     } 
 }

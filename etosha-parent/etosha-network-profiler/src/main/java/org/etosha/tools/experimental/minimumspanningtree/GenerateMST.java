@@ -26,7 +26,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
-import org.etosha.tools.experimental.minimumspanningtree.test.TestPlanarity;
+import org.etosha.tools.experimental.planargraph.TestPlanarity;
 import org.gephi.data.attributes.api.AttributeModel;
 import org.gephi.filters.api.FilterController;
 import org.gephi.graph.api.DirectedGraph;

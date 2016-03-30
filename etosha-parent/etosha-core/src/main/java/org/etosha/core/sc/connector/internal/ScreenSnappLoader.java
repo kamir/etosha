@@ -39,6 +39,7 @@ import javax.security.auth.login.LoginException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.util.ToolRunner;
 import org.etosha.cmd.EtoshaContextLogger;
+import org.etosha.tools.ScreenSnapperTool;
 
 /**
  *
@@ -74,8 +75,31 @@ public class ScreenSnappLoader {
         
         return;
     }        
-            
 
+    /**
+     * 
+     * Refactor tp USE ScreenSnapper ...
+     * 
+     * @throws LoginException
+     * @throws IOException
+     * @throws AWTException 
+     */
+    
+    public static void importScreenShot() throws LoginException, IOException, AWTException {
+
+        File f = ScreenSnapperTool.takeScreenShot( File.createTempFile("etosha_", "_screen.png") );
+        
+        System.out.println( "snap@"+f.getAbsolutePath() );
+        
+        // we select a context
+        String uc = javax.swing.JOptionPane.showInputDialog("??? USERCONTEXT ???", "(training)");
+        
+        clt.scb.logImageToPage( clt.scb.createTheNewUCPage( uc  ), f, f.getName() );
+        
+        return;
+        
+    }
+/*
     public static void importScreenShot() throws LoginException, IOException, AWTException {
 
         
@@ -107,4 +131,8 @@ public class ScreenSnappLoader {
         
         return;
     }
+ */  
+    
+    
+    
 }

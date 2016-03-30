@@ -6,9 +6,9 @@
  * or http://jung.sourceforge.net/license.txt for a description.
  * 
  */
-package org.etosha.networks.profiler;
+package org.etosha.tools.profiler.minimumspanningtree;
 
-import org.etosha.networks.DFALink;
+import org.etosha.networks.fluctuationnet.DFALink;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;

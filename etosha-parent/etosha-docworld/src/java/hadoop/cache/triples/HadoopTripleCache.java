@@ -15,8 +15,8 @@
 package hadoop.cache.triples;
 
 import hadoop.cache.doc.*;
-import data.io.adapter.HBaseTripleAdapter; 
-import data.io.adapter.ObjectEncoder;
+import org.apache.hadoopts.data.io.adapter.HBaseTripleAdapter; 
+import org.apache.hadoopts.data.io.adapter.ObjectEncoder;
 import hadoop.cache.ts.HBaseTimeSeriesCache;
 import java.io.IOException;
 import java.util.Properties;

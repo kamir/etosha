@@ -9,8 +9,9 @@
  *   s  t  s_alphas[0]  s_alphas[1] a_alphas[2]  t_alphas[0] t_alphas[1] t_alphas[2] w[0] w[1] w[2] 
  *
  */
-package org.etosha.networks;
+package org.etosha.networks.fluctuationnet;
 
+import org.etosha.networks.Link;
 import scala.Serializable;
 import scala.Tuple2;
 
@@ -20,7 +21,7 @@ import scala.Tuple2;
  */
 public class DFALink implements Serializable, Link {
 
-    static String getLinkTypeLabel() {
+    public static String getLinkTypeLabel() {
         return "DFA-Link";
     }
 
@@ -65,7 +66,7 @@ public class DFALink implements Serializable, Link {
         t = b.nodeid;
     }
 
-    DFALink(Tuple2<DFANetNode, DFANetNode> p) {
+    public DFALink(Tuple2<DFANetNode, DFANetNode> p) {
         this( p._1, p._2 );
     }
     

@@ -15,8 +15,8 @@
 package hadoop.cache.doc;
 
 import admin.DocTabAdmin;
-import data.io.adapter.HBaseDocWorldAdapter;
-import data.io.adapter.ObjectEncoder;
+import org.apache.hadoopts.data.io.adapter.HBaseDocWorldAdapter;
+import org.apache.hadoopts.data.io.adapter.ObjectEncoder;
 import hadoop.cache.ts.HBaseTimeSeriesCache;
 import java.io.IOException;
 import java.util.ArrayList;

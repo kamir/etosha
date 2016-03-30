@@ -24,16 +24,14 @@ import org.apache.hadoop.hbase.client.*;
  * This is part of the raw document cache in HBase.
  * 
  */
-public class DocTabAdmin {
+public class SoleraFBCTabAdmin {
 
     public static final String baseURL = "http://training03.sjc.cloudera.com:9099/DocWorld/v1/editItem.jsp?id=";
     
-    public static final String docTabName = "docworld"; 
-    public static final String colFamNameR = "raw"; 
-    public static final String colFamNameM = "metadata.tika"; 
-    public static final String colFamNameL = "logs"; 
+    public static final String docTabName = "partsMatch"; 
+    public static final String colFamNameR = "matcher_v1"; 
     
-    public static String[] FIELDS = { "id", "question", "answer", "illu", "valid" };
+    public static String[] FIELDS = { "claim", "suggestions", "votes" };
 
     public static void main(String[] args) throws IOException {
         
@@ -43,7 +41,7 @@ public class DocTabAdmin {
         // be found on the CLASSPATH
 
         Configuration config = HBaseConfiguration.create();
-        String server = "TC";
+        String server = "QSVM";
         
         if ( args != null && args.length > 0 ) {
             server = args[0];
@@ -55,14 +53,14 @@ public class DocTabAdmin {
         /**
          * Where is the Zookeeper server?
          * 
-         * Mirko's home cluster ...
+         * QSVM cluster ...
          *
          **/
         // config.set("hbase.zookeeper.quorum", "192.168.3.171");  
 
-        if ( server.equals("TC") ) {
+        if ( server.equals("QSVM") ) {
             /**
-             * TC ...
+             * QSVM ...   TODO
              */
             String zkHostString = "training01.sjc.cloudera.com,training03.sjc.cloudera.com,training06.sjc.cloudera.com";
             config.set( "hbase.zookeeper.quorum", zkHostString );  
@@ -100,8 +98,8 @@ public class DocTabAdmin {
         // use a Scanner. This will give you cursor-like interface to the contents
         // of the table.  To set up a Scanner, do like you did above making a Put
         // and a Get, create a Scan.  Adorn it with column names, etc.
-        System.out.println("\nDocWorld SCAN");   
-        System.out.println(  "*************");   
+        System.out.println("\nSolera FBC SCAN");   
+        System.out.println(  "***************");   
         System.out.println(  ">>> LIMIT = " + LIMIT );   
         Scan s = new Scan();
         
@@ -124,24 +122,18 @@ public class DocTabAdmin {
             // Thats why we have it inside a try/finally clause
             scanner.close();
         }
-        
           
         HBaseDocWorld dw = new HBaseDocWorld();
         dw.init();
         
         System.out.println( ">>> Test the counters ... ");
         
-//        dw.put( "CONTENT1", "123ABC" );
-//        dw.put( "CONTENT2", "DEF456" );
-
         System.out.println(dw.count("CONTENT1", "USED"));
         System.out.println(dw.count("CONTENT1", "CHANGED"));
         System.out.println(dw.count("CONTENT1", "USED"));
         
         System.out.println(dw.count("CONTENT1", "USED"));
         System.out.println(dw.count("CONTENT2", "USED"));
-        
-        
  
     }
 
@@ -171,10 +163,7 @@ public class DocTabAdmin {
 
         HTableDescriptor desc = new HTableDescriptor(name);
         
-        HColumnDescriptor meta1 = new HColumnDescriptor(colFamNameM.getBytes());
         HColumnDescriptor meta2 = new HColumnDescriptor(colFamNameR.getBytes());
-
-        desc.addFamily(meta1);
 
         desc.addFamily(meta2);
 

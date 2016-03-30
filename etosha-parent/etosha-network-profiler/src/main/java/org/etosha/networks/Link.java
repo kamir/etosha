@@ -7,8 +7,8 @@
 package org.etosha.networks;
 
 /**
- *
- * @author kamir
+ *   What ever is relevant for all types of links in this packages
+ *   comes here.
  */
 public interface Link {
     

@@ -10,7 +10,7 @@ package data.io.adapter;
 import admin.DocTabAdmin;
 import admin.TSTabAdmin;
 import admin.TripleTabAdmin;
-import data.io.adapter.HBaseAdapter;
+import org.apache.hadoopts.data.io.adapter.HBaseAdapter;
 import java.io.*;
 import java.util.Map;
 import java.util.NavigableMap;

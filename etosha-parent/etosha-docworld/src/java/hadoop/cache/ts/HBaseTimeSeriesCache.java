@@ -1,6 +1,6 @@
 package hadoop.cache.ts;
 
-import data.io.adapter.HBaseTSAdapter3;
+import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter3;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.logging.Level;

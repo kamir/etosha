@@ -1,5 +1,6 @@
-package org.etosha.networks;
+package org.etosha.networks.fluctuationnet;
 
+import org.etosha.networks.Node;
 import scala.Serializable;
 
 /**

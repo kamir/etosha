@@ -7,7 +7,7 @@
 
 package data.io.adapter;
 
-import data.io.adapter.HBaseAdapter;
+import org.apache.hadoopts.data.io.adapter.HBaseAdapter;
 import java.io.*;
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;

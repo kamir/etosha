@@ -7015,4 +7015,60 @@ public class Wiki implements Serializable
         // force a status check on next edit
         statuscounter = statusinterval;
     }
+    
+    public Revision[] getPageHistory3(String title, Calendar start, Calendar end) throws IOException
+    {
+        // set up the url
+        StringBuilder url = new StringBuilder(query);
+        url.append("prop=revisions&rvlimit=max&titles=");
+        url.append(URLEncoder.encode(normalize(title), "UTF-8"));
+        url.append("&rvprop=timestamp%7Cuser%7Cids%7Cflags%7Csize%7Ccomment");
+        if (end != null)
+        {
+            url.append("&rvend=");
+            url.append(calendarToTimestamp(start));
+        }
+        if (start != null)
+        {
+            url.append("&rvstart=");
+            url.append(calendarToTimestamp(end));
+        }
+
+        ArrayList<Revision> revisions = new ArrayList<Revision>(1500);
+
+        // main loop
+        
+            String temp = url.toString();
+            //System.out.println( temp  );
+
+            String line = fetch(temp, "getPageHistory");
+
+            
+            // System.out.println(line);
+            // set continuation parameter
+            if (line.contains("rvstartid=\""))
+            {
+                int a = line.indexOf("rvstartid") + 11;
+                int b = line.indexOf('\"', a);
+            }
+            else
+            
+            // parse stuff
+            while (line.contains("<rev "))
+            {
+                int a = line.indexOf("<rev");
+                int b = line.indexOf("/>", a);
+                try {
+                    revisions.add(parseRevision(line.substring(a, b), title));
+                    
+                }   
+                catch( Exception ex ) { 
+                    log(Level.INFO, ex.getMessage() + " while retrieving page history of " + title + " (" + revisions.size() + " revisions)", "getPageHistory3");
+                }
+                line = line.substring(b);
+            }
+        
+        log(Level.INFO, "Successfully retrieved page history of " + title + " (" + revisions.size() + " revisions)", "getPageHistory");
+        return revisions.toArray(new Revision[0]);
+    }
 }

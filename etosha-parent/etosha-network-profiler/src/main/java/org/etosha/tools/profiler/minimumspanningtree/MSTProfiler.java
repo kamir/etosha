@@ -1,6 +1,6 @@
-package org.etosha.networks.profiler;
+package org.etosha.tools.profiler.minimumspanningtree;
 
-import org.etosha.networks.DFALink;
+import org.etosha.networks.fluctuationnet.DFALink;
 import org.etosha.networks.Link;
 import java.awt.Container;
 import java.awt.image.BufferedImage;
@@ -9,6 +9,7 @@ import java.io.IOException;
 
 import java.util.List;
 import javax.imageio.ImageIO;
+import org.etosha.tools.profiler.Profiler;
 import org.openide.util.Exceptions;
 
 /**

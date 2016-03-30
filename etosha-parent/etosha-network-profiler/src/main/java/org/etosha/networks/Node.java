@@ -1,8 +1,8 @@
 package org.etosha.networks;
 
 /**
- *
- * @author kamir
+ *   What ever is relevant for all types of nodes in this packages
+ *   comes here.
  */
 public interface Node {
     

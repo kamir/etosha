@@ -1,4 +1,4 @@
-package org.etosha.tools.experimental.minimumspanningtree.test;
+package org.etosha.tools.experimental.planargraph;
 
 import java.util.Collection;
 import java.util.HashMap;

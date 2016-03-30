@@ -1,7 +1,7 @@
-package org.etosha.tools.experimental.minimumspanningtree.test;
+package org.etosha.tools.experimental.planargraph;
 
-import static org.etosha.tools.experimental.minimumspanningtree.test.TestPlanarityForEdgeList.readGraphFromFile;
-import static org.etosha.tools.experimental.minimumspanningtree.test.TestPlanarityForEdgeList.testPlanarity;
+import static org.etosha.tools.experimental.planargraph.TestPlanarityForEdgeList.readGraphFromFile;
+import static org.etosha.tools.experimental.planargraph.TestPlanarityForEdgeList.testPlanarity;
 import com.carlschroedl.gephi.spanningtree.SpanningTree;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -45,7 +45,7 @@ import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
-import static org.etosha.tools.experimental.minimumspanningtree.test.TestPlanarityForEdgeList.testPlanarity;
+import static org.etosha.tools.experimental.planargraph.TestPlanarityForEdgeList.testPlanarity;
 
 public class GeneratePlanarGraph {
 
@@ -242,11 +242,11 @@ public class GeneratePlanarGraph {
 
     }
 
-    private org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer> addIfResultIsPlanar(org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer> graph, String _s, String _t) {
+    private org.etosha.tools.experimental.planargraph.Graph<Integer> addIfResultIsPlanar(org.etosha.tools.experimental.planargraph.Graph<Integer> graph, String _s, String _t) {
         System.out.print(_s + " => " + _t + " (");
         try {
 
-            org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer> g = (org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer>) graph.clone();
+            org.etosha.tools.experimental.planargraph.Graph<Integer> g = (org.etosha.tools.experimental.planargraph.Graph<Integer>) graph.clone();
 
             int s = Integer.parseInt(_s);
             int t = Integer.parseInt(_t);
@@ -274,9 +274,9 @@ public class GeneratePlanarGraph {
         return null;
     }
 
-    private boolean isPlanar(org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer> g) {
+    private boolean isPlanar(org.etosha.tools.experimental.planargraph.Graph<Integer> g) {
 
-        org.etosha.tools.experimental.minimumspanningtree.test.Graph<Integer> cycle = (new GraphTraverser<Integer>(g)).findCycle();
+        org.etosha.tools.experimental.planargraph.Graph<Integer> cycle = (new GraphTraverser<Integer>(g)).findCycle();
         if (cycle == null) {
             return true;
         }

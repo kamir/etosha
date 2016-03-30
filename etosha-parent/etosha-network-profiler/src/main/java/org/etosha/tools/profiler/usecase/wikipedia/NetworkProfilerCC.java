@@ -1,15 +1,10 @@
-/**
- * 
- * The simple network creator loads link properties and defines a network layer
- * according to specific functional aspects, represented by correlation
- * or similarity measures, which represent the link properties.
- *
- **/
-package org.etosha.networks;
+package org.etosha.tools.profiler.usecase.wikipedia;
   
-import org.etosha.networks.profiler.MSTProfiler;
-import org.etosha.networks.profiler.Profiler;
-import org.etosha.networks.profiler.SNAProfiler;
+import org.etosha.networks.correlationnet.CCLink;
+import org.etosha.networks.correlationnet.CCNetNode;
+import org.etosha.tools.profiler.minimumspanningtree.MSTProfiler;
+import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.common.SNAProfiler;
 import java.io.File; 
 import org.apache.spark.api.java.function.VoidFunction;
 import org.apache.spark.api.java.*;
@@ -17,6 +12,9 @@ import org.apache.spark.SparkConf;
 import scala.Tuple2;
 import java.util.List;
 import java.util.Vector;
+import org.etosha.networks.LayerDescriptor;
+import org.etosha.networks.Link;
+import org.etosha.networks.LinkComparator;
 
 public class NetworkProfilerCC {
     
@@ -59,10 +57,10 @@ public class NetworkProfilerCC {
      */
     LayerDescriptor descriptor = new LayerDescriptor();
     int LAYER = 0;
-    descriptor.linkComparator = new LinkComparator( LAYER );
-    descriptor.linkType = CCLink.class;
-    descriptor.nodeType = CCNetNode.class;
-    descriptor.multiLinkLayerSelector = LAYER;
+    descriptor.setLinkComparator(new LinkComparator( LAYER ));
+    descriptor.setLinkType(CCLink.class);
+    descriptor.setNodeType(CCNetNode.class);
+    descriptor.setMultiLinkLayerSelector(LAYER);
     
     /**
      * 
@@ -93,7 +91,7 @@ public class NetworkProfilerCC {
         long time = System.currentTimeMillis();
         
         // Dump link-list for external processing 
-        String label = descriptor.linkType.getName();
+        String label = descriptor.getLinkType().getName();
         String fnOut = "/GITHUB/SparkNetworkCreator/data/out/" + label + "-net-SORTED-" + fn.getName() + "_" + time;
         
         File fileOut = new File(fnOut );
@@ -143,7 +141,7 @@ public class NetworkProfilerCC {
             Profiler pSNA = SNAProfiler.profileLocaly(
                     TS, 
                     fileOut.getAbsolutePath(), 
-                    "SNA_TS_LAYER=" + descriptor.multiLinkLayerSelector + "_TS=" + TS, 
+                    "SNA_TS_LAYER=" + descriptor.getMultiLinkLayerSelector() + "_TS=" + TS, 
                     linksALL );
             
             pSNA.storeImage( folderOut, 20 );

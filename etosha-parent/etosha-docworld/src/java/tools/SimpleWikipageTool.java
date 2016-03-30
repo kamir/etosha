@@ -1,10 +1,10 @@
 package tools;
 
 
-import data.io.adapter.HBaseTSAdapter;
-import data.io.adapter.HBaseWikiAdapter;
-import data.ts.TSDataWrapper;
-import data.wikipedia.dump.WikipediaNode;
+import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter;
+import org.apache.hadoopts.data.io.adapter.HBaseWikiAdapter;
+import org.apache.hadoopts.data.ts.TSDataWrapper;
+import org.apache.hadoopts.data.wikipedia.dump.WikipediaNode;
 import java.io.IOException;
 
 /*

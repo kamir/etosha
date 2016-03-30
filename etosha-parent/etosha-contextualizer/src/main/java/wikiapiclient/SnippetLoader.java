@@ -14,10 +14,10 @@ import java.io.IOException;
 
 public class SnippetLoader {
 
-    WikiORIGINAL wiki = null;
-    static SnippetLoader loader = null;
+    public WikiORIGINAL wiki = null;
+    public static SnippetLoader loader = null;
 
-    private SnippetLoader() {}
+    public SnippetLoader() {}
 
     public static SnippetLoader getTheLoader( WikiORIGINAL wikiServer ) {
         

@@ -17,11 +17,11 @@
  * - use plugable vocabularies and mappings
  * 
  **/
-package org.etosha.tools.na;
+package org.etosha.tools.profiler;
   
-import org.etosha.networks.profiler.MSTProfiler;
-import org.etosha.networks.profiler.Profiler;
-import org.etosha.networks.profiler.SNAProfiler;
+import org.etosha.tools.profiler.minimumspanningtree.MSTProfiler;
+import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.common.SNAProfiler;
 import java.io.File; 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -45,8 +45,8 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
-import org.etosha.networks.CCLink;
-import org.etosha.networks.CCNetNode;
+import org.etosha.networks.correlationnet.CCLink;
+import org.etosha.networks.correlationnet.CCNetNode;
 import org.etosha.networks.LayerDescriptor;
 import org.etosha.networks.Link;
 import org.etosha.networks.LinkComparator;

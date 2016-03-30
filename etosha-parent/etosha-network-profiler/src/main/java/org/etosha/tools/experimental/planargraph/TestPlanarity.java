@@ -1,4 +1,4 @@
-package org.etosha.tools.experimental.minimumspanningtree.test;
+package org.etosha.tools.experimental.planargraph;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -20,7 +20,7 @@ import javax.swing.JFileChooser;
  *
  * @author Max Bogue
  */
-public class TestPlanarityForEdgeList {
+public class TestPlanarity {
 
     /**
      * Set containing the symbol strings of length four that
@@ -43,12 +43,11 @@ public class TestPlanarityForEdgeList {
      */
     public static void main ( String[] args ) {
 
-        // SELECT AN EDGE LIST
         // JFileChooser-Objekt erstellen
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory( new File( "./input" ) );
         // Dialog zum Speichern von Dateien anzeigen
-        int i = chooser.showDialog(null, "Select edgelist");
+        int i = chooser.showDialog(null, "Select grpah");
 
         File f = chooser.getSelectedFile();   
         
@@ -59,16 +58,16 @@ public class TestPlanarityForEdgeList {
             Logger.getLogger(TestPlanarity.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        // NOW WE CAN CREATE A MPFG ...
+        
+        
         
         
         Graph<Integer> graph = readGraphFromFile( f.getAbsolutePath() );
-        
         Graph<Integer> cycle = (new GraphTraverser<Integer>( graph )).findCycle();
         System.out.println( testPlanarity( graph, cycle ) ? "planar" : "nonplanar" );
-        
     }
 
-    
     /**
      * Constructs a graph from the edges listed in a given file.
      *
@@ -92,7 +91,7 @@ public class TestPlanarityForEdgeList {
         }
         return graph;
     }
-    
+
     /**
      * Tests the planarity of a BICONNECTED graph.  Has to suppress warnings
      * because Java is silly and can't handle arrays of generics properly.
@@ -106,7 +105,6 @@ public class TestPlanarityForEdgeList {
         if ( graph.numEdges() > 3 * graph.numVertices() - 6 ) {
             return false;
         }
-        try {
         Set<Graph<T>> pieces = Graph.splitIntoPieces( graph, cycle );
         for ( Graph<T> piece : pieces ) {
             if ( !Graph.isPath( piece ) ) {     // Don't bother if the piece is a path.
@@ -205,11 +203,6 @@ public class TestPlanarityForEdgeList {
             }
         }
         return Graph.isBipartite( interlacement );
-        
-        }
-        catch( Exception ex) {
-            return false;
-        }
     }
 
     /**

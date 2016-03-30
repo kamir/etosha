@@ -6,7 +6,7 @@ import static admin.DocTabAdmin.colFamNameR;
 import admin.MailFactory;
 import com.cloudera.mailer.MailerTool;
 import com.cloudera.mailer.mails.ActionMail; 
-import data.io.adapter.ObjectEncoder;
+import org.apache.hadoopts.data.io.adapter.ObjectEncoder;
 import hadoop.cache.doc.HBaseDocWorld;
 import java.io.IOException;
 import java.util.Hashtable;

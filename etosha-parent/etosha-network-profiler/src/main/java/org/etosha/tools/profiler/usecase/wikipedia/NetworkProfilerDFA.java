@@ -1,21 +1,26 @@
 /**
- * 
  * The simple network creator loads link properties and defines a network layer
  * according to specific functional aspects, represented by correlation
- * or similarity measures, which represent the link properties.
+ * or similarity measures, which represent the link properties of a correlation
+ * network.
  *
  **/
-package org.etosha.networks;
+package org.etosha.tools.profiler.usecase.wikipedia;
   
-import org.etosha.networks.profiler.MSTProfiler;
-import org.etosha.networks.profiler.Profiler;
-import org.etosha.networks.profiler.SNAProfiler;
+import org.etosha.tools.profiler.minimumspanningtree.MSTProfiler;
+import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.common.SNAProfiler;
 import java.io.File; 
 import org.apache.spark.api.java.function.VoidFunction;
 import org.apache.spark.api.java.*;
 import org.apache.spark.SparkConf;
 import scala.Tuple2;
 import java.util.List;
+import org.etosha.networks.fluctuationnet.DFALink;
+import org.etosha.networks.fluctuationnet.DFANetNode;
+import org.etosha.networks.LayerDescriptor;
+import org.etosha.networks.Link;
+import org.etosha.networks.LinkComparator;
 
 public class NetworkProfilerDFA {
     
@@ -58,10 +63,10 @@ public class NetworkProfilerDFA {
      */
     LayerDescriptor descriptor = new LayerDescriptor();
     int LAYER = 2;
-    descriptor.linkComparator = new LinkComparator( LAYER );
-    descriptor.linkType = DFALink.class;
-    descriptor.nodeType = DFANetNode.class;
-    descriptor.multiLinkLayerSelector = LAYER;
+    descriptor.setLinkComparator(new LinkComparator( LAYER ));
+    descriptor.setLinkType(DFALink.class);
+    descriptor.setNodeType(DFANetNode.class);
+    descriptor.setMultiLinkLayerSelector(LAYER);
     
     /**
      * 
@@ -101,7 +106,7 @@ public class NetworkProfilerDFA {
         long time = System.currentTimeMillis();
         
         // Dump link-list for external processing 
-        String label = descriptor.linkType.getName();
+        String label = descriptor.getLinkType().getName();
         String fnOut = "/GITHUB/SparkNetworkCreator/data/out/" + label + "-net-SORTED-" + fn.getName() + "_" + time;
         
         File fileOut = new File(fnOut );
@@ -138,23 +143,32 @@ public class NetworkProfilerDFA {
             //
             // A Gephi based profiler.
             // 
-            // For diameter and cluster-coefficients 
+            // - calculates common network properties:
             //
-            Profiler pSNA = SNAProfiler.profileLocaly(
-                    TS, 
-                    fileOut.getAbsolutePath(), 
-                    "SNA_TS_LAYER=" + descriptor.multiLinkLayerSelector + "_TS=" + TS, 
-                    linksALL );
+            //     * diameter
+            //     * clustering-coefficients 
+            //
+            String label2 = "SNA_TS_LAYER=" + descriptor.getMultiLinkLayerSelector() + "_TS=" + TS;
+            Profiler pSNA = SNAProfiler.profileLocaly( TS, fileOut.getAbsolutePath(), label2, linksALL );
          
             System.out.println( "TS=" +  TS );
-            System.out.println( "   #e=" + pSNA.getNumberEdges() );
-            System.out.println( "   #n=" + pSNA.getNumberVertices());
-            System.out.println( "   #diameter    =" + pSNA.getDiameter());
-            System.out.println( "   #clustering  =" + pSNA.getGlobalClusterCoefficient());
+            System.out.println( "   #z_e               =" + pSNA.getNumberEdges() );
+            System.out.println( "   #z_v               =" + pSNA.getNumberVertices());
+            System.out.println( "   #diameter          =" + pSNA.getDiameter());
+            System.out.println( "   #clusteCoeffGlobal =" + pSNA.getGlobalClusterCoefficient());
 
-            //            pSNA.storeImage( folderOut, 20 );
-
+//==============================================================================
+//            
+// Store a pixnode incl. MetaData :
             
+            //            pSNA.storeImage( folderOut, 20 );
+            
+//==============================================================================
+//            
+// EXPERIMENTAL:
+// 
+//   *  more measures ...          
+//           
 //            System.out.println( "   #zClusters   =" + pSNA.getDiameter());
 //            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getMaxCLusterNrNodes() + ",e=" + pSNA.getMaxCLusterNrEdges() + ")" );
 //     

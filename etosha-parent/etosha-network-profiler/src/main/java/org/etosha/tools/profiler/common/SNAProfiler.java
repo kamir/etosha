@@ -1,9 +1,9 @@
-package org.etosha.networks.profiler;
+package org.etosha.tools.profiler.common;
 
 import com.carlschroedl.gephi.spanningtree.SpanningTree;
 import java.awt.Color;
 import java.io.BufferedWriter;
-import org.etosha.networks.DFALink;
+import org.etosha.networks.fluctuationnet.DFALink;
 import org.etosha.networks.Link;
 import java.io.File;
 import java.io.FileWriter;
@@ -11,6 +11,7 @@ import java.io.IOException;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import org.etosha.tools.profiler.Profiler;
 import org.gephi.data.attributes.api.AttributeColumn;
 import org.gephi.data.attributes.api.AttributeController;
 import org.gephi.data.attributes.api.AttributeModel;
