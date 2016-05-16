@@ -34,9 +34,11 @@ import edu.uci.ics.jung.algorithms.layout.TreeLayout;
 import edu.uci.ics.jung.algorithms.shortestpath.MinimumSpanningForest2;
 import edu.uci.ics.jung.graph.DelegateForest;
 import edu.uci.ics.jung.graph.DelegateTree;
+import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.Forest;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.UndirectedSparseGraph;
+import edu.uci.ics.jung.graph.UndirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.util.TestGraphs;
 import edu.uci.ics.jung.visualization.DefaultVisualizationModel;
 import edu.uci.ics.jung.visualization.GraphZoomScrollPane;
@@ -54,6 +56,7 @@ import edu.uci.ics.jung.visualization.picking.PickedState;
 import edu.uci.ics.jung.visualization.renderers.Renderer;
 import edu.uci.ics.jung.visualization.transform.MutableTransformer;
 import org.etosha.networks.Link;
+import org.gephi.graph.api.UndirectedGraph;
 import scala.Serializable;
 
 /**
@@ -110,33 +113,37 @@ public class MSTFrame extends JApplet implements Serializable {
 
     }
 
-    int edgeCount = 0; 
+    int edgeCount = 0;
     double TS = 0.5;
-    
+
     public void addLink(Link l, int LAYER) {
-        
+
         String s = l.getSource();
         String t = l.getTarget();
-        
+
         try {
 
-            if (  l.getWeight(LAYER) < TS ) return;
-        
+            if (l.getWeight(LAYER) < TS) {
+                return;
+            }
+
             // graph.addEdge( l.w[SCALE], s, t);
-            if ( !graph.containsVertex( s ) ) graph.addVertex( s );
-            if ( !graph.containsVertex( t ) ) graph.addVertex( t );
+            if (!graph.containsVertex(s)) {
+                graph.addVertex(s);
+            }
+            if (!graph.containsVertex(t)) {
+                graph.addVertex(t);
+            }
 
-            graph.addEdge( edgeCount, s, t);
-            
+            graph.addEdge(edgeCount, s, t);
+
             // System.out.println(edgeCount + " (" + l.getWeight(LAYER) +") - " + s + " - " + t );
-
             edgeCount++;
-            
-        }
-        catch(Exception ex) {
-            System.out.println("###ERROR### " + l.w[LAYER] + " - " + l.s + " - " + l.t );
+
+        } catch (Exception ex) {
+            System.out.println("###ERROR### " + l.w[LAYER] + " - " + l.s + " - " + l.t);
             ex.printStackTrace();
-    
+
         }
     }
 
@@ -307,9 +314,9 @@ public class MSTFrame extends JApplet implements Serializable {
         controls.add(zoomPanel);
         controls.add(modePanel);
         content.add(controls, BorderLayout.SOUTH);
-        
-        System.out.println( ">>> Edges:    " + graph.getEdgeCount() );
-        System.out.println( ">>> Vertices: " + graph.getVertexCount() );
+
+        System.out.println(">>> Edges:    " + graph.getEdgeCount());
+        System.out.println(">>> Vertices: " + graph.getVertexCount());
     }
 
     /**
@@ -334,14 +341,14 @@ public class MSTFrame extends JApplet implements Serializable {
     public static MSTFrame init(String l, double ts) {
 
         MSTFrame mstf = new MSTFrame();
-        
-        mstf.label = l + " (ts=" + ts + ")" ;
-        
+
+        mstf.label = l + " (ts=" + ts + ")";
+
         mstf.f = new JFrame(mstf.label);
         mstf.f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 
         mstf.TS = ts;
-        
+
         System.out.println(">>> TS: " + ts);
 
         mstf.graph = new UndirectedSparseGraph<String, Number>();
@@ -356,5 +363,60 @@ public class MSTFrame extends JApplet implements Serializable {
         f.setVisible(true);
 
     }
+
+    public static String[][] pairs = { { "a", "b", "3" }, {
+			"a", "c", "4" }, {
+			"a", "d", "5" }, {
+			"d", "c", "6" }, {
+			"d", "e", "7" }, {
+			"e", "f", "8" }, {
+			"f", "g", "9" }, {
+			"h", "i", "1" }
+	};
+    
+    /**
+     * The Gephi-Graph comes in and is transformed inot a JUNG-Graph" because we
+     * have to create an Minimum Spanning tree.
+     */
+    public void setGraph(UndirectedGraph graph) {
+        
+        boolean directed = false;
+   
+        UndirectedSparseMultigraph g = new UndirectedSparseMultigraph<String, Number>();
+
+		for (int i = 0; i < pairs.length; i++) {
+			String[] pair = pairs[i];
+			createEdge(g, pair[0], pair[1], Integer.parseInt(pair[2]));
+		}
+
+		// let's throw in a clique, too
+		for (int i = 1; i <= 10; i++) {
+			for (int j = i + 1; j <= 10; j++) {
+				String i1 = "c" + i;
+				String i2 = "c" + j;
+                g.addEdge(Math.pow(i+2,j), i1, i2);
+			}
+		}
+
+		// and, last, a partial clique
+		for (int i = 11; i <= 20; i++) {
+			for (int j = i + 1; j <= 20; j++) {
+				if (Math.random() > 0.6)
+					continue;
+				String i1 = "p" + i;
+				String i2 = "p" + j;
+                g.addEdge(Math.pow(i+2,j), i1, i2);
+			}
+		} 
+
+    }
+    
+    	private static void createEdge(
+			Graph<String, Number> g,
+			String v1Label,
+			String v2Label,
+			int weight) {
+			g.addEdge(new Double(Math.random()), v1Label, v2Label);
+	}
 
 }

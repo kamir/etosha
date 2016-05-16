@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.List;
 import javax.imageio.ImageIO;
 import org.etosha.tools.profiler.Profiler;
+import org.gephi.graph.api.UndirectedGraph;
 import org.openide.util.Exceptions;
 
 /**
@@ -37,6 +38,8 @@ public class MSTProfiler implements Profiler {
 
     /**
      * RUNS THE PROFILER LOCALLY ON A WORKSTATION ...
+     * Uses the MSTFrame which implements the logic of the MST analysis
+     * based on the Gephi-toolkit and an additional plugin for Gephi.
      *
      * @return AN INSTANCE OF PROFILER ...
      */
@@ -101,6 +104,11 @@ public class MSTProfiler implements Profiler {
         catch (Exception ex) {
             Exceptions.printStackTrace(ex);
         }
+    }
+
+    @Override
+    public UndirectedGraph getGraph() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

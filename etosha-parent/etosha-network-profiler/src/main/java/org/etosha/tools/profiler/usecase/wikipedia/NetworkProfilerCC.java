@@ -53,7 +53,6 @@ public class NetworkProfilerCC {
     
     /**
      * Define the graph metadata ...
-     * 
      */
     LayerDescriptor descriptor = new LayerDescriptor();
     int LAYER = 0;
@@ -92,9 +91,13 @@ public class NetworkProfilerCC {
         
         // Dump link-list for external processing 
         String label = descriptor.getLinkType().getName();
-        String fnOut = "/GITHUB/SparkNetworkCreator/data/out/" + label + "-net-SORTED-" + fn.getName() + "_" + time;
+        String fnOut = "/TSBASE/profiles/" + label + "-net-SORTED-" + fn.getName() + "_" + time;
         
         File fileOut = new File(fnOut );
+        
+        if ( !fileOut.getParentFile().exists() )
+            fileOut.getParentFile().mkdirs();
+        
         //File folderOut = new File( fileOut.getParentFile() + "/" + CCLink.getLinkTypeLabel() + "-" + time );
         File folderOut = new File( fileOut.getAbsolutePath() + "/" + CCLink.getLinkTypeLabel() + "-" + time );
         sortedLinks.saveAsTextFile( fnOut );

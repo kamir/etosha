@@ -50,6 +50,7 @@ import org.etosha.networks.correlationnet.CCNetNode;
 import org.etosha.networks.LayerDescriptor;
 import org.etosha.networks.Link;
 import org.etosha.networks.LinkComparator;
+import org.etosha.tools.profiler.minimumspanningtree.MSTFrame;
 import org.etosha.vocab.EtoshaNetworkVocabulary;
 import org.openide.util.Exceptions;
 
@@ -57,7 +58,7 @@ public class EtoshaReferenceProfiler {
     
  
        
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
       
     String modelToLoad = "./data/out/JENA/model.trdf";  
     
@@ -67,11 +68,13 @@ public class EtoshaReferenceProfiler {
      *   You simply clone the "etosha-data-calibration".
      * 
      */  
-    //String offset = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/generator";
-    String offset = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/gexf";
-    File folder = new File( offset );
+    //String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/generator";
+//    String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/gexf";
+    String BASE_FOLDER_GEXF = "/TSBASE/networks";
     
-    String outputFolder = "./data/TEMP/";
+    File folder = new File( BASE_FOLDER_GEXF );
+    
+    String outputFolder = "/TSBASE/RDF/";
 
     
     //--------------------------------------------------------------------------
@@ -84,6 +87,12 @@ public class EtoshaReferenceProfiler {
     // Iterate on files ... 
     //
     Vector<File> toProcess = new Vector<File>();
+    
+    /**
+     * 
+     * Create a file list ...
+     * 
+     */
     File[] list = folder.listFiles();
    
     for( File f : list ) {
@@ -104,10 +113,17 @@ public class EtoshaReferenceProfiler {
     SparkConf conf = new SparkConf().setAppName("Simple Graph Profiler (An Etosha Spark Application)");
     conf.setMaster("local");
     
+//    String fn1 = "/GITHUB/SparkNetworkCreator/target/SparkNetworkCreator-0.1.0-SNAPSHOT-jar-with-dependencies.jar";
+    String fn1 = "/GITHUB/SparkNetworkCreator/target/SparkNetworkCreator-0.1.0-SNAPSHOT-job.jar";
+    String fn2 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/gephi-toolkit.jar";
+    String fn3 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/a.jar";
+        
     JavaSparkContext sc = new JavaSparkContext(conf);
-    sc.addJar("/GITHUB/SparkNetworkCreator/target/SparkNetworkCreator-0.1.0-SNAPSHOT-jar-with-dependencies.jar");
-    sc.addJar("/Users/kamir/NetBeansProjects/PlanarityTester-master/dist/lib/gephi-toolkit.jar" );
-    sc.addJar("/Users/kamir/NetBeansProjects/PlanarityTester-master/dist/lib/a.jar" );
+
+    checkAndAddJAR( fn1, sc );
+    checkAndAddJAR( fn2, sc );
+    checkAndAddJAR( fn3, sc );
+    
     
     /***************************************************************************
      * 
@@ -123,6 +139,7 @@ public class EtoshaReferenceProfiler {
     
     long TIME = System.currentTimeMillis();
     /**
+     * 
      *   Now we can iterate on a set of network files.
      */
     for( File fn : toProcess ) {
@@ -158,12 +175,16 @@ public class EtoshaReferenceProfiler {
             // For plotting the MST
             // 
             
-            /***
-             * 
-             * This kind of MST works not with a weight, so it may not produce
-             * repeatable results.
-             */
-
+            
+ 
+            
+            
+//            /***
+//             * 
+//             * This kind of MST works not with a weight, so it may not produce
+//             * repeatable results.
+//             */
+//
 //            Profiler pMST = MSTProfiler.profileLocaly(
 //                    TS, 
 //                    fileOut.getAbsolutePath(), 
@@ -186,8 +207,7 @@ public class EtoshaReferenceProfiler {
                     fileOut.getAbsolutePath(),  // output location for profile
                     s );  // label
             
-            // pSNA.storeImage( new File( outputFolder ), 5 );
-         
+            pSNA.storeImage( new File( outputFolder ), 5 );
             
             storeTriple( s, EtoshaNetworkVocabulary.TS, TS+"", "[New Threshold]\n" );
             storeTriple( s, EtoshaNetworkVocabulary.zEdges, pSNA.getNumberEdges() + "", "     " );
@@ -195,12 +215,29 @@ public class EtoshaReferenceProfiler {
             storeTriple( s, EtoshaNetworkVocabulary.diameter, pSNA.getDiameter() + "", "     " );
             storeTriple( s, EtoshaNetworkVocabulary.globalClusterCoefficient, pSNA.getGlobalClusterCoefficient() + "", "     " );
             
-//            System.out.println( "   #zClusters   =" + pSNA.getDiameter());
-//            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getMaxCLusterNrNodes() + ",e=" + pSNA.getMaxCLusterNrEdges() + ")" );
-        }
+            
+            //##################################################################
+
+            
+//            MSTFrame f = new MSTFrame();
+//            f.setGraph( pSNA.getGraph() );
+            
+
+
+
+            //##################################################################
+            
+            
+            
+            
+            
+            System.out.println( "   #zClusters   =" + pSNA.getDiameter());
+            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getMaxCLusterNrNodes() + ",e=" + pSNA.getMaxCLusterNrEdges() + ")" );
+        }  // END LOOP LEVELS
         
-        
-        try {
+    } // END LOOP FILES
+    
+            try {
 
             FileOutputStream out1 = new FileOutputStream( "./data/out/JENA/model.json-ld" );
             model.write(out1, "JSON-LD");
@@ -222,8 +259,6 @@ public class EtoshaReferenceProfiler {
             Exceptions.printStackTrace(ex);
         }
     
-    }
-    
   }
   
   static Model model = ModelFactory.createDefaultModel() ;
@@ -236,5 +271,15 @@ public class EtoshaReferenceProfiler {
         
         System.out.println( info + "=>(" + p + "=" + o + ")" );
   }
+
+    private static void checkAndAddJAR(String fn1, JavaSparkContext sc) throws Exception {
+        File f = new File( fn1 );
+        
+        if ( f.exists() )
+                sc.addJar( fn1 ); 
+        else 
+            throw new Exception( fn1 + " ... is a required file for SC.");
+    
+    }
 }
 

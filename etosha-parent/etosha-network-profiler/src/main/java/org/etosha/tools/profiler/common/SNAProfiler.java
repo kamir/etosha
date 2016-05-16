@@ -1,6 +1,7 @@
 package org.etosha.tools.profiler.common;
 
 import com.carlschroedl.gephi.spanningtree.SpanningTree;
+import edu.uci.ics.jung.graph.Graph;
 import java.awt.Color;
 import java.io.BufferedWriter;
 import org.etosha.networks.fluctuationnet.DFALink;
@@ -437,6 +438,12 @@ public class SNAProfiler implements Profiler {
             System.out.println(" col_" + i + " : " + col);
             i++;
         }
+    }
+
+    public UndirectedGraph getGraph() {
+        
+        return graphModel.getUndirectedGraph();
+    
     }
 
 }

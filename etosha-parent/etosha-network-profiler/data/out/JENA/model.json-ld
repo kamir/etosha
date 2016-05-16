@@ -167,26 +167,446 @@
     "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
     "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "800",
     "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "200"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_10_3-101.10.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.49816331114080215",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5253",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "102"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_11_3-101.11.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_12_3-101.12.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_13_3-101.13.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_14_3-101.14.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_1_3-101.1.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_10_3-101.10.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.49816331114080215",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5253",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "102"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_11_3-101.11.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_12_3-101.12.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_13_3-101.13.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_14_3-101.14.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_2_1_3-101.1.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_10_3-101.10.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.49816331114080215",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5253",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "102"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_11_3-101.11.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_12_3-101.12.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_13_3-101.13.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_14_3-101.14.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_1_3-101.1.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_10_3-101.10.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.49816331114080215",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5253",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "102"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_11_3-101.11.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_12_3-101.12.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_13_3-101.13.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_14_3-101.14.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_1_3-101.1.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_0_3-101.0.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_2_3-101.2.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_3_3-101.3.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_4_3-101.4.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_5_3-101.5.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_6_3-101.6.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_7_3-101.7.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_8_3-101.8.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_9_3-101.9.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_0_3-101.0.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_2_3-101.2.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_3_3-101.3.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_4_3-101.4.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_5_3-101.5.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_6_3-101.6.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_7_3-101.7.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_8_3-101.8.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_9_3-101.9.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_0_3-101.0.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_2_3-101.2.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_3_3-101.3.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_4_3-101.4.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_5_3-101.5.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_6_3-101.6.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_7_3-101.7.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_8_3-101.8.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_9_3-101.9.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_0_3-101.0.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_2_3-101.2.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_3_3-101.3.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_4_3-101.4.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_5_3-101.5.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_6_3-101.6.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_7_3-101.7.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_8_3-101.8.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_2_9_3-101.9.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.4981979784090086",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "5356",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
   } ],
   "@context" : {
-    "TS" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#TS",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "ZEDGES" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "ZNODES" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES",
+    "CLUSTERING_GLOBAL" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "DIAMETER" : {
       "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "CLUSTERING_GLOBAL" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL",
+    "ZNODES" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ZEDGES" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TS" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#TS",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }
