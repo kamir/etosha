@@ -1,30 +1,13 @@
-/*
- * Copyright 2015 The Apache Software Foundation.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package org.etosha.sandbox.triplifier;
 
 //      Learn from:  
-// 
 // 
 //      http://www.l3s.de/~siberski/bibtex2rdf/
 // 
 //      to make a tool, which allows triplification of
 //      data in a SOLR index defined by a given SCHEMA.
 // 
-// We do a "SOLR SCHEMA to TRIPLE" converter here.
-
+//      We implement a "SOLR SCHEMA to TRIPLE" converter here.
 
 import com.hp.hpl.jena.rdf.model.*;
 
@@ -150,7 +133,8 @@ public class TestIndexCreator {
         m.write( System.out, "N-TRIPLES" );
         
         
-      } catch (Exception e) {
+      } 
+      catch (Exception e) {
         System.out.println("Error searching " + s + " : " + e.getMessage());
       }
     }

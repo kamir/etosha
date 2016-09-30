@@ -12,12 +12,11 @@
         <servlet-class>servlets.RequestReviewServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>HadoopTripleCache</servlet-name>
-        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
-        <load-on-startup>1</load-on-startup>
+        <servlet-name>ImportItemsFromGD</servlet-name>
+        <servlet-class>servlets.ImportItemsFromGD</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>HBaseDocWorld</servlet-name>
+        <servlet-name>HadoopTripleCache</servlet-name>
         <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -27,8 +26,9 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
-        <servlet-name>ImportItemsFromGD</servlet-name>
-        <servlet-class>servlets.ImportItemsFromGD</servlet-class>
+        <servlet-name>HBaseDocWorld</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>ItemSaveServlet</servlet-name>
@@ -39,20 +39,20 @@
         <url-pattern>/requestReview</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>HadoopTripleCache</servlet-name>
-        <url-pattern>/HadoopTripleCache</url-pattern>
+        <servlet-name>ImportItemsFromGD</servlet-name>
+        <url-pattern>/importItemsFromGD</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>HBaseDocWorld</servlet-name>
-        <url-pattern>/HBaseDocWorld</url-pattern>
+        <servlet-name>HadoopTripleCache</servlet-name>
+        <url-pattern>/HadoopTripleCache</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>TSCache.v3</servlet-name>
         <url-pattern>/TSCache.v3</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ImportItemsFromGD</servlet-name>
-        <url-pattern>/importItemsFromGD</url-pattern>
+        <servlet-name>HBaseDocWorld</servlet-name>
+        <url-pattern>/HBaseDocWorld</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

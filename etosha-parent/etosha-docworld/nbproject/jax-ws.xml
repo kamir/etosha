@@ -48,11 +48,11 @@ made subject to such option by the copyright holder.
     <service name="HadoopTripleCache">
       <implementation-class>hadoop.cache.triples.HadoopTripleCache</implementation-class>
     </service>
-    <service name="HBaseDocWorld">
-      <implementation-class>hadoop.cache.doc.HBaseDocWorld</implementation-class>
-    </service>
     <service name="TSCache.v3">
       <implementation-class>hadoop.cache.ts.HBaseTimeSeriesCache</implementation-class>
+    </service>
+    <service name="HBaseDocWorld">
+      <implementation-class>hadoop.cache.doc.HBaseDocWorld</implementation-class>
     </service>
   </services>
   <clients/>

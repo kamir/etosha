@@ -4,7 +4,7 @@
     <groupId>org.etosha</groupId>
     <artifactId>etosha-core</artifactId>
     <packaging>jar</packaging>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
     
     <name>etosha-core</name>
     
@@ -76,11 +76,6 @@
         </dependency>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-hdfs</artifactId>
-            <version>${hadoopclient.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
             <version>${hadoopclient.version}</version>
         </dependency>
@@ -99,11 +94,7 @@
             <artifactId>commons-lang</artifactId>
             <version>2.5</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.hadoop</groupId>
-            <artifactId>hadoop-mapreduce-client-core</artifactId>
-            <version>${hadoopclient.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-auth</artifactId>
@@ -129,12 +120,6 @@
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.4</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.avro</groupId>
@@ -205,14 +190,14 @@
         <dependency>
             <groupId>org.etosha</groupId>
             <artifactId>etosha-contextualizer</artifactId>
-            <version>0.7.0-SNAPSHOT</version>
+            <version>0.9.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>org.etosha</groupId>
             <artifactId>etosha-model</artifactId>
-            <version>0.7.0-SNAPSHOT</version>
+            <version>0.9.0-SNAPSHOT</version>
             <type>jar</type>
         </dependency>
 
@@ -471,6 +456,12 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-dependency-plugin</artifactId>
                     <version>2.9</version>
+                    <configuration>
+                        <skip>${etosha.maven.dependency.plugin.skip}</skip>
+                        <failOnWarning>true</failOnWarning>
+                        <ignoreNonCompile>true</ignoreNonCompile>
+                    </configuration>
+                    
                     <executions>
                         <execution>
                             <id>copy-dependencies</id>
@@ -485,8 +476,23 @@
                                 <overWriteIfNewer>true</overWriteIfNewer>
                             </configuration>
                         </execution>
+                        
+                        <execution>
+                            <id>default</id>
+                            <phase>process-test-classes</phase>
+                            <goals>
+                                <goal>analyze-only</goal>
+                                <goal>analyze-duplicate</goal>
+                                <goal>analyze-dep-mgt</goal>
+                            </goals>
+                        </execution>
+                        
                     </executions>
                 </plugin>
+                
+                
+                
+                
                 <plugin>
                     <groupId>org.apache.avro</groupId>
                     <artifactId>avro-maven-plugin</artifactId>
@@ -512,24 +518,7 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-shade-plugin</artifactId>
-                    <version>2.0</version>
-                    <executions>
-                        <execution>
-                            <phase>package</phase>
-                            <goals>
-                                <goal>shade</goal>
-                            </goals>
-                            <configuration>
-                                <transformers>
-                                    <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
-                                </transformers>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
+
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jdepend-maven-plugin</artifactId>
@@ -554,27 +543,7 @@
                         </execution>
                     </executions>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-dependency-plugin</artifactId>
-                    <version>2.8</version>
-                    <configuration>
-                        <skip>${etosha.maven.dependency.plugin.skip}</skip>
-                        <failOnWarning>true</failOnWarning>
-                        <ignoreNonCompile>true</ignoreNonCompile>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <id>default</id>
-                            <phase>process-test-classes</phase>
-                            <goals>
-                                <goal>analyze-only</goal>
-                                <goal>analyze-duplicate</goal>
-                                <goal>analyze-dep-mgt</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+
                 <plugin>
                     <groupId>com.ning.maven.plugins</groupId>
                     <artifactId>maven-duplicate-finder-plugin</artifactId>
@@ -711,11 +680,27 @@
                                 <mainClass>org.etosha.tools.admin.ContextLoggerTool</mainClass>
                             </manifest>
                         </archive>
-                        <descriptorRefs>
-                            <descriptorRef>jar-with-dependencies</descriptorRef>
-                        </descriptorRefs>
+                        <!--descriptorRefs>
+                            <descriptorRef>jar-with-dependencies-filtered</descriptorRef>
+                        </descriptorRefs-->
+                        <descriptor>src/assembly/fat.xml</descriptor>
+                        
+                        
                     </configuration>
+                    <executions>
+                        <execution>
+                            <id>create-archive</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>single</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    
                 </plugin>
+                
+                
+                
                 <!--plugin>
                   <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-assembly-plugin</artifactId>
@@ -752,6 +737,9 @@
                     </execution>
                   </executions>
                 </plugin-->
+                
+                
+                
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
@@ -772,15 +760,6 @@
                             </goals>
                         </execution>
                     </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.0</version>
-                    <configuration>
-                        <source>${project.build.targetJdk}</source>
-                        <target>${project.build.targetJdk}</target>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -977,9 +956,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>2.0</version>
+                    <version>2.4.3</version>
                     <configuration>
-                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                        <!--shadedArtifactAttached>true</shadedArtifactAttached-->
+       		            <!--finalName>${project.artifactId}-${project.version}-uber</finalName-->
                     </configuration>
                     <executions>
                         <execution>
@@ -988,6 +968,7 @@
                                 <goal>shade</goal>
                             </goals>
                             <configuration>
+    
                                 <filters>
                                     <filter>
                                         <artifact>*:*</artifact>
@@ -995,8 +976,8 @@
                                             <exclude>META-INF/*.SF</exclude>
                                             <exclude>META-INF/*.DSA</exclude>
                                             <exclude>META-INF/*.RSA</exclude>
-                                            <exclude>META-INF/LICENSE*</exclude>
-                                            <exclude>license/*</exclude>
+                                            <!--exclude>META-INF/LICENSE*</exclude-->
+                                            <exclude>META-INF/license*</exclude>
                                         </excludes>
                                     </filter>
                                 </filters>
@@ -1005,6 +986,8 @@
                     </executions>
                 </plugin>
   
+  
+   
   
                 <plugin>
                     <groupId>org.apache.rat</groupId>
@@ -1034,9 +1017,7 @@
                             <exclude>*.patch</exclude>
                             <exclude>.idea/**</exclude>
                             <exclude>**/*.iml</exclude>
-                            <exclude>**/*.ipr</exclude>
-                            <!-- test resources (for Giraph on YARN profile) -->
-                            <exclude>**/test/resources/**</exclude>
+                            <exclude>**/*.ipr</exclude>  
                         </excludes>
                     </configuration>
                 </plugin>
@@ -1083,7 +1064,7 @@
                 <artifactId>jdepend-maven-plugin</artifactId>
                 <version>2.0-beta-2</version>
             </plugin>
-            <plugin>
+            <!--plugin>
                 <groupId>com.github.koraktor</groupId>
                 <artifactId>mavanagaiata</artifactId>
             </plugin>
@@ -1102,7 +1083,7 @@
             <plugin>
                 <groupId>com.ning.maven.plugins</groupId>
                 <artifactId>maven-duplicate-finder-plugin</artifactId>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
     <dependencyManagement>
@@ -1110,11 +1091,6 @@
             <!-- compile dependencies. sorted lexicographically. -->
         </dependencies>
     </dependencyManagement>
-    <!--
-    <modules>
-    <module>etosha-core</module>
-    <module>etosha-examples</module>
-    <module>etosha-dist</module>
-    </modules>
-    -->
+
+
 </project>

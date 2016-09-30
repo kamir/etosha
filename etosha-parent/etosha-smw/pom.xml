@@ -7,14 +7,14 @@
   <parent>
     <groupId>org.etosha</groupId>
     <artifactId>etosha-parent</artifactId>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
   </parent>
   <artifactId>etosha-smw</artifactId>
   <packaging>jar</packaging>
   <name>Etosha Semantik Media Wiki API</name>
   
     <properties>
-      <etosha.version>0.7.0-SNAPSHOT</etosha.version>
+      <etosha.version>0.9.0-SNAPSHOT</etosha.version>
   </properties>   
   
   <dependencies>

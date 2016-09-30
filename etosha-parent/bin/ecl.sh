@@ -8,9 +8,10 @@
 
 MAIN=org.etosha.tools.admin.ContextLoggerTool
 
-#echo "> MAIN:  $MAIN"
-#echo "> arg1:  $1"
-#echo "> arg2:  $2"
-#echo ">"
+echo "> MAIN-Class:  $MAIN"
+echo "> arg1:  $1"
+echo "> arg2:  $2"
+echo ">"
 
-hadoop jar /home/training/workspace/etosha/etosha-parent/etosha-core/target/Etosha-Core-0.2.0-SNAPSHOT-jar-with-dependencies.jar $1 $2
+sudo hadoop jar /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/target/etosha-core-0.9.0-SNAPSHOT-jar-with-dependencies.jar $1 $2
+

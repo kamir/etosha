@@ -1,18 +1,3 @@
-/*
- * Copyright 2015 The Apache Software Foundation.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package org.etosha.sandbox.triplifier;
 
 import com.hp.hpl.jena.rdf.model.Model;
@@ -24,14 +9,16 @@ import org.apache.lucene.index.IndexableField;
 /**
  * How is a Triplifier working?
  * 
- * We produce SPOs. 
+ * We produce multiple SPOs from some input. 
  * 
- * The simple assumption is, that a query gives a context or the querie
+ * One simple assumption is, that a SOLR query gives a context or the querie
  * is at least related to a context. 
  * 
- * Therefore we define a context by a context-identifier and a query by 
- * query identifier. The query links the set of entitis which are found by it
- * to the context. So we use the "Query-In-Context-ID" to define a named graph,
+ * Therefore we define a context by a context-identifier and a query by a 
+ * query identifier. 
+ * 
+ * The query links the set of entitis which are found by it to this context. 
+ * So we use the "Query-In-Context-ID" to define a named graph,
  * which conatins all the elements received by the query.
  * 
  * Each element is now triplified based on a atrribute => PREDICATE table.
@@ -73,11 +60,14 @@ import org.apache.lucene.index.IndexableField;
     ==> All the single field attributes can be processed like this.
 
        We maintain an attribute PROPERTY table to represent the relations.
-       If a relation does not exist in our ontology we must built it.
+       If a relation does not exist in our ontology we must built it maually.
     
     Multivalue fields are inspected recursively.
     
- * 
+     
+     
+    
+ *
  * @author kamir
  */
 class Triplifier {
@@ -108,13 +98,10 @@ class Triplifier {
                m.add( s, p, o );
            
                // Iterate on multi-value fields
+               System.out.println("MISSING FEATURE: Iterate on multi-value fields");
            }
            
         }
-        
-        
-            
-         
             
     }
     

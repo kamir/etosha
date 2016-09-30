@@ -3,6 +3,8 @@
   <!--endpoint implementation="hadoop.cache.triples.HadoopTripleCache" name="HadoopTripleCache" url-pattern="/HadoopTripleCache"/-->
   <!--endpoint implementation="hadoop.cache.ts.HBaseTimeSeriesCache" name="TSCache.v3" url-pattern="/TSCache.v3"/-->
   <!--endpoint implementation="hadoop.cache.triples.HadoopTripleCache" name="HadoopTripleCache" url-pattern="/HadoopTripleCache"/-->
-  <endpoint implementation="hadoop.cache.doc.HBaseDocWorld" name="HBaseDocWorld" url-pattern="/HBaseDocWorld"/>
   <!--endpoint implementation="hadoop.cache.ts.HBaseTimeSeriesCache" name="TSCache.v3" url-pattern="/TSCache.v3"/-->
+  <endpoint implementation="hadoop.cache.triples.HadoopTripleCache" name="HadoopTripleCache" url-pattern="/HadoopTripleCache"/>
+  <endpoint implementation="hadoop.cache.ts.HBaseTimeSeriesCache" name="TSCache.v3" url-pattern="/TSCache.v3"/>
+  <endpoint implementation="hadoop.cache.doc.HBaseDocWorld" name="HBaseDocWorld" url-pattern="/HBaseDocWorld"/>
 </endpoints>

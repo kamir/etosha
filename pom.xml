@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.etosha</groupId>
     <artifactId>etosha-umbrella</artifactId>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.9.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Etosha UMBRELLA Project</name>
     
@@ -12,7 +12,6 @@
         <project.inceptionYear>2013</project.inceptionYear>
     </properties>
     
-
     <modules>
         <module>etosha-parent</module>
     </modules>
@@ -55,13 +54,7 @@
             <organization>Cloudera</organization>
             <organizationUrl>http://www.cloudera.com</organizationUrl>
         </developer>
-        <developer>
-            <id>abdux</id>
-            <name>Eric Tessenow</name>
-            <email>eric@semanpix.de</email>
-            <timezone>0</timezone>
-            <organization>University of Leeds, UK</organization>
-        </developer>
+
     </developers>
     
     <distributionManagement>
@@ -71,7 +64,6 @@
             <url>file://${basedir}/../target/dist/site/etosha/etosha-umbrella/</url>
         </site>
     </distributionManagement>
-    
     
     <build>
         <pluginManagement>
