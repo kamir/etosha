@@ -49,7 +49,7 @@ public class ImageToWikiUploader {
     public static EtoshaContextLogger clt = null;
     public static Configuration cfg = null;
     
-    public static String _importImageToNewPage(File image, Properties props ) throws LoginException, IOException, AWTException {
+    public static String importImageToNewPage(File image, Properties props ) throws LoginException, IOException, AWTException {
 
         File f = image;
   

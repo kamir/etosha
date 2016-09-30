@@ -114,7 +114,7 @@ public class SemanpixImageUploader {
                     String md = sp.getMetaData(url);
                     Properties props = sp.getMetaDataAsProperties(url);
 
-                    String result = ImageToWikiUploader._importImageToNewPage(file, props);
+                    String result = ImageToWikiUploader.importImageToNewPage(file, props);
 
                     System.out.println(result);
 

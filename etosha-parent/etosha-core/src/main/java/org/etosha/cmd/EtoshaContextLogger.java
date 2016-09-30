@@ -40,7 +40,7 @@ import org.etosha.tools.gui.NoteTool;
  */
 public class EtoshaContextLogger extends Configured implements Tool {
 
-    public static String VERSION = "v0.7.0";
+    public static String VERSION = "v0.9.0";
 
     public static boolean absoluteCFG = true;
 
@@ -358,6 +358,7 @@ public class EtoshaContextLogger extends Configured implements Tool {
         }
 
         String cmd = ReadCMD.read("CMD", "list");
+        
         if (cmd.equals("exit")) {
             System.exit(exitCode);
         }
