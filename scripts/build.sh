@@ -1,7 +1,23 @@
-#mvn -Phadoop_2 clean compile install assembly:single
-#ecl
+ #!/bin/sh
 
-ssh training@54.195.198.28 sudo mkdir /home/training/etosha
-ssh training@54.195.198.28 sudo mkdir /home/training/etosha/bin
+#-------------------------------------------------------------------------------
+#  Prep the target environment
+#-------------------------------------------------------------------------------
+WSHOST=topedo
+USER=root
+
+#-------------------------------------------------------------------------------
+# Build the Etosha toolbox ...
+#-------------------------------------------------------------------------------
+
+#mvn -Phadoop_2 clean compile install assembly:single
+mvn clean compile install package assembly:single
+
+ssh $USER@WSHOST sudo mkdir /home/$USER/etosha
+ssh $USER@WSHOST sudo mkdir /home/$USER/etosha
+ssh $USER@WSHOST sudo mkdir /etc/etosha
+
+
+
 
 
