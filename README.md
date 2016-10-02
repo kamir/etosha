@@ -4,8 +4,8 @@ Welcome to Etosha!
 
 Etosha aims on building a bridge between the Big-Data and Linked-Data domains.
 
-> A global "Dataset-Graph" is our goal. Global and like in Wikipedia, or enterprise ready
-spanning multiple departments or institutions. 
+> A global "Dataset-Graph" is our goal, global like Wikipedia, or an enterprise wide metadata graph which  
+spans multiple departments or institutions. 
 
 We create tools for contextualization, metadata extraction, and metadata integration. 
 
