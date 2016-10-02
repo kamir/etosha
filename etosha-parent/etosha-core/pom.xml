@@ -677,7 +677,7 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>org.etosha.tools.admin.ContextLoggerTool</mainClass>
+                                <mainClass>org.etosha.cmd.EtoshaContextLogger</mainClass>
                             </manifest>
                         </archive>
                         <!--descriptorRefs>
