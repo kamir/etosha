@@ -13,8 +13,8 @@ cd ..
 cd etosha-parent
 mvn clean compile install package assembly:single
 
-cp ./../etc/etosha-site.xml /home/$USER/etc/etosha/etosha-site.xml
-cp ./../etc/etosha-site.xml /etc/etosha/etosha-site.xml
+cp ./../etc/smw-site.xml /home/$USER/etc/etosha/smw-site.xml
+cp ./../etc/smw-site.xml /etc/etosha/smw-site.xml
 
 cd /usr/sbin
 sudo ln -s /home/cloudera/workspace/etosha/etosha-parent/bin/ecl.sh ecl
