@@ -4,6 +4,7 @@
 # Prepare the Etosha project after cloning from Github
 #-------------------------------------------------------------------------------
 
+rm -r bootstrap
 mkdir bootstrap
 
 cd bootstrap
@@ -13,13 +14,13 @@ cd bootstrap
 #
 #   Note: => change the parameters: 
 #    
-#                 -Durl=file:///home/cloudera/MorphMiner/lib
+#                 -Durl=file:///home/cloudera/workspace/etosha/lib
 #                 -Dfile=lib/json-lib.jar
 #
 #            to a location which contains                   
 #-------------------------------------------------------------------------------
-mvn install:install-file -Durl=file:///home/cloudera/MorphMiner/lib -Dfile=lib/sshxcute-1.0.jar -DgroupId=net.neoremind.sshxcute -DartifactId=sshxcute -Dpackaging=jar -Dversion=1.0
-mvn install:install-file -Durl=file:///home/cloudera/MorphMiner/lib -Dfile=lib/json-lib.jar -DgroupId=net.sf.json-lib -DartifactId=json-lib -Dpackaging=jar -Dversion=2.4
+mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/lib -Dfile=/home/cloudera/workspace/etosha/lib/sshxcute-1.0.jar -DgroupId=net.neoremind.sshxcute -DartifactId=sshxcute -Dpackaging=jar -Dversion=1.0
+mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/lib -Dfile=/home/cloudera/workspace/etosha/lib/json-lib.jar -DgroupId=net.sf.json-lib -DartifactId=json-lib -Dpackaging=jar -Dversion=2.4
 
 #-------------------
 #
@@ -52,6 +53,11 @@ mvn install:install-file -Durl=file:///home/cloudera/MorphMiner/lib -Dfile=lib/j
 sudo yum install gnuplot
 sudo yum install wget
 sudo yum install ruby
+
+# go home
+#
+cd ..
+
 
 
 
