@@ -23,9 +23,4 @@ Collecting data and availability of processing resources became mainstream durin
 Communication is the key for success in general and communication tools are widely accepted but there is an obvious lag of standards which allow the growth of a data-set network – comparable to Facebook’s social-graph or the CrunchBase business-graph – allows context embedding in a collaborative environment. Such a graph allows cluster spanning dataset discovery and a public global data catalog, which is considered to be the driving force towards a new era in data analysis and data driven business.
 
 The Etosha-Graph will be built to arrange, visualize, filter and share dataset context information using a class of ontologies described as DOAx files. Etosha follows the path, shown by the DOAP project already years ago and applies the concept of interlinked project-life cycle management to context sensitive dataset life cycle management.
-
-++TODO++
-
-The POM-file in the top-level is building the Etosha-Parcel for easy deployment via CM.
-
-All relevant artifacts have to be copied into the parcel directory. 
+ 
