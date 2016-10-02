@@ -3,20 +3,28 @@
 #-------------------------------------------------------------------------------
 #  Prep the target environment
 #-------------------------------------------------------------------------------
-WSHOST=topedo
-USER=root
+WSHOST=127.0.0.1
+USER=cloudera
 
 #-------------------------------------------------------------------------------
 # Build the Etosha toolbox ...
 #-------------------------------------------------------------------------------
-
-#mvn -Phadoop_2 clean compile install assembly:single
+cd ..
+cd etosha-parent
 mvn clean compile install package assembly:single
 
+
+#-------------------------------------------------------------------------------
+# deploy the Etosha CLI ...
+#-------------------------------------------------------------------------------
 ssh $USER@WSHOST sudo mkdir /home/$USER/etosha
-ssh $USER@WSHOST sudo mkdir /home/$USER/etosha
+ssh $USER@WSHOST sudo mkdir /home/$USER/etosha/bin
 ssh $USER@WSHOST sudo mkdir /etc/etosha
 
+# scp etosha-site.xml
+# scp UBER_JAR
+# scp script
+ 
 
 
 
