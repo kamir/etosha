@@ -9,30 +9,29 @@ USER=cloudera
 #-------------------------------------------------------------------------------
 # Build the Etosha toolbox ...
 #-------------------------------------------------------------------------------
-cd ..
-cd etosha-parent
+
+ cd ..
  
 JAVA_HOME=/opt/jdk1.8.0_101
 export JAVA_HOME
  
 mvn clean compile install package assembly:single
 
-cp ./../etc/smw-site.xml /home/$USER/etc/etosha/smw-site.xml
-cp ./../etc/smw-site.xml /etc/etosha/smw-site.xml
+mkdir /home/$USER/etc
+mkdir /home/$USER/etc/etosha
+ 
+cp etc/smw-site.xml /home/$USER/etc/etosha/smw-site.xml
+cp etc/smw-site.xml /etc/etosha/smw-site.xml
 
 cd /usr/sbin
 sudo ln -s /home/cloudera/workspace/etosha/etosha-parent/bin/ecl.sh ecl
 sudo chmod 777 ecl
 
-#-------------------------------------------------------------------------------
-# deploy the Etosha CLI ...
-#-------------------------------------------------------------------------------
-#ssh $USER@WSHOST sudo mkdir /home/$USER/etc
-#ssh $USER@WSHOST sudo mkdir /home/$USER/etc/etosha 
-#ssh $USER@WSHOST sudo mkdir /etc/etosha
+echo "=> replace the password in file:   /home/$USER/etc/etosha/smw-site.xml   to login to SMW."
 
-echo "=> replace the password to login to SMW."
 echo "=> set JAVA_HOME to Java 8."
+echo $JAVA_HOME
+
 
 
 
