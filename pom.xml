@@ -88,7 +88,7 @@
                         <appendAssemblyId>true</appendAssemblyId>
                         <descriptors>
                             <!--descriptor>assembly_etosha_parcel.xml</descriptor-->
-                            <descriptor>assembly_etcs_parcel.xml</descriptor>
+                            <descriptor>assembly/assembly_etcs_parcel.xml</descriptor>
                         </descriptors>
                     </configuration>
                     <executions>
