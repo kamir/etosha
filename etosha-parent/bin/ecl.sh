@@ -12,5 +12,5 @@ echo "> MAIN-Class:  $MAIN"
 echo "> arg1:  $1"
 echo "> arg2:  $2"
 
-sudo hadoop jar /home/cloudera/workspace/etosha/etosha-parent/etosha-core/target/etosha-core-0.9.0-SNAPSHOT-jar-with-dependencies-filtered2.jar $1 $2
+sudo hadoop jar /home/cloudera/workspace/etosha/etosha-parent/etosha-core/target/etosha-core-0.9.0-SNAPSHOT-jar-with-dependencies-filtered.jar $1 $2
 

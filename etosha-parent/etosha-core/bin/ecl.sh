@@ -7,7 +7,7 @@
 #
 
 ETOSHA_PATH=/home/cloudera/workspace/etosha/etosha-parent/etosha-core/target/
-UBER_JAR=etosha-core-0.9.0-SNAPSHOT-shaded.jar
+UBER_JAR=etosha-core-0.9.0-SNAPSHOT-jar-with-dependencies-filtered.jar
 
 MAIN=org.etosha.cmd.EtoshaContextLogger
 
