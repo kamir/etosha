@@ -1,23 +1,14 @@
- #!/bin/sh
+#!/bin/sh
  
 #-------------------------------------------------------------------------------
 # Prepare the Etosha project after cloning from Github
 #-------------------------------------------------------------------------------
 
-rm -r bootstrap
-mkdir bootstrap
+cd ..
 
-cd bootstrap
-
+git lfs pull
 #
-# install libraries from MorphMiner2 project into the local mvn-repo
-#
-#   Note: => change the parameters: 
-#    
-#                 -Durl=file:///home/cloudera/workspace/etosha/lib
-#                 -Dfile=lib/json-lib.jar
-#
-#            to a location which contains                   
+# install external libraries into the local mvn-repo
 #-------------------------------------------------------------------------------
 mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/sshxcute-1.0.jar -DgroupId=net.neoremind.sshxcute -DartifactId=sshxcute -Dpackaging=jar -Dversion=1.0
 mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/json-lib.jar -DgroupId=net.sf.json-lib -DartifactId=json-lib -Dpackaging=jar -Dversion=2.4
@@ -56,9 +47,6 @@ sudo yum install gnuplot
 sudo yum install wget
 sudo yum install ruby
 
-# go home
-#
-cd ..
 
 
 
