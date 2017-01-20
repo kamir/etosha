@@ -2,10 +2,8 @@
  * 
  */
 package admin;
-
-import org.apache.hadoopts.data.io.HBaseTester;
-import org.apache.hadoopts.data.io.adapter.HBaseDocWorldAdapter;
-import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter3;
+  
+import data.io.adapter.HBaseDocWorldAdapter;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

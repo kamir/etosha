@@ -1,22 +1,6 @@
 package data.io;
 
-import knowledgetools.*;
-import admin.DocTabAdmin;
-import static admin.DocTabAdmin.colFamNameR; 
-import admin.MailFactory;
-import com.cloudera.mailer.MailerTool;
-import com.cloudera.mailer.mails.ActionMail; 
-import org.apache.hadoopts.data.io.adapter.ObjectEncoder;
 import hadoop.cache.doc.HBaseDocWorld;
-import java.io.IOException;
-import java.util.Hashtable;
-import java.util.Properties;
-import java.util.Vector;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.apache.hadoop.hbase.client.Result;
-import org.apache.hadoop.hbase.client.ResultScanner;
-import org.apache.hadoop.hbase.client.Scan;
 
 /**
  * Here we scan for all items with and reset their valid-state to 0

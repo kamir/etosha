@@ -1,8 +1,8 @@
 package tools;
 
+ 
 
-import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter;
-
+import data.io.adapter.HBaseTSAdapter;
 import java.io.IOException;
 
 /*

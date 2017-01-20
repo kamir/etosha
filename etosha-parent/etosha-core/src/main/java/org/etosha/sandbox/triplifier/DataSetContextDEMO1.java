@@ -9,26 +9,8 @@ package org.etosha.sandbox.triplifier;
 
 import com.hp.hpl.jena.rdf.model.*;
 
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.StringField;
-import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.queryparser.classic.QueryParser;
-import org.apache.lucene.search.IndexSearcher;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopScoreDocCollector;
-import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.util.Version;
 
 import java.io.*;
-import java.util.ArrayList; 
-import org.apache.lucene.index.IndexableField;
 
 
 /**
@@ -40,14 +22,18 @@ public class DataSetContextDEMO1 {
     
   public static void main(String[] args) throws IOException {
     
-    String RDF_OutputLocation = "./rdf/demo1.rdf";
+    String RDF_OutputLocation = "./data/rdf/demo1Dataset.rdf";
     
     System.out.println("The RDF outputpath is: " + RDF_OutputLocation + ")");
 
     DataSetContextDEMO1 demo = null;
 
     try { 
-      demo = new DataSetContextDEMO1(RDF_OutputLocation);
+      
+        demo = new DataSetContextDEMO1(RDF_OutputLocation);
+      
+        String json = demo.getTagsAndPropsAsJSON();
+      
     } 
     catch (Exception ex) {
       System.out.println("Cannot write to RDF location. " + ex.getMessage());
@@ -101,6 +87,10 @@ public class DataSetContextDEMO1 {
     m.close();
     
   }
+
+    private String getTagsAndPropsAsJSON() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
  
 
  
@@ -140,7 +130,7 @@ class DatasetContextualizer {
     static void createDatasource(Model m, String datasource) {
         Resource s1 = m.createResource( datasource );
         Property p1 = m.createProperty( "isOftype" );
-        m.add( s1, p1, "etosha:datasource" ); 
+        m.add( s1, p1, "unbounded:datasource" ); 
     }
 
     static void linkDatasetToDatasource(Model m, String dataset, String datasource) {

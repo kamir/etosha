@@ -5,9 +5,8 @@
  */
 
 package data.io.adapter;
-
-import org.apache.hadoopts.data.io.adapter.HBaseAdapter;
-import org.apache.hadoopts.data.wikipedia.dump.WikipediaNode;
+ 
+import data.wikipedia.dump.WikipediaNode;
 import java.io.*;
 import org.apache.hadoop.hbase.client.Get;
 import org.apache.hadoop.hbase.client.HTable;

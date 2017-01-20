@@ -1,6 +1,6 @@
 package hadoop.cache.ts;
-
-import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter3;
+ 
+import data.io.adapter.HBaseTSAdapter3;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.logging.Level;
@@ -31,12 +31,10 @@ public class HBaseTimeSeriesCache {
             System.out.println( "*** " + adapter );
             if ( k != null ) ret = adapter.hasEditTSKey(k);
         } 
-        catch (IOException ex) {
-            Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
-        }
         catch (Exception ex) {
             Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         return ret;
         
     }
@@ -50,9 +48,7 @@ public class HBaseTimeSeriesCache {
 
             if ( k != null && v != null ) adapter.putEditTS(k, v);
         } 
-        catch (IOException ex) {
-            Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
         catch (Exception ex) {
             Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -73,10 +69,7 @@ public class HBaseTimeSeriesCache {
             byte[] k = sk.getBytes();
 
             if ( k != null ) v = adapter.getEditTS( k );
-        } 
-        catch (IOException ex) {
-            Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }  
         catch (Exception ex) {
             Logger.getLogger(HBaseTimeSeriesCache.class.getName()).log(Level.SEVERE, null, ex);
         }

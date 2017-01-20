@@ -69,7 +69,7 @@ public class EtoshaReferenceProfiler {
      * 
      */  
     //String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/generator";
-//    String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/gexf";
+    //String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/gexf";
     String BASE_FOLDER_GEXF = "/TSBASE/networks";
     
     File folder = new File( BASE_FOLDER_GEXF );

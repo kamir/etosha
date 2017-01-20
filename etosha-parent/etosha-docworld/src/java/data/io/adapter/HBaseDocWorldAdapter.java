@@ -8,8 +8,7 @@
 package data.io.adapter;
 
 import admin.DocTabAdmin;
-import admin.TSTabAdmin;
-import org.apache.hadoopts.data.io.adapter.HBaseAdapter;
+import admin.TSTabAdmin; 
 import hadoop.cache.doc.HBaseDocWorld;
 import java.io.*;
 import java.util.ArrayList;

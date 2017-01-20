@@ -3,9 +3,9 @@
  * and open the template in the editor.
  */
 package admin;
-
-import org.apache.hadoopts.data.io.HBaseTester;
-import org.apache.hadoopts.data.io.adapter.HBaseTSAdapter3;
+ 
+import data.io.HBaseTester;
+import data.io.adapter.HBaseTSAdapter3;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

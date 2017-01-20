@@ -1,6 +1,5 @@
 package admin;
-
-import org.apache.hadoopts.data.io.adapter.HBaseDocWorldAdapter;
+ 
 import hadoop.cache.doc.HBaseDocWorld;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;

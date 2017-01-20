@@ -5,8 +5,7 @@
  */
 package data.io.adapter;
 
-import admin.TSTabAdmin;
-import org.apache.hadoopts.data.io.adapter.HBaseAdapter;
+import admin.TSTabAdmin; 
 import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;

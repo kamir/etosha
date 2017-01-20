@@ -5,8 +5,7 @@
  * 
  **/
 package data.wikipedia.dump;
-
-import org.apache.hadoopts.data.ts.*;
+ 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
