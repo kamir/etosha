@@ -8,7 +8,7 @@
 package org.etosha.tools.profiler.usecase.wikipedia;
   
 import org.etosha.tools.profiler.minimumspanningtree.MSTProfiler;
-import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.IGraphProfilerTool;
 import org.etosha.tools.profiler.common.SNAProfiler;
 import java.io.File; 
 import org.apache.spark.api.java.function.VoidFunction;
@@ -130,7 +130,7 @@ public class NetworkProfilerDFA {
             // 
             // For plotting the MST
             // 
-//            Profiler pMST = MSTProfiler.profileLocaly(
+//            IGraphProfilerTool pMST = MSTProfiler.profileLocaly(
 //                    TS, 
 //                    fileOut.getAbsolutePath(), 
 //                    "MST_TS_LAYER=" + descriptor.multiLinkLayerSelector + "_TS=" + TS, 
@@ -149,7 +149,7 @@ public class NetworkProfilerDFA {
             //     * clustering-coefficients 
             //
             String label2 = "SNA_TS_LAYER=" + descriptor.getMultiLinkLayerSelector() + "_TS=" + TS;
-            Profiler pSNA = SNAProfiler.profileLocaly( TS, fileOut.getAbsolutePath(), label2, linksALL );
+            IGraphProfilerTool pSNA = SNAProfiler.profileLocaly( TS, fileOut.getAbsolutePath(), label2, linksALL );
          
             System.out.println( "TS=" +  TS );
             System.out.println( "   #z_e               =" + pSNA.getNumberEdges() );
@@ -170,7 +170,7 @@ public class NetworkProfilerDFA {
 //   *  more measures ...          
 //           
 //            System.out.println( "   #zClusters   =" + pSNA.getDiameter());
-//            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getMaxCLusterNrNodes() + ",e=" + pSNA.getMaxCLusterNrEdges() + ")" );
+//            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getNrOfNodesInLargestCluster() + ",e=" + pSNA.getNrOfEdgesInLargestCluster() + ")" );
 //     
         }
     

@@ -1,0 +1,54 @@
+curl http://172.24.128.52:7187/api/v8/entities/?query=*:*sketch2* -u admin:LH_hdp01 -X GET 
+
+
+# Describe folder "*sketch2":
+#
+#
+curl http://172.24.128.52:7187/api/v8/entities/?query=originalName:*sketch2 -u admin:LH_hdp01 -X GET
+
+[ {
+  "identity" : "ec4d0af578abbe11b9eb2f471c89fbdc",
+  "originalName" : "sketch2",
+  "originalDescription" : null,
+  "sourceId" : "012437f9eeb3c23dc69e679ac94a7fa2",
+  "firstClassParentId" : null,
+  "parentPath" : "/user/deploy",
+  "extractorRunId" : "012437f9eeb3c23dc69e679ac94a7fa2##3951",
+  "name" : null,
+  "description" : null,
+  "tags" : null,
+  "properties" : {
+    "__cloudera_internal__hueLink" : "http://lhansahdp1-230-3:8888/filebrowser/#/user/deploy/sketch2"
+  },
+  "technicalProperties" : null,
+  "fileSystemPath" : "/user/deploy/sketch2",
+  "type" : "DIRECTORY",
+  "size" : null,
+  "created" : "2016-12-05T14:18:51.267Z",
+  "lastModified" : "2016-12-05T14:18:51.474Z",
+  "lastAccessed" : null,
+  "permissions" : "rwxrwxr-x",
+  "owner" : "deploy",
+  "group" : "supergroup",
+  "blockSize" : null,
+  "mimeType" : null,
+  "replication" : null,
+  "userEntity" : false,
+  "deleted" : false,
+  "sourceType" : "HDFS",
+  "internalType" : "fselement"
+} ]
+
+curl http://172.24.128.52:7187/api/v8/entities/ec4d0af578abbe11b9eb2f471c89fbdc -u admin:LH_hdp01 -X PUT -H "Content-Type: application/json" -d '{"name":"my_name","description":"My description", "tags":["tag1","tag2"],"properties":{"property1":"abc","property2":"def"}}'
+
+This change triggers a policy-action ... 
+
+... data is placed in a Queue (ActiveMQ server on http://127.0.0.1:8161/admin/queueGraph.jsp)
+
+... now we use JMS-Flume-Source to collect that notification:
+
+./apache-flume-1.6.0-bin/bin/flume-ng agent --conf-file agent2a.conf --name a2 --classpath apache-flume-1.6.0-bin/lib/*.jar:/root/LH_MD_Demo_sketch/apache-activemq-5.14.1/lib/*.jar:/root/LH_MD_Demo_sketch/apache-activemq-5.14.1/activemq-all-5.14.1.jar
+
+... and log to the console:
+
+

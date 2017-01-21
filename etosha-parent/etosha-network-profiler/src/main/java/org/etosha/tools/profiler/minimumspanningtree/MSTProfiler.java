@@ -9,7 +9,7 @@ import java.io.IOException;
 
 import java.util.List;
 import javax.imageio.ImageIO;
-import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.IGraphProfilerTool;
 import org.gephi.graph.api.UndirectedGraph;
 import org.openide.util.Exceptions;
 
@@ -17,7 +17,7 @@ import org.openide.util.Exceptions;
  *
  * @author kamir
  */
-public class MSTProfiler implements Profiler {
+public class MSTProfiler implements IGraphProfilerTool {
 
     int LAYER = 0;  // Allows selection of a particular Layer, e.g. the fit 
     // range for one specific alpha in a DFA Function.
@@ -43,7 +43,7 @@ public class MSTProfiler implements Profiler {
      *
      * @return AN INSTANCE OF PROFILER ...
      */
-    public static Profiler profileLocaly(double TS, String fnOut, String l, List<Link> linksSMALL) {
+    public static IGraphProfilerTool profileLocaly(double TS, String fnOut, String l, List<Link> linksSMALL) {
 
         MSTProfiler p = new MSTProfiler(TS, fnOut);
 
@@ -75,13 +75,13 @@ public class MSTProfiler implements Profiler {
     }
 
     @Override
-    public int getMaxCLusterNrNodes() {
+    public int getNrOfNodesInLargestCluster() {
         System.out.println("Cluster are not yet calculated in this profiler. (" + this.toString() + ")");
         return -1;
     }
 
     @Override
-    public int getMaxCLusterNrEdges() {
+    public int getNrOfEdgesInLargestCluster() {
         System.out.println("Cluster are not yet calculated in this profiler. (" + this.toString() + ")");
         return -1;
     }
@@ -105,10 +105,6 @@ public class MSTProfiler implements Profiler {
             Exceptions.printStackTrace(ex);
         }
     }
-
-    @Override
-    public UndirectedGraph getGraph() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+ 
 
 }

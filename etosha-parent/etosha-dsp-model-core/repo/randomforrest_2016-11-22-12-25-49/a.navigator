@@ -1,0 +1,13 @@
+{
+  "name" : "random forrest",
+  "description" : "a random forrest example",
+  "properties" : {
+    "accuracy" : "1.0", 
+    "train.cost" : "3 days",
+    "train.dataProfileURL" : "http://172.24.128.52:8888/filebrowser/view=/user/deploy/LH_MD_DEMO/repo2/randomforrest_2016-11-22-12-25-49#/user/deploy/LH_MD_DEMO/repo2/randomforrest_2016-11-22-12-25-49/data",
+    "algo.docURL" : "http://www.wikipedia.de",
+    "business.goalURL" : "DEMO-OF-DSPM",
+    "algo.developer" : "MK"
+  },
+  "tags" : [ "dsp.mlc.tested" ]
+}

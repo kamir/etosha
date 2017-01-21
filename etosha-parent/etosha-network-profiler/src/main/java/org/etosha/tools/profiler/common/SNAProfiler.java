@@ -12,7 +12,7 @@ import java.io.IOException;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.IGraphProfilerTool;
 import org.gephi.data.attributes.api.AttributeColumn;
 import org.gephi.data.attributes.api.AttributeController;
 import org.gephi.data.attributes.api.AttributeModel;
@@ -62,11 +62,12 @@ import org.openide.util.Lookup;
  *
  * @author kamir
  */
-public class SNAProfiler implements Profiler {
+public class SNAProfiler implements IGraphProfilerTool {
 
-    public static Profiler profileGephiFileLocaly(double TS, File fIn, String fnOut, String label) {
+    public static IGraphProfilerTool profileGephiFileLocaly(double TS, File fIn, String fnOut, String label) {
 
         SNAProfiler p = new SNAProfiler(TS, fnOut);
+        
         p.label = label;
 
         p.initFromFile(fIn);
@@ -128,7 +129,7 @@ public class SNAProfiler implements Profiler {
      *
      * @return AN INSTANCE OF PROFILER ...
      */
-    public static Profiler profileLocaly(double TS, String fnOut, String label, List<Link> linksSMALL) {
+    public static IGraphProfilerTool profileLocaly(double TS, String fnOut, String label, List<Link> linksSMALL) {
 
         SNAProfiler p = new SNAProfiler(TS, fnOut);
 
@@ -191,13 +192,13 @@ public class SNAProfiler implements Profiler {
     }
 
     @Override
-    public int getMaxCLusterNrNodes() {
+    public int getNrOfNodesInLargestCluster() {
         System.out.println("Cluster are not yet calculated in this profiler. (" + this.toString() + ")");
         return -1;
     }
 
     @Override
-    public int getMaxCLusterNrEdges() {
+    public int getNrOfEdgesInLargestCluster() {
         System.out.println("Cluster are not yet calculated in this profiler. (" + this.toString() + ")");
         return -1;
     }

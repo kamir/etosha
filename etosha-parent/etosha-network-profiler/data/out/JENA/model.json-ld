@@ -168,6 +168,20 @@
     "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "800",
     "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "200"
   }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=FOSDEM2017_exp42_static.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "2.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "2115",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "1079"
+  }, {
+    "@id" : "http://semanpix.de/network#SNA_GEPHI-File=FOSDEM2017_exp44_static.gexf_TS=0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "2.0",
+    "http://www.semanpix.de/2015/etosha-net/1.0#TS" : "0.9",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES" : "2991",
+    "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "1535"
+  }, {
     "@id" : "http://semanpix.de/network#SNA_GEPHI-File=↓gephi_1_0_10_3-101.10.gexf_TS=0.9",
     "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL" : "0.49816331114080215",
     "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER" : "1.0",
@@ -589,24 +603,24 @@
     "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES" : "103"
   } ],
   "@context" : {
-    "CLUSTERING_GLOBAL" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "DIAMETER" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "ZNODES" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES",
+    "TS" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#TS",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "ZEDGES" : {
       "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "TS" : {
-      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#TS",
+    "ZNODES" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#ZNODES",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DIAMETER" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CLUSTERING_GLOBAL" : {
+      "@id" : "http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }

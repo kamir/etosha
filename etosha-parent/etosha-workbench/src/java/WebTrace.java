@@ -1,5 +1,5 @@
  
-import edu.uci.ics.jung.graph.Graph;
+//import edu.uci.ics.jung.graph.Graph;
 import java.io.File;
  
 import java.net.URL;
@@ -40,12 +40,12 @@ class WebTrace {
     // JUNG2 representation of graph ...
  
  
-    public Graph<Integer, String> getGraphOfTraces() {
-
-        SimpleTraceGraphView sgtv = new SimpleTraceGraphView( new File( "simple-trace-graph.dat"), urlListe );
-        sgtv.open();
-        return sgtv.g;
-     
-    }
+//    public Graph<Integer, String> getGraphOfTraces() {
+//
+//        SimpleTraceGraphView sgtv = new SimpleTraceGraphView( new File( "simple-trace-graph.dat"), urlListe );
+//        sgtv.open();
+//        return sgtv.g;
+//     
+//    }
     
 }

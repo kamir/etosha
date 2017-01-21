@@ -1,0 +1,1 @@
+curl http://172.24.128.52:7187/api/v8/entities/ec4d0af578abbe11b9eb2f471c89fbdc -u admin:LH_hdp01 -X PUT -H "Content-Type: application/json" -d '{"name":"NAME.", "description":"DESCR.", "tags":["unbounded","large","critical","has_LIBSVM_structure"], "properties":{"volume":"100 GB","has_profile":"false"}}}'

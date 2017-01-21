@@ -14,6 +14,7 @@
   <packaging>pom</packaging>
   <name>Etosha Parent Project</name>
  
+ 
   <modules>
     <module>etosha-core</module>
     <module>etosha-model</module>
@@ -23,7 +24,12 @@
     <module>etosha-webapp</module> 
     <module>etosha-network-profiler</module>
     <module>etosha-vocab</module>
+
+    <module>etosha-dsp-model-core</module> 
+
   </modules>
+
+
 
   <build>
     <pluginManagement>

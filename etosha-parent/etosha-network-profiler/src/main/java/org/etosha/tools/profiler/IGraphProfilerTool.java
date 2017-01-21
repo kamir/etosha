@@ -1,29 +1,45 @@
 package org.etosha.tools.profiler;
 
+// JUNG 2
 import edu.uci.ics.jung.graph.Graph;
-import java.io.File;
+
+// Gephi
 import org.gephi.graph.api.UndirectedGraph;
 
+// JDK
+import java.io.File;
+
 /**
- *
+ * What can a Network IGraphProfilerTool give us?
+ * 
+ * Usually, we get a descriptive statistics about the graph.
+ * 
  * @author kamir
  */
-public interface Profiler {
+public interface IGraphProfilerTool {
 
     public int getNumberEdges();
 
     public int getNumberVertices();
 
+    // needs to be calculated
     public double getDiameter();
 
-    public int getMaxCLusterNrNodes();
+    public int getNrOfNodesInLargestCluster();
 
-    public int getMaxCLusterNrEdges();
+    public int getNrOfEdgesInLargestCluster();
 
+    // needs to be calculated
     public double getGlobalClusterCoefficient();
 
+    // write a default representation to a file
     public void storeImage(File folderOut, int timeInSeconds);
 
-    public UndirectedGraph getGraph();
+    
+    
+    
+    
+    
+ 
     
 }

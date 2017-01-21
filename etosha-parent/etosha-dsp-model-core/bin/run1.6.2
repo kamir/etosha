@@ -1,0 +1,19 @@
+# This script starts a local spark-shell on Mirko's MacBook
+#
+# Relevant JAR files from related projects are added to the Spark-Context
+#
+
+#
+# We develop the Metadata capturing module for an advances data governance system
+# using Cloudera Navigator, and an additional SOLR collection.
+#
+
+cd ../src/main/scripts
+
+#
+# RUN SPARK 1.6.2
+#
+/Users/kamir/Downloads/spark-1.6.2-bin-hadoop2.6/bin/spark-shell --master local[2] --conf spark.ui.port=4045 
+#--jars ./../../../target/dsp-model-core-0.0.2-jar-with-dependencies.jar
+
+

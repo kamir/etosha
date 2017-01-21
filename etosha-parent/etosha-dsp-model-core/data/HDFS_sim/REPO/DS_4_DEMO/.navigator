@@ -1,0 +1,8 @@
+{
+  "name" : "DS_4_DEMO",
+  "description" : "This is a dataset for demo: (description).",
+  "properties" : {
+    "ACCURACY" : "0.85", "EXPECTED_ACCURACY" : "0.66"
+  },
+  "tags" : [ "COOL_MODEL" ]
+}

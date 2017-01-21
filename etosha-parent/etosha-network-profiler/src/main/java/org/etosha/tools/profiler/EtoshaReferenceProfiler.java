@@ -1,14 +1,14 @@
 /**
- * 
  * The network importer loads Gehphi files instead of node
  * and edge lists. 
  * 
- * An RDF model is also loaded. This model allows a continuous
+ * An existing RDF model is also loaded. This model allows a continuous
  * extension of existing network profile data in an RDF graph. 
  * 
  * We apply the standard profiler to a given network file and collect all
- * results in this RDF model based on our default vocabulary.
+ * results in this RDF model, using our default vocabulary.
  * 
+ * @TODO 
  * 
  * EXTENSION:
  * 
@@ -19,70 +19,82 @@
  **/
 package org.etosha.tools.profiler;
   
-import org.etosha.tools.profiler.minimumspanningtree.MSTProfiler;
-import org.etosha.tools.profiler.Profiler;
+import org.etosha.tools.profiler.IGraphProfilerTool;
 import org.etosha.tools.profiler.common.SNAProfiler;
 import java.io.File; 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import org.apache.spark.api.java.function.VoidFunction;
 import org.apache.spark.api.java.*;
 import org.apache.spark.SparkConf;
-import scala.Tuple2;
-import java.util.List;
 import java.util.Vector;
-import org.apache.jena.query.Dataset;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
-import org.apache.jena.vocabulary.DC;
-import static org.apache.jena.vocabulary.DCTypes.Dataset;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.util.Version;
-import org.etosha.networks.correlationnet.CCLink;
-import org.etosha.networks.correlationnet.CCNetNode;
 import org.etosha.networks.LayerDescriptor;
-import org.etosha.networks.Link;
-import org.etosha.networks.LinkComparator;
-import org.etosha.tools.profiler.minimumspanningtree.MSTFrame;
 import org.etosha.vocab.EtoshaNetworkVocabulary;
 import org.openide.util.Exceptions;
 
 public class EtoshaReferenceProfiler {
     
- 
-       
+    
   public static void main(String[] args) throws Exception {
       
-    String modelToLoad = "./data/out/JENA/model.trdf";  
+      EtoshaReferenceProfiler prof = new EtoshaReferenceProfiler();
+      prof.run( new EtoshaModelHandler() );
+      
+  }  
+  
+       
+  public void run(EtoshaModelHandler handler) throws Exception {
+       
+    String modelToLoad = handler.getStorageFiles()[0].getAbsolutePath() + ".ttl";  
+    
+    File fIn = new File( modelToLoad );
+    System.out.println( "Model file            : " + fIn.getAbsolutePath() + " (r:" + fIn.canRead() + ")" );
     
     /**
-     *   Where are reference datasets stored?
+     *   Where are input datasets stored?
      *   
-     *   You simply clone the "etosha-data-calibration".
+     *   You simply clone the "etosha-data-calibration" project to that folder.
      * 
      */  
     //String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/generator";
     //String BASE_FOLDER_GEXF = "/Users/kamir/GITHUB/etosha-data-calibration/GEPHI/gexf";
-    String BASE_FOLDER_GEXF = "/TSBASE/networks";
+    //String BASE_FOLDER_GEXF = "/TSBASE/networks";
+    
+    String BASE_FOLDER_GEXF = EtoshaModelHandler.BASE_FOLDER_GEXF;
     
     File folder = new File( BASE_FOLDER_GEXF );
+    System.out.println( "Graph data folder     : " + folder.getAbsolutePath() + " (r:" + folder.canRead() + ")" );
     
-    String outputFolder = "/TSBASE/RDF/";
+    String PROFILE_OUTPUT_FOLDER = EtoshaModelHandler.PROFILE_OUTPUT_FOLDER;
 
-    
+    File outFolder = new File( BASE_FOLDER_GEXF );
+    System.out.println( "PROFILE data folder   : " + outFolder.getAbsolutePath() + " (r:" + outFolder.canRead() + ")" );
+
     //--------------------------------------------------------------------------
     // Create a model and read into it from file 
     // "data.ttl" assumed to be Turtle.
     //
-    model = RDFDataMgr.loadModel( modelToLoad ) ;
-   
+    try {
+        if ( model == null )
+            model = RDFDataMgr.loadModel( modelToLoad ) ;
+        else {
+            model = ModelFactory.createDefaultModel() ;
+            System.out.println( ">> Use new model. "  );
+            model = ModelFactory.createDefaultModel() ;
+        }    
+    }
+    catch( Exception ex ) {
+        System.out.println( ">> EX: " + ex.getMessage() );
+        System.out.println( ">> Use new model. "  );
+        model = ModelFactory.createDefaultModel() ;
+        
+    }
     //--------------------------------------------------------------------------
     // Iterate on files ... 
     //
@@ -94,35 +106,38 @@ public class EtoshaReferenceProfiler {
      * 
      */
     File[] list = folder.listFiles();
-   
+
+    System.out.println("### Available Gephi files in :" + folder.getAbsolutePath());
+
+    int i = 0;
     for( File f : list ) {
+        i++;
         // here we register all files which should be processed ...
         if ( f.getName().endsWith( ".gexf" ) ) {
         //if ( f.getName().endsWith( ".gephi" ) ) {
     
             toProcess.add(f);
+        
         }
-        System.out.println(">" + f.getAbsolutePath());
+        
+        System.out.println( i + " > " + f.getAbsolutePath());
     }
  
     /***************************************************************************
-     * 
      *   Some preparations for cluster mode.
-     * 
      */
-    SparkConf conf = new SparkConf().setAppName("Simple Graph Profiler (An Etosha Spark Application)");
-    conf.setMaster("local");
-    
-//    String fn1 = "/GITHUB/SparkNetworkCreator/target/SparkNetworkCreator-0.1.0-SNAPSHOT-jar-with-dependencies.jar";
-    String fn1 = "/GITHUB/SparkNetworkCreator/target/SparkNetworkCreator-0.1.0-SNAPSHOT-job.jar";
-    String fn2 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/gephi-toolkit.jar";
-    String fn3 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/a.jar";
-        
-    JavaSparkContext sc = new JavaSparkContext(conf);
-
-    checkAndAddJAR( fn1, sc );
-    checkAndAddJAR( fn2, sc );
-    checkAndAddJAR( fn3, sc );
+//    SparkConf conf = new SparkConf().setAppName("Simple Graph Profiler (Etosha Spark Application)");
+//    conf.setMaster("local");
+//    
+//    String fn1 = "/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-network-profiler/target/etosha-network-profiler-0.9.0-SNAPSHOT-jar-with-dependencies";
+//    String fn2 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/gephi-toolkit.jar";
+//    String fn3 = "/GITHUB/NetBeansProjects/PlanarityTester-master/dist/lib/a.jar";
+//        
+//    JavaSparkContext sc = new JavaSparkContext(conf);
+//
+//    checkAndAddJAR( fn1, sc );
+//    checkAndAddJAR( fn2, sc );
+//    checkAndAddJAR( fn3, sc );
     
     
     /***************************************************************************
@@ -139,7 +154,6 @@ public class EtoshaReferenceProfiler {
     
     long TIME = System.currentTimeMillis();
     /**
-     * 
      *   Now we can iterate on a set of network files.
      */
     for( File fn : toProcess ) {
@@ -148,14 +162,13 @@ public class EtoshaReferenceProfiler {
         // the particular input
         System.out.println( ">>> " + fn.getAbsolutePath() + " => " + fn.exists() );
 
-        File fileOut = new File( outputFolder + "_" + fn.getName() + "_" + TIME );
-
+        File fileOut = new File( PROFILE_OUTPUT_FOLDER + "_" + fn.getName() + "_" + TIME );
         
         // Data is in an "EXTERNAL representation" 
         
         // We do not IMPORT this networks.
         
-        // The MST and SNA Profiler work locally. A cluster import is not
+        // The MST and SNA IGraphProfilerTool work locally. A cluster import is not
         // required by this profiler types.
         
         /***
@@ -164,7 +177,7 @@ public class EtoshaReferenceProfiler {
          *   This configures the edge-filter.
          * 
          **/
-        double[] LEVELS = { 0.9 };
+        double[] LEVELS = { 1.9 };
         
         for( double TS : LEVELS) {
 
@@ -185,7 +198,7 @@ public class EtoshaReferenceProfiler {
 //             * repeatable results.
 //             */
 //
-//            Profiler pMST = MSTProfiler.profileLocaly(
+//            IGraphProfilerTool pMST = MSTProfiler.profileLocaly(
 //                    TS, 
 //                    fileOut.getAbsolutePath(), 
 //                    "MST_TS_LAYER=" + descriptor.multiLinkLayerSelector + "_TS=" + TS, 
@@ -201,13 +214,14 @@ public class EtoshaReferenceProfiler {
             // For diameter and cluster-coefficients 
             //
             String s = "SNA_GEPHI-File=" + fn.getName() + "_TS=" + TS;
-            Profiler pSNA = SNAProfiler.profileGephiFileLocaly(
+            
+            IGraphProfilerTool pSNA = SNAProfiler.profileGephiFileLocaly(
                     TS,  // filter threshold 
                     fn,  // input data file (usually GEXF)
                     fileOut.getAbsolutePath(),  // output location for profile
                     s );  // label
             
-            pSNA.storeImage( new File( outputFolder ), 5 );
+            pSNA.storeImage(new File( PROFILE_OUTPUT_FOLDER ), 5 );
             
             storeTriple( s, EtoshaNetworkVocabulary.TS, TS+"", "[New Threshold]\n" );
             storeTriple( s, EtoshaNetworkVocabulary.zEdges, pSNA.getNumberEdges() + "", "     " );
@@ -232,25 +246,29 @@ public class EtoshaReferenceProfiler {
             
             
             System.out.println( "   #zClusters   =" + pSNA.getDiameter());
-            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getMaxCLusterNrNodes() + ",e=" + pSNA.getMaxCLusterNrEdges() + ")" );
+            System.out.println( "   #sizeMaxCluster => (n=" + pSNA.getNrOfNodesInLargestCluster() + ",e=" + pSNA.getNrOfEdgesInLargestCluster() + ")" );
         }  // END LOOP LEVELS
         
     } // END LOOP FILES
     
             try {
 
-            FileOutputStream out1 = new FileOutputStream( "./data/out/JENA/model.json-ld" );
-            model.write(out1, "JSON-LD");
-            out1.close();
+//            FileOutputStream out1 = new FileOutputStream(  handler.getStorageFiles()[0].getAbsolutePath() + ".json-ld" );
+//            model.write(out1, "JSON-LD");
+//            out1.close();
 
-            FileOutputStream out2 = new FileOutputStream( "./data/out/JENA/model.ttl" );
+            FileOutputStream out2 = new FileOutputStream(   handler.getStorageFiles()[0].getAbsolutePath() + ".ttl" );
             model.write(out2, "TTL");
             out2.close();
 
-            
-            FileOutputStream out = new FileOutputStream( modelToLoad );
-            RDFDataMgr.write(out, model, Lang.RDFTHRIFT) ;
-            out.close();
+            FileOutputStream out1 = new FileOutputStream(   handler.getStorageFiles()[1].getAbsolutePath() + ".ttl" );
+            model.write(out1, "TTL");
+            out1.close();
+
+//            // trdf
+//            FileOutputStream out = new FileOutputStream( modelToLoad );
+//            RDFDataMgr.write(out, model, Lang.RDFTHRIFT) ;
+//            out.close();
 
         } 
         catch (FileNotFoundException ex) {
@@ -261,7 +279,7 @@ public class EtoshaReferenceProfiler {
     
   }
   
-  static Model model = ModelFactory.createDefaultModel() ;
+  static Model model = null;
   
   public static void storeTriple( String s, Property p, String o, String info ) {
         

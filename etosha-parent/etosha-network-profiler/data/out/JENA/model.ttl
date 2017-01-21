@@ -70,6 +70,18 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
+<http://semanpix.de/network#SNA_GEPHI-File=FOSDEM2017_exp44_static.gexf_TS=0.9>
+        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
+                "0.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
+                "2.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
+                "0.9" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
+                "2991" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
+                "1535" .
+
 <http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_10_3-101.10.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
                 "0.49816331114080215" ;
@@ -298,17 +310,17 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
-<http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_0_3-101.0.gexf_TS=0.9>
+<http://etosha.org/network#SNA_GEPHI-File=ER_Gnp_DEFAULT.gexf_TS=0.0>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
-                "0.4981979784090086" ;
+                "0.05133919368613246" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
-                "1.0" ;
+                "6.0" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#TS>
-                "0.9" ;
+                "0.0" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
-                "5356" ;
+                "123" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
-                "103" .
+                "50" .
 
 <http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_0_9_3-101.9.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
@@ -322,17 +334,17 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
-<http://etosha.org/network#SNA_GEPHI-File=ER_Gnp_DEFAULT.gexf_TS=0.0>
+<http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_0_3-101.0.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
-                "0.05133919368613246" ;
+                "0.4981979784090086" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
-                "6.0" ;
+                "1.0" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#TS>
-                "0.0" ;
+                "0.9" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
-                "123" ;
+                "5356" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
-                "50" .
+                "103" .
 
 <http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_1_2_9_3-101.9.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
@@ -586,6 +598,18 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
+<http://etosha.org/network#SNA_GEPHI-File=WS_ALPHA_DEFAULT.gexf_TS=0.1>
+        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
+                "0.0037499999999999994" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
+                "13.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
+                "0.1" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
+                "400" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
+                "200" .
+
 <http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_0_1_3-101.1.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
                 "0.4981979784090086" ;
@@ -609,18 +633,6 @@
                 "5356" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
-
-<http://etosha.org/network#SNA_GEPHI-File=WS_ALPHA_DEFAULT.gexf_TS=0.1>
-        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
-                "0.0037499999999999994" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
-                "13.0" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
-                "0.1" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
-                "400" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
-                "200" .
 
 <http://semanpix.de/network#SNA_GEPHI-File=↓gephi_2_2_1_3-101.1.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
@@ -790,6 +802,18 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
+<http://semanpix.de/network#SNA_GEPHI-File=FOSDEM2017_exp42_static.gexf_TS=0.9>
+        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
+                "0.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
+                "2.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
+                "0.9" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
+                "2115" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
+                "1079" .
+
 <http://etosha.org/network#SNA_GEPHI-File=WS_ALPHA_DEFAULT.gexf_TS=0.0>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
                 "0.0037499999999999994" ;
@@ -850,18 +874,6 @@
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "103" .
 
-<http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_9_3-101.9.gexf_TS=0.9>
-        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
-                "0.4981979784090086" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
-                "1.0" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
-                "0.9" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
-                "5356" ;
-        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
-                "103" .
-
 <http://etosha.org/network#SNA_GEPHI-File=Untitled.gexf_TS=0.9>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
                 "0.0" ;
@@ -873,6 +885,18 @@
                 "30" ;
         <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
                 "31" .
+
+<http://semanpix.de/network#SNA_GEPHI-File=⇗gephi_2_0_9_3-101.9.gexf_TS=0.9>
+        <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
+                "0.4981979784090086" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#DIAMETER>
+                "1.0" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#TS>
+                "0.9" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZEDGES>
+                "5356" ;
+        <http://www.semanpix.de/2015/etosha-net/1.0#ZNODES>
+                "103" .
 
 <http://etosha.org/network#SNA_GEPHI-File=WS_BETA_DEFAULT.gexf_TS=0.0>
         <http://www.semanpix.de/2015/etosha-net/1.0#CLUSTERING_GLOBAL>
