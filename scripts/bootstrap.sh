@@ -5,6 +5,7 @@
 #-------------------------------------------------------------------------------
 
 cd ..
+
 git lfs pull
 
 #
@@ -40,8 +41,8 @@ mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -D
 #export JAVA_HOME=/opt/java8
 
 #
-#  If not yet available we install Gnuplot, wget, and Ruby (used for Fuseki clients and
-#  HBase shell).
+#  If not yet available we install Gnuplot, wget, and Ruby 
+#  Ruby is used for Fuseki client and for the HBase shell.
 #
 sudo yum install gnuplot
 sudo yum install wget
