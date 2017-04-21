@@ -11,7 +11,7 @@
     <artifactId>etosha-dsp-model-core</artifactId>
     <packaging>jar</packaging>
     <groupId>org.etosha</groupId>
-    <version>0.0.2</version>
+    <version>0.0.9</version>
     
     <parent>
       <groupId>org.etosha</groupId>
@@ -145,20 +145,20 @@
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena</artifactId>
             <type>pom</type>
-            <version>3.1.2-SNAPSHOT</version>
+            <version>3.2.0</version>
         </dependency>
       
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-core</artifactId>
-            <version>3.1.2-SNAPSHOT</version>
+            <version>3.2.0</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena-libs</artifactId>
             <type>pom</type>
-            <version>3.1.2-SNAPSHOT</version>
+            <version>3.2.0</version>
         </dependency>
 
 
@@ -373,7 +373,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             
-            <plugin>
+            <!--plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>${mavenassembly.version}</version>
                 <configuration>
@@ -395,7 +395,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
             <plugin>
                 <groupId>org.apache.avro</groupId>
                 <artifactId>avro-maven-plugin</artifactId>

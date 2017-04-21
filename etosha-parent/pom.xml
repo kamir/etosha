@@ -22,11 +22,9 @@
     <module>etosha-smw</module>
     <module>etosha-contextualizer</module>
     <module>etosha-webapp</module> 
-    <module>etosha-network-profiler</module>
+    <module>etosha-profiler</module>
     <module>etosha-vocab</module>
-
     <module>etosha-dsp-model-core</module> 
-
   </modules>
 
 

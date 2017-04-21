@@ -342,7 +342,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-        <repository>
+        <!--repository>
             <id>semweb4j-repo</id>
             <name>Semweb4j.org maven repo</name>
             <url>http://semweb4j.org/repo/</url>
@@ -362,7 +362,7 @@
                 <updatePolicy>always</updatePolicy>
                 <checksumPolicy>fail</checksumPolicy>
             </snapshots>
-        </repository>
+        </repository-->
         <repository>
             <id>central</id>
             <url>http://repo1.maven.org/maven2</url>

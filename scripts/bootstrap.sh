@@ -11,10 +11,10 @@ git lfs pull
 #
 # install external libraries into the local mvn-repo
 #-------------------------------------------------------------------------------
-mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/sshxcute-1.0.jar -DgroupId=net.neoremind.sshxcute -DartifactId=sshxcute -Dpackaging=jar -Dversion=1.0
-mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/json-lib.jar -DgroupId=net.sf.json-lib -DartifactId=json-lib -Dpackaging=jar -Dversion=2.4
-mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/gephi-spanning-tree-0.1.0.jar -DgroupId=org.cloudera -DartifactId=gephi-spanning-tree -Dpackaging=jar -Dversion=0.1.0
-mvn install:install-file -Durl=file:///home/cloudera/workspace/etosha/extlibs -Dfile=/home/cloudera/workspace/etosha/extlibs/gephi-toolkit-0.1.0.jar -DgroupId=org.cloudera -DartifactId=gephi-toolkit -Dpackaging=jar -Dversion=0.1.0
+mvn install:install-file -Durl=file:///GITHUB/ETOSHA.WS/etosha/extlibs -Dfile=/GITHUB/ETOSHA.WS/etosha/extlibs/sshxcute-1.0.jar -DgroupId=net.neoremind.sshxcute -DartifactId=sshxcute -Dpackaging=jar -Dversion=1.0
+mvn install:install-file -Durl=file:///GITHUB/ETOSHA.WS/etosha/extlibs -Dfile=/GITHUB/ETOSHA.WS/etosha/extlibs/json-lib.jar -DgroupId=net.sf.json-lib -DartifactId=json-lib -Dpackaging=jar -Dversion=2.4
+mvn install:install-file -Durl=file:///GITHUB/ETOSHA.WS/etosha/extlibs -Dfile=/GITHUB/ETOSHA.WS/etosha/extlibs/gephi-spanning-tree-0.1.0.jar -DgroupId=org.cloudera -DartifactId=gephi-spanning-tree -Dpackaging=jar -Dversion=0.1.0
+mvn install:install-file -Durl=file:///GITHUB/ETOSHA.WS/etosha/extlibs -Dfile=/GITHUB/ETOSHA.WS/etosha/extlibs/gephi-toolkit-0.1.0.jar -DgroupId=org.cloudera -DartifactId=gephi-toolkit -Dpackaging=jar -Dversion=0.1.0
 
 #-------------------
 #
