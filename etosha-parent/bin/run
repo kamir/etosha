@@ -81,7 +81,7 @@ open http://127.0.0.1:8080/etosha-webapp/
 open http://127.0.0.1:8983
 open http://localhost:7474/
 open http://semanpix.de/opendata/wiki/index.php?title=Main_Page
-
+open http://semanpix.de/opendata/wiki/index.php?title=Exploreds
 
 
 ls $here
