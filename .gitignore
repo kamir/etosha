@@ -4,6 +4,8 @@
 /etosha-parent/etosha-webapp/target/**
 /etosha-parent/target/**
 /target/**
+/release/**
+/extlibs/**
 /etosha-parent/etosha-core/target/**
 /etosha-parent/etosha-network-profiler/target/**
 /etosha-parent/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/target/

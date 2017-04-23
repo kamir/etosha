@@ -3,24 +3,16 @@ package com.cloudera.neo4j;
 import com.cloudera.dadi.DaDiStore;
 import com.cloudera.dadi.DataDictionary;
 import com.cloudera.dadi.neo4j.Neo4JDaDiStore;
-import com.cloudera.neo4j.domain.DataSet;
-import com.cloudera.neo4j.domain.Flow;
-import com.cloudera.neo4j.domain.PredictionModel;
-import com.cloudera.neo4j.domain.ProcessingPipeline;
-import com.cloudera.neo4j.domain.SystemUser;
-import com.cloudera.neo4j.domain.TrainingPipeline;
+import com.cloudera.neo4j.domain.*;
 import com.cloudera.neo4j.domain.types.DataFlowType;
 import com.cloudera.neo4j.domain.types.UserType;
-
 import com.cloudera.neo4j.services.DatasetService;
-import java.awt.Toolkit;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import java.awt.*;
 import java.util.Map;
 import java.util.Vector;
 //import org.springframework.context.annotation.Configuration;
@@ -137,6 +129,7 @@ public class SampleDSPApp extends WebMvcConfigurerAdapter {
         objectsToStoreInDaDi.add( flow3 ); 
         
         DataDictionary.persist( objectsToStoreInDaDi );
+
     } 
 
     @Autowired

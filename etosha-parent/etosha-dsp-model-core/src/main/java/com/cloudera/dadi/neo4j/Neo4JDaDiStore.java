@@ -28,7 +28,8 @@ public class Neo4JDaDiStore implements DaDiStore {
     @Override
     public void storeEntityWithContext(Object o) {
 //        session.save( o );
-        System.out.print( "> sotre: " + o.getClass() );
+        System.out.println( "> store : " + o.getClass() );
+
     }
 
     
