@@ -1,8 +1,8 @@
 package com.cloudera.neo4j;
  
-import com.cloudera.dadi.DaDiStore;
-import com.cloudera.dadi.DataDictionary;
-import com.cloudera.dadi.neo4j.Neo4JDaDiStore;
+import com.cloudera.dadi.store.DaDiStore;
+import com.cloudera.dadi.demo.DataDictionary;
+import com.cloudera.dadi.store.neo4j.Neo4JDaDiStore;
 import com.cloudera.neo4j.domain.*;
 import com.cloudera.neo4j.domain.types.DataFlowType;
 import com.cloudera.neo4j.domain.types.UserType;

@@ -138,7 +138,7 @@
     <orderEntry type="library" name="Maven: asm:asm:3.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hive:hive-common:0.10.0-cdh4.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.2" level="project" />
-    <orderEntry type="module" module-name="etosha-contextualizer" />
+    <orderEntry type="library" name="Maven: org.etosha:etosha-contextualizer:0.9.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.google.apis:google-api-services-gmail:v1-rev15-1.19.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.api-client:google-api-client:1.19.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.oauth-client:google-oauth-client:1.19.0" level="project" />
@@ -162,14 +162,14 @@
     <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:sources:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:javadoc:3.0.0" level="project" />
-    <orderEntry type="module" module-name="etosha-vocab" />
-    <orderEntry type="module" module-name="etosha-smw" />
+    <orderEntry type="library" name="Maven: org.etosha:etosha-vocab:0.9.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.etosha:etosha-smw:0.9.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: jaxen:jaxen:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: xom:xom:1.0" level="project" />
     <orderEntry type="library" name="Maven: xerces:xmlParserAPIs:2.6.2" level="project" />
     <orderEntry type="library" name="Maven: xalan:xalan:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.ibm.icu:icu4j:2.6.1" level="project" />
-    <orderEntry type="module" module-name="etosha-persist" />
+    <orderEntry type="library" name="Maven: org.etosha:etosha-persist:0.9.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-commons-annotations:3.3.0.ga" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring:2.0.7" level="project" />
@@ -213,7 +213,7 @@
     <orderEntry type="library" name="Maven: org.semweb4j:rdfreactor.generator:4.8.3" level="project" />
     <orderEntry type="library" name="Maven: velocity:velocity:1.5" level="project" />
     <orderEntry type="library" name="Maven: oro:oro:2.0.8" level="project" />
-    <orderEntry type="module" module-name="etosha-model (1) (org.etosha)" />
+    <orderEntry type="library" name="Maven: org.etosha:etosha-model:0.9.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-core:2.13.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.jena:jena-iri:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.9" level="project" />

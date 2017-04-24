@@ -32,14 +32,11 @@ ls $here
 #  Spark convenience tools:  		SparkShellUtilities.jar
 #  Gephi-Toolkit for local raphs:  	gephi-toolkit-0.9.2-20170113.202843-77-all.jar"
 #  ETOSHA-Profiler:      
-export JARS="--jars /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar,/GITHUB/SparkShellUtilities/out/artifacts/s2u_jar/s2u.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar,/sparkws/bin/gephi-toolkit-0.9.2-20170113.202843-77-all.jar"
+export JARS="--jars /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar,/GITHUB/SparkShellUtilities/out/artifacts/s2u_jar/s2u.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar,/sparkws/bin/gephi-toolkit-0.9.2-20170113.202843-77-all.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/classes/artifacts/etosha_core_jar/etosha-core.jar"
 
 zip -d /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
-zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar	 META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
-
-
-
-
+zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar	META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
+zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/classes/artifacts/etosha_core_jar/etosha-core.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
 
 
 #
@@ -58,13 +55,13 @@ zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etos
 #
 # Neo4J in local mode
 #
-/Users/kamir/bin/neo4j-enterprise-3.0.7/bin/neo4j start
+#/Users/kamir/bin/neo4j-enterprise-3.0.7/bin/neo4j start
 
 #
 # Etosha WebApp in local mode
 #
-cd /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-webapp
-mvn tomcat7:run-war &
+#cd /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-webapp
+#mvn tomcat7:run-war &
 
 #
 # SOLR in cloud modus
@@ -76,12 +73,12 @@ mvn tomcat7:run-war &
 #####/GITHUB/ETOSHA.WS/apache-solr-6.5.0/bin/solr start -c -m 1g -z localhost:2181 -a "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=1044"
 #####/GITHUB/ETOSHA.WS/apache-solr-6.5.0/bin/solr zk cp file:/GITHUB/claerity-cloudera/XWARE42/apache-solr-6.5.0/server/solr/shop_crawl/conf/schema.xml zk:/configs/shopCrawl/schema.xml -z localhost:9983
 
-/GITHUB/ETOSHA.WS/apache-solr-6.5.0/bin/solr start -cloud -s /GITHUB/ETOSHA.WS/apache-solr-6.5.0/example/cloud/node1/solr -p 8983
-open http://127.0.0.1:8080/etosha-webapp/
-open http://127.0.0.1:8983
-open http://localhost:7474/
-open http://semanpix.de/opendata/wiki/index.php?title=Main_Page
-open http://semanpix.de/opendata/wiki/index.php?title=Exploreds
+#/GITHUB/ETOSHA.WS/apache-solr-6.5.0/bin/solr start -cloud -s /GITHUB/ETOSHA.WS/apache-solr-6.5.0/example/cloud/node1/solr -p 8983
+#open http://127.0.0.1:8080/etosha-webapp/
+#open http://127.0.0.1:8983
+#open http://localhost:7474/
+#open http://semanpix.de/opendata/wiki/index.php?title=Main_Page
+#open http://semanpix.de/opendata/wiki/index.php?title=Exploreds
 
 
 ls $here

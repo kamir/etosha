@@ -60,6 +60,7 @@ import com.hp.hpl.jena.rdf.model.Statement;
  * @author Richard Cyganiak (richard@cyganiak.de)
  */
 public class TurtleModelEditor {
+
 	private final static int WINDOW_MIN_WIDTH = 400;
 	private final static int WINDOW_MIN_HEIGHT = 200;
 	

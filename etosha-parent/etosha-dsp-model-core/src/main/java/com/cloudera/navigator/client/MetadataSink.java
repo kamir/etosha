@@ -4,18 +4,6 @@ package com.cloudera.navigator.client;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jayway.jsonpath.JsonPath;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.CredentialsProvider;
@@ -26,16 +14,26 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
+import java.io.*;
+import java.net.URLEncoder;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author kamir
  */
 public class MetadataSink {
 
+    // FOR LOCAL TESTS WE USE A FOLDER ON THE WORKSTATION NOT HDFS
     public static final String BASEFOLDER_TO_SIMULATE_HDFS = "./data/HDFS_sim"; 
-    public static final String BASEFOLDER_MODEL_REPO = "REPO"; 
-    public static final String BASEFOLDER_STAGE = "STAGE"; 
-    public static final String BASEFOLDER_RESULTS = "RESULTS"; 
+
+    // MODEL METADATA
+    public static final String BASEFOLDER_MODEL_REPO = "REPO";
+
+//    public static final String BASEFOLDER_STAGE = "STAGE";
+//    public static final String BASEFOLDER_RESULTS = "RESULTS";
 
     public static void putMDO(ObjectMetadata omd) {
 

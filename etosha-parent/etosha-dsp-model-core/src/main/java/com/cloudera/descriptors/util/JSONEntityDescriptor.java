@@ -2,10 +2,10 @@ package com.cloudera.descriptors.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.Properties;
 import java.util.Vector;
@@ -39,8 +39,10 @@ public class JSONEntityDescriptor {
         try(Writer writer = new OutputStreamWriter(new FileOutputStream("./data/json/output.json") , "UTF-8")){
 
             Gson gson = new GsonBuilder().create();
-        
-            writer.append("curl http://172.24.128.52:7187/api/v8/entities/ec4d0af578abbe11b9eb2f471c89fbdc -u admin:LH_hdp01 -X PUT -H \"Content-Type: application/json\" -d '{");
+
+            String CNHOST = "127.0.0.1";
+
+            writer.append("curl http://" + CNHOST + ":7187/api/v8/entities/ec4d0af578abbe11b9eb2f471c89fbdc -u admin:abcdefg -X PUT -H \"Content-Type: application/json\" -d '{");
 
             writer.append("\"name\":");
             

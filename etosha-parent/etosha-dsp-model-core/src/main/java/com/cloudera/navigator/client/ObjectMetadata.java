@@ -8,6 +8,8 @@ import java.util.Vector;
 
 /**
  *
+ * This Object Metadata is a JSON representation of data managed by Cloudera Navigator.
+ *
  * @author kamir
  */
 public class ObjectMetadata {
@@ -82,8 +84,8 @@ public class ObjectMetadata {
            
             System.out.println( "### ADD-TAG ###"   );
             System.out.println( "SUBJECT         : " + id );
-            System.out.println( "key             : " + "IS_TAGGED_AS" );
-            System.out.println( "value           : " + tag );
+            System.out.println( "KEY             : " + "IS_TAGGED_AS" );
+            System.out.println( "VALUE           : " + tag );
             System.out.println();
             
         }
@@ -101,10 +103,10 @@ public class ObjectMetadata {
             String key = (String)names.nextElement();
             String value = p.getProperty(key);
            
-            System.out.println( "### ADD-KVP ###"   );
+            System.out.println( "### ADD-Key-Value-Pair ###"   );
             System.out.println( "SUBJECT         : " + id );
-            System.out.println( "key             : " + key );
-            System.out.println( "value           : " + value );
+            System.out.println( "KEY             : " + key );
+            System.out.println( "VALUE           : " + value );
             System.out.println();
         }
 
