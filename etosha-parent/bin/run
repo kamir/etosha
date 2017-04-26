@@ -32,12 +32,12 @@ ls $here
 #  Spark convenience tools:  		SparkShellUtilities.jar
 #  Gephi-Toolkit for local raphs:  	gephi-toolkit-0.9.2-20170113.202843-77-all.jar"
 #  ETOSHA-Profiler:      
-export JARS="--jars /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar,/GITHUB/SparkShellUtilities/out/artifacts/s2u_jar/s2u.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar,/sparkws/bin/gephi-toolkit-0.9.2-20170113.202843-77-all.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/classes/artifacts/etosha_core_jar/etosha-core.jar"
+export JARS="--jars /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar,/GITHUB/SparkShellUtilities/out/artifacts/s2u_jar/s2u.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar,/sparkws/bin/gephi-toolkit-0.9.2-20170113.202843-77-all.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/classes/artifacts/etosha_core_jar/etosha-core.jar,/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-dsp-model-core/classes/artifacts/etosha_dsp_model_core_jar/etosha-dsp-model-core.jar"
 
 zip -d /GITHUB/claerity-cloudera/XWARE42/shop-crawl/out/artifacts/any23_extractor_tool_jar/any23-extractor-tool.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
 zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-profiler/out/artifacts/etosha_profiler_jar/etosha-profiler.jar	META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
 zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-core/classes/artifacts/etosha_core_jar/etosha-core.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
-
+zip -d /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-dsp-model-core/classes/artifacts/etosha_dsp_model_core_jar/etosha-dsp-model-core.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
 
 #
 # You can use * for import all jars into a folder when adding in conf/spark-defaults.conf .

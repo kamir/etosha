@@ -96,38 +96,35 @@
     <orderEntry type="library" name="Maven: com.google.code.findbugs:jsr305:1.3.7" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:mail:1.4" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-arq:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-shaded-guava:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.github.jsonld-java:jsonld-java:0.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-arq:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-shaded-guava:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsonld-java:jsonld-java:0.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.4" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient-cache:4.2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.9.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.thrift:libthrift:0.9.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-csv:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-arq:sources:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-arq:javadoc:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-core:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-iri:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-base:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-core:sources:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-core:javadoc:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:sources:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:javadoc:3.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-csv:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-core:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-iri:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-base:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.andrewoma.dexx:collection:0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-tdb:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-rdfconnection:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.jena:jena-cmds:3.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="module" module-name="etosha-vocab" />
-    <orderEntry type="module" module-name="etosha-smw" />
-    <orderEntry type="module" module-name="etosha-model (1) (org.etosha)" />
+    <orderEntry type="module" module-name="simple-command" />
+    <orderEntry type="module" module-name="simple-weather" />
+    <orderEntry type="module" module-name="etosha-model (2)" />
     <orderEntry type="library" name="Maven: jaxen:jaxen:1.1.6" level="project" />
-    <orderEntry type="module" module-name="etosha-persist" />
+    <orderEntry type="module" module-name="simple-persist" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-commons-annotations:3.3.0.ga" level="project" />
     <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring:2.0.7" level="project" />
     <orderEntry type="library" name="Maven: hsqldb:hsqldb:1.8.0.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity:1.5" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: oro:oro:2.0.8" level="project" />
