@@ -2,6 +2,7 @@ package admin;
  
 import hadoop.cache.doc.HBaseDocWorld;
 import java.io.IOException;
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;

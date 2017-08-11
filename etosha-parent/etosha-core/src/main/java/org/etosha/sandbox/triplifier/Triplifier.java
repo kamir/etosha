@@ -1,8 +1,7 @@
 package org.etosha.sandbox.triplifier;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
+
+import org.apache.jena.rdf.model.*;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexableField;
 

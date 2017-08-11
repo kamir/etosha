@@ -15,9 +15,10 @@
  */
 package org.etosha.sandbox.triplifier;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Property;
 
+ 
 /**
  *
  * @author kamir

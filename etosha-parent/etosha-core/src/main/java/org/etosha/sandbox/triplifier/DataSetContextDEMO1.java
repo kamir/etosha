@@ -7,10 +7,11 @@ package org.etosha.sandbox.triplifier;
 // market research.
 //
 
-import com.hp.hpl.jena.rdf.model.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import org.apache.jena.rdf.model.*;
 
-
-import java.io.*;
 
 
 /**

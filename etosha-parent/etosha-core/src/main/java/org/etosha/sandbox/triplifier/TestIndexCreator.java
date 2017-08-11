@@ -9,7 +9,8 @@ package org.etosha.sandbox.triplifier;
 // 
 //      We implement a "SOLR SCHEMA to TRIPLE" converter here.
 
-import com.hp.hpl.jena.rdf.model.*;
+
+import org.apache.jena.rdf.model.*;
 
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
