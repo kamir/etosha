@@ -34,8 +34,9 @@ import javax.mail.internet.MimeMessage;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.tdb.TDBFactory;
+
 import org.etosha.vocab.EtoshaEmailVocabulary;
-import org.openrdf.query.Dataset;
+// import org.openrdf.query.Dataset;
 
 /**
  *

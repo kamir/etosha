@@ -2,6 +2,7 @@ package org.etosha.sandbox.triplifier;
 
 
 import org.apache.jena.rdf.model.*;
+
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexableField;
 

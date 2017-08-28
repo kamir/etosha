@@ -9,8 +9,10 @@
         <artifactId>etosha-parent</artifactId>
         <version>0.9.0-SNAPSHOT</version>
     </parent>
+
     <artifactId>etosha-model</artifactId>
     <packaging>jar</packaging>
+    <groupId>org.etosha</groupId>
 
     <name>Etosha Object-Model</name>
 
@@ -42,13 +44,13 @@
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena</artifactId>
             <type>pom</type>
-            <version>3.2.0</version>
+            <version>3.4.0</version>
         </dependency>
       
         <dependency>
             <groupId>org.apache.jena</groupId>
             <artifactId>jena-core</artifactId>
-            <version>3.2.0</version>
+            <version>3.4.0</version>
         </dependency>
 
         <dependency>
@@ -57,17 +59,17 @@
             <version>1.5</version>
         </dependency>
     
-        <dependency>
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdf2go.impl.sesame</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
         
-        <dependency>
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdf2go.impl.jena</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
         
  
   
@@ -88,26 +90,51 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
+
+        <!-- https://mvnrepository.com/artifact/org.semweb4j/rdfreactor.dist -->
         <dependency>
+            <groupId>org.semweb4j</groupId>
+            <artifactId>rdfreactor.dist</artifactId>
+            <version>5.0.1</version>
+            <type>pom</type>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.semweb4j/rdf2go.api -->
+        <dependency>
+            <groupId>org.semweb4j</groupId>
+            <artifactId>rdf2go.api</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.semweb4j/rdf2go.impl.jena -->
+        <dependency>
+            <groupId>org.semweb4j</groupId>
+            <artifactId>rdf2go.impl.jena</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+
+
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdfreactor.runtime</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
         
-        <dependency>
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdfreactor.generator</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
  
     </dependencies>
   
     <repositories>
-        <repository>
+        <!--repository>
             <id>semweb4j</id>
             <name>semweb4j repo</name>
             <url>http://mavenrepo.fzi.de/semweb4j.org/repo/</url>
-        </repository>
+        </repository-->
     </repositories>
 </project>

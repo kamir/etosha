@@ -16,6 +16,7 @@
 package org.etosha.vocab;
 
 import java.util.Hashtable;
+
 import org.apache.jena.rdf.model.Property;
 
 /**

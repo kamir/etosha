@@ -32,12 +32,22 @@
        PROBLEM: SITE-Management is not COMPLETELY CONFIGURED
     -->
     <dependencies>
+        
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena</artifactId>
+            <type>pom</type>
+            <version>3.4.0</version>
+    	</dependency>  
+    
+    
     </dependencies>
     <organization>
         <name>The Apache Software Foundation</name>
@@ -93,12 +103,11 @@
                     <configuration>
                         <appendAssemblyId>true</appendAssemblyId>
                         <descriptors>
-                            <!--descriptor>assembly_etosha_parcel.xml</descriptor-->
                             <descriptor>assembly/assembly_etcs_parcel.xml</descriptor>
                         </descriptors>
                     </configuration>
                     <executions>
-                        <!--execution>
+                        <execution>
                             <id>make-Etosha-parcel</id>
                             <phase>package</phase>
                             <goals>
@@ -106,13 +115,13 @@
                             </goals>
                             <configuration>
                                 <appendAssemblyId>true</appendAssemblyId>
-                                <finalName>Etosha-0.7</finalName>
+                                <finalName>Etosha-0.9</finalName>
                                 <descriptors>
-                                    <descriptor>assembly_etosha_parcel.xml</descriptor>
+                                    <descriptor>assembly/assembly_etosha_parcel.xml</descriptor>
                                 </descriptors>
                                 <attach>true</attach>
                             </configuration>
-                        </execution-->
+                        </execution>
                         <execution>
                             <id>make-etcs-parcel</id>
                             <phase>package</phase>
@@ -123,7 +132,7 @@
                                 <appendAssemblyId>true</appendAssemblyId>
                                 <finalName>ETCS-1.0</finalName>
                                 <descriptors>
-                                    <descriptor>assembly_etcs_parcel.xml</descriptor>
+                                    <descriptor>assembly/assembly_etcs_parcel.xml</descriptor>
                                 </descriptors>
                                 <attach>true</attach>
                             </configuration>

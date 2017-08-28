@@ -2,6 +2,7 @@ package org.etosha.vocab;
 
 import org.apache.jena.rdf.model.*;
 
+
 /**
  *
  * @author kamir
@@ -13,7 +14,7 @@ import org.apache.jena.rdf.model.*;
  */
 public class EtoshaEmailVocabulary {
 
-    public static Model m = ModelFactory.createDefaultModel();
+        public static Model m = ModelFactory.createDefaultModel();
 
     protected static final String uri = "http://www.semanpix.de/2015/etosha-mail/1.0#";
 

@@ -17,14 +17,15 @@
  
   <modules>
     <module>etosha-core</module>
-    <!--module>etosha-model</module>
+    <module>etosha-model</module>
     <module>etosha-persist</module>
     <module>etosha-smw</module>
     <module>etosha-contextualizer</module>
     <module>etosha-webapp</module> 
-    <module>etosha-profiler</module>
+    <!-- Gephi-spanning tree module causes a confilct-->
+    <!--module>etosha-profiler</module-->
     <module>etosha-vocab</module>
-    <module>etosha-dsp-model-core</module--> 
+    <module>etosha-dsp-model-core</module>
   </modules>
 
 
@@ -46,11 +47,20 @@
   </build>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>apache-jena</artifactId>
+      <type>pom</type>
+      <version>3.4.0</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
   </dependencies>
 </project>

@@ -22,12 +22,12 @@
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-core</artifactId>
-            <version>4.4.0</version>
+            <version>4.10.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-solrj</artifactId>
-            <version>4.4.0</version>
+            <version>4.10.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tika</groupId>
@@ -66,7 +66,7 @@
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena</artifactId>
             <type>pom</type>
-            <version>3.2.0</version>
+            <version>3.4.0</version>
         </dependency>
         
         
@@ -82,7 +82,7 @@
             <groupId>org.apache.jena</groupId>
             <artifactId>apache-jena-libs</artifactId>
             <type>pom</type>
-            <version>3.0.0</version>
+            <version>3.4.0</version>
         </dependency>
 
 
@@ -92,17 +92,34 @@
             <version>1.5</version>
         </dependency>
     
-        <dependency>
+<!-- https://mvnrepository.com/artifact/org.semweb4j/rdf2go.api -->
+<!--dependency>
+    <groupId>org.semweb4j</groupId>
+    <artifactId>rdf2go.api</artifactId>
+    <version>5.0.0</version>
+</dependency-->
+
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdf2go.impl.sesame</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
         
-        <dependency>
+        <!--dependency>
             <groupId>org.semweb4j</groupId>
             <artifactId>rdf2go.impl.jena</artifactId>
             <version>4.8.3</version>
-        </dependency>
+        </dependency-->
+        <!--dependency>
+            <groupId>org.semweb4j</groupId>
+            <artifactId>rdfreactor.runtime</artifactId>
+            <version>4.8.3</version>
+        </dependency-->
+        <!--dependency>
+            <groupId>org.semweb4j</groupId>
+            <artifactId>rdfreactor.generator</artifactId>
+            <version>4.8.3</version>
+        </dependency-->
         
    
   
@@ -121,16 +138,6 @@
                     <artifactId>jta</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.semweb4j</groupId>
-            <artifactId>rdfreactor.runtime</artifactId>
-            <version>4.8.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.semweb4j</groupId>
-            <artifactId>rdfreactor.generator</artifactId>
-            <version>4.8.3</version>
         </dependency>
  
     </dependencies>
@@ -161,10 +168,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <repository>
+        <!--repository>
             <id>semweb4j</id>
             <name>semweb4j repo</name>
             <url>http://mavenrepo.fzi.de/semweb4j.org/repo/</url>
-        </repository>
+        </repository-->
     </repositories>
 </project>
