@@ -15,28 +15,20 @@
  */
 package org.etosha.contextualizer.contexts;
 
-import com.google.api.client.util.Base64;
-import java.net.URLEncoder;
-
-import com.google.api.services.gmail.model.Message;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.Resource;
 import org.etosha.contextualizer.IContextualizer;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
+import org.etosha.vocab.EtoshaEmailVocabulary;
+
 import javax.mail.Address;
 import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.Part;
-import javax.mail.Session;
 import javax.mail.internet.MimeMessage;
-
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.tdb.TDBFactory;
-
-import org.etosha.vocab.EtoshaEmailVocabulary;
-// import org.openrdf.query.Dataset;
+import java.io.IOException;
+import java.net.URLEncoder;
+import java.util.List;
+import java.util.Properties;
 
 /**
  *
@@ -95,7 +87,8 @@ public class EmailCommunicationContext {
             
             
             
-            
+            System.out.println( "Model: " + (model != null));
+
             
             
             

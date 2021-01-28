@@ -1,0 +1,2 @@
+export CLASSPATH=$CLASSPATH:../ieval.jar
+java -Xmx1000m InputBasedEvaluation sampleMappings.txt config.example

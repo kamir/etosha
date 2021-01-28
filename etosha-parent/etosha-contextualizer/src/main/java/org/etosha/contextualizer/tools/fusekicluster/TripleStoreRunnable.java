@@ -28,6 +28,11 @@ import java.net.URISyntaxException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ *
+ * TODO: Use a docker container for Fuseki.
+ */
+
 public class TripleStoreRunnable implements Runnable {
     
     FUSEKIHostControlerPanel panel = null;
@@ -102,9 +107,12 @@ public class TripleStoreRunnable implements Runnable {
         BufferedReader br = new BufferedReader(isr);
         String line;
 
+        File f_default_context = new File(  TripleStoreRunner.FUSEKI_DATA );
+        File f_partitions_folder = new File(  TripleStoreRunner.FUSEKI_DATA );
+
         System.out.println("[TripleStoreRunner.FUSEKI_SCRIPT] " + TripleStoreRunner.FUSEKI_SCRIPT);
         System.out.println("[TripleStoreRunner.FUSEKI_CMD   ] " + TripleStoreRunner.FUSEKI_CMD);
-        System.out.println("[TripleStoreRunner.FUSEKI_DATA  ] " + TripleStoreRunner.FUSEKI_DATA);
+        System.out.println("[TripleStoreRunner.FUSEKI_DATA  ] " + TripleStoreRunner.FUSEKI_DATA + " (" + f_default_context.canRead() + ")" );
         System.out.println("[TripleStoreRunner.FUSEKI_PORT  ] " + TripleStoreRunner.FUSEKI_MIN_PORT + " => " + port);
 
         TripleStoreRunner.running = true;

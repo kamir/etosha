@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.etosha</groupId>
     <artifactId>etosha-umbrella</artifactId>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Etosha UMBRELLA Project</name>
      
@@ -21,6 +21,7 @@
     <modules>
         <module>etosha-parent</module>
     </modules>
+
     <!-- 
        %ETOSHA.DOC.LINK
        
@@ -47,8 +48,18 @@
             <version>3.4.0</version>
     	</dependency>  
     
-    
     </dependencies>
+    
+   <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>2.20</version>
+      </plugin>
+    </plugins>
+  </reporting>
+    
     <organization>
         <name>The Apache Software Foundation</name>
         <url>http://www.apache.org</url>
@@ -65,10 +76,10 @@
         <developer>
             <id>kamir</id>
             <name>Mirko Kaempf</name>
-            <email>mirko@cloudera.com</email>
+            <email>mirko.kaempf@gmail.com</email>
             <timezone>+1</timezone>
-            <organization>Cloudera</organization>
-            <organizationUrl>http://www.cloudera.com</organizationUrl>
+            <organization>Semanpix</organization>
+            <organizationUrl>http://www.semanpix.de</organizationUrl>
         </developer>
 
     </developers>
@@ -195,6 +206,9 @@
                         </execution>
                     </executions>
                 </plugin>
+                
+ 
+      
             </plugins>
         </pluginManagement>
     </build>

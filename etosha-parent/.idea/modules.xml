@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/etosha-contextualizer/etosha-contextualizer.iml" filepath="$PROJECT_DIR$/etosha-contextualizer/etosha-contextualizer.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-core/etosha-core.iml" filepath="$PROJECT_DIR$/etosha-core/etosha-core.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/etosha-csd.iml" filepath="$PROJECT_DIR$/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/etosha-csd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-dsp-model-core/etosha-dsp-model-core.iml" filepath="$PROJECT_DIR$/etosha-dsp-model-core/etosha-dsp-model-core.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-model/etosha-model.iml" filepath="$PROJECT_DIR$/etosha-model/etosha-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-model/etosha-model (1) (org.etosha).iml" filepath="$PROJECT_DIR$/etosha-model/etosha-model (1) (org.etosha).iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-model/etosha-model (2).iml" filepath="$PROJECT_DIR$/etosha-model/etosha-model (2).iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-network-profiler/etosha-network-profiler.iml" filepath="$PROJECT_DIR$/etosha-network-profiler/etosha-network-profiler.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent.iml" filepath="$PROJECT_DIR$/etosha-parent.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-persist/etosha-persist.iml" filepath="$PROJECT_DIR$/etosha-persist/etosha-persist.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-smw/etosha-smw.iml" filepath="$PROJECT_DIR$/etosha-smw/etosha-smw.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-vocab/etosha-vocab.iml" filepath="$PROJECT_DIR$/etosha-vocab/etosha-vocab.iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-webapp/etosha-webapp.iml" filepath="$PROJECT_DIR$/etosha-webapp/etosha-webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-webapp/etosha-webapp (1) (org.etosha).iml" filepath="$PROJECT_DIR$/etosha-webapp/etosha-webapp (1) (org.etosha).iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-vocab/simple-command.iml" filepath="$PROJECT_DIR$/etosha-vocab/simple-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-vocab/simple-command (1).iml" filepath="$PROJECT_DIR$/etosha-vocab/simple-command (1).iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-persist/simple-persist.iml" filepath="$PROJECT_DIR$/etosha-persist/simple-persist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-persist/simple-persist (1).iml" filepath="$PROJECT_DIR$/etosha-persist/simple-persist (1).iml" group="etosha-parent and modules" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-smw/simple-weather.iml" filepath="$PROJECT_DIR$/etosha-smw/simple-weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-smw/simple-weather (1).iml" filepath="$PROJECT_DIR$/etosha-smw/simple-weather (1).iml" group="etosha-parent and modules" />
+    </modules>
+  </component>
+</project>

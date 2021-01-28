@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="etosha-contextualizer" />
+        <module name="etosha-core" />
+        <module name="etosha-dsp-model-core" />
+        <module name="etosha-model" />
+        <module name="etosha-model (1) (org.etosha)" />
+        <module name="etosha-model (2)" />
+        <module name="etosha-network-profiler" />
+        <module name="etosha-persist" />
+        <module name="etosha-smw" />
+        <module name="etosha-vocab" />
+        <module name="etosha-webapp" />
+        <module name="etosha-webapp (1) (org.etosha)" />
+        <module name="simple-command" />
+        <module name="simple-command (1)" />
+        <module name="simple-persist" />
+        <module name="simple-persist (1)" />
+        <module name="simple-weather" />
+        <module name="simple-weather (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="etosha-contextualizer" target="1.8" />
+      <module name="etosha-core" target="1.8" />
+      <module name="etosha-csd" target="1.8" />
+      <module name="etosha-dsp-model-core" target="1.8" />
+      <module name="etosha-model" target="1.5" />
+      <module name="etosha-model (1) (org.etosha)" target="1.8" />
+      <module name="etosha-model (2)" target="1.8" />
+      <module name="etosha-network-profiler" target="1.8" />
+      <module name="etosha-parent" target="1.6" />
+      <module name="etosha-persist" target="1.8" />
+      <module name="etosha-profiler" target="1.8" />
+      <module name="etosha-smw" target="1.8" />
+      <module name="etosha-vocab" target="1.8" />
+      <module name="etosha-webapp" target="1.5" />
+      <module name="etosha-webapp (1) (org.etosha)" target="1.8" />
+      <module name="etosha-webapp (2)" target="1.8" />
+      <module name="simple-command" target="1.5" />
+      <module name="simple-command (1)" target="1.8" />
+      <module name="simple-persist" target="1.5" />
+      <module name="simple-persist (1)" target="1.8" />
+      <module name="simple-weather" target="1.5" />
+      <module name="simple-weather (1)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

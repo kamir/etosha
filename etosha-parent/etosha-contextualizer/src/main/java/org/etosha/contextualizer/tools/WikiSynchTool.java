@@ -15,7 +15,7 @@
  */
 package org.etosha.contextualizer.tools;
 
-import wikiapiclient.WikiORIGINAL;
+import org.etosha.contextualizer.wikiapiclient.WikiORIGINAL;
 
 /**
  *

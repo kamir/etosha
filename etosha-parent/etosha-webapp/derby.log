@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Apr 24 13:54:23 CEST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015b-9fd0-0bc8-00002c104ce8 
+on database directory /GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-webapp/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@35e79be0 
+Loaded from file:/Users/kamir/Downloads/spark-1.6.3-bin-hadoop2.6/lib/spark-assembly-1.6.3-hadoop2.6.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-webapp
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.11.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

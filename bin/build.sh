@@ -8,7 +8,7 @@
 #
 #-------------------------------------------------------------------------------
 WSHOST=127.0.0.1
-USER=cloudera
+USER=semanpix
 
 #-------------------------------------------------------------------------------
 # Build the Etosha toolbox ...
@@ -31,12 +31,10 @@ cd /usr/sbin
 sudo ln -s /home/$USER/workspace/etosha/etosha-parent/bin/ecl.sh ecl
 sudo chmod 777 ecl
 
-echo "=> Please replace the password in file:   /home/$USER/etc/etosha/smw-site.xml   to login to SMW."
+echo "=> Please replace the password in file: {/home/$USER/etc/etosha/smw-site.xml} to login to SMW."
 echo "=> Set JAVA_HOME to Java 8."
 
 echo $JAVA_HOME
-
-
 
 
 

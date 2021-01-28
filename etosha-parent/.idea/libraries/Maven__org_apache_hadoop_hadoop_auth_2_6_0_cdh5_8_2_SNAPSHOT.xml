@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.hadoop:hadoop-auth:2.6.0-cdh5.8.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-auth/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-auth-2.6.0-cdh5.8.2-20160909.135810-41.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-auth/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-auth-2.6.0-cdh5.8.2-20160909.135810-41-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-auth/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-auth-2.6.0-cdh5.8.2-20160909.135810-41-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

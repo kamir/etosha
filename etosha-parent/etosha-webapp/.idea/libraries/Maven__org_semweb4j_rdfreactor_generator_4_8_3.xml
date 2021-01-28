@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.semweb4j:rdfreactor.generator:4.8.3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/semweb4j/rdfreactor.generator/4.8.3/rdfreactor.generator-4.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/semweb4j/rdfreactor.generator/4.8.3/rdfreactor.generator-4.8.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/semweb4j/rdfreactor.generator/4.8.3/rdfreactor.generator-4.8.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

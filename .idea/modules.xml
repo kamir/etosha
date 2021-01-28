@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-contextualizer/etosha-contextualizer.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-contextualizer/etosha-contextualizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-core/etosha-core.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-core/etosha-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-dsp-model-core/etosha-dsp-model-core.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-dsp-model-core/etosha-dsp-model-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-model/etosha-model.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-model/etosha-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-parent.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-persist/etosha-persist.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-persist/etosha-persist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-smw/etosha-smw.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-smw/etosha-smw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-umbrella.iml" filepath="$PROJECT_DIR$/etosha-umbrella.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etosha-parent/etosha-vocab/etosha-vocab.iml" filepath="$PROJECT_DIR$/etosha-parent/etosha-vocab/etosha-vocab.iml" />
+    </modules>
+  </component>
+</project>

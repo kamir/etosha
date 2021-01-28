@@ -7,9 +7,9 @@ export FUSEKI_HOME=../main/apache-jena-fuseki-2.3.0/
 #
 
 CMD=$1
-WEBSERVER_PORT=3030
-MODEL_FILE=../main/data/model.ttl
-PART_FOLDER=/ETOSHA.WS/FUSEKI/DISTR
+WEBSERVER_PORT=5051
+MODEL_FILE=/GITHUB/ETOSHA.WS/etosha-workbench/fuseki-buffer/default.ttl
+PART_FOLDER=/GITHUB/ETOSHA.WS/etosha-workbench/fuseki-buffer/facets
 
 
 
@@ -32,11 +32,13 @@ WEBSERVER_PORT=$3
 case $CMD in
   (start)
     clear
+    echo "$(pwd)/control.sh"
+    echo " "
     echo "      FUSEKI_HOME: $FUSEKI_HOME"
     echo "             PORT: $WEBSERVER_PORT"
     echo "       MODEL_FILE: $MODEL_FILE"
     echo " PARTITION_FOLDER: $PART_FOLDER"
-
+    echo " "
     echo ">>> Starting the Fuseki-Server on port [$WEBSERVER_PORT] (default: 3030)"
 
     exec ../main/apache-jena-fuseki-2.3.0/fuseki-server --file=$MODEL_FILE --update --port=$WEBSERVER_PORT /ETCS &

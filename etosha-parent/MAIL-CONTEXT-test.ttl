@@ -1,0 +1,399 @@
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1395769763000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1395769763000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "Giraph vs. Graphlab/GSOC" , "IMPORTANT" , "ASF Giraph" , "ASF Giraph/GIRAPH DEVELOPMENT" , "CATEGORY_PERSONAL" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "144fa5c76fea4768" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23%22mirko.kaempf%22+%3Cmirko.kaempf%40gmail.com%3E___1463827932000___%2822%29+An+Algebra+for+Spatiotemporal+Data%3A+From+Observations+to+Events+%7C+Karine+Ferreira+and+Gilberto+Camara+-+Academia.edu>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "154d2f06d7dc74c9" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1463827932000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "IMPORTANT" , "CATEGORY_PERSONAL" , "PAPER" , "INBOX" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "154d2f06d7dc74c9" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?ISO-8859-1?Q?Mirko_K=E4mpf?= <mirko@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"mirko.kaempf\" <mirko.kaempf@gmail.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "(22) An Algebra for Spatiotemporal Data: From Observations to Events | Karine Ferreira and Gilberto Camara - Academia.edu" .
+
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1398709230000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1398709230000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph/GIRAPH DEVELOPMENT" , "IMPORTANT" , "Giraph vs. Graphlab/GSOC" , "CATEGORY_PERSONAL" , "ASF Giraph" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "145a9914e344baa0" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23%3D%3FISO-8859-1%3FQ%3FMirko_K%3DE4mpf%3F%3D+%3Cmirko.kaempf%40cloudera.com%3E___1398594583000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1398594583000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "Giraph vs. Graphlab/GSOC" , "ASF Giraph/GIRAPH DEVELOPMENT" , "SENT" , "IMPORTANT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "145a2bbba882aff2" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "=?ISO-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1398359652000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1398359652000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "Giraph vs. Graphlab/GSOC" , "CATEGORY_PERSONAL" , "ASF Giraph/GIRAPH DEVELOPMENT" , "ASF Giraph" , "IMPORTANT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14594bb088090769" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Avery Ching <aching@apache.org>" , "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1403127513000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403127513000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "IMPORTANT" , "ASF Giraph/GIRAPH DEVELOPMENT" , "CATEGORY_PERSONAL" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146b0eade6a468c5" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Gianmarco+De+Francisci+Morales+%3Cgdfm%40apache.org%3E___1403779165000___Re%3A+%5Bjira%5D+%5BCommented%5D+%28GIRAPH-877%29+pagerank+application+on+giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "146bb393f8676226" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403779165000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "CATEGORY_FORUMS" , "ASF Giraph" , "ASF Giraph/GIRAPH DEVELOPMENT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146d7c2d1467b211" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "giraph-dev@incubator.apache.org" , "dev@giraph.apache.org" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianmarco De Francisci Morales <gdfm@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: [jira] [Commented] (GIRAPH-877) pagerank application on giraph" .
+
+<%23%23%23%23%23Avery+Ching+%3Caching%40apache.org%3E___1395187206000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1395187206000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "Giraph vs. Graphlab/GSOC" , "CATEGORY_PERSONAL" , "ASF Giraph/GIRAPH DEVELOPMENT" , "IMPORTANT" , "ASF Giraph" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "144d7a375034e520" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Gianluca Righetto <gianluca@menttis.com>" , "=?ISO-8859-1?Q?Mirko_K=E4?=\r\n =?ISO-8859-1?Q?mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Avery Ching <aching@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Rafael+Arana+%3Crafael.arana%40cloudera.com%3E___1489578232000___Re%3A+Spark+Memory+usage>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "15ad1b1aead82790" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1489578232000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "TODO/Infografik" , "INBOX" , "CATEGORY_PERSONAL" , "IMPORTANT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "15ad1c80fbc07940" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?UTF-8?B?TWlya28gS8OkbXBm?= <mirko.kaempf@cloudera.com>" , "Rafael Arana <rafa@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Rafael Arana <rafael.arana@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: Spark Memory usage" .
+
+<%23%23%23%23%23%22Pavan+Kumar+%28JIRA%29%22+%3Cjira%40apache.org%3E___1403550545000___%5Bjira%5D+%5BCommented%5D+%28GIRAPH-877%29+pagerank+application+on+giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "146bb393f8676226" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403550545000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "CATEGORY_FORUMS" , "ASF Giraph/GIRAPH DEVELOPMENT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146ca21b9801001d" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "giraph-dev@incubator.apache.org" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"Pavan Kumar (JIRA)\" <jira@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "[jira] [Commented] (GIRAPH-877) pagerank application on giraph" .
+
+<%23%23%23%23%23%3D%3FUTF-8%3FB%3FTWlya28gS8OkbXBm%3F%3D+%3Cmirko.kaempf%40cloudera.com%3E___1403074125000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403074125000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "SENT" , "ASF Giraph/GIRAPH DEVELOPMENT" , "IMPORTANT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146adbc1e95e317e" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "=?UTF-8?B?TWlya28gS8OkbXBm?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23%22Connolly%2C+William+%28ISBANUK%29%22+%3Cwilliam.connolly%40contractor.isbanuk.com%3E___1422458332000___Metadata>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14b311fc2ff6c488" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1422458332000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "INBOX" , "CATEGORY_PERSONAL" , "etosha" , "IMPORTANT" , "Best Pracrtice/Navigator" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14b311fc2ff6c488" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "\"Clinch, Peter (ISBANUK)\" <Peter.Clinch@isbanuk.com>" , "\"mirko@cloudera.com\" <mirko@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"Connolly, William (ISBANUK)\" <william.connolly@contractor.isbanuk.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Metadata" .
+
+<%23%23%23%23%23%22mirko.kaempf%22+%3Cmirko.kaempf%40gmail.com%3E___1481010365000___Stream+Processing+Myths+Debunked+%E2%80%93+data+Artisans>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "158d311a047bbc3a" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1481010365000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "CATEGORY_PERSONAL" , "_WORKLOG_/LUFTHANSA_MDM" , "INBOX" , "UNREAD" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "158d311a047bbc3a" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?ISO-8859-1?Q?Mirko_K=E4mpf?= <mirko@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"mirko.kaempf\" <mirko.kaempf@gmail.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Stream Processing Myths Debunked – data Artisans" .
+
+<%23%23%23%23%23%22Maja+Kabiljo+%28JIRA%29%22+%3Cjira%40apache.org%3E___1403300426000___%5Bjira%5D+%5BCommented%5D+%28GIRAPH-877%29+pagerank+application+on+giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "146bb393f8676226" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403300426000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "ASF Giraph/GIRAPH DEVELOPMENT" , "CATEGORY_PROMOTIONS" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146bb393f8676226" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "giraph-dev@incubator.apache.org" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"Maja Kabiljo (JIRA)\" <jira@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "[jira] [Commented] (GIRAPH-877) pagerank application on giraph" .
+
+<%23%23%23%23%23Justin+Hayes+%3Cjhayes%40cloudera.com%3E___1426134450000___Re%3A+Encrypting+Linux+dirs+with+Navigator+Encrypt+-+which+do+we+recommend%3F>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14c0661caec90420" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1426134450000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "INBOX" , "Best Pracrtice/Setup Security" , "Best Pracrtice/Navigator" , "CATEGORY_FORUMS" , "IMPORTANT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14c0c3cc97f54812" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Michael Yoder <myoder@cloudera.com>" , "Michael Riggs <michael.riggs@cloudera.com>" , "FCE <fce@cloudera.com>" , "sme-coe-security <sme-coe-security@cloudera.com>" , "Steven Ross <sross@cloudera.com>" , "Benjamin Vera-Tudela <bveratudela@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Justin Hayes <jhayes@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: Encrypting Linux dirs with Navigator Encrypt - which do we recommend?" .
+
+<%23%23%23%23%23%22mirko.kaempf%22+%3Cmirko.kaempf%40gmail.com%3E___1463821621000___ml.pdf>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "154d29030ab09946" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1463821621000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "IMPORTANT" , "INBOX" , "PAPER" , "CATEGORY_PERSONAL" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "154d29030ab09946" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?ISO-8859-1?Q?Mirko_K=E4mpf?= <mirko@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"mirko.kaempf\" <mirko.kaempf@gmail.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "ml.pdf" .
+
+<%23%23%23%23%23%3D%3FISO-8859-1%3FQ%3FMirko_K%3DE4mpf%3F%3D+%3Cmirko.kaempf%40cloudera.com%3E___1395669405000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1395669405000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "ASF Giraph/GIRAPH DEVELOPMENT" , "IMPORTANT" , "Giraph vs. Graphlab/GSOC" , "SENT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "144f4610f26576fe" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "=?ISO-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Hrishikesh+Gadre+%3Chgadre%40cloudera.com%3E___1426274492000___Re%3A+SOLR+SSL+support+-+Invitation+to+edit>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14c1494140ac7cb5" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1426274492000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "Best Pracrtice/Setup Security" , "CATEGORY_FORUMS" , "Best Pracrtice/Navigator" , "INBOX" , "Best Pracrtice/Search" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14c1495a55e5b315" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Hrishikesh Gadre <hgadre@cloudera.com>" , "Search Internal <int-search@cloudera.com>" , "Chris Aschauer <chrisa@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Hrishikesh Gadre <hgadre@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: SOLR SSL support - Invitation to edit" .
+
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1402949970000___Re%3A+GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1402949970000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "CATEGORY_PERSONAL" , "IMPORTANT" , "ASF Giraph/GIRAPH DEVELOPMENT" , "ASF Giraph" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146a655bdeb3b07d" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Steven+Ross+%3Csross%40cloudera.com%3E___1426107177000___Re%3A+Encrypting+Linux+dirs+with+Navigator+Encrypt+-+which+do+we+recommend%3F>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14c0661caec90420" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1426107177000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "INBOX" , "Best Pracrtice/Navigator" , "CATEGORY_FORUMS" , "IMPORTANT" , "Best Pracrtice/Setup Security" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14c0a9cf09dc78ac" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Justin Hayes <jhayes@cloudera.com>" , "sme-coe-security <sme-coe-security@cloudera.com>" , "Benjamin Vera-Tudela <bveratudela@cloudera.com>" , "Michael Riggs <michael.riggs@cloudera.com>" , "Michael Yoder <myoder@cloudera.com>" , "FCE <fce@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Steven Ross <sross@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: Encrypting Linux dirs with Navigator Encrypt - which do we recommend?" .
+
+<%23%23%23%23%23%22Sebastian+Schelter+%28JIRA%29%22+%3Cjira%40apache.org%3E___1403780427000___%5Bjira%5D+%5BCommented%5D+%28GIRAPH-877%29+pagerank+application+on+giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "146bb393f8676226" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1403780427000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "ASF Giraph" , "CATEGORY_FORUMS" , "ASF Giraph/GIRAPH DEVELOPMENT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "146d7d5714517bea" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "giraph-dev@incubator.apache.org" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"Sebastian Schelter (JIRA)\" <jira@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "[jira] [Commented] (GIRAPH-877) pagerank application on giraph" .
+
+<%23%23%23%23%23Gianluca+Righetto+%3Cgianluca%40menttis.com%3E___1395186062000___GSoC+2014+-+Giraph>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1395186062000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "CATEGORY_PERSONAL" , "Giraph vs. Graphlab/GSOC" , "IMPORTANT" , "ASF Giraph" , "ASF Giraph/GIRAPH DEVELOPMENT" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "144d791e216c26ff" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "=?iso-8859-1?Q?Mirko_K=E4mpf?= <mirko.kaempf@cloudera.com>" , "Avery Ching <aching@apache.org>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Gianluca Righetto <gianluca@menttis.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "GSoC 2014 - Giraph" .
+
+<%23%23%23%23%23Michael+Yoder+%3Cmyoder%40cloudera.com%3E___1426106128000___Re%3A+Encrypting+Linux+dirs+with+Navigator+Encrypt+-+which+do+we+recommend%3F>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14c0661caec90420" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1426106128000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "Best Pracrtice/Setup Security" , "CATEGORY_FORUMS" , "IMPORTANT" , "INBOX" , "Best Pracrtice/Navigator" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14c0a8c9baabb2f2" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Michael Riggs <michael.riggs@cloudera.com>" , "Justin Hayes <jhayes@cloudera.com>" , "FCE <fce@cloudera.com>" , "Benjamin Vera-Tudela <bveratudela@cloudera.com>" , "sme-coe-security <sme-coe-security@cloudera.com>" , "Steven Ross <sross@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "Michael Yoder <myoder@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Re: Encrypting Linux dirs with Navigator Encrypt - which do we recommend?" .
+
+<%23%23%23%23%23%22Hrishikesh+Gadre+%28via+Google+Docs%29%22+%3Chgadre%40cloudera.com%3E___1426274390000___SOLR+SSL+support+-+Invitation+to+edit>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "14c1494140ac7cb5" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1426274390000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "CATEGORY_FORUMS" , "INBOX" , "Best Pracrtice/Navigator" , "Best Pracrtice/Search" , "Best Pracrtice/Setup Security" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "14c1494140ac7cb5" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "myoder@cloudera.com" , "jayita@cloudera.com" , "int-search@cloudera.com" , "chrisa@cloudera.com" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "\"Hrishikesh Gadre (via Google Docs)\" <hgadre@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "SOLR SSL support - Invitation to edit" .
+
+<%23%23%23%23%23%3D%3FUTF-8%3FB%3FTWlya28gS8OkbXBm%3F%3D+%3Cmirko.kaempf%40cloudera.com%3E___1489576767000___Spark+Memory+usage>
+        <http://www.semanpix.de/2015/etosha-mail/1.0#belongsToThread>
+                "15ad1b1aead82790" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#dateReceived>
+                "1489576767000" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasLabel>
+                "SENT" , "IMPORTANT" , "TODO/Infografik" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#hasMailID>
+                "15ad1b1aead82790" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#receiver>
+                "Rafael Arana <rafa@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#sender>
+                "=?UTF-8?B?TWlya28gS8OkbXBm?= <mirko.kaempf@cloudera.com>" ;
+        <http://www.semanpix.de/2015/etosha-mail/1.0#subject>
+                "Spark Memory usage" .

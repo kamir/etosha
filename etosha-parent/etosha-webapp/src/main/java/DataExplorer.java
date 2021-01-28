@@ -1,10 +1,10 @@
 
+import javax.swing.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 
 /**
  * We browse the web. Step from URL to URL and explore the context of each
@@ -214,7 +214,7 @@ public class DataExplorer {
 
     private void openTraceGraph() {
         
-        Object graph = this.trace.getGraphOfTraces();
+        // Object graph = this.trace.getGraphOfTraces();
         
         // SHOW GRAPH AS IN MORPHMINER ...
         

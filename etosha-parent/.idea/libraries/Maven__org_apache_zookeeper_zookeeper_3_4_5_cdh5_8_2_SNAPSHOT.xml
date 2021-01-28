@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.zookeeper:zookeeper:3.4.5-cdh5.8.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-cdh5.8.2-SNAPSHOT/zookeeper-3.4.5-cdh5.8.2-20160909.135238-42.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-cdh5.8.2-SNAPSHOT/zookeeper-3.4.5-cdh5.8.2-20160909.135238-42-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5-cdh5.8.2-SNAPSHOT/zookeeper-3.4.5-cdh5.8.2-20160909.135238-42-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

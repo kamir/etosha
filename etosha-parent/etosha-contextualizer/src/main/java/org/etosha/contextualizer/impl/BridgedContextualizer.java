@@ -1,7 +1,5 @@
 package org.etosha.contextualizer.impl;
 
-import org.etosha.contextualizer.ContextIsReadOnlyException;
-import org.etosha.contextualizer.ContextualizerFactory;
 import org.etosha.contextualizer.IContextualizer;
 import static org.etosha.contextualizer.impl.JenaInMemoryContextualizer.model;
 import org.apache.jena.rdf.model.Model;

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.hadoop:hadoop-hdfs:2.6.0-cdh5.8.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-hdfs/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-hdfs-2.6.0-cdh5.8.2-20160909.140352-41.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-hdfs/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-hdfs-2.6.0-cdh5.8.2-20160909.140352-41-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-hdfs/2.6.0-cdh5.8.2-SNAPSHOT/hadoop-hdfs-2.6.0-cdh5.8.2-20160909.140352-41-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.httpcomponents:httpmime:4.4-beta2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.4-beta2-SNAPSHOT/httpmime-4.4-beta2-20141019.201230-14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.4-beta2-SNAPSHOT/httpmime-4.4-beta2-20141019.201230-14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.4-beta2-SNAPSHOT/httpmime-4.4-beta2-20141019.201230-14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -35,19 +35,8 @@ package org.etosha.contextualizer.tools.fusekicluster;
  * 
  * Flume will use the GRAPH-PARTITIONER-SINK to write ttl files into HDFS.
  */
-import java.awt.Desktop;
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.DatagramSocket;
-import java.net.ServerSocket;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.net.URI;
 import java.net.URISyntaxException;
-import static org.etosha.contextualizer.tools.fusekicluster.TripleStoreRunner.myRunnable;
 
 /**
  *
@@ -60,12 +49,13 @@ public class TripleStoreRunner {
     public static String FUSEKI_SCRIPT = "/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-docworld/DISTRIBUTE/DocWorld.PARCEL/src/ETCS-1.0/scripts/control.sh";
     public static String FUSEKI_CMD = "start";
 
-    public static int FUSEKI_MIN_PORT = 3070;
+    public static int FUSEKI_MIN_PORT = 5051;
 
     /**
      * Must be an absolute path on the local disc of the runnging Fuseki-Node
      */
-    public static String FUSEKI_DATA = "/GITHUB/ETOSHA.WS/etosha/etosha-parent/etosha-contextualizer/test.ttl";
+    public static String FUSEKI_DATA_FOLDER = "/GITHUB/ETOSHA.WS/etosha-workbench/fuseki-buffer";
+    public static String FUSEKI_DATA = "/GITHUB/ETOSHA.WS/etosha-workbench/fuseki-buffer/default.ttl";
 
     public static boolean running = false;
 

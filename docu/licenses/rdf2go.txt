@@ -1,0 +1,12 @@
+#rdf2go
+
+- http://semanticweb.org/wiki/RDF2Go.html
+
+https://opensource.org/licenses/bsd-license.php
+
+* Abstraction over triple stores. 
+
+=> currently used in ...
+
+
+

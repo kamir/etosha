@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="etosha-contextualizer" />
+        <module name="etosha-core" />
+        <module name="etosha-dsp-model-core" />
+        <module name="etosha-model" />
+        <module name="etosha-persist" />
+        <module name="etosha-smw" />
+        <module name="etosha-vocab" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="etosha-contextualizer" target="1.8" />
+      <module name="etosha-core" target="1.8" />
+      <module name="etosha-dsp-model-core" target="1.8" />
+      <module name="etosha-model" target="1.8" />
+      <module name="etosha-parent" target="1.6" />
+      <module name="etosha-persist" target="1.8" />
+      <module name="etosha-smw" target="1.8" />
+      <module name="etosha-umbrella" target="1.6" />
+      <module name="etosha-vocab" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

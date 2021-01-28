@@ -3,9 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.etosha</groupId>
     <artifactId>etosha-core</artifactId>
-    <packaging>jar</packaging>
-    <version>0.9.0-SNAPSHOT</version>
-    
+    <!--packaging>jar</packaging-->
+    <version>0.9.1-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.etosha</groupId>
+        <artifactId>etosha-parent</artifactId>
+        <version>0.9.1-SNAPSHOT</version>
+    </parent>
     <name>etosha-core</name>
     
     <url>http://maven.apache.org</url>
@@ -446,7 +451,6 @@
         <dep.yammer-metrics.version>2.2.0</dep.yammer-metrics.version>
         <dep.yourkit-api.version>9.5.6</dep.yourkit-api.version>
         <dep.zookeeper.version>3.4.5</dep.zookeeper.version>
-        <forHadoop>for-hadoop-${hadoop.version}</forHadoop>
         <munge.symbols>NO_MUNGE_SYMBOLS</munge.symbols>
     </properties>
     <build>
@@ -683,7 +687,7 @@
                         <!--descriptorRefs>
                             <descriptorRef>jar-with-dependencies-filtered</descriptorRef>
                         </descriptorRefs-->
-                        <descriptor>src/assembly/fat.xml</descriptor>
+
                         
                         
                     </configuration>

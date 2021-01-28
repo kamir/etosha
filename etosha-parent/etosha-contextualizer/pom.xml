@@ -8,12 +8,12 @@
     <parent>
         <groupId>org.etosha</groupId>
         <artifactId>etosha-parent</artifactId>
-        <version>0.9.0-SNAPSHOT</version>
+        <version>0.9.1-SNAPSHOT</version>
     </parent>
     
     <artifactId>etosha-contextualizer</artifactId>
     <packaging>jar</packaging>
-    <version>0.9.0-SNAPSHOT</version>
+    <version>0.9.1-SNAPSHOT</version>
     
     <name>Etosha Contextualizer</name>
 
@@ -120,9 +120,15 @@
             <artifactId>rdfreactor.generator</artifactId>
             <version>4.8.3</version>
         </dependency-->
-        
-   
-  
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-annotations</artifactId>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="etosha-webapp (1) (org.etosha):war">
+    <output-path>$PROJECT_DIR$/etosha-webapp/target</output-path>
+    <root id="archive" name="etosha-webapp.war">
+      <element id="artifact" artifact-name="etosha-webapp (1) (org.etosha):war exploded" />
+    </root>
+  </artifact>
+</component>
